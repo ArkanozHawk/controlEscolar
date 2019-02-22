@@ -52,6 +52,19 @@ namespace Control_Escolar
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
 
+        private void txtNum_Validating(object sender, CancelEventArgs e)
+        {
+            int num;
+            if (!int.TryParse(txtNum.Text, out num))
+            {
+                errorProvider1.SetError(txtNum, "Ingese el valor en numeros");
+            }
+            else
+            {
+
+            }
+        }
+
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
 
@@ -123,62 +136,62 @@ namespace Control_Escolar
             if (txtcontra.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Contraseña");
+                errorProvider1.SetError(txtcontra, "Ingresar Contraseña");
             }
             if (txtNombre.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Nombre");
+                errorProvider1.SetError(txtNombre, "Ingresar Nombre");
             }
             if (txtApPat.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Paterno");
+                errorProvider1.SetError(txtApPat, "Ingresar Apellido Paterno");
             }
             if (txtApMat.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Materno");
+                errorProvider1.SetError(txtApMat, "Ingresar Apellido Materno");
             }
             if (txtCalle.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Calle");
+                errorProvider1.SetError(txtCalle, "Ingresar Calle");
             }
             if (txtColonia.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Colonia");
+                errorProvider1.SetError(txtColonia, "Ingresar Colonia");
             }
             if (txtNum.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Numero Exterior");
+                errorProvider1.SetError(txtNum, "Ingresar Numero Exterior");
             }
             if (txtCP.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Codigo Postal");
+                errorProvider1.SetError(txtCP, "Ingresar Codigo Postal");
             }
             if (txtTel.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Telefono");
+                errorProvider1.SetError(txtTel, "Ingresar Telefono");
             }
             if (txtEmail.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Email");
+                errorProvider1.SetError(txtEmail, "Ingresar Email");
             }
             if (txtProf.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Profeción");
+                errorProvider1.SetError(txtProf, "Ingresar Profeción");
             }
             if (txtCargo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Puesto");
+                errorProvider1.SetError(txtCargo, "Ingresar Puesto");
             }
             return ok;
         }
@@ -198,6 +211,7 @@ namespace Control_Escolar
             errorProvider1.SetError(txtProf, "");
             errorProvider1.SetError(txtCargo, "");
         }
+
 
     }
 }
