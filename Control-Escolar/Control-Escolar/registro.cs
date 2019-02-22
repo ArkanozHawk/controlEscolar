@@ -109,6 +109,7 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtcontra.Text;
 
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "insert into personal (nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password) " +
                 "values('" + nombre + "','" + ApellidoP + "','" + ApellidoM + "','" + calle + "','" + colonia + "','" + numExt + "','" + cp + "','" + telefono + "','" + email + "','" + profesion + "','" + cargo + "','" + usuario + "','" + password + "');";
