@@ -59,6 +59,7 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtContra.Text;
 
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT COUNT(*) FROM personal where usuario = '"+ usuario + "' and password = '"+ password +"';";
 
@@ -68,6 +69,12 @@ namespace Control_Escolar
                 sesion.Usuario = usuario;
                 sesion.Password = password;
                 sesion.HoraEntrada = Convert.ToString(DateTime.Now);
+                string HoraEntrada = sesion.HoraEntrada;
+                string inserta_bitacora = "INSERT INTO bitacora (Usuario,HoraEntrada) " + "values('" + usuario + "','" + HoraEntrada + "');";
+                obj.insBitacora(conexion, inserta_bitacora);
+                string posicion = "SELECT idAcceso FROM bitacora ORDER by idAcceso DESC limit 1;";
+                int posi = obj.Acceso(conexion, posicion);
+                sesion.idAcceso = posi;
                 System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
                 pantalla.Start();
                 CheckForIllegalCrossThreadCalls = false;

@@ -13,5 +13,6 @@ namespace Control_Escolar
         public static string Usuario;
         public static string Password;
         public static string HoraEntrada;
+        public static int idAcceso;
     }
 }

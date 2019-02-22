@@ -48,6 +48,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.licensekey">
+      <HintPath>..\packages\itextsharp.licensekey.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xfaworker">
+      <HintPath>..\packages\itextsharp.xfaworker.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker">
+      <HintPath>..\packages\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
     </Reference>
@@ -65,6 +77,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bitacora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bitacora.Designer.cs">
+      <DependentUpon>bitacora.cs</DependentUpon>
+    </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -93,6 +111,9 @@
       <DependentUpon>registro.cs</DependentUpon>
     </Compile>
     <Compile Include="sesion.cs" />
+    <EmbeddedResource Include="bitacora.resx">
+      <DependentUpon>bitacora.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

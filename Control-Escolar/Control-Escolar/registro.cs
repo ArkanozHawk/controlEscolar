@@ -52,18 +52,45 @@ namespace Control_Escolar
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
 
+        private void txtTel_Validating(object sender, CancelEventArgs e)
+        {
+            int num2;
+            if (!int.TryParse(txtTel.Text, out num2))
+            {
+                errorProvider1.SetError(txtTel, "Ingesar el telefono en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtTel, "");
+            }
+        }
+
+        private void txtCP_Validating_1(object sender, CancelEventArgs e)
+        {
+            int num1;
+            if (!int.TryParse(txtCP.Text, out num1))
+            {
+                errorProvider1.SetError(txtCP, "Ingesar el CP en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtCP, "");
+            }
+        }
+
         private void txtNum_Validating(object sender, CancelEventArgs e)
         {
             int num;
             if (!int.TryParse(txtNum.Text, out num))
             {
-                errorProvider1.SetError(txtNum, "Ingese el valor en numeros");
+                errorProvider1.SetError(txtNum, "Ingesar el dato en numeros");
             }
             else
             {
                 errorProvider1.SetError(txtNum, "");
             }
         }
+
 
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
@@ -109,6 +136,7 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtcontra.Text;
 
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "insert into personal (nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password) " +
                 "values('" + nombre + "','" + ApellidoP + "','" + ApellidoM + "','" + calle + "','" + colonia + "','" + numExt + "','" + cp + "','" + telefono + "','" + email + "','" + profesion + "','" + cargo + "','" + usuario + "','" + password + "');";
@@ -121,19 +149,18 @@ namespace Control_Escolar
             {
                 MessageBox.Show("Datos ingresados Correctamente");
             }
-            ValidarCampos();
+            
         }
 
         private bool ValidarCampos()
         {
             bool ok = true;
 
-            if (txtUsuario.Text == "")
+            if(txtUsuario.Text == "")
             {
                 ok = false;
                 errorProvider1.SetError(txtUsuario, "Ingresar Usuario");
             }
-
             if (txtcontra.Text == "")
             {
                 ok = false;
