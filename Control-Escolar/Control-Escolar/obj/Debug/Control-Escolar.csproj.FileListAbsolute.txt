@@ -30,3 +30,19 @@ C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-E
 C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
 C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
