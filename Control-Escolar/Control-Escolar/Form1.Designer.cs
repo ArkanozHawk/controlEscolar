@@ -29,14 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(login));
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Titulo = new System.Windows.Forms.Label();
             this.txtContra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -49,9 +47,10 @@
             this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Titulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Titulo.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.Titulo.Location = new System.Drawing.Point(67, 165);
+            this.Titulo.Location = new System.Drawing.Point(72, 175);
+            this.Titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(345, 32);
+            this.Titulo.Size = new System.Drawing.Size(265, 26);
             this.Titulo.TabIndex = 0;
             this.Titulo.Text = "Instituto Rodolfo Neri Vela";
             this.Titulo.Click += new System.EventHandler(this.Titulo_Click);
@@ -60,27 +59,25 @@
             // 
             this.txtContra.Depth = 0;
             this.txtContra.Hint = "Contraseña";
-            this.txtContra.Location = new System.Drawing.Point(105, 339);
-            this.txtContra.Margin = new System.Windows.Forms.Padding(4);
+            this.txtContra.Location = new System.Drawing.Point(99, 274);
             this.txtContra.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
             this.txtContra.SelectedText = "";
             this.txtContra.SelectionLength = 0;
             this.txtContra.SelectionStart = 0;
-            this.txtContra.Size = new System.Drawing.Size(275, 28);
+            this.txtContra.Size = new System.Drawing.Size(206, 23);
             this.txtContra.TabIndex = 1;
             this.txtContra.UseSystemPasswordChar = false;
             // 
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(151, 375);
-            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(136, 310);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(176, 52);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(132, 42);
             this.materialRaisedButton1.TabIndex = 2;
             this.materialRaisedButton1.Text = "Acceder";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
@@ -90,11 +87,10 @@
             // 
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
-            this.materialDivider1.Location = new System.Drawing.Point(21, 454);
-            this.materialDivider1.Margin = new System.Windows.Forms.Padding(4);
+            this.materialDivider1.Location = new System.Drawing.Point(16, 369);
             this.materialDivider1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialDivider1.Name = "materialDivider1";
-            this.materialDivider1.Size = new System.Drawing.Size(347, 1);
+            this.materialDivider1.Size = new System.Drawing.Size(380, 1);
             this.materialDivider1.TabIndex = 11;
             this.materialDivider1.Text = "materialDivider1";
             // 
@@ -102,12 +98,11 @@
             // 
             this.materialRaisedButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(152, 484);
-            this.materialRaisedButton2.Margin = new System.Windows.Forms.Padding(4);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(136, 389);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(176, 52);
+            this.materialRaisedButton2.Size = new System.Drawing.Size(132, 42);
             this.materialRaisedButton2.TabIndex = 3;
             this.materialRaisedButton2.Text = "Registrar";
             this.materialRaisedButton2.UseVisualStyleBackColor = false;
@@ -118,57 +113,43 @@
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtUsuario.Depth = 0;
             this.txtUsuario.Hint = "Usuario";
-            this.txtUsuario.Location = new System.Drawing.Point(105, 284);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUsuario.Location = new System.Drawing.Point(99, 226);
             this.txtUsuario.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.PasswordChar = '\0';
             this.txtUsuario.SelectedText = "";
             this.txtUsuario.SelectionLength = 0;
             this.txtUsuario.SelectionStart = 0;
-            this.txtUsuario.Size = new System.Drawing.Size(275, 28);
+            this.txtUsuario.Size = new System.Drawing.Size(206, 23);
             this.txtUsuario.TabIndex = 0;
             this.txtUsuario.UseSystemPasswordChar = false;
-            // 
-            // materialDivider2
-            // 
-            this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider2.Depth = 0;
-            this.materialDivider2.Location = new System.Drawing.Point(288, 454);
-            this.materialDivider2.Margin = new System.Windows.Forms.Padding(4);
-            this.materialDivider2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider2.Name = "materialDivider2";
-            this.materialDivider2.Size = new System.Drawing.Size(347, 1);
-            this.materialDivider2.TabIndex = 12;
-            this.materialDivider2.Text = "materialDivider2";
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Control_Escolar.Properties.Resources._1280px_SEP_logo_20122;
-            this.pictureBox2.Location = new System.Drawing.Point(276, 80);
+            this.pictureBox2.Location = new System.Drawing.Point(216, 84);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(187, 66);
+            this.pictureBox2.Size = new System.Drawing.Size(187, 65);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.escudo;
-            this.pictureBox1.Location = new System.Drawing.Point(21, 72);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 77);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(135, 74);
+            this.pictureBox1.Size = new System.Drawing.Size(136, 75);
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(491, 604);
+            this.ClientSize = new System.Drawing.Size(415, 488);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.materialDivider2);
             this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.materialDivider1);
             this.Controls.Add(this.materialRaisedButton1);
@@ -178,7 +159,7 @@
             this.Controls.Add(this.Titulo);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Academic";
@@ -190,7 +171,6 @@
         }
 
         #endregion
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label Titulo;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtContra;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -198,7 +178,6 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtUsuario;
-        private MaterialSkin.Controls.MaterialDivider materialDivider2;
         private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
