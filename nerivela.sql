@@ -21,11 +21,14 @@ CREATE TABLE personal
     PRIMARY KEY (idUsuario)
 );
 
+
 CREATE TABLE bitacora
 (
+	idAcceso int not null auto_increment,
 	Usuario varchar(20),
 	HoraEntrada text,
-    HoraSalida text
+    HoraSalida text,
+    PRIMARY KEY (idAcceso)
 );
 
 /*SELECT * FROM nerivela.personal;
