@@ -45,12 +45,27 @@ namespace Control_Escolar
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
         }
 
         conexion obj = new conexion();
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
+
+        private void txtEmail_Validating(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void txtEmail_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registro_Load(object sender, EventArgs e)
+        {
+
+        }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
         {
@@ -87,6 +102,102 @@ namespace Control_Escolar
 
             obj.Consulta(conexion, query);
             Limpia();
+
+            BorrarMensajesError();
+            if (ValidarCampos())
+            {
+                MessageBox.Show("Datos ingresados Correctamente");
+            }
+            ValidarCampos();
         }
+
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+
+            if(txtUsuario.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Usuario");
+            }
+            if (txtcontra.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Contraseña");
+            }
+            if (txtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Nombre");
+            }
+            if (txtApPat.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Paterno");
+            }
+            if (txtApMat.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Materno");
+            }
+            if (txtCalle.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Calle");
+            }
+            if (txtColonia.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Colonia");
+            }
+            if (txtNum.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Numero Exterior");
+            }
+            if (txtCP.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Codigo Postal");
+            }
+            if (txtTel.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Telefono");
+            }
+            if (txtEmail.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Email");
+            }
+            if (txtProf.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Profeción");
+            }
+            if (txtCargo.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtUsuario, "Ingresar Puesto");
+            }
+            return ok;
+        }
+
+        private void BorrarMensajesError()
+        {
+            errorProvider1.SetError(txtUsuario, "");
+            errorProvider1.SetError(txtcontra, "");
+            errorProvider1.SetError(txtNombre, "");
+            errorProvider1.SetError(txtApPat, "");
+            errorProvider1.SetError(txtApMat, "");
+            errorProvider1.SetError(txtCalle, "");
+            errorProvider1.SetError(txtColonia, "");
+            errorProvider1.SetError(txtNum, "");
+            errorProvider1.SetError(txtTel, "");
+            errorProvider1.SetError(txtEmail, "");
+            errorProvider1.SetError(txtProf, "");
+            errorProvider1.SetError(txtCargo, "");
+        }
+
     }
 }
