@@ -52,6 +52,19 @@ namespace Control_Escolar
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
 
+        private void txtNum_Validating(object sender, CancelEventArgs e)
+        {
+            int num;
+            if (!int.TryParse(txtNum.Text, out num))
+            {
+                errorProvider1.SetError(txtNum, "Ingese el valor en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtNum, "");
+            }
+        }
+
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
 
@@ -115,11 +128,12 @@ namespace Control_Escolar
         {
             bool ok = true;
 
-            if(txtUsuario.Text == "")
+            if (txtUsuario.Text == "")
             {
                 ok = false;
                 errorProvider1.SetError(txtUsuario, "Ingresar Usuario");
             }
+
             if (txtcontra.Text == "")
             {
                 ok = false;
@@ -198,6 +212,7 @@ namespace Control_Escolar
             errorProvider1.SetError(txtProf, "");
             errorProvider1.SetError(txtCargo, "");
         }
+
 
     }
 }
