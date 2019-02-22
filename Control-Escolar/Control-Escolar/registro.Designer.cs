@@ -325,6 +325,7 @@
             this.txtNum.Size = new System.Drawing.Size(327, 28);
             this.txtNum.TabIndex = 35;
             this.txtNum.UseSystemPasswordChar = false;
+            this.txtNum.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_Validating);
             // 
             // txtCalle
             // 
