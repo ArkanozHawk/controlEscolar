@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolver = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnRegistrar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -55,12 +56,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtcontra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -217,6 +220,8 @@
             this.txtEmail.Size = new System.Drawing.Size(245, 23);
             this.txtEmail.TabIndex = 35;
             this.txtEmail.UseSystemPasswordChar = false;
+            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
+            this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // txtTel
             // 
@@ -306,6 +311,7 @@
             this.txtNum.Size = new System.Drawing.Size(245, 23);
             this.txtNum.TabIndex = 35;
             this.txtNum.UseSystemPasswordChar = false;
+            this.txtNum.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_Validating);
             // 
             // txtCalle
             // 
@@ -452,20 +458,25 @@
             this.txtUsuario.TabIndex = 34;
             this.txtUsuario.UseSystemPasswordChar = false;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1024, 500);
+            this.ClientSize = new System.Drawing.Size(1022, 500);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(862, 500);
+            this.MinimumSize = new System.Drawing.Size(766, 500);
             this.Name = "registro";
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrando Usuario";
+            this.Text = "Registro de Usuario";
+            this.Load += new System.EventHandler(this.registro_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
@@ -477,6 +488,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -510,5 +522,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtColonia;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtApMat;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtApPat;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

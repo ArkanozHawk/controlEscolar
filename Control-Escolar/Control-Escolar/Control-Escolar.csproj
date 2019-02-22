@@ -153,6 +153,39 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280px-SEP_logo_2012.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\descarga.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280px-SEP_logo_2012.svg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1280px-SEP_logo_2012.svg2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badges_Ruby_UserAuthentication_Stage111.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\access-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-whatsapp-logo-5afac6806b9394.2470078915263842564406.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-login-icon-vector-4310498.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

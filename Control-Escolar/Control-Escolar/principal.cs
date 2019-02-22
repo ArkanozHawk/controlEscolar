@@ -28,7 +28,7 @@ namespace Control_Escolar
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.BlueGrey800, Primary.BlueGrey900, Primary.BlueGrey500, Accent.LightBlue200, TextShade.WHITE);;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
             string user = sesion.Usuario;
             MessageBox.Show("Hola "+ user + " Bienvenido al Control Escolar");
             string entrada = sesion.HoraEntrada;
@@ -41,6 +41,11 @@ namespace Control_Escolar
 
             login.Start();
             this.Close();
+        }
+
+        private void principal_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
