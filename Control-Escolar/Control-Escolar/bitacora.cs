@@ -30,6 +30,12 @@ namespace Control_Escolar
             Application.Run(new principal());
         }
 
+        public static void ThreadProc()
+
+        {
+            Application.Run(new login());
+        }
+
         public bitacora()
         {
             InitializeComponent();
@@ -45,7 +51,7 @@ namespace Control_Escolar
             //string usuario, Horaentrada, Horasalida;
             //int n = dataGridView1.Rows.Add();
             //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
-            
+
         }
 
         private void btnPrincipal_Click(object sender, EventArgs e)
@@ -72,7 +78,7 @@ namespace Control_Escolar
                 data.DataSource = formulario;
                 seleccionar.Update(datostabla);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -88,68 +94,89 @@ namespace Control_Escolar
 
             // Le colocamos el título y el autor
             // **Nota: Esto no será visible en el documento
-            doc.AddTitle("Mi primer PDF");
-            doc.AddCreator("Martha Lizeth");
+            doc.AddTitle("Bitacora de Inicio de Sesión");
+            doc.AddCreator("Instituto Rodolfo Neri Vela");
 
             // Abrimos el archivo
             doc.Open();
 
+            //Image png = Image.GetInstance(imagepath + "/logo-sep.png");
+            // png.ScalePercent(24f);
+            //doc.Add(png);
+
             // Escribimos el encabezamiento en el documento
-            doc.Add(new Paragraph("Mi primer documento PDF"));
+            doc.Add(new Paragraph("Instituto Rodolfo Neri Vela"));
+            doc.Add(new Paragraph("Vicente Guerrero 49, Barrios Históricos, 39300. Acapulco, Gro."));
+            doc.Add(new Paragraph("Clave:12DPT0003N       Nivel: Primaria"));
+            doc.Add(new Paragraph("Bitacora de Inicio de Sesión"));
             doc.Add(Chunk.NEWLINE);
 
-            iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 8, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+            iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
 
             // Creamos una tabla que contendrá el nombre, apellido y país 
             // de nuestros visitante.
-            PdfPTable tblPrueba = new PdfPTable(3);
+            PdfPTable tblPrueba = new PdfPTable(4);
             tblPrueba.WidthPercentage = 100;
+            tblPrueba.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
 
             // Configuramos el título de las columnas de la tabla
-            PdfPCell clNombre = new PdfPCell(new Phrase("Nombre", _standardFont));
-            clNombre.BorderWidth = 0;
-            clNombre.BorderWidthBottom = 0.75f;
+            PdfPCell clusuario = new PdfPCell(new Phrase("Usuario", _standardFont));
+            clusuario.BorderWidth = 0;
+            clusuario.BorderWidthBottom = 0.75f;
 
-            PdfPCell clApellido = new PdfPCell(new Phrase("Apellido", _standardFont));
-            clApellido.BorderWidth = 0;
-            clApellido.BorderWidthBottom = 0.75f;
+            PdfPCell clfecha = new PdfPCell(new Phrase("Fecha", _standardFont));
+            clfecha.BorderWidth = 0;
+            clfecha.BorderWidthBottom = 0.75f;
 
-            PdfPCell clPais = new PdfPCell(new Phrase("País", _standardFont));
-            clPais.BorderWidth = 0;
-            clPais.BorderWidthBottom = 0.75f;
+            PdfPCell clhoraent = new PdfPCell(new Phrase("Hora de Entrada", _standardFont));
+            clhoraent.BorderWidth = 0;
+            clhoraent.BorderWidthBottom = 0.75f;
+
+            PdfPCell clhorasal = new PdfPCell(new Phrase("Hora de Salida", _standardFont));
+            clhorasal.BorderWidth = 0;
+            clhorasal.BorderWidthBottom = 0.75f;
 
             // Añadimos las celdas a la tabla
-            tblPrueba.AddCell(clNombre);
-            tblPrueba.AddCell(clApellido);
-            tblPrueba.AddCell(clPais);
+            tblPrueba.AddCell(clusuario);
+            tblPrueba.AddCell(clfecha);
+            tblPrueba.AddCell(clhoraent);
+            tblPrueba.AddCell(clhorasal);
 
             // Llenamos la tabla con información
-            clNombre = new PdfPCell(new Phrase("Mayolo", _standardFont));
-            clNombre.BorderWidth = 0;
+            clusuario = new PdfPCell(new Phrase("Mayolo", _standardFont));
+            clusuario.BorderWidth = 0;
 
-            clApellido = new PdfPCell(new Phrase("Suaste", _standardFont));
-            clApellido.BorderWidth = 0;
+            clfecha = new PdfPCell(new Phrase("Suaste", _standardFont));
+            clfecha.BorderWidth = 0;
 
-            clPais = new PdfPCell(new Phrase("Puerto Rico", _standardFont));
-            clPais.BorderWidth = 0;
+            clhoraent = new PdfPCell(new Phrase("Puerto Rico", _standardFont));
+            clhoraent.BorderWidth = 0;
+
+            clhorasal = new PdfPCell(new Phrase("Puerto Rico", _standardFont));
+            clhorasal.BorderWidth = 0;
 
             // Añadimos las celdas a la tabla
-            tblPrueba.AddCell(clNombre);
-            tblPrueba.AddCell(clApellido);
-            tblPrueba.AddCell(clPais);
+            tblPrueba.AddCell(clusuario);
+            tblPrueba.AddCell(clfecha);
+            tblPrueba.AddCell(clhoraent);
+            tblPrueba.AddCell(clhorasal);
 
-            clNombre = new PdfPCell(new Phrase("Martha", _standardFont));
-            clNombre.BorderWidth = 0;
+            clusuario = new PdfPCell(new Phrase("Martha", _standardFont));
+            clusuario.BorderWidth = 0;
 
-            clApellido = new PdfPCell(new Phrase("Teran", _standardFont));
-            clApellido.BorderWidth = 0;
+            clfecha = new PdfPCell(new Phrase("Teran", _standardFont));
+            clfecha.BorderWidth = 0;
 
-            clPais = new PdfPCell(new Phrase("México", _standardFont));
-            clPais.BorderWidth = 0;
+            clhoraent = new PdfPCell(new Phrase("México", _standardFont));
+            clhoraent.BorderWidth = 0;
 
-            tblPrueba.AddCell(clNombre);
-            tblPrueba.AddCell(clApellido);
-            tblPrueba.AddCell(clPais);
+            clhorasal = new PdfPCell(new Phrase("México", _standardFont));
+            clhorasal.BorderWidth = 0;
+
+            tblPrueba.AddCell(clusuario);
+            tblPrueba.AddCell(clfecha);
+            tblPrueba.AddCell(clhoraent);
+            tblPrueba.AddCell(clhorasal);
 
             // Finalmente, añadimos la tabla al documento PDF y cerramos el documento
             doc.Add(tblPrueba);
@@ -158,6 +185,20 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            string HoraSalida = Convert.ToString(DateTime.Now);
+            int idAccess = sesion.idAcceso;
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
+            obj.insBitacora(conexion, inserta_bitacora);
+            System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+
+            login.Start();
+            this.Close();
         }
     }
 }
