@@ -129,7 +129,7 @@
             this.groupBox5.Controls.Add(this.txtCargo);
             this.groupBox5.Controls.Add(this.txtProf);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox5.Location = new System.Drawing.Point(678, 13);
+            this.groupBox5.Location = new System.Drawing.Point(675, 13);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox5.Size = new System.Drawing.Size(309, 141);
@@ -237,6 +237,7 @@
             this.txtTel.Size = new System.Drawing.Size(245, 23);
             this.txtTel.TabIndex = 34;
             this.txtTel.UseSystemPasswordChar = false;
+            this.txtTel.Validating += new System.ComponentModel.CancelEventHandler(this.txtTel_Validating);
             // 
             // groupBox3
             // 
@@ -268,6 +269,7 @@
             this.txtCP.Size = new System.Drawing.Size(245, 23);
             this.txtCP.TabIndex = 46;
             this.txtCP.UseSystemPasswordChar = false;
+            this.txtCP.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_Validating_1);
             // 
             // txtColonia
             // 
@@ -467,7 +469,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.ClientSize = new System.Drawing.Size(1022, 500);
+            this.ClientSize = new System.Drawing.Size(1010, 500);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MaximizeBox = false;

@@ -30,18 +30,20 @@
         {
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.GenerarPDF = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrincipal
             // 
             this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(326, 374);
+            this.btnPrincipal.Location = new System.Drawing.Point(343, 448);
+            this.btnPrincipal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(127, 46);
+            this.btnPrincipal.Size = new System.Drawing.Size(169, 57);
             this.btnPrincipal.TabIndex = 0;
             this.btnPrincipal.Text = "Volver al Menú Principal";
             this.btnPrincipal.UseVisualStyleBackColor = true;
@@ -50,38 +52,62 @@
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(194, 117);
+            this.dataGridView1.Location = new System.Drawing.Point(303, 145);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(378, 221);
+            this.dataGridView1.Size = new System.Drawing.Size(504, 272);
             this.dataGridView1.TabIndex = 1;
             // 
-            // button1
+            // GenerarPDF
             // 
-            this.button1.Location = new System.Drawing.Point(636, 85);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "PDF";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.GenerarPDF.Depth = 0;
+            this.GenerarPDF.Location = new System.Drawing.Point(583, 448);
+            this.GenerarPDF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.GenerarPDF.MouseState = MaterialSkin.MouseState.HOVER;
+            this.GenerarPDF.Name = "GenerarPDF";
+            this.GenerarPDF.Primary = true;
+            this.GenerarPDF.Size = new System.Drawing.Size(169, 57);
+            this.GenerarPDF.TabIndex = 2;
+            this.GenerarPDF.Text = "Generar PDF";
+            this.GenerarPDF.UseVisualStyleBackColor = true;
+            this.GenerarPDF.Click += new System.EventHandler(this.GenerarPDF_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
+            this.btnCerrar.Depth = 0;
+            this.btnCerrar.Location = new System.Drawing.Point(867, 25);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Primary = true;
+            this.btnCerrar.Size = new System.Drawing.Size(165, 38);
+            this.btnCerrar.TabIndex = 3;
+            this.btnCerrar.Text = "Cerrar Sesión";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
             // bitacora
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(1045, 554);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.GenerarPDF);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrincipal);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "bitacora";
-            this.Text = "bitacora";
+            this.Text = "Bitácora";
             this.Load += new System.EventHandler(this.bitacora_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -92,6 +118,7 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button button1;
+        private MaterialSkin.Controls.MaterialRaisedButton GenerarPDF;
+        private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
     }
 }

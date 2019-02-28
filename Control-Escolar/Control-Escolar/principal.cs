@@ -30,17 +30,29 @@ namespace Control_Escolar
             Application.Run(new bitacora());
         }
 
+        public static void ThreadAlumno()
+
+        {
+            Application.Run(new Alumno());
+        }
+
+        public static void ThreadGrupo()
+
+        {
+            Application.Run(new Grupos());
+        }
+
         public principal()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.LightBlue400, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
             string user = sesion.Usuario;
             //MessageBox.Show("Hola "+ user + " Bienvenido al Control Escolar");
             string entrada = sesion.HoraEntrada;
-            lblBienvenida.Text = "Hola " + user + " Bienvenido al Control Escolar\nHora de Entrada: "+ entrada + "";
+            lblBienvenida.Text = "Hola " + user + " \nBienvenido al Control Escolar\nTu hora de entrada fue a las: "+ entrada + "";
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -66,6 +78,22 @@ namespace Control_Escolar
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBitacora));
             pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void btnAlumnos_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
+            pantalla1.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void BtnGrupos_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGrupo));
+            pantalla1.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
         }
