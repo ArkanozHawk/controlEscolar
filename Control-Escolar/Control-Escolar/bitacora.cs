@@ -86,6 +86,127 @@ namespace Control_Escolar
 
         private void GenerarPDF_Click(object sender, EventArgs e)
         {
+            exportardata(dataGridView1, "test");
+
+        }
+
+        private void BtnCerrar_Click(object sender, EventArgs e)
+        {
+            string HoraSalida = Convert.ToString(DateTime.Now);
+            int idAccess = sesion.idAcceso;
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
+            obj.insBitacora(conexion, inserta_bitacora);
+            System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+
+            login.Start();
+            this.Close();
+        }
+        public void exportardata(DataGridView dgw, string filename)
+        {
+
+            BaseFont bf = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1250, BaseFont.EMBEDDED);
+            PdfPTable pdftable = new PdfPTable(dgw.Columns.Count);
+            pdftable.DefaultCell.Padding = 3;
+            pdftable.WidthPercentage = 100;
+            pdftable.HorizontalAlignment = Element.ALIGN_LEFT;
+            pdftable.DefaultCell.BorderWidth = 1;
+            iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 15, iTextSharp.text.Font.NORMAL);
+
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                cell.BackgroundColor = new iTextSharp.text.BaseColor(240, 240, 240);
+                pdftable.AddCell(cell);
+            }
+
+            int row = dataGridView1.Rows.Count;
+            int cell2 = dataGridView1.Rows[1].Cells.Count;
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < cell2; j++)
+                {
+                    if (dataGridView1.Rows[i].Cells[j].Value == null)
+                    {
+                        //return directly
+                        //return;
+                        //or set a value for the empty data
+                        dataGridView1.Rows[i].Cells[j].Value = "null";
+                    }
+                    pdftable.AddCell(dataGridView1.Rows[i].Cells[j].Value.ToString());
+                }
+            }
+            //Exporting to PDF
+            string folderPath = @"C:\shashe\";
+            if (!Directory.Exists(folderPath))
+            {
+                Directory.CreateDirectory(folderPath);
+            }
+            using (FileStream stream = new FileStream(folderPath + "DataGridViewExport.pdf", FileMode.Create))
+            {
+                Document pdfDoc = new Document(PageSize.LETTER, 10f, 10f, 10f, 0f);
+                PdfWriter.GetInstance(pdfDoc, stream);
+                pdfDoc.Open();
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/Users/Tevi/Documents/Gestionde proyectos/controlEscolar-master/logo1.jpg");
+                imagen.BorderWidth = 0;
+                imagen.SetAbsolutePosition(0, 500);
+                float percentage = 0.0f;
+                percentage = 150 / imagen.Width;
+                imagen.ScalePercent(percentage * 100);
+                pdfDoc.Add(imagen);
+                var parrafo2 = new Paragraph("        Instituto Rodolfo Neri Vela");
+                parrafo2.SpacingBefore = 200;
+                parrafo2.SpacingAfter = 0;
+                parrafo2.Alignment = 1; //0-Left, 1 middle,2 Right
+                pdfDoc.Add(parrafo2);
+
+                var parrafo3 = new Paragraph("        Bitacora de Inicio de Sesión");
+
+                parrafo3.Alignment = 1; //0-Left, 1 middle,2 Right
+                pdfDoc.Add(parrafo3);
+
+                var parrafo4 = new Paragraph("        Vicente Guerrero 49 , Barrios Historicos , Acapulco Guerrero");
+
+                parrafo4.Alignment = 1; //0-Left, 1 middle,2 Right
+                pdfDoc.Add(parrafo4);
+
+                var parrafo5 = new Paragraph("    Clave:12DPT0003N       Nivel: Primaria");
+                parrafo5.Alignment = 1; //0-Left, 1 middle,2 Right
+
+
+                pdfDoc.Add(parrafo5);
+                pdfDoc.Add(Chunk.NEWLINE);
+
+
+
+
+
+
+
+
+
+
+
+
+                MessageBox.Show("Done");
+                // Abrimos el archivo  doc.Open();
+
+                //Image png = Image.GetInstance(imagepath + "/logo-sep.png");
+                // png.ScalePercent(24f);
+                //doc.Add(png);
+
+                // Escribimos el encabezamiento en el documento
+
+
+
+                pdfDoc.Add(pdftable);
+                pdfDoc.Close();
+                stream.Close();
+
+            }
+        }
+
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
             // Indicamos donde vamos a guardar el documento
