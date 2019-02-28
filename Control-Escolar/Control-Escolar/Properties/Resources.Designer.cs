@@ -223,6 +223,16 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_contraseña_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-contraseña-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_usuario_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-48", resourceCulture);
@@ -243,6 +253,16 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap login {
+            get {
+                object obj = ResourceManager.GetObject("login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_button_png_0 {
             get {
                 object obj = ResourceManager.GetObject("login-button-png-0", resourceCulture);
@@ -256,6 +276,16 @@ namespace Control_Escolar.Properties {
         internal static System.Drawing.Bitmap logo_esc {
             get {
                 object obj = ResourceManager.GetObject("logo-esc", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_login {
+            get {
+                object obj = ResourceManager.GetObject("logo-login", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

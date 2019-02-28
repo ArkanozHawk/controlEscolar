@@ -18,6 +18,10 @@ namespace Control_Escolar
         public Buscar()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.LightBlue400, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
         }
 
         conexion obj = new conexion();

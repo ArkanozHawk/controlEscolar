@@ -56,11 +56,12 @@
             // 
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
-            this.btnCerrar.Location = new System.Drawing.Point(868, 27);
+            this.btnCerrar.Location = new System.Drawing.Point(1157, 33);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Primary = true;
-            this.btnCerrar.Size = new System.Drawing.Size(122, 35);
+            this.btnCerrar.Size = new System.Drawing.Size(163, 43);
             this.btnCerrar.TabIndex = 0;
             this.btnCerrar.Text = "Cerrar Sesión";
             this.btnCerrar.UseVisualStyleBackColor = false;
@@ -72,10 +73,9 @@
             this.lblBienvenida.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblBienvenida.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBienvenida.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.lblBienvenida.Location = new System.Drawing.Point(340, 245);
-            this.lblBienvenida.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBienvenida.Location = new System.Drawing.Point(453, 302);
             this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(446, 26);
+            this.lblBienvenida.Size = new System.Drawing.Size(580, 32);
             this.lblBienvenida.TabIndex = 45;
             this.lblBienvenida.Text = "Hola \"Usuario\" Bienvenido al Control Escolar";
             this.lblBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -83,11 +83,12 @@
             // btnBitacora
             // 
             this.btnBitacora.Depth = 0;
-            this.btnBitacora.Location = new System.Drawing.Point(-2, 66);
+            this.btnBitacora.Location = new System.Drawing.Point(-3, 81);
+            this.btnBitacora.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBitacora.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnBitacora.Name = "btnBitacora";
             this.btnBitacora.Primary = true;
-            this.btnBitacora.Size = new System.Drawing.Size(178, 98);
+            this.btnBitacora.Size = new System.Drawing.Size(237, 121);
             this.btnBitacora.TabIndex = 46;
             this.btnBitacora.Text = "Bitacora";
             this.btnBitacora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,11 +98,12 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(-2, 520);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(-3, 640);
+            this.materialRaisedButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(178, 98);
+            this.materialRaisedButton1.Size = new System.Drawing.Size(237, 121);
             this.materialRaisedButton1.TabIndex = 47;
             this.materialRaisedButton1.Text = "Respaldo";
             this.materialRaisedButton1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -110,11 +112,12 @@
             // btnEstadisticas
             // 
             this.btnEstadisticas.Depth = 0;
-            this.btnEstadisticas.Location = new System.Drawing.Point(-2, 432);
+            this.btnEstadisticas.Location = new System.Drawing.Point(-3, 532);
+            this.btnEstadisticas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEstadisticas.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEstadisticas.Name = "btnEstadisticas";
             this.btnEstadisticas.Primary = true;
-            this.btnEstadisticas.Size = new System.Drawing.Size(178, 98);
+            this.btnEstadisticas.Size = new System.Drawing.Size(237, 121);
             this.btnEstadisticas.TabIndex = 48;
             this.btnEstadisticas.Text = "Estadisticas";
             this.btnEstadisticas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,11 +126,12 @@
             // btnAlumnos
             // 
             this.btnAlumnos.Depth = 0;
-            this.btnAlumnos.Location = new System.Drawing.Point(-2, 245);
+            this.btnAlumnos.Location = new System.Drawing.Point(-3, 302);
+            this.btnAlumnos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAlumnos.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnAlumnos.Name = "btnAlumnos";
             this.btnAlumnos.Primary = true;
-            this.btnAlumnos.Size = new System.Drawing.Size(178, 98);
+            this.btnAlumnos.Size = new System.Drawing.Size(237, 121);
             this.btnAlumnos.TabIndex = 49;
             this.btnAlumnos.Text = "Alumnos";
             this.btnAlumnos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -137,11 +141,12 @@
             // btnGrupos
             // 
             this.btnGrupos.Depth = 0;
-            this.btnGrupos.Location = new System.Drawing.Point(-2, 156);
+            this.btnGrupos.Location = new System.Drawing.Point(-3, 192);
+            this.btnGrupos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGrupos.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnGrupos.Name = "btnGrupos";
             this.btnGrupos.Primary = true;
-            this.btnGrupos.Size = new System.Drawing.Size(178, 98);
+            this.btnGrupos.Size = new System.Drawing.Size(237, 121);
             this.btnGrupos.TabIndex = 50;
             this.btnGrupos.Text = "Grupos";
             this.btnGrupos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -151,11 +156,12 @@
             // materialRaisedButton2
             // 
             this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(-2, 339);
+            this.materialRaisedButton2.Location = new System.Drawing.Point(-3, 417);
+            this.materialRaisedButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton2.Name = "materialRaisedButton2";
             this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(178, 98);
+            this.materialRaisedButton2.Size = new System.Drawing.Size(237, 121);
             this.materialRaisedButton2.TabIndex = 55;
             this.materialRaisedButton2.Text = "Boletas";
             this.materialRaisedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -164,78 +170,78 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::Control_Escolar.Properties.Resources.material_de_oficina;
-            this.pictureBox7.Location = new System.Drawing.Point(185, 373);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox7.Location = new System.Drawing.Point(247, 459);
+            this.pictureBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(35, 38);
+            this.pictureBox7.Size = new System.Drawing.Size(47, 47);
             this.pictureBox7.TabIndex = 58;
             this.pictureBox7.TabStop = false;
             // 
             // pictureBox6
             // 
             this.pictureBox6.Image = global::Control_Escolar.Properties.Resources.estudiante;
-            this.pictureBox6.Location = new System.Drawing.Point(185, 282);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox6.Location = new System.Drawing.Point(247, 347);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(35, 36);
+            this.pictureBox6.Size = new System.Drawing.Size(47, 44);
             this.pictureBox6.TabIndex = 57;
             this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = global::Control_Escolar.Properties.Resources.calendario_mural1;
-            this.pictureBox5.Location = new System.Drawing.Point(187, 103);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox5.Location = new System.Drawing.Point(249, 127);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(42, 38);
+            this.pictureBox5.Size = new System.Drawing.Size(45, 47);
             this.pictureBox5.TabIndex = 56;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
             this.pictureBox4.Image = global::Control_Escolar.Properties.Resources.carta_de_barras;
-            this.pictureBox4.Location = new System.Drawing.Point(181, 463);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox4.Location = new System.Drawing.Point(241, 570);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(39, 36);
+            this.pictureBox4.Size = new System.Drawing.Size(52, 44);
             this.pictureBox4.TabIndex = 54;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.trabajo_en_equipo__1_;
-            this.pictureBox3.Location = new System.Drawing.Point(185, 188);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(247, 231);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(44, 36);
+            this.pictureBox3.Size = new System.Drawing.Size(47, 44);
             this.pictureBox3.TabIndex = 53;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Control_Escolar.Properties.Resources.carpeta;
-            this.pictureBox2.Location = new System.Drawing.Point(184, 557);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(245, 686);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 37);
+            this.pictureBox2.Size = new System.Drawing.Size(48, 46);
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.logo_esc;
-            this.pictureBox1.Location = new System.Drawing.Point(546, 103);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(728, 127);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 93);
+            this.pictureBox1.Size = new System.Drawing.Size(193, 114);
             this.pictureBox1.TabIndex = 51;
             this.pictureBox1.TabStop = false;
             // 
             // principal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 623);
+            this.ClientSize = new System.Drawing.Size(1046, 767);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.pictureBox5);
@@ -251,6 +257,7 @@
             this.Controls.Add(this.btnBitacora);
             this.Controls.Add(this.lblBienvenida);
             this.Controls.Add(this.btnCerrar);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

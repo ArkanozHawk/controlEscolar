@@ -18,6 +18,10 @@ namespace Control_Escolar
         public Form3()
         {
             InitializeComponent();
+            var materialSkinManager = MaterialSkinManager.Instance;
+            materialSkinManager.AddFormToManage(this);
+            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.LightBlue400, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
         }
 
         conexion obj = new conexion();
@@ -78,6 +82,11 @@ namespace Control_Escolar
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+        }
+
+        private void btnInscripcion_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
