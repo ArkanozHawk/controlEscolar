@@ -89,6 +89,12 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="CadaGrupo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CadaGrupo.Designer.cs">
+      <DependentUpon>CadaGrupo.cs</DependentUpon>
+    </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CadaGrupo.resx">
+      <DependentUpon>CadaGrupo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -278,6 +287,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-watch_icon-icons.com_74456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-watch_icon-icons.com_74456 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye-watch_icon-icons.com_74456 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-exportar-pdf-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\450_1000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\k15615156.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

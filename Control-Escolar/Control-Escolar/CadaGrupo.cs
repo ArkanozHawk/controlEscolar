@@ -13,9 +13,9 @@ using MaterialSkin.Controls;
 
 namespace Control_Escolar
 {
-    public partial class Buscar : MaterialForm
+    public partial class CadaGrupo : MaterialForm
     {
-        public Buscar()
+        public CadaGrupo()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -38,24 +38,12 @@ namespace Control_Escolar
             Application.Run(new principal());
         }
 
-        public static void ThreadBuscar()
-
-        {
-            Application.Run(new Buscar());
-        }
-
-        public static void ThreadAlumno()
-
-        {
-            Application.Run(new Alumno());
-        }
-
-        private void Buscar_Load(object sender, EventArgs e)
+        private void CadaGrupo_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
             int idAccess = sesion.idAcceso;
@@ -69,7 +57,7 @@ namespace Control_Escolar
             this.Close();
         }
 
-        private void BtnPrincipal_Click(object sender, EventArgs e)
+        private void btnPrincipal_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
             pantalla.Start();
@@ -77,20 +65,9 @@ namespace Control_Escolar
             this.Close();
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        private void GenerarPDF_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
 
-        private void BtnInscripcion_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
         }
     }
 }
