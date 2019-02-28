@@ -43,7 +43,7 @@ namespace Control_Escolar
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.LightBlue400, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
         }
 
         private void bitacora_Load(object sender, EventArgs e)
@@ -86,83 +86,7 @@ namespace Control_Escolar
 
         private void GenerarPDF_Click(object sender, EventArgs e)
         {
-
             exportardata(dataGridView1, "test");
-            // Le colocamos el título y el autor
-            // **Nota: Esto no será visible en el documento
-
-
-            //  iTextSharp.text.Font _standardFont = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
-
-            // Creamos una tabla que contendrá el nombre, apellido y país 
-            // de nuestros visitante.
-            // PdfPTable tblPrueba = new PdfPTable(4);
-            // tblPrueba.WidthPercentage = 100;
-            //tblPrueba.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
-
-            /* Configuramos el título de las columnas de la tabla
-            PdfPCell clusuario = new PdfPCell(new Phrase("Usuario", _standardFont));
-            clusuario.BorderWidth = 0;
-            clusuario.BorderWidthBottom = 0.75f;
-
-            PdfPCell clfecha = new PdfPCell(new Phrase("Fecha", _standardFont));
-            clfecha.BorderWidth = 0;
-            clfecha.BorderWidthBottom = 0.75f;
-
-            PdfPCell clhoraent = new PdfPCell(new Phrase("Hora de Entrada", _standardFont));
-            clhoraent.BorderWidth = 0;
-            clhoraent.BorderWidthBottom = 0.75f;
-
-            PdfPCell clhorasal = new PdfPCell(new Phrase("Hora de Salida", _standardFont));
-            clhorasal.BorderWidth = 0;
-            clhorasal.BorderWidthBottom = 0.75f;
-
-            // Añadimos las celdas a la tabla
-            tblPrueba.AddCell(clusuario);
-            tblPrueba.AddCell(clfecha);
-            tblPrueba.AddCell(clhoraent);
-            tblPrueba.AddCell(clhorasal);
-
-            // Llenamos la tabla con información
-            clusuario = new PdfPCell(new Phrase("Mayolo", _standardFont));
-            clusuario.BorderWidth = 0;
-
-            clfecha = new PdfPCell(new Phrase("Suaste", _standardFont));
-            clfecha.BorderWidth = 0;
-
-            clhoraent = new PdfPCell(new Phrase("Puerto Rico", _standardFont));
-            clhoraent.BorderWidth = 0;
-
-            clhorasal = new PdfPCell(new Phrase("Puerto Rico", _standardFont));
-            clhorasal.BorderWidth = 0;
-
-            // Añadimos las celdas a la tabla
-            tblPrueba.AddCell(clusuario);
-            tblPrueba.AddCell(clfecha);
-            tblPrueba.AddCell(clhoraent);
-            tblPrueba.AddCell(clhorasal);
-
-            clusuario = new PdfPCell(new Phrase("Martha", _standardFont));
-            clusuario.BorderWidth = 0;
-
-            clfecha = new PdfPCell(new Phrase("Teran", _standardFont));
-            clfecha.BorderWidth = 0;
-
-            clhoraent = new PdfPCell(new Phrase("México", _standardFont));
-            clhoraent.BorderWidth = 0;
-
-            clhorasal = new PdfPCell(new Phrase("México", _standardFont));
-            clhorasal.BorderWidth = 0;
-
-            tblPrueba.AddCell(clusuario);
-            tblPrueba.AddCell(clfecha);
-            tblPrueba.AddCell(clhoraent);
-            tblPrueba.AddCell(clhorasal);
-
-            // Finalmente, añadimos la tabla al documento PDF y cerramos el documento
-            doc.Add(tblPrueba);/
-
-            */
 
         }
 
@@ -179,8 +103,7 @@ namespace Control_Escolar
             login.Start();
             this.Close();
         }
-
-        public void exportardata(DataGridView dgw , string filename)
+        public void exportardata(DataGridView dgw, string filename)
         {
 
             BaseFont bf = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1250, BaseFont.EMBEDDED);
@@ -200,7 +123,7 @@ namespace Control_Escolar
 
             int row = dataGridView1.Rows.Count;
             int cell2 = dataGridView1.Rows[1].Cells.Count;
-            for (int i = 0; i < row ; i++)
+            for (int i = 0; i < row; i++)
             {
                 for (int j = 0; j < cell2; j++)
                 {
@@ -237,35 +160,35 @@ namespace Control_Escolar
                 parrafo2.SpacingAfter = 0;
                 parrafo2.Alignment = 1; //0-Left, 1 middle,2 Right
                 pdfDoc.Add(parrafo2);
-                
+
                 var parrafo3 = new Paragraph("        Bitacora de Inicio de Sesión");
-               
+
                 parrafo3.Alignment = 1; //0-Left, 1 middle,2 Right
                 pdfDoc.Add(parrafo3);
-                
+
                 var parrafo4 = new Paragraph("        Vicente Guerrero 49 , Barrios Historicos , Acapulco Guerrero");
-               
+
                 parrafo4.Alignment = 1; //0-Left, 1 middle,2 Right
                 pdfDoc.Add(parrafo4);
-                
+
                 var parrafo5 = new Paragraph("    Clave:12DPT0003N       Nivel: Primaria");
                 parrafo5.Alignment = 1; //0-Left, 1 middle,2 Right
 
 
                 pdfDoc.Add(parrafo5);
                 pdfDoc.Add(Chunk.NEWLINE);
-                
-       
-             
 
 
-               
-
-               
 
 
-             
-               
+
+
+
+
+
+
+
+
                 MessageBox.Show("Done");
                 // Abrimos el archivo  doc.Open();
 
@@ -276,13 +199,13 @@ namespace Control_Escolar
                 // Escribimos el encabezamiento en el documento
 
 
-                
+
                 pdfDoc.Add(pdftable);
                 pdfDoc.Close();
                 stream.Close();
 
             }
         }
-    }
-    }
 
+    }
+}

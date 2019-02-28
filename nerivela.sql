@@ -26,6 +26,7 @@ CREATE TABLE bitacora
 (
 	idAcceso int not null auto_increment,
 	Usuario varchar(20),
+    Fecha date,
 	HoraEntrada text,
     HoraSalida text,
     PRIMARY KEY (idAcceso)
