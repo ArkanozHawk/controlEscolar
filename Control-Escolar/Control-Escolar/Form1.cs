@@ -33,12 +33,27 @@ namespace Control_Escolar
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
         }
 
         conexion obj = new conexion();
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
+
+        private void txtUsuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void Titulo_Click(object sender, EventArgs e)
         {
@@ -59,8 +74,8 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtContra.Text;
 
-            string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
-            //string conexion = "server=localhost;uid=root;database=nerivela";
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT COUNT(*) FROM personal where usuario = '"+ usuario + "' and password = '"+ password +"';";
 
             int resultado = obj.Consul(conexion, query);

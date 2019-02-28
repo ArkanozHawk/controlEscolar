@@ -30,25 +30,37 @@ namespace Control_Escolar
             Application.Run(new bitacora());
         }
 
+        public static void ThreadAlumno()
+
+        {
+            Application.Run(new Alumno());
+        }
+
+        public static void ThreadGrupo()
+
+        {
+            Application.Run(new Grupos());
+        }
+
         public principal()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
             string user = sesion.Usuario;
             //MessageBox.Show("Hola "+ user + " Bienvenido al Control Escolar");
             string entrada = sesion.HoraEntrada;
-            lblBienvenida.Text = "Hola " + user + " Bienvenido al Control Escolar\nHora de Entrada: "+ entrada + "";
+            lblBienvenida.Text = "Hola " + user + " \nBienvenido al Control Escolar\nTu hora de entrada fue a las: "+ entrada + "";
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
             int idAccess = sesion.idAcceso;
-            string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
-            //string conexion = "server=localhost;uid=root;database=nerivela";
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            string conexion = "server=localhost;uid=root;database=nerivela";
             string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
             obj.insBitacora(conexion, inserta_bitacora);
             System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
@@ -66,6 +78,22 @@ namespace Control_Escolar
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBitacora));
             pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void btnAlumnos_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
+            pantalla1.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void BtnGrupos_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGrupo));
+            pantalla1.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
         }
