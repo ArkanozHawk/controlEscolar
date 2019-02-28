@@ -45,12 +45,52 @@ namespace Control_Escolar
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Grey700, Primary.Grey900, Primary.Grey900, Accent.LightBlue200, TextShade.WHITE);
+            materialSkinManager.ColorScheme = new ColorScheme(Primary.Blue700, Primary.LightBlue400, Primary.Blue700, Accent.LightBlue200, TextShade.WHITE);
         }
 
         conexion obj = new conexion();
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
+
+        private void txtTel_Validating(object sender, CancelEventArgs e)
+        {
+            int num2;
+            if (!int.TryParse(txtTel.Text, out num2))
+            {
+                errorProvider1.SetError(txtTel, "Ingesar el telefono en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtTel, "");
+            }
+        }
+
+        private void txtCP_Validating_1(object sender, CancelEventArgs e)
+        {
+            int num1;
+            if (!int.TryParse(txtCP.Text, out num1))
+            {
+                errorProvider1.SetError(txtCP, "Ingesar el CP en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtCP, "");
+            }
+        }
+
+        private void txtNum_Validating(object sender, CancelEventArgs e)
+        {
+            int num;
+            if (!int.TryParse(txtNum.Text, out num))
+            {
+                errorProvider1.SetError(txtNum, "Ingesar el dato en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtNum, "");
+            }
+        }
+
 
         private void txtEmail_Validating(object sender, CancelEventArgs e)
         {
@@ -96,6 +136,7 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtcontra.Text;
 
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "insert into personal (nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password) " +
                 "values('" + nombre + "','" + ApellidoP + "','" + ApellidoM + "','" + calle + "','" + colonia + "','" + numExt + "','" + cp + "','" + telefono + "','" + email + "','" + profesion + "','" + cargo + "','" + usuario + "','" + password + "');";
@@ -108,7 +149,7 @@ namespace Control_Escolar
             {
                 MessageBox.Show("Datos ingresados Correctamente");
             }
-            ValidarCampos();
+            
         }
 
         private bool ValidarCampos()
@@ -123,62 +164,62 @@ namespace Control_Escolar
             if (txtcontra.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Contraseña");
+                errorProvider1.SetError(txtcontra, "Ingresar Contraseña");
             }
             if (txtNombre.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Nombre");
+                errorProvider1.SetError(txtNombre, "Ingresar Nombre");
             }
             if (txtApPat.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Paterno");
+                errorProvider1.SetError(txtApPat, "Ingresar Apellido Paterno");
             }
             if (txtApMat.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Apellido Materno");
+                errorProvider1.SetError(txtApMat, "Ingresar Apellido Materno");
             }
             if (txtCalle.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Calle");
+                errorProvider1.SetError(txtCalle, "Ingresar Calle");
             }
             if (txtColonia.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Colonia");
+                errorProvider1.SetError(txtColonia, "Ingresar Colonia");
             }
             if (txtNum.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Numero Exterior");
+                errorProvider1.SetError(txtNum, "Ingresar Numero Exterior");
             }
             if (txtCP.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Codigo Postal");
+                errorProvider1.SetError(txtCP, "Ingresar Codigo Postal");
             }
             if (txtTel.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Telefono");
+                errorProvider1.SetError(txtTel, "Ingresar Telefono");
             }
             if (txtEmail.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Email");
+                errorProvider1.SetError(txtEmail, "Ingresar Email");
             }
             if (txtProf.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Profeción");
+                errorProvider1.SetError(txtProf, "Ingresar Profeción");
             }
             if (txtCargo.Text == "")
             {
                 ok = false;
-                errorProvider1.SetError(txtUsuario, "Ingresar Puesto");
+                errorProvider1.SetError(txtCargo, "Ingresar Puesto");
             }
             return ok;
         }
@@ -198,6 +239,7 @@ namespace Control_Escolar
             errorProvider1.SetError(txtProf, "");
             errorProvider1.SetError(txtCargo, "");
         }
+
 
     }
 }
