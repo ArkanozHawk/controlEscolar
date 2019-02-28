@@ -184,3 +184,6 @@ C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Contr
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
