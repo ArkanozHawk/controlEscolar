@@ -17,8 +17,8 @@ namespace Control_Escolar
     {
         MySqlCommand codigo = new MySqlCommand();
         MySqlConnection conectanos = new MySqlConnection();
-        //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
-        MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
+        MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
+        //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
         conexion obj = new conexion();
 
         public static void ThreadPrincipal()

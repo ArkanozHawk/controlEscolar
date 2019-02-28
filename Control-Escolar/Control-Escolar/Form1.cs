@@ -59,8 +59,8 @@ namespace Control_Escolar
             usuario = txtUsuario.Text;
             password = txtContra.Text;
 
-            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
-            string conexion = "server=localhost;uid=root;database=nerivela";
+            string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            //string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT COUNT(*) FROM personal where usuario = '"+ usuario + "' and password = '"+ password +"';";
 
             int resultado = obj.Consul(conexion, query);

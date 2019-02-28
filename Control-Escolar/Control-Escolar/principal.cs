@@ -47,8 +47,8 @@ namespace Control_Escolar
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
             int idAccess = sesion.idAcceso;
-            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
-            string conexion = "server=localhost;uid=root;database=nerivela";
+            string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            //string conexion = "server=localhost;uid=root;database=nerivela";
             string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
             obj.insBitacora(conexion, inserta_bitacora);
             System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
