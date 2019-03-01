@@ -54,7 +54,6 @@ C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Da
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
-C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
@@ -184,3 +183,42 @@ C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Contr
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
