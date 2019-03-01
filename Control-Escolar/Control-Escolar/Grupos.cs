@@ -29,7 +29,7 @@ namespace Control_Escolar
             List<string> nombre = new List<string>();
             List<string> apellidoP = new List<string>();
             List<string> apellidoM = new List<string>();
-            nombre = sesion.nombre;
+            nombre = sesion.nombreU;
             apellidoP = sesion.apellidoP;
             apellidoM = sesion.apellidoM;
             lblMaestro1.Text = nombre[0] + " " + apellidoP[0] + " " + apellidoM[0];
