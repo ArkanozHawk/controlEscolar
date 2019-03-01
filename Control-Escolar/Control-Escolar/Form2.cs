@@ -127,5 +127,44 @@ namespace Control_Escolar
         {
 
         }
+
+        private void txtTelEme_Validating(object sender, CancelEventArgs e)
+        {
+            int num2;
+            if (!int.TryParse(txtTelEme.Text, out num2))
+            {
+                errorProvider1.SetError(txtTelEme, "Solo ingrese numero");
+            }
+            else
+            {
+                errorProvider1.SetError(txtTelEme, "");
+            }
+        }
+
+        private void txtNombre_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNombre_Validating(object sender, CancelEventArgs e)
+        {
+            if (txtNombre.Text == "")
+            {
+                if (this.txtNombre.Text.Length == 0)
+                    errorProvider1.SetError(this.txtNombre, "Ingrese el nombre");
+                else
+                    errorProvider1.SetError(this.txtNombre, "");
+            }
+        }
+
+        private void txtNombre_Validated(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
