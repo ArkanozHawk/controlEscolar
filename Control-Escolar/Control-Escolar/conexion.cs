@@ -298,10 +298,170 @@ namespace Control_Escolar
 
             }
 
+        }
+        public void inspadres(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                com.ExecuteNonQuery();
+                MessageBox.Show("Se ingresó datos padres");
+                return;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return;
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
+
+
+
+        }
+
+        public string Consultapadreshijos(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+           
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "0";
+
+            }
+
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                MySqlDataReader myReader = com.ExecuteReader();
+                myReader.Read();
+                string resultado = Convert.ToString(myReader["idpadres"]);
+                return resultado;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return "0";
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
 
 
 
 
         }
+
+        public void insalumnos(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                com.ExecuteNonQuery();
+                MessageBox.Show("Se ingresó datos alumno");
+                return;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return;
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
+
+
+
+        }
+
+
+
+
     }
-}
+    }

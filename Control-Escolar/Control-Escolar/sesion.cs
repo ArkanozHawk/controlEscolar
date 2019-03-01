@@ -17,5 +17,8 @@ namespace Control_Escolar
         public static List<string> nombre = new List<string>();
         public static List<string> apellidoP = new List<string>();
         public static List<string> apellidoM = new List<string>();
+        public static string fnac;
+        public static string nombre, AP, AM, Curp, calle, numero, Colonia, CP, LN,  telefono, Alergia;
+        public static int edad;
     }
 }
