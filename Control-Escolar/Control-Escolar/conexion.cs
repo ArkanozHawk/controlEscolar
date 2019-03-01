@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Data;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MySql.Data.Common;
+using MySql.Data.Types;
 using MySql.Data.MySqlClient;
 using System.Windows.Forms;
 
@@ -163,6 +166,74 @@ namespace Control_Escolar
                 MessageBox.Show(ex.Message);
 
                 return 0;
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
+
+
+
+
+
+        }
+
+        public void grupos(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                MySqlDataReader myReader = com.ExecuteReader();
+                //myReader.Read();
+                DataTable maestros = new DataTable();
+                maestros.Load(myReader);
+                List<string> nombre = new List<string>();
+                List<string> apellidoP = new List<string>();
+                List<string> apellidoM = new List<string>();
+                foreach (DataRow row in maestros.Rows)
+                {
+                    nombre.Add(row["nombre"].ToString());
+                    apellidoP.Add(row["apellidoP"].ToString());
+                    apellidoM.Add(row["apellidoM"].ToString());
+                }
+                sesion.nombre = nombre;
+                sesion.apellidoP = apellidoP;
+                sesion.apellidoM = apellidoM;
+                return;
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return;
             }
             finally
             {
