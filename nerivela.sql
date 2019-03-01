@@ -43,8 +43,6 @@ CREATE TABLE Alumno
     numExt varchar(5),
     cp varchar(5),
     telEmer varchar(10),
-    grado int(1),
-    grupo varchar(1),
     lugNac varchar(30),
     FechNac date,
     CURP varchar(20) unique,
@@ -73,6 +71,14 @@ CREATE TABLE Materias
     Calificacion decimal(2,2),
     PRIMARY KEY (idMaterias)
     /*Forent Key(Fk_idGrupos)*/
+);
+
+CREATE TABLE Calificaciones
+(
+	idCalificaciones int(11) NOT NULL auto_increment,
+	CalificacionMen decimal(2,2),
+    CalificacionTri decimal(2,2),
+     PRIMARY KEY (idCalificaciones),
 );
 
 CREATE TABLE Grupos
