@@ -221,7 +221,7 @@ namespace Control_Escolar
                     apellidoP.Add(row["apellidoP"].ToString());
                     apellidoM.Add(row["apellidoM"].ToString());
                 }
-                sesion.nombre = nombre;
+                sesion.nombreU = nombre;
                 sesion.apellidoP = apellidoP;
                 sesion.apellidoM = apellidoM;
                 return;
