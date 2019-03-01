@@ -278,3 +278,11 @@ __pycache__/
 Control-Escolar/.vs/Control-Escolar/v15/.suo
 Control-Escolar/.vs/Control-Escolar/v15/Server/sqlite3/storage.ide-shm
 Control-Escolar/.vs/Control-Escolar/v15/.suo
+Control-Escolar/Control-Escolar/obj/Debug/Control-Escolar.csprojAssemblyReference.cache
+Control-Escolar/.vs/Control-Escolar/v15/.suo
+*.ide-shm
+*.ide-wal
+*.xml
+*.txt
+*.Cache
+*.cache

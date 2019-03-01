@@ -54,7 +54,6 @@ C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Da
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
-C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
@@ -213,3 +212,13 @@ C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\
 C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
 C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
