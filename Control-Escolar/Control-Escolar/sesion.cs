@@ -14,5 +14,9 @@ namespace Control_Escolar
         public static string Password;
         public static string HoraEntrada;
         public static int idAcceso;
+        public static string fnac;
+        public static string nombre, AP, AM, Curp, calle, numero, Colonia, CP, LN,  telefono, Alergia;
+        public static int edad;
+
     }
 }
