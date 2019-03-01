@@ -23,6 +23,21 @@ namespace Control_Escolar
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string posicion = "SELECT * FROM Maestros;";
+            obj.grupos(conexion, posicion);
+            List<string> nombre = new List<string>();
+            List<string> apellidoP = new List<string>();
+            List<string> apellidoM = new List<string>();
+            nombre = sesion.nombre;
+            apellidoP = sesion.apellidoP;
+            apellidoM = sesion.apellidoM;
+            lblMaestro1.Text = nombre[0] + " " + apellidoP[0] + " " + apellidoM[0];
+            lblMaestro2.Text = nombre[1] + " " + apellidoP[1] + " " + apellidoM[1];
+            lblMaestro3.Text = nombre[2] + " " + apellidoP[2] + " " + apellidoM[2];
+            lblMaestro4.Text = nombre[3] + " " + apellidoP[3] + " " + apellidoM[3];
+            lblMaestro5.Text = nombre[4] + " " + apellidoP[4] + " " + apellidoM[4];
+            lblMaestro6.Text = nombre[5] + " " + apellidoP[5] + " " + apellidoM[5];
         }
 
         conexion obj = new conexion();
@@ -128,6 +143,11 @@ namespace Control_Escolar
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+        }
+
+        private void materialLabel11_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
