@@ -28,10 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtGrupo = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtGrado = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.components = new System.ComponentModel.Container();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.materialSingleLineTextField5 = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label5 = new System.Windows.Forms.Label();
@@ -62,68 +59,12 @@
             this.txtNum = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtCalle = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnSiguiente = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.groupBox4.SuspendLayout();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox5.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.txtGrupo);
-            this.groupBox4.Controls.Add(this.txtGrado);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox4.Location = new System.Drawing.Point(528, 325);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox4.Size = new System.Drawing.Size(304, 151);
-            this.groupBox4.TabIndex = 52;
-            this.groupBox4.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label2.Location = new System.Drawing.Point(112, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 26);
-            this.label2.TabIndex = 44;
-            this.label2.Text = "Escuela";
-            // 
-            // txtGrupo
-            // 
-            this.txtGrupo.Depth = 0;
-            this.txtGrupo.Hint = "Grupo";
-            this.txtGrupo.Location = new System.Drawing.Point(15, 93);
-            this.txtGrupo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtGrupo.Name = "txtGrupo";
-            this.txtGrupo.PasswordChar = '\0';
-            this.txtGrupo.SelectedText = "";
-            this.txtGrupo.SelectionLength = 0;
-            this.txtGrupo.SelectionStart = 0;
-            this.txtGrupo.Size = new System.Drawing.Size(265, 23);
-            this.txtGrupo.TabIndex = 35;
-            this.txtGrupo.UseSystemPasswordChar = false;
-            // 
-            // txtGrado
-            // 
-            this.txtGrado.Depth = 0;
-            this.txtGrado.Hint = "Grado";
-            this.txtGrado.Location = new System.Drawing.Point(13, 40);
-            this.txtGrado.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtGrado.Name = "txtGrado";
-            this.txtGrado.PasswordChar = '\0';
-            this.txtGrado.SelectedText = "";
-            this.txtGrado.SelectionLength = 0;
-            this.txtGrado.SelectionStart = 0;
-            this.txtGrado.Size = new System.Drawing.Size(267, 23);
-            this.txtGrado.TabIndex = 34;
-            this.txtGrado.UseSystemPasswordChar = false;
             // 
             // groupBox5
             // 
@@ -138,7 +79,7 @@
             this.groupBox5.Location = new System.Drawing.Point(528, 72);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox5.Size = new System.Drawing.Size(304, 242);
+            this.groupBox5.Size = new System.Drawing.Size(304, 290);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
             // 
@@ -146,7 +87,7 @@
             // 
             this.materialSingleLineTextField5.Depth = 0;
             this.materialSingleLineTextField5.Hint = "Edad";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(16, 125);
+            this.materialSingleLineTextField5.Location = new System.Drawing.Point(13, 152);
             this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
             this.materialSingleLineTextField5.PasswordChar = '\0';
@@ -175,7 +116,7 @@
             // 
             this.txtLugarNac.Depth = 0;
             this.txtLugarNac.Hint = "Lugar de nacimiento";
-            this.txtLugarNac.Location = new System.Drawing.Point(13, 86);
+            this.txtLugarNac.Location = new System.Drawing.Point(13, 98);
             this.txtLugarNac.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtLugarNac.Name = "txtLugarNac";
             this.txtLugarNac.PasswordChar = '\0';
@@ -190,14 +131,14 @@
             // 
             this.txtAlergias.Depth = 0;
             this.txtAlergias.Hint = "Alergias";
-            this.txtAlergias.Location = new System.Drawing.Point(15, 210);
+            this.txtAlergias.Location = new System.Drawing.Point(15, 253);
             this.txtAlergias.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAlergias.Name = "txtAlergias";
             this.txtAlergias.PasswordChar = '\0';
             this.txtAlergias.SelectedText = "";
             this.txtAlergias.SelectionLength = 0;
             this.txtAlergias.SelectionStart = 0;
-            this.txtAlergias.Size = new System.Drawing.Size(265, 23);
+            this.txtAlergias.Size = new System.Drawing.Size(262, 23);
             this.txtAlergias.TabIndex = 35;
             this.txtAlergias.UseSystemPasswordChar = false;
             // 
@@ -220,7 +161,7 @@
             // 
             this.txtTelEme.Depth = 0;
             this.txtTelEme.Hint = "Teléfono de emergencia";
-            this.txtTelEme.Location = new System.Drawing.Point(16, 169);
+            this.txtTelEme.Location = new System.Drawing.Point(13, 200);
             this.txtTelEme.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelEme.Name = "txtTelEme";
             this.txtTelEme.PasswordChar = '\0';
@@ -230,6 +171,7 @@
             this.txtTelEme.Size = new System.Drawing.Size(264, 23);
             this.txtTelEme.TabIndex = 34;
             this.txtTelEme.UseSystemPasswordChar = false;
+            this.txtTelEme.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelEme_Validating);
             // 
             // groupBox2
             // 
@@ -320,6 +262,9 @@
             this.txtNombre.Size = new System.Drawing.Size(262, 23);
             this.txtNombre.TabIndex = 34;
             this.txtNombre.UseSystemPasswordChar = false;
+            this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
+            this.txtNombre.Validated += new System.EventHandler(this.txtNombre_Validated);
+            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // columnHeader1
             // 
@@ -525,6 +470,10 @@
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.BtnSiguiente_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -537,22 +486,20 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.btnCerrar);
-            this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox2);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Alumno";
             this.Text = "Alumnos";
             this.Load += new System.EventHandler(this.Form2_Load);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -574,11 +521,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtLugarNac;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTelEme;
         private MaterialSkin.Controls.MaterialSingleLineTextField CURP;
-        private System.Windows.Forms.GroupBox groupBox4;
         private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField5;
-        private System.Windows.Forms.Label label2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtGrupo;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtGrado;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton Eliminar;
@@ -592,5 +535,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtNum;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtCalle;
         private MaterialSkin.Controls.MaterialRaisedButton btnSiguiente;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
