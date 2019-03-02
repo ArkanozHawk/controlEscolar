@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MaterialSkin;
 using MaterialSkin.Controls;
+//using ValidarDatos;
 
 namespace Control_Escolar
 {

@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
+//using ValidarDatos;
 
 namespace Control_Escolar
 {
@@ -25,6 +26,7 @@ namespace Control_Escolar
         }
 
         conexion obj = new conexion();
+        //Validar obj = new Validar();
 
         public static void ThreadProc()
 
@@ -184,11 +186,8 @@ namespace Control_Escolar
                 sesion.edad = edad1;
             }
 
-            else { MessageBox.Show("no coincide edad con fecha de nacimiento "); }
-
-
-
-
+            else { MessageBox.Show("nNo coincide edad con fecha de nacimiento "); }
+            
         }
 
 
@@ -196,26 +195,20 @@ namespace Control_Escolar
         {
             string  Nombre_T, AP_T, AM_T, Calle_T, Numero_T, Colonia_T, CP_T, Telefono_T, Celular_T, Profesion_T, LT_T;
             sesion.nombre = txtNombre_A.Text;
-           sesion. AP = txtApPat_A.Text;
+            sesion. AP = txtApPat_A.Text;
             sesion.AM = txtApMat_A.Text;
             sesion.Curp = txtCURP_A.Text;
             sesion.calle = txtNum_A.Text;
             sesion.numero = txtNum_A.Text;
-           sesion. Colonia = txtCP_A.Text;
-           sesion. CP = txtCP_A.Text;
-           sesion. LN = txtLugarNac_A.Text;
+            sesion. Colonia = txtCP_A.Text;
+            sesion. CP = txtCP_A.Text;
+            sesion. LN = txtLugarNac_A.Text;
             
             sesion.edad = Convert.ToInt32(txtEdad_A.Text);
 
             sesion.telefono = txtNombre_A.Text;
-           sesion. Alergia = txtAlergias_A.Text;
+            sesion. Alergia = txtAlergias_A.Text;
            
-
-
-
-
-
-
         }
 
         private void txtApPat_A_Validating(object sender, CancelEventArgs e)
