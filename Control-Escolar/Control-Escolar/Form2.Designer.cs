@@ -30,18 +30,18 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.materialSingleLineTextField5 = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtEdad_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtLugarNac = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtAlergias = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtLugarNac_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtAlergias_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtFeNac = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtTelEme = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtTelEme_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.CURP = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtApMat = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtApPat = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCURP_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtApMat_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtApPat_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtNombre = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtNombre_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -53,11 +53,11 @@
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.txtCP = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtColonia = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCP_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtColonia_C = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label3 = new System.Windows.Forms.Label();
-            this.txtNum = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtCalle = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtNum_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.txtCalle_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnSiguiente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox5.SuspendLayout();
@@ -69,12 +69,12 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox5.Controls.Add(this.materialSingleLineTextField5);
+            this.groupBox5.Controls.Add(this.txtEdad_A);
             this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.txtLugarNac);
-            this.groupBox5.Controls.Add(this.txtAlergias);
+            this.groupBox5.Controls.Add(this.txtLugarNac_A);
+            this.groupBox5.Controls.Add(this.txtAlergias_A);
             this.groupBox5.Controls.Add(this.txtFeNac);
-            this.groupBox5.Controls.Add(this.txtTelEme);
+            this.groupBox5.Controls.Add(this.txtTelEme_A);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox5.Location = new System.Drawing.Point(528, 72);
             this.groupBox5.Name = "groupBox5";
@@ -83,21 +83,22 @@
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
             // 
-            // materialSingleLineTextField5
+            // txtEdad_A
             // 
-            this.materialSingleLineTextField5.Depth = 0;
-            this.materialSingleLineTextField5.Hint = "Edad";
-            this.materialSingleLineTextField5.Location = new System.Drawing.Point(13, 152);
-            this.materialSingleLineTextField5.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialSingleLineTextField5.Name = "materialSingleLineTextField5";
-            this.materialSingleLineTextField5.PasswordChar = '\0';
-            this.materialSingleLineTextField5.SelectedText = "";
-            this.materialSingleLineTextField5.SelectionLength = 0;
-            this.materialSingleLineTextField5.SelectionStart = 0;
-            this.materialSingleLineTextField5.Size = new System.Drawing.Size(264, 23);
-            this.materialSingleLineTextField5.TabIndex = 45;
-            this.materialSingleLineTextField5.UseSystemPasswordChar = false;
-            this.materialSingleLineTextField5.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
+            this.txtEdad_A.Depth = 0;
+            this.txtEdad_A.Hint = "Edad";
+            this.txtEdad_A.Location = new System.Drawing.Point(13, 152);
+            this.txtEdad_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtEdad_A.Name = "txtEdad_A";
+            this.txtEdad_A.PasswordChar = '\0';
+            this.txtEdad_A.SelectedText = "";
+            this.txtEdad_A.SelectionLength = 0;
+            this.txtEdad_A.SelectionStart = 0;
+            this.txtEdad_A.Size = new System.Drawing.Size(264, 23);
+            this.txtEdad_A.TabIndex = 45;
+            this.txtEdad_A.UseSystemPasswordChar = false;
+            this.txtEdad_A.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
+            this.txtEdad_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtEdad_A_Validating);
             // 
             // label5
             // 
@@ -112,40 +113,42 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Información del Alumno";
             // 
-            // txtLugarNac
+            // txtLugarNac_A
             // 
-            this.txtLugarNac.Depth = 0;
-            this.txtLugarNac.Hint = "Lugar de nacimiento";
-            this.txtLugarNac.Location = new System.Drawing.Point(13, 98);
-            this.txtLugarNac.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtLugarNac.Name = "txtLugarNac";
-            this.txtLugarNac.PasswordChar = '\0';
-            this.txtLugarNac.SelectedText = "";
-            this.txtLugarNac.SelectionLength = 0;
-            this.txtLugarNac.SelectionStart = 0;
-            this.txtLugarNac.Size = new System.Drawing.Size(267, 23);
-            this.txtLugarNac.TabIndex = 35;
-            this.txtLugarNac.UseSystemPasswordChar = false;
+            this.txtLugarNac_A.Depth = 0;
+            this.txtLugarNac_A.Hint = "Lugar de nacimiento";
+            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 98);
+            this.txtLugarNac_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtLugarNac_A.Name = "txtLugarNac_A";
+            this.txtLugarNac_A.PasswordChar = '\0';
+            this.txtLugarNac_A.SelectedText = "";
+            this.txtLugarNac_A.SelectionLength = 0;
+            this.txtLugarNac_A.SelectionStart = 0;
+            this.txtLugarNac_A.Size = new System.Drawing.Size(267, 23);
+            this.txtLugarNac_A.TabIndex = 35;
+            this.txtLugarNac_A.UseSystemPasswordChar = false;
+            this.txtLugarNac_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtLugarNac_A_Validating);
             // 
-            // txtAlergias
+            // txtAlergias_A
             // 
-            this.txtAlergias.Depth = 0;
-            this.txtAlergias.Hint = "Alergias";
-            this.txtAlergias.Location = new System.Drawing.Point(15, 253);
-            this.txtAlergias.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtAlergias.Name = "txtAlergias";
-            this.txtAlergias.PasswordChar = '\0';
-            this.txtAlergias.SelectedText = "";
-            this.txtAlergias.SelectionLength = 0;
-            this.txtAlergias.SelectionStart = 0;
-            this.txtAlergias.Size = new System.Drawing.Size(262, 23);
-            this.txtAlergias.TabIndex = 35;
-            this.txtAlergias.UseSystemPasswordChar = false;
+            this.txtAlergias_A.Depth = 0;
+            this.txtAlergias_A.Hint = "Alergias";
+            this.txtAlergias_A.Location = new System.Drawing.Point(15, 253);
+            this.txtAlergias_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtAlergias_A.Name = "txtAlergias_A";
+            this.txtAlergias_A.PasswordChar = '\0';
+            this.txtAlergias_A.SelectedText = "";
+            this.txtAlergias_A.SelectionLength = 0;
+            this.txtAlergias_A.SelectionStart = 0;
+            this.txtAlergias_A.Size = new System.Drawing.Size(262, 23);
+            this.txtAlergias_A.TabIndex = 35;
+            this.txtAlergias_A.UseSystemPasswordChar = false;
+            this.txtAlergias_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtAlergias_A_Validating);
             // 
             // txtFeNac
             // 
             this.txtFeNac.Depth = 0;
-            this.txtFeNac.Hint = "Fecha de nacimiento  dd/mm/aaaa";
+            this.txtFeNac.Hint = "Fecha de nacimiento  aaaa/mm/dd";
             this.txtFeNac.Location = new System.Drawing.Point(13, 43);
             this.txtFeNac.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtFeNac.Name = "txtFeNac";
@@ -156,31 +159,32 @@
             this.txtFeNac.Size = new System.Drawing.Size(267, 23);
             this.txtFeNac.TabIndex = 34;
             this.txtFeNac.UseSystemPasswordChar = false;
+            this.txtFeNac.Validating += new System.ComponentModel.CancelEventHandler(this.txtFeNac_Validating);
             // 
-            // txtTelEme
+            // txtTelEme_A
             // 
-            this.txtTelEme.Depth = 0;
-            this.txtTelEme.Hint = "Teléfono de emergencia";
-            this.txtTelEme.Location = new System.Drawing.Point(13, 200);
-            this.txtTelEme.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtTelEme.Name = "txtTelEme";
-            this.txtTelEme.PasswordChar = '\0';
-            this.txtTelEme.SelectedText = "";
-            this.txtTelEme.SelectionLength = 0;
-            this.txtTelEme.SelectionStart = 0;
-            this.txtTelEme.Size = new System.Drawing.Size(264, 23);
-            this.txtTelEme.TabIndex = 34;
-            this.txtTelEme.UseSystemPasswordChar = false;
-            this.txtTelEme.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelEme_Validating);
+            this.txtTelEme_A.Depth = 0;
+            this.txtTelEme_A.Hint = "Teléfono de emergencia";
+            this.txtTelEme_A.Location = new System.Drawing.Point(13, 200);
+            this.txtTelEme_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtTelEme_A.Name = "txtTelEme_A";
+            this.txtTelEme_A.PasswordChar = '\0';
+            this.txtTelEme_A.SelectedText = "";
+            this.txtTelEme_A.SelectionLength = 0;
+            this.txtTelEme_A.SelectionStart = 0;
+            this.txtTelEme_A.Size = new System.Drawing.Size(264, 23);
+            this.txtTelEme_A.TabIndex = 34;
+            this.txtTelEme_A.UseSystemPasswordChar = false;
+            this.txtTelEme_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelEme_Validating);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Controls.Add(this.CURP);
-            this.groupBox2.Controls.Add(this.txtApMat);
-            this.groupBox2.Controls.Add(this.txtApPat);
+            this.groupBox2.Controls.Add(this.txtCURP_A);
+            this.groupBox2.Controls.Add(this.txtApMat_A);
+            this.groupBox2.Controls.Add(this.txtApPat_A);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.txtNombre);
+            this.groupBox2.Controls.Add(this.txtNombre_A);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox2.Location = new System.Drawing.Point(200, 72);
             this.groupBox2.Name = "groupBox2";
@@ -189,51 +193,54 @@
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
             // 
-            // CURP
+            // txtCURP_A
             // 
-            this.CURP.Depth = 0;
-            this.CURP.Hint = "CURP";
-            this.CURP.Location = new System.Drawing.Point(12, 169);
-            this.CURP.MouseState = MaterialSkin.MouseState.HOVER;
-            this.CURP.Name = "CURP";
-            this.CURP.PasswordChar = '\0';
-            this.CURP.SelectedText = "";
-            this.CURP.SelectionLength = 0;
-            this.CURP.SelectionStart = 0;
-            this.CURP.Size = new System.Drawing.Size(265, 23);
-            this.CURP.TabIndex = 47;
-            this.CURP.UseSystemPasswordChar = false;
+            this.txtCURP_A.Depth = 0;
+            this.txtCURP_A.Hint = "CURP";
+            this.txtCURP_A.Location = new System.Drawing.Point(12, 169);
+            this.txtCURP_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCURP_A.Name = "txtCURP_A";
+            this.txtCURP_A.PasswordChar = '\0';
+            this.txtCURP_A.SelectedText = "";
+            this.txtCURP_A.SelectionLength = 0;
+            this.txtCURP_A.SelectionStart = 0;
+            this.txtCURP_A.Size = new System.Drawing.Size(265, 23);
+            this.txtCURP_A.TabIndex = 47;
+            this.txtCURP_A.UseSystemPasswordChar = false;
+            this.txtCURP_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCURP_A_Validating);
             // 
-            // txtApMat
+            // txtApMat_A
             // 
-            this.txtApMat.Depth = 0;
-            this.txtApMat.Hint = "Apellido Materno";
-            this.txtApMat.Location = new System.Drawing.Point(12, 125);
-            this.txtApMat.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtApMat.Name = "txtApMat";
-            this.txtApMat.PasswordChar = '\0';
-            this.txtApMat.SelectedText = "";
-            this.txtApMat.SelectionLength = 0;
-            this.txtApMat.SelectionStart = 0;
-            this.txtApMat.Size = new System.Drawing.Size(265, 23);
-            this.txtApMat.TabIndex = 46;
-            this.txtApMat.UseSystemPasswordChar = false;
+            this.txtApMat_A.Depth = 0;
+            this.txtApMat_A.Hint = "Apellido Materno";
+            this.txtApMat_A.Location = new System.Drawing.Point(12, 125);
+            this.txtApMat_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtApMat_A.Name = "txtApMat_A";
+            this.txtApMat_A.PasswordChar = '\0';
+            this.txtApMat_A.SelectedText = "";
+            this.txtApMat_A.SelectionLength = 0;
+            this.txtApMat_A.SelectionStart = 0;
+            this.txtApMat_A.Size = new System.Drawing.Size(265, 23);
+            this.txtApMat_A.TabIndex = 46;
+            this.txtApMat_A.UseSystemPasswordChar = false;
+            this.txtApMat_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtApMat_A_Validating);
             // 
-            // txtApPat
+            // txtApPat_A
             // 
-            this.txtApPat.Depth = 0;
-            this.txtApPat.Hint = "Apellido Paterno";
-            this.txtApPat.Location = new System.Drawing.Point(12, 86);
-            this.txtApPat.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtApPat.Name = "txtApPat";
-            this.txtApPat.PasswordChar = '\0';
-            this.txtApPat.SelectedText = "";
-            this.txtApPat.SelectionLength = 0;
-            this.txtApPat.SelectionStart = 0;
-            this.txtApPat.Size = new System.Drawing.Size(265, 23);
-            this.txtApPat.TabIndex = 45;
-            this.txtApPat.UseSystemPasswordChar = false;
-            this.txtApPat.Click += new System.EventHandler(this.txtApPat_Click);
+            this.txtApPat_A.Depth = 0;
+            this.txtApPat_A.Hint = "Apellido Paterno";
+            this.txtApPat_A.Location = new System.Drawing.Point(12, 86);
+            this.txtApPat_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtApPat_A.Name = "txtApPat_A";
+            this.txtApPat_A.PasswordChar = '\0';
+            this.txtApPat_A.SelectedText = "";
+            this.txtApPat_A.SelectionLength = 0;
+            this.txtApPat_A.SelectionStart = 0;
+            this.txtApPat_A.Size = new System.Drawing.Size(265, 23);
+            this.txtApPat_A.TabIndex = 45;
+            this.txtApPat_A.UseSystemPasswordChar = false;
+            this.txtApPat_A.Click += new System.EventHandler(this.txtApPat_Click);
+            this.txtApPat_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtApPat_A_Validating);
             // 
             // label1
             // 
@@ -248,23 +255,23 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Nombre Completo";
             // 
-            // txtNombre
+            // txtNombre_A
             // 
-            this.txtNombre.Depth = 0;
-            this.txtNombre.Hint = "Nombre(s)";
-            this.txtNombre.Location = new System.Drawing.Point(15, 43);
-            this.txtNombre.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.PasswordChar = '\0';
-            this.txtNombre.SelectedText = "";
-            this.txtNombre.SelectionLength = 0;
-            this.txtNombre.SelectionStart = 0;
-            this.txtNombre.Size = new System.Drawing.Size(262, 23);
-            this.txtNombre.TabIndex = 34;
-            this.txtNombre.UseSystemPasswordChar = false;
-            this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
-            this.txtNombre.Validated += new System.EventHandler(this.txtNombre_Validated);
-            this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
+            this.txtNombre_A.Depth = 0;
+            this.txtNombre_A.Hint = "Nombre(s)";
+            this.txtNombre_A.Location = new System.Drawing.Point(15, 43);
+            this.txtNombre_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtNombre_A.Name = "txtNombre_A";
+            this.txtNombre_A.PasswordChar = '\0';
+            this.txtNombre_A.SelectedText = "";
+            this.txtNombre_A.SelectionLength = 0;
+            this.txtNombre_A.SelectionStart = 0;
+            this.txtNombre_A.Size = new System.Drawing.Size(262, 23);
+            this.txtNombre_A.TabIndex = 34;
+            this.txtNombre_A.UseSystemPasswordChar = false;
+            this.txtNombre_A.Click += new System.EventHandler(this.txtNombre_Click);
+            this.txtNombre_A.Validated += new System.EventHandler(this.txtNombre_Validated);
+            this.txtNombre_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // columnHeader1
             // 
@@ -371,11 +378,11 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox3.Controls.Add(this.txtCP);
-            this.groupBox3.Controls.Add(this.txtColonia);
+            this.groupBox3.Controls.Add(this.txtCP_A);
+            this.groupBox3.Controls.Add(this.txtColonia_C);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.txtNum);
-            this.groupBox3.Controls.Add(this.txtCalle);
+            this.groupBox3.Controls.Add(this.txtNum_A);
+            this.groupBox3.Controls.Add(this.txtCalle_A);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox3.Location = new System.Drawing.Point(200, 282);
             this.groupBox3.Name = "groupBox3";
@@ -384,35 +391,37 @@
             this.groupBox3.TabIndex = 59;
             this.groupBox3.TabStop = false;
             // 
-            // txtCP
+            // txtCP_A
             // 
-            this.txtCP.Depth = 0;
-            this.txtCP.Hint = "Código Postal";
-            this.txtCP.Location = new System.Drawing.Point(32, 154);
-            this.txtCP.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtCP.Name = "txtCP";
-            this.txtCP.PasswordChar = '\0';
-            this.txtCP.SelectedText = "";
-            this.txtCP.SelectionLength = 0;
-            this.txtCP.SelectionStart = 0;
-            this.txtCP.Size = new System.Drawing.Size(245, 23);
-            this.txtCP.TabIndex = 46;
-            this.txtCP.UseSystemPasswordChar = false;
+            this.txtCP_A.Depth = 0;
+            this.txtCP_A.Hint = "Código Postal";
+            this.txtCP_A.Location = new System.Drawing.Point(32, 154);
+            this.txtCP_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCP_A.Name = "txtCP_A";
+            this.txtCP_A.PasswordChar = '\0';
+            this.txtCP_A.SelectedText = "";
+            this.txtCP_A.SelectionLength = 0;
+            this.txtCP_A.SelectionStart = 0;
+            this.txtCP_A.Size = new System.Drawing.Size(245, 23);
+            this.txtCP_A.TabIndex = 46;
+            this.txtCP_A.UseSystemPasswordChar = false;
+            this.txtCP_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_A_Validating);
             // 
-            // txtColonia
+            // txtColonia_C
             // 
-            this.txtColonia.Depth = 0;
-            this.txtColonia.Hint = "Colonia";
-            this.txtColonia.Location = new System.Drawing.Point(32, 118);
-            this.txtColonia.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtColonia.Name = "txtColonia";
-            this.txtColonia.PasswordChar = '\0';
-            this.txtColonia.SelectedText = "";
-            this.txtColonia.SelectionLength = 0;
-            this.txtColonia.SelectionStart = 0;
-            this.txtColonia.Size = new System.Drawing.Size(245, 23);
-            this.txtColonia.TabIndex = 45;
-            this.txtColonia.UseSystemPasswordChar = false;
+            this.txtColonia_C.Depth = 0;
+            this.txtColonia_C.Hint = "Colonia";
+            this.txtColonia_C.Location = new System.Drawing.Point(32, 118);
+            this.txtColonia_C.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtColonia_C.Name = "txtColonia_C";
+            this.txtColonia_C.PasswordChar = '\0';
+            this.txtColonia_C.SelectedText = "";
+            this.txtColonia_C.SelectionLength = 0;
+            this.txtColonia_C.SelectionStart = 0;
+            this.txtColonia_C.Size = new System.Drawing.Size(245, 23);
+            this.txtColonia_C.TabIndex = 45;
+            this.txtColonia_C.UseSystemPasswordChar = false;
+            this.txtColonia_C.Validating += new System.ComponentModel.CancelEventHandler(this.txtColonia_C_Validating);
             // 
             // label3
             // 
@@ -427,35 +436,37 @@
             this.label3.TabIndex = 44;
             this.label3.Text = "Dirección";
             // 
-            // txtNum
+            // txtNum_A
             // 
-            this.txtNum.Depth = 0;
-            this.txtNum.Hint = "Número";
-            this.txtNum.Location = new System.Drawing.Point(32, 83);
-            this.txtNum.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtNum.Name = "txtNum";
-            this.txtNum.PasswordChar = '\0';
-            this.txtNum.SelectedText = "";
-            this.txtNum.SelectionLength = 0;
-            this.txtNum.SelectionStart = 0;
-            this.txtNum.Size = new System.Drawing.Size(245, 23);
-            this.txtNum.TabIndex = 35;
-            this.txtNum.UseSystemPasswordChar = false;
+            this.txtNum_A.Depth = 0;
+            this.txtNum_A.Hint = "Número";
+            this.txtNum_A.Location = new System.Drawing.Point(32, 83);
+            this.txtNum_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtNum_A.Name = "txtNum_A";
+            this.txtNum_A.PasswordChar = '\0';
+            this.txtNum_A.SelectedText = "";
+            this.txtNum_A.SelectionLength = 0;
+            this.txtNum_A.SelectionStart = 0;
+            this.txtNum_A.Size = new System.Drawing.Size(245, 23);
+            this.txtNum_A.TabIndex = 35;
+            this.txtNum_A.UseSystemPasswordChar = false;
+            this.txtNum_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_A_Validating);
             // 
-            // txtCalle
+            // txtCalle_A
             // 
-            this.txtCalle.Depth = 0;
-            this.txtCalle.Hint = "Calle";
-            this.txtCalle.Location = new System.Drawing.Point(32, 45);
-            this.txtCalle.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtCalle.Name = "txtCalle";
-            this.txtCalle.PasswordChar = '\0';
-            this.txtCalle.SelectedText = "";
-            this.txtCalle.SelectionLength = 0;
-            this.txtCalle.SelectionStart = 0;
-            this.txtCalle.Size = new System.Drawing.Size(245, 23);
-            this.txtCalle.TabIndex = 34;
-            this.txtCalle.UseSystemPasswordChar = false;
+            this.txtCalle_A.Depth = 0;
+            this.txtCalle_A.Hint = "Calle";
+            this.txtCalle_A.Location = new System.Drawing.Point(32, 45);
+            this.txtCalle_A.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtCalle_A.Name = "txtCalle_A";
+            this.txtCalle_A.PasswordChar = '\0';
+            this.txtCalle_A.SelectedText = "";
+            this.txtCalle_A.SelectionLength = 0;
+            this.txtCalle_A.SelectionStart = 0;
+            this.txtCalle_A.Size = new System.Drawing.Size(245, 23);
+            this.txtCalle_A.TabIndex = 34;
+            this.txtCalle_A.UseSystemPasswordChar = false;
+            this.txtCalle_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCalle_A_Validating);
             // 
             // btnSiguiente
             // 
@@ -510,18 +521,18 @@
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.GroupBox groupBox2;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtApMat;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtApPat;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtApMat_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtApPat_A;
         private System.Windows.Forms.Label label1;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtNombre;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtNombre_A;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtAlergias;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtAlergias_A;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtFeNac;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtLugarNac;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtTelEme;
-        private MaterialSkin.Controls.MaterialSingleLineTextField CURP;
-        private MaterialSkin.Controls.MaterialSingleLineTextField materialSingleLineTextField5;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtLugarNac_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtTelEme_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCURP_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtEdad_A;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton Eliminar;
@@ -529,11 +540,11 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
         private MaterialSkin.Controls.MaterialRaisedButton btnInscripcion;
         private System.Windows.Forms.GroupBox groupBox3;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtCP;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtColonia;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCP_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtColonia_C;
         private System.Windows.Forms.Label label3;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtNum;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtCalle;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtNum_A;
+        private MaterialSkin.Controls.MaterialSingleLineTextField txtCalle_A;
         private MaterialSkin.Controls.MaterialRaisedButton btnSiguiente;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }

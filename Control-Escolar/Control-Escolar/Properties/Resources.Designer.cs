@@ -283,6 +283,16 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_exportar_pdf_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-exportar-pdf-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_usuario_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-48", resourceCulture);

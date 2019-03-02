@@ -149,7 +149,8 @@ namespace Control_Escolar
                 PdfWriter.GetInstance(pdfDoc, stream);
                 pdfDoc.Open();
                 //iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/Users/Tevi/Documents/Gestionde proyectos/controlEscolar-master/logo1.jpg");
-                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/PRUEBAS_GIT/controlEscolar/Control-Escolar/logo.png");
+                string direccion = Directory.GetCurrentDirectory();
+                iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance(direccion + "/imagenes/logo.png");
                 imagen.BorderWidth = 0;
                 imagen.SetAbsolutePosition(0, 500);
                 float percentage = 0.0f;

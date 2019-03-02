@@ -109,6 +109,9 @@ namespace Control_Escolar
 
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
+            sesion.fnac = txtFeNac.Text;
+            CalcEdad(sesion.fnac);
+            inscripcion();
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadForm3));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
@@ -131,13 +134,13 @@ namespace Control_Escolar
         private void txtTelEme_Validating(object sender, CancelEventArgs e)
         {
             int num2;
-            if (!int.TryParse(txtTelEme.Text, out num2))
+            if (!int.TryParse(txtTelEme_A.Text, out num2))
             {
-                errorProvider1.SetError(txtTelEme, "Solo ingrese numero");
+                errorProvider1.SetError(txtTelEme_A, "Solo ingrese numero");
             }
             else
             {
-                errorProvider1.SetError(txtTelEme, "");
+                errorProvider1.SetError(txtTelEme_A, "");
             }
         }
 
@@ -148,12 +151,13 @@ namespace Control_Escolar
 
         private void txtNombre_Validating(object sender, CancelEventArgs e)
         {
-            if (txtNombre.Text == "")
+            if (this.txtNombre_A.Text.Length == 0)
             {
-                if (this.txtNombre.Text.Length == 0)
-                    errorProvider1.SetError(this.txtNombre, "Ingrese el nombre");
-                else
-                    errorProvider1.SetError(this.txtNombre, "");
+                errorProvider1.SetError(this.txtNombre_A, "Ingresar el nombre");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtNombre_A, "");
             }
         }
 
@@ -165,6 +169,188 @@ namespace Control_Escolar
         private void groupBox4_Enter(object sender, EventArgs e)
         {
 
+        }
+
+
+        public void  CalcEdad(string fnac)
+        {
+            DateTime dat = Convert.ToDateTime(fnac);
+            DateTime nacimiento = new DateTime(dat.Year, dat.Month, dat.Day);
+            int edad1 = DateTime.Today.AddTicks(-nacimiento.Ticks).Year - 1;
+            MessageBox.Show(edad1.ToString());
+           int  edad2 = Convert.ToInt32(txtEdad_A.Text);
+            if(edad1 == edad2)
+            {
+                sesion.edad = edad1;
+            }
+
+            else { MessageBox.Show("no coincide edad con fecha de nacimiento "); }
+
+
+
+
+        }
+
+
+        public void  inscripcion()
+        {
+            string  Nombre_T, AP_T, AM_T, Calle_T, Numero_T, Colonia_T, CP_T, Telefono_T, Celular_T, Profesion_T, LT_T;
+            sesion.nombre = txtNombre_A.Text;
+           sesion. AP = txtApPat_A.Text;
+            sesion.AM = txtApMat_A.Text;
+            sesion.Curp = txtCURP_A.Text;
+            sesion.calle = txtNum_A.Text;
+            sesion.numero = txtNum_A.Text;
+           sesion. Colonia = txtCP_A.Text;
+           sesion. CP = txtCP_A.Text;
+           sesion. LN = txtLugarNac_A.Text;
+            
+            sesion.edad = Convert.ToInt32(txtEdad_A.Text);
+
+            sesion.telefono = txtNombre_A.Text;
+           sesion. Alergia = txtAlergias_A.Text;
+           
+
+
+
+
+
+
+        }
+
+        private void txtApPat_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtApPat_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtApPat_A, "Ingresar apellido paterno");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtApPat_A, "");
+            }
+        }
+
+        private void txtApMat_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtApMat_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtApMat_A, "Ingresar apellido materno");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtApMat_A, "");
+            }
+        }
+
+        private void txtCURP_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtCURP_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtCURP_A, "Ingresar CURP");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtCURP_A, "");
+            }
+        }
+
+        private void txtCalle_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtCalle_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtCalle_A, "Ingresar nombre de la calle");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtCalle_A, "");
+            }
+        }
+
+        private void txtNum_A_Validating(object sender, CancelEventArgs e)
+        {
+            int num;
+            if (!int.TryParse(txtNum_A.Text, out num))
+            {
+                errorProvider1.SetError(txtNum_A, "Ingesar el dato en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtNum_A, "");
+            }
+        }
+
+        private void txtColonia_C_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtColonia_C.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtColonia_C, "Ingresar la colonia");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtColonia_C, "");
+            }
+        }
+
+        private void txtCP_A_Validating(object sender, CancelEventArgs e)
+        {
+            int num1;
+            if (!int.TryParse(txtCP_A.Text, out num1))
+            {
+                errorProvider1.SetError(txtCP_A, "Ingesar el CP en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtCP_A, "");
+            }
+        }
+
+        private void txtFeNac_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtFeNac.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtFeNac, "Ingresar la fecha de nacimiento");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtFeNac, "");
+            }
+        }
+
+        private void txtLugarNac_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtLugarNac_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtLugarNac_A, "Ingresar el lugar de nacimiento");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtLugarNac_A, "");
+            }
+        }
+
+        private void txtEdad_A_Validating(object sender, CancelEventArgs e)
+        {
+            int num5;
+            if (!int.TryParse(txtEdad_A.Text, out num5))
+            {
+                errorProvider1.SetError(txtEdad_A, "Ingesar el dato en numeros");
+            }
+            else
+            {
+                errorProvider1.SetError(txtEdad_A, "");
+            }
+        }
+
+        private void txtAlergias_A_Validating(object sender, CancelEventArgs e)
+        {
+            if (this.txtAlergias_A.Text.Length == 0)
+            {
+                errorProvider1.SetError(this.txtAlergias_A, "Ingresar las alergias del alumno");
+            }
+            else
+            {
+                errorProvider1.SetError(this.txtAlergias_A, "");
+            }
         }
     }
 }
