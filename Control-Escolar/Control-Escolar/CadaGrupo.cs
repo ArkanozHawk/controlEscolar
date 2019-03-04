@@ -26,23 +26,22 @@ namespace Control_Escolar
 
         conexion obj = new conexion();
 
+        //-------------------------------------Metodos----------------------------------------------
+        //Cerrar sesion
         public static void ThreadProc()
 
         {
             Application.Run(new login());
         }
-
+        //Volver al menu principal
         public static void ThreadPrincipal()
 
         {
             Application.Run(new principal());
         }
 
-        private void CadaGrupo_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //-----------------------------------------Botones--------------------------------------------
+        //Cerrar sesion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
@@ -56,7 +55,7 @@ namespace Control_Escolar
             login.Start();
             this.Close();
         }
-
+        //Volver al menu principal
         private void btnPrincipal_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
@@ -64,8 +63,14 @@ namespace Control_Escolar
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
         }
-
+        //Generar pdf del grupo
         private void GenerarPDF_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //-------------------------------------------------------------------------------------------
+        private void CadaGrupo_Load(object sender, EventArgs e)
         {
 
         }

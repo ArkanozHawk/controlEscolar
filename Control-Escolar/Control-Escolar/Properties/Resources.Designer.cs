@@ -263,6 +263,26 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_ajustes_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ajustes-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_ajustes_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-ajustes-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_contraseña_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contraseña-48", resourceCulture);
@@ -293,9 +313,29 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_servicios_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-servicios-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_usuario_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-usuario-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_usuario_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-usuario-481", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

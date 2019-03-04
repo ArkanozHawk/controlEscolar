@@ -163,7 +163,6 @@
             this.txtCargo.Size = new System.Drawing.Size(245, 23);
             this.txtCargo.TabIndex = 35;
             this.txtCargo.UseSystemPasswordChar = false;
-            this.txtCargo.Validated += new System.EventHandler(this.txtCargo_Validated);
             this.txtCargo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCargo_Validating);
             // 
             // txtProf
@@ -180,7 +179,6 @@
             this.txtProf.Size = new System.Drawing.Size(245, 23);
             this.txtProf.TabIndex = 34;
             this.txtProf.UseSystemPasswordChar = false;
-            this.txtProf.Validated += new System.EventHandler(this.txtProf_Validated);
             this.txtProf.Validating += new System.ComponentModel.CancelEventHandler(this.txtProf_Validating);
             // 
             // groupBox4
@@ -224,8 +222,6 @@
             this.txtEmail.Size = new System.Drawing.Size(245, 23);
             this.txtEmail.TabIndex = 35;
             this.txtEmail.UseSystemPasswordChar = false;
-            this.txtEmail.Click += new System.EventHandler(this.txtEmail_Click);
-            this.txtEmail.Validated += new System.EventHandler(this.txtEmail_Validated);
             this.txtEmail.Validating += new System.ComponentModel.CancelEventHandler(this.txtEmail_Validating);
             // 
             // txtTel
@@ -242,7 +238,6 @@
             this.txtTel.Size = new System.Drawing.Size(245, 23);
             this.txtTel.TabIndex = 34;
             this.txtTel.UseSystemPasswordChar = false;
-            this.txtTel.Validated += new System.EventHandler(this.txtTel_Validated);
             this.txtTel.Validating += new System.ComponentModel.CancelEventHandler(this.txtTel_Validating);
             // 
             // groupBox3
@@ -275,8 +270,6 @@
             this.txtCP.Size = new System.Drawing.Size(245, 23);
             this.txtCP.TabIndex = 46;
             this.txtCP.UseSystemPasswordChar = false;
-            this.txtCP.Click += new System.EventHandler(this.txtCP_Click);
-            this.txtCP.Validated += new System.EventHandler(this.txtCP_Validated);
             this.txtCP.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_Validating_1);
             // 
             // txtColonia
@@ -293,7 +286,6 @@
             this.txtColonia.Size = new System.Drawing.Size(245, 23);
             this.txtColonia.TabIndex = 45;
             this.txtColonia.UseSystemPasswordChar = false;
-            this.txtColonia.Validated += new System.EventHandler(this.txtColonia_Validated);
             this.txtColonia.Validating += new System.ComponentModel.CancelEventHandler(this.txtColonia_Validating);
             // 
             // label3
@@ -323,7 +315,6 @@
             this.txtNum.Size = new System.Drawing.Size(245, 23);
             this.txtNum.TabIndex = 35;
             this.txtNum.UseSystemPasswordChar = false;
-            this.txtNum.Validated += new System.EventHandler(this.txtNum_Validated);
             this.txtNum.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_Validating);
             // 
             // txtCalle
@@ -340,7 +331,6 @@
             this.txtCalle.Size = new System.Drawing.Size(245, 23);
             this.txtCalle.TabIndex = 34;
             this.txtCalle.UseSystemPasswordChar = false;
-            this.txtCalle.Validated += new System.EventHandler(this.txtCalle_Validated);
             this.txtCalle.Validating += new System.ComponentModel.CancelEventHandler(this.txtCalle_Validating);
             // 
             // groupBox2
@@ -372,7 +362,6 @@
             this.txtApMat.Size = new System.Drawing.Size(245, 23);
             this.txtApMat.TabIndex = 46;
             this.txtApMat.UseSystemPasswordChar = false;
-            this.txtApMat.Validated += new System.EventHandler(this.txtApMat_Validated);
             this.txtApMat.Validating += new System.ComponentModel.CancelEventHandler(this.txtApMat_Validating);
             // 
             // txtApPat
@@ -389,7 +378,6 @@
             this.txtApPat.Size = new System.Drawing.Size(245, 23);
             this.txtApPat.TabIndex = 45;
             this.txtApPat.UseSystemPasswordChar = false;
-            this.txtApPat.Validated += new System.EventHandler(this.txtApPat_Validated);
             this.txtApPat.Validating += new System.ComponentModel.CancelEventHandler(this.txtApPat_Validating);
             // 
             // label1
@@ -419,7 +407,6 @@
             this.txtNombre.Size = new System.Drawing.Size(245, 23);
             this.txtNombre.TabIndex = 34;
             this.txtNombre.UseSystemPasswordChar = false;
-            this.txtNombre.Validated += new System.EventHandler(this.txtNombre_Validated);
             this.txtNombre.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
             // 
             // groupBox1
@@ -463,7 +450,6 @@
             this.txtcontra.Size = new System.Drawing.Size(245, 23);
             this.txtcontra.TabIndex = 35;
             this.txtcontra.UseSystemPasswordChar = false;
-            this.txtcontra.Validated += new System.EventHandler(this.txtcontra_Validated);
             this.txtcontra.Validating += new System.ComponentModel.CancelEventHandler(this.txtcontra_Validating);
             // 
             // txtUsuario
@@ -480,7 +466,6 @@
             this.txtUsuario.Size = new System.Drawing.Size(245, 23);
             this.txtUsuario.TabIndex = 34;
             this.txtUsuario.UseSystemPasswordChar = false;
-            this.txtUsuario.Validated += new System.EventHandler(this.txtUsuario_Validated);
             this.txtUsuario.Validating += new System.ComponentModel.CancelEventHandler(this.txtUsuario_Validating);
             // 
             // errorProvider1
@@ -501,7 +486,6 @@
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuario";
-            this.Load += new System.EventHandler(this.registro_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();

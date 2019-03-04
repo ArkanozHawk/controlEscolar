@@ -31,6 +31,8 @@
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.lblMaestro2 = new MaterialSkin.Controls.MaterialLabel();
             this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
@@ -42,8 +44,6 @@
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -100,16 +100,36 @@
             this.groupBox2.TabIndex = 70;
             this.groupBox2.TabStop = false;
             // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
+            this.pictureBox6.Location = new System.Drawing.Point(415, 137);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox6.TabIndex = 96;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
+            this.pictureBox1.Location = new System.Drawing.Point(415, 83);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(36, 44);
+            this.pictureBox1.TabIndex = 91;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // materialLabel15
             // 
             this.materialLabel15.AutoSize = true;
             this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel15.Location = new System.Drawing.Point(397, 41);
             this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel15.Name = "materialLabel15";
-            this.materialLabel15.Size = new System.Drawing.Size(77, 18);
+            this.materialLabel15.Size = new System.Drawing.Size(77, 19);
             this.materialLabel15.TabIndex = 90;
             this.materialLabel15.Text = "Descargar";
             // 
@@ -117,12 +137,12 @@
             // 
             this.lblMaestro2.AutoSize = true;
             this.lblMaestro2.Depth = 0;
-            this.lblMaestro2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblMaestro2.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblMaestro2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMaestro2.Location = new System.Drawing.Point(85, 142);
+            this.lblMaestro2.Location = new System.Drawing.Point(90, 148);
             this.lblMaestro2.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblMaestro2.Name = "lblMaestro2";
-            this.lblMaestro2.Size = new System.Drawing.Size(160, 18);
+            this.lblMaestro2.Size = new System.Drawing.Size(164, 19);
             this.lblMaestro2.TabIndex = 89;
             this.lblMaestro2.Text = "Directorio de Maestros";
             // 
@@ -130,12 +150,12 @@
             // 
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
-            this.materialLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 11F);
             this.materialLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialLabel8.Location = new System.Drawing.Point(123, 41);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(71, 18);
+            this.materialLabel8.Size = new System.Drawing.Size(73, 19);
             this.materialLabel8.TabIndex = 83;
             this.materialLabel8.Text = "Maestros";
             // 
@@ -143,12 +163,12 @@
             // 
             this.lblMaestro1.AutoSize = true;
             this.lblMaestro1.Depth = 0;
-            this.lblMaestro1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblMaestro1.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblMaestro1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblMaestro1.Location = new System.Drawing.Point(90, 92);
             this.lblMaestro1.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblMaestro1.Name = "lblMaestro1";
-            this.lblMaestro1.Size = new System.Drawing.Size(155, 18);
+            this.lblMaestro1.Size = new System.Drawing.Size(160, 19);
             this.lblMaestro1.TabIndex = 82;
             this.lblMaestro1.Text = "Directorio de Alumnos";
             // 
@@ -230,24 +250,6 @@
             this.label1.Size = new System.Drawing.Size(233, 26);
             this.label1.TabIndex = 44;
             this.label1.Text = "Selecionar Documento";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
-            this.pictureBox6.Location = new System.Drawing.Point(415, 137);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 40);
-            this.pictureBox6.TabIndex = 96;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
-            this.pictureBox1.Location = new System.Drawing.Point(415, 83);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 44);
-            this.pictureBox1.TabIndex = 91;
-            this.pictureBox1.TabStop = false;
             // 
             // Docuementos
             // 

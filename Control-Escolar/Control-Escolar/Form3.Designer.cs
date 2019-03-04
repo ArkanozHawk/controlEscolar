@@ -103,6 +103,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // Eliminar
             // 
@@ -116,6 +117,7 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // groupBox1
             // 
@@ -467,7 +469,6 @@
             this.Controls.Add(this.Eliminar);
             this.Name = "Form3";
             this.Text = "Inscripción";
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);

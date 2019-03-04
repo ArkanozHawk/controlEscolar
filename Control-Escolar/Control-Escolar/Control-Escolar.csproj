@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DGV2Printer">
+      <HintPath>.\DGV2Printer.dll</HintPath>
+    </Reference>
     <Reference Include="itextsharp">
       <HintPath>..\packages\itextsharp.dll</HintPath>
     </Reference>
@@ -75,6 +78,9 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="ValidarDatos">
+      <HintPath>.\ValidarDatos.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="bitacora.cs">
@@ -323,6 +329,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-exportar-pdf-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-servicios-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajustes-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-ajustes-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-usuario-481.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
