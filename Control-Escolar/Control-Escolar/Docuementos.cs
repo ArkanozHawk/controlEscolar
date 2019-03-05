@@ -13,27 +13,23 @@ using MaterialSkin.Controls;
 
 namespace Control_Escolar
 {
-    public partial class CadaGrupo : MaterialForm
+    public partial class Docuementos : MaterialForm
     {
-        public CadaGrupo()
+        public Docuementos()
         {
             InitializeComponent();
-            var materialSkinManager = MaterialSkinManager.Instance;
-            materialSkinManager.AddFormToManage(this);
-            materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
-            materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
         }
 
         conexion obj = new conexion();
 
-        //-------------------------------------Metodos----------------------------------------------
+        //-----------------------------------Metodos------------------------------------------------
         //Cerrar sesion
         public static void ThreadProc()
 
         {
             Application.Run(new login());
         }
-        //Volver al menu principal
+        //Volver a la pagina principal
         public static void ThreadPrincipal()
 
         {
@@ -41,7 +37,7 @@ namespace Control_Escolar
         }
 
         //-----------------------------------------Botones--------------------------------------------
-        //Cerrar sesion
+        //Boton de cerrar sesion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
@@ -55,7 +51,7 @@ namespace Control_Escolar
             login.Start();
             this.Close();
         }
-        //Volver al menu principal
+        //Boton para volver al menu principal
         private void btnPrincipal_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
@@ -63,14 +59,22 @@ namespace Control_Escolar
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
         }
-        //Generar pdf del grupo
-        private void GenerarPDF_Click(object sender, EventArgs e)
+
+        //---------------------------------------------------------------------------------------
+
+        private void Docuementos_Load(object sender, EventArgs e)
+        {
+            //Borrar
+        }
+
+        //-------------------------------------Eventos clic------------------------------------------
+        //Descargar directorio de alumnos de cada grado
+        private void pictureBox1_Click(object sender, EventArgs e)
         {
 
         }
-
-        //-------------------------------------------------------------------------------------------
-        private void CadaGrupo_Load(object sender, EventArgs e)
+        //Descargar directorio de maestros
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
 
         }

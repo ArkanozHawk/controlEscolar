@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtEdad_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.label5 = new System.Windows.Forms.Label();
             this.txtLugarNac_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtAlergias_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            this.txtFeNac = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtTelEme_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtCURP_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -69,25 +70,47 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox5.Controls.Add(this.label2);
+            this.groupBox5.Controls.Add(this.dateTimePicker1);
             this.groupBox5.Controls.Add(this.txtEdad_A);
             this.groupBox5.Controls.Add(this.label5);
             this.groupBox5.Controls.Add(this.txtLugarNac_A);
             this.groupBox5.Controls.Add(this.txtAlergias_A);
-            this.groupBox5.Controls.Add(this.txtFeNac);
             this.groupBox5.Controls.Add(this.txtTelEme_A);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox5.Location = new System.Drawing.Point(528, 72);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox5.Size = new System.Drawing.Size(304, 290);
+            this.groupBox5.Size = new System.Drawing.Size(304, 316);
             this.groupBox5.TabIndex = 50;
             this.groupBox5.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label2.Location = new System.Drawing.Point(67, 42);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(159, 20);
+            this.label2.TabIndex = 62;
+            this.label2.Text = "Fecha de Nacimiento";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(50, 77);
+            this.dateTimePicker1.MinDate = new System.DateTime(2006, 1, 1, 0, 0, 0, 0);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 32);
+            this.dateTimePicker1.TabIndex = 61;
             // 
             // txtEdad_A
             // 
             this.txtEdad_A.Depth = 0;
             this.txtEdad_A.Hint = "Edad";
-            this.txtEdad_A.Location = new System.Drawing.Point(13, 152);
+            this.txtEdad_A.Location = new System.Drawing.Point(13, 169);
             this.txtEdad_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtEdad_A.Name = "txtEdad_A";
             this.txtEdad_A.PasswordChar = '\0';
@@ -97,7 +120,7 @@
             this.txtEdad_A.Size = new System.Drawing.Size(264, 23);
             this.txtEdad_A.TabIndex = 45;
             this.txtEdad_A.UseSystemPasswordChar = false;
-            this.txtEdad_A.Click += new System.EventHandler(this.materialSingleLineTextField5_Click);
+            this.txtEdad_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtEdad_A_Validating);
             // 
             // label5
             // 
@@ -105,7 +128,7 @@
             this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label5.Location = new System.Drawing.Point(38, -3);
+            this.label5.Location = new System.Drawing.Point(33, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(242, 26);
@@ -116,7 +139,7 @@
             // 
             this.txtLugarNac_A.Depth = 0;
             this.txtLugarNac_A.Hint = "Lugar de nacimiento";
-            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 98);
+            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 125);
             this.txtLugarNac_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtLugarNac_A.Name = "txtLugarNac_A";
             this.txtLugarNac_A.PasswordChar = '\0';
@@ -126,12 +149,13 @@
             this.txtLugarNac_A.Size = new System.Drawing.Size(267, 23);
             this.txtLugarNac_A.TabIndex = 35;
             this.txtLugarNac_A.UseSystemPasswordChar = false;
+            this.txtLugarNac_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtLugarNac_A_Validating);
             // 
             // txtAlergias_A
             // 
             this.txtAlergias_A.Depth = 0;
             this.txtAlergias_A.Hint = "Alergias";
-            this.txtAlergias_A.Location = new System.Drawing.Point(15, 253);
+            this.txtAlergias_A.Location = new System.Drawing.Point(13, 264);
             this.txtAlergias_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAlergias_A.Name = "txtAlergias_A";
             this.txtAlergias_A.PasswordChar = '\0';
@@ -141,27 +165,13 @@
             this.txtAlergias_A.Size = new System.Drawing.Size(262, 23);
             this.txtAlergias_A.TabIndex = 35;
             this.txtAlergias_A.UseSystemPasswordChar = false;
-            // 
-            // txtFeNac
-            // 
-            this.txtFeNac.Depth = 0;
-            this.txtFeNac.Hint = "Fecha de nacimiento  aaaa/mm/dd";
-            this.txtFeNac.Location = new System.Drawing.Point(13, 43);
-            this.txtFeNac.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtFeNac.Name = "txtFeNac";
-            this.txtFeNac.PasswordChar = '\0';
-            this.txtFeNac.SelectedText = "";
-            this.txtFeNac.SelectionLength = 0;
-            this.txtFeNac.SelectionStart = 0;
-            this.txtFeNac.Size = new System.Drawing.Size(267, 23);
-            this.txtFeNac.TabIndex = 34;
-            this.txtFeNac.UseSystemPasswordChar = false;
+            this.txtAlergias_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtAlergias_A_Validating);
             // 
             // txtTelEme_A
             // 
             this.txtTelEme_A.Depth = 0;
             this.txtTelEme_A.Hint = "Teléfono de emergencia";
-            this.txtTelEme_A.Location = new System.Drawing.Point(13, 200);
+            this.txtTelEme_A.Location = new System.Drawing.Point(13, 213);
             this.txtTelEme_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelEme_A.Name = "txtTelEme_A";
             this.txtTelEme_A.PasswordChar = '\0';
@@ -171,7 +181,7 @@
             this.txtTelEme_A.Size = new System.Drawing.Size(264, 23);
             this.txtTelEme_A.TabIndex = 34;
             this.txtTelEme_A.UseSystemPasswordChar = false;
-            this.txtTelEme_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelEme_Validating);
+            this.txtTelEme_A.Validated += new System.EventHandler(this.txtTelEme_A_Validated);
             // 
             // groupBox2
             // 
@@ -203,6 +213,7 @@
             this.txtCURP_A.Size = new System.Drawing.Size(265, 23);
             this.txtCURP_A.TabIndex = 47;
             this.txtCURP_A.UseSystemPasswordChar = false;
+            this.txtCURP_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCURP_A_Validating);
             // 
             // txtApMat_A
             // 
@@ -218,6 +229,7 @@
             this.txtApMat_A.Size = new System.Drawing.Size(265, 23);
             this.txtApMat_A.TabIndex = 46;
             this.txtApMat_A.UseSystemPasswordChar = false;
+            this.txtApMat_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtApMat_A_Validating);
             // 
             // txtApPat_A
             // 
@@ -233,7 +245,7 @@
             this.txtApPat_A.Size = new System.Drawing.Size(265, 23);
             this.txtApPat_A.TabIndex = 45;
             this.txtApPat_A.UseSystemPasswordChar = false;
-            this.txtApPat_A.Click += new System.EventHandler(this.txtApPat_Click);
+            this.txtApPat_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtApPat_A_Validating);
             // 
             // label1
             // 
@@ -262,9 +274,7 @@
             this.txtNombre_A.Size = new System.Drawing.Size(262, 23);
             this.txtNombre_A.TabIndex = 34;
             this.txtNombre_A.UseSystemPasswordChar = false;
-            this.txtNombre_A.Click += new System.EventHandler(this.txtNombre_Click);
-            this.txtNombre_A.Validated += new System.EventHandler(this.txtNombre_Validated);
-            this.txtNombre_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_Validating);
+            this.txtNombre_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtNombre_A_Validating);
             // 
             // columnHeader1
             // 
@@ -325,7 +335,7 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Eliminar.UseVisualStyleBackColor = true;
-            this.Eliminar.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // btnModificar
             // 
@@ -339,6 +349,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnBuscar
             // 
@@ -366,7 +377,6 @@
             this.btnInscripcion.Text = "Inscripción";
             this.btnInscripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInscripcion.UseVisualStyleBackColor = true;
-            this.btnInscripcion.Click += new System.EventHandler(this.btnInscripcion_Click);
             // 
             // groupBox3
             // 
@@ -398,6 +408,7 @@
             this.txtCP_A.Size = new System.Drawing.Size(245, 23);
             this.txtCP_A.TabIndex = 46;
             this.txtCP_A.UseSystemPasswordChar = false;
+            this.txtCP_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_A_Validating);
             // 
             // txtColonia_C
             // 
@@ -413,6 +424,7 @@
             this.txtColonia_C.Size = new System.Drawing.Size(245, 23);
             this.txtColonia_C.TabIndex = 45;
             this.txtColonia_C.UseSystemPasswordChar = false;
+            this.txtColonia_C.Validating += new System.ComponentModel.CancelEventHandler(this.txtColonia_C_Validating);
             // 
             // label3
             // 
@@ -441,6 +453,7 @@
             this.txtNum_A.Size = new System.Drawing.Size(245, 23);
             this.txtNum_A.TabIndex = 35;
             this.txtNum_A.UseSystemPasswordChar = false;
+            this.txtNum_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_A_Validating);
             // 
             // txtCalle_A
             // 
@@ -456,6 +469,7 @@
             this.txtCalle_A.Size = new System.Drawing.Size(245, 23);
             this.txtCalle_A.TabIndex = 34;
             this.txtCalle_A.UseSystemPasswordChar = false;
+            this.txtCalle_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtCalle_A_Validating);
             // 
             // btnSiguiente
             // 
@@ -492,7 +506,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Alumno";
             this.Text = "Alumnos";
-            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -517,7 +530,6 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAlergias_A;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtFeNac;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtLugarNac_A;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtTelEme_A;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtCURP_A;
@@ -536,5 +548,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtCalle_A;
         private MaterialSkin.Controls.MaterialRaisedButton btnSiguiente;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -36,10 +36,16 @@ namespace Control_Escolar
             Application.Run(new Alumno());
         }
 
-        public static void ThreadGrupo()
+        public static void ThreadGrupos()
 
         {
             Application.Run(new Grupos());
+        }
+
+        public static void ThreadDocumentos()
+
+        {
+            Application.Run(new Docuementos());
         }
 
         public principal()
@@ -92,7 +98,15 @@ namespace Control_Escolar
 
         private void BtnGrupos_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGrupo));
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGrupos));
+            pantalla1.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void materialRaisedButton3_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadDocumentos));
             pantalla1.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();

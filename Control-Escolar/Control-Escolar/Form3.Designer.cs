@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnModificar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -54,10 +55,12 @@
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnInscripcion
@@ -100,6 +103,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // Eliminar
             // 
@@ -113,6 +117,7 @@
             this.Eliminar.Text = "Eliminar";
             this.Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Eliminar.UseVisualStyleBackColor = true;
+            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // groupBox1
             // 
@@ -143,6 +148,7 @@
             this.txtAM_T.Size = new System.Drawing.Size(251, 23);
             this.txtAM_T.TabIndex = 46;
             this.txtAM_T.UseSystemPasswordChar = false;
+            this.txtAM_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtAM_T_Validating);
             // 
             // txtAP_T
             // 
@@ -158,6 +164,7 @@
             this.txtAP_T.Size = new System.Drawing.Size(251, 23);
             this.txtAP_T.TabIndex = 45;
             this.txtAP_T.UseSystemPasswordChar = false;
+            this.txtAP_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtAP_T_Validating);
             // 
             // padre
             // 
@@ -186,6 +193,7 @@
             this.txtnombre_T.Size = new System.Drawing.Size(251, 23);
             this.txtnombre_T.TabIndex = 34;
             this.txtnombre_T.UseSystemPasswordChar = false;
+            this.txtnombre_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtnombre_T_Validating);
             // 
             // txtCel_T
             // 
@@ -201,6 +209,7 @@
             this.txtCel_T.Size = new System.Drawing.Size(251, 23);
             this.txtCel_T.TabIndex = 53;
             this.txtCel_T.UseSystemPasswordChar = false;
+            this.txtCel_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtCel_T_Validating);
             // 
             // txtTelf_T
             // 
@@ -216,6 +225,7 @@
             this.txtTelf_T.Size = new System.Drawing.Size(251, 23);
             this.txtTelf_T.TabIndex = 46;
             this.txtTelf_T.UseSystemPasswordChar = false;
+            this.txtTelf_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtTelf_T_Validating);
             // 
             // txtLugTrab_T
             // 
@@ -231,6 +241,7 @@
             this.txtLugTrab_T.Size = new System.Drawing.Size(251, 23);
             this.txtLugTrab_T.TabIndex = 45;
             this.txtLugTrab_T.UseSystemPasswordChar = false;
+            this.txtLugTrab_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtLugTrab_T_Validating);
             // 
             // txtprof_T
             // 
@@ -246,6 +257,7 @@
             this.txtprof_T.Size = new System.Drawing.Size(251, 23);
             this.txtprof_T.TabIndex = 34;
             this.txtprof_T.UseSystemPasswordChar = false;
+            this.txtprof_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtprof_T_Validating);
             // 
             // groupBox3
             // 
@@ -277,6 +289,7 @@
             this.txtCP_T.Size = new System.Drawing.Size(251, 23);
             this.txtCP_T.TabIndex = 46;
             this.txtCP_T.UseSystemPasswordChar = false;
+            this.txtCP_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtCP_T_Validating);
             // 
             // txtColonia_T
             // 
@@ -292,6 +305,7 @@
             this.txtColonia_T.Size = new System.Drawing.Size(251, 23);
             this.txtColonia_T.TabIndex = 45;
             this.txtColonia_T.UseSystemPasswordChar = false;
+            this.txtColonia_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtColonia_T_Validating);
             // 
             // label3
             // 
@@ -320,6 +334,7 @@
             this.txtNum_T.Size = new System.Drawing.Size(251, 23);
             this.txtNum_T.TabIndex = 35;
             this.txtNum_T.UseSystemPasswordChar = false;
+            this.txtNum_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtNum_T_Validating);
             // 
             // txtCalle_T
             // 
@@ -335,6 +350,7 @@
             this.txtCalle_T.Size = new System.Drawing.Size(251, 23);
             this.txtCalle_T.TabIndex = 34;
             this.txtCalle_T.UseSystemPasswordChar = false;
+            this.txtCalle_T.Validating += new System.ComponentModel.CancelEventHandler(this.txtCalle_T_Validating);
             // 
             // groupBox2
             // 
@@ -431,6 +447,10 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.BtnCerrar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -449,7 +469,6 @@
             this.Controls.Add(this.Eliminar);
             this.Name = "Form3";
             this.Text = "Inscripción";
-            this.Load += new System.EventHandler(this.Form3_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -458,6 +477,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -490,5 +510,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

@@ -41,7 +41,7 @@ namespace Control_Escolar
                 com = new MySqlCommand(consulta, conn);
 
                 com.ExecuteNonQuery();
-                MessageBox.Show("Se han Ingresado los datos");
+                MessageBox.Show("Se han Ingresado los datos correctamente");
                 return;
 
 

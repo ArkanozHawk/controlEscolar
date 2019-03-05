@@ -73,7 +73,6 @@ C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bi
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
-C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
 C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
@@ -247,3 +246,13 @@ C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escola
 C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
 C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
 C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+
