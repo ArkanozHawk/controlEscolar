@@ -468,6 +468,7 @@
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.Eliminar);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscripción";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

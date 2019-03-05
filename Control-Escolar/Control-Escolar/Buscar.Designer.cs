@@ -129,6 +129,7 @@
             this.Controls.Add(this.Eliminar);
             this.Controls.Add(this.btnCerrar);
             this.Name = "Buscar";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar";
             this.Load += new System.EventHandler(this.Buscar_Load);
             this.ResumeLayout(false);

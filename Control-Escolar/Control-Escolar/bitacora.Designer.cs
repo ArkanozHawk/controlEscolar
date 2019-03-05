@@ -114,6 +114,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrincipal);
             this.Name = "bitacora";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bitácora";
             this.Load += new System.EventHandler(this.bitacora_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

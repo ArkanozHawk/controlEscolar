@@ -144,6 +144,7 @@
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
             this.Name = "CadaGrupo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listas de Alumnos";
             this.Load += new System.EventHandler(this.CadaGrupo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
