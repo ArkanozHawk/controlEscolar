@@ -573,6 +573,7 @@
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
             this.Name = "Grupos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupos";
             this.Load += new System.EventHandler(this.Grupos_Load);
             this.groupBox2.ResumeLayout(false);

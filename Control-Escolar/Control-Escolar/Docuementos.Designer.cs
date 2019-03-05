@@ -260,7 +260,8 @@
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
             this.Name = "Docuementos";
-            this.Text = "Docuementos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Documentos";
             this.Load += new System.EventHandler(this.Docuementos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
