@@ -20,5 +20,6 @@ namespace Control_Escolar
         public static string fnac;
         public static string nombre, AP, AM, Curp, calle, numero, Colonia, CP, LN,  telefono, Alergia;
         public static int edad;
+        public static string genero;
     }
 }

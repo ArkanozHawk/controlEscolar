@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.BoxGenero = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.RadFemenino = new MaterialSkin.Controls.MaterialRadioButton();
+            this.RadMasculino = new MaterialSkin.Controls.MaterialRadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtEdad_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -49,7 +52,6 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.Eliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnModificar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -61,29 +63,77 @@
             this.txtCalle_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnSiguiente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.groupBox5.SuspendLayout();
+            this.BoxGenero.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox5
+            // BoxGenero
             // 
-            this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.dateTimePicker1);
-            this.groupBox5.Controls.Add(this.txtEdad_A);
-            this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.txtLugarNac_A);
-            this.groupBox5.Controls.Add(this.txtAlergias_A);
-            this.groupBox5.Controls.Add(this.txtTelEme_A);
-            this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox5.Location = new System.Drawing.Point(528, 72);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox5.Size = new System.Drawing.Size(304, 316);
-            this.groupBox5.TabIndex = 50;
-            this.groupBox5.TabStop = false;
+            this.BoxGenero.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.BoxGenero.Controls.Add(this.label4);
+            this.BoxGenero.Controls.Add(this.RadFemenino);
+            this.BoxGenero.Controls.Add(this.RadMasculino);
+            this.BoxGenero.Controls.Add(this.label2);
+            this.BoxGenero.Controls.Add(this.dateTimePicker1);
+            this.BoxGenero.Controls.Add(this.txtEdad_A);
+            this.BoxGenero.Controls.Add(this.label5);
+            this.BoxGenero.Controls.Add(this.txtLugarNac_A);
+            this.BoxGenero.Controls.Add(this.txtAlergias_A);
+            this.BoxGenero.Controls.Add(this.txtTelEme_A);
+            this.BoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.BoxGenero.Location = new System.Drawing.Point(528, 72);
+            this.BoxGenero.Name = "BoxGenero";
+            this.BoxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.BoxGenero.Size = new System.Drawing.Size(304, 404);
+            this.BoxGenero.TabIndex = 50;
+            this.BoxGenero.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label4.Location = new System.Drawing.Point(112, 128);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(63, 20);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "Genero";
+            // 
+            // RadFemenino
+            // 
+            this.RadFemenino.AutoSize = true;
+            this.RadFemenino.Depth = 0;
+            this.RadFemenino.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RadFemenino.Location = new System.Drawing.Point(185, 162);
+            this.RadFemenino.Margin = new System.Windows.Forms.Padding(0);
+            this.RadFemenino.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RadFemenino.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RadFemenino.Name = "RadFemenino";
+            this.RadFemenino.Ripple = true;
+            this.RadFemenino.Size = new System.Drawing.Size(90, 30);
+            this.RadFemenino.TabIndex = 64;
+            this.RadFemenino.TabStop = true;
+            this.RadFemenino.Text = "Femenino";
+            this.RadFemenino.UseVisualStyleBackColor = true;
+            // 
+            // RadMasculino
+            // 
+            this.RadMasculino.AutoSize = true;
+            this.RadMasculino.Depth = 0;
+            this.RadMasculino.Font = new System.Drawing.Font("Roboto", 10F);
+            this.RadMasculino.Location = new System.Drawing.Point(13, 162);
+            this.RadMasculino.Margin = new System.Windows.Forms.Padding(0);
+            this.RadMasculino.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.RadMasculino.MouseState = MaterialSkin.MouseState.HOVER;
+            this.RadMasculino.Name = "RadMasculino";
+            this.RadMasculino.Ripple = true;
+            this.RadMasculino.Size = new System.Drawing.Size(93, 30);
+            this.RadMasculino.TabIndex = 63;
+            this.RadMasculino.TabStop = true;
+            this.RadMasculino.Text = "Masculino";
+            this.RadMasculino.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -110,7 +160,7 @@
             // 
             this.txtEdad_A.Depth = 0;
             this.txtEdad_A.Hint = "Edad";
-            this.txtEdad_A.Location = new System.Drawing.Point(13, 169);
+            this.txtEdad_A.Location = new System.Drawing.Point(13, 255);
             this.txtEdad_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtEdad_A.Name = "txtEdad_A";
             this.txtEdad_A.PasswordChar = '\0';
@@ -139,7 +189,7 @@
             // 
             this.txtLugarNac_A.Depth = 0;
             this.txtLugarNac_A.Hint = "Lugar de nacimiento";
-            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 125);
+            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 213);
             this.txtLugarNac_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtLugarNac_A.Name = "txtLugarNac_A";
             this.txtLugarNac_A.PasswordChar = '\0';
@@ -155,7 +205,7 @@
             // 
             this.txtAlergias_A.Depth = 0;
             this.txtAlergias_A.Hint = "Alergias";
-            this.txtAlergias_A.Location = new System.Drawing.Point(13, 264);
+            this.txtAlergias_A.Location = new System.Drawing.Point(13, 351);
             this.txtAlergias_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAlergias_A.Name = "txtAlergias_A";
             this.txtAlergias_A.PasswordChar = '\0';
@@ -171,7 +221,7 @@
             // 
             this.txtTelEme_A.Depth = 0;
             this.txtTelEme_A.Hint = "Teléfono de emergencia";
-            this.txtTelEme_A.Location = new System.Drawing.Point(13, 213);
+            this.txtTelEme_A.Location = new System.Drawing.Point(13, 306);
             this.txtTelEme_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelEme_A.Name = "txtTelEme_A";
             this.txtTelEme_A.PasswordChar = '\0';
@@ -203,7 +253,7 @@
             // 
             this.txtCURP_A.Depth = 0;
             this.txtCURP_A.Hint = "CURP";
-            this.txtCURP_A.Location = new System.Drawing.Point(12, 169);
+            this.txtCURP_A.Location = new System.Drawing.Point(12, 42);
             this.txtCURP_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtCURP_A.Name = "txtCURP_A";
             this.txtCURP_A.PasswordChar = '\0';
@@ -219,7 +269,7 @@
             // 
             this.txtApMat_A.Depth = 0;
             this.txtApMat_A.Hint = "Apellido Materno";
-            this.txtApMat_A.Location = new System.Drawing.Point(12, 125);
+            this.txtApMat_A.Location = new System.Drawing.Point(12, 169);
             this.txtApMat_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtApMat_A.Name = "txtApMat_A";
             this.txtApMat_A.PasswordChar = '\0';
@@ -235,7 +285,7 @@
             // 
             this.txtApPat_A.Depth = 0;
             this.txtApPat_A.Hint = "Apellido Paterno";
-            this.txtApPat_A.Location = new System.Drawing.Point(12, 86);
+            this.txtApPat_A.Location = new System.Drawing.Point(12, 125);
             this.txtApPat_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtApPat_A.Name = "txtApPat_A";
             this.txtApPat_A.PasswordChar = '\0';
@@ -264,7 +314,7 @@
             // 
             this.txtNombre_A.Depth = 0;
             this.txtNombre_A.Hint = "Nombre(s)";
-            this.txtNombre_A.Location = new System.Drawing.Point(15, 43);
+            this.txtNombre_A.Location = new System.Drawing.Point(12, 86);
             this.txtNombre_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtNombre_A.Name = "txtNombre_A";
             this.txtNombre_A.PasswordChar = '\0';
@@ -313,29 +363,15 @@
             // btnPrincipal
             // 
             this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(853, 325);
+            this.btnPrincipal.Location = new System.Drawing.Point(0, 373);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(175, 50);
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 103);
             this.btnPrincipal.TabIndex = 53;
             this.btnPrincipal.Text = "Volver al Menú Principal";
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.BtnPrincipal_Click);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.Depth = 0;
-            this.Eliminar.Location = new System.Drawing.Point(0, 365);
-            this.Eliminar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Primary = true;
-            this.Eliminar.Size = new System.Drawing.Size(178, 111);
-            this.Eliminar.TabIndex = 55;
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminar.UseVisualStyleBackColor = true;
-            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // btnModificar
             // 
@@ -498,16 +534,16 @@
             this.Controls.Add(this.btnInscripcion);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.Eliminar);
-            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.btnPrincipal);
-            this.Controls.Add(this.groupBox5);
+            this.Controls.Add(this.btnCerrar);
+            this.Controls.Add(this.BoxGenero);
             this.Controls.Add(this.groupBox2);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Alumno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
+            this.BoxGenero.ResumeLayout(false);
+            this.BoxGenero.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -527,7 +563,7 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtApPat_A;
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtNombre_A;
-        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.GroupBox BoxGenero;
         private System.Windows.Forms.Label label5;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAlergias_A;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtLugarNac_A;
@@ -536,7 +572,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtEdad_A;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
-        private MaterialSkin.Controls.MaterialRaisedButton Eliminar;
         private MaterialSkin.Controls.MaterialRaisedButton btnModificar;
         private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
         private MaterialSkin.Controls.MaterialRaisedButton btnInscripcion;
@@ -550,5 +585,8 @@
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
+        private MaterialSkin.Controls.MaterialRadioButton RadFemenino;
+        private MaterialSkin.Controls.MaterialRadioButton RadMasculino;
     }
 }

@@ -32,7 +32,6 @@
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnModificar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.Eliminar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtAM_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtAP_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -104,20 +103,6 @@
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
             this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.Depth = 0;
-            this.Eliminar.Location = new System.Drawing.Point(0, 363);
-            this.Eliminar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.Primary = true;
-            this.Eliminar.Size = new System.Drawing.Size(178, 111);
-            this.Eliminar.TabIndex = 59;
-            this.Eliminar.Text = "Eliminar";
-            this.Eliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Eliminar.UseVisualStyleBackColor = true;
-            this.Eliminar.Click += new System.EventHandler(this.Eliminar_Click);
             // 
             // groupBox1
             // 
@@ -409,7 +394,7 @@
             // materialRaisedButton1
             // 
             this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(826, 123);
+            this.materialRaisedButton1.Location = new System.Drawing.Point(826, 228);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialRaisedButton1.Name = "materialRaisedButton1";
             this.materialRaisedButton1.Primary = true;
@@ -423,11 +408,11 @@
             // btnPrincipal
             // 
             this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(826, 335);
+            this.btnPrincipal.Location = new System.Drawing.Point(0, 373);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 68);
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 101);
             this.btnPrincipal.TabIndex = 68;
             this.btnPrincipal.Text = "Volver al Menú Principal";
             this.btnPrincipal.UseVisualStyleBackColor = true;
@@ -466,8 +451,8 @@
             this.Controls.Add(this.btnInscripcion);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnModificar);
-            this.Controls.Add(this.Eliminar);
             this.Name = "Form3";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscripción";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -487,7 +472,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnInscripcion;
         private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
         private MaterialSkin.Controls.MaterialRaisedButton btnModificar;
-        private MaterialSkin.Controls.MaterialRaisedButton Eliminar;
         private System.Windows.Forms.GroupBox groupBox1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAM_T;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAP_T;

@@ -89,6 +89,7 @@ CREATE TABLE Alumno
     numExt varchar(5),
     cp varchar(5) NOT NULL,
     telEmer varchar(10) NOT NULL,
+    Genero varchar(9) NOT NULL,
     lugNac varchar(30) NOT NULL,
     FechNac date NOT NULL,
     Alergias varchar(250),
@@ -137,7 +138,8 @@ INSERT INTO Grado VALUES (4, '4', 'A', '4');
 INSERT INTO Grado VALUES (5, '5', 'A', '5');
 INSERT INTO Grado VALUES (6, '6', 'A', '6');
 
-/*SELECT * FROM nerivela.Grado;
+/*SELECT * FROM nerivela.Alumno;
+SELECT * FROM nerivela.Grado;
 SELECT * FROM nerivela.Maestros;
 
 SELECT * FROM nerivela.personal;
