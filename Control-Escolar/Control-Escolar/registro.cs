@@ -23,8 +23,6 @@ namespace Control_Escolar
         //---------------------------Variables globales------------------------------------------------------
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
 
-        bool DatoValidado = false;
-
         public registro()
         {
             InitializeComponent();
@@ -352,19 +350,18 @@ namespace Control_Escolar
             if (this.txtUsuario.Text.Length == 0)//Usuario
             {
                 errorProvider1.SetError(this.txtUsuario, "Ingresar el usuario");
-                DatoValidado = false;
+
             }
             else
             {
                 if (txtUsuario.Text.Length < 5)
                 {
                     errorProvider1.SetError(this.txtUsuario, "Debe de ingresar minimo 5 caracteres");
-                    DatoValidado = false;
+
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtUsuario, "");
-                    DatoValidado = true;
                 }
 
             }
@@ -372,26 +369,25 @@ namespace Control_Escolar
             if (this.txtcontra.Text.Length == 0)//Contraseña
             {
                 errorProvider1.SetError(this.txtcontra, "Ingresar la contraseña");
-                DatoValidado = false;
+
             }
             else
             {
                 if (txtcontra.Text.Length < 8)
                 {
                     errorProvider1.SetError(this.txtcontra, "Debe de ingresar minimo 8 caracteres");
-                    DatoValidado = false;
+
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtcontra, "");
-                    DatoValidado = true;
                 }
             }
 
             if (this.txtNombre.Text.Length == 0)//Nombre
             {
                 errorProvider1.SetError(this.txtNombre, "Ingresar el usuario");
-                DatoValidado = false;
+
             }
             else
             {
@@ -400,18 +396,17 @@ namespace Control_Escolar
                     if (txtNombre.Text.Length < 3)
                     {
                         errorProvider1.SetError(this.txtNombre, "Ingrese mas de 3 caracteres");
-                        DatoValidado = false;
+
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtNombre, "");
-                        DatoValidado = true;
                     }
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtNombre, "Solo ingrese letras");
-                    DatoValidado = false;
+
                 }
 
             }
@@ -419,7 +414,7 @@ namespace Control_Escolar
             if (this.txtApPat.Text.Length == 0)//Apellido paterno
             {
                 errorProvider1.SetError(this.txtApPat, "Ingresar apellido paterno");
-                DatoValidado = false;
+
             }
             else
             {
@@ -428,26 +423,25 @@ namespace Control_Escolar
                     if (txtApPat.Text.Length < 3)
                     {
                         errorProvider1.SetError(this.txtApPat, "Ingrese mas de 3 caracteres");
-                        DatoValidado = false;
+
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtApPat, "");
-                        DatoValidado = true;
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtApPat, "Solo ingrese letras");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtApMat.Text.Length == 0)//Apellido materno
             {
                 errorProvider1.SetError(this.txtApMat, "Ingresar apellido materno");
-                DatoValidado = false;
+
             }
             else
             {
@@ -456,68 +450,64 @@ namespace Control_Escolar
                     if (txtApMat.Text.Length < 3)
                     {
                         errorProvider1.SetError(this.txtApMat, "Ingrese mas de 3 caracteres");
-                        DatoValidado = false;
+
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtApMat, "");
-                        DatoValidado = true;
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtApMat, "Solo ingrese letras");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtCalle.Text.Length == 0)//Calle
             {
                 errorProvider1.SetError(this.txtCalle, "Ingresar nombre de la calle");
-                DatoValidado = false;
+
             }
             else
             {
                 errorProvider1.SetError(this.txtCalle, "");
-                DatoValidado = true;
             }
 
             if (this.txtNum.Text.Length == 0)//Numero Ext
             {
                 errorProvider1.SetError(this.txtNum, "Ingresar número exterior");
-                DatoValidado = false;
+
             }
             else
             {
                 if (obje.IsNumeric(txtNum.Text))
                 {
                     errorProvider1.SetError(this.txtNum, "");
-                    DatoValidado = true;
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtNum, "Solo ingrese números");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtColonia.Text.Length == 0)//Colonia
             {
                 errorProvider1.SetError(this.txtColonia, "Ingresar la colonia");
-                DatoValidado = false;
+
             }
             else
             {
                 errorProvider1.SetError(this.txtColonia, "");
-                DatoValidado = true;
             }
 
             if (this.txtCP.Text.Length == 0)//Código Postal
             {
                 errorProvider1.SetError(this.txtCP, "Ingresar código postal");
-                DatoValidado = false;
+
             }
             else
             {
@@ -526,12 +516,11 @@ namespace Control_Escolar
                     if (txtCP.Text.Length == 5)
                     {
                         errorProvider1.SetError(this.txtCP, "");
-                        DatoValidado = true;
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtCP, "Ingrese solo 5 números");
-                        DatoValidado = false;
+
 
                     }
 
@@ -539,14 +528,14 @@ namespace Control_Escolar
                 else
                 {
                     errorProvider1.SetError(this.txtCP, "Solo ingrese números");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtProf.Text.Length == 0)//Profesion
             {
                 errorProvider1.SetError(this.txtProf, "Ingresar su profesión");
-                DatoValidado = false;
+
             }
             else
             {
@@ -555,25 +544,24 @@ namespace Control_Escolar
                     if (txtProf.Text.Length < 3)
                     {
                         errorProvider1.SetError(this.txtProf, "Ingrese mas de 3 letras");
-                        DatoValidado = false;
+
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtProf, "");
-                        DatoValidado = true;
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtProf, "Solo ingrese letras");
-                    DatoValidado = false;
+
                 }
             }
             if (this.txtCargo.Text.Length == 0)//Cargo
             {
                 errorProvider1.SetError(this.txtCargo, "Ingresar su puesto");
-                DatoValidado = false;
+
             }
             else
             {
@@ -582,26 +570,25 @@ namespace Control_Escolar
                     if (txtCargo.Text.Length < 3)
                     {
                         errorProvider1.SetError(this.txtCargo, "Ingrese mas de 3 letras");
-                        DatoValidado = false;
+
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtCargo, "");
-                        DatoValidado = true;
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtCargo, "Solo ingrese letras");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtTel.Text.Length == 0)//Télefono
             {
                 errorProvider1.SetError(this.txtTel, "Ingresar el télefono");
-                DatoValidado = false;
+
             }
             else
             {
@@ -610,38 +597,36 @@ namespace Control_Escolar
                     if (txtTel.Text.Length == 10)
                     {
                         errorProvider1.SetError(this.txtTel, "");
-                        DatoValidado = true;
                     }
                     else
                     {
                         errorProvider1.SetError(this.txtTel, "Ingrese el télefono con código de área");
-                        DatoValidado = false;
+
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtTel, "Solo ingrese números");
-                    DatoValidado = false;
+
                 }
             }
 
             if (this.txtEmail.Text.Length == 0)//Email
             {
                 errorProvider1.SetError(this.txtEmail, "Ingresar el email");
-                DatoValidado = false;
+
             }
             else
             {
                 if (txtEmail.Text.Length < 10)
                 {
                     errorProvider1.SetError(this.txtEmail, "Ingrese mas de 10 caracteres");
-                    DatoValidado = false;
+
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtEmail, "");
-                    DatoValidado = true;
                 }
             }
         }
