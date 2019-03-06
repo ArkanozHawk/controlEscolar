@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Controls;
 using ValidarDatos;
+using System.Text.RegularExpressions;
 
 namespace Control_Escolar
 {
@@ -173,7 +174,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (obje.IsString(txtCURP_A.Text))//Falta agregar la mascara
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {
@@ -450,7 +451,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (obje.IsString(txtCURP_A.Text))//Falta agregar la mascara
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {
@@ -710,7 +711,7 @@ namespace Control_Escolar
                 }
             }
 
-            if (this.txtAlergias_A.Text.Length == 0)//Lugar de nacimiento
+            if (this.txtAlergias_A.Text.Length == 0)//Alergias
             {
                 errorProvider1.SetError(this.txtAlergias_A, "Ingresar las alergias del alumno");
             }
@@ -745,7 +746,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (obje.IsString(txtCURP_A.Text))//falta ingresar mascara
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {
