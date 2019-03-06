@@ -108,11 +108,11 @@ CREATE TABLE Materias
 	idMaterias int(11) NOT NULL auto_increment,
     nombre varchar(20) NOT NULL,
     PRIMARY KEY (idMaterias),
-    idGrado int(11) NOT NULL,
-    CONSTRAINT idGrado FOREIGN KEY (idGrado)
+    idGradoM int(11) NOT NULL,
+    CONSTRAINT idGradoM FOREIGN KEY (idGradoM)
 	REFERENCES Grado(idGrado)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION
+    /*ON DELETE NO ACTION
+    ON UPDATE NO ACTION*/
 ) ENGINE=INNODB;
 
 

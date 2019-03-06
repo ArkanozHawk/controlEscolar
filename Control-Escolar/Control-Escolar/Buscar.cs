@@ -30,7 +30,8 @@ namespace Control_Escolar
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
-
+            
+           
         }
 
         conexion obj = new conexion();
@@ -110,7 +111,7 @@ namespace Control_Escolar
         {
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("select  nombre ,  ApellidoP  , ApellidoM, CURP  from Alumno");
+            codigo.CommandText = ("select idAlumno, nombre ,  ApellidoP  , ApellidoM, CURP  from Alumno");
             try
             {
                 MySqlDataAdapter seleccionar = new MySqlDataAdapter();
@@ -158,6 +159,32 @@ namespace Control_Escolar
             {
                 datagrid(dataGridViewbuscar);
             }
+        }
+
+        private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+
+            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
+
+            sesion.columna1 = Convert.ToString(fila.Cells[0].Value); //obtengo el valor de la primer columna
+
+            sesion.columna2 = Convert.ToString(fila.Cells[1].Value); // obtengo el valor de la segunda columna
+
+            MessageBox.Show(sesion.columna1);
+        }
+
+        public void eliminar()
+        {
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string eliminar = "delete from alumno where  idAlumno =" + sesion.columna1;
+            obj.ElimarAlum(conexion, eliminar);
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            eliminar();
+            datagrid(dataGridViewbuscar);
         }
     }
 }

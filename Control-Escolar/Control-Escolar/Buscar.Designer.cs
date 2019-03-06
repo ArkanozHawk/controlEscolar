@@ -137,6 +137,7 @@
             this.dataGridViewbuscar.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dataGridViewbuscar.Size = new System.Drawing.Size(773, 221);
             this.dataGridViewbuscar.TabIndex = 68;
+            this.dataGridViewbuscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewbuscar_CellContentClick);
             // 
             // groupBox1
             // 
@@ -222,6 +223,7 @@
             this.btnEliminar.TabIndex = 49;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // txtCURP_A
             // 
