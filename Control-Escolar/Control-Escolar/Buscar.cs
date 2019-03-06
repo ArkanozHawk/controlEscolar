@@ -15,13 +15,22 @@ namespace Control_Escolar
 {
     public partial class Buscar : MaterialForm
     {
+        DataGridView mifiltro;
+
+        MySqlCommand codigo = new MySqlCommand();
+        MySqlConnection conectanos = new MySqlConnection();
+        //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
+        MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
+        conexion objbuscar = new conexion();
         public Buscar()
         {
             InitializeComponent();
+            datagrid(dataGridViewbuscar);
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
+
         }
 
         conexion obj = new conexion();
@@ -52,6 +61,7 @@ namespace Control_Escolar
 
         private void Buscar_Load(object sender, EventArgs e)
         {
+            datagrid(dataGridViewbuscar);
 
         }
 
@@ -91,6 +101,63 @@ namespace Control_Escolar
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+        }
+
+        
+
+
+        public void datagrid(DataGridView data)
+        {
+            coneccion.Open();
+            codigo.Connection = coneccion;
+            codigo.CommandText = ("select  nombre ,  ApellidoP  , ApellidoM, CURP  from Alumno");
+            try
+            {
+                MySqlDataAdapter seleccionar = new MySqlDataAdapter();
+                seleccionar.SelectCommand = codigo;
+                DataTable datostabla = new DataTable();
+                seleccionar.Fill(datostabla);
+                BindingSource formulario = new BindingSource();
+                formulario.DataSource = datostabla;
+                data.DataSource = formulario;
+                mifiltro = data;
+                seleccionar.Update(datostabla);
+                coneccion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void TxtAP_T_KeyUp_1(object sender, KeyEventArgs e)
+        {
+
+            if (txtAP_T.Text != "")
+            {
+                dataGridViewbuscar.CurrentCell = null;
+                foreach (DataGridViewRow r in dataGridViewbuscar.Rows)
+                {
+                    r.Visible = false;
+
+                }
+                foreach (DataGridViewRow r in dataGridViewbuscar.Rows)
+                {
+                    foreach (DataGridViewCell c in r.Cells)
+                    {
+                        if (c.Value.ToString().ToUpper().IndexOf(txtAP_T.Text.ToUpper()) == 0)
+                        {
+                            r.Visible = true;
+                            break;
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                datagrid(dataGridViewbuscar);
+            }
         }
     }
 }
