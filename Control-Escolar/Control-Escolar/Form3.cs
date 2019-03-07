@@ -55,6 +55,12 @@ namespace Control_Escolar
             Application.Run(new Alumno());
         }
 
+        //Modificar
+        public static void ThreadModificar()
+        {
+            Application.Run(new Modificar());
+        }
+
         //---------------------------------------------Botones------------------------------------
         //Volver al menu principal
         private void BtnPrincipal_Click(object sender, EventArgs e)
@@ -152,7 +158,10 @@ namespace Control_Escolar
         //Modificar
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
         }
         //Eliminar
         private void Eliminar_Click(object sender, EventArgs e)
