@@ -111,7 +111,7 @@ namespace Control_Escolar
         {
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("select idAlumno, nombre ,  ApellidoP  , ApellidoM, CURP  from Alumno");
+            codigo.CommandText = ("select  nombre ,  ApellidoP  , ApellidoM,Genero,  telEmer, CURP, Alergias,  idGrado  from Alumno");
             try
             {
                 MySqlDataAdapter seleccionar = new MySqlDataAdapter();
@@ -167,17 +167,19 @@ namespace Control_Escolar
 
             DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
 
-            sesion.columna1 = Convert.ToString(fila.Cells[0].Value); //obtengo el valor de la primer columna
+            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
 
             sesion.columna2 = Convert.ToString(fila.Cells[1].Value); // obtengo el valor de la segunda columna
 
-            MessageBox.Show(sesion.columna1);
+            MessageBox.Show(sesion.Curp);
         }
 
         public void eliminar()
         {
             string conexion = "server=localhost;uid=root;database=nerivela";
-            string eliminar = "delete from alumno where  idAlumno =" + sesion.columna1;
+            MessageBox.Show(sesion.Curp);
+            string eliminar = "delete from alumno where  CURP =" + "'"+ sesion.Curp+ "'";
+            MessageBox.Show(eliminar);
             obj.ElimarAlum(conexion, eliminar);
         }
 

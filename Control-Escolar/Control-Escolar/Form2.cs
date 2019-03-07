@@ -85,8 +85,8 @@ namespace Control_Escolar
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
-           
-            if(txtEdad_A.Text.Length != 0)
+            sesion.telefono = txtTelEme_A.Text;
+            if (txtEdad_A.Text.Length != 0)
             {
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
