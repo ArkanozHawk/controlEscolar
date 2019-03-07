@@ -25,13 +25,10 @@ namespace Control_Escolar
         public Buscar()
         {
             InitializeComponent();
-            datagrid(dataGridViewbuscar);
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
-            
-           
         }
 
         conexion obj = new conexion();
@@ -55,15 +52,13 @@ namespace Control_Escolar
         }
 
         public static void ThreadAlumno()
-
         {
             Application.Run(new Alumno());
         }
 
-        private void Buscar_Load(object sender, EventArgs e)
+        public static void ThreadModificar()
         {
-            datagrid(dataGridViewbuscar);
-
+            Application.Run(new Modificar());
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -79,34 +74,6 @@ namespace Control_Escolar
             login.Start();
             this.Close();
         }
-
-        private void BtnPrincipal_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
-
-        private void BtnBuscar_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
-
-        private void BtnInscripcion_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
-
-        
-
-
         public void datagrid(DataGridView data)
         {
             coneccion.Open();
@@ -130,8 +97,67 @@ namespace Control_Escolar
                 MessageBox.Show(ex.Message);
             }
         }
+        private void BtnPrincipal_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
 
-        private void TxtAP_T_KeyUp_1(object sender, KeyEventArgs e)
+        //Modificar
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void BtnInscripcion_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void btnModificarAlum_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
+
+            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
+
+            
+
+            MessageBox.Show(sesion.Curp);
+        }
+        public void eliminar()
+        {
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            MessageBox.Show(sesion.Curp);
+            string eliminar = "delete from alumno where  CURP =" + "'" + sesion.Curp + "'";
+            MessageBox.Show(eliminar);
+            obj.ElimarAlum(conexion, eliminar);
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            eliminar();
+            datagrid(dataGridViewbuscar);
+        }
+
+        private void TxtAP_T_KeyUp(object sender, KeyEventArgs e)
         {
 
             if (txtAP_T.Text != "")
@@ -161,31 +187,8 @@ namespace Control_Escolar
             }
         }
 
-        private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Buscar_Load(object sender, EventArgs e)
         {
-            
-
-            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
-
-            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
-
-            sesion.columna2 = Convert.ToString(fila.Cells[1].Value); // obtengo el valor de la segunda columna
-
-            MessageBox.Show(sesion.Curp);
-        }
-
-        public void eliminar()
-        {
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            MessageBox.Show(sesion.Curp);
-            string eliminar = "delete from alumno where  CURP =" + "'"+ sesion.Curp+ "'";
-            MessageBox.Show(eliminar);
-            obj.ElimarAlum(conexion, eliminar);
-        }
-
-        private void BtnEliminar_Click(object sender, EventArgs e)
-        {
-            eliminar();
             datagrid(dataGridViewbuscar);
         }
     }

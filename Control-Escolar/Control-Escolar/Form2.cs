@@ -53,6 +53,11 @@ namespace Control_Escolar
         {
             Application.Run(new Buscar());
         }
+        //Modificar
+        public static void ThreadModificar()
+        {
+            Application.Run(new Modificar());
+        }
         //Calcular la edad
         public void CalcEdad(string fnac)
         {
@@ -85,8 +90,8 @@ namespace Control_Escolar
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
-            sesion.telefono = txtTelEme_A.Text;
-            if (txtEdad_A.Text.Length != 0)
+           
+            if(txtEdad_A.Text.Length != 0)
             {
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
@@ -126,7 +131,6 @@ namespace Control_Escolar
 
             string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd"); 
             sesion.fnac = nacimiento;
-           // sesion.genero = genero;
             CalcEdad(sesion.fnac);
             inscripcion();
             if (validar == true)
@@ -153,10 +157,10 @@ namespace Control_Escolar
         //Modificar
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            /*System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
-            this.Close();*/
+            this.Close();
         }
         //Eliminar
         private void Eliminar_Click(object sender, EventArgs e)

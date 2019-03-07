@@ -358,7 +358,7 @@ namespace Control_Escolar
             MySqlCommand com;
 
 
-           
+
 
 
             try

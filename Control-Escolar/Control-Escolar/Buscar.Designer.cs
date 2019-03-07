@@ -93,7 +93,6 @@
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
             // 
             // btnModificar
             // 
@@ -107,6 +106,7 @@
             this.btnModificar.Text = "Modificar";
             this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnPrincipal
             // 
@@ -211,6 +211,7 @@
             this.btnModificarAlum.TabIndex = 50;
             this.btnModificarAlum.Text = "Modificar";
             this.btnModificarAlum.UseVisualStyleBackColor = true;
+            this.btnModificarAlum.Click += new System.EventHandler(this.btnModificarAlum_Click);
             // 
             // btnEliminar
             // 
@@ -269,7 +270,7 @@
             this.txtAP_T.Size = new System.Drawing.Size(208, 23);
             this.txtAP_T.TabIndex = 45;
             this.txtAP_T.UseSystemPasswordChar = false;
-            this.txtAP_T.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtAP_T_KeyUp_1);
+            this.txtAP_T.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtAP_T_KeyUp);
             // 
             // padre
             // 

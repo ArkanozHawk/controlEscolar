@@ -55,6 +55,12 @@ namespace Control_Escolar
             Application.Run(new Alumno());
         }
 
+        //Modificar
+        public static void ThreadModificar()
+        {
+            Application.Run(new Modificar());
+        }
+
         //---------------------------------------------Botones------------------------------------
         //Volver al menu principal
         private void BtnPrincipal_Click(object sender, EventArgs e)
@@ -126,19 +132,19 @@ namespace Control_Escolar
                 switch (sesion.edad)
                 {
 
-                case 6: { grado = "1 ";  break; }
-                case 7: { grado = "2 "; break; }
-                case 8: { grado = "3 "; break; }
-                case 9: { grado = "4 "; break; }
-                case 10: { grado = "5 "; break; }
-                case 11: { grado = "6 "; break; }
+                case 6: { grado = "1 A";  break; }
+                case 7: { grado = "2 A"; break; }
+                case 8: { grado = "3 A"; break; }
+                case 9: { grado = "4 A"; break; }
+                case 10: { grado = "5 A"; break; }
+                case 11: { grado = "6 A"; break; }
                
                 default:
                     break;
                 }
                     MessageBox.Show("El grado del alumno es: ",grado);
            
-                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES(NULL,'" + sesion.nombre+"','"+sesion.AP+"','"+sesion.AM+"','"+sesion.calle+"','"+sesion.Colonia+"','"+sesion.numero+"','"+sesion.CP+"','"+sesion.telefono+ "','" + sesion.genero + "','" + sesion.LN+"','"+sesion.fnac+"','"+sesion.Alergia+"','"+sesion.Curp+"','"+idpadres+"','"+Convert.ToInt32(grado)+"');";
+                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES(NULL,'" + sesion.nombre+"','"+sesion.AP+"','"+sesion.AM+"','"+sesion.calle+"','"+sesion.Colonia+"','"+sesion.numero+"','"+sesion.CP+"','"+sesion.telefono+ "','" + sesion.genero + "','" + sesion.LN+"','"+sesion.fnac+"','"+sesion.Alergia+"','"+sesion.Curp+"','"+idpadres+"','"+grado+"');";
                     obj.insalumnos(conexion, inserta_alumnos);
                     Form3 frm3 = new Form3();
                     this.Hide();
@@ -152,7 +158,10 @@ namespace Control_Escolar
         //Modificar
         private void btnModificar_Click(object sender, EventArgs e)
         {
-
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
         }
         //Eliminar
         private void Eliminar_Click(object sender, EventArgs e)
