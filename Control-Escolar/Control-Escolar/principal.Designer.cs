@@ -93,7 +93,7 @@
             this.btnBitacora.Size = new System.Drawing.Size(178, 98);
             this.btnBitacora.TabIndex = 46;
             this.btnBitacora.Text = "Bitacora";
-            this.btnBitacora.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnBitacora.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.btnBitacora.UseVisualStyleBackColor = true;
             this.btnBitacora.Click += new System.EventHandler(this.btnBitacora_Click);
             // 

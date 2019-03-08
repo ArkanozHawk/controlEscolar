@@ -132,6 +132,19 @@
     <Compile Include="Grupos.Designer.cs">
       <DependentUpon>Grupos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Header.cs" />
+    <Compile Include="Modificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modificar.Designer.cs">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarPadre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModificarPadre.Designer.cs">
+      <DependentUpon>ModificarPadre.cs</DependentUpon>
+    </Compile>
     <Compile Include="principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +153,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -171,19 +189,20 @@
     <EmbeddedResource Include="Grupos.resx">
       <DependentUpon>Grupos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modificar.resx">
+      <DependentUpon>Modificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModificarPadre.resx">
+      <DependentUpon>ModificarPadre.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="principal.resx">
       <DependentUpon>principal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="registro.resx">
       <DependentUpon>registro.cs</DependentUpon>
     </EmbeddedResource>
@@ -341,6 +360,36 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\icons8-usuario-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-borrar-para-siempre-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-búsqueda-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-añadir-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cancelar-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-papelera-de-reciclaje-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-borrar-para-siempre-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-búsqueda-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-editar-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-papelera-de-reciclaje-481.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

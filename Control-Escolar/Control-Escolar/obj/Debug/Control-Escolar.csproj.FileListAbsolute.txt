@@ -258,3 +258,5 @@ C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Contr
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources

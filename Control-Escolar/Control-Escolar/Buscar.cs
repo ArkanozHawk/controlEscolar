@@ -45,14 +45,13 @@ namespace Control_Escolar
         }
 
         public static void ThreadAlumno()
-
         {
             Application.Run(new Alumno());
         }
 
-        private void Buscar_Load(object sender, EventArgs e)
+        public static void ThreadModificar()
         {
-
+            Application.Run(new Modificar());
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -77,7 +76,8 @@ namespace Control_Escolar
             this.Close();
         }
 
-        private void BtnBuscar_Click(object sender, EventArgs e)
+        //Modificar
+        private void btnModificar_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
             pantalla.Start();
@@ -88,6 +88,14 @@ namespace Control_Escolar
         private void BtnInscripcion_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void btnModificarAlum_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();

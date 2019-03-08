@@ -73,89 +73,9 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1280px_SEP_logo_2012_svg {
-            get {
-                object obj = ResourceManager.GetObject("1280px-SEP_logo_2012.svg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1280px_SEP_logo_20121 {
-            get {
-                object obj = ResourceManager.GetObject("1280px-SEP_logo_20121", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _1280px_SEP_logo_20122 {
-            get {
-                object obj = ResourceManager.GetObject("1280px-SEP_logo_20122", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _450_1000 {
-            get {
-                object obj = ResourceManager.GetObject("450_1000", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap _7 {
-            get {
-                object obj = ResourceManager.GetObject("7", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap access_512 {
             get {
                 object obj = ResourceManager.GetObject("access-512", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap badges_Ruby_UserAuthentication_Stage11 {
-            get {
-                object obj = ResourceManager.GetObject("badges_Ruby_UserAuthentication_Stage11", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap badges_Ruby_UserAuthentication_Stage111 {
-            get {
-                object obj = ResourceManager.GetObject("badges_Ruby_UserAuthentication_Stage111", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap calendario_mural {
-            get {
-                object obj = ResourceManager.GetObject("calendario-mural", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,39 +113,9 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap descarga {
-            get {
-                object obj = ResourceManager.GetObject("descarga", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap escudo {
-            get {
-                object obj = ResourceManager.GetObject("escudo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap estudiante {
             get {
                 object obj = ResourceManager.GetObject("estudiante", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap eye_watch_icon_icons_com_74456 {
-            get {
-                object obj = ResourceManager.GetObject("eye-watch_icon-icons.com_74456", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -253,16 +143,6 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap green_login_icon_vector_4310498 {
-            get {
-                object obj = ResourceManager.GetObject("green-login-icon-vector-4310498", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_ajustes_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-ajustes-48", resourceCulture);
@@ -283,9 +163,89 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_añadir_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-añadir-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_borrar_para_siempre_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-borrar-para-siempre-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_borrar_para_siempre_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-borrar-para-siempre-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_búsqueda_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-búsqueda-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_búsqueda_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-búsqueda-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_cancelar_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-cancelar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_contraseña_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-contraseña-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_editar_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-editar-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_editar_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-editar-481", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -306,6 +266,26 @@ namespace Control_Escolar.Properties {
         internal static System.Drawing.Bitmap icons8_exportar_pdf_481 {
             get {
                 object obj = ResourceManager.GetObject("icons8-exportar-pdf-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_papelera_de_reciclaje_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-papelera-de-reciclaje-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_papelera_de_reciclaje_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-papelera-de-reciclaje-481", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,29 +333,9 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap kisspng_computer_icons_whatsapp_logo_5afac6806b9394_2470078915263842564406 {
-            get {
-                object obj = ResourceManager.GetObject("kisspng-computer-icons-whatsapp-logo-5afac6806b9394.2470078915263842564406", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap login {
             get {
                 object obj = ResourceManager.GetObject("login", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap login_button_png_0 {
-            get {
-                object obj = ResourceManager.GetObject("login-button-png-0", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -443,29 +403,9 @@ namespace Control_Escolar.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap SEP {
-            get {
-                object obj = ResourceManager.GetObject("SEP", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap SEP_logo_2012 {
             get {
                 object obj = ResourceManager.GetObject("SEP_logo_2012", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap sesion {
-            get {
-                object obj = ResourceManager.GetObject("sesion", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
