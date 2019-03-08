@@ -29,6 +29,38 @@ namespace Control_Escolar
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+            try
+            {
+                myreader.Read();
+
+                sesion.cargo = Convert.ToString(myreader["cargo"]);
+                if(sesion.cargo == "Secretario(a)")
+                {
+                    btnModificarAlum.Visible = false;
+                    pictureBox3.Visible = false;
+                    pictureBox2.Visible = false;
+                    btnEliminar.Visible = false;
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+            }
         }
 
         conexion obj = new conexion();

@@ -388,15 +388,19 @@ namespace Control_Escolar
                     }
                     else
                     {
-                        //if (CalcEdad(sesion.fnac) == Int32.TryParse(txtEdad_A))
-                        //{
-                            errorProvider1.SetError(this.txtEdad_A, "");
-                        /*}
-                        else
+
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac==txtEdad_A.Text)
                         {
-                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
-                            return false;
-                        }*/
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        //else
+                        //{
+                        //    errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                        //    return false;
+                        //}
                             
                     }
 
@@ -607,7 +611,17 @@ namespace Control_Escolar
                     }
                     else
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "");
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac == txtEdad_A.Text)
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        //else
+                        //{
+                        //    errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                        //}
                     }
 
                 }
@@ -1013,7 +1027,17 @@ namespace Control_Escolar
                     }
                     else
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "");
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac == txtEdad_A.Text)
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        else
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                        }
                     }
 
                 }
