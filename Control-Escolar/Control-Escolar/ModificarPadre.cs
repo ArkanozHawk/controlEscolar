@@ -145,17 +145,17 @@ namespace Control_Escolar
             switch (sesion.edad)
             {
 
-                case 6: { grado = "1 A"; break; }
-                case 7: { grado = "2 A"; break; }
-                case 8: { grado = "3 A"; break; }
-                case 9: { grado = "4 A"; break; }
-                case 10: { grado = "5 A"; break; }
-                case 11: { grado = "6 A"; break; }
+                case 6: { grado = "1"; break; }
+                case 7: { grado = "2"; break; }
+                case 8: { grado = "3"; break; }
+                case 9: { grado = "4"; break; }
+                case 10: { grado = "5"; break; }
+                case 11: { grado = "6"; break; }
 
                 default:
                     break;
             }
-            MessageBox.Show("El grado del alumno es: ", grado);
+            MessageBox.Show("El grado del alumno es: " + grado + " A");
 
             string inserta_padres = "UPDATE `padres` SET `nombre`='" + Nombre_T + "'" + ",`ApellidoP`='" + AP_T + "'" + ",`ApellidoM`='" + AM_T + "'" + ",`lugTrabajo`='" + LT_T + "'" + ",`Profesion`='" + Profesion_T + "'" + ",`telefono`='" + Telefono_T + "'" + ",`Celular`='" + Celular_T + "'" + ",`Calle`='" + Calle_T + "'" + ",`Colonia`='" + Colonia_T + "'" + ",`NumExt`='" + Numero_T + "'" + ",`cp`='" + CP_T + "'" + " WHERE idPadres ='" + idpadres + "'";
             obj.inspadres(conexion, inserta_padres);
