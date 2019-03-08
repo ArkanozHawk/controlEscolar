@@ -46,6 +46,10 @@ CREATE TABLE Padres
     Profesion varchar(30),
     telefono varchar(10),
     Celular varchar(10),
+     Calle varchar(50) NOT NULL,
+    Colonia varchar(50) NOT NULL,
+    NumExt varchar(5),
+    cp varchar(5) NOT NULL,
     PRIMARY KEY (idPadres)
 ) ENGINE=INNODB;
 

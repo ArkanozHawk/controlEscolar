@@ -15,6 +15,13 @@ namespace Control_Escolar
 {
     public partial class Buscar : MaterialForm
     {
+        DataGridView mifiltro;
+
+        MySqlCommand codigo = new MySqlCommand();
+        MySqlConnection conectanos = new MySqlConnection();
+        //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
+        MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
+        conexion objbuscar = new conexion();
         public Buscar()
         {
             InitializeComponent();
@@ -52,6 +59,9 @@ namespace Control_Escolar
         public static void ThreadModificar()
         {
             Application.Run(new Modificar());
+
+
+
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -67,7 +77,29 @@ namespace Control_Escolar
             login.Start();
             this.Close();
         }
-
+        public void datagrid(DataGridView data)
+        {
+            coneccion.Open();
+            codigo.Connection = coneccion;
+            codigo.CommandText = ("select  nombre ,  ApellidoP  , ApellidoM,Genero,  telEmer, CURP, Alergias,  idGrado  from Alumno");
+            try
+            {
+                MySqlDataAdapter seleccionar = new MySqlDataAdapter();
+                seleccionar.SelectCommand = codigo;
+                DataTable datostabla = new DataTable();
+                seleccionar.Fill(datostabla);
+                BindingSource formulario = new BindingSource();
+                formulario.DataSource = datostabla;
+                data.DataSource = formulario;
+                mifiltro = data;
+                seleccionar.Update(datostabla);
+                coneccion.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
         private void BtnPrincipal_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
@@ -83,6 +115,8 @@ namespace Control_Escolar
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+
+
         }
 
         private void BtnInscripcion_Click(object sender, EventArgs e)
@@ -94,11 +128,74 @@ namespace Control_Escolar
         }
 
         private void btnModificarAlum_Click(object sender, EventArgs e)
-        {
+        {    
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+            
+        }
+
+        private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+
+            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
+
+            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
+
+            
+
+            MessageBox.Show(sesion.Curp);
+        }
+        public void eliminar()
+        {
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            MessageBox.Show(sesion.Curp);
+            string eliminar = "delete from alumno where  CURP =" + "'" + sesion.Curp + "'";
+            MessageBox.Show(eliminar);
+            obj.ElimarAlum(conexion, eliminar);
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            eliminar();
+            datagrid(dataGridViewbuscar);
+        }
+
+        private void TxtAP_T_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            if (txtAP_T.Text != "")
+            {
+                dataGridViewbuscar.CurrentCell = null;
+                foreach (DataGridViewRow r in dataGridViewbuscar.Rows)
+                {
+                    r.Visible = false;
+
+                }
+                foreach (DataGridViewRow r in dataGridViewbuscar.Rows)
+                {
+                    foreach (DataGridViewCell c in r.Cells)
+                    {
+                        if (c.Value.ToString().ToUpper().IndexOf(txtAP_T.Text.ToUpper()) == 0)
+                        {
+                            r.Visible = true;
+                            break;
+                        }
+                    }
+                }
+
+            }
+            else
+            {
+                datagrid(dataGridViewbuscar);
+            }
+        }
+
+        private void Buscar_Load(object sender, EventArgs e)
+        {
+            datagrid(dataGridViewbuscar);
         }
     }
 }

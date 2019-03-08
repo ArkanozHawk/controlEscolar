@@ -33,7 +33,7 @@
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnModificar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewbuscar = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -46,7 +46,7 @@
             this.txtAP_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.padre = new System.Windows.Forms.Label();
             this.txtnombre_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -121,22 +121,23 @@
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.BtnPrincipal_Click);
             // 
-            // dataGridView1
+            // dataGridViewbuscar
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AllowUserToResizeColumns = false;
-            this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(195, 250);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(773, 221);
-            this.dataGridView1.TabIndex = 68;
+            this.dataGridViewbuscar.AllowUserToAddRows = false;
+            this.dataGridViewbuscar.AllowUserToDeleteRows = false;
+            this.dataGridViewbuscar.AllowUserToResizeColumns = false;
+            this.dataGridViewbuscar.AllowUserToResizeRows = false;
+            this.dataGridViewbuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dataGridViewbuscar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.dataGridViewbuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewbuscar.Location = new System.Drawing.Point(195, 250);
+            this.dataGridViewbuscar.Name = "dataGridViewbuscar";
+            this.dataGridViewbuscar.ReadOnly = true;
+            this.dataGridViewbuscar.RowHeadersVisible = false;
+            this.dataGridViewbuscar.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dataGridViewbuscar.Size = new System.Drawing.Size(773, 221);
+            this.dataGridViewbuscar.TabIndex = 68;
+            this.dataGridViewbuscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewbuscar_CellContentClick);
             // 
             // groupBox1
             // 
@@ -223,6 +224,7 @@
             this.btnEliminar.TabIndex = 49;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
             // 
             // txtCURP_A
             // 
@@ -268,6 +270,7 @@
             this.txtAP_T.Size = new System.Drawing.Size(208, 23);
             this.txtAP_T.TabIndex = 45;
             this.txtAP_T.UseSystemPasswordChar = false;
+            this.txtAP_T.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtAP_T_KeyUp);
             // 
             // padre
             // 
@@ -303,7 +306,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(980, 481);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridViewbuscar);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnInscripcion);
             this.Controls.Add(this.btnBuscar);
@@ -312,7 +315,8 @@
             this.Name = "Buscar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.Load += new System.EventHandler(this.Buscar_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -329,7 +333,7 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
         private MaterialSkin.Controls.MaterialRaisedButton btnModificar;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridViewbuscar;
         private System.Windows.Forms.GroupBox groupBox1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAM_T;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAP_T;

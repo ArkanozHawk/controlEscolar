@@ -358,7 +358,7 @@ namespace Control_Escolar
             MySqlCommand com;
 
 
-           
+
 
 
             try
@@ -460,8 +460,122 @@ namespace Control_Escolar
 
         }
 
+        public void ElimarAlum(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return;
+
+            }
+
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                com.ExecuteNonQuery();
+                MessageBox.Show("Se elimino alumno");
+                return;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return;
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
+
+        }
+
+
+        public string Consultadatospadre(string conexion, string consulta)
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+
+
+
+
+            try
+            {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return "0";
+
+            }
+
+
+
+            try
+            {
+                com = new MySqlCommand(consulta, conn);
+
+                MySqlDataReader myReader = com.ExecuteReader();
+                myReader.Read();
+                string resultado = Convert.ToString(myReader["idpadres"]);
+                return resultado;
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+                return "0";
+            }
+            finally
+            {
+
+
+                conn.Close();
+
+            }
+
+
+
+
+        }
 
 
 
     }
-    }
+
+
+
+
+
+}
+
