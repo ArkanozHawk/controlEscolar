@@ -53,7 +53,7 @@ namespace Control_Escolar
             txtTel.Text = null;
             txtEmail.Text = null;
             txtProf.Text = null;
-            txtCargo.Text = null;
+            cmbCargo.Text = null;
             txtUsuario.Text = null;
             txtcontra.Text = null;
         }
@@ -270,32 +270,32 @@ namespace Control_Escolar
                     return false;
                 }
             }
-            if (this.txtCargo.Text.Length == 0)//Cargo
-            {
-                errorProvider1.SetError(this.txtCargo, "Ingresar su puesto");
-                return false;
-            }
-            else
-            {
-                if (obje.IsString(txtCargo.Text))
-                {
-                    if (txtCargo.Text.Length < 3)
-                    {
-                        errorProvider1.SetError(this.txtCargo, "Ingrese mas de 3 letras");
-                        return false;
-                    }
-                    else
-                    {
-                        errorProvider1.SetError(this.txtCargo, "");
-                    }
+            //if (this.cmbCargo.Text.Length == 0)//Cargo
+            //{
+            //    errorProvider1.SetError(this.cmbCargo, "Ingresar su puesto");
+            //    return false;
+            //}
+            //else
+            //{
+            //    if (obje.IsString(cmbCargo.Text))
+            //    {
+            //        if (cmbCargo.Text.Length < 3)
+            //        {
+            //            errorProvider1.SetError(this.cmbCargo, "Ingrese mas de 3 letras");
+            //            return false;
+            //        }
+            //        else
+            //        {
+            //            errorProvider1.SetError(this.cmbCargo, "");
+            //        }
 
-                }
-                else
-                {
-                    errorProvider1.SetError(this.txtCargo, "Solo ingrese letras");
-                    return false;
-                }
-            }
+            //    }
+            //    else
+            //    {
+            //        errorProvider1.SetError(this.cmbCargo, "Solo ingrese letras");
+            //        return false;
+            //    }
+            //}
 
             if (this.txtTel.Text.Length == 0)//Télefono
             {
@@ -558,32 +558,32 @@ namespace Control_Escolar
 
                 }
             }
-            if (this.txtCargo.Text.Length == 0)//Cargo
-            {
-                errorProvider1.SetError(this.txtCargo, "Ingresar su puesto");
+            //if (this.cmbCargo.Text.Length == 0)//Cargo
+            //{
+            //    errorProvider1.SetError(this.cmbCargo, "Ingresar su puesto");
 
-            }
-            else
-            {
-                if (obje.IsString(txtCargo.Text))
-                {
-                    if (txtCargo.Text.Length < 3)
-                    {
-                        errorProvider1.SetError(this.txtCargo, "Ingrese mas de 3 letras");
+            //}
+            //else
+            //{
+            //    if (obje.IsString(cmbCargo.Text))
+            //    {
+            //        if (cmbCargo.Text.Length < 3)
+            //        {
+            //            errorProvider1.SetError(this.cmbCargo, "Ingrese mas de 3 letras");
 
-                    }
-                    else
-                    {
-                        errorProvider1.SetError(this.txtCargo, "");
-                    }
+            //        }
+            //        else
+            //        {
+            //            errorProvider1.SetError(this.cmbCargo, "");
+            //        }
 
-                }
-                else
-                {
-                    errorProvider1.SetError(this.txtCargo, "Solo ingrese letras");
+            //    }
+            //    else
+            //    {
+            //        errorProvider1.SetError(this.cmbCargo, "Solo ingrese letras");
 
-                }
-            }
+            //    }
+            //}
 
             if (this.txtTel.Text.Length == 0)//Télefono
             {
@@ -727,6 +727,11 @@ namespace Control_Escolar
             }
         }
 
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         //Apellido materno
         private void txtApMat_Validating(object sender, CancelEventArgs e)
         {
@@ -863,33 +868,33 @@ namespace Control_Escolar
             }
         }
 
-        //Cargo
-        private void txtCargo_Validating(object sender, CancelEventArgs e)
-        {
-            if (this.txtCargo.Text.Length == 0)//Cargo
-            {
-                errorProvider1.SetError(this.txtCargo, "Ingresar su cargo");
-            }
-            else
-            {
-                if (obje.IsString(txtCargo.Text))
-                {
-                    if (txtCargo.Text.Length < 3)
-                    {
-                        errorProvider1.SetError(this.txtCargo, "Ingrese mas de 3 letras");
-                    }
-                    else
-                    {
-                        errorProvider1.SetError(this.txtCargo, "");
-                    }
+        ////Cargo
+        //private void txtCargo_Validating(object sender, CancelEventArgs e)
+        //{
+        //    if (this.cmbCargo.Text.Length == 0)//Cargo
+        //    {
+        //        errorProvider1.SetError(this.cmbCargo, "Ingresar su cargo");
+        //    }
+        //    else
+        //    {
+        //        if (obje.IsString(cmbCargo.Text))
+        //        {
+        //            if (cmbCargo.Text.Length < 3)
+        //            {
+        //                errorProvider1.SetError(this.cmbCargo, "Ingrese mas de 3 letras");
+        //            }
+        //            else
+        //            {
+        //                errorProvider1.SetError(this.cmbCargo, "");
+        //            }
 
-                }
-                else
-                {
-                    errorProvider1.SetError(this.txtCargo, "Solo ingrese letras");
-                }
-            }
-        }
+        //        }
+        //        else
+        //        {
+        //            errorProvider1.SetError(this.cmbCargo, "Solo ingrese letras");
+        //        }
+        //    }
+        //}
 
         //Telefono
         private void txtTel_Validating(object sender, CancelEventArgs e)
@@ -970,7 +975,7 @@ namespace Control_Escolar
             telefono = txtTel.Text;
             email = txtEmail.Text;
             profesion = txtProf.Text;
-            cargo = txtCargo.Text;
+            cargo = cmbCargo.Text;
             usuario = txtUsuario.Text;
             password = txtcontra.Text;
             
