@@ -41,7 +41,25 @@ namespace Control_Escolar
 
         string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password, Fecha, HoraEntrada, ApellidoPU, NombreU, ApellidoMU;
 
+        private void txtUsuario_Click(object sender, EventArgs e)
+        {
 
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Titulo_Click(object sender, EventArgs e)
+        {
+
+        }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {

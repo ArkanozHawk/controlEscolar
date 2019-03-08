@@ -152,4 +152,4 @@ SELECT * FROM nerivela.personal;
 delete from nerivela.personal where idPersonal = 3;
 
 SELECT COUNT(*) FROM nerivela.personal where usuario = 'Arkanoz' and password = 'digi3.0';
-select * FROM nerivela.personal where usuario = 'Arkanoz' and password = 'digi3.0';*/CREATE TABLE Grado (  idGrado int(11) NOT NULL auto_increment,     grado varchar(1),     grupo varchar(1),     idMaestros int not null,     idMaterias int not null,     PRIMARY KEY (idGrado),     CONSTRAINT idMaestros FOREIGN key (idMaestros) references Maestros (idMaestros),     CONSTRAINT idMaterias FOREIGN key (idMaterias) references Materias (idMaterias) )
+select * FROM nerivela.personal where usuario = 'Arkanoz' and password = 'digi3.0';*/

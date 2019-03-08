@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -57,9 +58,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnSiguiente = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox3.SuspendLayout();
             this.BoxGenero.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrincipal
@@ -482,6 +485,10 @@
             this.btnSiguiente.UseVisualStyleBackColor = true;
             this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Modificar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -504,6 +511,7 @@
             this.BoxGenero.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -539,5 +547,6 @@
         private System.Windows.Forms.Label label1;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtNombre_A;
         private MaterialSkin.Controls.MaterialRaisedButton btnSiguiente;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

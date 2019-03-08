@@ -132,7 +132,6 @@
     <Compile Include="Grupos.Designer.cs">
       <DependentUpon>Grupos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Header.cs" />
     <Compile Include="Modificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,11 +152,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <Compile Include="registro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,9 +194,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <EmbeddedResource Include="registro.resx">
       <DependentUpon>registro.cs</DependentUpon>
     </EmbeddedResource>

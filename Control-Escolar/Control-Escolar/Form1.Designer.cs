@@ -56,6 +56,7 @@
             this.Titulo.Size = new System.Drawing.Size(371, 24);
             this.Titulo.TabIndex = 0;
             this.Titulo.Text = "INSTITUTO RODOLFO NERI VELA";
+            this.Titulo.Click += new System.EventHandler(this.Titulo_Click);
             // 
             // txtContra
             // 
@@ -125,6 +126,7 @@
             this.txtUsuario.Size = new System.Drawing.Size(297, 23);
             this.txtUsuario.TabIndex = 0;
             this.txtUsuario.UseSystemPasswordChar = false;
+            this.txtUsuario.Click += new System.EventHandler(this.txtUsuario_Click);
             // 
             // materialDivider2
             // 
@@ -164,6 +166,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(170, 66);
             this.pictureBox2.TabIndex = 13;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // login
             // 
@@ -187,6 +190,7 @@
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Academic";
+            this.Load += new System.EventHandler(this.login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -53,10 +54,12 @@
             this.padre = new System.Windows.Forms.Label();
             this.txtnombre_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnPrincipal
@@ -418,6 +421,10 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // ModificarPadre
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,6 +450,7 @@
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,5 +482,6 @@
         private System.Windows.Forms.Label padre;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtnombre_T;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
