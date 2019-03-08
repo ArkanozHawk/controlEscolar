@@ -19,6 +19,7 @@ namespace Control_Escolar
         public ModificarPadre()
         {
             InitializeComponent();
+            mostrardatospadre();
         }
 
         conexion obj = new conexion();
@@ -103,7 +104,129 @@ namespace Control_Escolar
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
+            MySqlConnection conn;
+            MySqlCommand com;
 
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT  idPadres  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+
+            string idpadres = obj.Consultapadreshijos(conexion, query);
+
+            MessageBox.Show(idpadres);
+
+            string consultaidpadres = "SELECT * FROM  `padres`  WHERE  `idPadres` = '" + idpadres + "'";
+
+
+
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(consultaidpadres, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+           
+            string Nombre_T, AP_T, AM_T, Calle_T, Numero_T, Colonia_T, CP_T, Telefono_T, Celular_T, Profesion_T, LT_T, grado = "";
+            Nombre_T = txtnombre_T.Text;
+            AP_T = txtAP_T.Text;
+            AM_T = txtAM_T.Text;
+            Calle_T = txtCalle_T.Text;
+            Numero_T = txtNum_T.Text;
+            Colonia_T = txtColonia_T.Text;
+            CP_T = txtCP_T.Text;
+            Telefono_T = txtTelf_T.Text;
+            Celular_T = txtCel_T.Text;
+            Profesion_T = txtprof_T.Text;
+            LT_T = txtLugTrab_T.Text;
+            CP_T = txtCP_T.Text;
+            switch (sesion.edad)
+            {
+
+                case 6: { grado = "1 A"; break; }
+                case 7: { grado = "2 A"; break; }
+                case 8: { grado = "3 A"; break; }
+                case 9: { grado = "4 A"; break; }
+                case 10: { grado = "5 A"; break; }
+                case 11: { grado = "6 A"; break; }
+
+                default:
+                    break;
+            }
+            MessageBox.Show("El grado del alumno es: ", grado);
+
+            string inserta_padres = "UPDATE `padres` SET `nombre`='" + Nombre_T + "'" + ",`ApellidoP`='" + AP_T + "'" + ",`ApellidoM`='" + AM_T + "'" + ",`lugTrabajo`='" + LT_T + "'" + ",`Profesion`='" + Profesion_T + "'" + ",`telefono`='" + Telefono_T + "'" + ",`Celular`='" + Celular_T + "'" + ",`Calle`='" + Calle_T + "'" + ",`Colonia`='" + Colonia_T + "'" + ",`NumExt`='" + Numero_T + "'" + ",`cp`='" + CP_T + "'" + " WHERE idPadres ='" + idpadres + "'";
+            obj.inspadres(conexion, inserta_padres);
+
+            string inserta_alumnos = "UPDATE `alumno` SET `nombre`='" + sesion.nombre + "'" + ",`ApellidoP`='" + sesion.AP + "'" + ",`ApellidoM`='" + sesion.AM + "'" + ",`calle`='" + sesion.calle + "'" + ",`colonia`='" + sesion.Colonia + "'" + ",`numExt`='" + sesion.numero + "'" + ",`cp`='" + sesion.CP + "'" + ",`telEmer`='" + sesion.telefono1 + "'" + ",`Genero`='" + sesion.genero + "'" + ",`lugNac`='" + sesion.LN + "'" + ",`FechNac`='" + sesion.fnac + "'" + ",`Alergias`='" + sesion.Alergia + "'" + ",`CURP`='" + sesion.Curp + "'" + ",`idGrado`='" + grado + "'" + " WHERE idPadres='" + idpadres + "'";
+            MessageBox.Show(inserta_alumnos);
+            obj.inspadres(conexion, inserta_alumnos);
+
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+
+        public void mostrardatospadre()
+        {
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT  idPadres  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+
+            string idpadres = obj.Consultapadreshijos(conexion, query);
+
+            MessageBox.Show(idpadres);
+
+            string consultaidpadres = "SELECT * FROM  `padres`  WHERE  `idPadres` = '" + idpadres + "'";
+
+
+
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(consultaidpadres, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            try
+            {
+
+
+
+                myreader.Read();
+
+                txtnombre_T.Text = Convert.ToString(myreader["nombre"]);
+                txtAP_T.Text = Convert.ToString(myreader["ApellidoP"]);
+                txtAM_T.Text = Convert.ToString(myreader["ApellidoM"]);
+                txtCel_T.Text = Convert.ToString(myreader["Celular"]);
+                txtCalle_T.Text = Convert.ToString(myreader["Calle"]);
+                txtNum_T.Text = Convert.ToString(myreader["NumExt"]);
+                txtColonia_T.Text = Convert.ToString(myreader["Colonia"]);
+                txtCP_T.Text = Convert.ToString(myreader["cp"]);
+                txtTelf_T.Text = Convert.ToString(myreader["telefono"]);
+                //  txtCel_T.Text = Convert.ToString(myreader["nombre"]);
+                txtprof_T.Text = Convert.ToString(myreader["profesion"]);
+                txtLugTrab_T.Text = Convert.ToString(myreader["lugTrabajo"]);
+
+                MessageBox.Show("se mostraron datos");
+               
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+
+
+            }
         }
     }
 }

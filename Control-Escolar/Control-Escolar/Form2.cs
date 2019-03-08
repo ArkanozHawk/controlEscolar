@@ -15,11 +15,11 @@ using System.Text.RegularExpressions;
 namespace Control_Escolar
 {
     public partial class Alumno : MaterialForm
-    {
+    {  
         public Alumno()
         {
             InitializeComponent();
-
+            
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
@@ -65,7 +65,7 @@ namespace Control_Escolar
             DateTime nacimiento = new DateTime(dat.Year, dat.Month, dat.Day);
             int edad1 = DateTime.Today.AddTicks(-nacimiento.Ticks).Year - 1;
            // MessageBox.Show(edad1.ToString());
-            if(txtEdad_A.Text.Length != 0)
+            if(txtEdad_A.Text.Length != 1)
             {
                int edad2 = Convert.ToInt32(txtEdad_A.Text);
                 if (edad1 == edad2)

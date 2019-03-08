@@ -59,6 +59,9 @@ namespace Control_Escolar
         public static void ThreadModificar()
         {
             Application.Run(new Modificar());
+
+
+
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -112,6 +115,8 @@ namespace Control_Escolar
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+
+
         }
 
         private void BtnInscripcion_Click(object sender, EventArgs e)
@@ -123,11 +128,12 @@ namespace Control_Escolar
         }
 
         private void btnModificarAlum_Click(object sender, EventArgs e)
-        {
+        {    
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+            
         }
 
         private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
