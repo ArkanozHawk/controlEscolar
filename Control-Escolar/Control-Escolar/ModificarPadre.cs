@@ -142,17 +142,17 @@ namespace Control_Escolar
             switch (sesion.edad)
             {
 
-                case 6: { grado = "1 A"; break; }
-                case 7: { grado = "2 A"; break; }
-                case 8: { grado = "3 A"; break; }
-                case 9: { grado = "4 A"; break; }
-                case 10: { grado = "5 A"; break; }
-                case 11: { grado = "6 A"; break; }
+                case 6: { grado = "1"; break; }
+                case 7: { grado = "2"; break; }
+                case 8: { grado = "3"; break; }
+                case 9: { grado = "4"; break; }
+                case 10: { grado = "5"; break; }
+                case 11: { grado = "6"; break; }
 
                 default:
                     break;
             }
-            MessageBox.Show("El grado del alumno es: ", grado);
+            MessageBox.Show("El grado del alumno es: " + grado + " A");
 
             if (validar == true)
             {
