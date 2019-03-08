@@ -39,8 +39,8 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnModificarAlum = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnEliminar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.padre = new System.Windows.Forms.Label();
             this.txtAP_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
+            this.padre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -153,7 +153,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.icons8_editar_481;
-            this.pictureBox3.Location = new System.Drawing.Point(209, 125);
+            this.pictureBox3.Location = new System.Drawing.Point(39, 125);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 37);
             this.pictureBox3.TabIndex = 54;
@@ -162,7 +162,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Control_Escolar.Properties.Resources.icons8_papelera_de_reciclaje_481;
-            this.pictureBox2.Location = new System.Drawing.Point(38, 126);
+            this.pictureBox2.Location = new System.Drawing.Point(219, 127);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 37);
             this.pictureBox2.TabIndex = 53;
@@ -171,7 +171,7 @@
             // btnModificarAlum
             // 
             this.btnModificarAlum.Depth = 0;
-            this.btnModificarAlum.Location = new System.Drawing.Point(251, 126);
+            this.btnModificarAlum.Location = new System.Drawing.Point(81, 126);
             this.btnModificarAlum.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnModificarAlum.Name = "btnModificarAlum";
             this.btnModificarAlum.Primary = true;
@@ -184,7 +184,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Depth = 0;
-            this.btnEliminar.Location = new System.Drawing.Point(78, 125);
+            this.btnEliminar.Location = new System.Drawing.Point(259, 126);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Primary = true;
@@ -193,6 +193,22 @@
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.BtnEliminar_Click);
+            // 
+            // txtAP_T
+            // 
+            this.txtAP_T.Depth = 0;
+            this.txtAP_T.Hint = "Introduce Filtro de Busqueda";
+            this.txtAP_T.Location = new System.Drawing.Point(38, 68);
+            this.txtAP_T.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtAP_T.Name = "txtAP_T";
+            this.txtAP_T.PasswordChar = '\0';
+            this.txtAP_T.SelectedText = "";
+            this.txtAP_T.SelectionLength = 0;
+            this.txtAP_T.SelectionStart = 0;
+            this.txtAP_T.Size = new System.Drawing.Size(208, 23);
+            this.txtAP_T.TabIndex = 45;
+            this.txtAP_T.UseSystemPasswordChar = false;
+            this.txtAP_T.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtAP_T_KeyUp);
             // 
             // padre
             // 
@@ -206,22 +222,6 @@
             this.padre.Size = new System.Drawing.Size(161, 26);
             this.padre.TabIndex = 44;
             this.padre.Text = "Buscar Alumno";
-            // 
-            // txtAP_T
-            // 
-            this.txtAP_T.Depth = 0;
-            this.txtAP_T.Hint = "Apellido Paterno";
-            this.txtAP_T.Location = new System.Drawing.Point(38, 68);
-            this.txtAP_T.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtAP_T.Name = "txtAP_T";
-            this.txtAP_T.PasswordChar = '\0';
-            this.txtAP_T.SelectedText = "";
-            this.txtAP_T.SelectionLength = 0;
-            this.txtAP_T.SelectionStart = 0;
-            this.txtAP_T.Size = new System.Drawing.Size(208, 23);
-            this.txtAP_T.TabIndex = 45;
-            this.txtAP_T.UseSystemPasswordChar = false;
-            this.txtAP_T.KeyUp += new System.Windows.Forms.KeyEventHandler(this.TxtAP_T_KeyUp);
             // 
             // Buscar
             // 
