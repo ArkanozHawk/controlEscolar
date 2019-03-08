@@ -128,23 +128,24 @@ namespace Control_Escolar
                 obj.inspadres(conexion, inserta_padres);
                 string consultaidpadres = "SELECT idpadres FROM `padres` WHERE `nombre` LIKE '"+Nombre_T+"' AND `ApellidoP` LIKE '"+AP_T+"'";
                 string idpadres = obj.Consultapadreshijos(conexion, consultaidpadres);
+                //string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`,`nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES(NULL,'" + sesion.nombre + "','" + sesion.AP + "','" + sesion.AM + "','" + sesion.calle + "','" + sesion.Colonia + "','" + sesion.numero + "','" + sesion.CP + "','" + sesion.telefono + "','" + sesion.genero + "','" + sesion.LN + "','" + sesion.fnac + "','" + sesion.Alergia + "','" + sesion.Curp + "'," + idpadres + "," + grado + ");";
                 //MessageBox.Show(idpadres);
                 switch (sesion.edad)
                 {
 
-                case 6: { grado = "1 A";  break; }
-                case 7: { grado = "2 A"; break; }
-                case 8: { grado = "3 A"; break; }
-                case 9: { grado = "4 A"; break; }
-                case 10: { grado = "5 A"; break; }
-                case 11: { grado = "6 A"; break; }
+                case 6: { grado = "1";  break; }
+                case 7: { grado = "2"; break; }
+                case 8: { grado = "3"; break; }
+                case 9: { grado = "4"; break; }
+                case 10: { grado = "5"; break; }
+                case 11: { grado = "6"; break; }
                
                 default:
                     break;
                 }
-                    MessageBox.Show("El grado del alumno es: ",grado);
+                    MessageBox.Show("El grado del alumno es: " +grado+ " A");
            
-                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES(NULL,'" + sesion.nombre+"','"+sesion.AP+"','"+sesion.AM+"','"+sesion.calle+"','"+sesion.Colonia+"','"+sesion.numero+"','"+sesion.CP+"','"+sesion.telefono+ "','" + sesion.genero + "','" + sesion.LN+"','"+sesion.fnac+"','"+sesion.Alergia+"','"+sesion.Curp+"','"+idpadres+"','"+grado+"');";
+                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`,`nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, idGrado) VALUES(NULL,'" + sesion.nombre+"','"+sesion.AP+"','"+sesion.AM+"','"+sesion.calle+"','"+sesion.Colonia+"','"+sesion.numero+"','"+sesion.CP+"','"+sesion.telefono+ "','" + sesion.genero + "','" + sesion.LN+"','"+sesion.fnac+"','"+sesion.Alergia+"','"+sesion.Curp+"','"+idpadres+"','"+grado+"');";
                     obj.insalumnos(conexion, inserta_alumnos);
                     Form3 frm3 = new Form3();
                     this.Hide();
