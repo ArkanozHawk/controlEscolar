@@ -132,6 +132,7 @@
     <Compile Include="Grupos.Designer.cs">
       <DependentUpon>Grupos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Header.cs" />
     <Compile Include="Modificar.cs">
       <SubType>Form</SubType>
     </Compile>

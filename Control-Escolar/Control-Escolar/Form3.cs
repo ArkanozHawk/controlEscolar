@@ -124,7 +124,7 @@ namespace Control_Escolar
                 MessageBox.Show("Se registro al alumno: ", sesion.nombre);
                 string conexion = "server=localhost;uid=root;database=nerivela";
               
-                string inserta_padres = " INSERT INTO `padres` (`idPadres`, `nombre`, `ApellidoP`, `ApellidoM`, `lugTrabajo`, `Profesion`, `telefono`, `Celular`) VALUES(NULL, '"+Nombre_T+"', '" + AP_T+"', '" + AM_T + "', '" + LT_T + "', '"+ Profesion_T + "', '"+ Telefono_T + "', '" + Celular_T + "');";
+                string inserta_padres = " INSERT INTO `padres` (`idPadres`, `nombre`, `ApellidoP`, `ApellidoM`, `lugTrabajo`, `Profesion`, `telefono`, `Celular`,`Calle`, `Colonia`, `NumExt`,`cp`) VALUES(NULL, '" + Nombre_T+"', '" + AP_T+"', '" + AM_T + "', '" + LT_T + "', '"+ Profesion_T + "', '"+ Telefono_T + "', '" + Celular_T + "', '" + Calle_T + "', '" + Colonia_T + "', '" + Numero_T + "', '" + CP_T + "');";
                 obj.inspadres(conexion, inserta_padres);
                 string consultaidpadres = "SELECT idpadres FROM `padres` WHERE `nombre` LIKE '"+Nombre_T+"' AND `ApellidoP` LIKE '"+AP_T+"'";
                 string idpadres = obj.Consultapadreshijos(conexion, consultaidpadres);
@@ -145,8 +145,8 @@ namespace Control_Escolar
                 }
                     MessageBox.Show("El grado del alumno es: " +grado+ " A");
            
-                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`,`nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, idGrado) VALUES(NULL,'" + sesion.nombre+"','"+sesion.AP+"','"+sesion.AM+"','"+sesion.calle+"','"+sesion.Colonia+"','"+sesion.numero+"','"+sesion.CP+"','"+sesion.telefono+ "','" + sesion.genero + "','" + sesion.LN+"','"+sesion.fnac+"','"+sesion.Alergia+"','"+sesion.Curp+"','"+idpadres+"','"+grado+"');";
-                    obj.insalumnos(conexion, inserta_alumnos);
+                    string inserta_alumnos = " INSERT INTO `alumno`(`idAlumno`,`nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES(NULL,'" + sesion.nombre + "','" + sesion.AP + "','" + sesion.AM + "','" + sesion.calle + "','" + sesion.Colonia + "','" + sesion.numero + "','" + sesion.CP + "','" + sesion.telefono + "','" + sesion.genero + "','" + sesion.LN + "','" + sesion.fnac + "','" + sesion.Alergia + "','" + sesion.Curp + "'," + idpadres + "," + grado + ");";
+                obj.insalumnos(conexion, inserta_alumnos);
                     Form3 frm3 = new Form3();
                     this.Hide();
                     frm3.Show();

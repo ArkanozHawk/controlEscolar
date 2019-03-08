@@ -95,7 +95,7 @@ namespace Control_Escolar
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
             
-            sesion.telefono = txtNombre_A.Text;
+            sesion.telefono = txtTelEme_A.Text;
             sesion.Alergia = txtAlergias_A.Text;
         }
 
