@@ -12,6 +12,7 @@ namespace Control_Escolar
     {
         public static string Usuario;
         public static string Password;
+        public static string Fecha;
         public static string HoraEntrada;
         public static int idAcceso;
         public static List<string> nombreU = new List<string>();

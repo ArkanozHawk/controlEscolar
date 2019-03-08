@@ -178,7 +178,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {

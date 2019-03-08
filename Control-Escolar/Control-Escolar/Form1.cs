@@ -38,27 +38,9 @@ namespace Control_Escolar
 
         conexion obj = new conexion();
 
-        string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password;
+        string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password, Fecha, HoraEntrada;
 
-        private void txtUsuario_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Titulo_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
@@ -83,9 +65,9 @@ namespace Control_Escolar
             {
                 sesion.Usuario = usuario;
                 sesion.Password = password;
-                sesion.HoraEntrada = Convert.ToString(DateTime.Now);
-                string HoraEntrada = sesion.HoraEntrada;
-                string inserta_bitacora = "INSERT INTO bitacora (Usuario,HoraEntrada) " + "values('" + usuario + "','" + HoraEntrada + "');";
+                sesion.HoraEntrada = HoraEntrada;
+                sesion.Fecha = Fecha;
+                string inserta_bitacora = "INSERT INTO bitacora (Usuario,Fecha,HoraEntrada) " + "values('" + usuario + "','" + Fecha + "','" + HoraEntrada + "');";
                 obj.insBitacora(conexion, inserta_bitacora);
                 string posicion = "SELECT idAcceso FROM bitacora ORDER by idAcceso DESC limit 1;";
                 int posi = obj.Acceso(conexion, posicion);
