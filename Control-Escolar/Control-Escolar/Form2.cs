@@ -90,13 +90,13 @@ namespace Control_Escolar
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
-           
-            if(txtEdad_A.Text.Length != 0)
+            
+            if (txtEdad_A.Text.Length != 0)
             {
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
-            
-            sesion.telefono = txtNombre_A.Text;
+
+            sesion.telefono = txtTelEme_A.Text;
             sesion.Alergia = txtAlergias_A.Text;
         }
 
@@ -178,7 +178,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {

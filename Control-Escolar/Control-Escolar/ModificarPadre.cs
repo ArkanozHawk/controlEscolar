@@ -141,6 +141,7 @@ namespace Control_Escolar
             Profesion_T = txtprof_T.Text;
             LT_T = txtLugTrab_T.Text;
             CP_T = txtCP_T.Text;
+
             switch (sesion.edad)
             {
 
