@@ -30,9 +30,9 @@ CREATE TABLE bitacora
 	Usuario varchar(20),
     Nombre varchar(20),
     Apellido varchar(20),
-    Fecha date,
-	HoraEntrada time,
-    HoraSalida time,
+    Fecha varchar(20),
+	HoraEntrada varchar(20),
+    HoraSalida varchar(20),
     PRIMARY KEY (idAcceso)
 ) ENGINE=INNODB;
 
@@ -46,6 +46,10 @@ CREATE TABLE Padres
     Profesion varchar(30),
     telefono varchar(10),
     Celular varchar(10),
+     Calle varchar(50) NOT NULL,
+    Colonia varchar(50) NOT NULL,
+    NumExt varchar(5),
+    cp varchar(5) NOT NULL,
     PRIMARY KEY (idPadres)
 ) ENGINE=INNODB;
 

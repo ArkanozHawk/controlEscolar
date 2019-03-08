@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MaterialSkin;
 using MaterialSkin.Animations;
 using MaterialSkin.Controls;
+using MySql.Data.MySqlClient;
 
 namespace Control_Escolar
 {
@@ -38,7 +39,7 @@ namespace Control_Escolar
 
         conexion obj = new conexion();
 
-        string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password, Fecha, HoraEntrada;
+        string nombre, ApellidoP, ApellidoM, calle, colonia, numExt, cp, telefono, email, profesion, cargo, usuario, password, Fecha, HoraEntrada, ApellidoPU, NombreU, ApellidoMU;
 
 
 
@@ -52,26 +53,48 @@ namespace Control_Escolar
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
+            MySqlConnection conn;
+            MySqlCommand com;
 
             usuario = txtUsuario.Text;
             password = txtContra.Text;
 
+
             //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
             string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT COUNT(*) FROM personal where usuario = '"+ usuario + "' and password = '"+ password +"';";
-
+            string query = "SELECT COUNT(*) FROM personal where usuario = '" + usuario + "' and password = '" + password + "';";
+            string query1 = "SELECT * FROM personal where usuario = '" + usuario + "' and password = '" + password + "';";
             int resultado = obj.Consul(conexion, query);
             if (resultado == 1)
             {
+                conn = new MySqlConnection(conexion);
+                conn.Open();
+
+                com = new MySqlCommand(query1, conn);
+
+                MySqlDataReader myreader = com.ExecuteReader();
+
+                myreader.Read();
+
+
+                NombreU = Convert.ToString(myreader["Nombre"]);
+                ApellidoPU = Convert.ToString(myreader["ApellidoP"]);
+
+
                 sesion.Usuario = usuario;
                 sesion.Password = password;
-                sesion.HoraEntrada = HoraEntrada;
-                sesion.Fecha = Fecha;
-                string inserta_bitacora = "INSERT INTO bitacora (Usuario,Fecha,HoraEntrada) " + "values('" + usuario + "','" + Fecha + "','" + HoraEntrada + "');";
+                Fecha = DateTime.Now.ToString("dd/MM/yyyy");
+
+
+                HoraEntrada = DateTime.Now.ToString("hh:mm:ss");
+
+
+                string inserta_bitacora = "INSERT INTO bitacora (Usuario,Nombre,Apellido,Fecha,HoraEntrada) " + "values('" + usuario + "','" + NombreU + "','" + ApellidoPU + "','" + Fecha + "','" + HoraEntrada + "');";
                 obj.insBitacora(conexion, inserta_bitacora);
                 string posicion = "SELECT idAcceso FROM bitacora ORDER by idAcceso DESC limit 1;";
                 int posi = obj.Acceso(conexion, posicion);
                 sesion.idAcceso = posi;
+                sesion.HoraEntrada = HoraEntrada;
                 System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
                 pantalla.Start();
                 CheckForIllegalCrossThreadCalls = false;
@@ -81,7 +104,7 @@ namespace Control_Escolar
             {
                 MessageBox.Show("Datos Invalidos, prueba de nuevo");
             }
-            
+
         }
     }
 }
