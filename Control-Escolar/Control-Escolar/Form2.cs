@@ -64,8 +64,7 @@ namespace Control_Escolar
             DateTime dat = Convert.ToDateTime(fnac);
             DateTime nacimiento = new DateTime(dat.Year, dat.Month, dat.Day);
             int edad1 = DateTime.Today.AddTicks(-nacimiento.Ticks).Year - 1;
-           // MessageBox.Show(edad1.ToString());
-            if(txtEdad_A.Text.Length != 1)
+            if(txtEdad_A.Text.Length <3 && txtEdad_A.Text.Length >0)
             {
                int edad2 = Convert.ToInt32(txtEdad_A.Text);
                 if (edad1 == edad2)
@@ -90,13 +89,13 @@ namespace Control_Escolar
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
-            
-            if (txtEdad_A.Text.Length != 0)
+           
+            if(txtEdad_A.Text.Length != 0)
             {
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
-
-            sesion.telefono = txtTelEme_A.Text;
+            
+            sesion.telefono = txtNombre_A.Text;
             sesion.Alergia = txtAlergias_A.Text;
         }
 
@@ -133,6 +132,7 @@ namespace Control_Escolar
             sesion.fnac = nacimiento;
             CalcEdad(sesion.fnac);
             inscripcion();
+
             if (validar == true)
             {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadForm3));
@@ -178,7 +178,7 @@ namespace Control_Escolar
             }
             else
             {
-                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))
+                if (Regex.IsMatch(txtCURP_A.Text, @"^.*(?=.{18})(?=.*[0-9])(?=.*[A-ZÑ]).*$"))//Falta agregar la mascara
                 {
                     if (txtCURP_A.Text.Length == 18)
                     {
@@ -370,7 +370,46 @@ namespace Control_Escolar
                 }
             }
 
-            if(RadMasculino.Checked == true)
+            if (this.txtEdad_A.Text.Length == 0)//Edad
+            {
+                errorProvider1.SetError(this.txtEdad_A, "Ingresar la edad del alumno");
+                return false;
+
+            }
+            else
+            {
+                if (obje.IsNumeric(txtEdad_A.Text))
+                {
+                    if (txtEdad_A.Text.Length > 2)
+                    {
+                        errorProvider1.SetError(this.txtEdad_A, "La edad es incorrecta");
+                        return false;
+
+                    }
+                    else
+                    {
+                        //if (CalcEdad(sesion.fnac) == Int32.TryParse(txtEdad_A))
+                        //{
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        /*}
+                        else
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                            return false;
+                        }*/
+                            
+                    }
+
+                }
+                else
+                {
+                    errorProvider1.SetError(this.txtEdad_A, "Solo ingrese números");
+                    return false;
+
+                }
+            }
+
+            if (RadMasculino.Checked == true)//Genero
             {
                 sesion.genero = "Masculino";
             }
@@ -415,7 +454,7 @@ namespace Control_Escolar
                 }
             }
 
-            if (this.txtAlergias_A.Text.Length == 0)//Lugar de nacimiento
+            if (this.txtAlergias_A.Text.Length == 0)//Alergias
             {
                 errorProvider1.SetError(this.txtAlergias_A, "Ingresar las alergias del alumno");
                 return false;
@@ -438,7 +477,7 @@ namespace Control_Escolar
                 }
                 else
                 {
-                    errorProvider1.SetError(this.txtLugarNac_A, "Solo ingrese letras");
+                    errorProvider1.SetError(this.txtAlergias_A, "Solo ingrese letras");
                     return false;
                 }
             }
@@ -552,7 +591,7 @@ namespace Control_Escolar
                 }
             }
 
-            if (this.txtEdad_A.Text.Length == 0)//Código Postal
+            if (this.txtEdad_A.Text.Length == 0)//Edad
             {
                 errorProvider1.SetError(this.txtEdad_A, "Ingresar la edad del alumno");
 
@@ -735,7 +774,7 @@ namespace Control_Escolar
                 }
                 else
                 {
-                    errorProvider1.SetError(this.txtLugarNac_A, "Solo ingrese letras");
+                    errorProvider1.SetError(this.txtAlergias_A, "Solo ingrese letras");
                 }
             }
         }
@@ -1044,7 +1083,10 @@ namespace Control_Escolar
                 }
             }
 
+        private void btnInscripcion_Click(object sender, EventArgs e)
+        {
 
+        }
 
 
         /*public void  CalcEdad(string fnac)
@@ -1060,10 +1102,7 @@ namespace Control_Escolar
             }
 
             else { MessageBox.Show("no coincide edad con fecha de nacimiento "); }
-
-
-
-
+            
         }
 
 
@@ -1085,12 +1124,6 @@ namespace Control_Escolar
             sesion.telefono = txtNombre_A.Text;
            sesion. Alergia = txtAlergias_A.Text;
            
-
-
-
-
-
-
         }*/
 
     }

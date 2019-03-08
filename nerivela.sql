@@ -28,11 +28,9 @@ CREATE TABLE bitacora
 (
 	idAcceso int not null auto_increment,
 	Usuario varchar(20),
-    Nombre varchar(20),
-    Apellido varchar(20),
     Fecha date,
-	HoraEntrada time,
-    HoraSalida time,
+	HoraEntrada text,
+    HoraSalida text,
     PRIMARY KEY (idAcceso)
 ) ENGINE=INNODB;
 

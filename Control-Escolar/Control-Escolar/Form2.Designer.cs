@@ -413,6 +413,7 @@
             this.btnInscripcion.Text = "Inscripción";
             this.btnInscripcion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInscripcion.UseVisualStyleBackColor = true;
+            this.btnInscripcion.Click += new System.EventHandler(this.btnInscripcion_Click);
             // 
             // groupBox3
             // 
