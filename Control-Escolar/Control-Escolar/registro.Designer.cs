@@ -35,7 +35,6 @@
             this.btnLimpiar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtCargo = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtProf = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@
             this.txtcontra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -82,6 +82,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1005, 422);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
             // 
             // btnVolver
             // 
@@ -125,8 +126,8 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox5.Controls.Add(this.cmbCargo);
             this.groupBox5.Controls.Add(this.label5);
-            this.groupBox5.Controls.Add(this.txtCargo);
             this.groupBox5.Controls.Add(this.txtProf);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox5.Location = new System.Drawing.Point(675, 13);
@@ -148,22 +149,6 @@
             this.label5.Size = new System.Drawing.Size(260, 26);
             this.label5.TabIndex = 44;
             this.label5.Text = "Información de la escuela";
-            // 
-            // txtCargo
-            // 
-            this.txtCargo.Depth = 0;
-            this.txtCargo.Hint = "Cargo";
-            this.txtCargo.Location = new System.Drawing.Point(32, 83);
-            this.txtCargo.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtCargo.Name = "txtCargo";
-            this.txtCargo.PasswordChar = '\0';
-            this.txtCargo.SelectedText = "";
-            this.txtCargo.SelectionLength = 0;
-            this.txtCargo.SelectionStart = 0;
-            this.txtCargo.Size = new System.Drawing.Size(245, 23);
-            this.txtCargo.TabIndex = 35;
-            this.txtCargo.UseSystemPasswordChar = false;
-            this.txtCargo.Validating += new System.ComponentModel.CancelEventHandler(this.txtCargo_Validating);
             // 
             // txtProf
             // 
@@ -472,6 +457,17 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // cmbCargo
+            // 
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Director(a)",
+            "Secretario(a)"});
+            this.cmbCargo.Location = new System.Drawing.Point(32, 83);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(245, 33);
+            this.cmbCargo.TabIndex = 53;
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -521,7 +517,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnLimpiar;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label5;
-        private MaterialSkin.Controls.MaterialSingleLineTextField txtCargo;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtProf;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Label label4;
@@ -532,5 +527,6 @@
         private MaterialSkin.Controls.MaterialSingleLineTextField txtApMat;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtApPat;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ComboBox cmbCargo;
     }
 }

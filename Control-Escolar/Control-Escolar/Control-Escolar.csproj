@@ -89,6 +89,12 @@
     <Compile Include="bitacora.Designer.cs">
       <DependentUpon>bitacora.cs</DependentUpon>
     </Compile>
+    <Compile Include="BoletasBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BoletasBuscar.Designer.cs">
+      <DependentUpon>BoletasBuscar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buscar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,24 @@
     </Compile>
     <Compile Include="CadaGrupo.Designer.cs">
       <DependentUpon>CadaGrupo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calificaciones12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificaciones12.Designer.cs">
+      <DependentUpon>Calificaciones12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calificaciones3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificaciones3.Designer.cs">
+      <DependentUpon>Calificaciones3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calificaciones456.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calificaciones456.Designer.cs">
+      <DependentUpon>Calificaciones456.cs</DependentUpon>
     </Compile>
     <Compile Include="conexion.cs" />
     <Compile Include="Docuementos.cs">
@@ -126,12 +150,19 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="GenerarBoletas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenerarBoletas.Designer.cs">
+      <DependentUpon>GenerarBoletas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grupos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Grupos.Designer.cs">
       <DependentUpon>Grupos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Header.cs" />
     <Compile Include="Modificar.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,11 +193,23 @@
     <EmbeddedResource Include="bitacora.resx">
       <DependentUpon>bitacora.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="BoletasBuscar.resx">
+      <DependentUpon>BoletasBuscar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadaGrupo.resx">
       <DependentUpon>CadaGrupo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificaciones12.resx">
+      <DependentUpon>Calificaciones12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificaciones3.resx">
+      <DependentUpon>Calificaciones3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calificaciones456.resx">
+      <DependentUpon>Calificaciones456.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Docuementos.resx">
       <DependentUpon>Docuementos.cs</DependentUpon>
@@ -179,6 +222,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenerarBoletas.resx">
+      <DependentUpon>GenerarBoletas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grupos.resx">
       <DependentUpon>Grupos.cs</DependentUpon>

@@ -465,7 +465,18 @@ namespace Control_Escolar
                     }
                     else
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "");
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac == txtEdad_A.Text)
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        else
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                            return false;
+                        }
                     }
 
                 }
@@ -781,6 +792,45 @@ namespace Control_Escolar
                 }
             }
 
+            if (this.txtEdad_A.Text.Length == 0)//Edad
+            {
+                errorProvider1.SetError(this.txtEdad_A, "Ingresar la edad del alumno");
+            }
+            else
+            {
+                if (obje.IsNumeric(txtEdad_A.Text))
+                {
+                    if (txtEdad_A.Text.Length > 2)
+                    {
+                        errorProvider1.SetError(this.txtEdad_A, "La edad es incorrecta");
+                       
+
+                    }
+                    else
+                    {
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac == txtEdad_A.Text)
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        else
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                           
+                        }
+                    }
+
+                }
+                else
+                {
+                    errorProvider1.SetError(this.txtEdad_A, "Solo ingrese números");
+                    
+
+                }
+            }
+
             if (this.txtLugarNac_A.Text.Length == 0)//Lugar de nacimiento
             {
                 errorProvider1.SetError(this.txtLugarNac_A, "Ingresar Lugar de nacimiento");
@@ -1050,9 +1100,10 @@ namespace Control_Escolar
         //Edad
         private void txtEdad_A_Validating(object sender, CancelEventArgs e)
         {
-            if (this.txtEdad_A.Text.Length == 0)
+            if (this.txtEdad_A.Text.Length == 0)//Edad
             {
                 errorProvider1.SetError(this.txtEdad_A, "Ingresar la edad del alumno");
+
             }
             else
             {
@@ -1060,18 +1111,29 @@ namespace Control_Escolar
                 {
                     if (txtEdad_A.Text.Length > 2)
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "Ingrese la edad correcta");
+                        errorProvider1.SetError(this.txtEdad_A, "La edad es incorrecta");
 
                     }
                     else
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "");
+                        string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                        sesion.fnac = nacimiento;
+                        CalcEdad(sesion.fnac);
+                        if (sesion.fnac == txtEdad_A.Text)
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "");
+                        }
+                        else
+                        {
+                            errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
+                        }
                     }
 
                 }
                 else
                 {
                     errorProvider1.SetError(this.txtEdad_A, "Solo ingrese números");
+
                 }
             }
         }

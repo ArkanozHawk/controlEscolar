@@ -163,6 +163,7 @@
             this.materialRaisedButton2.Text = "Boletas";
             this.materialRaisedButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // materialRaisedButton3
             // 

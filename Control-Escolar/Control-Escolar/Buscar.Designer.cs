@@ -35,6 +35,7 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridViewbuscar = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btnModificarAlum = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -43,6 +44,7 @@
             this.padre = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -124,18 +126,19 @@
             this.dataGridViewbuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewbuscar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewbuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewbuscar.Location = new System.Drawing.Point(195, 250);
+            this.dataGridViewbuscar.Location = new System.Drawing.Point(211, 250);
             this.dataGridViewbuscar.Name = "dataGridViewbuscar";
             this.dataGridViewbuscar.ReadOnly = true;
             this.dataGridViewbuscar.RowHeadersVisible = false;
             this.dataGridViewbuscar.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridViewbuscar.Size = new System.Drawing.Size(773, 221);
+            this.dataGridViewbuscar.Size = new System.Drawing.Size(735, 221);
             this.dataGridViewbuscar.TabIndex = 68;
             this.dataGridViewbuscar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewbuscar_CellContentClick);
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.pictureBox3);
             this.groupBox1.Controls.Add(this.pictureBox2);
             this.groupBox1.Controls.Add(this.btnModificarAlum);
@@ -143,17 +146,26 @@
             this.groupBox1.Controls.Add(this.txtAP_T);
             this.groupBox1.Controls.Add(this.padre);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox1.Location = new System.Drawing.Point(195, 75);
+            this.groupBox1.Location = new System.Drawing.Point(211, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(773, 169);
+            this.groupBox1.Size = new System.Drawing.Size(735, 169);
             this.groupBox1.TabIndex = 69;
             this.groupBox1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.icons8_búsqueda_481;
+            this.pictureBox1.Location = new System.Drawing.Point(245, 68);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(40, 33);
+            this.pictureBox1.TabIndex = 55;
+            this.pictureBox1.TabStop = false;
             // 
             // pictureBox3
             // 
             this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.icons8_editar_481;
-            this.pictureBox3.Location = new System.Drawing.Point(39, 125);
+            this.pictureBox3.Location = new System.Drawing.Point(149, 121);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(36, 37);
             this.pictureBox3.TabIndex = 54;
@@ -162,7 +174,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::Control_Escolar.Properties.Resources.icons8_papelera_de_reciclaje_481;
-            this.pictureBox2.Location = new System.Drawing.Point(219, 127);
+            this.pictureBox2.Location = new System.Drawing.Point(489, 121);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(34, 37);
             this.pictureBox2.TabIndex = 53;
@@ -171,7 +183,7 @@
             // btnModificarAlum
             // 
             this.btnModificarAlum.Depth = 0;
-            this.btnModificarAlum.Location = new System.Drawing.Point(81, 126);
+            this.btnModificarAlum.Location = new System.Drawing.Point(191, 122);
             this.btnModificarAlum.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnModificarAlum.Name = "btnModificarAlum";
             this.btnModificarAlum.Primary = true;
@@ -184,7 +196,7 @@
             // btnEliminar
             // 
             this.btnEliminar.Depth = 0;
-            this.btnEliminar.Location = new System.Drawing.Point(259, 126);
+            this.btnEliminar.Location = new System.Drawing.Point(529, 120);
             this.btnEliminar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Primary = true;
@@ -198,7 +210,7 @@
             // 
             this.txtAP_T.Depth = 0;
             this.txtAP_T.Hint = "Introduce Filtro de Busqueda";
-            this.txtAP_T.Location = new System.Drawing.Point(38, 68);
+            this.txtAP_T.Location = new System.Drawing.Point(291, 78);
             this.txtAP_T.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAP_T.Name = "txtAP_T";
             this.txtAP_T.PasswordChar = '\0';
@@ -242,6 +254,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
@@ -263,5 +276,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnModificarAlum;
         private MaterialSkin.Controls.MaterialRaisedButton btnEliminar;
         private MaterialSkin.Controls.MaterialSingleLineTextField txtAP_T;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
