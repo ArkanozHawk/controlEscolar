@@ -74,7 +74,7 @@ namespace Control_Escolar
         private void AgregarCalificaciones_Click(object sender, EventArgs e)
         {
             int Grado = Convert.ToInt32(sesion.grado);
-            if(Grado == 1 || Grado == 2)
+            if (Grado == 1 || Grado == 2)
             {
                 MessageBox.Show("Se abrirá la ventana de Calificaciones para Primer y Segundo Año");
                 System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
@@ -208,6 +208,7 @@ namespace Control_Escolar
         private void BoletasBuscar_Load(object sender, EventArgs e)
         {
             datagrid(dataGridViewbuscar);
+            sesion.grado = "0";
         }
     }
 }
