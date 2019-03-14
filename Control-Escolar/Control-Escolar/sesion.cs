@@ -22,5 +22,6 @@ namespace Control_Escolar
         public static string nombre, AP, AM, Curp, calle, numero, Colonia, CP, LN,  telefono, Alergia,telefono1;
         public static int edad;
         public static string genero;
+        public static string grado;
     }
 }
