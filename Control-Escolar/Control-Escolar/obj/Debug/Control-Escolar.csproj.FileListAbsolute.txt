@@ -360,3 +360,8 @@ C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Contr
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
