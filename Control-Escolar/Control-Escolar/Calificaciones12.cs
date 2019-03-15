@@ -67,11 +67,38 @@ namespace Control_Escolar
 
         private void btnIrBoletas_Click_1(object sender, EventArgs e)
         {
-            //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGenerarBoletas));
-            //pantalla.Start();
-            //CheckForIllegalCrossThreadCalls = false;
-            //this.Close();
+
+
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            string nombre, Apellidop, Apellidom;
+           
+
+          
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+            
+                myreader.Read();
+            nombre = Convert.ToString(myreader["nombre"]);
+            Apellidop = Convert.ToString(myreader[" ApellidoP"]);
+            Apellidom = Convert.ToString(myreader["ApellidoM"]);
             string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
+
+            MessageBox.Show(nombre);
+            MessageBox.Show( Apellidop);
+            MessageBox.Show( Apellidom);
+
+
+
             if (!Directory.Exists(folderPath))// pregunt si no existe
             {
                 Directory.CreateDirectory(folderPath); // si no existe lo crea
@@ -156,7 +183,7 @@ namespace Control_Escolar
             cell1z.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell1z);
 
-            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO Y GRUPO:    "));
+            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO : "+ sesion.Grado +"GRUPO:  A"));
             cell44.Colspan = 22;//toma columnas
             cell44.BorderWidth = 0;
             cell44.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
@@ -168,7 +195,7 @@ namespace Control_Escolar
             cell42.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell42);
 
-            PdfPCell cell43 = new PdfPCell(new Phrase("ALUMNO:    __________________________            CURP: "));
+            PdfPCell cell43 = new PdfPCell(new Phrase("ALUMNO:   "+ nombre+ ""+Apellidop+""+Apellidom+ "CURP:"+sesion.Curp));
             cell43.Colspan = 22;//toma columnas
             cell43.BorderWidth = 0;
             cell43.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
@@ -856,6 +883,11 @@ namespace Control_Escolar
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bindingNavigator2_RefreshItems(object sender, EventArgs e)
         {
 
         }
