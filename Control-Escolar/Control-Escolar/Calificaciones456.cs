@@ -71,6 +71,36 @@ namespace Control_Escolar
             //CheckForIllegalCrossThreadCalls = false;
             //this.Close();
 
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            string nombre, Apellidop, Apellidom;
+
+
+
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+            nombre = Convert.ToString(myreader["nombre"]);
+            Apellidop = Convert.ToString(myreader["ApellidoP"]);
+            Apellidom = Convert.ToString(myreader["ApellidoM"]);
+            sesion.grado = Convert.ToString(myreader["idGrado"]);
+
+            MessageBox.Show(nombre);
+            MessageBox.Show(Apellidop);
+            MessageBox.Show(Apellidom);
+            MessageBox.Show(sesion.Curp);
+            MessageBox.Show(sesion.grado);
+
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
             string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
@@ -79,7 +109,7 @@ namespace Control_Escolar
                 Directory.CreateDirectory(folderPath); // si no existe lo crea
             }
             // Creamos el documento con el tamaño de página tradicional
-            FileStream stream = new FileStream(folderPath + "Bitacora2.pdf", FileMode.Create);
+            FileStream stream = new FileStream(folderPath + "calificaciones456.pdf", FileMode.Create);
             // Indicamos donde vamos a guardar el documento
             PdfWriter writer = PdfWriter.GetInstance(doc,stream);
 
@@ -157,7 +187,7 @@ namespace Control_Escolar
             cell1z.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell1z);
 
-            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO Y GRUPO:    "));
+            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO : " +sesion.grado + "      "+ "GRUPO:  A"));
             cell44.Colspan = 22;//toma columnas
             cell44.BorderWidth = 0;
             cell44.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
@@ -169,7 +199,7 @@ namespace Control_Escolar
             cell42.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell42);
 
-            PdfPCell cell43 = new PdfPCell(new Phrase("ALUMNO:    __________________________            CURP: "));
+            PdfPCell cell43 = new PdfPCell(new Phrase("ALUMNO:   " + Apellidop + "     " + Apellidom + "     " + nombre + "     CURP:" + sesion.Curp));
             cell43.Colspan = 22;//toma columnas
             cell43.BorderWidth = 0;
             cell43.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha

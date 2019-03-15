@@ -111,7 +111,7 @@ namespace Control_Escolar
 
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("SELECT   `nombre`, `ApellidoP`, `ApellidoM`,  `CURP`,`idGrado`  FROM  `alumno`  where  idGrado  ='" + sesion.Grado + "' "+ "ORDER BY  `nombre`  ASC");
+            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`  FROM  `alumno`  where  idGrado  ='" + sesion.Grado + "' "+ "ORDER BY  `ApellidoP`  ASC");
 
 
             try
@@ -120,7 +120,13 @@ namespace Control_Escolar
                 seleccionar.SelectCommand = codigo;
 
                 DataTable datostabla = new DataTable();
-                datostabla.Columns.Add("numero", typeof(Int32));
+                DataColumn numerodelista = new DataColumn();
+                numerodelista.ColumnName = "Numero de lista";
+                numerodelista.DataType = System.Type.GetType("System.Int32");
+                numerodelista.AutoIncrement = true;
+                numerodelista.AutoIncrementSeed = 1;
+                 numerodelista.AutoIncrementStep = 1;
+                datostabla.Columns.Add(numerodelista);
               
                 seleccionar.Fill(datostabla);
                 BindingSource formulario = new BindingSource();
