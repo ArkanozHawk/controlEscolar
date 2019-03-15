@@ -31,17 +31,17 @@ namespace Control_Escolar
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
 
-            MySqlConnection conn;
-            MySqlCommand com;
+            //MySqlConnection conn;
+            //MySqlCommand com;
 
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
-            conn = new MySqlConnection(conexion);
-            conn.Open();
+            //string conexion = "server=localhost;uid=root;database=nerivela";
+            //string query = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
+            //conn = new MySqlConnection(conexion);
+            //conn.Open();
 
-            com = new MySqlCommand(query, conn);
+            //com = new MySqlCommand(query, conn);
 
-            MySqlDataReader myreader = com.ExecuteReader();
+            //MySqlDataReader myreader = com.ExecuteReader();
 
         }
 
@@ -61,33 +61,58 @@ namespace Control_Escolar
         {
             Application.Run(new Calificaciones12());
         }
+        public static void ThreadCalificaciones3()
+        {
+            Application.Run(new Calificaciones3());
+        }
+        public static void ThreadCalificaciones456()
+        {
+            Application.Run(new Calificaciones456());
+        }
 
 
         private void AgregarCalificaciones_Click(object sender, EventArgs e)
         {
-            //if(Grado == 1 || Grado == 2)
-            //{
+            int Grado = Convert.ToInt32(sesion.grado);
+            if (Grado == 1 || Grado == 2)
+            {
+                MessageBox.Show("Se abrirá la ventana de Calificaciones para Primer y Segundo Año");
+                System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
+                pantalla.Start();
+                CheckForIllegalCrossThreadCalls = false;
+                this.Close();
+            }
+            else
+            {
+                if (Grado == 3)
+                {
+                    MessageBox.Show("Se abrirá la ventana de Calificaciones para Tercer Año");
+                    System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones3));
+                    pantalla.Start();
+                    CheckForIllegalCrossThreadCalls = false;
+                    this.Close();
+                }
+                else
+                {
+                    if (Grado == 4 || Grado == 5 || Grado == 6)
+                    {
+                        MessageBox.Show("Se abrirá la ventana de Calificaciones para Cuarto a sexto Año");
+                        System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones456));
+                        pantalla.Start();
+                        CheckForIllegalCrossThreadCalls = false;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha elegido un Alumno aún");
+                    }
+                }
+            }
 
-            //}
-            //else
-            //{
-            //    if (Grado == 3)
-            //    {
-
-            //    }
-            //    else
-            //    {
-            //        if (Grado == 4 || Grado == 5 || Grado ==6)
-            //        {
-
-            //        }
-            //    }
-            //}
-            
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
+            //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
+            //pantalla.Start();
+            //CheckForIllegalCrossThreadCalls = false;
+            //this.Close();
         }
 
        
@@ -138,6 +163,18 @@ namespace Control_Escolar
             }
         }
 
+
+        private void dataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
+
+            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
+            sesion.grado = Convert.ToString(fila.Cells[7].Value); //Obtenemos el grado del niño
+
+            MessageBox.Show(sesion.grado);
+
+        }
+
         private void TxtAP_T_KeyUp(object sender, KeyEventArgs e)
         {
 
@@ -168,19 +205,10 @@ namespace Control_Escolar
             }
         }
 
-        private void Buscar_Load(object sender, EventArgs e)
+        private void BoletasBuscar_Load(object sender, EventArgs e)
         {
             datagrid(dataGridViewbuscar);
-        }
-
-        private void dataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
-
-            sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
-
-            MessageBox.Show(sesion.Curp);
-
+            sesion.grado = "0";
         }
     }
 }

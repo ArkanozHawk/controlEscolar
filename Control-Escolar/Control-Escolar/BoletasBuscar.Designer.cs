@@ -163,6 +163,7 @@
             this.Controls.Add(this.dataGridViewbuscar);
             this.Name = "BoletasBuscar";
             this.Text = "Buscar Alumno";
+            this.Load += new System.EventHandler(this.BoletasBuscar_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
