@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `nerivela`
 --
+-- DROP DATABASE nerivela;
+
 CREATE DATABASE IF NOT EXISTS `nerivela` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `nerivela`;
 

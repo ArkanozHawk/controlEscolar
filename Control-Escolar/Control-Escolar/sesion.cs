@@ -26,6 +26,7 @@ namespace Control_Escolar
         public static string pictureb1;
         public static int Grado;
 
+
         public static string grado;
     }
 }
