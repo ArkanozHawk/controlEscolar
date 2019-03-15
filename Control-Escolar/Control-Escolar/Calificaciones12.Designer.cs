@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificaciones12));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -204,36 +206,48 @@
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown7 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown8 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown10 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown9 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown11 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown9 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown11 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown7 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown8 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown10 = new System.Windows.Forms.DomainUpDown();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -249,8 +263,10 @@
             this.groupBox6.SuspendLayout();
             this.tabPage7.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.tabPage8.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
             // materialTabControl1
@@ -3064,69 +3080,16 @@
             this.label84.TabIndex = 44;
             this.label84.Text = "Calificaciones";
             // 
-            // materialTabSelector1
+            // tabPage8
             // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(-1, 63);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1046, 54);
-            this.materialTabSelector1.TabIndex = 1;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
-            this.btnCerrar.Depth = 0;
-            this.btnCerrar.Location = new System.Drawing.Point(902, 28);
-            this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Primary = true;
-            this.btnCerrar.Size = new System.Drawing.Size(130, 29);
-            this.btnCerrar.TabIndex = 80;
-            this.btnCerrar.Text = "Cerrar Sesión";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
-            // 
-            // btnIrBoletas
-            // 
-            this.btnIrBoletas.Depth = 0;
-            this.btnIrBoletas.Location = new System.Drawing.Point(764, 515);
-            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnIrBoletas.Name = "btnIrBoletas";
-            this.btnIrBoletas.Primary = true;
-            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
-            this.btnIrBoletas.TabIndex = 89;
-            this.btnIrBoletas.Text = "Generar PDF";
-            this.btnIrBoletas.UseVisualStyleBackColor = true;
-            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click_1);
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(90, 515);
-            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 54);
-            this.btnPrincipal.TabIndex = 87;
-            this.btnPrincipal.Text = "Volver al Menú Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = true;
-            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(419, 515);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 54);
-            this.materialRaisedButton1.TabIndex = 88;
-            this.materialRaisedButton1.Text = "Guardar Calificaciones";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            this.tabPage8.Controls.Add(this.groupBox8);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(936, 345);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Inasistencia";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -3161,424 +3124,6 @@
             this.groupBox8.Size = new System.Drawing.Size(581, 319);
             this.groupBox8.TabIndex = 91;
             this.groupBox8.TabStop = false;
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label96.Location = new System.Drawing.Point(223, 0);
-            this.label96.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(138, 26);
-            this.label96.TabIndex = 44;
-            this.label96.Text = "Inasistencias";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label95.Location = new System.Drawing.Point(16, 50);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(93, 20);
-            this.label95.TabIndex = 62;
-            this.label95.Text = "Diagnostico";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label94.Location = new System.Drawing.Point(16, 88);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(91, 20);
-            this.label94.TabIndex = 65;
-            this.label94.Text = "Septiembre";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label93.Location = new System.Drawing.Point(16, 164);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(84, 20);
-            this.label93.TabIndex = 66;
-            this.label93.Text = "Noviembre";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label92.Location = new System.Drawing.Point(16, 126);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(66, 20);
-            this.label92.TabIndex = 67;
-            this.label92.Text = "Octubre";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label91.Location = new System.Drawing.Point(16, 240);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(52, 20);
-            this.label91.TabIndex = 68;
-            this.label91.Text = "Enero";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label90.Location = new System.Drawing.Point(16, 202);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(80, 20);
-            this.label90.TabIndex = 69;
-            this.label90.Text = "Diciembre";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label89.Location = new System.Drawing.Point(272, 164);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(47, 20);
-            this.label89.TabIndex = 70;
-            this.label89.Text = "Mayo";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label88.Location = new System.Drawing.Point(272, 126);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(40, 20);
-            this.label88.TabIndex = 71;
-            this.label88.Text = "Abril";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label87.Location = new System.Drawing.Point(272, 88);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(53, 20);
-            this.label87.TabIndex = 72;
-            this.label87.Text = "Marzo";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label86.Location = new System.Drawing.Point(272, 50);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(65, 20);
-            this.label86.TabIndex = 73;
-            this.label86.Text = "Febrero";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label85.Location = new System.Drawing.Point(272, 202);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(47, 20);
-            this.label85.TabIndex = 74;
-            this.label85.Text = "Junio";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.groupBox8);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(936, 345);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Inasistencia";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // domainUpDown1
-            // 
-            this.domainUpDown1.Items.Add("1");
-            this.domainUpDown1.Items.Add("2");
-            this.domainUpDown1.Items.Add("3");
-            this.domainUpDown1.Items.Add("4");
-            this.domainUpDown1.Items.Add("5");
-            this.domainUpDown1.Items.Add("6");
-            this.domainUpDown1.Items.Add("7");
-            this.domainUpDown1.Items.Add("8");
-            this.domainUpDown1.Items.Add("9");
-            this.domainUpDown1.Items.Add("10");
-            this.domainUpDown1.Items.Add("11");
-            this.domainUpDown1.Items.Add("12");
-            this.domainUpDown1.Items.Add("13");
-            this.domainUpDown1.Items.Add("14");
-            this.domainUpDown1.Items.Add("15");
-            this.domainUpDown1.Items.Add("16");
-            this.domainUpDown1.Items.Add("17");
-            this.domainUpDown1.Items.Add("18");
-            this.domainUpDown1.Items.Add("19");
-            this.domainUpDown1.Items.Add("20");
-            this.domainUpDown1.Items.Add("21");
-            this.domainUpDown1.Items.Add("22");
-            this.domainUpDown1.Items.Add("23");
-            this.domainUpDown1.Items.Add("24");
-            this.domainUpDown1.Items.Add("25");
-            this.domainUpDown1.Items.Add("26");
-            this.domainUpDown1.Items.Add("27");
-            this.domainUpDown1.Items.Add("28");
-            this.domainUpDown1.Items.Add("29");
-            this.domainUpDown1.Items.Add("30");
-            this.domainUpDown1.Items.Add("31");
-            this.domainUpDown1.Location = new System.Drawing.Point(126, 44);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.ReadOnly = true;
-            this.domainUpDown1.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown1.TabIndex = 94;
-            // 
-            // domainUpDown2
-            // 
-            this.domainUpDown2.Items.Add("1");
-            this.domainUpDown2.Items.Add("2");
-            this.domainUpDown2.Items.Add("3");
-            this.domainUpDown2.Items.Add("4");
-            this.domainUpDown2.Items.Add("5");
-            this.domainUpDown2.Items.Add("6");
-            this.domainUpDown2.Items.Add("7");
-            this.domainUpDown2.Items.Add("8");
-            this.domainUpDown2.Items.Add("9");
-            this.domainUpDown2.Items.Add("10");
-            this.domainUpDown2.Items.Add("11");
-            this.domainUpDown2.Items.Add("12");
-            this.domainUpDown2.Items.Add("13");
-            this.domainUpDown2.Items.Add("14");
-            this.domainUpDown2.Items.Add("15");
-            this.domainUpDown2.Items.Add("16");
-            this.domainUpDown2.Items.Add("17");
-            this.domainUpDown2.Items.Add("18");
-            this.domainUpDown2.Items.Add("19");
-            this.domainUpDown2.Items.Add("20");
-            this.domainUpDown2.Items.Add("21");
-            this.domainUpDown2.Items.Add("22");
-            this.domainUpDown2.Items.Add("23");
-            this.domainUpDown2.Items.Add("24");
-            this.domainUpDown2.Items.Add("25");
-            this.domainUpDown2.Items.Add("26");
-            this.domainUpDown2.Items.Add("27");
-            this.domainUpDown2.Items.Add("28");
-            this.domainUpDown2.Items.Add("29");
-            this.domainUpDown2.Items.Add("30");
-            this.domainUpDown2.Items.Add("31");
-            this.domainUpDown2.Location = new System.Drawing.Point(126, 234);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.ReadOnly = true;
-            this.domainUpDown2.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown2.TabIndex = 97;
-            // 
-            // domainUpDown3
-            // 
-            this.domainUpDown3.Items.Add("1");
-            this.domainUpDown3.Items.Add("2");
-            this.domainUpDown3.Items.Add("3");
-            this.domainUpDown3.Items.Add("4");
-            this.domainUpDown3.Items.Add("5");
-            this.domainUpDown3.Items.Add("6");
-            this.domainUpDown3.Items.Add("7");
-            this.domainUpDown3.Items.Add("8");
-            this.domainUpDown3.Items.Add("9");
-            this.domainUpDown3.Items.Add("10");
-            this.domainUpDown3.Items.Add("11");
-            this.domainUpDown3.Items.Add("12");
-            this.domainUpDown3.Items.Add("13");
-            this.domainUpDown3.Items.Add("14");
-            this.domainUpDown3.Items.Add("15");
-            this.domainUpDown3.Items.Add("16");
-            this.domainUpDown3.Items.Add("17");
-            this.domainUpDown3.Items.Add("18");
-            this.domainUpDown3.Items.Add("19");
-            this.domainUpDown3.Items.Add("20");
-            this.domainUpDown3.Items.Add("21");
-            this.domainUpDown3.Items.Add("22");
-            this.domainUpDown3.Items.Add("23");
-            this.domainUpDown3.Items.Add("24");
-            this.domainUpDown3.Items.Add("25");
-            this.domainUpDown3.Items.Add("26");
-            this.domainUpDown3.Items.Add("27");
-            this.domainUpDown3.Items.Add("28");
-            this.domainUpDown3.Items.Add("29");
-            this.domainUpDown3.Items.Add("30");
-            this.domainUpDown3.Items.Add("31");
-            this.domainUpDown3.Location = new System.Drawing.Point(126, 196);
-            this.domainUpDown3.Name = "domainUpDown3";
-            this.domainUpDown3.ReadOnly = true;
-            this.domainUpDown3.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown3.TabIndex = 98;
-            // 
-            // domainUpDown5
-            // 
-            this.domainUpDown5.Items.Add("1");
-            this.domainUpDown5.Items.Add("2");
-            this.domainUpDown5.Items.Add("3");
-            this.domainUpDown5.Items.Add("4");
-            this.domainUpDown5.Items.Add("5");
-            this.domainUpDown5.Items.Add("6");
-            this.domainUpDown5.Items.Add("7");
-            this.domainUpDown5.Items.Add("8");
-            this.domainUpDown5.Items.Add("9");
-            this.domainUpDown5.Items.Add("10");
-            this.domainUpDown5.Items.Add("11");
-            this.domainUpDown5.Items.Add("12");
-            this.domainUpDown5.Items.Add("13");
-            this.domainUpDown5.Items.Add("14");
-            this.domainUpDown5.Items.Add("15");
-            this.domainUpDown5.Items.Add("16");
-            this.domainUpDown5.Items.Add("17");
-            this.domainUpDown5.Items.Add("18");
-            this.domainUpDown5.Items.Add("19");
-            this.domainUpDown5.Items.Add("20");
-            this.domainUpDown5.Items.Add("21");
-            this.domainUpDown5.Items.Add("22");
-            this.domainUpDown5.Items.Add("23");
-            this.domainUpDown5.Items.Add("24");
-            this.domainUpDown5.Items.Add("25");
-            this.domainUpDown5.Items.Add("26");
-            this.domainUpDown5.Items.Add("27");
-            this.domainUpDown5.Items.Add("28");
-            this.domainUpDown5.Items.Add("29");
-            this.domainUpDown5.Items.Add("30");
-            this.domainUpDown5.Items.Add("31");
-            this.domainUpDown5.Location = new System.Drawing.Point(126, 120);
-            this.domainUpDown5.Name = "domainUpDown5";
-            this.domainUpDown5.ReadOnly = true;
-            this.domainUpDown5.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown5.TabIndex = 100;
-            this.domainUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // domainUpDown9
-            // 
-            this.domainUpDown9.Items.Add("1");
-            this.domainUpDown9.Items.Add("2");
-            this.domainUpDown9.Items.Add("3");
-            this.domainUpDown9.Items.Add("4");
-            this.domainUpDown9.Items.Add("5");
-            this.domainUpDown9.Items.Add("6");
-            this.domainUpDown9.Items.Add("7");
-            this.domainUpDown9.Items.Add("8");
-            this.domainUpDown9.Items.Add("9");
-            this.domainUpDown9.Items.Add("10");
-            this.domainUpDown9.Items.Add("11");
-            this.domainUpDown9.Items.Add("12");
-            this.domainUpDown9.Items.Add("13");
-            this.domainUpDown9.Items.Add("14");
-            this.domainUpDown9.Items.Add("15");
-            this.domainUpDown9.Items.Add("16");
-            this.domainUpDown9.Items.Add("17");
-            this.domainUpDown9.Items.Add("18");
-            this.domainUpDown9.Items.Add("19");
-            this.domainUpDown9.Items.Add("20");
-            this.domainUpDown9.Items.Add("21");
-            this.domainUpDown9.Items.Add("22");
-            this.domainUpDown9.Items.Add("23");
-            this.domainUpDown9.Items.Add("24");
-            this.domainUpDown9.Items.Add("25");
-            this.domainUpDown9.Items.Add("26");
-            this.domainUpDown9.Items.Add("27");
-            this.domainUpDown9.Items.Add("28");
-            this.domainUpDown9.Items.Add("29");
-            this.domainUpDown9.Items.Add("30");
-            this.domainUpDown9.Items.Add("31");
-            this.domainUpDown9.Location = new System.Drawing.Point(359, 158);
-            this.domainUpDown9.Name = "domainUpDown9";
-            this.domainUpDown9.ReadOnly = true;
-            this.domainUpDown9.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown9.TabIndex = 97;
-            // 
-            // domainUpDown11
-            // 
-            this.domainUpDown11.Items.Add("1");
-            this.domainUpDown11.Items.Add("2");
-            this.domainUpDown11.Items.Add("3");
-            this.domainUpDown11.Items.Add("4");
-            this.domainUpDown11.Items.Add("5");
-            this.domainUpDown11.Items.Add("6");
-            this.domainUpDown11.Items.Add("7");
-            this.domainUpDown11.Items.Add("8");
-            this.domainUpDown11.Items.Add("9");
-            this.domainUpDown11.Items.Add("10");
-            this.domainUpDown11.Items.Add("11");
-            this.domainUpDown11.Items.Add("12");
-            this.domainUpDown11.Items.Add("13");
-            this.domainUpDown11.Items.Add("14");
-            this.domainUpDown11.Items.Add("15");
-            this.domainUpDown11.Items.Add("16");
-            this.domainUpDown11.Items.Add("17");
-            this.domainUpDown11.Items.Add("18");
-            this.domainUpDown11.Items.Add("19");
-            this.domainUpDown11.Items.Add("20");
-            this.domainUpDown11.Items.Add("21");
-            this.domainUpDown11.Items.Add("22");
-            this.domainUpDown11.Items.Add("23");
-            this.domainUpDown11.Items.Add("24");
-            this.domainUpDown11.Items.Add("25");
-            this.domainUpDown11.Items.Add("26");
-            this.domainUpDown11.Items.Add("27");
-            this.domainUpDown11.Items.Add("28");
-            this.domainUpDown11.Items.Add("29");
-            this.domainUpDown11.Items.Add("30");
-            this.domainUpDown11.Items.Add("31");
-            this.domainUpDown11.Location = new System.Drawing.Point(359, 82);
-            this.domainUpDown11.Name = "domainUpDown11";
-            this.domainUpDown11.ReadOnly = true;
-            this.domainUpDown11.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown11.TabIndex = 99;
-            // 
-            // domainUpDown4
-            // 
-            this.domainUpDown4.Items.Add("1");
-            this.domainUpDown4.Items.Add("2");
-            this.domainUpDown4.Items.Add("3");
-            this.domainUpDown4.Items.Add("4");
-            this.domainUpDown4.Items.Add("5");
-            this.domainUpDown4.Items.Add("6");
-            this.domainUpDown4.Items.Add("7");
-            this.domainUpDown4.Items.Add("8");
-            this.domainUpDown4.Items.Add("9");
-            this.domainUpDown4.Items.Add("10");
-            this.domainUpDown4.Items.Add("11");
-            this.domainUpDown4.Items.Add("12");
-            this.domainUpDown4.Items.Add("13");
-            this.domainUpDown4.Items.Add("14");
-            this.domainUpDown4.Items.Add("15");
-            this.domainUpDown4.Items.Add("16");
-            this.domainUpDown4.Items.Add("17");
-            this.domainUpDown4.Items.Add("18");
-            this.domainUpDown4.Items.Add("19");
-            this.domainUpDown4.Items.Add("20");
-            this.domainUpDown4.Items.Add("21");
-            this.domainUpDown4.Items.Add("22");
-            this.domainUpDown4.Items.Add("23");
-            this.domainUpDown4.Items.Add("24");
-            this.domainUpDown4.Items.Add("25");
-            this.domainUpDown4.Items.Add("26");
-            this.domainUpDown4.Items.Add("27");
-            this.domainUpDown4.Items.Add("28");
-            this.domainUpDown4.Items.Add("29");
-            this.domainUpDown4.Items.Add("30");
-            this.domainUpDown4.Location = new System.Drawing.Point(126, 82);
-            this.domainUpDown4.Name = "domainUpDown4";
-            this.domainUpDown4.ReadOnly = true;
-            this.domainUpDown4.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown4.TabIndex = 101;
             // 
             // domainUpDown6
             // 
@@ -3731,11 +3276,596 @@
             this.domainUpDown10.Size = new System.Drawing.Size(80, 32);
             this.domainUpDown10.TabIndex = 105;
             // 
+            // domainUpDown4
+            // 
+            this.domainUpDown4.Items.Add("1");
+            this.domainUpDown4.Items.Add("2");
+            this.domainUpDown4.Items.Add("3");
+            this.domainUpDown4.Items.Add("4");
+            this.domainUpDown4.Items.Add("5");
+            this.domainUpDown4.Items.Add("6");
+            this.domainUpDown4.Items.Add("7");
+            this.domainUpDown4.Items.Add("8");
+            this.domainUpDown4.Items.Add("9");
+            this.domainUpDown4.Items.Add("10");
+            this.domainUpDown4.Items.Add("11");
+            this.domainUpDown4.Items.Add("12");
+            this.domainUpDown4.Items.Add("13");
+            this.domainUpDown4.Items.Add("14");
+            this.domainUpDown4.Items.Add("15");
+            this.domainUpDown4.Items.Add("16");
+            this.domainUpDown4.Items.Add("17");
+            this.domainUpDown4.Items.Add("18");
+            this.domainUpDown4.Items.Add("19");
+            this.domainUpDown4.Items.Add("20");
+            this.domainUpDown4.Items.Add("21");
+            this.domainUpDown4.Items.Add("22");
+            this.domainUpDown4.Items.Add("23");
+            this.domainUpDown4.Items.Add("24");
+            this.domainUpDown4.Items.Add("25");
+            this.domainUpDown4.Items.Add("26");
+            this.domainUpDown4.Items.Add("27");
+            this.domainUpDown4.Items.Add("28");
+            this.domainUpDown4.Items.Add("29");
+            this.domainUpDown4.Items.Add("30");
+            this.domainUpDown4.Location = new System.Drawing.Point(126, 82);
+            this.domainUpDown4.Name = "domainUpDown4";
+            this.domainUpDown4.ReadOnly = true;
+            this.domainUpDown4.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown4.TabIndex = 101;
+            // 
+            // domainUpDown9
+            // 
+            this.domainUpDown9.Items.Add("1");
+            this.domainUpDown9.Items.Add("2");
+            this.domainUpDown9.Items.Add("3");
+            this.domainUpDown9.Items.Add("4");
+            this.domainUpDown9.Items.Add("5");
+            this.domainUpDown9.Items.Add("6");
+            this.domainUpDown9.Items.Add("7");
+            this.domainUpDown9.Items.Add("8");
+            this.domainUpDown9.Items.Add("9");
+            this.domainUpDown9.Items.Add("10");
+            this.domainUpDown9.Items.Add("11");
+            this.domainUpDown9.Items.Add("12");
+            this.domainUpDown9.Items.Add("13");
+            this.domainUpDown9.Items.Add("14");
+            this.domainUpDown9.Items.Add("15");
+            this.domainUpDown9.Items.Add("16");
+            this.domainUpDown9.Items.Add("17");
+            this.domainUpDown9.Items.Add("18");
+            this.domainUpDown9.Items.Add("19");
+            this.domainUpDown9.Items.Add("20");
+            this.domainUpDown9.Items.Add("21");
+            this.domainUpDown9.Items.Add("22");
+            this.domainUpDown9.Items.Add("23");
+            this.domainUpDown9.Items.Add("24");
+            this.domainUpDown9.Items.Add("25");
+            this.domainUpDown9.Items.Add("26");
+            this.domainUpDown9.Items.Add("27");
+            this.domainUpDown9.Items.Add("28");
+            this.domainUpDown9.Items.Add("29");
+            this.domainUpDown9.Items.Add("30");
+            this.domainUpDown9.Items.Add("31");
+            this.domainUpDown9.Location = new System.Drawing.Point(359, 158);
+            this.domainUpDown9.Name = "domainUpDown9";
+            this.domainUpDown9.ReadOnly = true;
+            this.domainUpDown9.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown9.TabIndex = 97;
+            // 
+            // domainUpDown11
+            // 
+            this.domainUpDown11.Items.Add("1");
+            this.domainUpDown11.Items.Add("2");
+            this.domainUpDown11.Items.Add("3");
+            this.domainUpDown11.Items.Add("4");
+            this.domainUpDown11.Items.Add("5");
+            this.domainUpDown11.Items.Add("6");
+            this.domainUpDown11.Items.Add("7");
+            this.domainUpDown11.Items.Add("8");
+            this.domainUpDown11.Items.Add("9");
+            this.domainUpDown11.Items.Add("10");
+            this.domainUpDown11.Items.Add("11");
+            this.domainUpDown11.Items.Add("12");
+            this.domainUpDown11.Items.Add("13");
+            this.domainUpDown11.Items.Add("14");
+            this.domainUpDown11.Items.Add("15");
+            this.domainUpDown11.Items.Add("16");
+            this.domainUpDown11.Items.Add("17");
+            this.domainUpDown11.Items.Add("18");
+            this.domainUpDown11.Items.Add("19");
+            this.domainUpDown11.Items.Add("20");
+            this.domainUpDown11.Items.Add("21");
+            this.domainUpDown11.Items.Add("22");
+            this.domainUpDown11.Items.Add("23");
+            this.domainUpDown11.Items.Add("24");
+            this.domainUpDown11.Items.Add("25");
+            this.domainUpDown11.Items.Add("26");
+            this.domainUpDown11.Items.Add("27");
+            this.domainUpDown11.Items.Add("28");
+            this.domainUpDown11.Items.Add("29");
+            this.domainUpDown11.Items.Add("30");
+            this.domainUpDown11.Items.Add("31");
+            this.domainUpDown11.Location = new System.Drawing.Point(359, 82);
+            this.domainUpDown11.Name = "domainUpDown11";
+            this.domainUpDown11.ReadOnly = true;
+            this.domainUpDown11.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown11.TabIndex = 99;
+            // 
+            // domainUpDown5
+            // 
+            this.domainUpDown5.Items.Add("1");
+            this.domainUpDown5.Items.Add("2");
+            this.domainUpDown5.Items.Add("3");
+            this.domainUpDown5.Items.Add("4");
+            this.domainUpDown5.Items.Add("5");
+            this.domainUpDown5.Items.Add("6");
+            this.domainUpDown5.Items.Add("7");
+            this.domainUpDown5.Items.Add("8");
+            this.domainUpDown5.Items.Add("9");
+            this.domainUpDown5.Items.Add("10");
+            this.domainUpDown5.Items.Add("11");
+            this.domainUpDown5.Items.Add("12");
+            this.domainUpDown5.Items.Add("13");
+            this.domainUpDown5.Items.Add("14");
+            this.domainUpDown5.Items.Add("15");
+            this.domainUpDown5.Items.Add("16");
+            this.domainUpDown5.Items.Add("17");
+            this.domainUpDown5.Items.Add("18");
+            this.domainUpDown5.Items.Add("19");
+            this.domainUpDown5.Items.Add("20");
+            this.domainUpDown5.Items.Add("21");
+            this.domainUpDown5.Items.Add("22");
+            this.domainUpDown5.Items.Add("23");
+            this.domainUpDown5.Items.Add("24");
+            this.domainUpDown5.Items.Add("25");
+            this.domainUpDown5.Items.Add("26");
+            this.domainUpDown5.Items.Add("27");
+            this.domainUpDown5.Items.Add("28");
+            this.domainUpDown5.Items.Add("29");
+            this.domainUpDown5.Items.Add("30");
+            this.domainUpDown5.Items.Add("31");
+            this.domainUpDown5.Location = new System.Drawing.Point(126, 120);
+            this.domainUpDown5.Name = "domainUpDown5";
+            this.domainUpDown5.ReadOnly = true;
+            this.domainUpDown5.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown5.TabIndex = 100;
+            this.domainUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // domainUpDown3
+            // 
+            this.domainUpDown3.Items.Add("1");
+            this.domainUpDown3.Items.Add("2");
+            this.domainUpDown3.Items.Add("3");
+            this.domainUpDown3.Items.Add("4");
+            this.domainUpDown3.Items.Add("5");
+            this.domainUpDown3.Items.Add("6");
+            this.domainUpDown3.Items.Add("7");
+            this.domainUpDown3.Items.Add("8");
+            this.domainUpDown3.Items.Add("9");
+            this.domainUpDown3.Items.Add("10");
+            this.domainUpDown3.Items.Add("11");
+            this.domainUpDown3.Items.Add("12");
+            this.domainUpDown3.Items.Add("13");
+            this.domainUpDown3.Items.Add("14");
+            this.domainUpDown3.Items.Add("15");
+            this.domainUpDown3.Items.Add("16");
+            this.domainUpDown3.Items.Add("17");
+            this.domainUpDown3.Items.Add("18");
+            this.domainUpDown3.Items.Add("19");
+            this.domainUpDown3.Items.Add("20");
+            this.domainUpDown3.Items.Add("21");
+            this.domainUpDown3.Items.Add("22");
+            this.domainUpDown3.Items.Add("23");
+            this.domainUpDown3.Items.Add("24");
+            this.domainUpDown3.Items.Add("25");
+            this.domainUpDown3.Items.Add("26");
+            this.domainUpDown3.Items.Add("27");
+            this.domainUpDown3.Items.Add("28");
+            this.domainUpDown3.Items.Add("29");
+            this.domainUpDown3.Items.Add("30");
+            this.domainUpDown3.Items.Add("31");
+            this.domainUpDown3.Location = new System.Drawing.Point(126, 196);
+            this.domainUpDown3.Name = "domainUpDown3";
+            this.domainUpDown3.ReadOnly = true;
+            this.domainUpDown3.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown3.TabIndex = 98;
+            // 
+            // domainUpDown2
+            // 
+            this.domainUpDown2.Items.Add("1");
+            this.domainUpDown2.Items.Add("2");
+            this.domainUpDown2.Items.Add("3");
+            this.domainUpDown2.Items.Add("4");
+            this.domainUpDown2.Items.Add("5");
+            this.domainUpDown2.Items.Add("6");
+            this.domainUpDown2.Items.Add("7");
+            this.domainUpDown2.Items.Add("8");
+            this.domainUpDown2.Items.Add("9");
+            this.domainUpDown2.Items.Add("10");
+            this.domainUpDown2.Items.Add("11");
+            this.domainUpDown2.Items.Add("12");
+            this.domainUpDown2.Items.Add("13");
+            this.domainUpDown2.Items.Add("14");
+            this.domainUpDown2.Items.Add("15");
+            this.domainUpDown2.Items.Add("16");
+            this.domainUpDown2.Items.Add("17");
+            this.domainUpDown2.Items.Add("18");
+            this.domainUpDown2.Items.Add("19");
+            this.domainUpDown2.Items.Add("20");
+            this.domainUpDown2.Items.Add("21");
+            this.domainUpDown2.Items.Add("22");
+            this.domainUpDown2.Items.Add("23");
+            this.domainUpDown2.Items.Add("24");
+            this.domainUpDown2.Items.Add("25");
+            this.domainUpDown2.Items.Add("26");
+            this.domainUpDown2.Items.Add("27");
+            this.domainUpDown2.Items.Add("28");
+            this.domainUpDown2.Items.Add("29");
+            this.domainUpDown2.Items.Add("30");
+            this.domainUpDown2.Items.Add("31");
+            this.domainUpDown2.Location = new System.Drawing.Point(126, 234);
+            this.domainUpDown2.Name = "domainUpDown2";
+            this.domainUpDown2.ReadOnly = true;
+            this.domainUpDown2.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown2.TabIndex = 97;
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Items.Add("1");
+            this.domainUpDown1.Items.Add("2");
+            this.domainUpDown1.Items.Add("3");
+            this.domainUpDown1.Items.Add("4");
+            this.domainUpDown1.Items.Add("5");
+            this.domainUpDown1.Items.Add("6");
+            this.domainUpDown1.Items.Add("7");
+            this.domainUpDown1.Items.Add("8");
+            this.domainUpDown1.Items.Add("9");
+            this.domainUpDown1.Items.Add("10");
+            this.domainUpDown1.Items.Add("11");
+            this.domainUpDown1.Items.Add("12");
+            this.domainUpDown1.Items.Add("13");
+            this.domainUpDown1.Items.Add("14");
+            this.domainUpDown1.Items.Add("15");
+            this.domainUpDown1.Items.Add("16");
+            this.domainUpDown1.Items.Add("17");
+            this.domainUpDown1.Items.Add("18");
+            this.domainUpDown1.Items.Add("19");
+            this.domainUpDown1.Items.Add("20");
+            this.domainUpDown1.Items.Add("21");
+            this.domainUpDown1.Items.Add("22");
+            this.domainUpDown1.Items.Add("23");
+            this.domainUpDown1.Items.Add("24");
+            this.domainUpDown1.Items.Add("25");
+            this.domainUpDown1.Items.Add("26");
+            this.domainUpDown1.Items.Add("27");
+            this.domainUpDown1.Items.Add("28");
+            this.domainUpDown1.Items.Add("29");
+            this.domainUpDown1.Items.Add("30");
+            this.domainUpDown1.Items.Add("31");
+            this.domainUpDown1.Location = new System.Drawing.Point(126, 44);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.ReadOnly = true;
+            this.domainUpDown1.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown1.TabIndex = 94;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label85.Location = new System.Drawing.Point(272, 202);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(47, 20);
+            this.label85.TabIndex = 74;
+            this.label85.Text = "Junio";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label86.Location = new System.Drawing.Point(272, 50);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(65, 20);
+            this.label86.TabIndex = 73;
+            this.label86.Text = "Febrero";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label87.Location = new System.Drawing.Point(272, 88);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(53, 20);
+            this.label87.TabIndex = 72;
+            this.label87.Text = "Marzo";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label88.Location = new System.Drawing.Point(272, 126);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(40, 20);
+            this.label88.TabIndex = 71;
+            this.label88.Text = "Abril";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label89.Location = new System.Drawing.Point(272, 164);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(47, 20);
+            this.label89.TabIndex = 70;
+            this.label89.Text = "Mayo";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label90.Location = new System.Drawing.Point(16, 202);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(80, 20);
+            this.label90.TabIndex = 69;
+            this.label90.Text = "Diciembre";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label91.Location = new System.Drawing.Point(16, 240);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(52, 20);
+            this.label91.TabIndex = 68;
+            this.label91.Text = "Enero";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label92.Location = new System.Drawing.Point(16, 126);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(66, 20);
+            this.label92.TabIndex = 67;
+            this.label92.Text = "Octubre";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label93.Location = new System.Drawing.Point(16, 164);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(84, 20);
+            this.label93.TabIndex = 66;
+            this.label93.Text = "Noviembre";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label94.Location = new System.Drawing.Point(16, 88);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(91, 20);
+            this.label94.TabIndex = 65;
+            this.label94.Text = "Septiembre";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label95.Location = new System.Drawing.Point(16, 50);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(93, 20);
+            this.label95.TabIndex = 62;
+            this.label95.Text = "Diagnostico";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label96.Location = new System.Drawing.Point(223, 0);
+            this.label96.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(138, 26);
+            this.label96.TabIndex = 44;
+            this.label96.Text = "Inasistencias";
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(-1, 63);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1046, 54);
+            this.materialTabSelector1.TabIndex = 1;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
+            this.btnCerrar.Depth = 0;
+            this.btnCerrar.Location = new System.Drawing.Point(902, 28);
+            this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Primary = true;
+            this.btnCerrar.Size = new System.Drawing.Size(130, 29);
+            this.btnCerrar.TabIndex = 80;
+            this.btnCerrar.Text = "Cerrar Sesión";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
+            // 
+            // btnIrBoletas
+            // 
+            this.btnIrBoletas.Depth = 0;
+            this.btnIrBoletas.Location = new System.Drawing.Point(764, 515);
+            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnIrBoletas.Name = "btnIrBoletas";
+            this.btnIrBoletas.Primary = true;
+            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
+            this.btnIrBoletas.TabIndex = 89;
+            this.btnIrBoletas.Text = "Generar PDF";
+            this.btnIrBoletas.UseVisualStyleBackColor = true;
+            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click_1);
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.Depth = 0;
+            this.btnPrincipal.Location = new System.Drawing.Point(90, 515);
+            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Primary = true;
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 54);
+            this.btnPrincipal.TabIndex = 87;
+            this.btnPrincipal.Text = "Volver al Menú Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(419, 515);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 54);
+            this.materialRaisedButton1.TabIndex = 88;
+            this.materialRaisedButton1.Text = "Guardar Calificaciones";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem});
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
+            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator1.Size = new System.Drawing.Size(1044, 25);
+            this.bindingNavigator1.TabIndex = 90;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
             // Calificaciones12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 599);
+            this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.btnIrBoletas);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.materialRaisedButton1);
@@ -3766,10 +3896,14 @@
             this.tabPage7.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
+            this.tabPage8.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -3981,5 +4115,17 @@
         private System.Windows.Forms.DomainUpDown domainUpDown8;
         private System.Windows.Forms.DomainUpDown domainUpDown10;
         private System.Windows.Forms.DomainUpDown domainUpDown4;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
     }
 }

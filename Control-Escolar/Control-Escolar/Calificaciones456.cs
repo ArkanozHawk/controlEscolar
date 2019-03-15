@@ -73,8 +73,15 @@ namespace Control_Escolar
 
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
+            string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
+            if (!Directory.Exists(folderPath))// pregunt si no existe
+            {
+                Directory.CreateDirectory(folderPath); // si no existe lo crea
+            }
+            // Creamos el documento con el tamaño de página tradicional
+            FileStream stream = new FileStream(folderPath + "Bitacora2.pdf", FileMode.Create);
             // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc, new FileStream(@"C:\Boletas\Boleta-Interna456.pdf", FileMode.Create));
+            PdfWriter writer = PdfWriter.GetInstance(doc,stream);
 
             // Le colocamos el título y el autor
             // **Nota: Esto no será visible en el documento
