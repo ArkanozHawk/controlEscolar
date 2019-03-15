@@ -48,6 +48,12 @@ namespace Control_Escolar
             Application.Run(new Docuementos());
         }
 
+        public static void ThreadBoletasBuscar()
+
+        {
+            Application.Run(new BoletasBuscar());
+        }
+
         public principal()
         {
             InitializeComponent();
@@ -107,6 +113,14 @@ namespace Control_Escolar
         private void materialRaisedButton3_Click(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadDocumentos));
+            pantalla1.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
+        }
+
+        private void materialRaisedButton2_Click(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBoletasBuscar));
             pantalla1.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();

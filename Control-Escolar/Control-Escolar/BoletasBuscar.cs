@@ -13,7 +13,7 @@ using MaterialSkin.Controls;
 
 namespace Control_Escolar
 {
-    public partial class Buscar : MaterialForm
+    public partial class BoletasBuscar : MaterialForm
     {
         DataGridView mifiltro;
 
@@ -22,7 +22,8 @@ namespace Control_Escolar
         //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
         MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
         conexion objbuscar = new conexion();
-        public Buscar()
+
+        public BoletasBuscar()
         {
             InitializeComponent();
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -30,71 +31,93 @@ namespace Control_Escolar
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
 
-            MySqlConnection conn;
-            MySqlCommand com;
+            //MySqlConnection conn;
+            //MySqlCommand com;
 
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
-            conn = new MySqlConnection(conexion);
-            conn.Open();
+            //string conexion = "server=localhost;uid=root;database=nerivela";
+            //string query = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
+            //conn = new MySqlConnection(conexion);
+            //conn.Open();
 
-            com = new MySqlCommand(query, conn);
+            //com = new MySqlCommand(query, conn);
 
-            MySqlDataReader myreader = com.ExecuteReader();
+            //MySqlDataReader myreader = com.ExecuteReader();
 
-            try
-            {
-                myreader.Read();
-
-                sesion.cargo = Convert.ToString(myreader["cargo"]);
-                if(sesion.cargo == "Secretario(a)")
-                {
-                    btnModificarAlum.Visible = false;
-                    pictureBox3.Visible = false;
-                    pictureBox2.Visible = false;
-                    btnEliminar.Visible = false;
-                }
-            }
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message);
-
-            }
         }
 
         conexion obj = new conexion();
 
         public static void ThreadProc()
-
         {
             Application.Run(new login());
         }
 
         public static void ThreadPrincipal()
-
         {
             Application.Run(new principal());
         }
 
-        public static void ThreadBuscar()
-
+        public static void ThreadCalificaciones12()
         {
-            Application.Run(new Buscar());
+            Application.Run(new Calificaciones12());
+        }
+        public static void ThreadCalificaciones3()
+        {
+            Application.Run(new Calificaciones3());
+        }
+        public static void ThreadCalificaciones456()
+        {
+            Application.Run(new Calificaciones456());
         }
 
-        public static void ThreadAlumno()
+
+        private void AgregarCalificaciones_Click(object sender, EventArgs e)
         {
-            Application.Run(new Alumno());
+            int Grado = Convert.ToInt32(sesion.grado);
+            if (Grado == 1 || Grado == 2)
+            {
+                MessageBox.Show("Se abrirá la ventana de Calificaciones para Primer y Segundo Año");
+                System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
+                pantalla.Start();
+                CheckForIllegalCrossThreadCalls = false;
+                this.Close();
+            }
+            else
+            {
+                if (Grado == 3)
+                {
+                    MessageBox.Show("Se abrirá la ventana de Calificaciones para Tercer Año");
+                    System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones3));
+                    pantalla.Start();
+                    CheckForIllegalCrossThreadCalls = false;
+                    this.Close();
+                }
+                else
+                {
+                    if (Grado == 4 || Grado == 5 || Grado == 6)
+                    {
+                        MessageBox.Show("Se abrirá la ventana de Calificaciones para Cuarto a sexto Año");
+                        System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones456));
+                        pantalla.Start();
+                        CheckForIllegalCrossThreadCalls = false;
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se ha elegido un Alumno aún");
+                    }
+                }
+            }
+
+            //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCalificaciones12));
+            //pantalla.Start();
+            //CheckForIllegalCrossThreadCalls = false;
+            //this.Close();
         }
 
-        public static void ThreadModificar()
-        {
-            Application.Run(new Modificar());
-            
-        }
+       
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click_1(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
             int idAccess = sesion.idAcceso;
@@ -105,6 +128,14 @@ namespace Control_Escolar
             System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
 
             login.Start();
+            this.Close();
+        }
+
+        private void btnPrincipal_Click_1(object sender, EventArgs e)
+        {
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
             this.Close();
         }
 
@@ -131,67 +162,17 @@ namespace Control_Escolar
                 MessageBox.Show(ex.Message);
             }
         }
-        private void BtnPrincipal_Click(object sender, EventArgs e)
+
+
+        private void dataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
-
-        //Modificar
-        private void btnModificar_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-
-
-        }
-
-        private void BtnInscripcion_Click(object sender, EventArgs e)
-        {
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadAlumno));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-        }
-
-        private void btnModificarAlum_Click(object sender, EventArgs e)
-        {    
-            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
-            pantalla.Start();
-            CheckForIllegalCrossThreadCalls = false;
-            this.Close();
-            
-        }
-
-        private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
             DataGridViewRow fila = dataGridViewbuscar.CurrentRow; // obtengo la fila actualmente seleccionada en el dataGridView
 
             sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
+            sesion.grado = Convert.ToString(fila.Cells[7].Value); //Obtenemos el grado del niño
 
-            
+            MessageBox.Show(sesion.grado);
 
-            MessageBox.Show(sesion.Curp);
-        }
-        public void eliminar()
-        {
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            MessageBox.Show(sesion.Curp);
-            string eliminar = "delete from alumno where  CURP =" + "'" + sesion.Curp + "'";
-            MessageBox.Show(eliminar);
-            obj.ElimarAlum(conexion, eliminar);
-        }
-
-        private void BtnEliminar_Click(object sender, EventArgs e)
-        {
-            eliminar();
-            datagrid(dataGridViewbuscar);
         }
 
         private void TxtAP_T_KeyUp(object sender, KeyEventArgs e)
@@ -224,9 +205,10 @@ namespace Control_Escolar
             }
         }
 
-        private void Buscar_Load(object sender, EventArgs e)
+        private void BoletasBuscar_Load(object sender, EventArgs e)
         {
             datagrid(dataGridViewbuscar);
+            sesion.grado = "0";
         }
     }
 }
