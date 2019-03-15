@@ -32,12 +32,11 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lblBienvenida = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6A = new System.Windows.Forms.PictureBox();
+            this.pictureBox5A = new System.Windows.Forms.PictureBox();
+            this.pictureBox4A = new System.Windows.Forms.PictureBox();
+            this.pictureBox3A = new System.Windows.Forms.PictureBox();
+            this.pictureBox2A = new System.Windows.Forms.PictureBox();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.lblMaestro2 = new MaterialSkin.Controls.MaterialLabel();
             this.lblMaestro3 = new MaterialSkin.Controls.MaterialLabel();
@@ -66,13 +65,14 @@
             this.lblGrado4 = new MaterialSkin.Controls.MaterialLabel();
             this.lblGrado1 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1A = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2A)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1A)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -119,12 +119,12 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Controls.Add(this.pictureBox2);
-            this.groupBox2.Controls.Add(this.pictureBox3);
-            this.groupBox2.Controls.Add(this.pictureBox4);
-            this.groupBox2.Controls.Add(this.pictureBox5);
-            this.groupBox2.Controls.Add(this.pictureBox6);
-            this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.pictureBox6A);
+            this.groupBox2.Controls.Add(this.pictureBox5A);
+            this.groupBox2.Controls.Add(this.pictureBox4A);
+            this.groupBox2.Controls.Add(this.pictureBox3A);
+            this.groupBox2.Controls.Add(this.pictureBox2A);
+            this.groupBox2.Controls.Add(this.pictureBox1A);
             this.groupBox2.Controls.Add(this.materialLabel15);
             this.groupBox2.Controls.Add(this.lblMaestro2);
             this.groupBox2.Controls.Add(this.lblMaestro3);
@@ -161,65 +161,55 @@
             this.groupBox2.TabIndex = 69;
             this.groupBox2.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBox6A
             // 
-            this.pictureBox2.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox2.Location = new System.Drawing.Point(583, 348);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox2.TabIndex = 92;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox6A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox6A.Location = new System.Drawing.Point(583, 348);
+            this.pictureBox6A.Name = "pictureBox6A";
+            this.pictureBox6A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox6A.TabIndex = 92;
+            this.pictureBox6A.TabStop = false;
+            this.pictureBox6A.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
-            // pictureBox3
+            // pictureBox5A
             // 
-            this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox3.Location = new System.Drawing.Point(583, 299);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox3.TabIndex = 93;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            this.pictureBox5A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox5A.Location = new System.Drawing.Point(583, 299);
+            this.pictureBox5A.Name = "pictureBox5A";
+            this.pictureBox5A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox5A.TabIndex = 93;
+            this.pictureBox5A.TabStop = false;
+            this.pictureBox5A.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
-            // pictureBox4
+            // pictureBox4A
             // 
-            this.pictureBox4.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox4.Location = new System.Drawing.Point(583, 250);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox4.TabIndex = 94;
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
+            this.pictureBox4A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox4A.Location = new System.Drawing.Point(583, 250);
+            this.pictureBox4A.Name = "pictureBox4A";
+            this.pictureBox4A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox4A.TabIndex = 94;
+            this.pictureBox4A.TabStop = false;
+            this.pictureBox4A.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // pictureBox5
+            // pictureBox3A
             // 
-            this.pictureBox5.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox5.Location = new System.Drawing.Point(583, 193);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox5.TabIndex = 95;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
+            this.pictureBox3A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox3A.Location = new System.Drawing.Point(583, 193);
+            this.pictureBox3A.Name = "pictureBox3A";
+            this.pictureBox3A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox3A.TabIndex = 95;
+            this.pictureBox3A.TabStop = false;
+            this.pictureBox3A.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
-            // pictureBox6
+            // pictureBox2A
             // 
-            this.pictureBox6.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox6.Location = new System.Drawing.Point(583, 142);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox6.TabIndex = 96;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox1.Location = new System.Drawing.Point(583, 89);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox1.TabIndex = 91;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox2A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox2A.Location = new System.Drawing.Point(583, 142);
+            this.pictureBox2A.Name = "pictureBox2A";
+            this.pictureBox2A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox2A.TabIndex = 96;
+            this.pictureBox2A.TabStop = false;
+            this.pictureBox2A.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // materialLabel15
             // 
@@ -564,6 +554,16 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Selecionar Grupo";
             // 
+            // pictureBox1A
+            // 
+            this.pictureBox1A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox1A.Location = new System.Drawing.Point(583, 89);
+            this.pictureBox1A.Name = "pictureBox1A";
+            this.pictureBox1A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox1A.TabIndex = 91;
+            this.pictureBox1A.TabStop = false;
+            this.pictureBox1A.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Grupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,12 +578,12 @@
             this.Load += new System.EventHandler(this.Grupos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2A)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1A)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -622,11 +622,11 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider3;
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.PictureBox pictureBox6A;
+        private System.Windows.Forms.PictureBox pictureBox5A;
+        private System.Windows.Forms.PictureBox pictureBox4A;
+        private System.Windows.Forms.PictureBox pictureBox3A;
+        private System.Windows.Forms.PictureBox pictureBox2A;
+        private System.Windows.Forms.PictureBox pictureBox1A;
     }
 }

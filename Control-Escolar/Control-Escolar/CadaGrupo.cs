@@ -10,21 +10,44 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 using MaterialSkin;
 using MaterialSkin.Controls;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
 
 namespace Control_Escolar
 {
     public partial class CadaGrupo : MaterialForm
     {
+        MySqlCommand codigo = new MySqlCommand();
+        MySqlConnection conectanos = new MySqlConnection();
+        //MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela;pwd=digi3.0");
+        MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
+        conexion obj = new conexion();
+
         public CadaGrupo()
         {
+           
             InitializeComponent();
+            switch (sesion.pictureb1)
+            {
+                case "1": { sesion.Grado = 1; txtGrado.Text = Convert.ToString(sesion.Grado); } break;
+                case "2": { sesion.Grado = 2; txtGrado.Text = sesion.Grado.ToString(); } break;
+                case "3": { sesion.Grado = 3; txtGrado.Text = sesion.Grado.ToString(); } break;
+                case "4": { sesion.Grado = 4; txtGrado.Text = sesion.Grado.ToString(); } break;
+                case "5": { sesion.Grado = 5; txtGrado.Text = sesion.Grado.ToString(); } break;
+                case "6": { sesion.Grado = 6; txtGrado.Text = sesion.Grado.ToString(); } break;
+            }
+
+            datagrid(dataGridView1);
             var materialSkinManager = MaterialSkinManager.Instance;
             materialSkinManager.AddFormToManage(this);
             materialSkinManager.Theme = MaterialSkinManager.Themes.LIGHT;
             materialSkinManager.ColorScheme = new ColorScheme(Primary.Red900, Primary.Red700, Primary.Red900, Accent.Red700, TextShade.WHITE);
+            mostrardatoscadagrupo();
+            
+            
         }
 
-        conexion obj = new conexion();
 
         //-------------------------------------Metodos----------------------------------------------
         //Cerrar sesion
@@ -66,12 +89,115 @@ namespace Control_Escolar
         //Generar pdf del grupo
         private void GenerarPDF_Click(object sender, EventArgs e)
         {
-
+            exportardata(dataGridView1, "test");
         }
 
         //-------------------------------------------------------------------------------------------
         private void CadaGrupo_Load(object sender, EventArgs e)
         {
+
+        }
+
+
+        public void mostrardatoscadagrupo()
+        {
+
+
+        }
+
+
+        public void datagrid(DataGridView data)
+        {
+
+            coneccion.Open();
+            codigo.Connection = coneccion;
+            codigo.CommandText = ("SELECT   `nombre`, `ApellidoP`, `ApellidoM`,  `CURP`,`idGrado`  FROM  `alumno`  where  idGrado  ='" + sesion.Grado + "' "+ "ORDER BY  `nombre`  ASC");
+
+
+            try
+            {
+                MySqlDataAdapter seleccionar = new MySqlDataAdapter();
+                seleccionar.SelectCommand = codigo;
+
+                DataTable datostabla = new DataTable();
+                datostabla.Columns.Add("numero", typeof(Int32));
+              
+                seleccionar.Fill(datostabla);
+                BindingSource formulario = new BindingSource();
+                formulario.DataSource = datostabla;
+                data.DataSource = formulario;
+                seleccionar.Update(datostabla);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public void exportardata(DataGridView dgw, string filename)
+        {
+            BaseFont bf = BaseFont.CreateFont(BaseFont.TIMES_ROMAN, BaseFont.CP1250, BaseFont.EMBEDDED);
+            PdfPTable pdftable = new PdfPTable(dgw.Columns.Count);
+            pdftable.DefaultCell.Padding = 3;
+            pdftable.WidthPercentage = 100;
+            pdftable.HorizontalAlignment = Element.ALIGN_LEFT;
+            pdftable.DefaultCell.BorderWidth = 1;
+            iTextSharp.text.Font text = new iTextSharp.text.Font(bf, 15, iTextSharp.text.Font.NORMAL);
+
+            foreach (DataGridViewColumn column in dataGridView1.Columns)
+            {
+                PdfPCell cell = new PdfPCell(new Phrase(column.HeaderText));
+                cell.BackgroundColor = new iTextSharp.text.BaseColor(240, 240, 240);
+                pdftable.AddCell(cell);
+            }
+
+            int row = dataGridView1.Rows.Count;
+            int cell2 = dataGridView1.Rows[1].Cells.Count;
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < cell2; j++)
+                {
+                    if (dataGridView1.Rows[i].Cells[j].Value == null)
+                    {
+                        //return directly
+                        //return;
+                        //or set a value for the empty data
+                        dataGridView1.Rows[i].Cells[j].Value = "null";
+                    }
+                    pdftable.AddCell(dataGridView1.Rows[i].Cells[j].Value.ToString());
+                }
+            }
+
+            //Exporting to PDF
+            string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
+            if (!Directory.Exists(folderPath))// pregunt si no existe
+            {
+                Directory.CreateDirectory(folderPath); // si no existe lo crea
+            }
+            using (FileStream stream = new FileStream(folderPath + "listaalumno.pdf", FileMode.Create))
+            {
+                Document pdfDoc = new Document(PageSize.LETTER, 10f, 10f, 100f, 100f); //se declara las medidas y margenes del pdf por ejemplo tamaño CARTA
+                PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);//cosas de itextsharp xD
+
+                //iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/Users/Tevi/Documents/Gestionde proyectos/controlEscolar-master/logo1.jpg");
+                string direccion = Directory.GetCurrentDirectory();//obtenemos direccion no se paque xD
+
+                //aqui empezamos agregar cosas :3
+                pdfDoc.Open();//se habre el docuemnto
+                // Header hola = new Header();
+               // writer.PageEvent = new Header();
+                Header i = new Header();
+                i.Headerlista1A(writer,pdfDoc);
+
+               //se habre el docuemnto
+
+                // pdfDoc.NewPage();
+
+                //aqui pones todo lo que va en medio :D
+                pdfDoc.Add(pdftable);
+                pdfDoc.Close();
+                stream.Close();
+            }
 
         }
     }
