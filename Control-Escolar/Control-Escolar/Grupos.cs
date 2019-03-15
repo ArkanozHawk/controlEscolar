@@ -38,6 +38,7 @@ namespace Control_Escolar
             lblMaestro4.Text = nombre[3] + " " + apellidoP[3] + " " + apellidoM[3];
             lblMaestro5.Text = nombre[4] + " " + apellidoP[4] + " " + apellidoM[4];
             lblMaestro6.Text = nombre[5] + " " + apellidoP[5] + " " + apellidoM[5];
+
         }
 
         conexion obj = new conexion();
@@ -99,14 +100,19 @@ namespace Control_Escolar
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "1";
+
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
+            
+
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "6";
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
@@ -115,6 +121,8 @@ namespace Control_Escolar
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "5";
+
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
@@ -123,6 +131,8 @@ namespace Control_Escolar
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "4";
+
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
@@ -131,6 +141,8 @@ namespace Control_Escolar
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "3";
+
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
@@ -139,6 +151,8 @@ namespace Control_Escolar
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
+            sesion.pictureb1 = "2";
+
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadCadaGrupo));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;

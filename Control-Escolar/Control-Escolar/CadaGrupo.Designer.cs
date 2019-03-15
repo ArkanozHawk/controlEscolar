@@ -32,9 +32,10 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.GenerarPDF = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.txtGrupo = new System.Windows.Forms.Label();
+            this.txtGrado = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -89,25 +90,12 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label1.Location = new System.Drawing.Point(228, 88);
+            this.label1.Location = new System.Drawing.Point(231, 88);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(216, 26);
             this.label1.TabIndex = 71;
             this.label1.Text = "Lista de Alumnos de ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label2.Location = new System.Drawing.Point(438, 88);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 26);
-            this.label2.TabIndex = 72;
-            this.label2.Text = "\"Grupo\"";
             // 
             // pictureBox1
             // 
@@ -131,14 +119,42 @@
             this.GenerarPDF.UseVisualStyleBackColor = true;
             this.GenerarPDF.Click += new System.EventHandler(this.GenerarPDF_Click);
             // 
+            // txtGrupo
+            // 
+            this.txtGrupo.AutoSize = true;
+            this.txtGrupo.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrupo.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtGrupo.Location = new System.Drawing.Point(487, 88);
+            this.txtGrupo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtGrupo.Name = "txtGrupo";
+            this.txtGrupo.Size = new System.Drawing.Size(27, 26);
+            this.txtGrupo.TabIndex = 75;
+            this.txtGrupo.Text = "A";
+            // 
+            // txtGrado
+            // 
+            this.txtGrado.AutoSize = true;
+            this.txtGrado.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.txtGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtGrado.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.txtGrado.Location = new System.Drawing.Point(438, 88);
+            this.txtGrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.txtGrado.Name = "txtGrado";
+            this.txtGrado.Size = new System.Drawing.Size(88, 26);
+            this.txtGrado.TabIndex = 72;
+            this.txtGrado.Text = "\"Grado\"";
+            this.txtGrado.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // CadaGrupo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 553);
+            this.Controls.Add(this.txtGrupo);
             this.Controls.Add(this.GenerarPDF);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtGrado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrincipal);
@@ -160,8 +176,9 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MaterialSkin.Controls.MaterialRaisedButton GenerarPDF;
+        private System.Windows.Forms.Label txtGrupo;
+        public System.Windows.Forms.Label txtGrado;
     }
 }

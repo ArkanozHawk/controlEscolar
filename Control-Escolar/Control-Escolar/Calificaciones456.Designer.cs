@@ -281,18 +281,22 @@
             this.label119 = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.comboBox111 = new System.Windows.Forms.ComboBox();
-            this.comboBox112 = new System.Windows.Forms.ComboBox();
-            this.comboBox113 = new System.Windows.Forms.ComboBox();
-            this.comboBox114 = new System.Windows.Forms.ComboBox();
-            this.comboBox115 = new System.Windows.Forms.ComboBox();
-            this.comboBox116 = new System.Windows.Forms.ComboBox();
-            this.comboBox117 = new System.Windows.Forms.ComboBox();
-            this.comboBox118 = new System.Windows.Forms.ComboBox();
-            this.comboBox119 = new System.Windows.Forms.ComboBox();
-            this.comboBox120 = new System.Windows.Forms.ComboBox();
-            this.comboBox121 = new System.Windows.Forms.ComboBox();
+            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown7 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown8 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown10 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown9 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown11 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
+            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.label121 = new System.Windows.Forms.Label();
             this.label122 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
@@ -305,10 +309,6 @@
             this.label130 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
             this.label132 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.BoxGenero.SuspendLayout();
@@ -4369,394 +4369,6 @@
             this.tabPage11.Text = "Inasist.";
             this.tabPage11.UseVisualStyleBackColor = true;
             // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Controls.Add(this.comboBox111);
-            this.groupBox10.Controls.Add(this.comboBox112);
-            this.groupBox10.Controls.Add(this.comboBox113);
-            this.groupBox10.Controls.Add(this.comboBox114);
-            this.groupBox10.Controls.Add(this.comboBox115);
-            this.groupBox10.Controls.Add(this.comboBox116);
-            this.groupBox10.Controls.Add(this.comboBox117);
-            this.groupBox10.Controls.Add(this.comboBox118);
-            this.groupBox10.Controls.Add(this.comboBox119);
-            this.groupBox10.Controls.Add(this.comboBox120);
-            this.groupBox10.Controls.Add(this.comboBox121);
-            this.groupBox10.Controls.Add(this.label121);
-            this.groupBox10.Controls.Add(this.label122);
-            this.groupBox10.Controls.Add(this.label123);
-            this.groupBox10.Controls.Add(this.label124);
-            this.groupBox10.Controls.Add(this.label125);
-            this.groupBox10.Controls.Add(this.label126);
-            this.groupBox10.Controls.Add(this.label127);
-            this.groupBox10.Controls.Add(this.label128);
-            this.groupBox10.Controls.Add(this.label129);
-            this.groupBox10.Controls.Add(this.label130);
-            this.groupBox10.Controls.Add(this.label131);
-            this.groupBox10.Controls.Add(this.label132);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox10.Location = new System.Drawing.Point(178, 18);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox10.Size = new System.Drawing.Size(581, 319);
-            this.groupBox10.TabIndex = 82;
-            this.groupBox10.TabStop = false;
-            // 
-            // comboBox111
-            // 
-            this.comboBox111.FormattingEnabled = true;
-            this.comboBox111.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox111.Location = new System.Drawing.Point(385, 198);
-            this.comboBox111.Name = "comboBox111";
-            this.comboBox111.Size = new System.Drawing.Size(124, 33);
-            this.comboBox111.TabIndex = 96;
-            // 
-            // comboBox112
-            // 
-            this.comboBox112.FormattingEnabled = true;
-            this.comboBox112.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox112.Location = new System.Drawing.Point(385, 159);
-            this.comboBox112.Name = "comboBox112";
-            this.comboBox112.Size = new System.Drawing.Size(124, 33);
-            this.comboBox112.TabIndex = 95;
-            // 
-            // comboBox113
-            // 
-            this.comboBox113.FormattingEnabled = true;
-            this.comboBox113.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox113.Location = new System.Drawing.Point(385, 120);
-            this.comboBox113.Name = "comboBox113";
-            this.comboBox113.Size = new System.Drawing.Size(124, 33);
-            this.comboBox113.TabIndex = 94;
-            // 
-            // comboBox114
-            // 
-            this.comboBox114.FormattingEnabled = true;
-            this.comboBox114.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox114.Location = new System.Drawing.Point(385, 82);
-            this.comboBox114.Name = "comboBox114";
-            this.comboBox114.Size = new System.Drawing.Size(124, 33);
-            this.comboBox114.TabIndex = 93;
-            // 
-            // comboBox115
-            // 
-            this.comboBox115.FormattingEnabled = true;
-            this.comboBox115.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox115.Location = new System.Drawing.Point(385, 43);
-            this.comboBox115.Name = "comboBox115";
-            this.comboBox115.Size = new System.Drawing.Size(124, 33);
-            this.comboBox115.TabIndex = 92;
-            // 
-            // comboBox116
-            // 
-            this.comboBox116.FormattingEnabled = true;
-            this.comboBox116.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox116.Location = new System.Drawing.Point(126, 238);
-            this.comboBox116.Name = "comboBox116";
-            this.comboBox116.Size = new System.Drawing.Size(124, 33);
-            this.comboBox116.TabIndex = 91;
-            // 
-            // comboBox117
-            // 
-            this.comboBox117.FormattingEnabled = true;
-            this.comboBox117.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox117.Location = new System.Drawing.Point(126, 199);
-            this.comboBox117.Name = "comboBox117";
-            this.comboBox117.Size = new System.Drawing.Size(124, 33);
-            this.comboBox117.TabIndex = 90;
-            // 
-            // comboBox118
-            // 
-            this.comboBox118.FormattingEnabled = true;
-            this.comboBox118.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox118.Location = new System.Drawing.Point(126, 160);
-            this.comboBox118.Name = "comboBox118";
-            this.comboBox118.Size = new System.Drawing.Size(124, 33);
-            this.comboBox118.TabIndex = 89;
-            // 
-            // comboBox119
-            // 
-            this.comboBox119.FormattingEnabled = true;
-            this.comboBox119.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox119.Location = new System.Drawing.Point(126, 121);
-            this.comboBox119.Name = "comboBox119";
-            this.comboBox119.Size = new System.Drawing.Size(124, 33);
-            this.comboBox119.TabIndex = 88;
-            // 
-            // comboBox120
-            // 
-            this.comboBox120.FormattingEnabled = true;
-            this.comboBox120.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox120.Location = new System.Drawing.Point(126, 82);
-            this.comboBox120.Name = "comboBox120";
-            this.comboBox120.Size = new System.Drawing.Size(124, 33);
-            this.comboBox120.TabIndex = 87;
-            // 
-            // comboBox121
-            // 
-            this.comboBox121.FormattingEnabled = true;
-            this.comboBox121.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.comboBox121.Location = new System.Drawing.Point(126, 43);
-            this.comboBox121.Name = "comboBox121";
-            this.comboBox121.Size = new System.Drawing.Size(124, 33);
-            this.comboBox121.TabIndex = 75;
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label121.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label121.Location = new System.Drawing.Point(281, 205);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(47, 20);
-            this.label121.TabIndex = 74;
-            this.label121.Text = "Junio";
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label122.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label122.Location = new System.Drawing.Point(281, 50);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(65, 20);
-            this.label122.TabIndex = 73;
-            this.label122.Text = "Febrero";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label123.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label123.Location = new System.Drawing.Point(281, 90);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(53, 20);
-            this.label123.TabIndex = 72;
-            this.label123.Text = "Marzo";
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label124.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label124.Location = new System.Drawing.Point(281, 127);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(40, 20);
-            this.label124.TabIndex = 71;
-            this.label124.Text = "Abril";
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label125.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label125.Location = new System.Drawing.Point(281, 167);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(47, 20);
-            this.label125.TabIndex = 70;
-            this.label125.Text = "Mayo";
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label126.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label126.Location = new System.Drawing.Point(16, 206);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(80, 20);
-            this.label126.TabIndex = 69;
-            this.label126.Text = "Diciembre";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label127.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label127.Location = new System.Drawing.Point(16, 245);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(52, 20);
-            this.label127.TabIndex = 68;
-            this.label127.Text = "Enero";
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label128.Location = new System.Drawing.Point(16, 127);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(66, 20);
-            this.label128.TabIndex = 67;
-            this.label128.Text = "Octubre";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label129.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label129.Location = new System.Drawing.Point(16, 167);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(84, 20);
-            this.label129.TabIndex = 66;
-            this.label129.Text = "Noviembre";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label130.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label130.Location = new System.Drawing.Point(16, 90);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(91, 20);
-            this.label130.TabIndex = 65;
-            this.label130.Text = "Septiembre";
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label131.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label131.Location = new System.Drawing.Point(16, 50);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(93, 20);
-            this.label131.TabIndex = 62;
-            this.label131.Text = "Diagnostico";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label132.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label132.Location = new System.Drawing.Point(223, 0);
-            this.label132.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(147, 26);
-            this.label132.TabIndex = 44;
-            this.label132.Text = "Calificaciones";
-            // 
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
@@ -4807,6 +4419,598 @@
             this.btnIrBoletas.Text = "Generar PDF";
             this.btnIrBoletas.UseVisualStyleBackColor = true;
             this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox10.Controls.Add(this.domainUpDown6);
+            this.groupBox10.Controls.Add(this.domainUpDown7);
+            this.groupBox10.Controls.Add(this.domainUpDown8);
+            this.groupBox10.Controls.Add(this.domainUpDown10);
+            this.groupBox10.Controls.Add(this.domainUpDown4);
+            this.groupBox10.Controls.Add(this.domainUpDown9);
+            this.groupBox10.Controls.Add(this.domainUpDown11);
+            this.groupBox10.Controls.Add(this.domainUpDown5);
+            this.groupBox10.Controls.Add(this.domainUpDown3);
+            this.groupBox10.Controls.Add(this.domainUpDown2);
+            this.groupBox10.Controls.Add(this.domainUpDown1);
+            this.groupBox10.Controls.Add(this.label121);
+            this.groupBox10.Controls.Add(this.label122);
+            this.groupBox10.Controls.Add(this.label123);
+            this.groupBox10.Controls.Add(this.label124);
+            this.groupBox10.Controls.Add(this.label125);
+            this.groupBox10.Controls.Add(this.label126);
+            this.groupBox10.Controls.Add(this.label127);
+            this.groupBox10.Controls.Add(this.label128);
+            this.groupBox10.Controls.Add(this.label129);
+            this.groupBox10.Controls.Add(this.label130);
+            this.groupBox10.Controls.Add(this.label131);
+            this.groupBox10.Controls.Add(this.label132);
+            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox10.Location = new System.Drawing.Point(178, 18);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox10.Size = new System.Drawing.Size(581, 319);
+            this.groupBox10.TabIndex = 92;
+            this.groupBox10.TabStop = false;
+            // 
+            // domainUpDown6
+            // 
+            this.domainUpDown6.Items.Add("1");
+            this.domainUpDown6.Items.Add("2");
+            this.domainUpDown6.Items.Add("3");
+            this.domainUpDown6.Items.Add("4");
+            this.domainUpDown6.Items.Add("5");
+            this.domainUpDown6.Items.Add("6");
+            this.domainUpDown6.Items.Add("7");
+            this.domainUpDown6.Items.Add("8");
+            this.domainUpDown6.Items.Add("9");
+            this.domainUpDown6.Items.Add("10");
+            this.domainUpDown6.Items.Add("11");
+            this.domainUpDown6.Items.Add("12");
+            this.domainUpDown6.Items.Add("13");
+            this.domainUpDown6.Items.Add("14");
+            this.domainUpDown6.Items.Add("15");
+            this.domainUpDown6.Items.Add("16");
+            this.domainUpDown6.Items.Add("17");
+            this.domainUpDown6.Items.Add("18");
+            this.domainUpDown6.Items.Add("19");
+            this.domainUpDown6.Items.Add("20");
+            this.domainUpDown6.Items.Add("21");
+            this.domainUpDown6.Items.Add("22");
+            this.domainUpDown6.Items.Add("23");
+            this.domainUpDown6.Items.Add("24");
+            this.domainUpDown6.Items.Add("25");
+            this.domainUpDown6.Items.Add("26");
+            this.domainUpDown6.Items.Add("27");
+            this.domainUpDown6.Items.Add("28");
+            this.domainUpDown6.Items.Add("29");
+            this.domainUpDown6.Items.Add("30");
+            this.domainUpDown6.Location = new System.Drawing.Point(359, 196);
+            this.domainUpDown6.Name = "domainUpDown6";
+            this.domainUpDown6.ReadOnly = true;
+            this.domainUpDown6.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown6.TabIndex = 102;
+            // 
+            // domainUpDown7
+            // 
+            this.domainUpDown7.Items.Add("1");
+            this.domainUpDown7.Items.Add("2");
+            this.domainUpDown7.Items.Add("3");
+            this.domainUpDown7.Items.Add("4");
+            this.domainUpDown7.Items.Add("5");
+            this.domainUpDown7.Items.Add("6");
+            this.domainUpDown7.Items.Add("7");
+            this.domainUpDown7.Items.Add("8");
+            this.domainUpDown7.Items.Add("9");
+            this.domainUpDown7.Items.Add("10");
+            this.domainUpDown7.Items.Add("11");
+            this.domainUpDown7.Items.Add("12");
+            this.domainUpDown7.Items.Add("13");
+            this.domainUpDown7.Items.Add("14");
+            this.domainUpDown7.Items.Add("15");
+            this.domainUpDown7.Items.Add("16");
+            this.domainUpDown7.Items.Add("17");
+            this.domainUpDown7.Items.Add("18");
+            this.domainUpDown7.Items.Add("19");
+            this.domainUpDown7.Items.Add("20");
+            this.domainUpDown7.Items.Add("21");
+            this.domainUpDown7.Items.Add("22");
+            this.domainUpDown7.Items.Add("23");
+            this.domainUpDown7.Items.Add("24");
+            this.domainUpDown7.Items.Add("25");
+            this.domainUpDown7.Items.Add("26");
+            this.domainUpDown7.Items.Add("27");
+            this.domainUpDown7.Items.Add("28");
+            this.domainUpDown7.Items.Add("29");
+            this.domainUpDown7.Items.Add("30");
+            this.domainUpDown7.Location = new System.Drawing.Point(359, 120);
+            this.domainUpDown7.Name = "domainUpDown7";
+            this.domainUpDown7.ReadOnly = true;
+            this.domainUpDown7.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown7.TabIndex = 103;
+            // 
+            // domainUpDown8
+            // 
+            this.domainUpDown8.Items.Add("1");
+            this.domainUpDown8.Items.Add("2");
+            this.domainUpDown8.Items.Add("3");
+            this.domainUpDown8.Items.Add("4");
+            this.domainUpDown8.Items.Add("5");
+            this.domainUpDown8.Items.Add("6");
+            this.domainUpDown8.Items.Add("7");
+            this.domainUpDown8.Items.Add("8");
+            this.domainUpDown8.Items.Add("9");
+            this.domainUpDown8.Items.Add("10");
+            this.domainUpDown8.Items.Add("11");
+            this.domainUpDown8.Items.Add("12");
+            this.domainUpDown8.Items.Add("13");
+            this.domainUpDown8.Items.Add("14");
+            this.domainUpDown8.Items.Add("15");
+            this.domainUpDown8.Items.Add("16");
+            this.domainUpDown8.Items.Add("17");
+            this.domainUpDown8.Items.Add("18");
+            this.domainUpDown8.Items.Add("19");
+            this.domainUpDown8.Items.Add("20");
+            this.domainUpDown8.Items.Add("21");
+            this.domainUpDown8.Items.Add("22");
+            this.domainUpDown8.Items.Add("23");
+            this.domainUpDown8.Items.Add("24");
+            this.domainUpDown8.Items.Add("25");
+            this.domainUpDown8.Items.Add("26");
+            this.domainUpDown8.Items.Add("27");
+            this.domainUpDown8.Items.Add("28");
+            this.domainUpDown8.Items.Add("29");
+            this.domainUpDown8.Location = new System.Drawing.Point(359, 44);
+            this.domainUpDown8.Name = "domainUpDown8";
+            this.domainUpDown8.ReadOnly = true;
+            this.domainUpDown8.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown8.TabIndex = 104;
+            // 
+            // domainUpDown10
+            // 
+            this.domainUpDown10.Items.Add("1");
+            this.domainUpDown10.Items.Add("2");
+            this.domainUpDown10.Items.Add("3");
+            this.domainUpDown10.Items.Add("4");
+            this.domainUpDown10.Items.Add("5");
+            this.domainUpDown10.Items.Add("6");
+            this.domainUpDown10.Items.Add("7");
+            this.domainUpDown10.Items.Add("8");
+            this.domainUpDown10.Items.Add("9");
+            this.domainUpDown10.Items.Add("10");
+            this.domainUpDown10.Items.Add("11");
+            this.domainUpDown10.Items.Add("12");
+            this.domainUpDown10.Items.Add("13");
+            this.domainUpDown10.Items.Add("14");
+            this.domainUpDown10.Items.Add("15");
+            this.domainUpDown10.Items.Add("16");
+            this.domainUpDown10.Items.Add("17");
+            this.domainUpDown10.Items.Add("18");
+            this.domainUpDown10.Items.Add("19");
+            this.domainUpDown10.Items.Add("20");
+            this.domainUpDown10.Items.Add("21");
+            this.domainUpDown10.Items.Add("22");
+            this.domainUpDown10.Items.Add("23");
+            this.domainUpDown10.Items.Add("24");
+            this.domainUpDown10.Items.Add("25");
+            this.domainUpDown10.Items.Add("26");
+            this.domainUpDown10.Items.Add("27");
+            this.domainUpDown10.Items.Add("28");
+            this.domainUpDown10.Items.Add("29");
+            this.domainUpDown10.Items.Add("30");
+            this.domainUpDown10.Location = new System.Drawing.Point(126, 158);
+            this.domainUpDown10.Name = "domainUpDown10";
+            this.domainUpDown10.ReadOnly = true;
+            this.domainUpDown10.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown10.TabIndex = 105;
+            // 
+            // domainUpDown4
+            // 
+            this.domainUpDown4.Items.Add("1");
+            this.domainUpDown4.Items.Add("2");
+            this.domainUpDown4.Items.Add("3");
+            this.domainUpDown4.Items.Add("4");
+            this.domainUpDown4.Items.Add("5");
+            this.domainUpDown4.Items.Add("6");
+            this.domainUpDown4.Items.Add("7");
+            this.domainUpDown4.Items.Add("8");
+            this.domainUpDown4.Items.Add("9");
+            this.domainUpDown4.Items.Add("10");
+            this.domainUpDown4.Items.Add("11");
+            this.domainUpDown4.Items.Add("12");
+            this.domainUpDown4.Items.Add("13");
+            this.domainUpDown4.Items.Add("14");
+            this.domainUpDown4.Items.Add("15");
+            this.domainUpDown4.Items.Add("16");
+            this.domainUpDown4.Items.Add("17");
+            this.domainUpDown4.Items.Add("18");
+            this.domainUpDown4.Items.Add("19");
+            this.domainUpDown4.Items.Add("20");
+            this.domainUpDown4.Items.Add("21");
+            this.domainUpDown4.Items.Add("22");
+            this.domainUpDown4.Items.Add("23");
+            this.domainUpDown4.Items.Add("24");
+            this.domainUpDown4.Items.Add("25");
+            this.domainUpDown4.Items.Add("26");
+            this.domainUpDown4.Items.Add("27");
+            this.domainUpDown4.Items.Add("28");
+            this.domainUpDown4.Items.Add("29");
+            this.domainUpDown4.Items.Add("30");
+            this.domainUpDown4.Location = new System.Drawing.Point(126, 82);
+            this.domainUpDown4.Name = "domainUpDown4";
+            this.domainUpDown4.ReadOnly = true;
+            this.domainUpDown4.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown4.TabIndex = 101;
+            // 
+            // domainUpDown9
+            // 
+            this.domainUpDown9.Items.Add("1");
+            this.domainUpDown9.Items.Add("2");
+            this.domainUpDown9.Items.Add("3");
+            this.domainUpDown9.Items.Add("4");
+            this.domainUpDown9.Items.Add("5");
+            this.domainUpDown9.Items.Add("6");
+            this.domainUpDown9.Items.Add("7");
+            this.domainUpDown9.Items.Add("8");
+            this.domainUpDown9.Items.Add("9");
+            this.domainUpDown9.Items.Add("10");
+            this.domainUpDown9.Items.Add("11");
+            this.domainUpDown9.Items.Add("12");
+            this.domainUpDown9.Items.Add("13");
+            this.domainUpDown9.Items.Add("14");
+            this.domainUpDown9.Items.Add("15");
+            this.domainUpDown9.Items.Add("16");
+            this.domainUpDown9.Items.Add("17");
+            this.domainUpDown9.Items.Add("18");
+            this.domainUpDown9.Items.Add("19");
+            this.domainUpDown9.Items.Add("20");
+            this.domainUpDown9.Items.Add("21");
+            this.domainUpDown9.Items.Add("22");
+            this.domainUpDown9.Items.Add("23");
+            this.domainUpDown9.Items.Add("24");
+            this.domainUpDown9.Items.Add("25");
+            this.domainUpDown9.Items.Add("26");
+            this.domainUpDown9.Items.Add("27");
+            this.domainUpDown9.Items.Add("28");
+            this.domainUpDown9.Items.Add("29");
+            this.domainUpDown9.Items.Add("30");
+            this.domainUpDown9.Items.Add("31");
+            this.domainUpDown9.Location = new System.Drawing.Point(359, 158);
+            this.domainUpDown9.Name = "domainUpDown9";
+            this.domainUpDown9.ReadOnly = true;
+            this.domainUpDown9.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown9.TabIndex = 97;
+            // 
+            // domainUpDown11
+            // 
+            this.domainUpDown11.Items.Add("1");
+            this.domainUpDown11.Items.Add("2");
+            this.domainUpDown11.Items.Add("3");
+            this.domainUpDown11.Items.Add("4");
+            this.domainUpDown11.Items.Add("5");
+            this.domainUpDown11.Items.Add("6");
+            this.domainUpDown11.Items.Add("7");
+            this.domainUpDown11.Items.Add("8");
+            this.domainUpDown11.Items.Add("9");
+            this.domainUpDown11.Items.Add("10");
+            this.domainUpDown11.Items.Add("11");
+            this.domainUpDown11.Items.Add("12");
+            this.domainUpDown11.Items.Add("13");
+            this.domainUpDown11.Items.Add("14");
+            this.domainUpDown11.Items.Add("15");
+            this.domainUpDown11.Items.Add("16");
+            this.domainUpDown11.Items.Add("17");
+            this.domainUpDown11.Items.Add("18");
+            this.domainUpDown11.Items.Add("19");
+            this.domainUpDown11.Items.Add("20");
+            this.domainUpDown11.Items.Add("21");
+            this.domainUpDown11.Items.Add("22");
+            this.domainUpDown11.Items.Add("23");
+            this.domainUpDown11.Items.Add("24");
+            this.domainUpDown11.Items.Add("25");
+            this.domainUpDown11.Items.Add("26");
+            this.domainUpDown11.Items.Add("27");
+            this.domainUpDown11.Items.Add("28");
+            this.domainUpDown11.Items.Add("29");
+            this.domainUpDown11.Items.Add("30");
+            this.domainUpDown11.Items.Add("31");
+            this.domainUpDown11.Location = new System.Drawing.Point(359, 82);
+            this.domainUpDown11.Name = "domainUpDown11";
+            this.domainUpDown11.ReadOnly = true;
+            this.domainUpDown11.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown11.TabIndex = 99;
+            // 
+            // domainUpDown5
+            // 
+            this.domainUpDown5.Items.Add("1");
+            this.domainUpDown5.Items.Add("2");
+            this.domainUpDown5.Items.Add("3");
+            this.domainUpDown5.Items.Add("4");
+            this.domainUpDown5.Items.Add("5");
+            this.domainUpDown5.Items.Add("6");
+            this.domainUpDown5.Items.Add("7");
+            this.domainUpDown5.Items.Add("8");
+            this.domainUpDown5.Items.Add("9");
+            this.domainUpDown5.Items.Add("10");
+            this.domainUpDown5.Items.Add("11");
+            this.domainUpDown5.Items.Add("12");
+            this.domainUpDown5.Items.Add("13");
+            this.domainUpDown5.Items.Add("14");
+            this.domainUpDown5.Items.Add("15");
+            this.domainUpDown5.Items.Add("16");
+            this.domainUpDown5.Items.Add("17");
+            this.domainUpDown5.Items.Add("18");
+            this.domainUpDown5.Items.Add("19");
+            this.domainUpDown5.Items.Add("20");
+            this.domainUpDown5.Items.Add("21");
+            this.domainUpDown5.Items.Add("22");
+            this.domainUpDown5.Items.Add("23");
+            this.domainUpDown5.Items.Add("24");
+            this.domainUpDown5.Items.Add("25");
+            this.domainUpDown5.Items.Add("26");
+            this.domainUpDown5.Items.Add("27");
+            this.domainUpDown5.Items.Add("28");
+            this.domainUpDown5.Items.Add("29");
+            this.domainUpDown5.Items.Add("30");
+            this.domainUpDown5.Items.Add("31");
+            this.domainUpDown5.Location = new System.Drawing.Point(126, 120);
+            this.domainUpDown5.Name = "domainUpDown5";
+            this.domainUpDown5.ReadOnly = true;
+            this.domainUpDown5.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown5.TabIndex = 100;
+            this.domainUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // domainUpDown3
+            // 
+            this.domainUpDown3.Items.Add("1");
+            this.domainUpDown3.Items.Add("2");
+            this.domainUpDown3.Items.Add("3");
+            this.domainUpDown3.Items.Add("4");
+            this.domainUpDown3.Items.Add("5");
+            this.domainUpDown3.Items.Add("6");
+            this.domainUpDown3.Items.Add("7");
+            this.domainUpDown3.Items.Add("8");
+            this.domainUpDown3.Items.Add("9");
+            this.domainUpDown3.Items.Add("10");
+            this.domainUpDown3.Items.Add("11");
+            this.domainUpDown3.Items.Add("12");
+            this.domainUpDown3.Items.Add("13");
+            this.domainUpDown3.Items.Add("14");
+            this.domainUpDown3.Items.Add("15");
+            this.domainUpDown3.Items.Add("16");
+            this.domainUpDown3.Items.Add("17");
+            this.domainUpDown3.Items.Add("18");
+            this.domainUpDown3.Items.Add("19");
+            this.domainUpDown3.Items.Add("20");
+            this.domainUpDown3.Items.Add("21");
+            this.domainUpDown3.Items.Add("22");
+            this.domainUpDown3.Items.Add("23");
+            this.domainUpDown3.Items.Add("24");
+            this.domainUpDown3.Items.Add("25");
+            this.domainUpDown3.Items.Add("26");
+            this.domainUpDown3.Items.Add("27");
+            this.domainUpDown3.Items.Add("28");
+            this.domainUpDown3.Items.Add("29");
+            this.domainUpDown3.Items.Add("30");
+            this.domainUpDown3.Items.Add("31");
+            this.domainUpDown3.Location = new System.Drawing.Point(126, 196);
+            this.domainUpDown3.Name = "domainUpDown3";
+            this.domainUpDown3.ReadOnly = true;
+            this.domainUpDown3.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown3.TabIndex = 98;
+            // 
+            // domainUpDown2
+            // 
+            this.domainUpDown2.Items.Add("1");
+            this.domainUpDown2.Items.Add("2");
+            this.domainUpDown2.Items.Add("3");
+            this.domainUpDown2.Items.Add("4");
+            this.domainUpDown2.Items.Add("5");
+            this.domainUpDown2.Items.Add("6");
+            this.domainUpDown2.Items.Add("7");
+            this.domainUpDown2.Items.Add("8");
+            this.domainUpDown2.Items.Add("9");
+            this.domainUpDown2.Items.Add("10");
+            this.domainUpDown2.Items.Add("11");
+            this.domainUpDown2.Items.Add("12");
+            this.domainUpDown2.Items.Add("13");
+            this.domainUpDown2.Items.Add("14");
+            this.domainUpDown2.Items.Add("15");
+            this.domainUpDown2.Items.Add("16");
+            this.domainUpDown2.Items.Add("17");
+            this.domainUpDown2.Items.Add("18");
+            this.domainUpDown2.Items.Add("19");
+            this.domainUpDown2.Items.Add("20");
+            this.domainUpDown2.Items.Add("21");
+            this.domainUpDown2.Items.Add("22");
+            this.domainUpDown2.Items.Add("23");
+            this.domainUpDown2.Items.Add("24");
+            this.domainUpDown2.Items.Add("25");
+            this.domainUpDown2.Items.Add("26");
+            this.domainUpDown2.Items.Add("27");
+            this.domainUpDown2.Items.Add("28");
+            this.domainUpDown2.Items.Add("29");
+            this.domainUpDown2.Items.Add("30");
+            this.domainUpDown2.Items.Add("31");
+            this.domainUpDown2.Location = new System.Drawing.Point(126, 234);
+            this.domainUpDown2.Name = "domainUpDown2";
+            this.domainUpDown2.ReadOnly = true;
+            this.domainUpDown2.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown2.TabIndex = 97;
+            // 
+            // domainUpDown1
+            // 
+            this.domainUpDown1.Items.Add("1");
+            this.domainUpDown1.Items.Add("2");
+            this.domainUpDown1.Items.Add("3");
+            this.domainUpDown1.Items.Add("4");
+            this.domainUpDown1.Items.Add("5");
+            this.domainUpDown1.Items.Add("6");
+            this.domainUpDown1.Items.Add("7");
+            this.domainUpDown1.Items.Add("8");
+            this.domainUpDown1.Items.Add("9");
+            this.domainUpDown1.Items.Add("10");
+            this.domainUpDown1.Items.Add("11");
+            this.domainUpDown1.Items.Add("12");
+            this.domainUpDown1.Items.Add("13");
+            this.domainUpDown1.Items.Add("14");
+            this.domainUpDown1.Items.Add("15");
+            this.domainUpDown1.Items.Add("16");
+            this.domainUpDown1.Items.Add("17");
+            this.domainUpDown1.Items.Add("18");
+            this.domainUpDown1.Items.Add("19");
+            this.domainUpDown1.Items.Add("20");
+            this.domainUpDown1.Items.Add("21");
+            this.domainUpDown1.Items.Add("22");
+            this.domainUpDown1.Items.Add("23");
+            this.domainUpDown1.Items.Add("24");
+            this.domainUpDown1.Items.Add("25");
+            this.domainUpDown1.Items.Add("26");
+            this.domainUpDown1.Items.Add("27");
+            this.domainUpDown1.Items.Add("28");
+            this.domainUpDown1.Items.Add("29");
+            this.domainUpDown1.Items.Add("30");
+            this.domainUpDown1.Items.Add("31");
+            this.domainUpDown1.Location = new System.Drawing.Point(126, 44);
+            this.domainUpDown1.Name = "domainUpDown1";
+            this.domainUpDown1.ReadOnly = true;
+            this.domainUpDown1.Size = new System.Drawing.Size(80, 32);
+            this.domainUpDown1.TabIndex = 94;
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label121.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label121.Location = new System.Drawing.Point(272, 202);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(47, 20);
+            this.label121.TabIndex = 74;
+            this.label121.Text = "Junio";
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label122.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label122.Location = new System.Drawing.Point(272, 50);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(65, 20);
+            this.label122.TabIndex = 73;
+            this.label122.Text = "Febrero";
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label123.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label123.Location = new System.Drawing.Point(272, 88);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(53, 20);
+            this.label123.TabIndex = 72;
+            this.label123.Text = "Marzo";
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label124.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label124.Location = new System.Drawing.Point(272, 126);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(40, 20);
+            this.label124.TabIndex = 71;
+            this.label124.Text = "Abril";
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label125.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label125.Location = new System.Drawing.Point(272, 164);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(47, 20);
+            this.label125.TabIndex = 70;
+            this.label125.Text = "Mayo";
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label126.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label126.Location = new System.Drawing.Point(16, 202);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(80, 20);
+            this.label126.TabIndex = 69;
+            this.label126.Text = "Diciembre";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label127.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label127.Location = new System.Drawing.Point(16, 240);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(52, 20);
+            this.label127.TabIndex = 68;
+            this.label127.Text = "Enero";
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label128.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label128.Location = new System.Drawing.Point(16, 126);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(66, 20);
+            this.label128.TabIndex = 67;
+            this.label128.Text = "Octubre";
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label129.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label129.Location = new System.Drawing.Point(16, 164);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(84, 20);
+            this.label129.TabIndex = 66;
+            this.label129.Text = "Noviembre";
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label130.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label130.Location = new System.Drawing.Point(16, 88);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(91, 20);
+            this.label130.TabIndex = 65;
+            this.label130.Text = "Septiembre";
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label131.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label131.Location = new System.Drawing.Point(16, 50);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(93, 20);
+            this.label131.TabIndex = 62;
+            this.label131.Text = "Diagnostico";
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label132.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label132.Location = new System.Drawing.Point(223, 0);
+            this.label132.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(138, 26);
+            this.label132.TabIndex = 44;
+            this.label132.Text = "Inasistencias";
             // 
             // Calificaciones456
             // 
@@ -5115,18 +5319,21 @@
         private System.Windows.Forms.Label label118;
         private System.Windows.Forms.Label label119;
         private System.Windows.Forms.Label label120;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
+        private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ComboBox comboBox111;
-        private System.Windows.Forms.ComboBox comboBox112;
-        private System.Windows.Forms.ComboBox comboBox113;
-        private System.Windows.Forms.ComboBox comboBox114;
-        private System.Windows.Forms.ComboBox comboBox115;
-        private System.Windows.Forms.ComboBox comboBox116;
-        private System.Windows.Forms.ComboBox comboBox117;
-        private System.Windows.Forms.ComboBox comboBox118;
-        private System.Windows.Forms.ComboBox comboBox119;
-        private System.Windows.Forms.ComboBox comboBox120;
-        private System.Windows.Forms.ComboBox comboBox121;
+        private System.Windows.Forms.DomainUpDown domainUpDown6;
+        private System.Windows.Forms.DomainUpDown domainUpDown7;
+        private System.Windows.Forms.DomainUpDown domainUpDown8;
+        private System.Windows.Forms.DomainUpDown domainUpDown10;
+        private System.Windows.Forms.DomainUpDown domainUpDown4;
+        private System.Windows.Forms.DomainUpDown domainUpDown9;
+        private System.Windows.Forms.DomainUpDown domainUpDown11;
+        private System.Windows.Forms.DomainUpDown domainUpDown5;
+        private System.Windows.Forms.DomainUpDown domainUpDown3;
+        private System.Windows.Forms.DomainUpDown domainUpDown2;
+        private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label123;
@@ -5139,8 +5346,5 @@
         private System.Windows.Forms.Label label130;
         private System.Windows.Forms.Label label131;
         private System.Windows.Forms.Label label132;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
-        private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
-        private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
     }
 }
