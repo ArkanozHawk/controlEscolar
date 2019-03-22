@@ -964,5 +964,14 @@ namespace Control_Escolar
 
             MessageBox.Show("¡PDF creado!");
         }
+
+        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            string nombre = materialTabControl1.SelectedTab.Name;
+            MessageBox.Show(nombre);
+
+
+        }
     }
 }

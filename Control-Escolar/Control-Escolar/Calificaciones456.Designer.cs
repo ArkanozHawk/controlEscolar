@@ -30,7 +30,7 @@
         {
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.Esp = new System.Windows.Forms.TabPage();
             this.BoxGenero = new System.Windows.Forms.GroupBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
@@ -55,7 +55,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.Mat = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.comboBox12 = new System.Windows.Forms.ComboBox();
             this.comboBox13 = new System.Windows.Forms.ComboBox();
@@ -80,7 +80,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Ingles = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox23 = new System.Windows.Forms.ComboBox();
             this.comboBox24 = new System.Windows.Forms.ComboBox();
@@ -105,7 +105,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.CNat = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
             this.comboBox35 = new System.Windows.Forms.ComboBox();
@@ -130,7 +130,7 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.Geo = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.comboBox45 = new System.Windows.Forms.ComboBox();
             this.comboBox46 = new System.Windows.Forms.ComboBox();
@@ -155,7 +155,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.Hist = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.comboBox56 = new System.Windows.Forms.ComboBox();
             this.comboBox57 = new System.Windows.Forms.ComboBox();
@@ -180,7 +180,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.FormCiv = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.comboBox67 = new System.Windows.Forms.ComboBox();
             this.comboBox68 = new System.Windows.Forms.ComboBox();
@@ -205,7 +205,7 @@
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.Artes = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.comboBox78 = new System.Windows.Forms.ComboBox();
             this.comboBox79 = new System.Windows.Forms.ComboBox();
@@ -230,7 +230,7 @@
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.Edsocial = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.comboBox89 = new System.Windows.Forms.ComboBox();
             this.comboBox90 = new System.Windows.Forms.ComboBox();
@@ -255,7 +255,7 @@
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.EdFisica = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.comboBox100 = new System.Windows.Forms.ComboBox();
             this.comboBox101 = new System.Windows.Forms.ComboBox();
@@ -280,11 +280,7 @@
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.Inasist = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
             this.domainUpDown7 = new System.Windows.Forms.DomainUpDown();
@@ -309,28 +305,32 @@
             this.label130 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
             this.label132 = new System.Windows.Forms.Label();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
+            this.Esp.SuspendLayout();
             this.BoxGenero.SuspendLayout();
-            this.tabPage2.SuspendLayout();
+            this.Mat.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
+            this.Ingles.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.CNat.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.tabPage5.SuspendLayout();
+            this.Geo.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.tabPage6.SuspendLayout();
+            this.Hist.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.tabPage7.SuspendLayout();
+            this.FormCiv.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.tabPage8.SuspendLayout();
+            this.Artes.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.tabPage9.SuspendLayout();
+            this.Edsocial.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.tabPage10.SuspendLayout();
+            this.EdFisica.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.tabPage11.SuspendLayout();
+            this.Inasist.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -349,17 +349,17 @@
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Controls.Add(this.tabPage1);
-            this.materialTabControl1.Controls.Add(this.tabPage2);
-            this.materialTabControl1.Controls.Add(this.tabPage3);
-            this.materialTabControl1.Controls.Add(this.tabPage4);
-            this.materialTabControl1.Controls.Add(this.tabPage5);
-            this.materialTabControl1.Controls.Add(this.tabPage6);
-            this.materialTabControl1.Controls.Add(this.tabPage7);
-            this.materialTabControl1.Controls.Add(this.tabPage8);
-            this.materialTabControl1.Controls.Add(this.tabPage9);
-            this.materialTabControl1.Controls.Add(this.tabPage10);
-            this.materialTabControl1.Controls.Add(this.tabPage11);
+            this.materialTabControl1.Controls.Add(this.Esp);
+            this.materialTabControl1.Controls.Add(this.Mat);
+            this.materialTabControl1.Controls.Add(this.Ingles);
+            this.materialTabControl1.Controls.Add(this.CNat);
+            this.materialTabControl1.Controls.Add(this.Geo);
+            this.materialTabControl1.Controls.Add(this.Hist);
+            this.materialTabControl1.Controls.Add(this.FormCiv);
+            this.materialTabControl1.Controls.Add(this.Artes);
+            this.materialTabControl1.Controls.Add(this.Edsocial);
+            this.materialTabControl1.Controls.Add(this.EdFisica);
+            this.materialTabControl1.Controls.Add(this.Inasist);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(53, 116);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -367,17 +367,18 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(945, 380);
             this.materialTabControl1.TabIndex = 81;
+            this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
-            // tabPage1
+            // Esp
             // 
-            this.tabPage1.Controls.Add(this.BoxGenero);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(937, 354);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Esp.";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.Esp.Controls.Add(this.BoxGenero);
+            this.Esp.Location = new System.Drawing.Point(4, 22);
+            this.Esp.Name = "Esp";
+            this.Esp.Padding = new System.Windows.Forms.Padding(3);
+            this.Esp.Size = new System.Drawing.Size(937, 354);
+            this.Esp.TabIndex = 0;
+            this.Esp.Text = "Esp.";
+            this.Esp.UseVisualStyleBackColor = true;
             // 
             // BoxGenero
             // 
@@ -767,16 +768,16 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Calificaciones";
             // 
-            // tabPage2
+            // Mat
             // 
-            this.tabPage2.Controls.Add(this.groupBox1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(937, 354);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Mat.";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.Mat.Controls.Add(this.groupBox1);
+            this.Mat.Location = new System.Drawing.Point(4, 22);
+            this.Mat.Name = "Mat";
+            this.Mat.Padding = new System.Windows.Forms.Padding(3);
+            this.Mat.Size = new System.Drawing.Size(937, 354);
+            this.Mat.TabIndex = 1;
+            this.Mat.Text = "Mat.";
+            this.Mat.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -1166,16 +1167,16 @@
             this.label24.TabIndex = 44;
             this.label24.Text = "Calificaciones";
             // 
-            // tabPage3
+            // Ingles
             // 
-            this.tabPage3.Controls.Add(this.groupBox2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(937, 354);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Ingles";
-            this.tabPage3.UseVisualStyleBackColor = true;
+            this.Ingles.Controls.Add(this.groupBox2);
+            this.Ingles.Location = new System.Drawing.Point(4, 22);
+            this.Ingles.Name = "Ingles";
+            this.Ingles.Padding = new System.Windows.Forms.Padding(3);
+            this.Ingles.Size = new System.Drawing.Size(937, 354);
+            this.Ingles.TabIndex = 2;
+            this.Ingles.Text = "Ingles";
+            this.Ingles.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -1565,16 +1566,16 @@
             this.label36.TabIndex = 44;
             this.label36.Text = "Calificaciones";
             // 
-            // tabPage4
+            // CNat
             // 
-            this.tabPage4.Controls.Add(this.groupBox3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(937, 354);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "C. Nat.";
-            this.tabPage4.UseVisualStyleBackColor = true;
+            this.CNat.Controls.Add(this.groupBox3);
+            this.CNat.Location = new System.Drawing.Point(4, 22);
+            this.CNat.Name = "CNat";
+            this.CNat.Padding = new System.Windows.Forms.Padding(3);
+            this.CNat.Size = new System.Drawing.Size(937, 354);
+            this.CNat.TabIndex = 3;
+            this.CNat.Text = "C. Nat.";
+            this.CNat.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -1964,16 +1965,16 @@
             this.label48.TabIndex = 44;
             this.label48.Text = "Calificaciones";
             // 
-            // tabPage5
+            // Geo
             // 
-            this.tabPage5.Controls.Add(this.groupBox4);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(937, 354);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Geo.";
-            this.tabPage5.UseVisualStyleBackColor = true;
+            this.Geo.Controls.Add(this.groupBox4);
+            this.Geo.Location = new System.Drawing.Point(4, 22);
+            this.Geo.Name = "Geo";
+            this.Geo.Padding = new System.Windows.Forms.Padding(3);
+            this.Geo.Size = new System.Drawing.Size(937, 354);
+            this.Geo.TabIndex = 4;
+            this.Geo.Text = "Geo.";
+            this.Geo.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -2363,16 +2364,16 @@
             this.label60.TabIndex = 44;
             this.label60.Text = "Calificaciones";
             // 
-            // tabPage6
+            // Hist
             // 
-            this.tabPage6.Controls.Add(this.groupBox5);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(937, 354);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Hist.";
-            this.tabPage6.UseVisualStyleBackColor = true;
+            this.Hist.Controls.Add(this.groupBox5);
+            this.Hist.Location = new System.Drawing.Point(4, 22);
+            this.Hist.Name = "Hist";
+            this.Hist.Padding = new System.Windows.Forms.Padding(3);
+            this.Hist.Size = new System.Drawing.Size(937, 354);
+            this.Hist.TabIndex = 5;
+            this.Hist.Text = "Hist.";
+            this.Hist.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -2762,16 +2763,16 @@
             this.label72.TabIndex = 44;
             this.label72.Text = "Calificaciones";
             // 
-            // tabPage7
+            // FormCiv
             // 
-            this.tabPage7.Controls.Add(this.groupBox6);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(937, 354);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Form. Civ. y Étic.";
-            this.tabPage7.UseVisualStyleBackColor = true;
+            this.FormCiv.Controls.Add(this.groupBox6);
+            this.FormCiv.Location = new System.Drawing.Point(4, 22);
+            this.FormCiv.Name = "FormCiv";
+            this.FormCiv.Padding = new System.Windows.Forms.Padding(3);
+            this.FormCiv.Size = new System.Drawing.Size(937, 354);
+            this.FormCiv.TabIndex = 6;
+            this.FormCiv.Text = "Form. Civ. y Étic.";
+            this.FormCiv.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -3161,16 +3162,16 @@
             this.label84.TabIndex = 44;
             this.label84.Text = "Calificaciones";
             // 
-            // tabPage8
+            // Artes
             // 
-            this.tabPage8.Controls.Add(this.groupBox7);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(937, 354);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Artes";
-            this.tabPage8.UseVisualStyleBackColor = true;
+            this.Artes.Controls.Add(this.groupBox7);
+            this.Artes.Location = new System.Drawing.Point(4, 22);
+            this.Artes.Name = "Artes";
+            this.Artes.Padding = new System.Windows.Forms.Padding(3);
+            this.Artes.Size = new System.Drawing.Size(937, 354);
+            this.Artes.TabIndex = 7;
+            this.Artes.Text = "Artes";
+            this.Artes.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -3560,16 +3561,16 @@
             this.label96.TabIndex = 44;
             this.label96.Text = "Calificaciones";
             // 
-            // tabPage9
+            // Edsocial
             // 
-            this.tabPage9.Controls.Add(this.groupBox8);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(937, 354);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Ed. Socio.";
-            this.tabPage9.UseVisualStyleBackColor = true;
+            this.Edsocial.Controls.Add(this.groupBox8);
+            this.Edsocial.Location = new System.Drawing.Point(4, 22);
+            this.Edsocial.Name = "Edsocial";
+            this.Edsocial.Padding = new System.Windows.Forms.Padding(3);
+            this.Edsocial.Size = new System.Drawing.Size(937, 354);
+            this.Edsocial.TabIndex = 8;
+            this.Edsocial.Text = "Ed. Socio.";
+            this.Edsocial.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -3959,16 +3960,16 @@
             this.label108.TabIndex = 44;
             this.label108.Text = "Calificaciones";
             // 
-            // tabPage10
+            // EdFisica
             // 
-            this.tabPage10.Controls.Add(this.groupBox9);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(937, 354);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Ed. Física";
-            this.tabPage10.UseVisualStyleBackColor = true;
+            this.EdFisica.Controls.Add(this.groupBox9);
+            this.EdFisica.Location = new System.Drawing.Point(4, 22);
+            this.EdFisica.Name = "EdFisica";
+            this.EdFisica.Padding = new System.Windows.Forms.Padding(3);
+            this.EdFisica.Size = new System.Drawing.Size(937, 354);
+            this.EdFisica.TabIndex = 9;
+            this.EdFisica.Text = "Ed. Física";
+            this.EdFisica.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -4358,67 +4359,16 @@
             this.label120.TabIndex = 44;
             this.label120.Text = "Calificaciones";
             // 
-            // tabPage11
+            // Inasist
             // 
-            this.tabPage11.Controls.Add(this.groupBox10);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(937, 354);
-            this.tabPage11.TabIndex = 10;
-            this.tabPage11.Text = "Inasist.";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialTabSelector1.Location = new System.Drawing.Point(-21, 63);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(1);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTabSelector1.Size = new System.Drawing.Size(1065, 49);
-            this.materialTabSelector1.TabIndex = 82;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(463, 525);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 56);
-            this.materialRaisedButton1.TabIndex = 70;
-            this.materialRaisedButton1.Text = "Guardar Calificaciones";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(125, 525);
-            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 56);
-            this.btnPrincipal.TabIndex = 83;
-            this.btnPrincipal.Text = "Volver al Menú Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = true;
-            // 
-            // btnIrBoletas
-            // 
-            this.btnIrBoletas.Depth = 0;
-            this.btnIrBoletas.Location = new System.Drawing.Point(763, 525);
-            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnIrBoletas.Name = "btnIrBoletas";
-            this.btnIrBoletas.Primary = true;
-            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
-            this.btnIrBoletas.TabIndex = 86;
-            this.btnIrBoletas.Text = "Generar PDF";
-            this.btnIrBoletas.UseVisualStyleBackColor = true;
-            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
+            this.Inasist.Controls.Add(this.groupBox10);
+            this.Inasist.Location = new System.Drawing.Point(4, 22);
+            this.Inasist.Name = "Inasist";
+            this.Inasist.Padding = new System.Windows.Forms.Padding(3);
+            this.Inasist.Size = new System.Drawing.Size(937, 354);
+            this.Inasist.TabIndex = 10;
+            this.Inasist.Text = "Inasist.";
+            this.Inasist.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
@@ -5012,6 +4962,57 @@
             this.label132.TabIndex = 44;
             this.label132.Text = "Inasistencias";
             // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialTabSelector1.Location = new System.Drawing.Point(-21, 63);
+            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(1);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTabSelector1.Size = new System.Drawing.Size(1065, 49);
+            this.materialTabSelector1.TabIndex = 82;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(463, 525);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 56);
+            this.materialRaisedButton1.TabIndex = 70;
+            this.materialRaisedButton1.Text = "Guardar Calificaciones";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.Depth = 0;
+            this.btnPrincipal.Location = new System.Drawing.Point(125, 525);
+            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Primary = true;
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 56);
+            this.btnPrincipal.TabIndex = 83;
+            this.btnPrincipal.Text = "Volver al Menú Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            // 
+            // btnIrBoletas
+            // 
+            this.btnIrBoletas.Depth = 0;
+            this.btnIrBoletas.Location = new System.Drawing.Point(763, 525);
+            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnIrBoletas.Name = "btnIrBoletas";
+            this.btnIrBoletas.Primary = true;
+            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
+            this.btnIrBoletas.TabIndex = 86;
+            this.btnIrBoletas.Text = "Generar PDF";
+            this.btnIrBoletas.UseVisualStyleBackColor = true;
+            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
+            // 
             // Calificaciones456
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5026,37 +5027,37 @@
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
             this.materialTabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
+            this.Esp.ResumeLayout(false);
             this.BoxGenero.ResumeLayout(false);
             this.BoxGenero.PerformLayout();
-            this.tabPage2.ResumeLayout(false);
+            this.Mat.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
+            this.Ingles.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
+            this.CNat.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
+            this.Geo.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
+            this.Hist.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
+            this.FormCiv.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
+            this.Artes.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
+            this.Edsocial.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.tabPage10.ResumeLayout(false);
+            this.EdFisica.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.tabPage11.ResumeLayout(false);
+            this.Inasist.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
@@ -5067,18 +5068,18 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage Esp;
+        private System.Windows.Forms.TabPage Mat;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.TabPage tabPage11;
+        private System.Windows.Forms.TabPage Ingles;
+        private System.Windows.Forms.TabPage CNat;
+        private System.Windows.Forms.TabPage Geo;
+        private System.Windows.Forms.TabPage Hist;
+        private System.Windows.Forms.TabPage FormCiv;
+        private System.Windows.Forms.TabPage Artes;
+        private System.Windows.Forms.TabPage Edsocial;
+        private System.Windows.Forms.TabPage EdFisica;
+        private System.Windows.Forms.TabPage Inasist;
         private System.Windows.Forms.GroupBox BoxGenero;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.ComboBox comboBox7;
