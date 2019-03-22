@@ -114,7 +114,7 @@ namespace Control_Escolar
             // Creamos el documento con el tamaño de página tradicional
             FileStream stream = new FileStream(folderPath + "calificaciones456.pdf", FileMode.Create);
             // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc,stream);
+            PdfWriter writer = PdfWriter.GetInstance(doc, stream);
 
             // Le colocamos el título y el autor
             // **Nota: Esto no será visible en el documento
@@ -190,7 +190,7 @@ namespace Control_Escolar
             cell1z.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell1z);
 
-            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO : " +sesion.grado + "      "+ "GRUPO:  A"));
+            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO : " + sesion.grado + "      " + "GRUPO:  A"));
             cell44.Colspan = 22;//toma columnas
             cell44.BorderWidth = 0;
             cell44.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
@@ -968,11 +968,11 @@ namespace Control_Escolar
             MessageBox.Show("¡PDF creado!");
         }
 
-     
+
         public void caliesp()
         {
-            
-           
+
+
             diagnostico = EspDiag.SelectedItem.ToString();
             enero = Espene.SelectedItem.ToString();
             febrero = EspFeb.SelectedItem.ToString();
@@ -986,15 +986,13 @@ namespace Control_Escolar
             diciembre = Espdic.SelectedItem.ToString();
             enero = Espene.SelectedItem.ToString();
 
-            
-           
-            for (
-                
-                int i =0; i<=11;i++ )
+
+
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
-                    case 1: { mes = "Enero";  calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
                     case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
                     case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
                     case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
@@ -1005,7 +1003,7 @@ namespace Control_Escolar
                     case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
                     case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
                     case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-                   
+
                 }
 
             }
@@ -1016,24 +1014,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagMate.SelectedItem.ToString();
+            enero = cmbEneroMate.SelectedItem.ToString();
+            febrero = cmbFebreroMate.SelectedItem.ToString();
+            marzo = cmbMarzoMate.SelectedItem.ToString();
+            abril = cmbAbrilMate.SelectedItem.ToString();
+            mayo = cmbMayoMate.SelectedItem.ToString();
+            junio = cmbJunioMate.SelectedItem.ToString();
+            septiembre = cmbSeptiembreMate.SelectedItem.ToString();
+            octubre = cmbOctubreMate.SelectedItem.ToString();
+            noviembre = cmbNoviembreMate.SelectedItem.ToString();
+            diciembre = cmbDiciembreMate.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for (int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1060,24 +1056,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagIng.SelectedItem.ToString();
+            enero = cmbEneroIng.SelectedItem.ToString();
+            febrero = cmbFebreroIng.SelectedItem.ToString();
+            marzo = cmbMarzoIng.SelectedItem.ToString();
+            abril = cmbAbrilIng.SelectedItem.ToString();
+            mayo = cmbMayoIng.SelectedItem.ToString();
+            junio = cmbJunioIng.SelectedItem.ToString();
+            septiembre = cmbSeptiembreIng.SelectedItem.ToString();
+            octubre = cmbOctubreIng.SelectedItem.ToString();
+            noviembre = cmbNoviembreIng.SelectedItem.ToString();
+            diciembre = cmbDiciembreIng.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1104,24 +1098,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagNaturales.SelectedItem.ToString();
+            enero = cmbEneroNaturales.SelectedItem.ToString();
+            febrero = cmbFebreroNaturales.SelectedItem.ToString();
+            marzo = cmbMarzoNaturales.SelectedItem.ToString();
+            abril = cmbAbrilNaturales.SelectedItem.ToString();
+            mayo = cmbMayoNaturales.SelectedItem.ToString();
+            junio = cmbJunioNaturales.SelectedItem.ToString();
+            septiembre = cmbSeptiembreNaturales.SelectedItem.ToString();
+            octubre = cmbOctubreNaturales.SelectedItem.ToString();
+            noviembre = cmbNoviembreNaturales.SelectedItem.ToString();
+            diciembre = cmbDiciembreNaturales.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1147,24 +1139,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagGeo.SelectedItem.ToString();
+            enero = cmbEneroGeo.SelectedItem.ToString();
+            febrero = cmbFebreroGeo.SelectedItem.ToString();
+            marzo = cmbMarzoGeo.SelectedItem.ToString();
+            abril = cmbAbrilGeo.SelectedItem.ToString();
+            mayo = cmbMayoGeo.SelectedItem.ToString();
+            junio = cmbJunioGeo.SelectedItem.ToString();
+            septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
+            octubre = cmbOctubreGeo.SelectedItem.ToString();
+            noviembre = cmbNoviembreGeo.SelectedItem.ToString();
+            diciembre = cmbDiciembreGeo.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1190,24 +1180,21 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagHist.SelectedItem.ToString();
+            enero = cmbEneroHist.SelectedItem.ToString();
+            febrero = cmbFebreroHist.SelectedItem.ToString();
+            marzo = cmbMarzoGeo.SelectedItem.ToString();
+            abril = cmbAbrilGeo.SelectedItem.ToString();
+            mayo = cmbMayoGeo.SelectedItem.ToString();
+            junio = cmbJunioGeo.SelectedItem.ToString();
+            septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
+            octubre = cmbOctubreGeo.SelectedItem.ToString();
+            noviembre = cmbNoviembreGeo.SelectedItem.ToString();
+            diciembre = cmbDiciembreGeo.SelectedItem.ToString();
 
 
 
-            for (
-
-                int i = 0; i <= 11; i++)
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1233,24 +1220,21 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagFCE.SelectedItem.ToString();
+            enero = cmbEneroFCE.SelectedItem.ToString();
+            febrero = cmbFebreroFCE.SelectedItem.ToString();
+            marzo = cmbMarzoFCE.SelectedItem.ToString();
+            abril = cmbAbrilFCE.SelectedItem.ToString();
+            mayo = cmbMayoFCE.SelectedItem.ToString();
+            junio = cmbJunioFCE.SelectedItem.ToString();
+            septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
+            octubre = cmbOctubreFCE.SelectedItem.ToString();
+            noviembre = cmbNoviembreFCE.SelectedItem.ToString();
+            diciembre = cmbDiciembreFCE.SelectedItem.ToString();
 
 
 
-            for (
-
-                int i = 0; i <= 11; i++)
+            for (int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1273,32 +1257,30 @@ namespace Control_Escolar
 
         }
 
-         public void caliartes()
+        public void caliartes()
         {
-            
-           
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
 
-            
-           
-            for (
-                
-                int i =0; i<=11;i++ )
+
+            diagnostico = cmbDiagArtes.SelectedItem.ToString();
+            enero = cmbEneroFCE.SelectedItem.ToString();
+            febrero = cmbFebreroFCE.SelectedItem.ToString();
+            marzo = cmbMarzoFCE.SelectedItem.ToString();
+            abril = cmbAbrilFCE.SelectedItem.ToString();
+            mayo = cmbMayoFCE.SelectedItem.ToString();
+            junio = cmbJunioFCE.SelectedItem.ToString();
+            septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
+            octubre = cmbOctubreFCE.SelectedItem.ToString();
+            noviembre = cmbNoviembreFCE.SelectedItem.ToString();
+            diciembre = cmbDiciembreFCE.SelectedItem.ToString();
+
+
+
+
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
-                    case 1: { mes = "Enero";  calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
                     case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
                     case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
                     case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
@@ -1309,7 +1291,7 @@ namespace Control_Escolar
                     case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
                     case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
                     case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-                   
+
                 }
 
             }
@@ -1320,24 +1302,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagSocio.SelectedItem.ToString();
+            enero = cmbEneroSocio.SelectedItem.ToString();
+            febrero = cmbFebreroSocio.SelectedItem.ToString();
+            marzo = cmbMarzoSocio.SelectedItem.ToString();
+            abril = cmbAbrilSocio.SelectedItem.ToString();
+            mayo = cmbMayoSocio.SelectedItem.ToString();
+            junio = cmbJunioSocio.SelectedItem.ToString();
+            septiembre = cmbSeptiembreSocio.SelectedItem.ToString();
+            octubre = cmbOctubreSocio.SelectedItem.ToString();
+            noviembre = cmbNoviembreSocio.SelectedItem.ToString();
+            diciembre = cmbDiciembreSocio.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for (   int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1363,24 +1343,22 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            diagnostico = cmbDiagEdFis.SelectedItem.ToString();
+            enero = cmbEneroEdFis.SelectedItem.ToString();
+            febrero = cmbFebreroEdFis.SelectedItem.ToString();
+            marzo = cmbMarzoEdFis.SelectedItem.ToString();
+            abril = cmbAbrilEdFis.SelectedItem.ToString();
+            mayo = cmbMayoEdFis.SelectedItem.ToString();
+            junio = cmbJunioEdFis.SelectedItem.ToString();
+            septiembre = cmbSeptiembreEdFis.SelectedItem.ToString();
+            octubre = cmbOctubreEdFis.SelectedItem.ToString();
+            noviembre = cmbNoviembreEdFis.SelectedItem.ToString();
+            diciembre = cmbDiciembreEdFis.SelectedItem.ToString();
 
 
 
-            for (
 
-                int i = 0; i <= 11; i++)
+            for ( int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
@@ -1405,41 +1383,156 @@ namespace Control_Escolar
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
 
-          
-            caliesp();
-            MessageBox.Show("calificacion guardada con exito");
-            calimat();
-            MessageBox.Show("calificacion guardada con exito");
-            caliIngles();
-            MessageBox.Show("calificacion guardada con exito");
-            caliCnat();
-            MessageBox.Show("calificacion guardada con exito");
-            caliGeo();
-            MessageBox.Show("calificacion guardada con exito");
-            caliHist();
-            MessageBox.Show("calificacion guardada con exito");
-            Formacioncivi();
-            MessageBox.Show("calificacion guardada con exito");
-            caliartes();
-            MessageBox.Show("calificacion guardada con exito");
-            caliEdus();
-            MessageBox.Show("calificacion guardada con exito");
-            caliEdufi();
-            MessageBox.Show("calificacion guardada con exito");
+            foreach (TabPage page in materialTabControl1.TabPages)
+            {
+               sesion.nombremateria = page.Name;
+
+                
+                    sesion.nombremateria = page.Name;
 
 
 
+
+
+                    MySqlConnection conn;
+                    MySqlCommand com;
+                    string conexion = "server=localhost;uid=root;database=nerivela";
+                    string query = "select * from materias where nombre like '" + sesion.nombremateria + "%' and idGradoM = " + sesion.grado + " order by materias.idMaterias ASC Limit 0, 30;";
+                    MessageBox.Show(query);
+                    conn = new MySqlConnection(conexion);
+                    conn.Open();
+
+                    com = new MySqlCommand(query, conn);
+
+                    MySqlDataReader myreader = com.ExecuteReader();
+
+
+                    myreader.Read();
+                    try
+                    {
+                        sesion.idmateria = Convert.ToString(myreader["idMaterias"]);
+
+                        MessageBox.Show(sesion.idmateria.ToString());
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+
+
+
+
+                switch (sesion.nombremateria)
+                    {
+                        case "Esp":
+                            {
+                                caliesp();
+                                MessageBox.Show("calificacion guardada con exito");
+                            }
+                            break;
+                        case "Mat":
+                            {
+                                calimat();
+                                MessageBox.Show("calificacion guardada con exito");
+                                caliIngles();
+                            }
+                            break;
+                        case "Ingles":
+                            {
+                                caliIngles();
+                                MessageBox.Show("calificacion guardada con exito");
+                            }
+                            break;
+                        case "C.Nat":
+                            {
+                                caliCnat();
+                                MessageBox.Show("calificacion guardada con exito");
+                            }
+                            break;
+                        case "Geo":
+                            {
+                                caliGeo();
+                                MessageBox.Show("calificacion guardada con exito");
+                                caliHist();
+                            }
+                            break;
+                        case "Hist":
+                            {
+                                caliHist();
+                                MessageBox.Show("calificacion guardada con exito");
+                            }
+                            break;
+                        case "":
+                            {
+                                Formacioncivi();
+                                MessageBox.Show("calificacion guardada con exito");
+                            }
+                          break;
+                        //case "":
+                        //    {
+                        //        caliartes();
+                        //        MessageBox.Show("calificacion guardada con exito");
+                        //    }
+                        //    break;
+                        //case "":
+                        //    {
+                        //        caliEdus();
+                        //        MessageBox.Show("calificacion guardada con exito");
+                        //    }
+                        //    break;
+                        //case 10:
+                        //    {
+                        //        caliEdufi();
+                        //        MessageBox.Show("calificacion guardada con exito");
+                        //    }
+                        //    break;
+                        //    ;
+                    
+
+                }
+
+            }
+                //caliesp();
+                //MessageBox.Show("calificacion guardada con exito");
+                //calimat();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliIngles();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliCnat();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliGeo();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliHist();
+                //MessageBox.Show("calificacion guardada con exito");
+                //Formacioncivi();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliartes();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliEdus();
+                //MessageBox.Show("calificacion guardada con exito");
+                //caliEdufi();
+                //MessageBox.Show("calificacion guardada con exito");
+
+
+
+            
         }
 
         public void insertarcali()
-        {
-            sesion.nombremateria = materialTabControl1.SelectedTab.Text;
-            MessageBox.Show(sesion.nombremateria);
+        {    
+
+            
+            
             MySqlConnection conn;
             MySqlCommand com;
+
+
+
+
+
             string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "select * from materias where nombre like '" + sesion.nombremateria + "%' and idGradoM = " + sesion.grado + " order by materias.idMaterias ASC Limit 0, 30;";
-            MessageBox.Show(query);
+            string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            MessageBox.Show(sesion.Curp);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -1449,41 +1542,19 @@ namespace Control_Escolar
 
 
             myreader.Read();
-            try
-            {
-                string idMaterias = Convert.ToString(myreader["idMaterias"]);
-
-                MessageBox.Show(idMaterias.ToString());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-          
-            string conexion2 = "server=localhost;uid=root;database=nerivela";
-            string query2 = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
-            MessageBox.Show(sesion.Curp);
-            conn = new MySqlConnection(conexion2);
-            conn.Open();
-
-            com = new MySqlCommand(query2, conn);
-
-            MySqlDataReader myreader1 = com.ExecuteReader();
-
-
-            myreader1.Read();
 
             int idalumno = Convert.ToInt32(myreader["idAlumno"]);
-            sesion.Grado = Convert.ToInt32(myreader["idGrado"]);
 
-       
+
+
             //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
 
-            string inserta_bitacora = "INSERT INTO `calificaciones`( `CalificacionMen`, `idAlumno`,`Mes`, `idMaterias`) VALUES (" + calificacion + "," + idalumno + ",'"+mes+"'," + sesion.nombremateria+");";
+            string inserta_bitacora = "INSERT INTO `calificaciones`( `CalificacionMen`, `idAlumno`,`Mes`, `idMaterias`) VALUES (" + calificacion + "," + idalumno + ",'" + mes + "'," + sesion.idmateria + ");";
             MessageBox.Show(inserta_bitacora);
             obj.insBitacora(conexion, inserta_bitacora);
 
         }
+
 
     }
 }
