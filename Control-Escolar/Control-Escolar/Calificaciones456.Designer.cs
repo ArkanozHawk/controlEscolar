@@ -1573,7 +1573,7 @@
             this.CNat.Padding = new System.Windows.Forms.Padding(3);
             this.CNat.Size = new System.Drawing.Size(937, 354);
             this.CNat.TabIndex = 3;
-            this.CNat.Text = "C. Nat";
+            this.CNat.Text = "CienciasNaturales";
             this.CNat.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -2770,7 +2770,7 @@
             this.FormCiv.Padding = new System.Windows.Forms.Padding(3);
             this.FormCiv.Size = new System.Drawing.Size(937, 354);
             this.FormCiv.TabIndex = 6;
-            this.FormCiv.Text = "Form. Civ. y Étic";
+            this.FormCiv.Text = "FormacionCiv. y Étic";
             this.FormCiv.UseVisualStyleBackColor = true;
             // 
             // groupBox6
