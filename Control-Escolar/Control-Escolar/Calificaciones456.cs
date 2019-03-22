@@ -18,6 +18,9 @@ namespace Control_Escolar
 {
     public partial class Calificaciones456 : MaterialForm
     {
+        double calificacion;
+        string enero, febrero, marzo, abril, mayo, junio, septiembre, octubre, noviembre, diciembre, diagnostico;
+        string mes;
         public Calificaciones456()
         {
             InitializeComponent();
@@ -965,13 +968,522 @@ namespace Control_Escolar
             MessageBox.Show("¡PDF creado!");
         }
 
-        private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
+     
+        public void caliesp()
         {
+            
+           
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
 
-            string nombre = materialTabControl1.SelectedTab.Name;
-            MessageBox.Show(nombre);
+            
+           
+            for (
+                
+                int i =0; i<=11;i++ )
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero";  calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+                   
+                }
+
+            }
 
 
         }
+        public void calimat()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+
+        public void caliIngles()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+
+        public void caliCnat()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+        public void caliGeo()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+        public void caliHist()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+        public void Formacioncivi()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+
+         public void caliartes()
+        {
+            
+           
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+            
+           
+            for (
+                
+                int i =0; i<=11;i++ )
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero";  calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+                   
+                }
+
+            }
+
+
+        }
+        public void caliEdus()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+        public void caliEdufi()
+        {
+
+
+            diagnostico = EspDiag.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+            febrero = EspFeb.SelectedItem.ToString();
+            marzo = EspMarz.SelectedItem.ToString();
+            abril = Espabril.SelectedItem.ToString();
+            mayo = Espmay.SelectedItem.ToString();
+            junio = Espjun.SelectedItem.ToString();
+            septiembre = EspSep.SelectedItem.ToString();
+            octubre = EspOct.SelectedItem.ToString();
+            noviembre = Espnov.SelectedItem.ToString();
+            diciembre = Espdic.SelectedItem.ToString();
+            enero = Espene.SelectedItem.ToString();
+
+
+
+            for (
+
+                int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+                }
+
+            }
+
+
+        }
+        private void MaterialRaisedButton1_Click(object sender, EventArgs e)
+        {
+
+          
+            caliesp();
+            MessageBox.Show("calificacion guardada con exito");
+            calimat();
+            MessageBox.Show("calificacion guardada con exito");
+            caliIngles();
+            MessageBox.Show("calificacion guardada con exito");
+            caliCnat();
+            MessageBox.Show("calificacion guardada con exito");
+            caliGeo();
+            MessageBox.Show("calificacion guardada con exito");
+            caliHist();
+            MessageBox.Show("calificacion guardada con exito");
+            Formacioncivi();
+            MessageBox.Show("calificacion guardada con exito");
+            caliartes();
+            MessageBox.Show("calificacion guardada con exito");
+            caliEdus();
+            MessageBox.Show("calificacion guardada con exito");
+            caliEdufi();
+            MessageBox.Show("calificacion guardada con exito");
+
+
+
+        }
+
+        public void insertarcali()
+        {
+            sesion.nombremateria = materialTabControl1.SelectedTab.Text;
+            MessageBox.Show(sesion.nombremateria);
+            MySqlConnection conn;
+            MySqlCommand com;
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "select * from materias where nombre like '" + sesion.nombremateria + "%' and idGradoM = " + sesion.grado + " order by materias.idMaterias ASC Limit 0, 30;";
+            MessageBox.Show(query);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+            try
+            {
+                string idMaterias = Convert.ToString(myreader["idMaterias"]);
+
+                MessageBox.Show(idMaterias.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+          
+            string conexion2 = "server=localhost;uid=root;database=nerivela";
+            string query2 = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            MessageBox.Show(sesion.Curp);
+            conn = new MySqlConnection(conexion2);
+            conn.Open();
+
+            com = new MySqlCommand(query2, conn);
+
+            MySqlDataReader myreader1 = com.ExecuteReader();
+
+
+            myreader1.Read();
+
+            int idalumno = Convert.ToInt32(myreader["idAlumno"]);
+            sesion.Grado = Convert.ToInt32(myreader["idGrado"]);
+
+       
+            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+
+            string inserta_bitacora = "INSERT INTO `calificaciones`( `CalificacionMen`, `idAlumno`,`Mes`, `idMaterias`) VALUES (" + calificacion + "," + idalumno + ",'"+mes+"'," + sesion.nombremateria+");";
+            MessageBox.Show(inserta_bitacora);
+            obj.insBitacora(conexion, inserta_bitacora);
+
+        }
+
     }
 }

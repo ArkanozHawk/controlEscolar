@@ -32,17 +32,17 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Esp = new System.Windows.Forms.TabPage();
             this.BoxGenero = new System.Windows.Forms.GroupBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.Espjun = new System.Windows.Forms.ComboBox();
+            this.Espmay = new System.Windows.Forms.ComboBox();
+            this.Espabril = new System.Windows.Forms.ComboBox();
+            this.EspMarz = new System.Windows.Forms.ComboBox();
+            this.EspFeb = new System.Windows.Forms.ComboBox();
+            this.Espene = new System.Windows.Forms.ComboBox();
+            this.Espdic = new System.Windows.Forms.ComboBox();
+            this.Espnov = new System.Windows.Forms.ComboBox();
+            this.EspOct = new System.Windows.Forms.ComboBox();
+            this.EspSep = new System.Windows.Forms.ComboBox();
+            this.EspDiag = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -282,17 +282,17 @@
             this.label120 = new System.Windows.Forms.Label();
             this.Inasist = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.domainUpDown6 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown7 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown8 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown10 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown4 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown9 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown11 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown5 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown3 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown2 = new System.Windows.Forms.DomainUpDown();
-            this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.InaJun = new System.Windows.Forms.DomainUpDown();
+            this.InaAbr = new System.Windows.Forms.DomainUpDown();
+            this.InaFeb = new System.Windows.Forms.DomainUpDown();
+            this.Inanov = new System.Windows.Forms.DomainUpDown();
+            this.InaSep = new System.Windows.Forms.DomainUpDown();
+            this.InaMay = new System.Windows.Forms.DomainUpDown();
+            this.InaMarz = new System.Windows.Forms.DomainUpDown();
+            this.InaOct = new System.Windows.Forms.DomainUpDown();
+            this.InaDic = new System.Windows.Forms.DomainUpDown();
+            this.InaEne = new System.Windows.Forms.DomainUpDown();
+            this.InaDiag = new System.Windows.Forms.DomainUpDown();
             this.label121 = new System.Windows.Forms.Label();
             this.label122 = new System.Windows.Forms.Label();
             this.label123 = new System.Windows.Forms.Label();
@@ -367,7 +367,6 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(945, 380);
             this.materialTabControl1.TabIndex = 81;
-            this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
             // Esp
             // 
@@ -377,23 +376,23 @@
             this.Esp.Padding = new System.Windows.Forms.Padding(3);
             this.Esp.Size = new System.Drawing.Size(937, 354);
             this.Esp.TabIndex = 0;
-            this.Esp.Text = "Esp.";
+            this.Esp.Text = "Esp";
             this.Esp.UseVisualStyleBackColor = true;
             // 
             // BoxGenero
             // 
             this.BoxGenero.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BoxGenero.Controls.Add(this.comboBox3);
-            this.BoxGenero.Controls.Add(this.comboBox7);
-            this.BoxGenero.Controls.Add(this.comboBox6);
-            this.BoxGenero.Controls.Add(this.comboBox9);
-            this.BoxGenero.Controls.Add(this.comboBox8);
-            this.BoxGenero.Controls.Add(this.comboBox5);
-            this.BoxGenero.Controls.Add(this.comboBox4);
-            this.BoxGenero.Controls.Add(this.comboBox2);
-            this.BoxGenero.Controls.Add(this.comboBox10);
-            this.BoxGenero.Controls.Add(this.comboBox11);
-            this.BoxGenero.Controls.Add(this.comboBox1);
+            this.BoxGenero.Controls.Add(this.Espjun);
+            this.BoxGenero.Controls.Add(this.Espmay);
+            this.BoxGenero.Controls.Add(this.Espabril);
+            this.BoxGenero.Controls.Add(this.EspMarz);
+            this.BoxGenero.Controls.Add(this.EspFeb);
+            this.BoxGenero.Controls.Add(this.Espene);
+            this.BoxGenero.Controls.Add(this.Espdic);
+            this.BoxGenero.Controls.Add(this.Espnov);
+            this.BoxGenero.Controls.Add(this.EspOct);
+            this.BoxGenero.Controls.Add(this.EspSep);
+            this.BoxGenero.Controls.Add(this.EspDiag);
             this.BoxGenero.Controls.Add(this.label12);
             this.BoxGenero.Controls.Add(this.label11);
             this.BoxGenero.Controls.Add(this.label10);
@@ -414,10 +413,10 @@
             this.BoxGenero.TabIndex = 82;
             this.BoxGenero.TabStop = false;
             // 
-            // comboBox3
+            // Espjun
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.Espjun.FormattingEnabled = true;
+            this.Espjun.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -429,15 +428,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox3.Location = new System.Drawing.Point(385, 198);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(124, 33);
-            this.comboBox3.TabIndex = 96;
+            this.Espjun.Location = new System.Drawing.Point(385, 198);
+            this.Espjun.Name = "Espjun";
+            this.Espjun.Size = new System.Drawing.Size(124, 33);
+            this.Espjun.TabIndex = 96;
             // 
-            // comboBox7
+            // Espmay
             // 
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.Espmay.FormattingEnabled = true;
+            this.Espmay.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -449,15 +448,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox7.Location = new System.Drawing.Point(385, 159);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(124, 33);
-            this.comboBox7.TabIndex = 95;
+            this.Espmay.Location = new System.Drawing.Point(385, 159);
+            this.Espmay.Name = "Espmay";
+            this.Espmay.Size = new System.Drawing.Size(124, 33);
+            this.Espmay.TabIndex = 95;
             // 
-            // comboBox6
+            // Espabril
             // 
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.Espabril.FormattingEnabled = true;
+            this.Espabril.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -469,15 +468,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox6.Location = new System.Drawing.Point(385, 120);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(124, 33);
-            this.comboBox6.TabIndex = 94;
+            this.Espabril.Location = new System.Drawing.Point(385, 120);
+            this.Espabril.Name = "Espabril";
+            this.Espabril.Size = new System.Drawing.Size(124, 33);
+            this.Espabril.TabIndex = 94;
             // 
-            // comboBox9
+            // EspMarz
             // 
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.EspMarz.FormattingEnabled = true;
+            this.EspMarz.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -489,15 +488,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox9.Location = new System.Drawing.Point(385, 82);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(124, 33);
-            this.comboBox9.TabIndex = 93;
+            this.EspMarz.Location = new System.Drawing.Point(385, 82);
+            this.EspMarz.Name = "EspMarz";
+            this.EspMarz.Size = new System.Drawing.Size(124, 33);
+            this.EspMarz.TabIndex = 93;
             // 
-            // comboBox8
+            // EspFeb
             // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.EspFeb.FormattingEnabled = true;
+            this.EspFeb.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -509,15 +508,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox8.Location = new System.Drawing.Point(385, 43);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(124, 33);
-            this.comboBox8.TabIndex = 92;
+            this.EspFeb.Location = new System.Drawing.Point(385, 43);
+            this.EspFeb.Name = "EspFeb";
+            this.EspFeb.Size = new System.Drawing.Size(124, 33);
+            this.EspFeb.TabIndex = 92;
             // 
-            // comboBox5
+            // Espene
             // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.Espene.FormattingEnabled = true;
+            this.Espene.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -529,15 +528,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox5.Location = new System.Drawing.Point(126, 238);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(124, 33);
-            this.comboBox5.TabIndex = 91;
+            this.Espene.Location = new System.Drawing.Point(126, 238);
+            this.Espene.Name = "Espene";
+            this.Espene.Size = new System.Drawing.Size(124, 33);
+            this.Espene.TabIndex = 91;
             // 
-            // comboBox4
+            // Espdic
             // 
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.Espdic.FormattingEnabled = true;
+            this.Espdic.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -549,15 +548,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox4.Location = new System.Drawing.Point(126, 199);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(124, 33);
-            this.comboBox4.TabIndex = 90;
+            this.Espdic.Location = new System.Drawing.Point(126, 199);
+            this.Espdic.Name = "Espdic";
+            this.Espdic.Size = new System.Drawing.Size(124, 33);
+            this.Espdic.TabIndex = 90;
             // 
-            // comboBox2
+            // Espnov
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.Espnov.FormattingEnabled = true;
+            this.Espnov.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -569,15 +568,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox2.Location = new System.Drawing.Point(126, 160);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(124, 33);
-            this.comboBox2.TabIndex = 89;
+            this.Espnov.Location = new System.Drawing.Point(126, 160);
+            this.Espnov.Name = "Espnov";
+            this.Espnov.Size = new System.Drawing.Size(124, 33);
+            this.Espnov.TabIndex = 89;
             // 
-            // comboBox10
+            // EspOct
             // 
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Items.AddRange(new object[] {
+            this.EspOct.FormattingEnabled = true;
+            this.EspOct.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -589,15 +588,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox10.Location = new System.Drawing.Point(126, 121);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(124, 33);
-            this.comboBox10.TabIndex = 88;
+            this.EspOct.Location = new System.Drawing.Point(126, 121);
+            this.EspOct.Name = "EspOct";
+            this.EspOct.Size = new System.Drawing.Size(124, 33);
+            this.EspOct.TabIndex = 88;
             // 
-            // comboBox11
+            // EspSep
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.EspSep.FormattingEnabled = true;
+            this.EspSep.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -609,15 +608,15 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox11.Location = new System.Drawing.Point(126, 82);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(124, 33);
-            this.comboBox11.TabIndex = 87;
+            this.EspSep.Location = new System.Drawing.Point(126, 82);
+            this.EspSep.Name = "EspSep";
+            this.EspSep.Size = new System.Drawing.Size(124, 33);
+            this.EspSep.TabIndex = 87;
             // 
-            // comboBox1
+            // EspDiag
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.EspDiag.FormattingEnabled = true;
+            this.EspDiag.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -629,10 +628,10 @@
             "6",
             "5.5",
             "5"});
-            this.comboBox1.Location = new System.Drawing.Point(126, 43);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(124, 33);
-            this.comboBox1.TabIndex = 75;
+            this.EspDiag.Location = new System.Drawing.Point(126, 43);
+            this.EspDiag.Name = "EspDiag";
+            this.EspDiag.Size = new System.Drawing.Size(124, 33);
+            this.EspDiag.TabIndex = 75;
             // 
             // label12
             // 
@@ -776,7 +775,7 @@
             this.Mat.Padding = new System.Windows.Forms.Padding(3);
             this.Mat.Size = new System.Drawing.Size(937, 354);
             this.Mat.TabIndex = 1;
-            this.Mat.Text = "Mat.";
+            this.Mat.Text = "Mat";
             this.Mat.UseVisualStyleBackColor = true;
             // 
             // groupBox1
@@ -1574,7 +1573,7 @@
             this.CNat.Padding = new System.Windows.Forms.Padding(3);
             this.CNat.Size = new System.Drawing.Size(937, 354);
             this.CNat.TabIndex = 3;
-            this.CNat.Text = "C. Nat.";
+            this.CNat.Text = "C. Nat";
             this.CNat.UseVisualStyleBackColor = true;
             // 
             // groupBox3
@@ -1973,7 +1972,7 @@
             this.Geo.Padding = new System.Windows.Forms.Padding(3);
             this.Geo.Size = new System.Drawing.Size(937, 354);
             this.Geo.TabIndex = 4;
-            this.Geo.Text = "Geo.";
+            this.Geo.Text = "Geo";
             this.Geo.UseVisualStyleBackColor = true;
             // 
             // groupBox4
@@ -2372,7 +2371,7 @@
             this.Hist.Padding = new System.Windows.Forms.Padding(3);
             this.Hist.Size = new System.Drawing.Size(937, 354);
             this.Hist.TabIndex = 5;
-            this.Hist.Text = "Hist.";
+            this.Hist.Text = "Hist";
             this.Hist.UseVisualStyleBackColor = true;
             // 
             // groupBox5
@@ -2771,7 +2770,7 @@
             this.FormCiv.Padding = new System.Windows.Forms.Padding(3);
             this.FormCiv.Size = new System.Drawing.Size(937, 354);
             this.FormCiv.TabIndex = 6;
-            this.FormCiv.Text = "Form. Civ. y Étic.";
+            this.FormCiv.Text = "Form. Civ. y Étic";
             this.FormCiv.UseVisualStyleBackColor = true;
             // 
             // groupBox6
@@ -3569,7 +3568,7 @@
             this.Edsocial.Padding = new System.Windows.Forms.Padding(3);
             this.Edsocial.Size = new System.Drawing.Size(937, 354);
             this.Edsocial.TabIndex = 8;
-            this.Edsocial.Text = "Ed. Socio.";
+            this.Edsocial.Text = "Ed. Socio";
             this.Edsocial.UseVisualStyleBackColor = true;
             // 
             // groupBox8
@@ -4367,23 +4366,23 @@
             this.Inasist.Padding = new System.Windows.Forms.Padding(3);
             this.Inasist.Size = new System.Drawing.Size(937, 354);
             this.Inasist.TabIndex = 10;
-            this.Inasist.Text = "Inasist.";
+            this.Inasist.Text = "Inasist";
             this.Inasist.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
             this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Controls.Add(this.domainUpDown6);
-            this.groupBox10.Controls.Add(this.domainUpDown7);
-            this.groupBox10.Controls.Add(this.domainUpDown8);
-            this.groupBox10.Controls.Add(this.domainUpDown10);
-            this.groupBox10.Controls.Add(this.domainUpDown4);
-            this.groupBox10.Controls.Add(this.domainUpDown9);
-            this.groupBox10.Controls.Add(this.domainUpDown11);
-            this.groupBox10.Controls.Add(this.domainUpDown5);
-            this.groupBox10.Controls.Add(this.domainUpDown3);
-            this.groupBox10.Controls.Add(this.domainUpDown2);
-            this.groupBox10.Controls.Add(this.domainUpDown1);
+            this.groupBox10.Controls.Add(this.InaJun);
+            this.groupBox10.Controls.Add(this.InaAbr);
+            this.groupBox10.Controls.Add(this.InaFeb);
+            this.groupBox10.Controls.Add(this.Inanov);
+            this.groupBox10.Controls.Add(this.InaSep);
+            this.groupBox10.Controls.Add(this.InaMay);
+            this.groupBox10.Controls.Add(this.InaMarz);
+            this.groupBox10.Controls.Add(this.InaOct);
+            this.groupBox10.Controls.Add(this.InaDic);
+            this.groupBox10.Controls.Add(this.InaEne);
+            this.groupBox10.Controls.Add(this.InaDiag);
             this.groupBox10.Controls.Add(this.label121);
             this.groupBox10.Controls.Add(this.label122);
             this.groupBox10.Controls.Add(this.label123);
@@ -4404,429 +4403,429 @@
             this.groupBox10.TabIndex = 92;
             this.groupBox10.TabStop = false;
             // 
-            // domainUpDown6
+            // InaJun
             // 
-            this.domainUpDown6.Items.Add("1");
-            this.domainUpDown6.Items.Add("2");
-            this.domainUpDown6.Items.Add("3");
-            this.domainUpDown6.Items.Add("4");
-            this.domainUpDown6.Items.Add("5");
-            this.domainUpDown6.Items.Add("6");
-            this.domainUpDown6.Items.Add("7");
-            this.domainUpDown6.Items.Add("8");
-            this.domainUpDown6.Items.Add("9");
-            this.domainUpDown6.Items.Add("10");
-            this.domainUpDown6.Items.Add("11");
-            this.domainUpDown6.Items.Add("12");
-            this.domainUpDown6.Items.Add("13");
-            this.domainUpDown6.Items.Add("14");
-            this.domainUpDown6.Items.Add("15");
-            this.domainUpDown6.Items.Add("16");
-            this.domainUpDown6.Items.Add("17");
-            this.domainUpDown6.Items.Add("18");
-            this.domainUpDown6.Items.Add("19");
-            this.domainUpDown6.Items.Add("20");
-            this.domainUpDown6.Items.Add("21");
-            this.domainUpDown6.Items.Add("22");
-            this.domainUpDown6.Items.Add("23");
-            this.domainUpDown6.Items.Add("24");
-            this.domainUpDown6.Items.Add("25");
-            this.domainUpDown6.Items.Add("26");
-            this.domainUpDown6.Items.Add("27");
-            this.domainUpDown6.Items.Add("28");
-            this.domainUpDown6.Items.Add("29");
-            this.domainUpDown6.Items.Add("30");
-            this.domainUpDown6.Location = new System.Drawing.Point(359, 196);
-            this.domainUpDown6.Name = "domainUpDown6";
-            this.domainUpDown6.ReadOnly = true;
-            this.domainUpDown6.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown6.TabIndex = 102;
+            this.InaJun.Items.Add("1");
+            this.InaJun.Items.Add("2");
+            this.InaJun.Items.Add("3");
+            this.InaJun.Items.Add("4");
+            this.InaJun.Items.Add("5");
+            this.InaJun.Items.Add("6");
+            this.InaJun.Items.Add("7");
+            this.InaJun.Items.Add("8");
+            this.InaJun.Items.Add("9");
+            this.InaJun.Items.Add("10");
+            this.InaJun.Items.Add("11");
+            this.InaJun.Items.Add("12");
+            this.InaJun.Items.Add("13");
+            this.InaJun.Items.Add("14");
+            this.InaJun.Items.Add("15");
+            this.InaJun.Items.Add("16");
+            this.InaJun.Items.Add("17");
+            this.InaJun.Items.Add("18");
+            this.InaJun.Items.Add("19");
+            this.InaJun.Items.Add("20");
+            this.InaJun.Items.Add("21");
+            this.InaJun.Items.Add("22");
+            this.InaJun.Items.Add("23");
+            this.InaJun.Items.Add("24");
+            this.InaJun.Items.Add("25");
+            this.InaJun.Items.Add("26");
+            this.InaJun.Items.Add("27");
+            this.InaJun.Items.Add("28");
+            this.InaJun.Items.Add("29");
+            this.InaJun.Items.Add("30");
+            this.InaJun.Location = new System.Drawing.Point(359, 196);
+            this.InaJun.Name = "InaJun";
+            this.InaJun.ReadOnly = true;
+            this.InaJun.Size = new System.Drawing.Size(80, 32);
+            this.InaJun.TabIndex = 102;
             // 
-            // domainUpDown7
+            // InaAbr
             // 
-            this.domainUpDown7.Items.Add("1");
-            this.domainUpDown7.Items.Add("2");
-            this.domainUpDown7.Items.Add("3");
-            this.domainUpDown7.Items.Add("4");
-            this.domainUpDown7.Items.Add("5");
-            this.domainUpDown7.Items.Add("6");
-            this.domainUpDown7.Items.Add("7");
-            this.domainUpDown7.Items.Add("8");
-            this.domainUpDown7.Items.Add("9");
-            this.domainUpDown7.Items.Add("10");
-            this.domainUpDown7.Items.Add("11");
-            this.domainUpDown7.Items.Add("12");
-            this.domainUpDown7.Items.Add("13");
-            this.domainUpDown7.Items.Add("14");
-            this.domainUpDown7.Items.Add("15");
-            this.domainUpDown7.Items.Add("16");
-            this.domainUpDown7.Items.Add("17");
-            this.domainUpDown7.Items.Add("18");
-            this.domainUpDown7.Items.Add("19");
-            this.domainUpDown7.Items.Add("20");
-            this.domainUpDown7.Items.Add("21");
-            this.domainUpDown7.Items.Add("22");
-            this.domainUpDown7.Items.Add("23");
-            this.domainUpDown7.Items.Add("24");
-            this.domainUpDown7.Items.Add("25");
-            this.domainUpDown7.Items.Add("26");
-            this.domainUpDown7.Items.Add("27");
-            this.domainUpDown7.Items.Add("28");
-            this.domainUpDown7.Items.Add("29");
-            this.domainUpDown7.Items.Add("30");
-            this.domainUpDown7.Location = new System.Drawing.Point(359, 120);
-            this.domainUpDown7.Name = "domainUpDown7";
-            this.domainUpDown7.ReadOnly = true;
-            this.domainUpDown7.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown7.TabIndex = 103;
+            this.InaAbr.Items.Add("1");
+            this.InaAbr.Items.Add("2");
+            this.InaAbr.Items.Add("3");
+            this.InaAbr.Items.Add("4");
+            this.InaAbr.Items.Add("5");
+            this.InaAbr.Items.Add("6");
+            this.InaAbr.Items.Add("7");
+            this.InaAbr.Items.Add("8");
+            this.InaAbr.Items.Add("9");
+            this.InaAbr.Items.Add("10");
+            this.InaAbr.Items.Add("11");
+            this.InaAbr.Items.Add("12");
+            this.InaAbr.Items.Add("13");
+            this.InaAbr.Items.Add("14");
+            this.InaAbr.Items.Add("15");
+            this.InaAbr.Items.Add("16");
+            this.InaAbr.Items.Add("17");
+            this.InaAbr.Items.Add("18");
+            this.InaAbr.Items.Add("19");
+            this.InaAbr.Items.Add("20");
+            this.InaAbr.Items.Add("21");
+            this.InaAbr.Items.Add("22");
+            this.InaAbr.Items.Add("23");
+            this.InaAbr.Items.Add("24");
+            this.InaAbr.Items.Add("25");
+            this.InaAbr.Items.Add("26");
+            this.InaAbr.Items.Add("27");
+            this.InaAbr.Items.Add("28");
+            this.InaAbr.Items.Add("29");
+            this.InaAbr.Items.Add("30");
+            this.InaAbr.Location = new System.Drawing.Point(359, 120);
+            this.InaAbr.Name = "InaAbr";
+            this.InaAbr.ReadOnly = true;
+            this.InaAbr.Size = new System.Drawing.Size(80, 32);
+            this.InaAbr.TabIndex = 103;
             // 
-            // domainUpDown8
+            // InaFeb
             // 
-            this.domainUpDown8.Items.Add("1");
-            this.domainUpDown8.Items.Add("2");
-            this.domainUpDown8.Items.Add("3");
-            this.domainUpDown8.Items.Add("4");
-            this.domainUpDown8.Items.Add("5");
-            this.domainUpDown8.Items.Add("6");
-            this.domainUpDown8.Items.Add("7");
-            this.domainUpDown8.Items.Add("8");
-            this.domainUpDown8.Items.Add("9");
-            this.domainUpDown8.Items.Add("10");
-            this.domainUpDown8.Items.Add("11");
-            this.domainUpDown8.Items.Add("12");
-            this.domainUpDown8.Items.Add("13");
-            this.domainUpDown8.Items.Add("14");
-            this.domainUpDown8.Items.Add("15");
-            this.domainUpDown8.Items.Add("16");
-            this.domainUpDown8.Items.Add("17");
-            this.domainUpDown8.Items.Add("18");
-            this.domainUpDown8.Items.Add("19");
-            this.domainUpDown8.Items.Add("20");
-            this.domainUpDown8.Items.Add("21");
-            this.domainUpDown8.Items.Add("22");
-            this.domainUpDown8.Items.Add("23");
-            this.domainUpDown8.Items.Add("24");
-            this.domainUpDown8.Items.Add("25");
-            this.domainUpDown8.Items.Add("26");
-            this.domainUpDown8.Items.Add("27");
-            this.domainUpDown8.Items.Add("28");
-            this.domainUpDown8.Items.Add("29");
-            this.domainUpDown8.Location = new System.Drawing.Point(359, 44);
-            this.domainUpDown8.Name = "domainUpDown8";
-            this.domainUpDown8.ReadOnly = true;
-            this.domainUpDown8.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown8.TabIndex = 104;
+            this.InaFeb.Items.Add("1");
+            this.InaFeb.Items.Add("2");
+            this.InaFeb.Items.Add("3");
+            this.InaFeb.Items.Add("4");
+            this.InaFeb.Items.Add("5");
+            this.InaFeb.Items.Add("6");
+            this.InaFeb.Items.Add("7");
+            this.InaFeb.Items.Add("8");
+            this.InaFeb.Items.Add("9");
+            this.InaFeb.Items.Add("10");
+            this.InaFeb.Items.Add("11");
+            this.InaFeb.Items.Add("12");
+            this.InaFeb.Items.Add("13");
+            this.InaFeb.Items.Add("14");
+            this.InaFeb.Items.Add("15");
+            this.InaFeb.Items.Add("16");
+            this.InaFeb.Items.Add("17");
+            this.InaFeb.Items.Add("18");
+            this.InaFeb.Items.Add("19");
+            this.InaFeb.Items.Add("20");
+            this.InaFeb.Items.Add("21");
+            this.InaFeb.Items.Add("22");
+            this.InaFeb.Items.Add("23");
+            this.InaFeb.Items.Add("24");
+            this.InaFeb.Items.Add("25");
+            this.InaFeb.Items.Add("26");
+            this.InaFeb.Items.Add("27");
+            this.InaFeb.Items.Add("28");
+            this.InaFeb.Items.Add("29");
+            this.InaFeb.Location = new System.Drawing.Point(359, 44);
+            this.InaFeb.Name = "InaFeb";
+            this.InaFeb.ReadOnly = true;
+            this.InaFeb.Size = new System.Drawing.Size(80, 32);
+            this.InaFeb.TabIndex = 104;
             // 
-            // domainUpDown10
+            // Inanov
             // 
-            this.domainUpDown10.Items.Add("1");
-            this.domainUpDown10.Items.Add("2");
-            this.domainUpDown10.Items.Add("3");
-            this.domainUpDown10.Items.Add("4");
-            this.domainUpDown10.Items.Add("5");
-            this.domainUpDown10.Items.Add("6");
-            this.domainUpDown10.Items.Add("7");
-            this.domainUpDown10.Items.Add("8");
-            this.domainUpDown10.Items.Add("9");
-            this.domainUpDown10.Items.Add("10");
-            this.domainUpDown10.Items.Add("11");
-            this.domainUpDown10.Items.Add("12");
-            this.domainUpDown10.Items.Add("13");
-            this.domainUpDown10.Items.Add("14");
-            this.domainUpDown10.Items.Add("15");
-            this.domainUpDown10.Items.Add("16");
-            this.domainUpDown10.Items.Add("17");
-            this.domainUpDown10.Items.Add("18");
-            this.domainUpDown10.Items.Add("19");
-            this.domainUpDown10.Items.Add("20");
-            this.domainUpDown10.Items.Add("21");
-            this.domainUpDown10.Items.Add("22");
-            this.domainUpDown10.Items.Add("23");
-            this.domainUpDown10.Items.Add("24");
-            this.domainUpDown10.Items.Add("25");
-            this.domainUpDown10.Items.Add("26");
-            this.domainUpDown10.Items.Add("27");
-            this.domainUpDown10.Items.Add("28");
-            this.domainUpDown10.Items.Add("29");
-            this.domainUpDown10.Items.Add("30");
-            this.domainUpDown10.Location = new System.Drawing.Point(126, 158);
-            this.domainUpDown10.Name = "domainUpDown10";
-            this.domainUpDown10.ReadOnly = true;
-            this.domainUpDown10.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown10.TabIndex = 105;
+            this.Inanov.Items.Add("1");
+            this.Inanov.Items.Add("2");
+            this.Inanov.Items.Add("3");
+            this.Inanov.Items.Add("4");
+            this.Inanov.Items.Add("5");
+            this.Inanov.Items.Add("6");
+            this.Inanov.Items.Add("7");
+            this.Inanov.Items.Add("8");
+            this.Inanov.Items.Add("9");
+            this.Inanov.Items.Add("10");
+            this.Inanov.Items.Add("11");
+            this.Inanov.Items.Add("12");
+            this.Inanov.Items.Add("13");
+            this.Inanov.Items.Add("14");
+            this.Inanov.Items.Add("15");
+            this.Inanov.Items.Add("16");
+            this.Inanov.Items.Add("17");
+            this.Inanov.Items.Add("18");
+            this.Inanov.Items.Add("19");
+            this.Inanov.Items.Add("20");
+            this.Inanov.Items.Add("21");
+            this.Inanov.Items.Add("22");
+            this.Inanov.Items.Add("23");
+            this.Inanov.Items.Add("24");
+            this.Inanov.Items.Add("25");
+            this.Inanov.Items.Add("26");
+            this.Inanov.Items.Add("27");
+            this.Inanov.Items.Add("28");
+            this.Inanov.Items.Add("29");
+            this.Inanov.Items.Add("30");
+            this.Inanov.Location = new System.Drawing.Point(126, 158);
+            this.Inanov.Name = "Inanov";
+            this.Inanov.ReadOnly = true;
+            this.Inanov.Size = new System.Drawing.Size(80, 32);
+            this.Inanov.TabIndex = 105;
             // 
-            // domainUpDown4
+            // InaSep
             // 
-            this.domainUpDown4.Items.Add("1");
-            this.domainUpDown4.Items.Add("2");
-            this.domainUpDown4.Items.Add("3");
-            this.domainUpDown4.Items.Add("4");
-            this.domainUpDown4.Items.Add("5");
-            this.domainUpDown4.Items.Add("6");
-            this.domainUpDown4.Items.Add("7");
-            this.domainUpDown4.Items.Add("8");
-            this.domainUpDown4.Items.Add("9");
-            this.domainUpDown4.Items.Add("10");
-            this.domainUpDown4.Items.Add("11");
-            this.domainUpDown4.Items.Add("12");
-            this.domainUpDown4.Items.Add("13");
-            this.domainUpDown4.Items.Add("14");
-            this.domainUpDown4.Items.Add("15");
-            this.domainUpDown4.Items.Add("16");
-            this.domainUpDown4.Items.Add("17");
-            this.domainUpDown4.Items.Add("18");
-            this.domainUpDown4.Items.Add("19");
-            this.domainUpDown4.Items.Add("20");
-            this.domainUpDown4.Items.Add("21");
-            this.domainUpDown4.Items.Add("22");
-            this.domainUpDown4.Items.Add("23");
-            this.domainUpDown4.Items.Add("24");
-            this.domainUpDown4.Items.Add("25");
-            this.domainUpDown4.Items.Add("26");
-            this.domainUpDown4.Items.Add("27");
-            this.domainUpDown4.Items.Add("28");
-            this.domainUpDown4.Items.Add("29");
-            this.domainUpDown4.Items.Add("30");
-            this.domainUpDown4.Location = new System.Drawing.Point(126, 82);
-            this.domainUpDown4.Name = "domainUpDown4";
-            this.domainUpDown4.ReadOnly = true;
-            this.domainUpDown4.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown4.TabIndex = 101;
+            this.InaSep.Items.Add("1");
+            this.InaSep.Items.Add("2");
+            this.InaSep.Items.Add("3");
+            this.InaSep.Items.Add("4");
+            this.InaSep.Items.Add("5");
+            this.InaSep.Items.Add("6");
+            this.InaSep.Items.Add("7");
+            this.InaSep.Items.Add("8");
+            this.InaSep.Items.Add("9");
+            this.InaSep.Items.Add("10");
+            this.InaSep.Items.Add("11");
+            this.InaSep.Items.Add("12");
+            this.InaSep.Items.Add("13");
+            this.InaSep.Items.Add("14");
+            this.InaSep.Items.Add("15");
+            this.InaSep.Items.Add("16");
+            this.InaSep.Items.Add("17");
+            this.InaSep.Items.Add("18");
+            this.InaSep.Items.Add("19");
+            this.InaSep.Items.Add("20");
+            this.InaSep.Items.Add("21");
+            this.InaSep.Items.Add("22");
+            this.InaSep.Items.Add("23");
+            this.InaSep.Items.Add("24");
+            this.InaSep.Items.Add("25");
+            this.InaSep.Items.Add("26");
+            this.InaSep.Items.Add("27");
+            this.InaSep.Items.Add("28");
+            this.InaSep.Items.Add("29");
+            this.InaSep.Items.Add("30");
+            this.InaSep.Location = new System.Drawing.Point(126, 82);
+            this.InaSep.Name = "InaSep";
+            this.InaSep.ReadOnly = true;
+            this.InaSep.Size = new System.Drawing.Size(80, 32);
+            this.InaSep.TabIndex = 101;
             // 
-            // domainUpDown9
+            // InaMay
             // 
-            this.domainUpDown9.Items.Add("1");
-            this.domainUpDown9.Items.Add("2");
-            this.domainUpDown9.Items.Add("3");
-            this.domainUpDown9.Items.Add("4");
-            this.domainUpDown9.Items.Add("5");
-            this.domainUpDown9.Items.Add("6");
-            this.domainUpDown9.Items.Add("7");
-            this.domainUpDown9.Items.Add("8");
-            this.domainUpDown9.Items.Add("9");
-            this.domainUpDown9.Items.Add("10");
-            this.domainUpDown9.Items.Add("11");
-            this.domainUpDown9.Items.Add("12");
-            this.domainUpDown9.Items.Add("13");
-            this.domainUpDown9.Items.Add("14");
-            this.domainUpDown9.Items.Add("15");
-            this.domainUpDown9.Items.Add("16");
-            this.domainUpDown9.Items.Add("17");
-            this.domainUpDown9.Items.Add("18");
-            this.domainUpDown9.Items.Add("19");
-            this.domainUpDown9.Items.Add("20");
-            this.domainUpDown9.Items.Add("21");
-            this.domainUpDown9.Items.Add("22");
-            this.domainUpDown9.Items.Add("23");
-            this.domainUpDown9.Items.Add("24");
-            this.domainUpDown9.Items.Add("25");
-            this.domainUpDown9.Items.Add("26");
-            this.domainUpDown9.Items.Add("27");
-            this.domainUpDown9.Items.Add("28");
-            this.domainUpDown9.Items.Add("29");
-            this.domainUpDown9.Items.Add("30");
-            this.domainUpDown9.Items.Add("31");
-            this.domainUpDown9.Location = new System.Drawing.Point(359, 158);
-            this.domainUpDown9.Name = "domainUpDown9";
-            this.domainUpDown9.ReadOnly = true;
-            this.domainUpDown9.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown9.TabIndex = 97;
+            this.InaMay.Items.Add("1");
+            this.InaMay.Items.Add("2");
+            this.InaMay.Items.Add("3");
+            this.InaMay.Items.Add("4");
+            this.InaMay.Items.Add("5");
+            this.InaMay.Items.Add("6");
+            this.InaMay.Items.Add("7");
+            this.InaMay.Items.Add("8");
+            this.InaMay.Items.Add("9");
+            this.InaMay.Items.Add("10");
+            this.InaMay.Items.Add("11");
+            this.InaMay.Items.Add("12");
+            this.InaMay.Items.Add("13");
+            this.InaMay.Items.Add("14");
+            this.InaMay.Items.Add("15");
+            this.InaMay.Items.Add("16");
+            this.InaMay.Items.Add("17");
+            this.InaMay.Items.Add("18");
+            this.InaMay.Items.Add("19");
+            this.InaMay.Items.Add("20");
+            this.InaMay.Items.Add("21");
+            this.InaMay.Items.Add("22");
+            this.InaMay.Items.Add("23");
+            this.InaMay.Items.Add("24");
+            this.InaMay.Items.Add("25");
+            this.InaMay.Items.Add("26");
+            this.InaMay.Items.Add("27");
+            this.InaMay.Items.Add("28");
+            this.InaMay.Items.Add("29");
+            this.InaMay.Items.Add("30");
+            this.InaMay.Items.Add("31");
+            this.InaMay.Location = new System.Drawing.Point(359, 158);
+            this.InaMay.Name = "InaMay";
+            this.InaMay.ReadOnly = true;
+            this.InaMay.Size = new System.Drawing.Size(80, 32);
+            this.InaMay.TabIndex = 97;
             // 
-            // domainUpDown11
+            // InaMarz
             // 
-            this.domainUpDown11.Items.Add("1");
-            this.domainUpDown11.Items.Add("2");
-            this.domainUpDown11.Items.Add("3");
-            this.domainUpDown11.Items.Add("4");
-            this.domainUpDown11.Items.Add("5");
-            this.domainUpDown11.Items.Add("6");
-            this.domainUpDown11.Items.Add("7");
-            this.domainUpDown11.Items.Add("8");
-            this.domainUpDown11.Items.Add("9");
-            this.domainUpDown11.Items.Add("10");
-            this.domainUpDown11.Items.Add("11");
-            this.domainUpDown11.Items.Add("12");
-            this.domainUpDown11.Items.Add("13");
-            this.domainUpDown11.Items.Add("14");
-            this.domainUpDown11.Items.Add("15");
-            this.domainUpDown11.Items.Add("16");
-            this.domainUpDown11.Items.Add("17");
-            this.domainUpDown11.Items.Add("18");
-            this.domainUpDown11.Items.Add("19");
-            this.domainUpDown11.Items.Add("20");
-            this.domainUpDown11.Items.Add("21");
-            this.domainUpDown11.Items.Add("22");
-            this.domainUpDown11.Items.Add("23");
-            this.domainUpDown11.Items.Add("24");
-            this.domainUpDown11.Items.Add("25");
-            this.domainUpDown11.Items.Add("26");
-            this.domainUpDown11.Items.Add("27");
-            this.domainUpDown11.Items.Add("28");
-            this.domainUpDown11.Items.Add("29");
-            this.domainUpDown11.Items.Add("30");
-            this.domainUpDown11.Items.Add("31");
-            this.domainUpDown11.Location = new System.Drawing.Point(359, 82);
-            this.domainUpDown11.Name = "domainUpDown11";
-            this.domainUpDown11.ReadOnly = true;
-            this.domainUpDown11.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown11.TabIndex = 99;
+            this.InaMarz.Items.Add("1");
+            this.InaMarz.Items.Add("2");
+            this.InaMarz.Items.Add("3");
+            this.InaMarz.Items.Add("4");
+            this.InaMarz.Items.Add("5");
+            this.InaMarz.Items.Add("6");
+            this.InaMarz.Items.Add("7");
+            this.InaMarz.Items.Add("8");
+            this.InaMarz.Items.Add("9");
+            this.InaMarz.Items.Add("10");
+            this.InaMarz.Items.Add("11");
+            this.InaMarz.Items.Add("12");
+            this.InaMarz.Items.Add("13");
+            this.InaMarz.Items.Add("14");
+            this.InaMarz.Items.Add("15");
+            this.InaMarz.Items.Add("16");
+            this.InaMarz.Items.Add("17");
+            this.InaMarz.Items.Add("18");
+            this.InaMarz.Items.Add("19");
+            this.InaMarz.Items.Add("20");
+            this.InaMarz.Items.Add("21");
+            this.InaMarz.Items.Add("22");
+            this.InaMarz.Items.Add("23");
+            this.InaMarz.Items.Add("24");
+            this.InaMarz.Items.Add("25");
+            this.InaMarz.Items.Add("26");
+            this.InaMarz.Items.Add("27");
+            this.InaMarz.Items.Add("28");
+            this.InaMarz.Items.Add("29");
+            this.InaMarz.Items.Add("30");
+            this.InaMarz.Items.Add("31");
+            this.InaMarz.Location = new System.Drawing.Point(359, 82);
+            this.InaMarz.Name = "InaMarz";
+            this.InaMarz.ReadOnly = true;
+            this.InaMarz.Size = new System.Drawing.Size(80, 32);
+            this.InaMarz.TabIndex = 99;
             // 
-            // domainUpDown5
+            // InaOct
             // 
-            this.domainUpDown5.Items.Add("1");
-            this.domainUpDown5.Items.Add("2");
-            this.domainUpDown5.Items.Add("3");
-            this.domainUpDown5.Items.Add("4");
-            this.domainUpDown5.Items.Add("5");
-            this.domainUpDown5.Items.Add("6");
-            this.domainUpDown5.Items.Add("7");
-            this.domainUpDown5.Items.Add("8");
-            this.domainUpDown5.Items.Add("9");
-            this.domainUpDown5.Items.Add("10");
-            this.domainUpDown5.Items.Add("11");
-            this.domainUpDown5.Items.Add("12");
-            this.domainUpDown5.Items.Add("13");
-            this.domainUpDown5.Items.Add("14");
-            this.domainUpDown5.Items.Add("15");
-            this.domainUpDown5.Items.Add("16");
-            this.domainUpDown5.Items.Add("17");
-            this.domainUpDown5.Items.Add("18");
-            this.domainUpDown5.Items.Add("19");
-            this.domainUpDown5.Items.Add("20");
-            this.domainUpDown5.Items.Add("21");
-            this.domainUpDown5.Items.Add("22");
-            this.domainUpDown5.Items.Add("23");
-            this.domainUpDown5.Items.Add("24");
-            this.domainUpDown5.Items.Add("25");
-            this.domainUpDown5.Items.Add("26");
-            this.domainUpDown5.Items.Add("27");
-            this.domainUpDown5.Items.Add("28");
-            this.domainUpDown5.Items.Add("29");
-            this.domainUpDown5.Items.Add("30");
-            this.domainUpDown5.Items.Add("31");
-            this.domainUpDown5.Location = new System.Drawing.Point(126, 120);
-            this.domainUpDown5.Name = "domainUpDown5";
-            this.domainUpDown5.ReadOnly = true;
-            this.domainUpDown5.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown5.TabIndex = 100;
-            this.domainUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.InaOct.Items.Add("1");
+            this.InaOct.Items.Add("2");
+            this.InaOct.Items.Add("3");
+            this.InaOct.Items.Add("4");
+            this.InaOct.Items.Add("5");
+            this.InaOct.Items.Add("6");
+            this.InaOct.Items.Add("7");
+            this.InaOct.Items.Add("8");
+            this.InaOct.Items.Add("9");
+            this.InaOct.Items.Add("10");
+            this.InaOct.Items.Add("11");
+            this.InaOct.Items.Add("12");
+            this.InaOct.Items.Add("13");
+            this.InaOct.Items.Add("14");
+            this.InaOct.Items.Add("15");
+            this.InaOct.Items.Add("16");
+            this.InaOct.Items.Add("17");
+            this.InaOct.Items.Add("18");
+            this.InaOct.Items.Add("19");
+            this.InaOct.Items.Add("20");
+            this.InaOct.Items.Add("21");
+            this.InaOct.Items.Add("22");
+            this.InaOct.Items.Add("23");
+            this.InaOct.Items.Add("24");
+            this.InaOct.Items.Add("25");
+            this.InaOct.Items.Add("26");
+            this.InaOct.Items.Add("27");
+            this.InaOct.Items.Add("28");
+            this.InaOct.Items.Add("29");
+            this.InaOct.Items.Add("30");
+            this.InaOct.Items.Add("31");
+            this.InaOct.Location = new System.Drawing.Point(126, 120);
+            this.InaOct.Name = "InaOct";
+            this.InaOct.ReadOnly = true;
+            this.InaOct.Size = new System.Drawing.Size(80, 32);
+            this.InaOct.TabIndex = 100;
+            this.InaOct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // domainUpDown3
+            // InaDic
             // 
-            this.domainUpDown3.Items.Add("1");
-            this.domainUpDown3.Items.Add("2");
-            this.domainUpDown3.Items.Add("3");
-            this.domainUpDown3.Items.Add("4");
-            this.domainUpDown3.Items.Add("5");
-            this.domainUpDown3.Items.Add("6");
-            this.domainUpDown3.Items.Add("7");
-            this.domainUpDown3.Items.Add("8");
-            this.domainUpDown3.Items.Add("9");
-            this.domainUpDown3.Items.Add("10");
-            this.domainUpDown3.Items.Add("11");
-            this.domainUpDown3.Items.Add("12");
-            this.domainUpDown3.Items.Add("13");
-            this.domainUpDown3.Items.Add("14");
-            this.domainUpDown3.Items.Add("15");
-            this.domainUpDown3.Items.Add("16");
-            this.domainUpDown3.Items.Add("17");
-            this.domainUpDown3.Items.Add("18");
-            this.domainUpDown3.Items.Add("19");
-            this.domainUpDown3.Items.Add("20");
-            this.domainUpDown3.Items.Add("21");
-            this.domainUpDown3.Items.Add("22");
-            this.domainUpDown3.Items.Add("23");
-            this.domainUpDown3.Items.Add("24");
-            this.domainUpDown3.Items.Add("25");
-            this.domainUpDown3.Items.Add("26");
-            this.domainUpDown3.Items.Add("27");
-            this.domainUpDown3.Items.Add("28");
-            this.domainUpDown3.Items.Add("29");
-            this.domainUpDown3.Items.Add("30");
-            this.domainUpDown3.Items.Add("31");
-            this.domainUpDown3.Location = new System.Drawing.Point(126, 196);
-            this.domainUpDown3.Name = "domainUpDown3";
-            this.domainUpDown3.ReadOnly = true;
-            this.domainUpDown3.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown3.TabIndex = 98;
+            this.InaDic.Items.Add("1");
+            this.InaDic.Items.Add("2");
+            this.InaDic.Items.Add("3");
+            this.InaDic.Items.Add("4");
+            this.InaDic.Items.Add("5");
+            this.InaDic.Items.Add("6");
+            this.InaDic.Items.Add("7");
+            this.InaDic.Items.Add("8");
+            this.InaDic.Items.Add("9");
+            this.InaDic.Items.Add("10");
+            this.InaDic.Items.Add("11");
+            this.InaDic.Items.Add("12");
+            this.InaDic.Items.Add("13");
+            this.InaDic.Items.Add("14");
+            this.InaDic.Items.Add("15");
+            this.InaDic.Items.Add("16");
+            this.InaDic.Items.Add("17");
+            this.InaDic.Items.Add("18");
+            this.InaDic.Items.Add("19");
+            this.InaDic.Items.Add("20");
+            this.InaDic.Items.Add("21");
+            this.InaDic.Items.Add("22");
+            this.InaDic.Items.Add("23");
+            this.InaDic.Items.Add("24");
+            this.InaDic.Items.Add("25");
+            this.InaDic.Items.Add("26");
+            this.InaDic.Items.Add("27");
+            this.InaDic.Items.Add("28");
+            this.InaDic.Items.Add("29");
+            this.InaDic.Items.Add("30");
+            this.InaDic.Items.Add("31");
+            this.InaDic.Location = new System.Drawing.Point(126, 196);
+            this.InaDic.Name = "InaDic";
+            this.InaDic.ReadOnly = true;
+            this.InaDic.Size = new System.Drawing.Size(80, 32);
+            this.InaDic.TabIndex = 98;
             // 
-            // domainUpDown2
+            // InaEne
             // 
-            this.domainUpDown2.Items.Add("1");
-            this.domainUpDown2.Items.Add("2");
-            this.domainUpDown2.Items.Add("3");
-            this.domainUpDown2.Items.Add("4");
-            this.domainUpDown2.Items.Add("5");
-            this.domainUpDown2.Items.Add("6");
-            this.domainUpDown2.Items.Add("7");
-            this.domainUpDown2.Items.Add("8");
-            this.domainUpDown2.Items.Add("9");
-            this.domainUpDown2.Items.Add("10");
-            this.domainUpDown2.Items.Add("11");
-            this.domainUpDown2.Items.Add("12");
-            this.domainUpDown2.Items.Add("13");
-            this.domainUpDown2.Items.Add("14");
-            this.domainUpDown2.Items.Add("15");
-            this.domainUpDown2.Items.Add("16");
-            this.domainUpDown2.Items.Add("17");
-            this.domainUpDown2.Items.Add("18");
-            this.domainUpDown2.Items.Add("19");
-            this.domainUpDown2.Items.Add("20");
-            this.domainUpDown2.Items.Add("21");
-            this.domainUpDown2.Items.Add("22");
-            this.domainUpDown2.Items.Add("23");
-            this.domainUpDown2.Items.Add("24");
-            this.domainUpDown2.Items.Add("25");
-            this.domainUpDown2.Items.Add("26");
-            this.domainUpDown2.Items.Add("27");
-            this.domainUpDown2.Items.Add("28");
-            this.domainUpDown2.Items.Add("29");
-            this.domainUpDown2.Items.Add("30");
-            this.domainUpDown2.Items.Add("31");
-            this.domainUpDown2.Location = new System.Drawing.Point(126, 234);
-            this.domainUpDown2.Name = "domainUpDown2";
-            this.domainUpDown2.ReadOnly = true;
-            this.domainUpDown2.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown2.TabIndex = 97;
+            this.InaEne.Items.Add("1");
+            this.InaEne.Items.Add("2");
+            this.InaEne.Items.Add("3");
+            this.InaEne.Items.Add("4");
+            this.InaEne.Items.Add("5");
+            this.InaEne.Items.Add("6");
+            this.InaEne.Items.Add("7");
+            this.InaEne.Items.Add("8");
+            this.InaEne.Items.Add("9");
+            this.InaEne.Items.Add("10");
+            this.InaEne.Items.Add("11");
+            this.InaEne.Items.Add("12");
+            this.InaEne.Items.Add("13");
+            this.InaEne.Items.Add("14");
+            this.InaEne.Items.Add("15");
+            this.InaEne.Items.Add("16");
+            this.InaEne.Items.Add("17");
+            this.InaEne.Items.Add("18");
+            this.InaEne.Items.Add("19");
+            this.InaEne.Items.Add("20");
+            this.InaEne.Items.Add("21");
+            this.InaEne.Items.Add("22");
+            this.InaEne.Items.Add("23");
+            this.InaEne.Items.Add("24");
+            this.InaEne.Items.Add("25");
+            this.InaEne.Items.Add("26");
+            this.InaEne.Items.Add("27");
+            this.InaEne.Items.Add("28");
+            this.InaEne.Items.Add("29");
+            this.InaEne.Items.Add("30");
+            this.InaEne.Items.Add("31");
+            this.InaEne.Location = new System.Drawing.Point(126, 234);
+            this.InaEne.Name = "InaEne";
+            this.InaEne.ReadOnly = true;
+            this.InaEne.Size = new System.Drawing.Size(80, 32);
+            this.InaEne.TabIndex = 97;
             // 
-            // domainUpDown1
+            // InaDiag
             // 
-            this.domainUpDown1.Items.Add("1");
-            this.domainUpDown1.Items.Add("2");
-            this.domainUpDown1.Items.Add("3");
-            this.domainUpDown1.Items.Add("4");
-            this.domainUpDown1.Items.Add("5");
-            this.domainUpDown1.Items.Add("6");
-            this.domainUpDown1.Items.Add("7");
-            this.domainUpDown1.Items.Add("8");
-            this.domainUpDown1.Items.Add("9");
-            this.domainUpDown1.Items.Add("10");
-            this.domainUpDown1.Items.Add("11");
-            this.domainUpDown1.Items.Add("12");
-            this.domainUpDown1.Items.Add("13");
-            this.domainUpDown1.Items.Add("14");
-            this.domainUpDown1.Items.Add("15");
-            this.domainUpDown1.Items.Add("16");
-            this.domainUpDown1.Items.Add("17");
-            this.domainUpDown1.Items.Add("18");
-            this.domainUpDown1.Items.Add("19");
-            this.domainUpDown1.Items.Add("20");
-            this.domainUpDown1.Items.Add("21");
-            this.domainUpDown1.Items.Add("22");
-            this.domainUpDown1.Items.Add("23");
-            this.domainUpDown1.Items.Add("24");
-            this.domainUpDown1.Items.Add("25");
-            this.domainUpDown1.Items.Add("26");
-            this.domainUpDown1.Items.Add("27");
-            this.domainUpDown1.Items.Add("28");
-            this.domainUpDown1.Items.Add("29");
-            this.domainUpDown1.Items.Add("30");
-            this.domainUpDown1.Items.Add("31");
-            this.domainUpDown1.Location = new System.Drawing.Point(126, 44);
-            this.domainUpDown1.Name = "domainUpDown1";
-            this.domainUpDown1.ReadOnly = true;
-            this.domainUpDown1.Size = new System.Drawing.Size(80, 32);
-            this.domainUpDown1.TabIndex = 94;
+            this.InaDiag.Items.Add("1");
+            this.InaDiag.Items.Add("2");
+            this.InaDiag.Items.Add("3");
+            this.InaDiag.Items.Add("4");
+            this.InaDiag.Items.Add("5");
+            this.InaDiag.Items.Add("6");
+            this.InaDiag.Items.Add("7");
+            this.InaDiag.Items.Add("8");
+            this.InaDiag.Items.Add("9");
+            this.InaDiag.Items.Add("10");
+            this.InaDiag.Items.Add("11");
+            this.InaDiag.Items.Add("12");
+            this.InaDiag.Items.Add("13");
+            this.InaDiag.Items.Add("14");
+            this.InaDiag.Items.Add("15");
+            this.InaDiag.Items.Add("16");
+            this.InaDiag.Items.Add("17");
+            this.InaDiag.Items.Add("18");
+            this.InaDiag.Items.Add("19");
+            this.InaDiag.Items.Add("20");
+            this.InaDiag.Items.Add("21");
+            this.InaDiag.Items.Add("22");
+            this.InaDiag.Items.Add("23");
+            this.InaDiag.Items.Add("24");
+            this.InaDiag.Items.Add("25");
+            this.InaDiag.Items.Add("26");
+            this.InaDiag.Items.Add("27");
+            this.InaDiag.Items.Add("28");
+            this.InaDiag.Items.Add("29");
+            this.InaDiag.Items.Add("30");
+            this.InaDiag.Items.Add("31");
+            this.InaDiag.Location = new System.Drawing.Point(126, 44);
+            this.InaDiag.Name = "InaDiag";
+            this.InaDiag.ReadOnly = true;
+            this.InaDiag.Size = new System.Drawing.Size(80, 32);
+            this.InaDiag.TabIndex = 94;
             // 
             // label121
             // 
@@ -4987,6 +4986,7 @@
             this.materialRaisedButton1.TabIndex = 70;
             this.materialRaisedButton1.Text = "Guardar Calificaciones";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
             // 
             // btnPrincipal
             // 
@@ -5081,17 +5081,17 @@
         private System.Windows.Forms.TabPage EdFisica;
         private System.Windows.Forms.TabPage Inasist;
         private System.Windows.Forms.GroupBox BoxGenero;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox Espjun;
+        private System.Windows.Forms.ComboBox Espmay;
+        private System.Windows.Forms.ComboBox Espabril;
+        private System.Windows.Forms.ComboBox EspMarz;
+        private System.Windows.Forms.ComboBox EspFeb;
+        private System.Windows.Forms.ComboBox Espene;
+        private System.Windows.Forms.ComboBox Espdic;
+        private System.Windows.Forms.ComboBox Espnov;
+        private System.Windows.Forms.ComboBox EspOct;
+        private System.Windows.Forms.ComboBox EspSep;
+        private System.Windows.Forms.ComboBox EspDiag;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -5324,17 +5324,17 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DomainUpDown domainUpDown6;
-        private System.Windows.Forms.DomainUpDown domainUpDown7;
-        private System.Windows.Forms.DomainUpDown domainUpDown8;
-        private System.Windows.Forms.DomainUpDown domainUpDown10;
-        private System.Windows.Forms.DomainUpDown domainUpDown4;
-        private System.Windows.Forms.DomainUpDown domainUpDown9;
-        private System.Windows.Forms.DomainUpDown domainUpDown11;
-        private System.Windows.Forms.DomainUpDown domainUpDown5;
-        private System.Windows.Forms.DomainUpDown domainUpDown3;
-        private System.Windows.Forms.DomainUpDown domainUpDown2;
-        private System.Windows.Forms.DomainUpDown domainUpDown1;
+        private System.Windows.Forms.DomainUpDown InaJun;
+        private System.Windows.Forms.DomainUpDown InaAbr;
+        private System.Windows.Forms.DomainUpDown InaFeb;
+        private System.Windows.Forms.DomainUpDown Inanov;
+        private System.Windows.Forms.DomainUpDown InaSep;
+        private System.Windows.Forms.DomainUpDown InaMay;
+        private System.Windows.Forms.DomainUpDown InaMarz;
+        private System.Windows.Forms.DomainUpDown InaOct;
+        private System.Windows.Forms.DomainUpDown InaDic;
+        private System.Windows.Forms.DomainUpDown InaEne;
+        private System.Windows.Forms.DomainUpDown InaDiag;
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label122;
         private System.Windows.Forms.Label label123;

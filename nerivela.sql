@@ -80,9 +80,12 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
 CREATE TABLE IF NOT EXISTS `calificaciones` (
   `idCalificaciones` int(11) NOT NULL AUTO_INCREMENT,
   `CalificacionMen` decimal(2,2) NOT NULL,
-  `CalificacionTri` decimal(2,2) NOT NULL,
+   `idAlumno` int(11) NOT NULL ,
   `Mes` varchar(20) NOT NULL,
-  PRIMARY KEY (`idCalificaciones`)
+   `idMaterias` int(11) NOT NULL ,
+  PRIMARY KEY (`idCalificaciones`),
+   KEY `fk_idAlumno` (`idAlumno`),
+    KEY `fk_idMaterias` (`idMaterias`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
