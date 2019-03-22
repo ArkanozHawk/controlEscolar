@@ -1443,7 +1443,7 @@ namespace Control_Escolar
                                 MessageBox.Show("calificacion guardada con exito");
                             }
                             break;
-                        case "C.Nat":
+                        case "CienciasNaturales":
                             {
                                 caliCnat();
                                 MessageBox.Show("calificacion guardada con exito");
@@ -1462,32 +1462,32 @@ namespace Control_Escolar
                                 MessageBox.Show("calificacion guardada con exito");
                             }
                             break;
-                        case "":
+                        case "FormacionCiv. y Étic":
                             {
                                 Formacioncivi();
                                 MessageBox.Show("calificacion guardada con exito");
                             }
                           break;
-                        //case "":
-                        //    {
-                        //        caliartes();
-                        //        MessageBox.Show("calificacion guardada con exito");
-                        //    }
-                        //    break;
-                        //case "":
-                        //    {
-                        //        caliEdus();
-                        //        MessageBox.Show("calificacion guardada con exito");
-                        //    }
-                        //    break;
-                        //case 10:
-                        //    {
-                        //        caliEdufi();
-                        //        MessageBox.Show("calificacion guardada con exito");
-                        //    }
-                        //    break;
-                        //    ;
-                    
+                    case "Artes":
+                        {
+                            caliartes();
+                            MessageBox.Show("calificacion guardada con exito");
+                        }
+                        break;
+                    case "Ed.socio":
+                        {
+                            caliEdus();
+                            MessageBox.Show("calificacion guardada con exito");
+                        }
+                        break;
+                    case "Ed. Física":
+                        {
+                            caliEdufi();
+                            MessageBox.Show("calificacion guardada con exito");
+                        }
+                        break;
+                        ;
+
 
                 }
 
