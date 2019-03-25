@@ -30,7 +30,7 @@
         {
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.Esp = new System.Windows.Forms.TabPage();
+            this.Septiembre = new System.Windows.Forms.TabPage();
             this.BoxGenero = new System.Windows.Forms.GroupBox();
             this.Espjun = new System.Windows.Forms.ComboBox();
             this.Espmay = new System.Windows.Forms.ComboBox();
@@ -55,7 +55,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.Mat = new System.Windows.Forms.TabPage();
+            this.Octubre = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cmbJunioMate = new System.Windows.Forms.ComboBox();
             this.cmbMayoMate = new System.Windows.Forms.ComboBox();
@@ -80,7 +80,7 @@
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.Ingles = new System.Windows.Forms.TabPage();
+            this.Noviembre = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cmbJunioIng = new System.Windows.Forms.ComboBox();
             this.cmbMayoIng = new System.Windows.Forms.ComboBox();
@@ -105,7 +105,7 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.CNat = new System.Windows.Forms.TabPage();
+            this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.cmbJunioNaturales = new System.Windows.Forms.ComboBox();
             this.cmbMayoNaturales = new System.Windows.Forms.ComboBox();
@@ -130,7 +130,7 @@
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.Geo = new System.Windows.Forms.TabPage();
+            this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.cmbJunioGeo = new System.Windows.Forms.ComboBox();
             this.cmbMayoGeo = new System.Windows.Forms.ComboBox();
@@ -155,7 +155,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
-            this.Hist = new System.Windows.Forms.TabPage();
+            this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.cmbJunioHist = new System.Windows.Forms.ComboBox();
             this.cmbMayoHist = new System.Windows.Forms.ComboBox();
@@ -180,7 +180,7 @@
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.FormCiv = new System.Windows.Forms.TabPage();
+            this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.cmbJunioFCE = new System.Windows.Forms.ComboBox();
             this.cmbMayoFCE = new System.Windows.Forms.ComboBox();
@@ -205,7 +205,7 @@
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
-            this.Artes = new System.Windows.Forms.TabPage();
+            this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.cmbJunioArtes = new System.Windows.Forms.ComboBox();
             this.cmbMayoArtes = new System.Windows.Forms.ComboBox();
@@ -230,7 +230,7 @@
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
-            this.Edsocial = new System.Windows.Forms.TabPage();
+            this.Mayo = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.cmbJunioSocio = new System.Windows.Forms.ComboBox();
             this.cmbMayoSocio = new System.Windows.Forms.ComboBox();
@@ -255,7 +255,7 @@
             this.label106 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
-            this.EdFisica = new System.Windows.Forms.TabPage();
+            this.Junio = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.cmbJunioEdFis = new System.Windows.Forms.ComboBox();
             this.cmbMayoEdFis = new System.Windows.Forms.ComboBox();
@@ -280,58 +280,31 @@
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
-            this.Inasist = new System.Windows.Forms.TabPage();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.InaJun = new System.Windows.Forms.DomainUpDown();
-            this.InaAbr = new System.Windows.Forms.DomainUpDown();
-            this.InaFeb = new System.Windows.Forms.DomainUpDown();
-            this.Inanov = new System.Windows.Forms.DomainUpDown();
-            this.InaSep = new System.Windows.Forms.DomainUpDown();
-            this.InaMay = new System.Windows.Forms.DomainUpDown();
-            this.InaMarz = new System.Windows.Forms.DomainUpDown();
-            this.InaOct = new System.Windows.Forms.DomainUpDown();
-            this.InaDic = new System.Windows.Forms.DomainUpDown();
-            this.InaEne = new System.Windows.Forms.DomainUpDown();
-            this.InaDiag = new System.Windows.Forms.DomainUpDown();
-            this.label121 = new System.Windows.Forms.Label();
-            this.label122 = new System.Windows.Forms.Label();
-            this.label123 = new System.Windows.Forms.Label();
-            this.label124 = new System.Windows.Forms.Label();
-            this.label125 = new System.Windows.Forms.Label();
-            this.label126 = new System.Windows.Forms.Label();
-            this.label127 = new System.Windows.Forms.Label();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
-            this.Esp.SuspendLayout();
+            this.Septiembre.SuspendLayout();
             this.BoxGenero.SuspendLayout();
-            this.Mat.SuspendLayout();
+            this.Octubre.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.Ingles.SuspendLayout();
+            this.Noviembre.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.CNat.SuspendLayout();
+            this.Diciembre.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.Geo.SuspendLayout();
+            this.Enero.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.Hist.SuspendLayout();
+            this.Febrero.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.FormCiv.SuspendLayout();
+            this.Marzo.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.Artes.SuspendLayout();
+            this.Abril.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.Edsocial.SuspendLayout();
+            this.Mayo.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.EdFisica.SuspendLayout();
+            this.Junio.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.Inasist.SuspendLayout();
-            this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -349,17 +322,16 @@
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Controls.Add(this.Esp);
-            this.materialTabControl1.Controls.Add(this.Mat);
-            this.materialTabControl1.Controls.Add(this.Ingles);
-            this.materialTabControl1.Controls.Add(this.CNat);
-            this.materialTabControl1.Controls.Add(this.Geo);
-            this.materialTabControl1.Controls.Add(this.Hist);
-            this.materialTabControl1.Controls.Add(this.FormCiv);
-            this.materialTabControl1.Controls.Add(this.Artes);
-            this.materialTabControl1.Controls.Add(this.Edsocial);
-            this.materialTabControl1.Controls.Add(this.EdFisica);
-            this.materialTabControl1.Controls.Add(this.Inasist);
+            this.materialTabControl1.Controls.Add(this.Septiembre);
+            this.materialTabControl1.Controls.Add(this.Octubre);
+            this.materialTabControl1.Controls.Add(this.Noviembre);
+            this.materialTabControl1.Controls.Add(this.Diciembre);
+            this.materialTabControl1.Controls.Add(this.Enero);
+            this.materialTabControl1.Controls.Add(this.Febrero);
+            this.materialTabControl1.Controls.Add(this.Marzo);
+            this.materialTabControl1.Controls.Add(this.Abril);
+            this.materialTabControl1.Controls.Add(this.Mayo);
+            this.materialTabControl1.Controls.Add(this.Junio);
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(53, 116);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -368,16 +340,16 @@
             this.materialTabControl1.Size = new System.Drawing.Size(945, 380);
             this.materialTabControl1.TabIndex = 81;
             // 
-            // Esp
+            // Septiembre
             // 
-            this.Esp.Controls.Add(this.BoxGenero);
-            this.Esp.Location = new System.Drawing.Point(4, 22);
-            this.Esp.Name = "Esp";
-            this.Esp.Padding = new System.Windows.Forms.Padding(3);
-            this.Esp.Size = new System.Drawing.Size(937, 354);
-            this.Esp.TabIndex = 0;
-            this.Esp.Text = "Esp";
-            this.Esp.UseVisualStyleBackColor = true;
+            this.Septiembre.Controls.Add(this.BoxGenero);
+            this.Septiembre.Location = new System.Drawing.Point(4, 22);
+            this.Septiembre.Name = "Septiembre";
+            this.Septiembre.Padding = new System.Windows.Forms.Padding(3);
+            this.Septiembre.Size = new System.Drawing.Size(937, 354);
+            this.Septiembre.TabIndex = 0;
+            this.Septiembre.Text = "Septiembre";
+            this.Septiembre.UseVisualStyleBackColor = true;
             // 
             // BoxGenero
             // 
@@ -406,10 +378,10 @@
             this.BoxGenero.Controls.Add(this.label2);
             this.BoxGenero.Controls.Add(this.label5);
             this.BoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.BoxGenero.Location = new System.Drawing.Point(178, 18);
+            this.BoxGenero.Location = new System.Drawing.Point(132, 18);
             this.BoxGenero.Name = "BoxGenero";
             this.BoxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BoxGenero.Size = new System.Drawing.Size(581, 319);
+            this.BoxGenero.Size = new System.Drawing.Size(627, 319);
             this.BoxGenero.TabIndex = 82;
             this.BoxGenero.TabStop = false;
             // 
@@ -428,7 +400,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espjun.Location = new System.Drawing.Point(385, 198);
+            this.Espjun.Location = new System.Drawing.Point(462, 206);
             this.Espjun.Name = "Espjun";
             this.Espjun.Size = new System.Drawing.Size(124, 33);
             this.Espjun.TabIndex = 96;
@@ -448,7 +420,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espmay.Location = new System.Drawing.Point(385, 159);
+            this.Espmay.Location = new System.Drawing.Point(462, 167);
             this.Espmay.Name = "Espmay";
             this.Espmay.Size = new System.Drawing.Size(124, 33);
             this.Espmay.TabIndex = 95;
@@ -468,7 +440,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espabril.Location = new System.Drawing.Point(385, 120);
+            this.Espabril.Location = new System.Drawing.Point(462, 128);
             this.Espabril.Name = "Espabril";
             this.Espabril.Size = new System.Drawing.Size(124, 33);
             this.Espabril.TabIndex = 94;
@@ -488,7 +460,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspMarz.Location = new System.Drawing.Point(385, 82);
+            this.EspMarz.Location = new System.Drawing.Point(462, 90);
             this.EspMarz.Name = "EspMarz";
             this.EspMarz.Size = new System.Drawing.Size(124, 33);
             this.EspMarz.TabIndex = 93;
@@ -508,7 +480,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspFeb.Location = new System.Drawing.Point(385, 43);
+            this.EspFeb.Location = new System.Drawing.Point(462, 50);
             this.EspFeb.Name = "EspFeb";
             this.EspFeb.Size = new System.Drawing.Size(124, 33);
             this.EspFeb.TabIndex = 92;
@@ -528,7 +500,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espene.Location = new System.Drawing.Point(126, 238);
+            this.Espene.Location = new System.Drawing.Point(142, 238);
             this.Espene.Name = "Espene";
             this.Espene.Size = new System.Drawing.Size(124, 33);
             this.Espene.TabIndex = 91;
@@ -548,7 +520,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espdic.Location = new System.Drawing.Point(126, 199);
+            this.Espdic.Location = new System.Drawing.Point(142, 199);
             this.Espdic.Name = "Espdic";
             this.Espdic.Size = new System.Drawing.Size(124, 33);
             this.Espdic.TabIndex = 90;
@@ -568,7 +540,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espnov.Location = new System.Drawing.Point(126, 160);
+            this.Espnov.Location = new System.Drawing.Point(151, 160);
             this.Espnov.Name = "Espnov";
             this.Espnov.Size = new System.Drawing.Size(124, 33);
             this.Espnov.TabIndex = 89;
@@ -588,7 +560,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspOct.Location = new System.Drawing.Point(126, 121);
+            this.EspOct.Location = new System.Drawing.Point(142, 121);
             this.EspOct.Name = "EspOct";
             this.EspOct.Size = new System.Drawing.Size(124, 33);
             this.EspOct.TabIndex = 88;
@@ -608,7 +580,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspSep.Location = new System.Drawing.Point(126, 82);
+            this.EspSep.Location = new System.Drawing.Point(142, 82);
             this.EspSep.Name = "EspSep";
             this.EspSep.Size = new System.Drawing.Size(124, 33);
             this.EspSep.TabIndex = 87;
@@ -628,7 +600,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspDiag.Location = new System.Drawing.Point(126, 43);
+            this.EspDiag.Location = new System.Drawing.Point(142, 43);
             this.EspDiag.Name = "EspDiag";
             this.EspDiag.Size = new System.Drawing.Size(124, 33);
             this.EspDiag.TabIndex = 75;
@@ -640,20 +612,20 @@
             this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label12.Location = new System.Drawing.Point(281, 205);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(47, 20);
+            this.label12.Size = new System.Drawing.Size(102, 20);
             this.label12.TabIndex = 74;
-            this.label12.Text = "Junio";
+            this.label12.Text = "Inasistencias";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label11.Location = new System.Drawing.Point(281, 50);
+            this.label11.Location = new System.Drawing.Point(270, 56);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 20);
+            this.label11.Size = new System.Drawing.Size(175, 20);
             this.label11.TabIndex = 73;
-            this.label11.Text = "Febrero";
+            this.label11.Text = "Formacion civica y etica";
             // 
             // label10
             // 
@@ -662,9 +634,9 @@
             this.label10.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label10.Location = new System.Drawing.Point(281, 90);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 20);
+            this.label10.Size = new System.Drawing.Size(47, 20);
             this.label10.TabIndex = 72;
-            this.label10.Text = "Marzo";
+            this.label10.Text = "Artes";
             // 
             // label9
             // 
@@ -673,9 +645,9 @@
             this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label9.Location = new System.Drawing.Point(281, 127);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(40, 20);
+            this.label9.Size = new System.Drawing.Size(77, 20);
             this.label9.TabIndex = 71;
-            this.label9.Text = "Abril";
+            this.label9.Text = "Ed. Socio";
             // 
             // label8
             // 
@@ -684,9 +656,9 @@
             this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label8.Location = new System.Drawing.Point(281, 167);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 20);
+            this.label8.Size = new System.Drawing.Size(74, 20);
             this.label8.TabIndex = 70;
-            this.label8.Text = "Mayo";
+            this.label8.Text = "Ed.Fisica";
             // 
             // label7
             // 
@@ -697,7 +669,7 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 20);
             this.label7.TabIndex = 69;
-            this.label7.Text = "Diciembre";
+            this.label7.Text = "Geografia";
             // 
             // label6
             // 
@@ -706,9 +678,9 @@
             this.label6.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label6.Location = new System.Drawing.Point(16, 245);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(52, 20);
+            this.label6.Size = new System.Drawing.Size(63, 20);
             this.label6.TabIndex = 68;
-            this.label6.Text = "Enero";
+            this.label6.Text = "Historia";
             // 
             // label3
             // 
@@ -717,20 +689,20 @@
             this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label3.Location = new System.Drawing.Point(16, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 67;
-            this.label3.Text = "Octubre";
+            this.label3.Text = "Ingles";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label1.Location = new System.Drawing.Point(16, 167);
+            this.label1.Location = new System.Drawing.Point(4, 166);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.Size = new System.Drawing.Size(141, 20);
             this.label1.TabIndex = 66;
-            this.label1.Text = "Noviembre";
+            this.label1.Text = "Ciencias Naturales";
             // 
             // label4
             // 
@@ -739,9 +711,9 @@
             this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label4.Location = new System.Drawing.Point(16, 90);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 20);
+            this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 65;
-            this.label4.Text = "Septiembre";
+            this.label4.Text = "Matematicas";
             // 
             // label2
             // 
@@ -750,9 +722,9 @@
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.label2.Location = new System.Drawing.Point(16, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 20);
+            this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 62;
-            this.label2.Text = "Diagnostico";
+            this.label2.Text = "Español";
             // 
             // label5
             // 
@@ -767,16 +739,16 @@
             this.label5.TabIndex = 44;
             this.label5.Text = "Calificaciones";
             // 
-            // Mat
+            // Octubre
             // 
-            this.Mat.Controls.Add(this.groupBox1);
-            this.Mat.Location = new System.Drawing.Point(4, 22);
-            this.Mat.Name = "Mat";
-            this.Mat.Padding = new System.Windows.Forms.Padding(3);
-            this.Mat.Size = new System.Drawing.Size(937, 354);
-            this.Mat.TabIndex = 1;
-            this.Mat.Text = "Mat";
-            this.Mat.UseVisualStyleBackColor = true;
+            this.Octubre.Controls.Add(this.groupBox1);
+            this.Octubre.Location = new System.Drawing.Point(4, 22);
+            this.Octubre.Name = "Octubre";
+            this.Octubre.Padding = new System.Windows.Forms.Padding(3);
+            this.Octubre.Size = new System.Drawing.Size(937, 354);
+            this.Octubre.TabIndex = 1;
+            this.Octubre.Text = "Octubre";
+            this.Octubre.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
@@ -1166,16 +1138,16 @@
             this.label24.TabIndex = 44;
             this.label24.Text = "Calificaciones";
             // 
-            // Ingles
+            // Noviembre
             // 
-            this.Ingles.Controls.Add(this.groupBox2);
-            this.Ingles.Location = new System.Drawing.Point(4, 22);
-            this.Ingles.Name = "Ingles";
-            this.Ingles.Padding = new System.Windows.Forms.Padding(3);
-            this.Ingles.Size = new System.Drawing.Size(937, 354);
-            this.Ingles.TabIndex = 2;
-            this.Ingles.Text = "Ingles";
-            this.Ingles.UseVisualStyleBackColor = true;
+            this.Noviembre.Controls.Add(this.groupBox2);
+            this.Noviembre.Location = new System.Drawing.Point(4, 22);
+            this.Noviembre.Name = "Noviembre";
+            this.Noviembre.Padding = new System.Windows.Forms.Padding(3);
+            this.Noviembre.Size = new System.Drawing.Size(937, 354);
+            this.Noviembre.TabIndex = 2;
+            this.Noviembre.Text = "Noviembre";
+            this.Noviembre.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
@@ -1565,16 +1537,16 @@
             this.label36.TabIndex = 44;
             this.label36.Text = "Calificaciones";
             // 
-            // CNat
+            // Diciembre
             // 
-            this.CNat.Controls.Add(this.groupBox3);
-            this.CNat.Location = new System.Drawing.Point(4, 22);
-            this.CNat.Name = "CNat";
-            this.CNat.Padding = new System.Windows.Forms.Padding(3);
-            this.CNat.Size = new System.Drawing.Size(937, 354);
-            this.CNat.TabIndex = 3;
-            this.CNat.Text = "CienciasNaturales";
-            this.CNat.UseVisualStyleBackColor = true;
+            this.Diciembre.Controls.Add(this.groupBox3);
+            this.Diciembre.Location = new System.Drawing.Point(4, 22);
+            this.Diciembre.Name = "Diciembre";
+            this.Diciembre.Padding = new System.Windows.Forms.Padding(3);
+            this.Diciembre.Size = new System.Drawing.Size(937, 354);
+            this.Diciembre.TabIndex = 3;
+            this.Diciembre.Text = "Diciembre";
+            this.Diciembre.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
@@ -1964,16 +1936,16 @@
             this.label48.TabIndex = 44;
             this.label48.Text = "Calificaciones";
             // 
-            // Geo
+            // Enero
             // 
-            this.Geo.Controls.Add(this.groupBox4);
-            this.Geo.Location = new System.Drawing.Point(4, 22);
-            this.Geo.Name = "Geo";
-            this.Geo.Padding = new System.Windows.Forms.Padding(3);
-            this.Geo.Size = new System.Drawing.Size(937, 354);
-            this.Geo.TabIndex = 4;
-            this.Geo.Text = "Geo";
-            this.Geo.UseVisualStyleBackColor = true;
+            this.Enero.Controls.Add(this.groupBox4);
+            this.Enero.Location = new System.Drawing.Point(4, 22);
+            this.Enero.Name = "Enero";
+            this.Enero.Padding = new System.Windows.Forms.Padding(3);
+            this.Enero.Size = new System.Drawing.Size(937, 354);
+            this.Enero.TabIndex = 4;
+            this.Enero.Text = "Enero";
+            this.Enero.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -2363,16 +2335,16 @@
             this.label60.TabIndex = 44;
             this.label60.Text = "Calificaciones";
             // 
-            // Hist
+            // Febrero
             // 
-            this.Hist.Controls.Add(this.groupBox5);
-            this.Hist.Location = new System.Drawing.Point(4, 22);
-            this.Hist.Name = "Hist";
-            this.Hist.Padding = new System.Windows.Forms.Padding(3);
-            this.Hist.Size = new System.Drawing.Size(937, 354);
-            this.Hist.TabIndex = 5;
-            this.Hist.Text = "Hist";
-            this.Hist.UseVisualStyleBackColor = true;
+            this.Febrero.Controls.Add(this.groupBox5);
+            this.Febrero.Location = new System.Drawing.Point(4, 22);
+            this.Febrero.Name = "Febrero";
+            this.Febrero.Padding = new System.Windows.Forms.Padding(3);
+            this.Febrero.Size = new System.Drawing.Size(937, 354);
+            this.Febrero.TabIndex = 5;
+            this.Febrero.Text = "Febrero";
+            this.Febrero.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
@@ -2762,16 +2734,16 @@
             this.label72.TabIndex = 44;
             this.label72.Text = "Calificaciones";
             // 
-            // FormCiv
+            // Marzo
             // 
-            this.FormCiv.Controls.Add(this.groupBox6);
-            this.FormCiv.Location = new System.Drawing.Point(4, 22);
-            this.FormCiv.Name = "FormCiv";
-            this.FormCiv.Padding = new System.Windows.Forms.Padding(3);
-            this.FormCiv.Size = new System.Drawing.Size(937, 354);
-            this.FormCiv.TabIndex = 6;
-            this.FormCiv.Text = "FormacionCiv. y Étic";
-            this.FormCiv.UseVisualStyleBackColor = true;
+            this.Marzo.Controls.Add(this.groupBox6);
+            this.Marzo.Location = new System.Drawing.Point(4, 22);
+            this.Marzo.Name = "Marzo";
+            this.Marzo.Padding = new System.Windows.Forms.Padding(3);
+            this.Marzo.Size = new System.Drawing.Size(937, 354);
+            this.Marzo.TabIndex = 6;
+            this.Marzo.Text = "Marzo";
+            this.Marzo.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -3161,16 +3133,16 @@
             this.label84.TabIndex = 44;
             this.label84.Text = "Calificaciones";
             // 
-            // Artes
+            // Abril
             // 
-            this.Artes.Controls.Add(this.groupBox7);
-            this.Artes.Location = new System.Drawing.Point(4, 22);
-            this.Artes.Name = "Artes";
-            this.Artes.Padding = new System.Windows.Forms.Padding(3);
-            this.Artes.Size = new System.Drawing.Size(937, 354);
-            this.Artes.TabIndex = 7;
-            this.Artes.Text = "Artes";
-            this.Artes.UseVisualStyleBackColor = true;
+            this.Abril.Controls.Add(this.groupBox7);
+            this.Abril.Location = new System.Drawing.Point(4, 22);
+            this.Abril.Name = "Abril";
+            this.Abril.Padding = new System.Windows.Forms.Padding(3);
+            this.Abril.Size = new System.Drawing.Size(937, 354);
+            this.Abril.TabIndex = 7;
+            this.Abril.Text = "Abril";
+            this.Abril.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -3560,16 +3532,16 @@
             this.label96.TabIndex = 44;
             this.label96.Text = "Calificaciones";
             // 
-            // Edsocial
+            // Mayo
             // 
-            this.Edsocial.Controls.Add(this.groupBox8);
-            this.Edsocial.Location = new System.Drawing.Point(4, 22);
-            this.Edsocial.Name = "Edsocial";
-            this.Edsocial.Padding = new System.Windows.Forms.Padding(3);
-            this.Edsocial.Size = new System.Drawing.Size(937, 354);
-            this.Edsocial.TabIndex = 8;
-            this.Edsocial.Text = "Ed. Socio";
-            this.Edsocial.UseVisualStyleBackColor = true;
+            this.Mayo.Controls.Add(this.groupBox8);
+            this.Mayo.Location = new System.Drawing.Point(4, 22);
+            this.Mayo.Name = "Mayo";
+            this.Mayo.Padding = new System.Windows.Forms.Padding(3);
+            this.Mayo.Size = new System.Drawing.Size(937, 354);
+            this.Mayo.TabIndex = 8;
+            this.Mayo.Text = "Mayo";
+            this.Mayo.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
@@ -3959,16 +3931,16 @@
             this.label108.TabIndex = 44;
             this.label108.Text = "Calificaciones";
             // 
-            // EdFisica
+            // Junio
             // 
-            this.EdFisica.Controls.Add(this.groupBox9);
-            this.EdFisica.Location = new System.Drawing.Point(4, 22);
-            this.EdFisica.Name = "EdFisica";
-            this.EdFisica.Padding = new System.Windows.Forms.Padding(3);
-            this.EdFisica.Size = new System.Drawing.Size(937, 354);
-            this.EdFisica.TabIndex = 9;
-            this.EdFisica.Text = "Ed. Física";
-            this.EdFisica.UseVisualStyleBackColor = true;
+            this.Junio.Controls.Add(this.groupBox9);
+            this.Junio.Location = new System.Drawing.Point(4, 22);
+            this.Junio.Name = "Junio";
+            this.Junio.Padding = new System.Windows.Forms.Padding(3);
+            this.Junio.Size = new System.Drawing.Size(937, 354);
+            this.Junio.TabIndex = 9;
+            this.Junio.Text = "Junio";
+            this.Junio.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
@@ -4358,609 +4330,6 @@
             this.label120.TabIndex = 44;
             this.label120.Text = "Calificaciones";
             // 
-            // Inasist
-            // 
-            this.Inasist.Controls.Add(this.groupBox10);
-            this.Inasist.Location = new System.Drawing.Point(4, 22);
-            this.Inasist.Name = "Inasist";
-            this.Inasist.Padding = new System.Windows.Forms.Padding(3);
-            this.Inasist.Size = new System.Drawing.Size(937, 354);
-            this.Inasist.TabIndex = 10;
-            this.Inasist.Text = "Inasist";
-            this.Inasist.UseVisualStyleBackColor = true;
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Controls.Add(this.InaJun);
-            this.groupBox10.Controls.Add(this.InaAbr);
-            this.groupBox10.Controls.Add(this.InaFeb);
-            this.groupBox10.Controls.Add(this.Inanov);
-            this.groupBox10.Controls.Add(this.InaSep);
-            this.groupBox10.Controls.Add(this.InaMay);
-            this.groupBox10.Controls.Add(this.InaMarz);
-            this.groupBox10.Controls.Add(this.InaOct);
-            this.groupBox10.Controls.Add(this.InaDic);
-            this.groupBox10.Controls.Add(this.InaEne);
-            this.groupBox10.Controls.Add(this.InaDiag);
-            this.groupBox10.Controls.Add(this.label121);
-            this.groupBox10.Controls.Add(this.label122);
-            this.groupBox10.Controls.Add(this.label123);
-            this.groupBox10.Controls.Add(this.label124);
-            this.groupBox10.Controls.Add(this.label125);
-            this.groupBox10.Controls.Add(this.label126);
-            this.groupBox10.Controls.Add(this.label127);
-            this.groupBox10.Controls.Add(this.label128);
-            this.groupBox10.Controls.Add(this.label129);
-            this.groupBox10.Controls.Add(this.label130);
-            this.groupBox10.Controls.Add(this.label131);
-            this.groupBox10.Controls.Add(this.label132);
-            this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox10.Location = new System.Drawing.Point(178, 18);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox10.Size = new System.Drawing.Size(581, 319);
-            this.groupBox10.TabIndex = 92;
-            this.groupBox10.TabStop = false;
-            // 
-            // InaJun
-            // 
-            this.InaJun.Items.Add("1");
-            this.InaJun.Items.Add("2");
-            this.InaJun.Items.Add("3");
-            this.InaJun.Items.Add("4");
-            this.InaJun.Items.Add("5");
-            this.InaJun.Items.Add("6");
-            this.InaJun.Items.Add("7");
-            this.InaJun.Items.Add("8");
-            this.InaJun.Items.Add("9");
-            this.InaJun.Items.Add("10");
-            this.InaJun.Items.Add("11");
-            this.InaJun.Items.Add("12");
-            this.InaJun.Items.Add("13");
-            this.InaJun.Items.Add("14");
-            this.InaJun.Items.Add("15");
-            this.InaJun.Items.Add("16");
-            this.InaJun.Items.Add("17");
-            this.InaJun.Items.Add("18");
-            this.InaJun.Items.Add("19");
-            this.InaJun.Items.Add("20");
-            this.InaJun.Items.Add("21");
-            this.InaJun.Items.Add("22");
-            this.InaJun.Items.Add("23");
-            this.InaJun.Items.Add("24");
-            this.InaJun.Items.Add("25");
-            this.InaJun.Items.Add("26");
-            this.InaJun.Items.Add("27");
-            this.InaJun.Items.Add("28");
-            this.InaJun.Items.Add("29");
-            this.InaJun.Items.Add("30");
-            this.InaJun.Location = new System.Drawing.Point(359, 196);
-            this.InaJun.Name = "InaJun";
-            this.InaJun.ReadOnly = true;
-            this.InaJun.Size = new System.Drawing.Size(80, 32);
-            this.InaJun.TabIndex = 102;
-            // 
-            // InaAbr
-            // 
-            this.InaAbr.Items.Add("1");
-            this.InaAbr.Items.Add("2");
-            this.InaAbr.Items.Add("3");
-            this.InaAbr.Items.Add("4");
-            this.InaAbr.Items.Add("5");
-            this.InaAbr.Items.Add("6");
-            this.InaAbr.Items.Add("7");
-            this.InaAbr.Items.Add("8");
-            this.InaAbr.Items.Add("9");
-            this.InaAbr.Items.Add("10");
-            this.InaAbr.Items.Add("11");
-            this.InaAbr.Items.Add("12");
-            this.InaAbr.Items.Add("13");
-            this.InaAbr.Items.Add("14");
-            this.InaAbr.Items.Add("15");
-            this.InaAbr.Items.Add("16");
-            this.InaAbr.Items.Add("17");
-            this.InaAbr.Items.Add("18");
-            this.InaAbr.Items.Add("19");
-            this.InaAbr.Items.Add("20");
-            this.InaAbr.Items.Add("21");
-            this.InaAbr.Items.Add("22");
-            this.InaAbr.Items.Add("23");
-            this.InaAbr.Items.Add("24");
-            this.InaAbr.Items.Add("25");
-            this.InaAbr.Items.Add("26");
-            this.InaAbr.Items.Add("27");
-            this.InaAbr.Items.Add("28");
-            this.InaAbr.Items.Add("29");
-            this.InaAbr.Items.Add("30");
-            this.InaAbr.Location = new System.Drawing.Point(359, 120);
-            this.InaAbr.Name = "InaAbr";
-            this.InaAbr.ReadOnly = true;
-            this.InaAbr.Size = new System.Drawing.Size(80, 32);
-            this.InaAbr.TabIndex = 103;
-            // 
-            // InaFeb
-            // 
-            this.InaFeb.Items.Add("1");
-            this.InaFeb.Items.Add("2");
-            this.InaFeb.Items.Add("3");
-            this.InaFeb.Items.Add("4");
-            this.InaFeb.Items.Add("5");
-            this.InaFeb.Items.Add("6");
-            this.InaFeb.Items.Add("7");
-            this.InaFeb.Items.Add("8");
-            this.InaFeb.Items.Add("9");
-            this.InaFeb.Items.Add("10");
-            this.InaFeb.Items.Add("11");
-            this.InaFeb.Items.Add("12");
-            this.InaFeb.Items.Add("13");
-            this.InaFeb.Items.Add("14");
-            this.InaFeb.Items.Add("15");
-            this.InaFeb.Items.Add("16");
-            this.InaFeb.Items.Add("17");
-            this.InaFeb.Items.Add("18");
-            this.InaFeb.Items.Add("19");
-            this.InaFeb.Items.Add("20");
-            this.InaFeb.Items.Add("21");
-            this.InaFeb.Items.Add("22");
-            this.InaFeb.Items.Add("23");
-            this.InaFeb.Items.Add("24");
-            this.InaFeb.Items.Add("25");
-            this.InaFeb.Items.Add("26");
-            this.InaFeb.Items.Add("27");
-            this.InaFeb.Items.Add("28");
-            this.InaFeb.Items.Add("29");
-            this.InaFeb.Location = new System.Drawing.Point(359, 44);
-            this.InaFeb.Name = "InaFeb";
-            this.InaFeb.ReadOnly = true;
-            this.InaFeb.Size = new System.Drawing.Size(80, 32);
-            this.InaFeb.TabIndex = 104;
-            // 
-            // Inanov
-            // 
-            this.Inanov.Items.Add("1");
-            this.Inanov.Items.Add("2");
-            this.Inanov.Items.Add("3");
-            this.Inanov.Items.Add("4");
-            this.Inanov.Items.Add("5");
-            this.Inanov.Items.Add("6");
-            this.Inanov.Items.Add("7");
-            this.Inanov.Items.Add("8");
-            this.Inanov.Items.Add("9");
-            this.Inanov.Items.Add("10");
-            this.Inanov.Items.Add("11");
-            this.Inanov.Items.Add("12");
-            this.Inanov.Items.Add("13");
-            this.Inanov.Items.Add("14");
-            this.Inanov.Items.Add("15");
-            this.Inanov.Items.Add("16");
-            this.Inanov.Items.Add("17");
-            this.Inanov.Items.Add("18");
-            this.Inanov.Items.Add("19");
-            this.Inanov.Items.Add("20");
-            this.Inanov.Items.Add("21");
-            this.Inanov.Items.Add("22");
-            this.Inanov.Items.Add("23");
-            this.Inanov.Items.Add("24");
-            this.Inanov.Items.Add("25");
-            this.Inanov.Items.Add("26");
-            this.Inanov.Items.Add("27");
-            this.Inanov.Items.Add("28");
-            this.Inanov.Items.Add("29");
-            this.Inanov.Items.Add("30");
-            this.Inanov.Location = new System.Drawing.Point(126, 158);
-            this.Inanov.Name = "Inanov";
-            this.Inanov.ReadOnly = true;
-            this.Inanov.Size = new System.Drawing.Size(80, 32);
-            this.Inanov.TabIndex = 105;
-            // 
-            // InaSep
-            // 
-            this.InaSep.Items.Add("1");
-            this.InaSep.Items.Add("2");
-            this.InaSep.Items.Add("3");
-            this.InaSep.Items.Add("4");
-            this.InaSep.Items.Add("5");
-            this.InaSep.Items.Add("6");
-            this.InaSep.Items.Add("7");
-            this.InaSep.Items.Add("8");
-            this.InaSep.Items.Add("9");
-            this.InaSep.Items.Add("10");
-            this.InaSep.Items.Add("11");
-            this.InaSep.Items.Add("12");
-            this.InaSep.Items.Add("13");
-            this.InaSep.Items.Add("14");
-            this.InaSep.Items.Add("15");
-            this.InaSep.Items.Add("16");
-            this.InaSep.Items.Add("17");
-            this.InaSep.Items.Add("18");
-            this.InaSep.Items.Add("19");
-            this.InaSep.Items.Add("20");
-            this.InaSep.Items.Add("21");
-            this.InaSep.Items.Add("22");
-            this.InaSep.Items.Add("23");
-            this.InaSep.Items.Add("24");
-            this.InaSep.Items.Add("25");
-            this.InaSep.Items.Add("26");
-            this.InaSep.Items.Add("27");
-            this.InaSep.Items.Add("28");
-            this.InaSep.Items.Add("29");
-            this.InaSep.Items.Add("30");
-            this.InaSep.Location = new System.Drawing.Point(126, 82);
-            this.InaSep.Name = "InaSep";
-            this.InaSep.ReadOnly = true;
-            this.InaSep.Size = new System.Drawing.Size(80, 32);
-            this.InaSep.TabIndex = 101;
-            // 
-            // InaMay
-            // 
-            this.InaMay.Items.Add("1");
-            this.InaMay.Items.Add("2");
-            this.InaMay.Items.Add("3");
-            this.InaMay.Items.Add("4");
-            this.InaMay.Items.Add("5");
-            this.InaMay.Items.Add("6");
-            this.InaMay.Items.Add("7");
-            this.InaMay.Items.Add("8");
-            this.InaMay.Items.Add("9");
-            this.InaMay.Items.Add("10");
-            this.InaMay.Items.Add("11");
-            this.InaMay.Items.Add("12");
-            this.InaMay.Items.Add("13");
-            this.InaMay.Items.Add("14");
-            this.InaMay.Items.Add("15");
-            this.InaMay.Items.Add("16");
-            this.InaMay.Items.Add("17");
-            this.InaMay.Items.Add("18");
-            this.InaMay.Items.Add("19");
-            this.InaMay.Items.Add("20");
-            this.InaMay.Items.Add("21");
-            this.InaMay.Items.Add("22");
-            this.InaMay.Items.Add("23");
-            this.InaMay.Items.Add("24");
-            this.InaMay.Items.Add("25");
-            this.InaMay.Items.Add("26");
-            this.InaMay.Items.Add("27");
-            this.InaMay.Items.Add("28");
-            this.InaMay.Items.Add("29");
-            this.InaMay.Items.Add("30");
-            this.InaMay.Items.Add("31");
-            this.InaMay.Location = new System.Drawing.Point(359, 158);
-            this.InaMay.Name = "InaMay";
-            this.InaMay.ReadOnly = true;
-            this.InaMay.Size = new System.Drawing.Size(80, 32);
-            this.InaMay.TabIndex = 97;
-            // 
-            // InaMarz
-            // 
-            this.InaMarz.Items.Add("1");
-            this.InaMarz.Items.Add("2");
-            this.InaMarz.Items.Add("3");
-            this.InaMarz.Items.Add("4");
-            this.InaMarz.Items.Add("5");
-            this.InaMarz.Items.Add("6");
-            this.InaMarz.Items.Add("7");
-            this.InaMarz.Items.Add("8");
-            this.InaMarz.Items.Add("9");
-            this.InaMarz.Items.Add("10");
-            this.InaMarz.Items.Add("11");
-            this.InaMarz.Items.Add("12");
-            this.InaMarz.Items.Add("13");
-            this.InaMarz.Items.Add("14");
-            this.InaMarz.Items.Add("15");
-            this.InaMarz.Items.Add("16");
-            this.InaMarz.Items.Add("17");
-            this.InaMarz.Items.Add("18");
-            this.InaMarz.Items.Add("19");
-            this.InaMarz.Items.Add("20");
-            this.InaMarz.Items.Add("21");
-            this.InaMarz.Items.Add("22");
-            this.InaMarz.Items.Add("23");
-            this.InaMarz.Items.Add("24");
-            this.InaMarz.Items.Add("25");
-            this.InaMarz.Items.Add("26");
-            this.InaMarz.Items.Add("27");
-            this.InaMarz.Items.Add("28");
-            this.InaMarz.Items.Add("29");
-            this.InaMarz.Items.Add("30");
-            this.InaMarz.Items.Add("31");
-            this.InaMarz.Location = new System.Drawing.Point(359, 82);
-            this.InaMarz.Name = "InaMarz";
-            this.InaMarz.ReadOnly = true;
-            this.InaMarz.Size = new System.Drawing.Size(80, 32);
-            this.InaMarz.TabIndex = 99;
-            // 
-            // InaOct
-            // 
-            this.InaOct.Items.Add("1");
-            this.InaOct.Items.Add("2");
-            this.InaOct.Items.Add("3");
-            this.InaOct.Items.Add("4");
-            this.InaOct.Items.Add("5");
-            this.InaOct.Items.Add("6");
-            this.InaOct.Items.Add("7");
-            this.InaOct.Items.Add("8");
-            this.InaOct.Items.Add("9");
-            this.InaOct.Items.Add("10");
-            this.InaOct.Items.Add("11");
-            this.InaOct.Items.Add("12");
-            this.InaOct.Items.Add("13");
-            this.InaOct.Items.Add("14");
-            this.InaOct.Items.Add("15");
-            this.InaOct.Items.Add("16");
-            this.InaOct.Items.Add("17");
-            this.InaOct.Items.Add("18");
-            this.InaOct.Items.Add("19");
-            this.InaOct.Items.Add("20");
-            this.InaOct.Items.Add("21");
-            this.InaOct.Items.Add("22");
-            this.InaOct.Items.Add("23");
-            this.InaOct.Items.Add("24");
-            this.InaOct.Items.Add("25");
-            this.InaOct.Items.Add("26");
-            this.InaOct.Items.Add("27");
-            this.InaOct.Items.Add("28");
-            this.InaOct.Items.Add("29");
-            this.InaOct.Items.Add("30");
-            this.InaOct.Items.Add("31");
-            this.InaOct.Location = new System.Drawing.Point(126, 120);
-            this.InaOct.Name = "InaOct";
-            this.InaOct.ReadOnly = true;
-            this.InaOct.Size = new System.Drawing.Size(80, 32);
-            this.InaOct.TabIndex = 100;
-            this.InaOct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // InaDic
-            // 
-            this.InaDic.Items.Add("1");
-            this.InaDic.Items.Add("2");
-            this.InaDic.Items.Add("3");
-            this.InaDic.Items.Add("4");
-            this.InaDic.Items.Add("5");
-            this.InaDic.Items.Add("6");
-            this.InaDic.Items.Add("7");
-            this.InaDic.Items.Add("8");
-            this.InaDic.Items.Add("9");
-            this.InaDic.Items.Add("10");
-            this.InaDic.Items.Add("11");
-            this.InaDic.Items.Add("12");
-            this.InaDic.Items.Add("13");
-            this.InaDic.Items.Add("14");
-            this.InaDic.Items.Add("15");
-            this.InaDic.Items.Add("16");
-            this.InaDic.Items.Add("17");
-            this.InaDic.Items.Add("18");
-            this.InaDic.Items.Add("19");
-            this.InaDic.Items.Add("20");
-            this.InaDic.Items.Add("21");
-            this.InaDic.Items.Add("22");
-            this.InaDic.Items.Add("23");
-            this.InaDic.Items.Add("24");
-            this.InaDic.Items.Add("25");
-            this.InaDic.Items.Add("26");
-            this.InaDic.Items.Add("27");
-            this.InaDic.Items.Add("28");
-            this.InaDic.Items.Add("29");
-            this.InaDic.Items.Add("30");
-            this.InaDic.Items.Add("31");
-            this.InaDic.Location = new System.Drawing.Point(126, 196);
-            this.InaDic.Name = "InaDic";
-            this.InaDic.ReadOnly = true;
-            this.InaDic.Size = new System.Drawing.Size(80, 32);
-            this.InaDic.TabIndex = 98;
-            // 
-            // InaEne
-            // 
-            this.InaEne.Items.Add("1");
-            this.InaEne.Items.Add("2");
-            this.InaEne.Items.Add("3");
-            this.InaEne.Items.Add("4");
-            this.InaEne.Items.Add("5");
-            this.InaEne.Items.Add("6");
-            this.InaEne.Items.Add("7");
-            this.InaEne.Items.Add("8");
-            this.InaEne.Items.Add("9");
-            this.InaEne.Items.Add("10");
-            this.InaEne.Items.Add("11");
-            this.InaEne.Items.Add("12");
-            this.InaEne.Items.Add("13");
-            this.InaEne.Items.Add("14");
-            this.InaEne.Items.Add("15");
-            this.InaEne.Items.Add("16");
-            this.InaEne.Items.Add("17");
-            this.InaEne.Items.Add("18");
-            this.InaEne.Items.Add("19");
-            this.InaEne.Items.Add("20");
-            this.InaEne.Items.Add("21");
-            this.InaEne.Items.Add("22");
-            this.InaEne.Items.Add("23");
-            this.InaEne.Items.Add("24");
-            this.InaEne.Items.Add("25");
-            this.InaEne.Items.Add("26");
-            this.InaEne.Items.Add("27");
-            this.InaEne.Items.Add("28");
-            this.InaEne.Items.Add("29");
-            this.InaEne.Items.Add("30");
-            this.InaEne.Items.Add("31");
-            this.InaEne.Location = new System.Drawing.Point(126, 234);
-            this.InaEne.Name = "InaEne";
-            this.InaEne.ReadOnly = true;
-            this.InaEne.Size = new System.Drawing.Size(80, 32);
-            this.InaEne.TabIndex = 97;
-            // 
-            // InaDiag
-            // 
-            this.InaDiag.Items.Add("1");
-            this.InaDiag.Items.Add("2");
-            this.InaDiag.Items.Add("3");
-            this.InaDiag.Items.Add("4");
-            this.InaDiag.Items.Add("5");
-            this.InaDiag.Items.Add("6");
-            this.InaDiag.Items.Add("7");
-            this.InaDiag.Items.Add("8");
-            this.InaDiag.Items.Add("9");
-            this.InaDiag.Items.Add("10");
-            this.InaDiag.Items.Add("11");
-            this.InaDiag.Items.Add("12");
-            this.InaDiag.Items.Add("13");
-            this.InaDiag.Items.Add("14");
-            this.InaDiag.Items.Add("15");
-            this.InaDiag.Items.Add("16");
-            this.InaDiag.Items.Add("17");
-            this.InaDiag.Items.Add("18");
-            this.InaDiag.Items.Add("19");
-            this.InaDiag.Items.Add("20");
-            this.InaDiag.Items.Add("21");
-            this.InaDiag.Items.Add("22");
-            this.InaDiag.Items.Add("23");
-            this.InaDiag.Items.Add("24");
-            this.InaDiag.Items.Add("25");
-            this.InaDiag.Items.Add("26");
-            this.InaDiag.Items.Add("27");
-            this.InaDiag.Items.Add("28");
-            this.InaDiag.Items.Add("29");
-            this.InaDiag.Items.Add("30");
-            this.InaDiag.Items.Add("31");
-            this.InaDiag.Location = new System.Drawing.Point(126, 44);
-            this.InaDiag.Name = "InaDiag";
-            this.InaDiag.ReadOnly = true;
-            this.InaDiag.Size = new System.Drawing.Size(80, 32);
-            this.InaDiag.TabIndex = 94;
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label121.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label121.Location = new System.Drawing.Point(272, 202);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(47, 20);
-            this.label121.TabIndex = 74;
-            this.label121.Text = "Junio";
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label122.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label122.Location = new System.Drawing.Point(272, 50);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(65, 20);
-            this.label122.TabIndex = 73;
-            this.label122.Text = "Febrero";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label123.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label123.Location = new System.Drawing.Point(272, 88);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(53, 20);
-            this.label123.TabIndex = 72;
-            this.label123.Text = "Marzo";
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label124.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label124.Location = new System.Drawing.Point(272, 126);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(40, 20);
-            this.label124.TabIndex = 71;
-            this.label124.Text = "Abril";
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label125.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label125.Location = new System.Drawing.Point(272, 164);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(47, 20);
-            this.label125.TabIndex = 70;
-            this.label125.Text = "Mayo";
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label126.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label126.Location = new System.Drawing.Point(16, 202);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(80, 20);
-            this.label126.TabIndex = 69;
-            this.label126.Text = "Diciembre";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label127.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label127.Location = new System.Drawing.Point(16, 240);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(52, 20);
-            this.label127.TabIndex = 68;
-            this.label127.Text = "Enero";
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label128.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label128.Location = new System.Drawing.Point(16, 126);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(66, 20);
-            this.label128.TabIndex = 67;
-            this.label128.Text = "Octubre";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label129.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label129.Location = new System.Drawing.Point(16, 164);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(84, 20);
-            this.label129.TabIndex = 66;
-            this.label129.Text = "Noviembre";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label130.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label130.Location = new System.Drawing.Point(16, 88);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(91, 20);
-            this.label130.TabIndex = 65;
-            this.label130.Text = "Septiembre";
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label131.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label131.Location = new System.Drawing.Point(16, 50);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(93, 20);
-            this.label131.TabIndex = 62;
-            this.label131.Text = "Diagnostico";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label132.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label132.Location = new System.Drawing.Point(223, 0);
-            this.label132.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(138, 26);
-            this.label132.TabIndex = 44;
-            this.label132.Text = "Inasistencias";
-            // 
             // materialTabSelector1
             // 
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
@@ -5027,39 +4396,36 @@
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
             this.materialTabControl1.ResumeLayout(false);
-            this.Esp.ResumeLayout(false);
+            this.Septiembre.ResumeLayout(false);
             this.BoxGenero.ResumeLayout(false);
             this.BoxGenero.PerformLayout();
-            this.Mat.ResumeLayout(false);
+            this.Octubre.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.Ingles.ResumeLayout(false);
+            this.Noviembre.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.CNat.ResumeLayout(false);
+            this.Diciembre.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.Geo.ResumeLayout(false);
+            this.Enero.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.Hist.ResumeLayout(false);
+            this.Febrero.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.FormCiv.ResumeLayout(false);
+            this.Marzo.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.Artes.ResumeLayout(false);
+            this.Abril.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.Edsocial.ResumeLayout(false);
+            this.Mayo.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.EdFisica.ResumeLayout(false);
+            this.Junio.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.Inasist.ResumeLayout(false);
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5068,18 +4434,17 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage Esp;
-        private System.Windows.Forms.TabPage Mat;
+        private System.Windows.Forms.TabPage Septiembre;
+        private System.Windows.Forms.TabPage Octubre;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private System.Windows.Forms.TabPage Ingles;
-        private System.Windows.Forms.TabPage CNat;
-        private System.Windows.Forms.TabPage Geo;
-        private System.Windows.Forms.TabPage Hist;
-        private System.Windows.Forms.TabPage FormCiv;
-        private System.Windows.Forms.TabPage Artes;
-        private System.Windows.Forms.TabPage Edsocial;
-        private System.Windows.Forms.TabPage EdFisica;
-        private System.Windows.Forms.TabPage Inasist;
+        private System.Windows.Forms.TabPage Noviembre;
+        private System.Windows.Forms.TabPage Diciembre;
+        private System.Windows.Forms.TabPage Enero;
+        private System.Windows.Forms.TabPage Febrero;
+        private System.Windows.Forms.TabPage Marzo;
+        private System.Windows.Forms.TabPage Abril;
+        private System.Windows.Forms.TabPage Mayo;
+        private System.Windows.Forms.TabPage Junio;
         private System.Windows.Forms.GroupBox BoxGenero;
         private System.Windows.Forms.ComboBox Espjun;
         private System.Windows.Forms.ComboBox Espmay;
@@ -5323,29 +4688,5 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DomainUpDown InaJun;
-        private System.Windows.Forms.DomainUpDown InaAbr;
-        private System.Windows.Forms.DomainUpDown InaFeb;
-        private System.Windows.Forms.DomainUpDown Inanov;
-        private System.Windows.Forms.DomainUpDown InaSep;
-        private System.Windows.Forms.DomainUpDown InaMay;
-        private System.Windows.Forms.DomainUpDown InaMarz;
-        private System.Windows.Forms.DomainUpDown InaOct;
-        private System.Windows.Forms.DomainUpDown InaDic;
-        private System.Windows.Forms.DomainUpDown InaEne;
-        private System.Windows.Forms.DomainUpDown InaDiag;
-        private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.Label label122;
-        private System.Windows.Forms.Label label123;
-        private System.Windows.Forms.Label label124;
-        private System.Windows.Forms.Label label125;
-        private System.Windows.Forms.Label label126;
-        private System.Windows.Forms.Label label127;
-        private System.Windows.Forms.Label label128;
-        private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.Label label130;
-        private System.Windows.Forms.Label label131;
-        private System.Windows.Forms.Label label132;
     }
 }
