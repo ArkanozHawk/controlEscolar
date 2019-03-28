@@ -969,7 +969,7 @@ namespace Control_Escolar
         }
 
 
-        public void caliesp()
+        public void calisep()
         {
 
 
@@ -1002,6 +1002,47 @@ namespace Control_Escolar
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
                     case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
                    // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+
+        public void caliOct()
+        {
+
+
+            Español = EspDiag.SelectedItem.ToString();
+            Historia = Espene.SelectedItem.ToString();
+            FormacionCiv = EspFeb.SelectedItem.ToString();
+            Artess = EspMarz.SelectedItem.ToString();
+            Edsocio = Espabril.SelectedItem.ToString();
+            EducacionF = Espmay.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = EspSep.SelectedItem.ToString();
+            Ingless = EspOct.SelectedItem.ToString();
+            CienciasN = Espnov.SelectedItem.ToString();
+            Geografia = Espdic.SelectedItem.ToString();
+            Historia = Espene.SelectedItem.ToString();
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
 
@@ -1433,7 +1474,7 @@ namespace Control_Escolar
         }
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
-            caliesp();
+           calisep();
             MessageBox.Show("Calificaciones registradas con exito");
             //foreach (TabPage page in materialTabControl1.TabPages)
             //{
