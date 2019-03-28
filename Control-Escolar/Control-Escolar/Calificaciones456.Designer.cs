@@ -93,17 +93,17 @@
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
-            this.cmbJunioIng = new System.Windows.Forms.ComboBox();
-            this.cmbMayoIng = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilIng = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoIng = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroIng = new System.Windows.Forms.ComboBox();
-            this.cmbEneroIng = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreIng = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreIng = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreIng = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreIng = new System.Windows.Forms.ComboBox();
-            this.cmbDiagIng = new System.Windows.Forms.ComboBox();
+            this.cmbNovIna = new System.Windows.Forms.ComboBox();
+            this.cmbNovEdFisi = new System.Windows.Forms.ComboBox();
+            this.cmbNovEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbNovArtes = new System.Windows.Forms.ComboBox();
+            this.cmbNovFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbNovHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbNovGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbNovCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbNovIngles = new System.Windows.Forms.ComboBox();
+            this.cmbNovmate = new System.Windows.Forms.ComboBox();
+            this.cmbNovEspañol = new System.Windows.Forms.ComboBox();
             this.label36 = new System.Windows.Forms.Label();
             this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -1126,17 +1126,17 @@
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.label29);
             this.groupBox2.Controls.Add(this.label30);
-            this.groupBox2.Controls.Add(this.cmbJunioIng);
-            this.groupBox2.Controls.Add(this.cmbMayoIng);
-            this.groupBox2.Controls.Add(this.cmbAbrilIng);
-            this.groupBox2.Controls.Add(this.cmbMarzoIng);
-            this.groupBox2.Controls.Add(this.cmbFebreroIng);
-            this.groupBox2.Controls.Add(this.cmbEneroIng);
-            this.groupBox2.Controls.Add(this.cmbDiciembreIng);
-            this.groupBox2.Controls.Add(this.cmbNoviembreIng);
-            this.groupBox2.Controls.Add(this.cmbOctubreIng);
-            this.groupBox2.Controls.Add(this.cmbSeptiembreIng);
-            this.groupBox2.Controls.Add(this.cmbDiagIng);
+            this.groupBox2.Controls.Add(this.cmbNovIna);
+            this.groupBox2.Controls.Add(this.cmbNovEdFisi);
+            this.groupBox2.Controls.Add(this.cmbNovEdsocio);
+            this.groupBox2.Controls.Add(this.cmbNovArtes);
+            this.groupBox2.Controls.Add(this.cmbNovFormacion);
+            this.groupBox2.Controls.Add(this.cmbNovHistoria);
+            this.groupBox2.Controls.Add(this.cmbNovGeografia);
+            this.groupBox2.Controls.Add(this.cmbNovCiencias);
+            this.groupBox2.Controls.Add(this.cmbNovIngles);
+            this.groupBox2.Controls.Add(this.cmbNovmate);
+            this.groupBox2.Controls.Add(this.cmbNovEspañol);
             this.groupBox2.Controls.Add(this.label36);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox2.Location = new System.Drawing.Point(107, 18);
@@ -1267,10 +1267,10 @@
             this.label30.TabIndex = 103;
             this.label30.Text = "Español";
             // 
-            // cmbJunioIng
+            // cmbNovIna
             // 
-            this.cmbJunioIng.FormattingEnabled = true;
-            this.cmbJunioIng.Items.AddRange(new object[] {
+            this.cmbNovIna.FormattingEnabled = true;
+            this.cmbNovIna.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1282,15 +1282,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioIng.Location = new System.Drawing.Point(491, 197);
-            this.cmbJunioIng.Name = "cmbJunioIng";
-            this.cmbJunioIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioIng.TabIndex = 96;
+            this.cmbNovIna.Location = new System.Drawing.Point(491, 197);
+            this.cmbNovIna.Name = "cmbNovIna";
+            this.cmbNovIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovIna.TabIndex = 96;
             // 
-            // cmbMayoIng
+            // cmbNovEdFisi
             // 
-            this.cmbMayoIng.FormattingEnabled = true;
-            this.cmbMayoIng.Items.AddRange(new object[] {
+            this.cmbNovEdFisi.FormattingEnabled = true;
+            this.cmbNovEdFisi.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1302,15 +1302,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoIng.Location = new System.Drawing.Point(491, 158);
-            this.cmbMayoIng.Name = "cmbMayoIng";
-            this.cmbMayoIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoIng.TabIndex = 95;
+            this.cmbNovEdFisi.Location = new System.Drawing.Point(491, 158);
+            this.cmbNovEdFisi.Name = "cmbNovEdFisi";
+            this.cmbNovEdFisi.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovEdFisi.TabIndex = 95;
             // 
-            // cmbAbrilIng
+            // cmbNovEdsocio
             // 
-            this.cmbAbrilIng.FormattingEnabled = true;
-            this.cmbAbrilIng.Items.AddRange(new object[] {
+            this.cmbNovEdsocio.FormattingEnabled = true;
+            this.cmbNovEdsocio.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1322,15 +1322,16 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilIng.Location = new System.Drawing.Point(491, 119);
-            this.cmbAbrilIng.Name = "cmbAbrilIng";
-            this.cmbAbrilIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilIng.TabIndex = 94;
+            this.cmbNovEdsocio.Location = new System.Drawing.Point(491, 119);
+            this.cmbNovEdsocio.Name = "cmbNovEdsocio";
+            this.cmbNovEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovEdsocio.TabIndex = 94;
+            this.cmbNovEdsocio.SelectedIndexChanged += new System.EventHandler(this.CmbAbrilIng_SelectedIndexChanged);
             // 
-            // cmbMarzoIng
+            // cmbNovArtes
             // 
-            this.cmbMarzoIng.FormattingEnabled = true;
-            this.cmbMarzoIng.Items.AddRange(new object[] {
+            this.cmbNovArtes.FormattingEnabled = true;
+            this.cmbNovArtes.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1342,15 +1343,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoIng.Location = new System.Drawing.Point(491, 81);
-            this.cmbMarzoIng.Name = "cmbMarzoIng";
-            this.cmbMarzoIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoIng.TabIndex = 93;
+            this.cmbNovArtes.Location = new System.Drawing.Point(491, 81);
+            this.cmbNovArtes.Name = "cmbNovArtes";
+            this.cmbNovArtes.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovArtes.TabIndex = 93;
             // 
-            // cmbFebreroIng
+            // cmbNovFormacion
             // 
-            this.cmbFebreroIng.FormattingEnabled = true;
-            this.cmbFebreroIng.Items.AddRange(new object[] {
+            this.cmbNovFormacion.FormattingEnabled = true;
+            this.cmbNovFormacion.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1362,15 +1363,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroIng.Location = new System.Drawing.Point(491, 42);
-            this.cmbFebreroIng.Name = "cmbFebreroIng";
-            this.cmbFebreroIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroIng.TabIndex = 92;
+            this.cmbNovFormacion.Location = new System.Drawing.Point(491, 42);
+            this.cmbNovFormacion.Name = "cmbNovFormacion";
+            this.cmbNovFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovFormacion.TabIndex = 92;
             // 
-            // cmbEneroIng
+            // cmbNovHistoria
             // 
-            this.cmbEneroIng.FormattingEnabled = true;
-            this.cmbEneroIng.Items.AddRange(new object[] {
+            this.cmbNovHistoria.FormattingEnabled = true;
+            this.cmbNovHistoria.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1382,15 +1383,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbEneroIng.Location = new System.Drawing.Point(183, 237);
-            this.cmbEneroIng.Name = "cmbEneroIng";
-            this.cmbEneroIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroIng.TabIndex = 91;
+            this.cmbNovHistoria.Location = new System.Drawing.Point(183, 237);
+            this.cmbNovHistoria.Name = "cmbNovHistoria";
+            this.cmbNovHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovHistoria.TabIndex = 91;
             // 
-            // cmbDiciembreIng
+            // cmbNovGeografia
             // 
-            this.cmbDiciembreIng.FormattingEnabled = true;
-            this.cmbDiciembreIng.Items.AddRange(new object[] {
+            this.cmbNovGeografia.FormattingEnabled = true;
+            this.cmbNovGeografia.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1402,15 +1403,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiciembreIng.Location = new System.Drawing.Point(183, 198);
-            this.cmbDiciembreIng.Name = "cmbDiciembreIng";
-            this.cmbDiciembreIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreIng.TabIndex = 90;
+            this.cmbNovGeografia.Location = new System.Drawing.Point(183, 198);
+            this.cmbNovGeografia.Name = "cmbNovGeografia";
+            this.cmbNovGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovGeografia.TabIndex = 90;
             // 
-            // cmbNoviembreIng
+            // cmbNovCiencias
             // 
-            this.cmbNoviembreIng.FormattingEnabled = true;
-            this.cmbNoviembreIng.Items.AddRange(new object[] {
+            this.cmbNovCiencias.FormattingEnabled = true;
+            this.cmbNovCiencias.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1422,15 +1423,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbNoviembreIng.Location = new System.Drawing.Point(183, 159);
-            this.cmbNoviembreIng.Name = "cmbNoviembreIng";
-            this.cmbNoviembreIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreIng.TabIndex = 89;
+            this.cmbNovCiencias.Location = new System.Drawing.Point(183, 159);
+            this.cmbNovCiencias.Name = "cmbNovCiencias";
+            this.cmbNovCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovCiencias.TabIndex = 89;
             // 
-            // cmbOctubreIng
+            // cmbNovIngles
             // 
-            this.cmbOctubreIng.FormattingEnabled = true;
-            this.cmbOctubreIng.Items.AddRange(new object[] {
+            this.cmbNovIngles.FormattingEnabled = true;
+            this.cmbNovIngles.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1442,15 +1443,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreIng.Location = new System.Drawing.Point(183, 120);
-            this.cmbOctubreIng.Name = "cmbOctubreIng";
-            this.cmbOctubreIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreIng.TabIndex = 88;
+            this.cmbNovIngles.Location = new System.Drawing.Point(183, 120);
+            this.cmbNovIngles.Name = "cmbNovIngles";
+            this.cmbNovIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovIngles.TabIndex = 88;
             // 
-            // cmbSeptiembreIng
+            // cmbNovmate
             // 
-            this.cmbSeptiembreIng.FormattingEnabled = true;
-            this.cmbSeptiembreIng.Items.AddRange(new object[] {
+            this.cmbNovmate.FormattingEnabled = true;
+            this.cmbNovmate.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1462,15 +1463,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbSeptiembreIng.Location = new System.Drawing.Point(183, 81);
-            this.cmbSeptiembreIng.Name = "cmbSeptiembreIng";
-            this.cmbSeptiembreIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreIng.TabIndex = 87;
+            this.cmbNovmate.Location = new System.Drawing.Point(183, 81);
+            this.cmbNovmate.Name = "cmbNovmate";
+            this.cmbNovmate.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovmate.TabIndex = 87;
             // 
-            // cmbDiagIng
+            // cmbNovEspañol
             // 
-            this.cmbDiagIng.FormattingEnabled = true;
-            this.cmbDiagIng.Items.AddRange(new object[] {
+            this.cmbNovEspañol.FormattingEnabled = true;
+            this.cmbNovEspañol.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1482,10 +1483,10 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiagIng.Location = new System.Drawing.Point(183, 42);
-            this.cmbDiagIng.Name = "cmbDiagIng";
-            this.cmbDiagIng.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagIng.TabIndex = 75;
+            this.cmbNovEspañol.Location = new System.Drawing.Point(183, 42);
+            this.cmbNovEspañol.Name = "cmbNovEspañol";
+            this.cmbNovEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbNovEspañol.TabIndex = 75;
             // 
             // label36
             // 
@@ -4616,17 +4617,17 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cmbJunioIng;
-        private System.Windows.Forms.ComboBox cmbMayoIng;
-        private System.Windows.Forms.ComboBox cmbAbrilIng;
-        private System.Windows.Forms.ComboBox cmbMarzoIng;
-        private System.Windows.Forms.ComboBox cmbFebreroIng;
-        private System.Windows.Forms.ComboBox cmbEneroIng;
-        private System.Windows.Forms.ComboBox cmbDiciembreIng;
-        private System.Windows.Forms.ComboBox cmbNoviembreIng;
-        private System.Windows.Forms.ComboBox cmbOctubreIng;
-        private System.Windows.Forms.ComboBox cmbSeptiembreIng;
-        private System.Windows.Forms.ComboBox cmbDiagIng;
+        private System.Windows.Forms.ComboBox cmbNovIna;
+        private System.Windows.Forms.ComboBox cmbNovEdFisi;
+        private System.Windows.Forms.ComboBox cmbNovEdsocio;
+        private System.Windows.Forms.ComboBox cmbNovArtes;
+        private System.Windows.Forms.ComboBox cmbNovFormacion;
+        private System.Windows.Forms.ComboBox cmbNovHistoria;
+        private System.Windows.Forms.ComboBox cmbNovGeografia;
+        private System.Windows.Forms.ComboBox cmbNovCiencias;
+        private System.Windows.Forms.ComboBox cmbNovIngles;
+        private System.Windows.Forms.ComboBox cmbNovmate;
+        private System.Windows.Forms.ComboBox cmbNovEspañol;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ComboBox cmbJunioNaturales;
