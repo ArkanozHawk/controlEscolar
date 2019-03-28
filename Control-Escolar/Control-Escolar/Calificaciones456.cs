@@ -19,8 +19,8 @@ namespace Control_Escolar
     public partial class Calificaciones456 : MaterialForm
     {
         double calificacion;
-        string enero, febrero, marzo, abril, mayo, junio, septiembre, octubre, noviembre, diciembre, diagnostico;
-        string mes;
+        string Español,Matematicas,Ingless,CienciasN,Geografia,Historia,FormacionCiv,Artess,Edsocio,EducacionF,Inasistencias;
+        string materia, mes;
         public Calificaciones456()
         {
             InitializeComponent();
@@ -39,10 +39,25 @@ namespace Control_Escolar
             Application.Run(new principal());
         }
 
+        private void GroupBox6_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CmbMarzoMate_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public static void ThreadGenerarBoletas()
 
         {
             Application.Run(new GenerarBoletas());
+        }
+
+        private void CmbAbrilIng_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -968,86 +983,509 @@ namespace Control_Escolar
             MessageBox.Show("¡PDF creado!");
         }
 
+       
 
-        public void caliesp()
+        public void calisep()
         {
 
 
-            diagnostico = EspDiag.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
-            febrero = EspFeb.SelectedItem.ToString();
-            marzo = EspMarz.SelectedItem.ToString();
-            abril = Espabril.SelectedItem.ToString();
-            mayo = Espmay.SelectedItem.ToString();
-            junio = Espjun.SelectedItem.ToString();
-            septiembre = EspSep.SelectedItem.ToString();
-            octubre = EspOct.SelectedItem.ToString();
-            noviembre = Espnov.SelectedItem.ToString();
-            diciembre = Espdic.SelectedItem.ToString();
-            enero = Espene.SelectedItem.ToString();
+            Español = EspDiag.SelectedItem.ToString();
+            Historia = Espene.SelectedItem.ToString();
+            FormacionCiv = EspFeb.SelectedItem.ToString();
+            Artess = EspMarz.SelectedItem.ToString();
+            Edsocio = Espabril.SelectedItem.ToString();
+            EducacionF = Espmay.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = EspSep.SelectedItem.ToString();
+            Ingless = EspOct.SelectedItem.ToString();
+            CienciasN = Espnov.SelectedItem.ToString();
+            Geografia = Espdic.SelectedItem.ToString();
+            Historia = Espene.SelectedItem.ToString();
 
-
-
-            for ( int i = 0; i <= 11; i++)
+            for (int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria();  insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                   case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                  //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                   // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
 
             }
 
+        }
+
+        private void CmbJunioSocio_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
-        public void calimat()
+
+        public void caliOct()
         {
 
 
-            diagnostico = cmbDiagMate.SelectedItem.ToString();
-            enero = cmbEneroMate.SelectedItem.ToString();
-            febrero = cmbFebreroMate.SelectedItem.ToString();
-            marzo = cmbMarzoMate.SelectedItem.ToString();
-            abril = cmbAbrilMate.SelectedItem.ToString();
-            mayo = cmbMayoMate.SelectedItem.ToString();
-            junio = cmbJunioMate.SelectedItem.ToString();
-            septiembre = cmbSeptiembreMate.SelectedItem.ToString();
-            octubre = cmbOctubreMate.SelectedItem.ToString();
-            noviembre = cmbNoviembreMate.SelectedItem.ToString();
-            diciembre = cmbDiciembreMate.SelectedItem.ToString();
+            Español = cmbEspañol.SelectedItem.ToString();
+            Historia = cmbOctubreHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbOctubreFormacion.SelectedItem.ToString();
+            Artess = cmboctubreArt.SelectedItem.ToString();
+            Edsocio = cmbOctubreEdsocio.SelectedItem.ToString();
+            EducacionF = cmbOctubreEdFisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbOctubreMate.SelectedItem.ToString();
+            Ingless = cmbOctubreIngles.SelectedItem.ToString();
+            CienciasN = cmbOctubreCiencias.SelectedItem.ToString();
+            Geografia = cmbOctubreGeografia.SelectedItem.ToString();
+            
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                  //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
 
 
+        public void caliNov()
+        {
+
+
+            Español = cmbNovEspañol.SelectedItem.ToString();
+            Historia = cmbNovHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbNovFormacion.SelectedItem.ToString();
+            Artess = cmbNovArtes.SelectedItem.ToString();
+            Edsocio = cmbNovEdsocio.SelectedItem.ToString();
+            EducacionF = cmbNovEdFisi.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbNovmate.SelectedItem.ToString();
+            Ingless = cmbNovIngles.SelectedItem.ToString();
+            CienciasN = cmbNovCiencias.SelectedItem.ToString();
+            Geografia = cmbNovGeografia.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
             {
                 switch (i)
                 {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
 
             }
+
+        }
+
+        public void caliDic()
+        {
+
+
+            Español = cmbDicEspañol.SelectedItem.ToString();
+            Historia = cmbDicHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbDicForm.SelectedItem.ToString();
+            Artess = cmbDicArtes.SelectedItem.ToString();
+            Edsocio = cmbDicEdsocio.SelectedItem.ToString();
+            EducacionF = cmbDicEdFisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbDicMate.SelectedItem.ToString();
+            Ingless = cmbDicIngles.SelectedItem.ToString();
+            CienciasN = cmbDicCiencias.SelectedItem.ToString();
+            Geografia = cmbDicGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        private void CmbMayoinasis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        public void caliEnero()
+        {
+
+
+            Español = cmbEneroEspañol.SelectedItem.ToString();
+            Historia = cmbEneroHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbEneroFormacion.SelectedItem.ToString();
+            Artess = cmbEneroArtess.SelectedItem.ToString();
+            Edsocio = cmbEneroEdsocio.SelectedItem.ToString();
+            EducacionF = cmbEneroEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbEneroMate.SelectedItem.ToString();
+            Ingless = cmbEneroIngles.SelectedItem.ToString();
+            CienciasN = cmbEneroCiencias.SelectedItem.ToString();
+            Geografia = cmbEneroGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        public void caliFebrero()
+        {
+
+
+            Español = cmbFebreroEspañol.SelectedItem.ToString();
+            Historia = cmbFebreroHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbFebreroFormacion.SelectedItem.ToString();
+            Artess = cmbFebreroArtess.SelectedItem.ToString();
+            Edsocio = cmbFebreroEdsocio.SelectedItem.ToString();
+            EducacionF = cmbFebreroEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbFebreroMate.SelectedItem.ToString();
+            Ingless = cmbfebreroIngles.SelectedItem.ToString();
+            CienciasN = cmbFebreroCiencias.SelectedItem.ToString();
+            Geografia = cmbFebreroGeo.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+
+        public void caliMarzo()
+        {
+
+
+            Español = cmbmarzoEspañol.SelectedItem.ToString();
+            Historia = cmbMarzoHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbMarzoFormacion.SelectedItem.ToString();
+            Artess = cmbMarzoArtess.SelectedItem.ToString();
+            Edsocio = cmbMarzoEdsocio.SelectedItem.ToString();
+            EducacionF = cmbMarzoEdFisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbMarzoMate.SelectedItem.ToString();
+            Ingless = cmbMarzoIngles.SelectedItem.ToString();
+            CienciasN = cmbMarzoCiencias.SelectedItem.ToString();
+            Geografia = cmbMarzoGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        public void caliAbril()
+        {
+
+
+            Español = cmbAbrilEspañol.SelectedItem.ToString();
+            Historia = cmbAbrilHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbAbrilFormacion.SelectedItem.ToString();
+            Artess = cmbAbrilArtess.SelectedItem.ToString();
+            Edsocio = cmbAbrilEdsocio.SelectedItem.ToString();
+            EducacionF = cmbAbrilEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbAbrilmate.SelectedItem.ToString();
+            Ingless = cmbAbrilIngles.SelectedItem.ToString();
+            CienciasN = cmbAbrilCiencias.SelectedItem.ToString();
+            Geografia = cmbAbrilGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+        public void caliMayo()
+        {
+
+
+            Español = cmbmayoEspañol.SelectedItem.ToString();
+            Historia = cmbMayohistoria.SelectedItem.ToString();
+            FormacionCiv = cmbMayoFormacion.SelectedItem.ToString();
+            Artess =cmbMayoArtes.SelectedItem.ToString();
+            Edsocio = cmbMayoEdsocio.SelectedItem.ToString();
+            EducacionF = cmbMayoEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbMayoMate.SelectedItem.ToString();
+            Ingless = cmbMayoIngles.SelectedItem.ToString();
+            CienciasN = cmbMayoCiencias.SelectedItem.ToString();
+            Geografia = cmbMayoGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        public void caliJunio()
+        {
+
+
+            Español = cmbDJunioEspañol.SelectedItem.ToString();
+            Historia = cmbJuniohistorias.SelectedItem.ToString();
+            FormacionCiv = cmbJunioFormacionCivica.SelectedItem.ToString();
+            Artess = cmbJunioArtess.SelectedItem.ToString();
+            Edsocio = cmbJunioEdsocioe.SelectedItem.ToString();
+            EducacionF = cmbJunioEdFis.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbJuniomate.SelectedItem.ToString();
+            Ingless = cmbJunioingless.SelectedItem.ToString();
+            CienciasN = cmbJunioingless.SelectedItem.ToString();
+            Geografia = cmbJunioGeofgrafia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+        public void buscarmateria()
+        {
+            mes = materialTabControl1.SelectedTab.Name;
+            MySqlConnection conn;
+            MySqlCommand com;
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT * FROM `materias` WHERE `nombre` = "+materia+"  AND `idGrado` = 4 ";
+            MessageBox.Show(query);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+            try
+            {
+                sesion.idmateria = Convert.ToString(myreader["idMaterias"]);
+
+                MessageBox.Show(sesion.idmateria.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+        //for ( int i = 0; i <= 11; i++)
+        //{
+        //    switch (i)
+        //    {
+        //        case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+        //        case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+        //        case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+        //        case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+        //        case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+        //        case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+        //        case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+        //        case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+        //        case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+        //        case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+        //        case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+        //    }
+
+        //}
+
+
+
+
+
+        public void calimat()
+        {
+
+
+            //diagnostico = cmbDiagMate.SelectedItem.ToString();
+            //enero = cmbEneroMate.SelectedItem.ToString();
+            //febrero = cmbFebreroMate.SelectedItem.ToString();
+            //marzo = cmbMarzoMate.SelectedItem.ToString();
+            //abril = cmbAbrilMate.SelectedItem.ToString();
+            //mayo = cmbMayoMate.SelectedItem.ToString();
+            //junio = cmbJunioMate.SelectedItem.ToString();
+            //septiembre = cmbSeptiembreMate.SelectedItem.ToString();
+            //octubre = cmbOctubreMate.SelectedItem.ToString();
+            //noviembre = cmbNoviembreMate.SelectedItem.ToString();
+            //diciembre = cmbDiciembreMate.SelectedItem.ToString();
+
+
+
+
+            //for (int i = 0; i <= 11; i++)
+            //{
+            //    switch (i)
+            //    {
+            //        case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //        case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //        case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //        case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //        case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //        case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //        case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //        case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //        case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //        case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //        case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //    }
+
+            //}
 
 
         }
@@ -1056,473 +1494,548 @@ namespace Control_Escolar
         {
 
 
-            diagnostico = cmbDiagIng.SelectedItem.ToString();
-            enero = cmbEneroIng.SelectedItem.ToString();
-            febrero = cmbFebreroIng.SelectedItem.ToString();
-            marzo = cmbMarzoIng.SelectedItem.ToString();
-            abril = cmbAbrilIng.SelectedItem.ToString();
-            mayo = cmbMayoIng.SelectedItem.ToString();
-            junio = cmbJunioIng.SelectedItem.ToString();
-            septiembre = cmbSeptiembreIng.SelectedItem.ToString();
-            octubre = cmbOctubreIng.SelectedItem.ToString();
-            noviembre = cmbNoviembreIng.SelectedItem.ToString();
-            diciembre = cmbDiciembreIng.SelectedItem.ToString();
-
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-
-        public void caliCnat()
-        {
-
-
-            diagnostico = cmbDiagNaturales.SelectedItem.ToString();
-            enero = cmbEneroNaturales.SelectedItem.ToString();
-            febrero = cmbFebreroNaturales.SelectedItem.ToString();
-            marzo = cmbMarzoNaturales.SelectedItem.ToString();
-            abril = cmbAbrilNaturales.SelectedItem.ToString();
-            mayo = cmbMayoNaturales.SelectedItem.ToString();
-            junio = cmbJunioNaturales.SelectedItem.ToString();
-            septiembre = cmbSeptiembreNaturales.SelectedItem.ToString();
-            octubre = cmbOctubreNaturales.SelectedItem.ToString();
-            noviembre = cmbNoviembreNaturales.SelectedItem.ToString();
-            diciembre = cmbDiciembreNaturales.SelectedItem.ToString();
-
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-        public void caliGeo()
-        {
-
-
-            diagnostico = cmbDiagGeo.SelectedItem.ToString();
-            enero = cmbEneroGeo.SelectedItem.ToString();
-            febrero = cmbFebreroGeo.SelectedItem.ToString();
-            marzo = cmbMarzoGeo.SelectedItem.ToString();
-            abril = cmbAbrilGeo.SelectedItem.ToString();
-            mayo = cmbMayoGeo.SelectedItem.ToString();
-            junio = cmbJunioGeo.SelectedItem.ToString();
-            septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
-            octubre = cmbOctubreGeo.SelectedItem.ToString();
-            noviembre = cmbNoviembreGeo.SelectedItem.ToString();
-            diciembre = cmbDiciembreGeo.SelectedItem.ToString();
-
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-        public void caliHist()
-        {
-
-
-            diagnostico = cmbDiagHist.SelectedItem.ToString();
-            enero = cmbEneroHist.SelectedItem.ToString();
-            febrero = cmbFebreroHist.SelectedItem.ToString();
-            marzo = cmbMarzoGeo.SelectedItem.ToString();
-            abril = cmbAbrilGeo.SelectedItem.ToString();
-            mayo = cmbMayoGeo.SelectedItem.ToString();
-            junio = cmbJunioGeo.SelectedItem.ToString();
-            septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
-            octubre = cmbOctubreGeo.SelectedItem.ToString();
-            noviembre = cmbNoviembreGeo.SelectedItem.ToString();
-            diciembre = cmbDiciembreGeo.SelectedItem.ToString();
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-        public void Formacioncivi()
-        {
-
-
-            diagnostico = cmbDiagFCE.SelectedItem.ToString();
-            enero = cmbEneroFCE.SelectedItem.ToString();
-            febrero = cmbFebreroFCE.SelectedItem.ToString();
-            marzo = cmbMarzoFCE.SelectedItem.ToString();
-            abril = cmbAbrilFCE.SelectedItem.ToString();
-            mayo = cmbMayoFCE.SelectedItem.ToString();
-            junio = cmbJunioFCE.SelectedItem.ToString();
-            septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
-            octubre = cmbOctubreFCE.SelectedItem.ToString();
-            noviembre = cmbNoviembreFCE.SelectedItem.ToString();
-            diciembre = cmbDiciembreFCE.SelectedItem.ToString();
-
-
-
-            for (int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-
-        public void caliartes()
-        {
-
-
-            diagnostico = cmbDiagArtes.SelectedItem.ToString();
-            enero = cmbEneroFCE.SelectedItem.ToString();
-            febrero = cmbFebreroFCE.SelectedItem.ToString();
-            marzo = cmbMarzoFCE.SelectedItem.ToString();
-            abril = cmbAbrilFCE.SelectedItem.ToString();
-            mayo = cmbMayoFCE.SelectedItem.ToString();
-            junio = cmbJunioFCE.SelectedItem.ToString();
-            septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
-            octubre = cmbOctubreFCE.SelectedItem.ToString();
-            noviembre = cmbNoviembreFCE.SelectedItem.ToString();
-            diciembre = cmbDiciembreFCE.SelectedItem.ToString();
-
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-        public void caliEdus()
-        {
-
-
-            diagnostico = cmbDiagSocio.SelectedItem.ToString();
-            enero = cmbEneroSocio.SelectedItem.ToString();
-            febrero = cmbFebreroSocio.SelectedItem.ToString();
-            marzo = cmbMarzoSocio.SelectedItem.ToString();
-            abril = cmbAbrilSocio.SelectedItem.ToString();
-            mayo = cmbMayoSocio.SelectedItem.ToString();
-            junio = cmbJunioSocio.SelectedItem.ToString();
-            septiembre = cmbSeptiembreSocio.SelectedItem.ToString();
-            octubre = cmbOctubreSocio.SelectedItem.ToString();
-            noviembre = cmbNoviembreSocio.SelectedItem.ToString();
-            diciembre = cmbDiciembreSocio.SelectedItem.ToString();
-
-
-
-
-            for (   int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
-
-
-        }
-        public void caliEdufi()
-        {
-
-
-            diagnostico = cmbDiagEdFis.SelectedItem.ToString();
-            enero = cmbEneroEdFis.SelectedItem.ToString();
-            febrero = cmbFebreroEdFis.SelectedItem.ToString();
-            marzo = cmbMarzoEdFis.SelectedItem.ToString();
-            abril = cmbAbrilEdFis.SelectedItem.ToString();
-            mayo = cmbMayoEdFis.SelectedItem.ToString();
-            junio = cmbJunioEdFis.SelectedItem.ToString();
-            septiembre = cmbSeptiembreEdFis.SelectedItem.ToString();
-            octubre = cmbOctubreEdFis.SelectedItem.ToString();
-            noviembre = cmbNoviembreEdFis.SelectedItem.ToString();
-            diciembre = cmbDiciembreEdFis.SelectedItem.ToString();
-
-
-
-
-            for ( int i = 0; i <= 11; i++)
-            {
-                switch (i)
-                {
-                    case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
-                    case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
-                    case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
-                    case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
-                    case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
-                    case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
-                    case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
-                    case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
-                    case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
-                    case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
-                    case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
-
-                }
-
-            }
+            // Español = cmbDiagIng.SelectedItem.ToString();
+            //Historia = cmbEneroIng.SelectedItem.ToString();
+            //FormacionCiv = cmbFebreroIng.SelectedItem.ToString();
+            //Artess  = cmbMarzoIng.SelectedItem.ToString();
+            // Edsocio = cmbAbrilIng.SelectedItem.ToString();
+            //EducacionF  = cmbMayoIng.SelectedItem.ToString();
+            //Matematicas = cmbSeptiembreIng.SelectedItem.ToString();
+            //Ingless= cmbOctubreIng.SelectedItem.ToString();
+            //Geografia  = cmbNoviembreIng.SelectedItem.ToString();
+            // = cmbDiciembreIng.SelectedItem.ToString();
+
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+
+
+
+            //    }
+
+
+            //}
+
+            //public void caliCnat()
+            //{
+
+
+            //    diagnostico = cmbDiagNaturales.SelectedItem.ToString();
+            //    enero = cmbEneroNaturales.SelectedItem.ToString();
+            //    febrero = cmbFebreroNaturales.SelectedItem.ToString();
+            //    marzo = cmbMarzoNaturales.SelectedItem.ToString();
+            //    abril = cmbAbrilNaturales.SelectedItem.ToString();
+            //    mayo = cmbMayoNaturales.SelectedItem.ToString();
+            //    junio = cmbJunioNaturales.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreNaturales.SelectedItem.ToString();
+            //    octubre = cmbOctubreNaturales.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreNaturales.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreNaturales.SelectedItem.ToString();
+
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+            //public void caliGeo()
+            //{
+
+
+            //    diagnostico = cmbDiagGeo.SelectedItem.ToString();
+            //    enero = cmbEneroGeo.SelectedItem.ToString();
+            //    febrero = cmbFebreroGeo.SelectedItem.ToString();
+            //    marzo = cmbMarzoGeo.SelectedItem.ToString();
+            //    abril = cmbAbrilGeo.SelectedItem.ToString();
+            //    mayo = cmbMayoGeo.SelectedItem.ToString();
+            //    junio = cmbJunioGeo.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
+            //    octubre = cmbOctubreGeo.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreGeo.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreGeo.SelectedItem.ToString();
+
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+            //public void caliHist()
+            //{
+
+
+            //    diagnostico = cmbDiagHist.SelectedItem.ToString();
+            //    enero = cmbEneroHist.SelectedItem.ToString();
+            //    febrero = cmbFebreroHist.SelectedItem.ToString();
+            //    marzo = cmbMarzoGeo.SelectedItem.ToString();
+            //    abril = cmbAbrilGeo.SelectedItem.ToString();
+            //    mayo = cmbMayoGeo.SelectedItem.ToString();
+            //    junio = cmbJunioGeo.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreGeo.SelectedItem.ToString();
+            //    octubre = cmbOctubreGeo.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreGeo.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreGeo.SelectedItem.ToString();
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+            //public void Formacioncivi()
+            //{
+
+
+            //    diagnostico = cmbDiagFCE.SelectedItem.ToString();
+            //    enero = cmbEneroFCE.SelectedItem.ToString();
+            //    febrero = cmbFebreroFCE.SelectedItem.ToString();
+            //    marzo = cmbMarzoFCE.SelectedItem.ToString();
+            //    abril = cmbAbrilFCE.SelectedItem.ToString();
+            //    mayo = cmbMayoFCE.SelectedItem.ToString();
+            //    junio = cmbJunioFCE.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
+            //    octubre = cmbOctubreFCE.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreFCE.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreFCE.SelectedItem.ToString();
+
+
+
+            //    for (int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+
+            //public void caliartes()
+            //{
+
+
+            //    diagnostico = cmbDiagArtes.SelectedItem.ToString();
+            //    enero = cmbEneroFCE.SelectedItem.ToString();
+            //    febrero = cmbFebreroFCE.SelectedItem.ToString();
+            //    marzo = cmbMarzoFCE.SelectedItem.ToString();
+            //    abril = cmbAbrilFCE.SelectedItem.ToString();
+            //    mayo = cmbMayoFCE.SelectedItem.ToString();
+            //    junio = cmbJunioFCE.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreFCE.SelectedItem.ToString();
+            //    octubre = cmbOctubreFCE.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreFCE.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreFCE.SelectedItem.ToString();
+
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+            //public void caliEdus()
+            //{
+
+
+            //    diagnostico = cmbDiagSocio.SelectedItem.ToString();
+            //    enero = cmbEneroSocio.SelectedItem.ToString();
+            //    febrero = cmbFebreroSocio.SelectedItem.ToString();
+            //    marzo = cmbMarzoSocio.SelectedItem.ToString();
+            //    abril = cmbAbrilSocio.SelectedItem.ToString();
+            //    mayo = cmbMayoSocio.SelectedItem.ToString();
+            //    junio = cmbJunioSocio.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreSocio.SelectedItem.ToString();
+            //    octubre = cmbOctubreSocio.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreSocio.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreSocio.SelectedItem.ToString();
+
+
+
+
+            //    for (   int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
+
+
+            //}
+            //public void caliEdufi()
+            //{
+
+
+            //    diagnostico = cmbDiagEdFis.SelectedItem.ToString();
+            //    enero = cmbEneroEdFis.SelectedItem.ToString();
+            //    febrero = cmbFebreroEdFis.SelectedItem.ToString();
+            //    marzo = cmbMarzoEdFis.SelectedItem.ToString();
+            //    abril = cmbAbrilEdFis.SelectedItem.ToString();
+            //    mayo = cmbMayoEdFis.SelectedItem.ToString();
+            //    junio = cmbJunioEdFis.SelectedItem.ToString();
+            //    septiembre = cmbSeptiembreEdFis.SelectedItem.ToString();
+            //    octubre = cmbOctubreEdFis.SelectedItem.ToString();
+            //    noviembre = cmbNoviembreEdFis.SelectedItem.ToString();
+            //    diciembre = cmbDiciembreEdFis.SelectedItem.ToString();
+
+
+
+
+            //    for ( int i = 0; i <= 11; i++)
+            //    {
+            //        switch (i)
+            //        {
+            //            case 1: { mes = "Enero"; calificacion = Convert.ToDouble(enero); insertarcali(); } break;
+            //            case 2: { mes = "Febrero"; calificacion = Convert.ToDouble(febrero); insertarcali(); } break;
+            //            case 3: { mes = "marzo"; calificacion = Convert.ToDouble(marzo); insertarcali(); } break;
+            //            case 4: { mes = "abril"; calificacion = Convert.ToDouble(abril); insertarcali(); } break;
+            //            case 5: { mes = "mayo"; calificacion = Convert.ToDouble(mayo); insertarcali(); } break;
+            //            case 6: { mes = "junio"; calificacion = Convert.ToDouble(junio); insertarcali(); } break;
+            //            case 7: { mes = "septiembre"; calificacion = Convert.ToDouble(septiembre); insertarcali(); } break;
+            //            case 8: { mes = "octubre"; calificacion = Convert.ToDouble(octubre); insertarcali(); } break;
+            //            case 9: { mes = "noviembre"; calificacion = Convert.ToDouble(noviembre); insertarcali(); } break;
+            //            case 10: { mes = " diciembre"; calificacion = Convert.ToDouble(diciembre); insertarcali(); } break;
+            //            case 11: { mes = "Diagnostico"; calificacion = Convert.ToDouble(diagnostico); insertarcali(); } break;
+
+            //        }
+
+            //    }
 
 
         }
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
-
-            foreach (TabPage page in materialTabControl1.TabPages)
+            mes = materialTabControl1.SelectedTab.Name;
+            switch (mes)
             {
-               sesion.nombremateria = page.Name;
-
-                
-                    sesion.nombremateria = page.Name;
-
-
-
-
-
-                    MySqlConnection conn;
-                    MySqlCommand com;
-                    string conexion = "server=localhost;uid=root;database=nerivela";
-                    string query = "select * from materias where nombre like '" + sesion.nombremateria + "%' and idGradoM = " + sesion.grado + " order by materias.idMaterias ASC Limit 0, 30;";
-                    MessageBox.Show(query);
-                    conn = new MySqlConnection(conexion);
-                    conn.Open();
-
-                    com = new MySqlCommand(query, conn);
-
-                    MySqlDataReader myreader = com.ExecuteReader();
-
-
-                    myreader.Read();
-                    try
+                case "Septiembre":
                     {
-                        sesion.idmateria = Convert.ToString(myreader["idMaterias"]);
+                        calisep();
+                        MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                    } break;
 
-                        MessageBox.Show(sesion.idmateria.ToString());
+                case "Octubre":
+                    {
+                        caliOct();
+                        MessageBox.Show("Calificaciones  octubre registradas con exito");
                     }
-                    catch (Exception ex)
+                    break;
+
+                case "Noviembre":
                     {
-                        MessageBox.Show(ex.Message);
+                        caliNov();
+                        MessageBox.Show("Calificaciones  noviembre registradas con exito");
                     }
+                    break;
 
-
-
-
-                switch (sesion.nombremateria)
+                case "Diciembre":
                     {
-                        case "Esp":
-                            {
-                                caliesp();
-                                MessageBox.Show("calificacion guardada con exito");
-                            }
-                            break;
-                        case "Mat":
-                            {
-                                calimat();
-                                MessageBox.Show("calificacion guardada con exito");
-                                caliIngles();
-                            }
-                            break;
-                        case "Ingles":
-                            {
-                                caliIngles();
-                                MessageBox.Show("calificacion guardada con exito");
-                            }
-                            break;
-                        case "CienciasNaturales":
-                            {
-                                caliCnat();
-                                MessageBox.Show("calificacion guardada con exito");
-                            }
-                            break;
-                        case "Geo":
-                            {
-                                caliGeo();
-                                MessageBox.Show("calificacion guardada con exito");
-                                caliHist();
-                            }
-                            break;
-                        case "Hist":
-                            {
-                                caliHist();
-                                MessageBox.Show("calificacion guardada con exito");
-                            }
-                            break;
-                        case "FormacionCiv. y Étic":
-                            {
-                                Formacioncivi();
-                                MessageBox.Show("calificacion guardada con exito");
-                            }
-                          break;
-                    case "Artes":
-                        {
-                            caliartes();
-                            MessageBox.Show("calificacion guardada con exito");
-                        }
-                        break;
-                    case "Ed.socio":
-                        {
-                            caliEdus();
-                            MessageBox.Show("calificacion guardada con exito");
-                        }
-                        break;
-                    case "Ed. Física":
-                        {
-                            caliEdufi();
-                            MessageBox.Show("calificacion guardada con exito");
-                        }
-                        break;
-                        ;
+                        caliDic();
+                        MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                    }
+                    break;
 
+                case "Enero":
+                    {
+                        caliEnero();
+                        MessageBox.Show("Calificaciones  Enero registradas con exito");
+                    }
+                    break;
+                case "Febrero":
+                    {
+                        caliFebrero();
+                        MessageBox.Show("Calificaciones  febrero registradas con exito");
+                    }
+                    break;
 
-                }
+                case "Marzo":
+                    {
+                        caliMarzo();
+                        MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                    }
+                    break;
+
+                case "Abril":
+                    {
+                        caliAbril();
+                        MessageBox.Show("Calificaciones  Abril registradas con exito");
+                    }
+                    break;
+
+                case "Mayo":
+                    {
+                        caliMayo();
+                        MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                    }
+                    break;
+
+                case "Junio":
+                    {
+                        caliJunio();
+                        MessageBox.Show("Calificaciones  Junio registradas con exito");
+                    }
+                    break;
 
             }
-                //caliesp();
-                //MessageBox.Show("calificacion guardada con exito");
-                //calimat();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliIngles();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliCnat();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliGeo();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliHist();
-                //MessageBox.Show("calificacion guardada con exito");
-                //Formacioncivi();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliartes();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliEdus();
-                //MessageBox.Show("calificacion guardada con exito");
-                //caliEdufi();
-                //MessageBox.Show("calificacion guardada con exito");
+           //calisep();
+           // MessageBox.Show("Calificaciones registradas con exito");
+            //foreach (TabPage page in materialTabControl1.TabPages)
+            //{
+            //    sesion.nombremateria = page.Name;
+
+
+            //sesion.nombremateria = page.Name;
 
 
 
-            
+
+
+            //        MySqlConnection conn;
+            //        MySqlCommand com;
+            //        string conexion = "server=localhost;uid=root;database=nerivela";
+            //        string query = "select * from materias where nombre like '" + sesion.nombremateria + "%' and idGradoM = " + sesion.grado + " order by materias.idMaterias ASC Limit 0, 30;";
+            //        MessageBox.Show(query);
+            //        conn = new MySqlConnection(conexion);
+            //        conn.Open();
+
+            //        com = new MySqlCommand(query, conn);
+
+            //        MySqlDataReader myreader = com.ExecuteReader();
+
+
+            //        myreader.Read();
+            //        try
+            //        {
+            //            sesion.idmateria = Convert.ToString(myreader["idMaterias"]);
+
+            //            MessageBox.Show(sesion.idmateria.ToString());
+            //        }
+            //        catch (Exception ex)
+            //        {
+            //            MessageBox.Show(ex.Message);
+            //        }
+
+
+
+
+            //    switch (sesion.nombremateria)
+            //        {
+            //            case "Esp":
+            //                {
+            //                    caliesp();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                }
+            //                break;
+            //            case "Mat":
+            //                {
+            //                    calimat();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                    caliIngles();
+            //                }
+            //                break;
+            //            case "Ingles":
+            //                {
+            //                    caliIngles();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                }
+            //                break;
+            //            case "CienciasNaturales":
+            //                {
+            //                    caliCnat();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                }
+            //                break;
+            //            case "Geo":
+            //                {
+            //                    caliGeo();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                    caliHist();
+            //                }
+            //                break;
+            //            case "Hist":
+            //                {
+            //                    caliHist();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                }
+            //                break;
+            //            case "FormacionCiv. y Étic":
+            //                {
+            //                    Formacioncivi();
+            //                    MessageBox.Show("calificacion guardada con exito");
+            //                }
+            //              break;
+            //        case "Artes":
+            //            {
+            //                caliartes();
+            //                MessageBox.Show("calificacion guardada con exito");
+            //            }
+            //            break;
+            //        case "Ed.socio":
+            //            {
+            //                caliEdus();
+            //                MessageBox.Show("calificacion guardada con exito");
+            //            }
+            //            break;
+            //        case "Ed. Física":
+            //            {
+            //                caliEdufi();
+            //                MessageBox.Show("calificacion guardada con exito");
+            //            }
+            //            break;
+            //            ;
+
+
+            //    }
+
+            //}
+            //caliesp();
+            //MessageBox.Show("calificacion guardada con exito");
+            //calimat();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliIngles();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliCnat();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliGeo();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliHist();
+            //MessageBox.Show("calificacion guardada con exito");
+            //Formacioncivi();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliartes();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliEdus();
+            //MessageBox.Show("calificacion guardada con exito");
+            //caliEdufi();
+            //MessageBox.Show("calificacion guardada con exito");
+
+
+
+
         }
 
         public void insertarcali()
-        {    
+        {
 
-            
-            
+
+
             MySqlConnection conn;
             MySqlCommand com;
 
@@ -1547,11 +2060,11 @@ namespace Control_Escolar
 
 
 
-            //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+            string conexion1 = "server=localhost;uid=root;database=nerivela";
 
             string inserta_bitacora = "INSERT INTO `calificaciones`( `CalificacionMen`, `idAlumno`,`Mes`, `idMaterias`) VALUES (" + calificacion + "," + idalumno + ",'" + mes + "'," + sesion.idmateria + ");";
             MessageBox.Show(inserta_bitacora);
-            obj.insBitacora(conexion, inserta_bitacora);
+            obj.insBitacora(conexion1, inserta_bitacora);
 
         }
 

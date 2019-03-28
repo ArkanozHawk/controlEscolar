@@ -274,7 +274,6 @@ C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
-C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
@@ -414,7 +413,6 @@ C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bi
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
-C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
