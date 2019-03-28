@@ -68,22 +68,11 @@
             this.label123 = new System.Windows.Forms.Label();
             this.label122 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
-            this.cmbJunioMate = new System.Windows.Forms.ComboBox();
-            this.cmbMayoMate = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilMate = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoMate = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroMate = new System.Windows.Forms.ComboBox();
-            this.cmbEneroMate = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreMate = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreMate = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreMate = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreMate = new System.Windows.Forms.ComboBox();
-            this.cmbDiagMate = new System.Windows.Forms.ComboBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
+            this.cmbOctubreIna = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreEdFisica = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmboctubreArt = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreFormacion = new System.Windows.Forms.ComboBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -93,6 +82,17 @@
             this.label24 = new System.Windows.Forms.Label();
             this.Noviembre = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.cmbJunioIng = new System.Windows.Forms.ComboBox();
             this.cmbMayoIng = new System.Windows.Forms.ComboBox();
             this.cmbAbrilIng = new System.Windows.Forms.ComboBox();
@@ -132,17 +132,6 @@
             this.cmbOctubreGeo = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreGeo = new System.Windows.Forms.ComboBox();
             this.cmbDiagGeo = new System.Windows.Forms.ComboBox();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -157,17 +146,6 @@
             this.cmbOctubreHist = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreHist = new System.Windows.Forms.ComboBox();
             this.cmbDiagHist = new System.Windows.Forms.ComboBox();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
             this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
@@ -182,17 +160,6 @@
             this.cmbOctubreFCE = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreFCE = new System.Windows.Forms.ComboBox();
             this.cmbDiagFCE = new System.Windows.Forms.ComboBox();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
             this.label84 = new System.Windows.Forms.Label();
             this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -207,17 +174,6 @@
             this.cmbOctubreArtes = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreArtes = new System.Windows.Forms.ComboBox();
             this.cmbDiagArtes = new System.Windows.Forms.ComboBox();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.Mayo = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -232,17 +188,6 @@
             this.cmbOctubreSocio = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreSocio = new System.Windows.Forms.ComboBox();
             this.cmbDiagSocio = new System.Windows.Forms.ComboBox();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
             this.label108 = new System.Windows.Forms.Label();
             this.Junio = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -257,6 +202,77 @@
             this.cmbOctubreEdFis = new System.Windows.Forms.ComboBox();
             this.cmbSeptiembreEdFis = new System.Windows.Forms.ComboBox();
             this.cmbDiagEdFis = new System.Windows.Forms.ComboBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
@@ -268,22 +284,17 @@
             this.label117 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
-            this.label120 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.cmbEspañol = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreMate = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreIngles = new System.Windows.Forms.ComboBox();
             this.materialTabControl1.SuspendLayout();
             this.Septiembre.SuspendLayout();
             this.BoxGenero.SuspendLayout();
@@ -764,17 +775,17 @@
             this.groupBox1.Controls.Add(this.label123);
             this.groupBox1.Controls.Add(this.label122);
             this.groupBox1.Controls.Add(this.label121);
-            this.groupBox1.Controls.Add(this.cmbJunioMate);
-            this.groupBox1.Controls.Add(this.cmbMayoMate);
-            this.groupBox1.Controls.Add(this.cmbAbrilMate);
-            this.groupBox1.Controls.Add(this.cmbMarzoMate);
-            this.groupBox1.Controls.Add(this.cmbFebreroMate);
-            this.groupBox1.Controls.Add(this.cmbEneroMate);
-            this.groupBox1.Controls.Add(this.cmbDiciembreMate);
-            this.groupBox1.Controls.Add(this.cmbNoviembreMate);
+            this.groupBox1.Controls.Add(this.cmbOctubreIna);
+            this.groupBox1.Controls.Add(this.cmbOctubreEdFisica);
+            this.groupBox1.Controls.Add(this.cmbOctubreEdsocio);
+            this.groupBox1.Controls.Add(this.cmboctubreArt);
+            this.groupBox1.Controls.Add(this.cmbOctubreFormacion);
+            this.groupBox1.Controls.Add(this.cmbOctubreHistoria);
+            this.groupBox1.Controls.Add(this.cmbOctubreGeografia);
+            this.groupBox1.Controls.Add(this.cmbOctubreCiencias);
+            this.groupBox1.Controls.Add(this.cmbOctubreIngles);
             this.groupBox1.Controls.Add(this.cmbOctubreMate);
-            this.groupBox1.Controls.Add(this.cmbSeptiembreMate);
-            this.groupBox1.Controls.Add(this.cmbDiagMate);
+            this.groupBox1.Controls.Add(this.cmbEspañol);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label15);
@@ -916,10 +927,10 @@
             this.label121.TabIndex = 97;
             this.label121.Text = "Español";
             // 
-            // cmbJunioMate
+            // cmbOctubreIna
             // 
-            this.cmbJunioMate.FormattingEnabled = true;
-            this.cmbJunioMate.Items.AddRange(new object[] {
+            this.cmbOctubreIna.FormattingEnabled = true;
+            this.cmbOctubreIna.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -931,15 +942,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioMate.Location = new System.Drawing.Point(490, 203);
-            this.cmbJunioMate.Name = "cmbJunioMate";
-            this.cmbJunioMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioMate.TabIndex = 96;
+            this.cmbOctubreIna.Location = new System.Drawing.Point(490, 203);
+            this.cmbOctubreIna.Name = "cmbOctubreIna";
+            this.cmbOctubreIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreIna.TabIndex = 96;
             // 
-            // cmbMayoMate
+            // cmbOctubreEdFisica
             // 
-            this.cmbMayoMate.FormattingEnabled = true;
-            this.cmbMayoMate.Items.AddRange(new object[] {
+            this.cmbOctubreEdFisica.FormattingEnabled = true;
+            this.cmbOctubreEdFisica.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -951,15 +962,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoMate.Location = new System.Drawing.Point(490, 164);
-            this.cmbMayoMate.Name = "cmbMayoMate";
-            this.cmbMayoMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoMate.TabIndex = 95;
+            this.cmbOctubreEdFisica.Location = new System.Drawing.Point(490, 164);
+            this.cmbOctubreEdFisica.Name = "cmbOctubreEdFisica";
+            this.cmbOctubreEdFisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreEdFisica.TabIndex = 95;
             // 
-            // cmbAbrilMate
+            // cmbOctubreEdsocio
             // 
-            this.cmbAbrilMate.FormattingEnabled = true;
-            this.cmbAbrilMate.Items.AddRange(new object[] {
+            this.cmbOctubreEdsocio.FormattingEnabled = true;
+            this.cmbOctubreEdsocio.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -971,15 +982,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilMate.Location = new System.Drawing.Point(490, 125);
-            this.cmbAbrilMate.Name = "cmbAbrilMate";
-            this.cmbAbrilMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilMate.TabIndex = 94;
+            this.cmbOctubreEdsocio.Location = new System.Drawing.Point(490, 125);
+            this.cmbOctubreEdsocio.Name = "cmbOctubreEdsocio";
+            this.cmbOctubreEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreEdsocio.TabIndex = 94;
             // 
-            // cmbMarzoMate
+            // cmboctubreArt
             // 
-            this.cmbMarzoMate.FormattingEnabled = true;
-            this.cmbMarzoMate.Items.AddRange(new object[] {
+            this.cmboctubreArt.FormattingEnabled = true;
+            this.cmboctubreArt.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -991,15 +1002,16 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoMate.Location = new System.Drawing.Point(490, 87);
-            this.cmbMarzoMate.Name = "cmbMarzoMate";
-            this.cmbMarzoMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoMate.TabIndex = 93;
+            this.cmboctubreArt.Location = new System.Drawing.Point(490, 87);
+            this.cmboctubreArt.Name = "cmboctubreArt";
+            this.cmboctubreArt.Size = new System.Drawing.Size(124, 33);
+            this.cmboctubreArt.TabIndex = 93;
+            this.cmboctubreArt.SelectedIndexChanged += new System.EventHandler(this.CmbMarzoMate_SelectedIndexChanged);
             // 
-            // cmbFebreroMate
+            // cmbOctubreFormacion
             // 
-            this.cmbFebreroMate.FormattingEnabled = true;
-            this.cmbFebreroMate.Items.AddRange(new object[] {
+            this.cmbOctubreFormacion.FormattingEnabled = true;
+            this.cmbOctubreFormacion.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1011,180 +1023,10 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroMate.Location = new System.Drawing.Point(490, 48);
-            this.cmbFebreroMate.Name = "cmbFebreroMate";
-            this.cmbFebreroMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroMate.TabIndex = 92;
-            // 
-            // cmbEneroMate
-            // 
-            this.cmbEneroMate.FormattingEnabled = true;
-            this.cmbEneroMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbEneroMate.Location = new System.Drawing.Point(176, 237);
-            this.cmbEneroMate.Name = "cmbEneroMate";
-            this.cmbEneroMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroMate.TabIndex = 91;
-            // 
-            // cmbDiciembreMate
-            // 
-            this.cmbDiciembreMate.FormattingEnabled = true;
-            this.cmbDiciembreMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiciembreMate.Location = new System.Drawing.Point(176, 198);
-            this.cmbDiciembreMate.Name = "cmbDiciembreMate";
-            this.cmbDiciembreMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreMate.TabIndex = 90;
-            // 
-            // cmbNoviembreMate
-            // 
-            this.cmbNoviembreMate.FormattingEnabled = true;
-            this.cmbNoviembreMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbNoviembreMate.Location = new System.Drawing.Point(176, 159);
-            this.cmbNoviembreMate.Name = "cmbNoviembreMate";
-            this.cmbNoviembreMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreMate.TabIndex = 89;
-            // 
-            // cmbOctubreMate
-            // 
-            this.cmbOctubreMate.FormattingEnabled = true;
-            this.cmbOctubreMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbOctubreMate.Location = new System.Drawing.Point(176, 120);
-            this.cmbOctubreMate.Name = "cmbOctubreMate";
-            this.cmbOctubreMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreMate.TabIndex = 88;
-            // 
-            // cmbSeptiembreMate
-            // 
-            this.cmbSeptiembreMate.FormattingEnabled = true;
-            this.cmbSeptiembreMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbSeptiembreMate.Location = new System.Drawing.Point(176, 81);
-            this.cmbSeptiembreMate.Name = "cmbSeptiembreMate";
-            this.cmbSeptiembreMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreMate.TabIndex = 87;
-            // 
-            // cmbDiagMate
-            // 
-            this.cmbDiagMate.FormattingEnabled = true;
-            this.cmbDiagMate.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiagMate.Location = new System.Drawing.Point(176, 42);
-            this.cmbDiagMate.Name = "cmbDiagMate";
-            this.cmbDiagMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagMate.TabIndex = 75;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label13.Location = new System.Drawing.Point(281, 205);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
-            this.label13.TabIndex = 74;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label14.Location = new System.Drawing.Point(281, 50);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 20);
-            this.label14.TabIndex = 73;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label15.Location = new System.Drawing.Point(281, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 20);
-            this.label15.TabIndex = 72;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label16.Location = new System.Drawing.Point(281, 127);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 20);
-            this.label16.TabIndex = 71;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label17.Location = new System.Drawing.Point(281, 167);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 20);
-            this.label17.TabIndex = 70;
+            this.cmbOctubreFormacion.Location = new System.Drawing.Point(490, 48);
+            this.cmbOctubreFormacion.Name = "cmbOctubreFormacion";
+            this.cmbOctubreFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreFormacion.TabIndex = 92;
             // 
             // label18
             // 
@@ -1303,6 +1145,127 @@
             this.groupBox2.Size = new System.Drawing.Size(685, 330);
             this.groupBox2.TabIndex = 82;
             this.groupBox2.TabStop = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label31.Location = new System.Drawing.Point(365, 211);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(102, 20);
+            this.label31.TabIndex = 113;
+            this.label31.Text = "Inasistencias";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label32.Location = new System.Drawing.Point(356, 167);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(74, 20);
+            this.label32.TabIndex = 112;
+            this.label32.Text = "Ed.Fisica";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label33.Location = new System.Drawing.Point(353, 128);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(77, 20);
+            this.label33.TabIndex = 111;
+            this.label33.Text = "Ed. Socio";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label34.Location = new System.Drawing.Point(365, 89);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(47, 20);
+            this.label34.TabIndex = 110;
+            this.label34.Text = "Artes";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label35.Location = new System.Drawing.Point(314, 45);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(175, 20);
+            this.label35.TabIndex = 109;
+            this.label35.Text = "Formacion civica y etica";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label25.Location = new System.Drawing.Point(77, 245);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(63, 20);
+            this.label25.TabIndex = 108;
+            this.label25.Text = "Historia";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label26.Location = new System.Drawing.Point(60, 205);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(80, 20);
+            this.label26.TabIndex = 107;
+            this.label26.Text = "Geografia";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label27.Location = new System.Drawing.Point(14, 165);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(141, 20);
+            this.label27.TabIndex = 106;
+            this.label27.Text = "Ciencias Naturales";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label28.Location = new System.Drawing.Point(88, 127);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(52, 20);
+            this.label28.TabIndex = 105;
+            this.label28.Text = "Ingles";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label29.Location = new System.Drawing.Point(77, 89);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(100, 20);
+            this.label29.TabIndex = 104;
+            this.label29.Text = "Matematicas";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label30.Location = new System.Drawing.Point(88, 55);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(67, 20);
+            this.label30.TabIndex = 103;
+            this.label30.Text = "Español";
             // 
             // cmbJunioIng
             // 
@@ -1551,6 +1514,17 @@
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox3.Controls.Add(this.label82);
+            this.groupBox3.Controls.Add(this.label83);
+            this.groupBox3.Controls.Add(this.label85);
+            this.groupBox3.Controls.Add(this.label86);
+            this.groupBox3.Controls.Add(this.label87);
+            this.groupBox3.Controls.Add(this.label37);
+            this.groupBox3.Controls.Add(this.label38);
+            this.groupBox3.Controls.Add(this.label39);
+            this.groupBox3.Controls.Add(this.label40);
+            this.groupBox3.Controls.Add(this.label41);
+            this.groupBox3.Controls.Add(this.label42);
             this.groupBox3.Controls.Add(this.cmbJunioNaturales);
             this.groupBox3.Controls.Add(this.cmbMayoNaturales);
             this.groupBox3.Controls.Add(this.cmbAbrilNaturales);
@@ -1586,7 +1560,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioNaturales.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioNaturales.Location = new System.Drawing.Point(439, 199);
             this.cmbJunioNaturales.Name = "cmbJunioNaturales";
             this.cmbJunioNaturales.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioNaturales.TabIndex = 96;
@@ -1606,7 +1580,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoNaturales.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoNaturales.Location = new System.Drawing.Point(439, 160);
             this.cmbMayoNaturales.Name = "cmbMayoNaturales";
             this.cmbMayoNaturales.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoNaturales.TabIndex = 95;
@@ -1626,7 +1600,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilNaturales.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilNaturales.Location = new System.Drawing.Point(439, 121);
             this.cmbAbrilNaturales.Name = "cmbAbrilNaturales";
             this.cmbAbrilNaturales.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilNaturales.TabIndex = 94;
@@ -1646,7 +1620,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoNaturales.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoNaturales.Location = new System.Drawing.Point(439, 83);
             this.cmbMarzoNaturales.Name = "cmbMarzoNaturales";
             this.cmbMarzoNaturales.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoNaturales.TabIndex = 93;
@@ -1666,7 +1640,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroNaturales.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroNaturales.Location = new System.Drawing.Point(439, 44);
             this.cmbFebreroNaturales.Name = "cmbFebreroNaturales";
             this.cmbFebreroNaturales.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroNaturales.TabIndex = 92;
@@ -1818,6 +1792,17 @@
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox4.Controls.Add(this.label88);
+            this.groupBox4.Controls.Add(this.label89);
+            this.groupBox4.Controls.Add(this.label90);
+            this.groupBox4.Controls.Add(this.label91);
+            this.groupBox4.Controls.Add(this.label92);
+            this.groupBox4.Controls.Add(this.label43);
+            this.groupBox4.Controls.Add(this.label44);
+            this.groupBox4.Controls.Add(this.label45);
+            this.groupBox4.Controls.Add(this.label46);
+            this.groupBox4.Controls.Add(this.label47);
+            this.groupBox4.Controls.Add(this.label49);
             this.groupBox4.Controls.Add(this.cmbJunioGeo);
             this.groupBox4.Controls.Add(this.cmbMayoGeo);
             this.groupBox4.Controls.Add(this.cmbAbrilGeo);
@@ -1829,17 +1814,6 @@
             this.groupBox4.Controls.Add(this.cmbOctubreGeo);
             this.groupBox4.Controls.Add(this.cmbSeptiembreGeo);
             this.groupBox4.Controls.Add(this.cmbDiagGeo);
-            this.groupBox4.Controls.Add(this.label49);
-            this.groupBox4.Controls.Add(this.label50);
-            this.groupBox4.Controls.Add(this.label51);
-            this.groupBox4.Controls.Add(this.label52);
-            this.groupBox4.Controls.Add(this.label53);
-            this.groupBox4.Controls.Add(this.label54);
-            this.groupBox4.Controls.Add(this.label55);
-            this.groupBox4.Controls.Add(this.label56);
-            this.groupBox4.Controls.Add(this.label57);
-            this.groupBox4.Controls.Add(this.label58);
-            this.groupBox4.Controls.Add(this.label59);
             this.groupBox4.Controls.Add(this.label60);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox4.Location = new System.Drawing.Point(178, 18);
@@ -1864,7 +1838,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioGeo.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioGeo.Location = new System.Drawing.Point(435, 199);
             this.cmbJunioGeo.Name = "cmbJunioGeo";
             this.cmbJunioGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioGeo.TabIndex = 96;
@@ -1884,7 +1858,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoGeo.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoGeo.Location = new System.Drawing.Point(435, 160);
             this.cmbMayoGeo.Name = "cmbMayoGeo";
             this.cmbMayoGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoGeo.TabIndex = 95;
@@ -1904,7 +1878,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilGeo.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilGeo.Location = new System.Drawing.Point(435, 121);
             this.cmbAbrilGeo.Name = "cmbAbrilGeo";
             this.cmbAbrilGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilGeo.TabIndex = 94;
@@ -1924,7 +1898,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoGeo.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoGeo.Location = new System.Drawing.Point(435, 83);
             this.cmbMarzoGeo.Name = "cmbMarzoGeo";
             this.cmbMarzoGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoGeo.TabIndex = 93;
@@ -1944,7 +1918,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroGeo.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroGeo.Location = new System.Drawing.Point(435, 44);
             this.cmbFebreroGeo.Name = "cmbFebreroGeo";
             this.cmbFebreroGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroGeo.TabIndex = 92;
@@ -2069,127 +2043,6 @@
             this.cmbDiagGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagGeo.TabIndex = 75;
             // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label49.Location = new System.Drawing.Point(281, 205);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(47, 20);
-            this.label49.TabIndex = 74;
-            this.label49.Text = "Junio";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label50.Location = new System.Drawing.Point(281, 50);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(65, 20);
-            this.label50.TabIndex = 73;
-            this.label50.Text = "Febrero";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label51.Location = new System.Drawing.Point(281, 90);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(53, 20);
-            this.label51.TabIndex = 72;
-            this.label51.Text = "Marzo";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label52.Location = new System.Drawing.Point(281, 127);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(40, 20);
-            this.label52.TabIndex = 71;
-            this.label52.Text = "Abril";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label53.Location = new System.Drawing.Point(281, 167);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(47, 20);
-            this.label53.TabIndex = 70;
-            this.label53.Text = "Mayo";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label54.Location = new System.Drawing.Point(16, 206);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(80, 20);
-            this.label54.TabIndex = 69;
-            this.label54.Text = "Diciembre";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label55.Location = new System.Drawing.Point(16, 245);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(52, 20);
-            this.label55.TabIndex = 68;
-            this.label55.Text = "Enero";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label56.Location = new System.Drawing.Point(16, 127);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(66, 20);
-            this.label56.TabIndex = 67;
-            this.label56.Text = "Octubre";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label57.Location = new System.Drawing.Point(16, 167);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(84, 20);
-            this.label57.TabIndex = 66;
-            this.label57.Text = "Noviembre";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label58.Location = new System.Drawing.Point(16, 90);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(91, 20);
-            this.label58.TabIndex = 65;
-            this.label58.Text = "Septiembre";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label59.Location = new System.Drawing.Point(16, 50);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(93, 20);
-            this.label59.TabIndex = 62;
-            this.label59.Text = "Diagnostico";
-            // 
             // label60
             // 
             this.label60.AutoSize = true;
@@ -2217,6 +2070,17 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox5.Controls.Add(this.label93);
+            this.groupBox5.Controls.Add(this.label94);
+            this.groupBox5.Controls.Add(this.label95);
+            this.groupBox5.Controls.Add(this.label97);
+            this.groupBox5.Controls.Add(this.label98);
+            this.groupBox5.Controls.Add(this.label50);
+            this.groupBox5.Controls.Add(this.label51);
+            this.groupBox5.Controls.Add(this.label52);
+            this.groupBox5.Controls.Add(this.label53);
+            this.groupBox5.Controls.Add(this.label54);
+            this.groupBox5.Controls.Add(this.label55);
             this.groupBox5.Controls.Add(this.cmbJunioHist);
             this.groupBox5.Controls.Add(this.cmbMayoHist);
             this.groupBox5.Controls.Add(this.cmbAbrilHist);
@@ -2228,17 +2092,6 @@
             this.groupBox5.Controls.Add(this.cmbOctubreHist);
             this.groupBox5.Controls.Add(this.cmbSeptiembreHist);
             this.groupBox5.Controls.Add(this.cmbDiagHist);
-            this.groupBox5.Controls.Add(this.label61);
-            this.groupBox5.Controls.Add(this.label62);
-            this.groupBox5.Controls.Add(this.label63);
-            this.groupBox5.Controls.Add(this.label64);
-            this.groupBox5.Controls.Add(this.label65);
-            this.groupBox5.Controls.Add(this.label66);
-            this.groupBox5.Controls.Add(this.label67);
-            this.groupBox5.Controls.Add(this.label68);
-            this.groupBox5.Controls.Add(this.label69);
-            this.groupBox5.Controls.Add(this.label70);
-            this.groupBox5.Controls.Add(this.label71);
             this.groupBox5.Controls.Add(this.label72);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox5.Location = new System.Drawing.Point(178, 18);
@@ -2263,7 +2116,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioHist.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioHist.Location = new System.Drawing.Point(436, 199);
             this.cmbJunioHist.Name = "cmbJunioHist";
             this.cmbJunioHist.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioHist.TabIndex = 96;
@@ -2283,7 +2136,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoHist.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoHist.Location = new System.Drawing.Point(436, 160);
             this.cmbMayoHist.Name = "cmbMayoHist";
             this.cmbMayoHist.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoHist.TabIndex = 95;
@@ -2303,7 +2156,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilHist.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilHist.Location = new System.Drawing.Point(436, 121);
             this.cmbAbrilHist.Name = "cmbAbrilHist";
             this.cmbAbrilHist.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilHist.TabIndex = 94;
@@ -2323,7 +2176,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoHist.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoHist.Location = new System.Drawing.Point(436, 83);
             this.cmbMarzoHist.Name = "cmbMarzoHist";
             this.cmbMarzoHist.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoHist.TabIndex = 93;
@@ -2343,7 +2196,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroHist.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroHist.Location = new System.Drawing.Point(436, 44);
             this.cmbFebreroHist.Name = "cmbFebreroHist";
             this.cmbFebreroHist.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroHist.TabIndex = 92;
@@ -2468,127 +2321,6 @@
             this.cmbDiagHist.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagHist.TabIndex = 75;
             // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label61.Location = new System.Drawing.Point(281, 205);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(47, 20);
-            this.label61.TabIndex = 74;
-            this.label61.Text = "Junio";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label62.Location = new System.Drawing.Point(281, 50);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(65, 20);
-            this.label62.TabIndex = 73;
-            this.label62.Text = "Febrero";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label63.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label63.Location = new System.Drawing.Point(281, 90);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(53, 20);
-            this.label63.TabIndex = 72;
-            this.label63.Text = "Marzo";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label64.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label64.Location = new System.Drawing.Point(281, 127);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(40, 20);
-            this.label64.TabIndex = 71;
-            this.label64.Text = "Abril";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label65.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label65.Location = new System.Drawing.Point(281, 167);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(47, 20);
-            this.label65.TabIndex = 70;
-            this.label65.Text = "Mayo";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label66.Location = new System.Drawing.Point(16, 206);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(80, 20);
-            this.label66.TabIndex = 69;
-            this.label66.Text = "Diciembre";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label67.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label67.Location = new System.Drawing.Point(16, 245);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(52, 20);
-            this.label67.TabIndex = 68;
-            this.label67.Text = "Enero";
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label68.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label68.Location = new System.Drawing.Point(16, 127);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(66, 20);
-            this.label68.TabIndex = 67;
-            this.label68.Text = "Octubre";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label69.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label69.Location = new System.Drawing.Point(16, 167);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(84, 20);
-            this.label69.TabIndex = 66;
-            this.label69.Text = "Noviembre";
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label70.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label70.Location = new System.Drawing.Point(16, 90);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(91, 20);
-            this.label70.TabIndex = 65;
-            this.label70.Text = "Septiembre";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label71.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label71.Location = new System.Drawing.Point(16, 50);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(93, 20);
-            this.label71.TabIndex = 62;
-            this.label71.Text = "Diagnostico";
-            // 
             // label72
             // 
             this.label72.AutoSize = true;
@@ -2616,6 +2348,17 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox6.Controls.Add(this.label99);
+            this.groupBox6.Controls.Add(this.label100);
+            this.groupBox6.Controls.Add(this.label101);
+            this.groupBox6.Controls.Add(this.label102);
+            this.groupBox6.Controls.Add(this.label103);
+            this.groupBox6.Controls.Add(this.label56);
+            this.groupBox6.Controls.Add(this.label57);
+            this.groupBox6.Controls.Add(this.label58);
+            this.groupBox6.Controls.Add(this.label59);
+            this.groupBox6.Controls.Add(this.label61);
+            this.groupBox6.Controls.Add(this.label62);
             this.groupBox6.Controls.Add(this.cmbJunioFCE);
             this.groupBox6.Controls.Add(this.cmbMayoFCE);
             this.groupBox6.Controls.Add(this.cmbAbrilFCE);
@@ -2627,17 +2370,6 @@
             this.groupBox6.Controls.Add(this.cmbOctubreFCE);
             this.groupBox6.Controls.Add(this.cmbSeptiembreFCE);
             this.groupBox6.Controls.Add(this.cmbDiagFCE);
-            this.groupBox6.Controls.Add(this.label73);
-            this.groupBox6.Controls.Add(this.label74);
-            this.groupBox6.Controls.Add(this.label75);
-            this.groupBox6.Controls.Add(this.label76);
-            this.groupBox6.Controls.Add(this.label77);
-            this.groupBox6.Controls.Add(this.label78);
-            this.groupBox6.Controls.Add(this.label79);
-            this.groupBox6.Controls.Add(this.label80);
-            this.groupBox6.Controls.Add(this.label81);
-            this.groupBox6.Controls.Add(this.label82);
-            this.groupBox6.Controls.Add(this.label83);
             this.groupBox6.Controls.Add(this.label84);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox6.Location = new System.Drawing.Point(178, 18);
@@ -2646,6 +2378,7 @@
             this.groupBox6.Size = new System.Drawing.Size(581, 319);
             this.groupBox6.TabIndex = 82;
             this.groupBox6.TabStop = false;
+            this.groupBox6.Enter += new System.EventHandler(this.GroupBox6_Enter);
             // 
             // cmbJunioFCE
             // 
@@ -2662,7 +2395,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioFCE.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioFCE.Location = new System.Drawing.Point(451, 198);
             this.cmbJunioFCE.Name = "cmbJunioFCE";
             this.cmbJunioFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioFCE.TabIndex = 96;
@@ -2682,7 +2415,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoFCE.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoFCE.Location = new System.Drawing.Point(451, 159);
             this.cmbMayoFCE.Name = "cmbMayoFCE";
             this.cmbMayoFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoFCE.TabIndex = 95;
@@ -2702,7 +2435,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilFCE.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilFCE.Location = new System.Drawing.Point(451, 120);
             this.cmbAbrilFCE.Name = "cmbAbrilFCE";
             this.cmbAbrilFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilFCE.TabIndex = 94;
@@ -2722,7 +2455,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoFCE.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoFCE.Location = new System.Drawing.Point(451, 82);
             this.cmbMarzoFCE.Name = "cmbMarzoFCE";
             this.cmbMarzoFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoFCE.TabIndex = 93;
@@ -2742,7 +2475,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroFCE.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroFCE.Location = new System.Drawing.Point(451, 43);
             this.cmbFebreroFCE.Name = "cmbFebreroFCE";
             this.cmbFebreroFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroFCE.TabIndex = 92;
@@ -2867,127 +2600,6 @@
             this.cmbDiagFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagFCE.TabIndex = 75;
             // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label73.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label73.Location = new System.Drawing.Point(281, 205);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(47, 20);
-            this.label73.TabIndex = 74;
-            this.label73.Text = "Junio";
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label74.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label74.Location = new System.Drawing.Point(281, 50);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(65, 20);
-            this.label74.TabIndex = 73;
-            this.label74.Text = "Febrero";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label75.Location = new System.Drawing.Point(281, 90);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(53, 20);
-            this.label75.TabIndex = 72;
-            this.label75.Text = "Marzo";
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label76.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label76.Location = new System.Drawing.Point(281, 127);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(40, 20);
-            this.label76.TabIndex = 71;
-            this.label76.Text = "Abril";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label77.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label77.Location = new System.Drawing.Point(281, 167);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(47, 20);
-            this.label77.TabIndex = 70;
-            this.label77.Text = "Mayo";
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label78.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label78.Location = new System.Drawing.Point(16, 206);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(80, 20);
-            this.label78.TabIndex = 69;
-            this.label78.Text = "Diciembre";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label79.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label79.Location = new System.Drawing.Point(16, 245);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(52, 20);
-            this.label79.TabIndex = 68;
-            this.label79.Text = "Enero";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label80.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label80.Location = new System.Drawing.Point(16, 127);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(66, 20);
-            this.label80.TabIndex = 67;
-            this.label80.Text = "Octubre";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label81.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label81.Location = new System.Drawing.Point(16, 167);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(84, 20);
-            this.label81.TabIndex = 66;
-            this.label81.Text = "Noviembre";
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label82.Location = new System.Drawing.Point(16, 90);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(91, 20);
-            this.label82.TabIndex = 65;
-            this.label82.Text = "Septiembre";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label83.Location = new System.Drawing.Point(16, 50);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(93, 20);
-            this.label83.TabIndex = 62;
-            this.label83.Text = "Diagnostico";
-            // 
             // label84
             // 
             this.label84.AutoSize = true;
@@ -3015,6 +2627,17 @@
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox7.Controls.Add(this.label104);
+            this.groupBox7.Controls.Add(this.label105);
+            this.groupBox7.Controls.Add(this.label106);
+            this.groupBox7.Controls.Add(this.label107);
+            this.groupBox7.Controls.Add(this.label109);
+            this.groupBox7.Controls.Add(this.label63);
+            this.groupBox7.Controls.Add(this.label64);
+            this.groupBox7.Controls.Add(this.label65);
+            this.groupBox7.Controls.Add(this.label66);
+            this.groupBox7.Controls.Add(this.label67);
+            this.groupBox7.Controls.Add(this.label68);
             this.groupBox7.Controls.Add(this.cmbJunioArtes);
             this.groupBox7.Controls.Add(this.cmbMayoArtes);
             this.groupBox7.Controls.Add(this.cmbAbrilArtes);
@@ -3026,17 +2649,6 @@
             this.groupBox7.Controls.Add(this.cmbOctubreArtes);
             this.groupBox7.Controls.Add(this.cmbSeptiembreArtes);
             this.groupBox7.Controls.Add(this.cmbDiagArtes);
-            this.groupBox7.Controls.Add(this.label85);
-            this.groupBox7.Controls.Add(this.label86);
-            this.groupBox7.Controls.Add(this.label87);
-            this.groupBox7.Controls.Add(this.label88);
-            this.groupBox7.Controls.Add(this.label89);
-            this.groupBox7.Controls.Add(this.label90);
-            this.groupBox7.Controls.Add(this.label91);
-            this.groupBox7.Controls.Add(this.label92);
-            this.groupBox7.Controls.Add(this.label93);
-            this.groupBox7.Controls.Add(this.label94);
-            this.groupBox7.Controls.Add(this.label95);
             this.groupBox7.Controls.Add(this.label96);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox7.Location = new System.Drawing.Point(178, 18);
@@ -3061,7 +2673,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioArtes.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioArtes.Location = new System.Drawing.Point(451, 193);
             this.cmbJunioArtes.Name = "cmbJunioArtes";
             this.cmbJunioArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioArtes.TabIndex = 96;
@@ -3081,7 +2693,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoArtes.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoArtes.Location = new System.Drawing.Point(451, 154);
             this.cmbMayoArtes.Name = "cmbMayoArtes";
             this.cmbMayoArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoArtes.TabIndex = 95;
@@ -3101,7 +2713,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilArtes.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilArtes.Location = new System.Drawing.Point(451, 115);
             this.cmbAbrilArtes.Name = "cmbAbrilArtes";
             this.cmbAbrilArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilArtes.TabIndex = 94;
@@ -3121,7 +2733,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoArtes.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoArtes.Location = new System.Drawing.Point(451, 77);
             this.cmbMarzoArtes.Name = "cmbMarzoArtes";
             this.cmbMarzoArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoArtes.TabIndex = 93;
@@ -3141,7 +2753,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroArtes.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroArtes.Location = new System.Drawing.Point(451, 38);
             this.cmbFebreroArtes.Name = "cmbFebreroArtes";
             this.cmbFebreroArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroArtes.TabIndex = 92;
@@ -3266,127 +2878,6 @@
             this.cmbDiagArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagArtes.TabIndex = 75;
             // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label85.Location = new System.Drawing.Point(281, 205);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(47, 20);
-            this.label85.TabIndex = 74;
-            this.label85.Text = "Junio";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label86.Location = new System.Drawing.Point(281, 50);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(65, 20);
-            this.label86.TabIndex = 73;
-            this.label86.Text = "Febrero";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label87.Location = new System.Drawing.Point(281, 90);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(53, 20);
-            this.label87.TabIndex = 72;
-            this.label87.Text = "Marzo";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label88.Location = new System.Drawing.Point(281, 127);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(40, 20);
-            this.label88.TabIndex = 71;
-            this.label88.Text = "Abril";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label89.Location = new System.Drawing.Point(281, 167);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(47, 20);
-            this.label89.TabIndex = 70;
-            this.label89.Text = "Mayo";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label90.Location = new System.Drawing.Point(16, 206);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(80, 20);
-            this.label90.TabIndex = 69;
-            this.label90.Text = "Diciembre";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label91.Location = new System.Drawing.Point(16, 245);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(52, 20);
-            this.label91.TabIndex = 68;
-            this.label91.Text = "Enero";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label92.Location = new System.Drawing.Point(16, 127);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(66, 20);
-            this.label92.TabIndex = 67;
-            this.label92.Text = "Octubre";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label93.Location = new System.Drawing.Point(16, 167);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(84, 20);
-            this.label93.TabIndex = 66;
-            this.label93.Text = "Noviembre";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label94.Location = new System.Drawing.Point(16, 90);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(91, 20);
-            this.label94.TabIndex = 65;
-            this.label94.Text = "Septiembre";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label95.Location = new System.Drawing.Point(16, 50);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(93, 20);
-            this.label95.TabIndex = 62;
-            this.label95.Text = "Diagnostico";
-            // 
             // label96
             // 
             this.label96.AutoSize = true;
@@ -3414,6 +2905,17 @@
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox8.Controls.Add(this.label110);
+            this.groupBox8.Controls.Add(this.label111);
+            this.groupBox8.Controls.Add(this.label112);
+            this.groupBox8.Controls.Add(this.label113);
+            this.groupBox8.Controls.Add(this.label114);
+            this.groupBox8.Controls.Add(this.label69);
+            this.groupBox8.Controls.Add(this.label70);
+            this.groupBox8.Controls.Add(this.label71);
+            this.groupBox8.Controls.Add(this.label73);
+            this.groupBox8.Controls.Add(this.label74);
+            this.groupBox8.Controls.Add(this.label75);
             this.groupBox8.Controls.Add(this.cmbJunioSocio);
             this.groupBox8.Controls.Add(this.cmbMayoSocio);
             this.groupBox8.Controls.Add(this.cmbAbrilSocio);
@@ -3425,17 +2927,6 @@
             this.groupBox8.Controls.Add(this.cmbOctubreSocio);
             this.groupBox8.Controls.Add(this.cmbSeptiembreSocio);
             this.groupBox8.Controls.Add(this.cmbDiagSocio);
-            this.groupBox8.Controls.Add(this.label97);
-            this.groupBox8.Controls.Add(this.label98);
-            this.groupBox8.Controls.Add(this.label99);
-            this.groupBox8.Controls.Add(this.label100);
-            this.groupBox8.Controls.Add(this.label101);
-            this.groupBox8.Controls.Add(this.label102);
-            this.groupBox8.Controls.Add(this.label103);
-            this.groupBox8.Controls.Add(this.label104);
-            this.groupBox8.Controls.Add(this.label105);
-            this.groupBox8.Controls.Add(this.label106);
-            this.groupBox8.Controls.Add(this.label107);
             this.groupBox8.Controls.Add(this.label108);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox8.Location = new System.Drawing.Point(178, 18);
@@ -3460,7 +2951,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioSocio.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioSocio.Location = new System.Drawing.Point(437, 193);
             this.cmbJunioSocio.Name = "cmbJunioSocio";
             this.cmbJunioSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioSocio.TabIndex = 96;
@@ -3480,7 +2971,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoSocio.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoSocio.Location = new System.Drawing.Point(437, 154);
             this.cmbMayoSocio.Name = "cmbMayoSocio";
             this.cmbMayoSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoSocio.TabIndex = 95;
@@ -3500,7 +2991,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilSocio.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilSocio.Location = new System.Drawing.Point(437, 115);
             this.cmbAbrilSocio.Name = "cmbAbrilSocio";
             this.cmbAbrilSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilSocio.TabIndex = 94;
@@ -3520,7 +3011,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoSocio.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoSocio.Location = new System.Drawing.Point(437, 77);
             this.cmbMarzoSocio.Name = "cmbMarzoSocio";
             this.cmbMarzoSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoSocio.TabIndex = 93;
@@ -3540,7 +3031,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroSocio.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroSocio.Location = new System.Drawing.Point(437, 38);
             this.cmbFebreroSocio.Name = "cmbFebreroSocio";
             this.cmbFebreroSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroSocio.TabIndex = 92;
@@ -3665,127 +3156,6 @@
             this.cmbDiagSocio.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagSocio.TabIndex = 75;
             // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label97.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label97.Location = new System.Drawing.Point(281, 205);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(47, 20);
-            this.label97.TabIndex = 74;
-            this.label97.Text = "Junio";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label98.Location = new System.Drawing.Point(281, 50);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(65, 20);
-            this.label98.TabIndex = 73;
-            this.label98.Text = "Febrero";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label99.Location = new System.Drawing.Point(281, 90);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(53, 20);
-            this.label99.TabIndex = 72;
-            this.label99.Text = "Marzo";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label100.Location = new System.Drawing.Point(281, 127);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(40, 20);
-            this.label100.TabIndex = 71;
-            this.label100.Text = "Abril";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label101.Location = new System.Drawing.Point(281, 167);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(47, 20);
-            this.label101.TabIndex = 70;
-            this.label101.Text = "Mayo";
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label102.Location = new System.Drawing.Point(16, 206);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(80, 20);
-            this.label102.TabIndex = 69;
-            this.label102.Text = "Diciembre";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label103.Location = new System.Drawing.Point(16, 245);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(52, 20);
-            this.label103.TabIndex = 68;
-            this.label103.Text = "Enero";
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label104.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label104.Location = new System.Drawing.Point(16, 127);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(66, 20);
-            this.label104.TabIndex = 67;
-            this.label104.Text = "Octubre";
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label105.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label105.Location = new System.Drawing.Point(16, 167);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(84, 20);
-            this.label105.TabIndex = 66;
-            this.label105.Text = "Noviembre";
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label106.Location = new System.Drawing.Point(16, 90);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(91, 20);
-            this.label106.TabIndex = 65;
-            this.label106.Text = "Septiembre";
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label107.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label107.Location = new System.Drawing.Point(16, 50);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(93, 20);
-            this.label107.TabIndex = 62;
-            this.label107.Text = "Diagnostico";
-            // 
             // label108
             // 
             this.label108.AutoSize = true;
@@ -3813,6 +3183,17 @@
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox9.Controls.Add(this.label115);
+            this.groupBox9.Controls.Add(this.label116);
+            this.groupBox9.Controls.Add(this.label117);
+            this.groupBox9.Controls.Add(this.label118);
+            this.groupBox9.Controls.Add(this.label119);
+            this.groupBox9.Controls.Add(this.label76);
+            this.groupBox9.Controls.Add(this.label77);
+            this.groupBox9.Controls.Add(this.label78);
+            this.groupBox9.Controls.Add(this.label79);
+            this.groupBox9.Controls.Add(this.label80);
+            this.groupBox9.Controls.Add(this.label81);
             this.groupBox9.Controls.Add(this.cmbJunioEdFis);
             this.groupBox9.Controls.Add(this.cmbMayoEdFis);
             this.groupBox9.Controls.Add(this.cmbAbrilEdFis);
@@ -3824,17 +3205,6 @@
             this.groupBox9.Controls.Add(this.cmbOctubreEdFis);
             this.groupBox9.Controls.Add(this.cmbSeptiembreEdFis);
             this.groupBox9.Controls.Add(this.cmbDiagEdFis);
-            this.groupBox9.Controls.Add(this.label109);
-            this.groupBox9.Controls.Add(this.label110);
-            this.groupBox9.Controls.Add(this.label111);
-            this.groupBox9.Controls.Add(this.label112);
-            this.groupBox9.Controls.Add(this.label113);
-            this.groupBox9.Controls.Add(this.label114);
-            this.groupBox9.Controls.Add(this.label115);
-            this.groupBox9.Controls.Add(this.label116);
-            this.groupBox9.Controls.Add(this.label117);
-            this.groupBox9.Controls.Add(this.label118);
-            this.groupBox9.Controls.Add(this.label119);
             this.groupBox9.Controls.Add(this.label120);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox9.Location = new System.Drawing.Point(178, 18);
@@ -3859,7 +3229,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioEdFis.Location = new System.Drawing.Point(385, 198);
+            this.cmbJunioEdFis.Location = new System.Drawing.Point(433, 193);
             this.cmbJunioEdFis.Name = "cmbJunioEdFis";
             this.cmbJunioEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioEdFis.TabIndex = 96;
@@ -3879,7 +3249,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoEdFis.Location = new System.Drawing.Point(385, 159);
+            this.cmbMayoEdFis.Location = new System.Drawing.Point(433, 154);
             this.cmbMayoEdFis.Name = "cmbMayoEdFis";
             this.cmbMayoEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoEdFis.TabIndex = 95;
@@ -3899,7 +3269,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilEdFis.Location = new System.Drawing.Point(385, 120);
+            this.cmbAbrilEdFis.Location = new System.Drawing.Point(433, 115);
             this.cmbAbrilEdFis.Name = "cmbAbrilEdFis";
             this.cmbAbrilEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilEdFis.TabIndex = 94;
@@ -3919,7 +3289,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoEdFis.Location = new System.Drawing.Point(385, 82);
+            this.cmbMarzoEdFis.Location = new System.Drawing.Point(433, 77);
             this.cmbMarzoEdFis.Name = "cmbMarzoEdFis";
             this.cmbMarzoEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoEdFis.TabIndex = 93;
@@ -3939,7 +3309,7 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroEdFis.Location = new System.Drawing.Point(385, 43);
+            this.cmbFebreroEdFis.Location = new System.Drawing.Point(433, 38);
             this.cmbFebreroEdFis.Name = "cmbFebreroEdFis";
             this.cmbFebreroEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroEdFis.TabIndex = 92;
@@ -4064,127 +3434,6 @@
             this.cmbDiagEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbDiagEdFis.TabIndex = 75;
             // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label109.Location = new System.Drawing.Point(281, 205);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(47, 20);
-            this.label109.TabIndex = 74;
-            this.label109.Text = "Junio";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label110.Location = new System.Drawing.Point(281, 50);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(65, 20);
-            this.label110.TabIndex = 73;
-            this.label110.Text = "Febrero";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label111.Location = new System.Drawing.Point(281, 90);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(53, 20);
-            this.label111.TabIndex = 72;
-            this.label111.Text = "Marzo";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label112.Location = new System.Drawing.Point(281, 127);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(40, 20);
-            this.label112.TabIndex = 71;
-            this.label112.Text = "Abril";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label113.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label113.Location = new System.Drawing.Point(281, 167);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(47, 20);
-            this.label113.TabIndex = 70;
-            this.label113.Text = "Mayo";
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label114.Location = new System.Drawing.Point(16, 206);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(80, 20);
-            this.label114.TabIndex = 69;
-            this.label114.Text = "Diciembre";
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label115.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label115.Location = new System.Drawing.Point(16, 245);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(52, 20);
-            this.label115.TabIndex = 68;
-            this.label115.Text = "Enero";
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label116.Location = new System.Drawing.Point(16, 127);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(66, 20);
-            this.label116.TabIndex = 67;
-            this.label116.Text = "Octubre";
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label117.Location = new System.Drawing.Point(16, 167);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(84, 20);
-            this.label117.TabIndex = 66;
-            this.label117.Text = "Noviembre";
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label118.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label118.Location = new System.Drawing.Point(16, 90);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(91, 20);
-            this.label118.TabIndex = 65;
-            this.label118.Text = "Septiembre";
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label119.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label119.Location = new System.Drawing.Point(16, 50);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(93, 20);
-            this.label119.TabIndex = 62;
-            this.label119.Text = "Diagnostico";
-            // 
             // label120
             // 
             this.label120.AutoSize = true;
@@ -4250,126 +3499,1022 @@
             this.btnIrBoletas.UseVisualStyleBackColor = true;
             this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
             // 
-            // label25
+            // label37
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label25.Location = new System.Drawing.Point(77, 245);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(63, 20);
-            this.label25.TabIndex = 108;
-            this.label25.Text = "Historia";
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label37.Location = new System.Drawing.Point(20, 245);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(63, 20);
+            this.label37.TabIndex = 114;
+            this.label37.Text = "Historia";
             // 
-            // label26
+            // label38
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label26.Location = new System.Drawing.Point(60, 205);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(80, 20);
-            this.label26.TabIndex = 107;
-            this.label26.Text = "Geografia";
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label38.Location = new System.Drawing.Point(3, 205);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 20);
+            this.label38.TabIndex = 113;
+            this.label38.Text = "Geografia";
             // 
-            // label27
+            // label39
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label27.Location = new System.Drawing.Point(14, 165);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(141, 20);
-            this.label27.TabIndex = 106;
-            this.label27.Text = "Ciencias Naturales";
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label39.Location = new System.Drawing.Point(-43, 165);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(141, 20);
+            this.label39.TabIndex = 112;
+            this.label39.Text = "Ciencias Naturales";
             // 
-            // label28
+            // label40
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label28.Location = new System.Drawing.Point(88, 127);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(52, 20);
-            this.label28.TabIndex = 105;
-            this.label28.Text = "Ingles";
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label40.Location = new System.Drawing.Point(31, 127);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(52, 20);
+            this.label40.TabIndex = 111;
+            this.label40.Text = "Ingles";
             // 
-            // label29
+            // label41
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label29.Location = new System.Drawing.Point(77, 89);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(100, 20);
-            this.label29.TabIndex = 104;
-            this.label29.Text = "Matematicas";
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label41.Location = new System.Drawing.Point(20, 89);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(100, 20);
+            this.label41.TabIndex = 110;
+            this.label41.Text = "Matematicas";
             // 
-            // label30
+            // label42
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label30.Location = new System.Drawing.Point(88, 55);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(67, 20);
-            this.label30.TabIndex = 103;
-            this.label30.Text = "Español";
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label42.Location = new System.Drawing.Point(31, 55);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(67, 20);
+            this.label42.TabIndex = 109;
+            this.label42.Text = "Español";
             // 
-            // label31
+            // label43
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label31.Location = new System.Drawing.Point(365, 211);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(102, 20);
-            this.label31.TabIndex = 113;
-            this.label31.Text = "Inasistencias";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label43.Location = new System.Drawing.Point(20, 245);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(63, 20);
+            this.label43.TabIndex = 114;
+            this.label43.Text = "Historia";
             // 
-            // label32
+            // label44
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label32.Location = new System.Drawing.Point(356, 167);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(74, 20);
-            this.label32.TabIndex = 112;
-            this.label32.Text = "Ed.Fisica";
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label44.Location = new System.Drawing.Point(3, 205);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(80, 20);
+            this.label44.TabIndex = 113;
+            this.label44.Text = "Geografia";
             // 
-            // label33
+            // label45
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label33.Location = new System.Drawing.Point(353, 128);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(77, 20);
-            this.label33.TabIndex = 111;
-            this.label33.Text = "Ed. Socio";
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label45.Location = new System.Drawing.Point(-43, 165);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(141, 20);
+            this.label45.TabIndex = 112;
+            this.label45.Text = "Ciencias Naturales";
             // 
-            // label34
+            // label46
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label34.Location = new System.Drawing.Point(365, 89);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(47, 20);
-            this.label34.TabIndex = 110;
-            this.label34.Text = "Artes";
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label46.Location = new System.Drawing.Point(31, 127);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(52, 20);
+            this.label46.TabIndex = 111;
+            this.label46.Text = "Ingles";
             // 
-            // label35
+            // label47
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label35.Location = new System.Drawing.Point(314, 45);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(175, 20);
-            this.label35.TabIndex = 109;
-            this.label35.Text = "Formacion civica y etica";
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label47.Location = new System.Drawing.Point(20, 89);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 20);
+            this.label47.TabIndex = 110;
+            this.label47.Text = "Matematicas";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label49.Location = new System.Drawing.Point(31, 55);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(67, 20);
+            this.label49.TabIndex = 109;
+            this.label49.Text = "Español";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label50.Location = new System.Drawing.Point(23, 240);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(63, 20);
+            this.label50.TabIndex = 114;
+            this.label50.Text = "Historia";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label51.Location = new System.Drawing.Point(6, 200);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(80, 20);
+            this.label51.TabIndex = 113;
+            this.label51.Text = "Geografia";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label52.Location = new System.Drawing.Point(-40, 160);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(141, 20);
+            this.label52.TabIndex = 112;
+            this.label52.Text = "Ciencias Naturales";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label53.Location = new System.Drawing.Point(34, 122);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(52, 20);
+            this.label53.TabIndex = 111;
+            this.label53.Text = "Ingles";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label54.Location = new System.Drawing.Point(23, 84);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(100, 20);
+            this.label54.TabIndex = 110;
+            this.label54.Text = "Matematicas";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label55.Location = new System.Drawing.Point(34, 50);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(67, 20);
+            this.label55.TabIndex = 109;
+            this.label55.Text = "Español";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label56.Location = new System.Drawing.Point(9, 246);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(63, 20);
+            this.label56.TabIndex = 114;
+            this.label56.Text = "Historia";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label57.Location = new System.Drawing.Point(-8, 206);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(80, 20);
+            this.label57.TabIndex = 113;
+            this.label57.Text = "Geografia";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label58.Location = new System.Drawing.Point(-54, 166);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(141, 20);
+            this.label58.TabIndex = 112;
+            this.label58.Text = "Ciencias Naturales";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label59.Location = new System.Drawing.Point(20, 128);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(52, 20);
+            this.label59.TabIndex = 111;
+            this.label59.Text = "Ingles";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label61.Location = new System.Drawing.Point(9, 90);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(100, 20);
+            this.label61.TabIndex = 110;
+            this.label61.Text = "Matematicas";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label62.Location = new System.Drawing.Point(20, 56);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(67, 20);
+            this.label62.TabIndex = 109;
+            this.label62.Text = "Español";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label63.Location = new System.Drawing.Point(22, 246);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(63, 20);
+            this.label63.TabIndex = 114;
+            this.label63.Text = "Historia";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label64.Location = new System.Drawing.Point(5, 206);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(80, 20);
+            this.label64.TabIndex = 113;
+            this.label64.Text = "Geografia";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label65.Location = new System.Drawing.Point(-41, 166);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(141, 20);
+            this.label65.TabIndex = 112;
+            this.label65.Text = "Ciencias Naturales";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label66.Location = new System.Drawing.Point(33, 128);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(52, 20);
+            this.label66.TabIndex = 111;
+            this.label66.Text = "Ingles";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label67.Location = new System.Drawing.Point(22, 90);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(100, 20);
+            this.label67.TabIndex = 110;
+            this.label67.Text = "Matematicas";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label68.Location = new System.Drawing.Point(33, 56);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(67, 20);
+            this.label68.TabIndex = 109;
+            this.label68.Text = "Español";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label69.Location = new System.Drawing.Point(13, 246);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(63, 20);
+            this.label69.TabIndex = 114;
+            this.label69.Text = "Historia";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label70.Location = new System.Drawing.Point(-4, 206);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(80, 20);
+            this.label70.TabIndex = 113;
+            this.label70.Text = "Geografia";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label71.Location = new System.Drawing.Point(-50, 166);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(141, 20);
+            this.label71.TabIndex = 112;
+            this.label71.Text = "Ciencias Naturales";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label73.Location = new System.Drawing.Point(24, 128);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(52, 20);
+            this.label73.TabIndex = 111;
+            this.label73.Text = "Ingles";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label74.Location = new System.Drawing.Point(13, 90);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(100, 20);
+            this.label74.TabIndex = 110;
+            this.label74.Text = "Matematicas";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label75.Location = new System.Drawing.Point(24, 56);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(67, 20);
+            this.label75.TabIndex = 109;
+            this.label75.Text = "Español";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label76.Location = new System.Drawing.Point(21, 246);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(63, 20);
+            this.label76.TabIndex = 114;
+            this.label76.Text = "Historia";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label77.Location = new System.Drawing.Point(4, 206);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(80, 20);
+            this.label77.TabIndex = 113;
+            this.label77.Text = "Geografia";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label78.Location = new System.Drawing.Point(-42, 166);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(141, 20);
+            this.label78.TabIndex = 112;
+            this.label78.Text = "Ciencias Naturales";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label79.Location = new System.Drawing.Point(32, 128);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(52, 20);
+            this.label79.TabIndex = 111;
+            this.label79.Text = "Ingles";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label80.Location = new System.Drawing.Point(21, 90);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(100, 20);
+            this.label80.TabIndex = 110;
+            this.label80.Text = "Matematicas";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label81.Location = new System.Drawing.Point(32, 56);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(67, 20);
+            this.label81.TabIndex = 109;
+            this.label81.Text = "Español";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label82.Location = new System.Drawing.Point(323, 212);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(102, 20);
+            this.label82.TabIndex = 119;
+            this.label82.Text = "Inasistencias";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label83.Location = new System.Drawing.Point(314, 168);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(74, 20);
+            this.label83.TabIndex = 118;
+            this.label83.Text = "Ed.Fisica";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label85.Location = new System.Drawing.Point(311, 129);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(77, 20);
+            this.label85.TabIndex = 117;
+            this.label85.Text = "Ed. Socio";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label86.Location = new System.Drawing.Point(323, 90);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(47, 20);
+            this.label86.TabIndex = 116;
+            this.label86.Text = "Artes";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label87.Location = new System.Drawing.Point(258, 51);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(175, 20);
+            this.label87.TabIndex = 115;
+            this.label87.Text = "Formacion civica y etica";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label88.Location = new System.Drawing.Point(305, 216);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(102, 20);
+            this.label88.TabIndex = 119;
+            this.label88.Text = "Inasistencias";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label89.Location = new System.Drawing.Point(296, 172);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(74, 20);
+            this.label89.TabIndex = 118;
+            this.label89.Text = "Ed.Fisica";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label90.Location = new System.Drawing.Point(293, 133);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(77, 20);
+            this.label90.TabIndex = 117;
+            this.label90.Text = "Ed. Socio";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label91.Location = new System.Drawing.Point(305, 94);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(47, 20);
+            this.label91.TabIndex = 116;
+            this.label91.Text = "Artes";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label92.Location = new System.Drawing.Point(254, 50);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(175, 20);
+            this.label92.TabIndex = 115;
+            this.label92.Text = "Formacion civica y etica";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label93.Location = new System.Drawing.Point(306, 216);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(102, 20);
+            this.label93.TabIndex = 119;
+            this.label93.Text = "Inasistencias";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label94.Location = new System.Drawing.Point(297, 172);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(74, 20);
+            this.label94.TabIndex = 118;
+            this.label94.Text = "Ed.Fisica";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label95.Location = new System.Drawing.Point(294, 133);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(77, 20);
+            this.label95.TabIndex = 117;
+            this.label95.Text = "Ed. Socio";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label97.Location = new System.Drawing.Point(306, 94);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(47, 20);
+            this.label97.TabIndex = 116;
+            this.label97.Text = "Artes";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label98.Location = new System.Drawing.Point(255, 50);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(175, 20);
+            this.label98.TabIndex = 115;
+            this.label98.Text = "Formacion civica y etica";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label99.Location = new System.Drawing.Point(321, 216);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(102, 20);
+            this.label99.TabIndex = 119;
+            this.label99.Text = "Inasistencias";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label100.Location = new System.Drawing.Point(312, 172);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(74, 20);
+            this.label100.TabIndex = 118;
+            this.label100.Text = "Ed.Fisica";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label101.Location = new System.Drawing.Point(309, 133);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(77, 20);
+            this.label101.TabIndex = 117;
+            this.label101.Text = "Ed. Socio";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label102.Location = new System.Drawing.Point(321, 94);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(47, 20);
+            this.label102.TabIndex = 116;
+            this.label102.Text = "Artes";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label103.Location = new System.Drawing.Point(270, 50);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(175, 20);
+            this.label103.TabIndex = 115;
+            this.label103.Text = "Formacion civica y etica";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label104.Location = new System.Drawing.Point(321, 211);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(102, 20);
+            this.label104.TabIndex = 119;
+            this.label104.Text = "Inasistencias";
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label105.Location = new System.Drawing.Point(312, 167);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(74, 20);
+            this.label105.TabIndex = 118;
+            this.label105.Text = "Ed.Fisica";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label106.Location = new System.Drawing.Point(309, 128);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(77, 20);
+            this.label106.TabIndex = 117;
+            this.label106.Text = "Ed. Socio";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label107.Location = new System.Drawing.Point(321, 89);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(47, 20);
+            this.label107.TabIndex = 116;
+            this.label107.Text = "Artes";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label109.Location = new System.Drawing.Point(270, 45);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(175, 20);
+            this.label109.TabIndex = 115;
+            this.label109.Text = "Formacion civica y etica";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label110.Location = new System.Drawing.Point(307, 211);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(102, 20);
+            this.label110.TabIndex = 119;
+            this.label110.Text = "Inasistencias";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label111.Location = new System.Drawing.Point(298, 167);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(74, 20);
+            this.label111.TabIndex = 118;
+            this.label111.Text = "Ed.Fisica";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label112.Location = new System.Drawing.Point(295, 128);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(77, 20);
+            this.label112.TabIndex = 117;
+            this.label112.Text = "Ed. Socio";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label113.Location = new System.Drawing.Point(307, 89);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(47, 20);
+            this.label113.TabIndex = 116;
+            this.label113.Text = "Artes";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label114.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label114.Location = new System.Drawing.Point(256, 45);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(175, 20);
+            this.label114.TabIndex = 115;
+            this.label114.Text = "Formacion civica y etica";
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label115.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label115.Location = new System.Drawing.Point(303, 211);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(102, 20);
+            this.label115.TabIndex = 119;
+            this.label115.Text = "Inasistencias";
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label116.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label116.Location = new System.Drawing.Point(294, 167);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(74, 20);
+            this.label116.TabIndex = 118;
+            this.label116.Text = "Ed.Fisica";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label117.Location = new System.Drawing.Point(291, 128);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(77, 20);
+            this.label117.TabIndex = 117;
+            this.label117.Text = "Ed. Socio";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label118.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label118.Location = new System.Drawing.Point(303, 89);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(47, 20);
+            this.label118.TabIndex = 116;
+            this.label118.Text = "Artes";
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label119.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label119.Location = new System.Drawing.Point(252, 45);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(175, 20);
+            this.label119.TabIndex = 115;
+            this.label119.Text = "Formacion civica y etica";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label17.Location = new System.Drawing.Point(281, 167);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 20);
+            this.label17.TabIndex = 70;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label16.Location = new System.Drawing.Point(281, 127);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 20);
+            this.label16.TabIndex = 71;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label15.Location = new System.Drawing.Point(281, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 20);
+            this.label15.TabIndex = 72;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label14.Location = new System.Drawing.Point(281, 50);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 20);
+            this.label14.TabIndex = 73;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label13.Location = new System.Drawing.Point(281, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 20);
+            this.label13.TabIndex = 74;
+            // 
+            // cmbEspañol
+            // 
+            this.cmbEspañol.FormattingEnabled = true;
+            this.cmbEspañol.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbEspañol.Location = new System.Drawing.Point(176, 42);
+            this.cmbEspañol.Name = "cmbEspañol";
+            this.cmbEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbEspañol.TabIndex = 75;
+            // 
+            // cmbOctubreMate
+            // 
+            this.cmbOctubreMate.FormattingEnabled = true;
+            this.cmbOctubreMate.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreMate.Location = new System.Drawing.Point(176, 81);
+            this.cmbOctubreMate.Name = "cmbOctubreMate";
+            this.cmbOctubreMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreMate.TabIndex = 87;
+            // 
+            // cmbOctubreHistoria
+            // 
+            this.cmbOctubreHistoria.FormattingEnabled = true;
+            this.cmbOctubreHistoria.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreHistoria.Location = new System.Drawing.Point(176, 237);
+            this.cmbOctubreHistoria.Name = "cmbOctubreHistoria";
+            this.cmbOctubreHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreHistoria.TabIndex = 91;
+            // 
+            // cmbOctubreCiencias
+            // 
+            this.cmbOctubreCiencias.FormattingEnabled = true;
+            this.cmbOctubreCiencias.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreCiencias.Location = new System.Drawing.Point(176, 159);
+            this.cmbOctubreCiencias.Name = "cmbOctubreCiencias";
+            this.cmbOctubreCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreCiencias.TabIndex = 89;
+            // 
+            // cmbOctubreGeografia
+            // 
+            this.cmbOctubreGeografia.FormattingEnabled = true;
+            this.cmbOctubreGeografia.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreGeografia.Location = new System.Drawing.Point(176, 198);
+            this.cmbOctubreGeografia.Name = "cmbOctubreGeografia";
+            this.cmbOctubreGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreGeografia.TabIndex = 90;
+            // 
+            // cmbOctubreIngles
+            // 
+            this.cmbOctubreIngles.FormattingEnabled = true;
+            this.cmbOctubreIngles.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreIngles.Location = new System.Drawing.Point(176, 120);
+            this.cmbOctubreIngles.Name = "cmbOctubreIngles";
+            this.cmbOctubreIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreIngles.TabIndex = 88;
             // 
             // Calificaciones456
             // 
@@ -4458,22 +4603,11 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmbJunioMate;
-        private System.Windows.Forms.ComboBox cmbMayoMate;
-        private System.Windows.Forms.ComboBox cmbAbrilMate;
-        private System.Windows.Forms.ComboBox cmbMarzoMate;
-        private System.Windows.Forms.ComboBox cmbFebreroMate;
-        private System.Windows.Forms.ComboBox cmbEneroMate;
-        private System.Windows.Forms.ComboBox cmbDiciembreMate;
-        private System.Windows.Forms.ComboBox cmbNoviembreMate;
-        private System.Windows.Forms.ComboBox cmbOctubreMate;
-        private System.Windows.Forms.ComboBox cmbSeptiembreMate;
-        private System.Windows.Forms.ComboBox cmbDiagMate;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox cmbOctubreIna;
+        private System.Windows.Forms.ComboBox cmbOctubreEdFisica;
+        private System.Windows.Forms.ComboBox cmbOctubreEdsocio;
+        private System.Windows.Forms.ComboBox cmboctubreArt;
+        private System.Windows.Forms.ComboBox cmbOctubreFormacion;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
@@ -4519,17 +4653,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreGeo;
         private System.Windows.Forms.ComboBox cmbSeptiembreGeo;
         private System.Windows.Forms.ComboBox cmbDiagGeo;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.ComboBox cmbJunioHist;
@@ -4543,17 +4666,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreHist;
         private System.Windows.Forms.ComboBox cmbSeptiembreHist;
         private System.Windows.Forms.ComboBox cmbDiagHist;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.ComboBox cmbJunioFCE;
@@ -4567,17 +4679,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreFCE;
         private System.Windows.Forms.ComboBox cmbSeptiembreFCE;
         private System.Windows.Forms.ComboBox cmbDiagFCE;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.ComboBox cmbJunioArtes;
@@ -4591,17 +4692,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreArtes;
         private System.Windows.Forms.ComboBox cmbSeptiembreArtes;
         private System.Windows.Forms.ComboBox cmbDiagArtes;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.ComboBox cmbJunioSocio;
@@ -4615,17 +4705,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreSocio;
         private System.Windows.Forms.ComboBox cmbSeptiembreSocio;
         private System.Windows.Forms.ComboBox cmbDiagSocio;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Label label107;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.ComboBox cmbJunioEdFis;
@@ -4639,17 +4718,6 @@
         private System.Windows.Forms.ComboBox cmbOctubreEdFis;
         private System.Windows.Forms.ComboBox cmbSeptiembreEdFis;
         private System.Windows.Forms.ComboBox cmbDiagEdFis;
-        private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.Label label115;
-        private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.Label label117;
-        private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.Label label119;
         private System.Windows.Forms.Label label120;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
@@ -4677,5 +4745,93 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.Label label97;
+        private System.Windows.Forms.Label label98;
+        private System.Windows.Forms.Label label99;
+        private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Label label102;
+        private System.Windows.Forms.Label label103;
+        private System.Windows.Forms.Label label104;
+        private System.Windows.Forms.Label label105;
+        private System.Windows.Forms.Label label106;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.Label label113;
+        private System.Windows.Forms.Label label114;
+        private System.Windows.Forms.Label label115;
+        private System.Windows.Forms.Label label116;
+        private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.Label label118;
+        private System.Windows.Forms.Label label119;
+        private System.Windows.Forms.ComboBox cmbOctubreHistoria;
+        private System.Windows.Forms.ComboBox cmbOctubreGeografia;
+        private System.Windows.Forms.ComboBox cmbOctubreCiencias;
+        private System.Windows.Forms.ComboBox cmbOctubreIngles;
+        private System.Windows.Forms.ComboBox cmbOctubreMate;
+        private System.Windows.Forms.ComboBox cmbEspañol;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
     }
 }
