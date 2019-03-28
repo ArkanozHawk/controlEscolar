@@ -150,16 +150,16 @@
             this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.cmbJunioFCE = new System.Windows.Forms.ComboBox();
-            this.cmbMayoFCE = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilFCE = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoFCE = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroFCE = new System.Windows.Forms.ComboBox();
-            this.cmbEneroFCE = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreFCE = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreFCE = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreFCE = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreFCE = new System.Windows.Forms.ComboBox();
-            this.cmbDiagFCE = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoEdFisica = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoArtess = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoIngles = new System.Windows.Forms.ComboBox();
+            this.cmbMarzoMate = new System.Windows.Forms.ComboBox();
+            this.cmbmarzoEspañol = new System.Windows.Forms.ComboBox();
             this.label84 = new System.Windows.Forms.Label();
             this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
@@ -2361,16 +2361,16 @@
             this.groupBox6.Controls.Add(this.label61);
             this.groupBox6.Controls.Add(this.label62);
             this.groupBox6.Controls.Add(this.cmbJunioFCE);
-            this.groupBox6.Controls.Add(this.cmbMayoFCE);
-            this.groupBox6.Controls.Add(this.cmbAbrilFCE);
-            this.groupBox6.Controls.Add(this.cmbMarzoFCE);
-            this.groupBox6.Controls.Add(this.cmbFebreroFCE);
-            this.groupBox6.Controls.Add(this.cmbEneroFCE);
-            this.groupBox6.Controls.Add(this.cmbDiciembreFCE);
-            this.groupBox6.Controls.Add(this.cmbNoviembreFCE);
-            this.groupBox6.Controls.Add(this.cmbOctubreFCE);
-            this.groupBox6.Controls.Add(this.cmbSeptiembreFCE);
-            this.groupBox6.Controls.Add(this.cmbDiagFCE);
+            this.groupBox6.Controls.Add(this.cmbMarzoEdFisica);
+            this.groupBox6.Controls.Add(this.cmbMarzoEdsocio);
+            this.groupBox6.Controls.Add(this.cmbMarzoArtess);
+            this.groupBox6.Controls.Add(this.cmbMarzoFormacion);
+            this.groupBox6.Controls.Add(this.cmbMarzoHistoria);
+            this.groupBox6.Controls.Add(this.cmbMarzoGeografia);
+            this.groupBox6.Controls.Add(this.cmbMarzoCiencias);
+            this.groupBox6.Controls.Add(this.cmbMarzoIngles);
+            this.groupBox6.Controls.Add(this.cmbMarzoMate);
+            this.groupBox6.Controls.Add(this.cmbmarzoEspañol);
             this.groupBox6.Controls.Add(this.label84);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox6.Location = new System.Drawing.Point(178, 18);
@@ -2401,10 +2401,10 @@
             this.cmbJunioFCE.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioFCE.TabIndex = 96;
             // 
-            // cmbMayoFCE
+            // cmbMarzoEdFisica
             // 
-            this.cmbMayoFCE.FormattingEnabled = true;
-            this.cmbMayoFCE.Items.AddRange(new object[] {
+            this.cmbMarzoEdFisica.FormattingEnabled = true;
+            this.cmbMarzoEdFisica.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2416,15 +2416,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoFCE.Location = new System.Drawing.Point(451, 159);
-            this.cmbMayoFCE.Name = "cmbMayoFCE";
-            this.cmbMayoFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoFCE.TabIndex = 95;
+            this.cmbMarzoEdFisica.Location = new System.Drawing.Point(451, 159);
+            this.cmbMarzoEdFisica.Name = "cmbMarzoEdFisica";
+            this.cmbMarzoEdFisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoEdFisica.TabIndex = 95;
             // 
-            // cmbAbrilFCE
+            // cmbMarzoEdsocio
             // 
-            this.cmbAbrilFCE.FormattingEnabled = true;
-            this.cmbAbrilFCE.Items.AddRange(new object[] {
+            this.cmbMarzoEdsocio.FormattingEnabled = true;
+            this.cmbMarzoEdsocio.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2436,15 +2436,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilFCE.Location = new System.Drawing.Point(451, 120);
-            this.cmbAbrilFCE.Name = "cmbAbrilFCE";
-            this.cmbAbrilFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilFCE.TabIndex = 94;
+            this.cmbMarzoEdsocio.Location = new System.Drawing.Point(451, 120);
+            this.cmbMarzoEdsocio.Name = "cmbMarzoEdsocio";
+            this.cmbMarzoEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoEdsocio.TabIndex = 94;
             // 
-            // cmbMarzoFCE
+            // cmbMarzoArtess
             // 
-            this.cmbMarzoFCE.FormattingEnabled = true;
-            this.cmbMarzoFCE.Items.AddRange(new object[] {
+            this.cmbMarzoArtess.FormattingEnabled = true;
+            this.cmbMarzoArtess.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2456,15 +2456,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoFCE.Location = new System.Drawing.Point(451, 82);
-            this.cmbMarzoFCE.Name = "cmbMarzoFCE";
-            this.cmbMarzoFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoFCE.TabIndex = 93;
+            this.cmbMarzoArtess.Location = new System.Drawing.Point(451, 82);
+            this.cmbMarzoArtess.Name = "cmbMarzoArtess";
+            this.cmbMarzoArtess.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoArtess.TabIndex = 93;
             // 
-            // cmbFebreroFCE
+            // cmbMarzoFormacion
             // 
-            this.cmbFebreroFCE.FormattingEnabled = true;
-            this.cmbFebreroFCE.Items.AddRange(new object[] {
+            this.cmbMarzoFormacion.FormattingEnabled = true;
+            this.cmbMarzoFormacion.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2476,15 +2476,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroFCE.Location = new System.Drawing.Point(451, 43);
-            this.cmbFebreroFCE.Name = "cmbFebreroFCE";
-            this.cmbFebreroFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroFCE.TabIndex = 92;
+            this.cmbMarzoFormacion.Location = new System.Drawing.Point(451, 43);
+            this.cmbMarzoFormacion.Name = "cmbMarzoFormacion";
+            this.cmbMarzoFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoFormacion.TabIndex = 92;
             // 
-            // cmbEneroFCE
+            // cmbMarzoHistoria
             // 
-            this.cmbEneroFCE.FormattingEnabled = true;
-            this.cmbEneroFCE.Items.AddRange(new object[] {
+            this.cmbMarzoHistoria.FormattingEnabled = true;
+            this.cmbMarzoHistoria.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2496,15 +2496,16 @@
             "6",
             "5.5",
             "5"});
-            this.cmbEneroFCE.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroFCE.Name = "cmbEneroFCE";
-            this.cmbEneroFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroFCE.TabIndex = 91;
+            this.cmbMarzoHistoria.Location = new System.Drawing.Point(126, 238);
+            this.cmbMarzoHistoria.Name = "cmbMarzoHistoria";
+            this.cmbMarzoHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoHistoria.TabIndex = 91;
+           
             // 
-            // cmbDiciembreFCE
+            // cmbMarzoGeografia
             // 
-            this.cmbDiciembreFCE.FormattingEnabled = true;
-            this.cmbDiciembreFCE.Items.AddRange(new object[] {
+            this.cmbMarzoGeografia.FormattingEnabled = true;
+            this.cmbMarzoGeografia.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2516,15 +2517,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiciembreFCE.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreFCE.Name = "cmbDiciembreFCE";
-            this.cmbDiciembreFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreFCE.TabIndex = 90;
+            this.cmbMarzoGeografia.Location = new System.Drawing.Point(126, 199);
+            this.cmbMarzoGeografia.Name = "cmbMarzoGeografia";
+            this.cmbMarzoGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoGeografia.TabIndex = 90;
             // 
-            // cmbNoviembreFCE
+            // cmbMarzoCiencias
             // 
-            this.cmbNoviembreFCE.FormattingEnabled = true;
-            this.cmbNoviembreFCE.Items.AddRange(new object[] {
+            this.cmbMarzoCiencias.FormattingEnabled = true;
+            this.cmbMarzoCiencias.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2536,15 +2537,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbNoviembreFCE.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreFCE.Name = "cmbNoviembreFCE";
-            this.cmbNoviembreFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreFCE.TabIndex = 89;
+            this.cmbMarzoCiencias.Location = new System.Drawing.Point(126, 160);
+            this.cmbMarzoCiencias.Name = "cmbMarzoCiencias";
+            this.cmbMarzoCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoCiencias.TabIndex = 89;
             // 
-            // cmbOctubreFCE
+            // cmbMarzoIngles
             // 
-            this.cmbOctubreFCE.FormattingEnabled = true;
-            this.cmbOctubreFCE.Items.AddRange(new object[] {
+            this.cmbMarzoIngles.FormattingEnabled = true;
+            this.cmbMarzoIngles.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2556,15 +2557,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreFCE.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreFCE.Name = "cmbOctubreFCE";
-            this.cmbOctubreFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreFCE.TabIndex = 88;
+            this.cmbMarzoIngles.Location = new System.Drawing.Point(126, 121);
+            this.cmbMarzoIngles.Name = "cmbMarzoIngles";
+            this.cmbMarzoIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoIngles.TabIndex = 88;
             // 
-            // cmbSeptiembreFCE
+            // cmbMarzoMate
             // 
-            this.cmbSeptiembreFCE.FormattingEnabled = true;
-            this.cmbSeptiembreFCE.Items.AddRange(new object[] {
+            this.cmbMarzoMate.FormattingEnabled = true;
+            this.cmbMarzoMate.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2576,15 +2577,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbSeptiembreFCE.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreFCE.Name = "cmbSeptiembreFCE";
-            this.cmbSeptiembreFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreFCE.TabIndex = 87;
+            this.cmbMarzoMate.Location = new System.Drawing.Point(126, 82);
+            this.cmbMarzoMate.Name = "cmbMarzoMate";
+            this.cmbMarzoMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbMarzoMate.TabIndex = 87;
             // 
-            // cmbDiagFCE
+            // cmbmarzoEspañol
             // 
-            this.cmbDiagFCE.FormattingEnabled = true;
-            this.cmbDiagFCE.Items.AddRange(new object[] {
+            this.cmbmarzoEspañol.FormattingEnabled = true;
+            this.cmbmarzoEspañol.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2596,10 +2597,10 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiagFCE.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagFCE.Name = "cmbDiagFCE";
-            this.cmbDiagFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagFCE.TabIndex = 75;
+            this.cmbmarzoEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbmarzoEspañol.Name = "cmbmarzoEspañol";
+            this.cmbmarzoEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbmarzoEspañol.TabIndex = 75;
             // 
             // label84
             // 
@@ -4670,16 +4671,16 @@
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.ComboBox cmbJunioFCE;
-        private System.Windows.Forms.ComboBox cmbMayoFCE;
-        private System.Windows.Forms.ComboBox cmbAbrilFCE;
-        private System.Windows.Forms.ComboBox cmbMarzoFCE;
-        private System.Windows.Forms.ComboBox cmbFebreroFCE;
-        private System.Windows.Forms.ComboBox cmbEneroFCE;
-        private System.Windows.Forms.ComboBox cmbDiciembreFCE;
-        private System.Windows.Forms.ComboBox cmbNoviembreFCE;
-        private System.Windows.Forms.ComboBox cmbOctubreFCE;
-        private System.Windows.Forms.ComboBox cmbSeptiembreFCE;
-        private System.Windows.Forms.ComboBox cmbDiagFCE;
+        private System.Windows.Forms.ComboBox cmbMarzoEdFisica;
+        private System.Windows.Forms.ComboBox cmbMarzoEdsocio;
+        private System.Windows.Forms.ComboBox cmbMarzoArtess;
+        private System.Windows.Forms.ComboBox cmbMarzoFormacion;
+        private System.Windows.Forms.ComboBox cmbMarzoHistoria;
+        private System.Windows.Forms.ComboBox cmbMarzoGeografia;
+        private System.Windows.Forms.ComboBox cmbMarzoCiencias;
+        private System.Windows.Forms.ComboBox cmbMarzoIngles;
+        private System.Windows.Forms.ComboBox cmbMarzoMate;
+        private System.Windows.Forms.ComboBox cmbmarzoEspañol;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.ComboBox cmbJunioArtes;
