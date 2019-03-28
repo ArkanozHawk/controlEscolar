@@ -121,17 +121,17 @@
             this.label48 = new System.Windows.Forms.Label();
             this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.cmbJunioGeo = new System.Windows.Forms.ComboBox();
-            this.cmbMayoGeo = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilGeo = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoGeo = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroGeo = new System.Windows.Forms.ComboBox();
-            this.cmbEneroGeo = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreGeo = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreGeo = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreGeo = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreGeo = new System.Windows.Forms.ComboBox();
-            this.cmbDiagGeo = new System.Windows.Forms.ComboBox();
+            this.cmbEneroIna = new System.Windows.Forms.ComboBox();
+            this.cmbEneroEdfisica = new System.Windows.Forms.ComboBox();
+            this.cmbEneroEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbEneroArtess = new System.Windows.Forms.ComboBox();
+            this.cmbEneroFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbEneroHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbEneroGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbEneroCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbEneroIngles = new System.Windows.Forms.ComboBox();
+            this.cmbEneroMate = new System.Windows.Forms.ComboBox();
+            this.cmbEneroEspañol = new System.Windows.Forms.ComboBox();
             this.label60 = new System.Windows.Forms.Label();
             this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -1804,17 +1804,17 @@
             this.groupBox4.Controls.Add(this.label46);
             this.groupBox4.Controls.Add(this.label47);
             this.groupBox4.Controls.Add(this.label49);
-            this.groupBox4.Controls.Add(this.cmbJunioGeo);
-            this.groupBox4.Controls.Add(this.cmbMayoGeo);
-            this.groupBox4.Controls.Add(this.cmbAbrilGeo);
-            this.groupBox4.Controls.Add(this.cmbMarzoGeo);
-            this.groupBox4.Controls.Add(this.cmbFebreroGeo);
-            this.groupBox4.Controls.Add(this.cmbEneroGeo);
-            this.groupBox4.Controls.Add(this.cmbDiciembreGeo);
-            this.groupBox4.Controls.Add(this.cmbNoviembreGeo);
-            this.groupBox4.Controls.Add(this.cmbOctubreGeo);
-            this.groupBox4.Controls.Add(this.cmbSeptiembreGeo);
-            this.groupBox4.Controls.Add(this.cmbDiagGeo);
+            this.groupBox4.Controls.Add(this.cmbEneroIna);
+            this.groupBox4.Controls.Add(this.cmbEneroEdfisica);
+            this.groupBox4.Controls.Add(this.cmbEneroEdsocio);
+            this.groupBox4.Controls.Add(this.cmbEneroArtess);
+            this.groupBox4.Controls.Add(this.cmbEneroFormacion);
+            this.groupBox4.Controls.Add(this.cmbEneroHistoria);
+            this.groupBox4.Controls.Add(this.cmbEneroGeografia);
+            this.groupBox4.Controls.Add(this.cmbEneroCiencias);
+            this.groupBox4.Controls.Add(this.cmbEneroIngles);
+            this.groupBox4.Controls.Add(this.cmbEneroMate);
+            this.groupBox4.Controls.Add(this.cmbEneroEspañol);
             this.groupBox4.Controls.Add(this.label60);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox4.Location = new System.Drawing.Point(178, 18);
@@ -1824,10 +1824,10 @@
             this.groupBox4.TabIndex = 82;
             this.groupBox4.TabStop = false;
             // 
-            // cmbJunioGeo
+            // cmbEneroIna
             // 
-            this.cmbJunioGeo.FormattingEnabled = true;
-            this.cmbJunioGeo.Items.AddRange(new object[] {
+            this.cmbEneroIna.FormattingEnabled = true;
+            this.cmbEneroIna.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1839,15 +1839,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioGeo.Location = new System.Drawing.Point(435, 199);
-            this.cmbJunioGeo.Name = "cmbJunioGeo";
-            this.cmbJunioGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioGeo.TabIndex = 96;
+            this.cmbEneroIna.Location = new System.Drawing.Point(435, 199);
+            this.cmbEneroIna.Name = "cmbEneroIna";
+            this.cmbEneroIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroIna.TabIndex = 96;
             // 
-            // cmbMayoGeo
+            // cmbEneroEdfisica
             // 
-            this.cmbMayoGeo.FormattingEnabled = true;
-            this.cmbMayoGeo.Items.AddRange(new object[] {
+            this.cmbEneroEdfisica.FormattingEnabled = true;
+            this.cmbEneroEdfisica.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1859,15 +1859,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoGeo.Location = new System.Drawing.Point(435, 160);
-            this.cmbMayoGeo.Name = "cmbMayoGeo";
-            this.cmbMayoGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoGeo.TabIndex = 95;
+            this.cmbEneroEdfisica.Location = new System.Drawing.Point(435, 160);
+            this.cmbEneroEdfisica.Name = "cmbEneroEdfisica";
+            this.cmbEneroEdfisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroEdfisica.TabIndex = 95;
             // 
-            // cmbAbrilGeo
+            // cmbEneroEdsocio
             // 
-            this.cmbAbrilGeo.FormattingEnabled = true;
-            this.cmbAbrilGeo.Items.AddRange(new object[] {
+            this.cmbEneroEdsocio.FormattingEnabled = true;
+            this.cmbEneroEdsocio.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1879,15 +1879,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilGeo.Location = new System.Drawing.Point(435, 121);
-            this.cmbAbrilGeo.Name = "cmbAbrilGeo";
-            this.cmbAbrilGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilGeo.TabIndex = 94;
+            this.cmbEneroEdsocio.Location = new System.Drawing.Point(435, 121);
+            this.cmbEneroEdsocio.Name = "cmbEneroEdsocio";
+            this.cmbEneroEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroEdsocio.TabIndex = 94;
             // 
-            // cmbMarzoGeo
+            // cmbEneroArtess
             // 
-            this.cmbMarzoGeo.FormattingEnabled = true;
-            this.cmbMarzoGeo.Items.AddRange(new object[] {
+            this.cmbEneroArtess.FormattingEnabled = true;
+            this.cmbEneroArtess.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1899,15 +1899,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoGeo.Location = new System.Drawing.Point(435, 83);
-            this.cmbMarzoGeo.Name = "cmbMarzoGeo";
-            this.cmbMarzoGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoGeo.TabIndex = 93;
+            this.cmbEneroArtess.Location = new System.Drawing.Point(435, 83);
+            this.cmbEneroArtess.Name = "cmbEneroArtess";
+            this.cmbEneroArtess.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroArtess.TabIndex = 93;
             // 
-            // cmbFebreroGeo
+            // cmbEneroFormacion
             // 
-            this.cmbFebreroGeo.FormattingEnabled = true;
-            this.cmbFebreroGeo.Items.AddRange(new object[] {
+            this.cmbEneroFormacion.FormattingEnabled = true;
+            this.cmbEneroFormacion.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1919,15 +1919,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroGeo.Location = new System.Drawing.Point(435, 44);
-            this.cmbFebreroGeo.Name = "cmbFebreroGeo";
-            this.cmbFebreroGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroGeo.TabIndex = 92;
+            this.cmbEneroFormacion.Location = new System.Drawing.Point(435, 44);
+            this.cmbEneroFormacion.Name = "cmbEneroFormacion";
+            this.cmbEneroFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroFormacion.TabIndex = 92;
             // 
-            // cmbEneroGeo
+            // cmbEneroHistoria
             // 
-            this.cmbEneroGeo.FormattingEnabled = true;
-            this.cmbEneroGeo.Items.AddRange(new object[] {
+            this.cmbEneroHistoria.FormattingEnabled = true;
+            this.cmbEneroHistoria.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1939,15 +1939,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbEneroGeo.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroGeo.Name = "cmbEneroGeo";
-            this.cmbEneroGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroGeo.TabIndex = 91;
+            this.cmbEneroHistoria.Location = new System.Drawing.Point(126, 238);
+            this.cmbEneroHistoria.Name = "cmbEneroHistoria";
+            this.cmbEneroHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroHistoria.TabIndex = 91;
             // 
-            // cmbDiciembreGeo
+            // cmbEneroGeografia
             // 
-            this.cmbDiciembreGeo.FormattingEnabled = true;
-            this.cmbDiciembreGeo.Items.AddRange(new object[] {
+            this.cmbEneroGeografia.FormattingEnabled = true;
+            this.cmbEneroGeografia.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1959,15 +1959,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiciembreGeo.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreGeo.Name = "cmbDiciembreGeo";
-            this.cmbDiciembreGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreGeo.TabIndex = 90;
+            this.cmbEneroGeografia.Location = new System.Drawing.Point(126, 199);
+            this.cmbEneroGeografia.Name = "cmbEneroGeografia";
+            this.cmbEneroGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroGeografia.TabIndex = 90;
             // 
-            // cmbNoviembreGeo
+            // cmbEneroCiencias
             // 
-            this.cmbNoviembreGeo.FormattingEnabled = true;
-            this.cmbNoviembreGeo.Items.AddRange(new object[] {
+            this.cmbEneroCiencias.FormattingEnabled = true;
+            this.cmbEneroCiencias.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1979,15 +1979,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbNoviembreGeo.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreGeo.Name = "cmbNoviembreGeo";
-            this.cmbNoviembreGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreGeo.TabIndex = 89;
+            this.cmbEneroCiencias.Location = new System.Drawing.Point(126, 160);
+            this.cmbEneroCiencias.Name = "cmbEneroCiencias";
+            this.cmbEneroCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroCiencias.TabIndex = 89;
             // 
-            // cmbOctubreGeo
+            // cmbEneroIngles
             // 
-            this.cmbOctubreGeo.FormattingEnabled = true;
-            this.cmbOctubreGeo.Items.AddRange(new object[] {
+            this.cmbEneroIngles.FormattingEnabled = true;
+            this.cmbEneroIngles.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1999,15 +1999,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreGeo.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreGeo.Name = "cmbOctubreGeo";
-            this.cmbOctubreGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreGeo.TabIndex = 88;
+            this.cmbEneroIngles.Location = new System.Drawing.Point(126, 121);
+            this.cmbEneroIngles.Name = "cmbEneroIngles";
+            this.cmbEneroIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroIngles.TabIndex = 88;
             // 
-            // cmbSeptiembreGeo
+            // cmbEneroMate
             // 
-            this.cmbSeptiembreGeo.FormattingEnabled = true;
-            this.cmbSeptiembreGeo.Items.AddRange(new object[] {
+            this.cmbEneroMate.FormattingEnabled = true;
+            this.cmbEneroMate.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2019,15 +2019,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbSeptiembreGeo.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreGeo.Name = "cmbSeptiembreGeo";
-            this.cmbSeptiembreGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreGeo.TabIndex = 87;
+            this.cmbEneroMate.Location = new System.Drawing.Point(126, 82);
+            this.cmbEneroMate.Name = "cmbEneroMate";
+            this.cmbEneroMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroMate.TabIndex = 87;
             // 
-            // cmbDiagGeo
+            // cmbEneroEspañol
             // 
-            this.cmbDiagGeo.FormattingEnabled = true;
-            this.cmbDiagGeo.Items.AddRange(new object[] {
+            this.cmbEneroEspañol.FormattingEnabled = true;
+            this.cmbEneroEspañol.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -2039,10 +2039,10 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiagGeo.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagGeo.Name = "cmbDiagGeo";
-            this.cmbDiagGeo.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagGeo.TabIndex = 75;
+            this.cmbEneroEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbEneroEspañol.Name = "cmbEneroEspañol";
+            this.cmbEneroEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbEneroEspañol.TabIndex = 75;
             // 
             // label60
             // 
@@ -4643,17 +4643,17 @@
         private System.Windows.Forms.ComboBox cmbDicEspañol;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox cmbJunioGeo;
-        private System.Windows.Forms.ComboBox cmbMayoGeo;
-        private System.Windows.Forms.ComboBox cmbAbrilGeo;
-        private System.Windows.Forms.ComboBox cmbMarzoGeo;
-        private System.Windows.Forms.ComboBox cmbFebreroGeo;
-        private System.Windows.Forms.ComboBox cmbEneroGeo;
-        private System.Windows.Forms.ComboBox cmbDiciembreGeo;
-        private System.Windows.Forms.ComboBox cmbNoviembreGeo;
-        private System.Windows.Forms.ComboBox cmbOctubreGeo;
-        private System.Windows.Forms.ComboBox cmbSeptiembreGeo;
-        private System.Windows.Forms.ComboBox cmbDiagGeo;
+        private System.Windows.Forms.ComboBox cmbEneroIna;
+        private System.Windows.Forms.ComboBox cmbEneroEdfisica;
+        private System.Windows.Forms.ComboBox cmbEneroEdsocio;
+        private System.Windows.Forms.ComboBox cmbEneroArtess;
+        private System.Windows.Forms.ComboBox cmbEneroFormacion;
+        private System.Windows.Forms.ComboBox cmbEneroHistoria;
+        private System.Windows.Forms.ComboBox cmbEneroGeografia;
+        private System.Windows.Forms.ComboBox cmbEneroCiencias;
+        private System.Windows.Forms.ComboBox cmbEneroIngles;
+        private System.Windows.Forms.ComboBox cmbEneroMate;
+        private System.Windows.Forms.ComboBox cmbEneroEspañol;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.ComboBox cmbJunioHist;
