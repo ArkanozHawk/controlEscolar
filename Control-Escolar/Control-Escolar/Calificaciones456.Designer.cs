@@ -107,17 +107,17 @@
             this.label36 = new System.Windows.Forms.Label();
             this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbJunioNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbMayoNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbEneroNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreNaturales = new System.Windows.Forms.ComboBox();
-            this.cmbDiagNaturales = new System.Windows.Forms.ComboBox();
+            this.cmbDicInasis = new System.Windows.Forms.ComboBox();
+            this.cmbDicEdFisica = new System.Windows.Forms.ComboBox();
+            this.cmbDicEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbDicArtes = new System.Windows.Forms.ComboBox();
+            this.cmbDicForm = new System.Windows.Forms.ComboBox();
+            this.cmbDicHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbDicGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbDicCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbDicIngles = new System.Windows.Forms.ComboBox();
+            this.cmbDicMate = new System.Windows.Forms.ComboBox();
+            this.cmbDicEspañol = new System.Windows.Forms.ComboBox();
             this.label48 = new System.Windows.Forms.Label();
             this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -1526,17 +1526,17 @@
             this.groupBox3.Controls.Add(this.label40);
             this.groupBox3.Controls.Add(this.label41);
             this.groupBox3.Controls.Add(this.label42);
-            this.groupBox3.Controls.Add(this.cmbJunioNaturales);
-            this.groupBox3.Controls.Add(this.cmbMayoNaturales);
-            this.groupBox3.Controls.Add(this.cmbAbrilNaturales);
-            this.groupBox3.Controls.Add(this.cmbMarzoNaturales);
-            this.groupBox3.Controls.Add(this.cmbFebreroNaturales);
-            this.groupBox3.Controls.Add(this.cmbEneroNaturales);
-            this.groupBox3.Controls.Add(this.cmbDiciembreNaturales);
-            this.groupBox3.Controls.Add(this.cmbNoviembreNaturales);
-            this.groupBox3.Controls.Add(this.cmbOctubreNaturales);
-            this.groupBox3.Controls.Add(this.cmbSeptiembreNaturales);
-            this.groupBox3.Controls.Add(this.cmbDiagNaturales);
+            this.groupBox3.Controls.Add(this.cmbDicInasis);
+            this.groupBox3.Controls.Add(this.cmbDicEdFisica);
+            this.groupBox3.Controls.Add(this.cmbDicEdsocio);
+            this.groupBox3.Controls.Add(this.cmbDicArtes);
+            this.groupBox3.Controls.Add(this.cmbDicForm);
+            this.groupBox3.Controls.Add(this.cmbDicHistoria);
+            this.groupBox3.Controls.Add(this.cmbDicGeografia);
+            this.groupBox3.Controls.Add(this.cmbDicCiencias);
+            this.groupBox3.Controls.Add(this.cmbDicIngles);
+            this.groupBox3.Controls.Add(this.cmbDicMate);
+            this.groupBox3.Controls.Add(this.cmbDicEspañol);
             this.groupBox3.Controls.Add(this.label48);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox3.Location = new System.Drawing.Point(178, 18);
@@ -1546,10 +1546,10 @@
             this.groupBox3.TabIndex = 82;
             this.groupBox3.TabStop = false;
             // 
-            // cmbJunioNaturales
+            // cmbDicInasis
             // 
-            this.cmbJunioNaturales.FormattingEnabled = true;
-            this.cmbJunioNaturales.Items.AddRange(new object[] {
+            this.cmbDicInasis.FormattingEnabled = true;
+            this.cmbDicInasis.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1561,15 +1561,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbJunioNaturales.Location = new System.Drawing.Point(439, 199);
-            this.cmbJunioNaturales.Name = "cmbJunioNaturales";
-            this.cmbJunioNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioNaturales.TabIndex = 96;
+            this.cmbDicInasis.Location = new System.Drawing.Point(439, 199);
+            this.cmbDicInasis.Name = "cmbDicInasis";
+            this.cmbDicInasis.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicInasis.TabIndex = 96;
             // 
-            // cmbMayoNaturales
+            // cmbDicEdFisica
             // 
-            this.cmbMayoNaturales.FormattingEnabled = true;
-            this.cmbMayoNaturales.Items.AddRange(new object[] {
+            this.cmbDicEdFisica.FormattingEnabled = true;
+            this.cmbDicEdFisica.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1581,15 +1581,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMayoNaturales.Location = new System.Drawing.Point(439, 160);
-            this.cmbMayoNaturales.Name = "cmbMayoNaturales";
-            this.cmbMayoNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoNaturales.TabIndex = 95;
+            this.cmbDicEdFisica.Location = new System.Drawing.Point(439, 160);
+            this.cmbDicEdFisica.Name = "cmbDicEdFisica";
+            this.cmbDicEdFisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicEdFisica.TabIndex = 95;
             // 
-            // cmbAbrilNaturales
+            // cmbDicEdsocio
             // 
-            this.cmbAbrilNaturales.FormattingEnabled = true;
-            this.cmbAbrilNaturales.Items.AddRange(new object[] {
+            this.cmbDicEdsocio.FormattingEnabled = true;
+            this.cmbDicEdsocio.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1601,15 +1601,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbAbrilNaturales.Location = new System.Drawing.Point(439, 121);
-            this.cmbAbrilNaturales.Name = "cmbAbrilNaturales";
-            this.cmbAbrilNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilNaturales.TabIndex = 94;
+            this.cmbDicEdsocio.Location = new System.Drawing.Point(439, 121);
+            this.cmbDicEdsocio.Name = "cmbDicEdsocio";
+            this.cmbDicEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicEdsocio.TabIndex = 94;
             // 
-            // cmbMarzoNaturales
+            // cmbDicArtes
             // 
-            this.cmbMarzoNaturales.FormattingEnabled = true;
-            this.cmbMarzoNaturales.Items.AddRange(new object[] {
+            this.cmbDicArtes.FormattingEnabled = true;
+            this.cmbDicArtes.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1621,15 +1621,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbMarzoNaturales.Location = new System.Drawing.Point(439, 83);
-            this.cmbMarzoNaturales.Name = "cmbMarzoNaturales";
-            this.cmbMarzoNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoNaturales.TabIndex = 93;
+            this.cmbDicArtes.Location = new System.Drawing.Point(439, 83);
+            this.cmbDicArtes.Name = "cmbDicArtes";
+            this.cmbDicArtes.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicArtes.TabIndex = 93;
             // 
-            // cmbFebreroNaturales
+            // cmbDicForm
             // 
-            this.cmbFebreroNaturales.FormattingEnabled = true;
-            this.cmbFebreroNaturales.Items.AddRange(new object[] {
+            this.cmbDicForm.FormattingEnabled = true;
+            this.cmbDicForm.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1641,15 +1641,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbFebreroNaturales.Location = new System.Drawing.Point(439, 44);
-            this.cmbFebreroNaturales.Name = "cmbFebreroNaturales";
-            this.cmbFebreroNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroNaturales.TabIndex = 92;
+            this.cmbDicForm.Location = new System.Drawing.Point(439, 44);
+            this.cmbDicForm.Name = "cmbDicForm";
+            this.cmbDicForm.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicForm.TabIndex = 92;
             // 
-            // cmbEneroNaturales
+            // cmbDicHistoria
             // 
-            this.cmbEneroNaturales.FormattingEnabled = true;
-            this.cmbEneroNaturales.Items.AddRange(new object[] {
+            this.cmbDicHistoria.FormattingEnabled = true;
+            this.cmbDicHistoria.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1661,15 +1661,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbEneroNaturales.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroNaturales.Name = "cmbEneroNaturales";
-            this.cmbEneroNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroNaturales.TabIndex = 91;
+            this.cmbDicHistoria.Location = new System.Drawing.Point(126, 238);
+            this.cmbDicHistoria.Name = "cmbDicHistoria";
+            this.cmbDicHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicHistoria.TabIndex = 91;
             // 
-            // cmbDiciembreNaturales
+            // cmbDicGeografia
             // 
-            this.cmbDiciembreNaturales.FormattingEnabled = true;
-            this.cmbDiciembreNaturales.Items.AddRange(new object[] {
+            this.cmbDicGeografia.FormattingEnabled = true;
+            this.cmbDicGeografia.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1681,15 +1681,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiciembreNaturales.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreNaturales.Name = "cmbDiciembreNaturales";
-            this.cmbDiciembreNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreNaturales.TabIndex = 90;
+            this.cmbDicGeografia.Location = new System.Drawing.Point(126, 199);
+            this.cmbDicGeografia.Name = "cmbDicGeografia";
+            this.cmbDicGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicGeografia.TabIndex = 90;
             // 
-            // cmbNoviembreNaturales
+            // cmbDicCiencias
             // 
-            this.cmbNoviembreNaturales.FormattingEnabled = true;
-            this.cmbNoviembreNaturales.Items.AddRange(new object[] {
+            this.cmbDicCiencias.FormattingEnabled = true;
+            this.cmbDicCiencias.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1701,15 +1701,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbNoviembreNaturales.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreNaturales.Name = "cmbNoviembreNaturales";
-            this.cmbNoviembreNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreNaturales.TabIndex = 89;
+            this.cmbDicCiencias.Location = new System.Drawing.Point(126, 160);
+            this.cmbDicCiencias.Name = "cmbDicCiencias";
+            this.cmbDicCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicCiencias.TabIndex = 89;
             // 
-            // cmbOctubreNaturales
+            // cmbDicIngles
             // 
-            this.cmbOctubreNaturales.FormattingEnabled = true;
-            this.cmbOctubreNaturales.Items.AddRange(new object[] {
+            this.cmbDicIngles.FormattingEnabled = true;
+            this.cmbDicIngles.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1721,15 +1721,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreNaturales.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreNaturales.Name = "cmbOctubreNaturales";
-            this.cmbOctubreNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreNaturales.TabIndex = 88;
+            this.cmbDicIngles.Location = new System.Drawing.Point(126, 121);
+            this.cmbDicIngles.Name = "cmbDicIngles";
+            this.cmbDicIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicIngles.TabIndex = 88;
             // 
-            // cmbSeptiembreNaturales
+            // cmbDicMate
             // 
-            this.cmbSeptiembreNaturales.FormattingEnabled = true;
-            this.cmbSeptiembreNaturales.Items.AddRange(new object[] {
+            this.cmbDicMate.FormattingEnabled = true;
+            this.cmbDicMate.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1741,15 +1741,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbSeptiembreNaturales.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreNaturales.Name = "cmbSeptiembreNaturales";
-            this.cmbSeptiembreNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreNaturales.TabIndex = 87;
+            this.cmbDicMate.Location = new System.Drawing.Point(126, 82);
+            this.cmbDicMate.Name = "cmbDicMate";
+            this.cmbDicMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicMate.TabIndex = 87;
             // 
-            // cmbDiagNaturales
+            // cmbDicEspañol
             // 
-            this.cmbDiagNaturales.FormattingEnabled = true;
-            this.cmbDiagNaturales.Items.AddRange(new object[] {
+            this.cmbDicEspañol.FormattingEnabled = true;
+            this.cmbDicEspañol.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -1761,10 +1761,10 @@
             "6",
             "5.5",
             "5"});
-            this.cmbDiagNaturales.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagNaturales.Name = "cmbDiagNaturales";
-            this.cmbDiagNaturales.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagNaturales.TabIndex = 75;
+            this.cmbDicEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbDicEspañol.Name = "cmbDicEspañol";
+            this.cmbDicEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbDicEspañol.TabIndex = 75;
             // 
             // label48
             // 
@@ -4630,17 +4630,17 @@
         private System.Windows.Forms.ComboBox cmbNovEspañol;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cmbJunioNaturales;
-        private System.Windows.Forms.ComboBox cmbMayoNaturales;
-        private System.Windows.Forms.ComboBox cmbAbrilNaturales;
-        private System.Windows.Forms.ComboBox cmbMarzoNaturales;
-        private System.Windows.Forms.ComboBox cmbFebreroNaturales;
-        private System.Windows.Forms.ComboBox cmbEneroNaturales;
-        private System.Windows.Forms.ComboBox cmbDiciembreNaturales;
-        private System.Windows.Forms.ComboBox cmbNoviembreNaturales;
-        private System.Windows.Forms.ComboBox cmbOctubreNaturales;
-        private System.Windows.Forms.ComboBox cmbSeptiembreNaturales;
-        private System.Windows.Forms.ComboBox cmbDiagNaturales;
+        private System.Windows.Forms.ComboBox cmbDicInasis;
+        private System.Windows.Forms.ComboBox cmbDicEdFisica;
+        private System.Windows.Forms.ComboBox cmbDicEdsocio;
+        private System.Windows.Forms.ComboBox cmbDicArtes;
+        private System.Windows.Forms.ComboBox cmbDicForm;
+        private System.Windows.Forms.ComboBox cmbDicHistoria;
+        private System.Windows.Forms.ComboBox cmbDicGeografia;
+        private System.Windows.Forms.ComboBox cmbDicCiencias;
+        private System.Windows.Forms.ComboBox cmbDicIngles;
+        private System.Windows.Forms.ComboBox cmbDicMate;
+        private System.Windows.Forms.ComboBox cmbDicEspañol;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.ComboBox cmbJunioGeo;
