@@ -73,6 +73,17 @@
             this.cmbOctubreEdsocio = new System.Windows.Forms.ComboBox();
             this.cmboctubreArt = new System.Windows.Forms.ComboBox();
             this.cmbOctubreFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreIngles = new System.Windows.Forms.ComboBox();
+            this.cmbOctubreMate = new System.Windows.Forms.ComboBox();
+            this.cmbEspañol = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -107,6 +118,17 @@
             this.label36 = new System.Windows.Forms.Label();
             this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.cmbDicInasis = new System.Windows.Forms.ComboBox();
             this.cmbDicEdFisica = new System.Windows.Forms.ComboBox();
             this.cmbDicEdsocio = new System.Windows.Forms.ComboBox();
@@ -121,6 +143,17 @@
             this.label48 = new System.Windows.Forms.Label();
             this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
             this.cmbEneroIna = new System.Windows.Forms.ComboBox();
             this.cmbEneroEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbEneroEdsocio = new System.Windows.Forms.ComboBox();
@@ -135,6 +168,17 @@
             this.label60 = new System.Windows.Forms.Label();
             this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
             this.cmbJunioHist = new System.Windows.Forms.ComboBox();
             this.cmbFebreroEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbFebreroEdsocio = new System.Windows.Forms.ComboBox();
@@ -149,6 +193,17 @@
             this.label72 = new System.Windows.Forms.Label();
             this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
             this.cmbJunioFCE = new System.Windows.Forms.ComboBox();
             this.cmbMarzoEdFisica = new System.Windows.Forms.ComboBox();
             this.cmbMarzoEdsocio = new System.Windows.Forms.ComboBox();
@@ -163,138 +218,83 @@
             this.label84 = new System.Windows.Forms.Label();
             this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.cmbJunioArtes = new System.Windows.Forms.ComboBox();
-            this.cmbMayoArtes = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilArtes = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoArtes = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroArtes = new System.Windows.Forms.ComboBox();
-            this.cmbEneroArtes = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreArtes = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreArtes = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreArtes = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreArtes = new System.Windows.Forms.ComboBox();
-            this.cmbDiagArtes = new System.Windows.Forms.ComboBox();
-            this.label96 = new System.Windows.Forms.Label();
-            this.Mayo = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.cmbJunioSocio = new System.Windows.Forms.ComboBox();
-            this.cmbMayoSocio = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilSocio = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoSocio = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroSocio = new System.Windows.Forms.ComboBox();
-            this.cmbEneroSocio = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreSocio = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreSocio = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreSocio = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreSocio = new System.Windows.Forms.ComboBox();
-            this.cmbDiagSocio = new System.Windows.Forms.ComboBox();
-            this.label108 = new System.Windows.Forms.Label();
-            this.Junio = new System.Windows.Forms.TabPage();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.cmbJunioEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbMayoEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbAbrilEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbMarzoEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbFebreroEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbEneroEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbDiciembreEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbNoviembreEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbSeptiembreEdFis = new System.Windows.Forms.ComboBox();
-            this.cmbDiagEdFis = new System.Windows.Forms.ComboBox();
-            this.label120 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label37 = new System.Windows.Forms.Label();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.label62 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
+            this.cmbAbrilIna = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilEdfisica = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilArtess = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilHistoria = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilIngles = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilmate = new System.Windows.Forms.ComboBox();
+            this.cmbAbrilEspañol = new System.Windows.Forms.ComboBox();
+            this.label96 = new System.Windows.Forms.Label();
+            this.Mayo = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
+            this.cmbMayoIna = new System.Windows.Forms.ComboBox();
+            this.cmbMayoEdfisica = new System.Windows.Forms.ComboBox();
+            this.cmbMayoEdsocio = new System.Windows.Forms.ComboBox();
+            this.cmbMayoArtes = new System.Windows.Forms.ComboBox();
+            this.cmbMayoFormacion = new System.Windows.Forms.ComboBox();
+            this.cmbMayohistoria = new System.Windows.Forms.ComboBox();
+            this.cmbMayoGeografia = new System.Windows.Forms.ComboBox();
+            this.cmbMayoCiencias = new System.Windows.Forms.ComboBox();
+            this.cmbMayoIngles = new System.Windows.Forms.ComboBox();
+            this.cmbMayoMate = new System.Windows.Forms.ComboBox();
+            this.cmbmayoEspañol = new System.Windows.Forms.ComboBox();
+            this.label108 = new System.Windows.Forms.Label();
+            this.Junio = new System.Windows.Forms.TabPage();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label119 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label115 = new System.Windows.Forms.Label();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
-            this.label118 = new System.Windows.Forms.Label();
-            this.label119 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.cmbEspañol = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreMate = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreHistoria = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreGeografia = new System.Windows.Forms.ComboBox();
-            this.cmbOctubreIngles = new System.Windows.Forms.ComboBox();
+            this.cmbJunioinasis = new System.Windows.Forms.ComboBox();
+            this.cmbJunioEdFis = new System.Windows.Forms.ComboBox();
+            this.cmbJunioEdsocioe = new System.Windows.Forms.ComboBox();
+            this.cmbJunioArtess = new System.Windows.Forms.ComboBox();
+            this.cmbJunioFormacionCivica = new System.Windows.Forms.ComboBox();
+            this.cmbJuniohistorias = new System.Windows.Forms.ComboBox();
+            this.cmbJunioGeofgrafia = new System.Windows.Forms.ComboBox();
+            this.cmbJunioCienciass = new System.Windows.Forms.ComboBox();
+            this.cmbJunioingless = new System.Windows.Forms.ComboBox();
+            this.cmbJuniomate = new System.Windows.Forms.ComboBox();
+            this.cmbDJunioEspañol = new System.Windows.Forms.ComboBox();
+            this.label120 = new System.Windows.Forms.Label();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.Septiembre.SuspendLayout();
             this.BoxGenero.SuspendLayout();
@@ -1028,6 +1028,176 @@
             this.cmbOctubreFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreFormacion.TabIndex = 92;
             // 
+            // cmbOctubreHistoria
+            // 
+            this.cmbOctubreHistoria.FormattingEnabled = true;
+            this.cmbOctubreHistoria.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreHistoria.Location = new System.Drawing.Point(176, 237);
+            this.cmbOctubreHistoria.Name = "cmbOctubreHistoria";
+            this.cmbOctubreHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreHistoria.TabIndex = 91;
+            // 
+            // cmbOctubreGeografia
+            // 
+            this.cmbOctubreGeografia.FormattingEnabled = true;
+            this.cmbOctubreGeografia.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreGeografia.Location = new System.Drawing.Point(176, 198);
+            this.cmbOctubreGeografia.Name = "cmbOctubreGeografia";
+            this.cmbOctubreGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreGeografia.TabIndex = 90;
+            // 
+            // cmbOctubreCiencias
+            // 
+            this.cmbOctubreCiencias.FormattingEnabled = true;
+            this.cmbOctubreCiencias.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreCiencias.Location = new System.Drawing.Point(176, 159);
+            this.cmbOctubreCiencias.Name = "cmbOctubreCiencias";
+            this.cmbOctubreCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreCiencias.TabIndex = 89;
+            // 
+            // cmbOctubreIngles
+            // 
+            this.cmbOctubreIngles.FormattingEnabled = true;
+            this.cmbOctubreIngles.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreIngles.Location = new System.Drawing.Point(176, 120);
+            this.cmbOctubreIngles.Name = "cmbOctubreIngles";
+            this.cmbOctubreIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreIngles.TabIndex = 88;
+            // 
+            // cmbOctubreMate
+            // 
+            this.cmbOctubreMate.FormattingEnabled = true;
+            this.cmbOctubreMate.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbOctubreMate.Location = new System.Drawing.Point(176, 81);
+            this.cmbOctubreMate.Name = "cmbOctubreMate";
+            this.cmbOctubreMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbOctubreMate.TabIndex = 87;
+            // 
+            // cmbEspañol
+            // 
+            this.cmbEspañol.FormattingEnabled = true;
+            this.cmbEspañol.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbEspañol.Location = new System.Drawing.Point(176, 42);
+            this.cmbEspañol.Name = "cmbEspañol";
+            this.cmbEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbEspañol.TabIndex = 75;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label13.Location = new System.Drawing.Point(281, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(0, 20);
+            this.label13.TabIndex = 74;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label14.Location = new System.Drawing.Point(281, 50);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(0, 20);
+            this.label14.TabIndex = 73;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label15.Location = new System.Drawing.Point(281, 90);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(0, 20);
+            this.label15.TabIndex = 72;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label16.Location = new System.Drawing.Point(281, 127);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(0, 20);
+            this.label16.TabIndex = 71;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label17.Location = new System.Drawing.Point(281, 167);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(0, 20);
+            this.label17.TabIndex = 70;
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -1546,6 +1716,127 @@
             this.groupBox3.TabIndex = 82;
             this.groupBox3.TabStop = false;
             // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label82.Location = new System.Drawing.Point(323, 212);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(102, 20);
+            this.label82.TabIndex = 119;
+            this.label82.Text = "Inasistencias";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label83.Location = new System.Drawing.Point(314, 168);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(74, 20);
+            this.label83.TabIndex = 118;
+            this.label83.Text = "Ed.Fisica";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label85.Location = new System.Drawing.Point(311, 129);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(77, 20);
+            this.label85.TabIndex = 117;
+            this.label85.Text = "Ed. Socio";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label86.Location = new System.Drawing.Point(323, 90);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(47, 20);
+            this.label86.TabIndex = 116;
+            this.label86.Text = "Artes";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label87.Location = new System.Drawing.Point(258, 51);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(175, 20);
+            this.label87.TabIndex = 115;
+            this.label87.Text = "Formacion civica y etica";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label37.Location = new System.Drawing.Point(20, 245);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(63, 20);
+            this.label37.TabIndex = 114;
+            this.label37.Text = "Historia";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label38.Location = new System.Drawing.Point(3, 205);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(80, 20);
+            this.label38.TabIndex = 113;
+            this.label38.Text = "Geografia";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label39.Location = new System.Drawing.Point(-43, 165);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(141, 20);
+            this.label39.TabIndex = 112;
+            this.label39.Text = "Ciencias Naturales";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label40.Location = new System.Drawing.Point(31, 127);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(52, 20);
+            this.label40.TabIndex = 111;
+            this.label40.Text = "Ingles";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label41.Location = new System.Drawing.Point(20, 89);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(100, 20);
+            this.label41.TabIndex = 110;
+            this.label41.Text = "Matematicas";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label42.Location = new System.Drawing.Point(31, 55);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(67, 20);
+            this.label42.TabIndex = 109;
+            this.label42.Text = "Español";
+            // 
             // cmbDicInasis
             // 
             this.cmbDicInasis.FormattingEnabled = true;
@@ -1824,6 +2115,127 @@
             this.groupBox4.TabIndex = 82;
             this.groupBox4.TabStop = false;
             // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label88.Location = new System.Drawing.Point(305, 216);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(102, 20);
+            this.label88.TabIndex = 119;
+            this.label88.Text = "Inasistencias";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label89.Location = new System.Drawing.Point(296, 172);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(74, 20);
+            this.label89.TabIndex = 118;
+            this.label89.Text = "Ed.Fisica";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label90.Location = new System.Drawing.Point(293, 133);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(77, 20);
+            this.label90.TabIndex = 117;
+            this.label90.Text = "Ed. Socio";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label91.Location = new System.Drawing.Point(305, 94);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(47, 20);
+            this.label91.TabIndex = 116;
+            this.label91.Text = "Artes";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label92.Location = new System.Drawing.Point(254, 50);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(175, 20);
+            this.label92.TabIndex = 115;
+            this.label92.Text = "Formacion civica y etica";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label43.Location = new System.Drawing.Point(20, 245);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(63, 20);
+            this.label43.TabIndex = 114;
+            this.label43.Text = "Historia";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label44.Location = new System.Drawing.Point(3, 205);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(80, 20);
+            this.label44.TabIndex = 113;
+            this.label44.Text = "Geografia";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label45.Location = new System.Drawing.Point(-43, 165);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(141, 20);
+            this.label45.TabIndex = 112;
+            this.label45.Text = "Ciencias Naturales";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label46.Location = new System.Drawing.Point(31, 127);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(52, 20);
+            this.label46.TabIndex = 111;
+            this.label46.Text = "Ingles";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label47.Location = new System.Drawing.Point(20, 89);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(100, 20);
+            this.label47.TabIndex = 110;
+            this.label47.Text = "Matematicas";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label49.Location = new System.Drawing.Point(31, 55);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(67, 20);
+            this.label49.TabIndex = 109;
+            this.label49.Text = "Español";
+            // 
             // cmbEneroIna
             // 
             this.cmbEneroIna.FormattingEnabled = true;
@@ -2101,6 +2513,127 @@
             this.groupBox5.Size = new System.Drawing.Size(581, 319);
             this.groupBox5.TabIndex = 82;
             this.groupBox5.TabStop = false;
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label93.Location = new System.Drawing.Point(306, 216);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(102, 20);
+            this.label93.TabIndex = 119;
+            this.label93.Text = "Inasistencias";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label94.Location = new System.Drawing.Point(297, 172);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(74, 20);
+            this.label94.TabIndex = 118;
+            this.label94.Text = "Ed.Fisica";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label95.Location = new System.Drawing.Point(294, 133);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(77, 20);
+            this.label95.TabIndex = 117;
+            this.label95.Text = "Ed. Socio";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label97.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label97.Location = new System.Drawing.Point(306, 94);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(47, 20);
+            this.label97.TabIndex = 116;
+            this.label97.Text = "Artes";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label98.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label98.Location = new System.Drawing.Point(255, 50);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(175, 20);
+            this.label98.TabIndex = 115;
+            this.label98.Text = "Formacion civica y etica";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label50.Location = new System.Drawing.Point(23, 240);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(63, 20);
+            this.label50.TabIndex = 114;
+            this.label50.Text = "Historia";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label51.Location = new System.Drawing.Point(6, 200);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(80, 20);
+            this.label51.TabIndex = 113;
+            this.label51.Text = "Geografia";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label52.Location = new System.Drawing.Point(-40, 160);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(141, 20);
+            this.label52.TabIndex = 112;
+            this.label52.Text = "Ciencias Naturales";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label53.Location = new System.Drawing.Point(34, 122);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(52, 20);
+            this.label53.TabIndex = 111;
+            this.label53.Text = "Ingles";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label54.Location = new System.Drawing.Point(23, 84);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(100, 20);
+            this.label54.TabIndex = 110;
+            this.label54.Text = "Matematicas";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label55.Location = new System.Drawing.Point(34, 50);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(67, 20);
+            this.label55.TabIndex = 109;
+            this.label55.Text = "Español";
             // 
             // cmbJunioHist
             // 
@@ -2381,6 +2914,127 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Enter += new System.EventHandler(this.GroupBox6_Enter);
             // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label99.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label99.Location = new System.Drawing.Point(321, 216);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(102, 20);
+            this.label99.TabIndex = 119;
+            this.label99.Text = "Inasistencias";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label100.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label100.Location = new System.Drawing.Point(312, 172);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(74, 20);
+            this.label100.TabIndex = 118;
+            this.label100.Text = "Ed.Fisica";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label101.Location = new System.Drawing.Point(309, 133);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(77, 20);
+            this.label101.TabIndex = 117;
+            this.label101.Text = "Ed. Socio";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label102.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label102.Location = new System.Drawing.Point(321, 94);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(47, 20);
+            this.label102.TabIndex = 116;
+            this.label102.Text = "Artes";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label103.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label103.Location = new System.Drawing.Point(270, 50);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(175, 20);
+            this.label103.TabIndex = 115;
+            this.label103.Text = "Formacion civica y etica";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label56.Location = new System.Drawing.Point(9, 246);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(63, 20);
+            this.label56.TabIndex = 114;
+            this.label56.Text = "Historia";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label57.Location = new System.Drawing.Point(-8, 206);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(80, 20);
+            this.label57.TabIndex = 113;
+            this.label57.Text = "Geografia";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label58.Location = new System.Drawing.Point(-54, 166);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(141, 20);
+            this.label58.TabIndex = 112;
+            this.label58.Text = "Ciencias Naturales";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label59.Location = new System.Drawing.Point(20, 128);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(52, 20);
+            this.label59.TabIndex = 111;
+            this.label59.Text = "Ingles";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label61.Location = new System.Drawing.Point(9, 90);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(100, 20);
+            this.label61.TabIndex = 110;
+            this.label61.Text = "Matematicas";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label62.Location = new System.Drawing.Point(20, 56);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(67, 20);
+            this.label62.TabIndex = 109;
+            this.label62.Text = "Español";
+            // 
             // cmbJunioFCE
             // 
             this.cmbJunioFCE.FormattingEnabled = true;
@@ -2500,7 +3154,6 @@
             this.cmbMarzoHistoria.Name = "cmbMarzoHistoria";
             this.cmbMarzoHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoHistoria.TabIndex = 91;
-           
             // 
             // cmbMarzoGeografia
             // 
@@ -2640,17 +3293,17 @@
             this.groupBox7.Controls.Add(this.label66);
             this.groupBox7.Controls.Add(this.label67);
             this.groupBox7.Controls.Add(this.label68);
-            this.groupBox7.Controls.Add(this.cmbJunioArtes);
-            this.groupBox7.Controls.Add(this.cmbMayoArtes);
-            this.groupBox7.Controls.Add(this.cmbAbrilArtes);
-            this.groupBox7.Controls.Add(this.cmbMarzoArtes);
-            this.groupBox7.Controls.Add(this.cmbFebreroArtes);
-            this.groupBox7.Controls.Add(this.cmbEneroArtes);
-            this.groupBox7.Controls.Add(this.cmbDiciembreArtes);
-            this.groupBox7.Controls.Add(this.cmbNoviembreArtes);
-            this.groupBox7.Controls.Add(this.cmbOctubreArtes);
-            this.groupBox7.Controls.Add(this.cmbSeptiembreArtes);
-            this.groupBox7.Controls.Add(this.cmbDiagArtes);
+            this.groupBox7.Controls.Add(this.cmbAbrilIna);
+            this.groupBox7.Controls.Add(this.cmbAbrilEdfisica);
+            this.groupBox7.Controls.Add(this.cmbAbrilEdsocio);
+            this.groupBox7.Controls.Add(this.cmbAbrilArtess);
+            this.groupBox7.Controls.Add(this.cmbAbrilFormacion);
+            this.groupBox7.Controls.Add(this.cmbAbrilHistoria);
+            this.groupBox7.Controls.Add(this.cmbAbrilGeografia);
+            this.groupBox7.Controls.Add(this.cmbAbrilCiencias);
+            this.groupBox7.Controls.Add(this.cmbAbrilIngles);
+            this.groupBox7.Controls.Add(this.cmbAbrilmate);
+            this.groupBox7.Controls.Add(this.cmbAbrilEspañol);
             this.groupBox7.Controls.Add(this.label96);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.groupBox7.Location = new System.Drawing.Point(178, 18);
@@ -2660,1110 +3313,60 @@
             this.groupBox7.TabIndex = 82;
             this.groupBox7.TabStop = false;
             // 
-            // cmbJunioArtes
-            // 
-            this.cmbJunioArtes.FormattingEnabled = true;
-            this.cmbJunioArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbJunioArtes.Location = new System.Drawing.Point(451, 193);
-            this.cmbJunioArtes.Name = "cmbJunioArtes";
-            this.cmbJunioArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioArtes.TabIndex = 96;
-            // 
-            // cmbMayoArtes
-            // 
-            this.cmbMayoArtes.FormattingEnabled = true;
-            this.cmbMayoArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMayoArtes.Location = new System.Drawing.Point(451, 154);
-            this.cmbMayoArtes.Name = "cmbMayoArtes";
-            this.cmbMayoArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoArtes.TabIndex = 95;
-            // 
-            // cmbAbrilArtes
-            // 
-            this.cmbAbrilArtes.FormattingEnabled = true;
-            this.cmbAbrilArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbAbrilArtes.Location = new System.Drawing.Point(451, 115);
-            this.cmbAbrilArtes.Name = "cmbAbrilArtes";
-            this.cmbAbrilArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilArtes.TabIndex = 94;
-            // 
-            // cmbMarzoArtes
-            // 
-            this.cmbMarzoArtes.FormattingEnabled = true;
-            this.cmbMarzoArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMarzoArtes.Location = new System.Drawing.Point(451, 77);
-            this.cmbMarzoArtes.Name = "cmbMarzoArtes";
-            this.cmbMarzoArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoArtes.TabIndex = 93;
-            // 
-            // cmbFebreroArtes
-            // 
-            this.cmbFebreroArtes.FormattingEnabled = true;
-            this.cmbFebreroArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbFebreroArtes.Location = new System.Drawing.Point(451, 38);
-            this.cmbFebreroArtes.Name = "cmbFebreroArtes";
-            this.cmbFebreroArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroArtes.TabIndex = 92;
-            // 
-            // cmbEneroArtes
-            // 
-            this.cmbEneroArtes.FormattingEnabled = true;
-            this.cmbEneroArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbEneroArtes.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroArtes.Name = "cmbEneroArtes";
-            this.cmbEneroArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroArtes.TabIndex = 91;
-            // 
-            // cmbDiciembreArtes
-            // 
-            this.cmbDiciembreArtes.FormattingEnabled = true;
-            this.cmbDiciembreArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiciembreArtes.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreArtes.Name = "cmbDiciembreArtes";
-            this.cmbDiciembreArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreArtes.TabIndex = 90;
-            // 
-            // cmbNoviembreArtes
-            // 
-            this.cmbNoviembreArtes.FormattingEnabled = true;
-            this.cmbNoviembreArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbNoviembreArtes.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreArtes.Name = "cmbNoviembreArtes";
-            this.cmbNoviembreArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreArtes.TabIndex = 89;
-            // 
-            // cmbOctubreArtes
-            // 
-            this.cmbOctubreArtes.FormattingEnabled = true;
-            this.cmbOctubreArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbOctubreArtes.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreArtes.Name = "cmbOctubreArtes";
-            this.cmbOctubreArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreArtes.TabIndex = 88;
-            // 
-            // cmbSeptiembreArtes
-            // 
-            this.cmbSeptiembreArtes.FormattingEnabled = true;
-            this.cmbSeptiembreArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbSeptiembreArtes.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreArtes.Name = "cmbSeptiembreArtes";
-            this.cmbSeptiembreArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreArtes.TabIndex = 87;
-            // 
-            // cmbDiagArtes
-            // 
-            this.cmbDiagArtes.FormattingEnabled = true;
-            this.cmbDiagArtes.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiagArtes.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagArtes.Name = "cmbDiagArtes";
-            this.cmbDiagArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagArtes.TabIndex = 75;
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label96.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label96.Location = new System.Drawing.Point(223, 0);
-            this.label96.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(147, 26);
-            this.label96.TabIndex = 44;
-            this.label96.Text = "Calificaciones";
-            // 
-            // Mayo
-            // 
-            this.Mayo.Controls.Add(this.groupBox8);
-            this.Mayo.Location = new System.Drawing.Point(4, 22);
-            this.Mayo.Name = "Mayo";
-            this.Mayo.Padding = new System.Windows.Forms.Padding(3);
-            this.Mayo.Size = new System.Drawing.Size(937, 354);
-            this.Mayo.TabIndex = 8;
-            this.Mayo.Text = "Mayo";
-            this.Mayo.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox8.Controls.Add(this.label110);
-            this.groupBox8.Controls.Add(this.label111);
-            this.groupBox8.Controls.Add(this.label112);
-            this.groupBox8.Controls.Add(this.label113);
-            this.groupBox8.Controls.Add(this.label114);
-            this.groupBox8.Controls.Add(this.label69);
-            this.groupBox8.Controls.Add(this.label70);
-            this.groupBox8.Controls.Add(this.label71);
-            this.groupBox8.Controls.Add(this.label73);
-            this.groupBox8.Controls.Add(this.label74);
-            this.groupBox8.Controls.Add(this.label75);
-            this.groupBox8.Controls.Add(this.cmbJunioSocio);
-            this.groupBox8.Controls.Add(this.cmbMayoSocio);
-            this.groupBox8.Controls.Add(this.cmbAbrilSocio);
-            this.groupBox8.Controls.Add(this.cmbMarzoSocio);
-            this.groupBox8.Controls.Add(this.cmbFebreroSocio);
-            this.groupBox8.Controls.Add(this.cmbEneroSocio);
-            this.groupBox8.Controls.Add(this.cmbDiciembreSocio);
-            this.groupBox8.Controls.Add(this.cmbNoviembreSocio);
-            this.groupBox8.Controls.Add(this.cmbOctubreSocio);
-            this.groupBox8.Controls.Add(this.cmbSeptiembreSocio);
-            this.groupBox8.Controls.Add(this.cmbDiagSocio);
-            this.groupBox8.Controls.Add(this.label108);
-            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox8.Location = new System.Drawing.Point(178, 18);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox8.Size = new System.Drawing.Size(581, 319);
-            this.groupBox8.TabIndex = 82;
-            this.groupBox8.TabStop = false;
-            // 
-            // cmbJunioSocio
-            // 
-            this.cmbJunioSocio.FormattingEnabled = true;
-            this.cmbJunioSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbJunioSocio.Location = new System.Drawing.Point(437, 193);
-            this.cmbJunioSocio.Name = "cmbJunioSocio";
-            this.cmbJunioSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioSocio.TabIndex = 96;
-            // 
-            // cmbMayoSocio
-            // 
-            this.cmbMayoSocio.FormattingEnabled = true;
-            this.cmbMayoSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMayoSocio.Location = new System.Drawing.Point(437, 154);
-            this.cmbMayoSocio.Name = "cmbMayoSocio";
-            this.cmbMayoSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoSocio.TabIndex = 95;
-            // 
-            // cmbAbrilSocio
-            // 
-            this.cmbAbrilSocio.FormattingEnabled = true;
-            this.cmbAbrilSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbAbrilSocio.Location = new System.Drawing.Point(437, 115);
-            this.cmbAbrilSocio.Name = "cmbAbrilSocio";
-            this.cmbAbrilSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilSocio.TabIndex = 94;
-            // 
-            // cmbMarzoSocio
-            // 
-            this.cmbMarzoSocio.FormattingEnabled = true;
-            this.cmbMarzoSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMarzoSocio.Location = new System.Drawing.Point(437, 77);
-            this.cmbMarzoSocio.Name = "cmbMarzoSocio";
-            this.cmbMarzoSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoSocio.TabIndex = 93;
-            // 
-            // cmbFebreroSocio
-            // 
-            this.cmbFebreroSocio.FormattingEnabled = true;
-            this.cmbFebreroSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbFebreroSocio.Location = new System.Drawing.Point(437, 38);
-            this.cmbFebreroSocio.Name = "cmbFebreroSocio";
-            this.cmbFebreroSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroSocio.TabIndex = 92;
-            // 
-            // cmbEneroSocio
-            // 
-            this.cmbEneroSocio.FormattingEnabled = true;
-            this.cmbEneroSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbEneroSocio.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroSocio.Name = "cmbEneroSocio";
-            this.cmbEneroSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroSocio.TabIndex = 91;
-            // 
-            // cmbDiciembreSocio
-            // 
-            this.cmbDiciembreSocio.FormattingEnabled = true;
-            this.cmbDiciembreSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiciembreSocio.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreSocio.Name = "cmbDiciembreSocio";
-            this.cmbDiciembreSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreSocio.TabIndex = 90;
-            // 
-            // cmbNoviembreSocio
-            // 
-            this.cmbNoviembreSocio.FormattingEnabled = true;
-            this.cmbNoviembreSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbNoviembreSocio.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreSocio.Name = "cmbNoviembreSocio";
-            this.cmbNoviembreSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreSocio.TabIndex = 89;
-            // 
-            // cmbOctubreSocio
-            // 
-            this.cmbOctubreSocio.FormattingEnabled = true;
-            this.cmbOctubreSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbOctubreSocio.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreSocio.Name = "cmbOctubreSocio";
-            this.cmbOctubreSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreSocio.TabIndex = 88;
-            // 
-            // cmbSeptiembreSocio
-            // 
-            this.cmbSeptiembreSocio.FormattingEnabled = true;
-            this.cmbSeptiembreSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbSeptiembreSocio.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreSocio.Name = "cmbSeptiembreSocio";
-            this.cmbSeptiembreSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreSocio.TabIndex = 87;
-            // 
-            // cmbDiagSocio
-            // 
-            this.cmbDiagSocio.FormattingEnabled = true;
-            this.cmbDiagSocio.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiagSocio.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagSocio.Name = "cmbDiagSocio";
-            this.cmbDiagSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagSocio.TabIndex = 75;
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label108.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label108.Location = new System.Drawing.Point(223, 0);
-            this.label108.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(147, 26);
-            this.label108.TabIndex = 44;
-            this.label108.Text = "Calificaciones";
-            // 
-            // Junio
-            // 
-            this.Junio.Controls.Add(this.groupBox9);
-            this.Junio.Location = new System.Drawing.Point(4, 22);
-            this.Junio.Name = "Junio";
-            this.Junio.Padding = new System.Windows.Forms.Padding(3);
-            this.Junio.Size = new System.Drawing.Size(937, 354);
-            this.Junio.TabIndex = 9;
-            this.Junio.Text = "Junio";
-            this.Junio.UseVisualStyleBackColor = true;
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox9.Controls.Add(this.label115);
-            this.groupBox9.Controls.Add(this.label116);
-            this.groupBox9.Controls.Add(this.label117);
-            this.groupBox9.Controls.Add(this.label118);
-            this.groupBox9.Controls.Add(this.label119);
-            this.groupBox9.Controls.Add(this.label76);
-            this.groupBox9.Controls.Add(this.label77);
-            this.groupBox9.Controls.Add(this.label78);
-            this.groupBox9.Controls.Add(this.label79);
-            this.groupBox9.Controls.Add(this.label80);
-            this.groupBox9.Controls.Add(this.label81);
-            this.groupBox9.Controls.Add(this.cmbJunioEdFis);
-            this.groupBox9.Controls.Add(this.cmbMayoEdFis);
-            this.groupBox9.Controls.Add(this.cmbAbrilEdFis);
-            this.groupBox9.Controls.Add(this.cmbMarzoEdFis);
-            this.groupBox9.Controls.Add(this.cmbFebreroEdFis);
-            this.groupBox9.Controls.Add(this.cmbEneroEdFis);
-            this.groupBox9.Controls.Add(this.cmbDiciembreEdFis);
-            this.groupBox9.Controls.Add(this.cmbNoviembreEdFis);
-            this.groupBox9.Controls.Add(this.cmbOctubreEdFis);
-            this.groupBox9.Controls.Add(this.cmbSeptiembreEdFis);
-            this.groupBox9.Controls.Add(this.cmbDiagEdFis);
-            this.groupBox9.Controls.Add(this.label120);
-            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox9.Location = new System.Drawing.Point(178, 18);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox9.Size = new System.Drawing.Size(581, 319);
-            this.groupBox9.TabIndex = 82;
-            this.groupBox9.TabStop = false;
-            // 
-            // cmbJunioEdFis
-            // 
-            this.cmbJunioEdFis.FormattingEnabled = true;
-            this.cmbJunioEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbJunioEdFis.Location = new System.Drawing.Point(433, 193);
-            this.cmbJunioEdFis.Name = "cmbJunioEdFis";
-            this.cmbJunioEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioEdFis.TabIndex = 96;
-            // 
-            // cmbMayoEdFis
-            // 
-            this.cmbMayoEdFis.FormattingEnabled = true;
-            this.cmbMayoEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMayoEdFis.Location = new System.Drawing.Point(433, 154);
-            this.cmbMayoEdFis.Name = "cmbMayoEdFis";
-            this.cmbMayoEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayoEdFis.TabIndex = 95;
-            // 
-            // cmbAbrilEdFis
-            // 
-            this.cmbAbrilEdFis.FormattingEnabled = true;
-            this.cmbAbrilEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbAbrilEdFis.Location = new System.Drawing.Point(433, 115);
-            this.cmbAbrilEdFis.Name = "cmbAbrilEdFis";
-            this.cmbAbrilEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrilEdFis.TabIndex = 94;
-            // 
-            // cmbMarzoEdFis
-            // 
-            this.cmbMarzoEdFis.FormattingEnabled = true;
-            this.cmbMarzoEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbMarzoEdFis.Location = new System.Drawing.Point(433, 77);
-            this.cmbMarzoEdFis.Name = "cmbMarzoEdFis";
-            this.cmbMarzoEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarzoEdFis.TabIndex = 93;
-            // 
-            // cmbFebreroEdFis
-            // 
-            this.cmbFebreroEdFis.FormattingEnabled = true;
-            this.cmbFebreroEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbFebreroEdFis.Location = new System.Drawing.Point(433, 38);
-            this.cmbFebreroEdFis.Name = "cmbFebreroEdFis";
-            this.cmbFebreroEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebreroEdFis.TabIndex = 92;
-            // 
-            // cmbEneroEdFis
-            // 
-            this.cmbEneroEdFis.FormattingEnabled = true;
-            this.cmbEneroEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbEneroEdFis.Location = new System.Drawing.Point(126, 238);
-            this.cmbEneroEdFis.Name = "cmbEneroEdFis";
-            this.cmbEneroEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneroEdFis.TabIndex = 91;
-            // 
-            // cmbDiciembreEdFis
-            // 
-            this.cmbDiciembreEdFis.FormattingEnabled = true;
-            this.cmbDiciembreEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiciembreEdFis.Location = new System.Drawing.Point(126, 199);
-            this.cmbDiciembreEdFis.Name = "cmbDiciembreEdFis";
-            this.cmbDiciembreEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiciembreEdFis.TabIndex = 90;
-            // 
-            // cmbNoviembreEdFis
-            // 
-            this.cmbNoviembreEdFis.FormattingEnabled = true;
-            this.cmbNoviembreEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbNoviembreEdFis.Location = new System.Drawing.Point(126, 160);
-            this.cmbNoviembreEdFis.Name = "cmbNoviembreEdFis";
-            this.cmbNoviembreEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbNoviembreEdFis.TabIndex = 89;
-            // 
-            // cmbOctubreEdFis
-            // 
-            this.cmbOctubreEdFis.FormattingEnabled = true;
-            this.cmbOctubreEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbOctubreEdFis.Location = new System.Drawing.Point(126, 121);
-            this.cmbOctubreEdFis.Name = "cmbOctubreEdFis";
-            this.cmbOctubreEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreEdFis.TabIndex = 88;
-            // 
-            // cmbSeptiembreEdFis
-            // 
-            this.cmbSeptiembreEdFis.FormattingEnabled = true;
-            this.cmbSeptiembreEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbSeptiembreEdFis.Location = new System.Drawing.Point(126, 82);
-            this.cmbSeptiembreEdFis.Name = "cmbSeptiembreEdFis";
-            this.cmbSeptiembreEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbSeptiembreEdFis.TabIndex = 87;
-            // 
-            // cmbDiagEdFis
-            // 
-            this.cmbDiagEdFis.FormattingEnabled = true;
-            this.cmbDiagEdFis.Items.AddRange(new object[] {
-            "10",
-            "9.5",
-            "9",
-            "8.5",
-            "8",
-            "7.5",
-            "7",
-            "6.5",
-            "6",
-            "5.5",
-            "5"});
-            this.cmbDiagEdFis.Location = new System.Drawing.Point(126, 43);
-            this.cmbDiagEdFis.Name = "cmbDiagEdFis";
-            this.cmbDiagEdFis.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagEdFis.TabIndex = 75;
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label120.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label120.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label120.Location = new System.Drawing.Point(223, 0);
-            this.label120.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(147, 26);
-            this.label120.TabIndex = 44;
-            this.label120.Text = "Calificaciones";
-            // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.materialTabSelector1.Location = new System.Drawing.Point(-21, 63);
-            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(1);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTabSelector1.Size = new System.Drawing.Size(1065, 49);
-            this.materialTabSelector1.TabIndex = 82;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(463, 525);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 56);
-            this.materialRaisedButton1.TabIndex = 70;
-            this.materialRaisedButton1.Text = "Guardar Calificaciones";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(125, 525);
-            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 56);
-            this.btnPrincipal.TabIndex = 83;
-            this.btnPrincipal.Text = "Volver al Menú Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = true;
-            // 
-            // btnIrBoletas
-            // 
-            this.btnIrBoletas.Depth = 0;
-            this.btnIrBoletas.Location = new System.Drawing.Point(763, 525);
-            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnIrBoletas.Name = "btnIrBoletas";
-            this.btnIrBoletas.Primary = true;
-            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
-            this.btnIrBoletas.TabIndex = 86;
-            this.btnIrBoletas.Text = "Generar PDF";
-            this.btnIrBoletas.UseVisualStyleBackColor = true;
-            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label37.Location = new System.Drawing.Point(20, 245);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(63, 20);
-            this.label37.TabIndex = 114;
-            this.label37.Text = "Historia";
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label38.Location = new System.Drawing.Point(3, 205);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(80, 20);
-            this.label38.TabIndex = 113;
-            this.label38.Text = "Geografia";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label39.Location = new System.Drawing.Point(-43, 165);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(141, 20);
-            this.label39.TabIndex = 112;
-            this.label39.Text = "Ciencias Naturales";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label40.Location = new System.Drawing.Point(31, 127);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(52, 20);
-            this.label40.TabIndex = 111;
-            this.label40.Text = "Ingles";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label41.Location = new System.Drawing.Point(20, 89);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(100, 20);
-            this.label41.TabIndex = 110;
-            this.label41.Text = "Matematicas";
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label42.Location = new System.Drawing.Point(31, 55);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(67, 20);
-            this.label42.TabIndex = 109;
-            this.label42.Text = "Español";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label43.Location = new System.Drawing.Point(20, 245);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(63, 20);
-            this.label43.TabIndex = 114;
-            this.label43.Text = "Historia";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label44.Location = new System.Drawing.Point(3, 205);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(80, 20);
-            this.label44.TabIndex = 113;
-            this.label44.Text = "Geografia";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label45.Location = new System.Drawing.Point(-43, 165);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(141, 20);
-            this.label45.TabIndex = 112;
-            this.label45.Text = "Ciencias Naturales";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label46.Location = new System.Drawing.Point(31, 127);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(52, 20);
-            this.label46.TabIndex = 111;
-            this.label46.Text = "Ingles";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label47.Location = new System.Drawing.Point(20, 89);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(100, 20);
-            this.label47.TabIndex = 110;
-            this.label47.Text = "Matematicas";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label49.Location = new System.Drawing.Point(31, 55);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(67, 20);
-            this.label49.TabIndex = 109;
-            this.label49.Text = "Español";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label50.Location = new System.Drawing.Point(23, 240);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(63, 20);
-            this.label50.TabIndex = 114;
-            this.label50.Text = "Historia";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label51.Location = new System.Drawing.Point(6, 200);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(80, 20);
-            this.label51.TabIndex = 113;
-            this.label51.Text = "Geografia";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label52.Location = new System.Drawing.Point(-40, 160);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(141, 20);
-            this.label52.TabIndex = 112;
-            this.label52.Text = "Ciencias Naturales";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label53.Location = new System.Drawing.Point(34, 122);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(52, 20);
-            this.label53.TabIndex = 111;
-            this.label53.Text = "Ingles";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label54.Location = new System.Drawing.Point(23, 84);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(100, 20);
-            this.label54.TabIndex = 110;
-            this.label54.Text = "Matematicas";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label55.Location = new System.Drawing.Point(34, 50);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(67, 20);
-            this.label55.TabIndex = 109;
-            this.label55.Text = "Español";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label56.Location = new System.Drawing.Point(9, 246);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(63, 20);
-            this.label56.TabIndex = 114;
-            this.label56.Text = "Historia";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label57.Location = new System.Drawing.Point(-8, 206);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(80, 20);
-            this.label57.TabIndex = 113;
-            this.label57.Text = "Geografia";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label58.Location = new System.Drawing.Point(-54, 166);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(141, 20);
-            this.label58.TabIndex = 112;
-            this.label58.Text = "Ciencias Naturales";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label59.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label59.Location = new System.Drawing.Point(20, 128);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(52, 20);
-            this.label59.TabIndex = 111;
-            this.label59.Text = "Ingles";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label61.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label61.Location = new System.Drawing.Point(9, 90);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(100, 20);
-            this.label61.TabIndex = 110;
-            this.label61.Text = "Matematicas";
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label62.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label62.Location = new System.Drawing.Point(20, 56);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(67, 20);
-            this.label62.TabIndex = 109;
-            this.label62.Text = "Español";
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label104.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label104.Location = new System.Drawing.Point(321, 211);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(102, 20);
+            this.label104.TabIndex = 119;
+            this.label104.Text = "Inasistencias";
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label105.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label105.Location = new System.Drawing.Point(312, 167);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(74, 20);
+            this.label105.TabIndex = 118;
+            this.label105.Text = "Ed.Fisica";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label106.Location = new System.Drawing.Point(309, 128);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(77, 20);
+            this.label106.TabIndex = 117;
+            this.label106.Text = "Ed. Socio";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label107.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label107.Location = new System.Drawing.Point(321, 89);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(47, 20);
+            this.label107.TabIndex = 116;
+            this.label107.Text = "Artes";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label109.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label109.Location = new System.Drawing.Point(270, 45);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(175, 20);
+            this.label109.TabIndex = 115;
+            this.label109.Text = "Formacion civica y etica";
             // 
             // label63
             // 
@@ -3831,6 +3434,339 @@
             this.label68.TabIndex = 109;
             this.label68.Text = "Español";
             // 
+            // cmbAbrilIna
+            // 
+            this.cmbAbrilIna.FormattingEnabled = true;
+            this.cmbAbrilIna.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilIna.Location = new System.Drawing.Point(451, 193);
+            this.cmbAbrilIna.Name = "cmbAbrilIna";
+            this.cmbAbrilIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilIna.TabIndex = 96;
+            // 
+            // cmbAbrilEdfisica
+            // 
+            this.cmbAbrilEdfisica.FormattingEnabled = true;
+            this.cmbAbrilEdfisica.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilEdfisica.Location = new System.Drawing.Point(451, 154);
+            this.cmbAbrilEdfisica.Name = "cmbAbrilEdfisica";
+            this.cmbAbrilEdfisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilEdfisica.TabIndex = 95;
+            // 
+            // cmbAbrilEdsocio
+            // 
+            this.cmbAbrilEdsocio.FormattingEnabled = true;
+            this.cmbAbrilEdsocio.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilEdsocio.Location = new System.Drawing.Point(451, 115);
+            this.cmbAbrilEdsocio.Name = "cmbAbrilEdsocio";
+            this.cmbAbrilEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilEdsocio.TabIndex = 94;
+            // 
+            // cmbAbrilArtess
+            // 
+            this.cmbAbrilArtess.FormattingEnabled = true;
+            this.cmbAbrilArtess.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilArtess.Location = new System.Drawing.Point(451, 77);
+            this.cmbAbrilArtess.Name = "cmbAbrilArtess";
+            this.cmbAbrilArtess.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilArtess.TabIndex = 93;
+            // 
+            // cmbAbrilFormacion
+            // 
+            this.cmbAbrilFormacion.FormattingEnabled = true;
+            this.cmbAbrilFormacion.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilFormacion.Location = new System.Drawing.Point(451, 38);
+            this.cmbAbrilFormacion.Name = "cmbAbrilFormacion";
+            this.cmbAbrilFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilFormacion.TabIndex = 92;
+            // 
+            // cmbAbrilHistoria
+            // 
+            this.cmbAbrilHistoria.FormattingEnabled = true;
+            this.cmbAbrilHistoria.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilHistoria.Location = new System.Drawing.Point(126, 238);
+            this.cmbAbrilHistoria.Name = "cmbAbrilHistoria";
+            this.cmbAbrilHistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilHistoria.TabIndex = 91;
+            // 
+            // cmbAbrilGeografia
+            // 
+            this.cmbAbrilGeografia.FormattingEnabled = true;
+            this.cmbAbrilGeografia.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilGeografia.Location = new System.Drawing.Point(126, 199);
+            this.cmbAbrilGeografia.Name = "cmbAbrilGeografia";
+            this.cmbAbrilGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilGeografia.TabIndex = 90;
+            // 
+            // cmbAbrilCiencias
+            // 
+            this.cmbAbrilCiencias.FormattingEnabled = true;
+            this.cmbAbrilCiencias.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilCiencias.Location = new System.Drawing.Point(126, 160);
+            this.cmbAbrilCiencias.Name = "cmbAbrilCiencias";
+            this.cmbAbrilCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilCiencias.TabIndex = 89;
+            // 
+            // cmbAbrilIngles
+            // 
+            this.cmbAbrilIngles.FormattingEnabled = true;
+            this.cmbAbrilIngles.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilIngles.Location = new System.Drawing.Point(126, 121);
+            this.cmbAbrilIngles.Name = "cmbAbrilIngles";
+            this.cmbAbrilIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilIngles.TabIndex = 88;
+            // 
+            // cmbAbrilmate
+            // 
+            this.cmbAbrilmate.FormattingEnabled = true;
+            this.cmbAbrilmate.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilmate.Location = new System.Drawing.Point(126, 82);
+            this.cmbAbrilmate.Name = "cmbAbrilmate";
+            this.cmbAbrilmate.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilmate.TabIndex = 87;
+            // 
+            // cmbAbrilEspañol
+            // 
+            this.cmbAbrilEspañol.FormattingEnabled = true;
+            this.cmbAbrilEspañol.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbAbrilEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbAbrilEspañol.Name = "cmbAbrilEspañol";
+            this.cmbAbrilEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbAbrilEspañol.TabIndex = 75;
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label96.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label96.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label96.Location = new System.Drawing.Point(223, 0);
+            this.label96.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(147, 26);
+            this.label96.TabIndex = 44;
+            this.label96.Text = "Calificaciones";
+            // 
+            // Mayo
+            // 
+            this.Mayo.Controls.Add(this.groupBox8);
+            this.Mayo.Location = new System.Drawing.Point(4, 22);
+            this.Mayo.Name = "Mayo";
+            this.Mayo.Padding = new System.Windows.Forms.Padding(3);
+            this.Mayo.Size = new System.Drawing.Size(937, 354);
+            this.Mayo.TabIndex = 8;
+            this.Mayo.Text = "Mayo";
+            this.Mayo.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox8.Controls.Add(this.label110);
+            this.groupBox8.Controls.Add(this.label111);
+            this.groupBox8.Controls.Add(this.label112);
+            this.groupBox8.Controls.Add(this.label113);
+            this.groupBox8.Controls.Add(this.label114);
+            this.groupBox8.Controls.Add(this.label69);
+            this.groupBox8.Controls.Add(this.label70);
+            this.groupBox8.Controls.Add(this.label71);
+            this.groupBox8.Controls.Add(this.label73);
+            this.groupBox8.Controls.Add(this.label74);
+            this.groupBox8.Controls.Add(this.label75);
+            this.groupBox8.Controls.Add(this.cmbMayoIna);
+            this.groupBox8.Controls.Add(this.cmbMayoEdfisica);
+            this.groupBox8.Controls.Add(this.cmbMayoEdsocio);
+            this.groupBox8.Controls.Add(this.cmbMayoArtes);
+            this.groupBox8.Controls.Add(this.cmbMayoFormacion);
+            this.groupBox8.Controls.Add(this.cmbMayohistoria);
+            this.groupBox8.Controls.Add(this.cmbMayoGeografia);
+            this.groupBox8.Controls.Add(this.cmbMayoCiencias);
+            this.groupBox8.Controls.Add(this.cmbMayoIngles);
+            this.groupBox8.Controls.Add(this.cmbMayoMate);
+            this.groupBox8.Controls.Add(this.cmbmayoEspañol);
+            this.groupBox8.Controls.Add(this.label108);
+            this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox8.Location = new System.Drawing.Point(178, 18);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox8.Size = new System.Drawing.Size(581, 319);
+            this.groupBox8.TabIndex = 82;
+            this.groupBox8.TabStop = false;
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label110.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label110.Location = new System.Drawing.Point(307, 211);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(102, 20);
+            this.label110.TabIndex = 119;
+            this.label110.Text = "Inasistencias";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label111.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label111.Location = new System.Drawing.Point(298, 167);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(74, 20);
+            this.label111.TabIndex = 118;
+            this.label111.Text = "Ed.Fisica";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label112.Location = new System.Drawing.Point(295, 128);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(77, 20);
+            this.label112.TabIndex = 117;
+            this.label112.Text = "Ed. Socio";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label113.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label113.Location = new System.Drawing.Point(307, 89);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(47, 20);
+            this.label113.TabIndex = 116;
+            this.label113.Text = "Artes";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label114.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label114.Location = new System.Drawing.Point(256, 45);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(175, 20);
+            this.label114.TabIndex = 115;
+            this.label114.Text = "Formacion civica y etica";
+            // 
             // label69
             // 
             this.label69.AutoSize = true;
@@ -3896,6 +3832,340 @@
             this.label75.Size = new System.Drawing.Size(67, 20);
             this.label75.TabIndex = 109;
             this.label75.Text = "Español";
+            // 
+            // cmbMayoIna
+            // 
+            this.cmbMayoIna.FormattingEnabled = true;
+            this.cmbMayoIna.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoIna.Location = new System.Drawing.Point(437, 193);
+            this.cmbMayoIna.Name = "cmbMayoIna";
+            this.cmbMayoIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoIna.TabIndex = 96;
+            this.cmbMayoIna.SelectedIndexChanged += new System.EventHandler(this.CmbJunioSocio_SelectedIndexChanged);
+            // 
+            // cmbMayoEdfisica
+            // 
+            this.cmbMayoEdfisica.FormattingEnabled = true;
+            this.cmbMayoEdfisica.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoEdfisica.Location = new System.Drawing.Point(437, 154);
+            this.cmbMayoEdfisica.Name = "cmbMayoEdfisica";
+            this.cmbMayoEdfisica.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoEdfisica.TabIndex = 95;
+            // 
+            // cmbMayoEdsocio
+            // 
+            this.cmbMayoEdsocio.FormattingEnabled = true;
+            this.cmbMayoEdsocio.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoEdsocio.Location = new System.Drawing.Point(437, 115);
+            this.cmbMayoEdsocio.Name = "cmbMayoEdsocio";
+            this.cmbMayoEdsocio.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoEdsocio.TabIndex = 94;
+            // 
+            // cmbMayoArtes
+            // 
+            this.cmbMayoArtes.FormattingEnabled = true;
+            this.cmbMayoArtes.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoArtes.Location = new System.Drawing.Point(437, 77);
+            this.cmbMayoArtes.Name = "cmbMayoArtes";
+            this.cmbMayoArtes.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoArtes.TabIndex = 93;
+            // 
+            // cmbMayoFormacion
+            // 
+            this.cmbMayoFormacion.FormattingEnabled = true;
+            this.cmbMayoFormacion.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoFormacion.Location = new System.Drawing.Point(437, 38);
+            this.cmbMayoFormacion.Name = "cmbMayoFormacion";
+            this.cmbMayoFormacion.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoFormacion.TabIndex = 92;
+            // 
+            // cmbMayohistoria
+            // 
+            this.cmbMayohistoria.FormattingEnabled = true;
+            this.cmbMayohistoria.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayohistoria.Location = new System.Drawing.Point(126, 238);
+            this.cmbMayohistoria.Name = "cmbMayohistoria";
+            this.cmbMayohistoria.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayohistoria.TabIndex = 91;
+            // 
+            // cmbMayoGeografia
+            // 
+            this.cmbMayoGeografia.FormattingEnabled = true;
+            this.cmbMayoGeografia.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoGeografia.Location = new System.Drawing.Point(126, 199);
+            this.cmbMayoGeografia.Name = "cmbMayoGeografia";
+            this.cmbMayoGeografia.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoGeografia.TabIndex = 90;
+            // 
+            // cmbMayoCiencias
+            // 
+            this.cmbMayoCiencias.FormattingEnabled = true;
+            this.cmbMayoCiencias.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoCiencias.Location = new System.Drawing.Point(126, 160);
+            this.cmbMayoCiencias.Name = "cmbMayoCiencias";
+            this.cmbMayoCiencias.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoCiencias.TabIndex = 89;
+            // 
+            // cmbMayoIngles
+            // 
+            this.cmbMayoIngles.FormattingEnabled = true;
+            this.cmbMayoIngles.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoIngles.Location = new System.Drawing.Point(126, 121);
+            this.cmbMayoIngles.Name = "cmbMayoIngles";
+            this.cmbMayoIngles.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoIngles.TabIndex = 88;
+            // 
+            // cmbMayoMate
+            // 
+            this.cmbMayoMate.FormattingEnabled = true;
+            this.cmbMayoMate.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbMayoMate.Location = new System.Drawing.Point(126, 82);
+            this.cmbMayoMate.Name = "cmbMayoMate";
+            this.cmbMayoMate.Size = new System.Drawing.Size(124, 33);
+            this.cmbMayoMate.TabIndex = 87;
+            // 
+            // cmbmayoEspañol
+            // 
+            this.cmbmayoEspañol.FormattingEnabled = true;
+            this.cmbmayoEspañol.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbmayoEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbmayoEspañol.Name = "cmbmayoEspañol";
+            this.cmbmayoEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbmayoEspañol.TabIndex = 75;
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label108.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label108.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label108.Location = new System.Drawing.Point(223, 0);
+            this.label108.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(147, 26);
+            this.label108.TabIndex = 44;
+            this.label108.Text = "Calificaciones";
+            // 
+            // Junio
+            // 
+            this.Junio.Controls.Add(this.groupBox9);
+            this.Junio.Location = new System.Drawing.Point(4, 22);
+            this.Junio.Name = "Junio";
+            this.Junio.Padding = new System.Windows.Forms.Padding(3);
+            this.Junio.Size = new System.Drawing.Size(937, 354);
+            this.Junio.TabIndex = 9;
+            this.Junio.Text = "Junio";
+            this.Junio.UseVisualStyleBackColor = true;
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox9.Controls.Add(this.label115);
+            this.groupBox9.Controls.Add(this.label116);
+            this.groupBox9.Controls.Add(this.label117);
+            this.groupBox9.Controls.Add(this.label118);
+            this.groupBox9.Controls.Add(this.label119);
+            this.groupBox9.Controls.Add(this.label76);
+            this.groupBox9.Controls.Add(this.label77);
+            this.groupBox9.Controls.Add(this.label78);
+            this.groupBox9.Controls.Add(this.label79);
+            this.groupBox9.Controls.Add(this.label80);
+            this.groupBox9.Controls.Add(this.label81);
+            this.groupBox9.Controls.Add(this.cmbJunioinasis);
+            this.groupBox9.Controls.Add(this.cmbJunioEdFis);
+            this.groupBox9.Controls.Add(this.cmbJunioEdsocioe);
+            this.groupBox9.Controls.Add(this.cmbJunioArtess);
+            this.groupBox9.Controls.Add(this.cmbJunioFormacionCivica);
+            this.groupBox9.Controls.Add(this.cmbJuniohistorias);
+            this.groupBox9.Controls.Add(this.cmbJunioGeofgrafia);
+            this.groupBox9.Controls.Add(this.cmbJunioCienciass);
+            this.groupBox9.Controls.Add(this.cmbJunioingless);
+            this.groupBox9.Controls.Add(this.cmbJuniomate);
+            this.groupBox9.Controls.Add(this.cmbDJunioEspañol);
+            this.groupBox9.Controls.Add(this.label120);
+            this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox9.Location = new System.Drawing.Point(178, 18);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox9.Size = new System.Drawing.Size(581, 319);
+            this.groupBox9.TabIndex = 82;
+            this.groupBox9.TabStop = false;
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label115.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label115.Location = new System.Drawing.Point(303, 211);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(102, 20);
+            this.label115.TabIndex = 119;
+            this.label115.Text = "Inasistencias";
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label116.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label116.Location = new System.Drawing.Point(294, 167);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(74, 20);
+            this.label116.TabIndex = 118;
+            this.label116.Text = "Ed.Fisica";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label117.Location = new System.Drawing.Point(291, 128);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(77, 20);
+            this.label117.TabIndex = 117;
+            this.label117.Text = "Ed. Socio";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label118.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label118.Location = new System.Drawing.Point(303, 89);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(47, 20);
+            this.label118.TabIndex = 116;
+            this.label118.Text = "Artes";
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label119.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label119.Location = new System.Drawing.Point(252, 45);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(175, 20);
+            this.label119.TabIndex = 115;
+            this.label119.Text = "Formacion civica y etica";
             // 
             // label76
             // 
@@ -3963,445 +4233,10 @@
             this.label81.TabIndex = 109;
             this.label81.Text = "Español";
             // 
-            // label82
+            // cmbJunioinasis
             // 
-            this.label82.AutoSize = true;
-            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label82.Location = new System.Drawing.Point(323, 212);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(102, 20);
-            this.label82.TabIndex = 119;
-            this.label82.Text = "Inasistencias";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label83.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label83.Location = new System.Drawing.Point(314, 168);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(74, 20);
-            this.label83.TabIndex = 118;
-            this.label83.Text = "Ed.Fisica";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label85.Location = new System.Drawing.Point(311, 129);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(77, 20);
-            this.label85.TabIndex = 117;
-            this.label85.Text = "Ed. Socio";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label86.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label86.Location = new System.Drawing.Point(323, 90);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(47, 20);
-            this.label86.TabIndex = 116;
-            this.label86.Text = "Artes";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label87.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label87.Location = new System.Drawing.Point(258, 51);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(175, 20);
-            this.label87.TabIndex = 115;
-            this.label87.Text = "Formacion civica y etica";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label88.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label88.Location = new System.Drawing.Point(305, 216);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(102, 20);
-            this.label88.TabIndex = 119;
-            this.label88.Text = "Inasistencias";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label89.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label89.Location = new System.Drawing.Point(296, 172);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(74, 20);
-            this.label89.TabIndex = 118;
-            this.label89.Text = "Ed.Fisica";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label90.Location = new System.Drawing.Point(293, 133);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(77, 20);
-            this.label90.TabIndex = 117;
-            this.label90.Text = "Ed. Socio";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label91.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label91.Location = new System.Drawing.Point(305, 94);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(47, 20);
-            this.label91.TabIndex = 116;
-            this.label91.Text = "Artes";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label92.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label92.Location = new System.Drawing.Point(254, 50);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(175, 20);
-            this.label92.TabIndex = 115;
-            this.label92.Text = "Formacion civica y etica";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label93.Location = new System.Drawing.Point(306, 216);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(102, 20);
-            this.label93.TabIndex = 119;
-            this.label93.Text = "Inasistencias";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label94.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label94.Location = new System.Drawing.Point(297, 172);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(74, 20);
-            this.label94.TabIndex = 118;
-            this.label94.Text = "Ed.Fisica";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label95.Location = new System.Drawing.Point(294, 133);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(77, 20);
-            this.label95.TabIndex = 117;
-            this.label95.Text = "Ed. Socio";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label97.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label97.Location = new System.Drawing.Point(306, 94);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(47, 20);
-            this.label97.TabIndex = 116;
-            this.label97.Text = "Artes";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label98.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label98.Location = new System.Drawing.Point(255, 50);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(175, 20);
-            this.label98.TabIndex = 115;
-            this.label98.Text = "Formacion civica y etica";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label99.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label99.Location = new System.Drawing.Point(321, 216);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(102, 20);
-            this.label99.TabIndex = 119;
-            this.label99.Text = "Inasistencias";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label100.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label100.Location = new System.Drawing.Point(312, 172);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(74, 20);
-            this.label100.TabIndex = 118;
-            this.label100.Text = "Ed.Fisica";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label101.Location = new System.Drawing.Point(309, 133);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(77, 20);
-            this.label101.TabIndex = 117;
-            this.label101.Text = "Ed. Socio";
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label102.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label102.Location = new System.Drawing.Point(321, 94);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(47, 20);
-            this.label102.TabIndex = 116;
-            this.label102.Text = "Artes";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label103.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label103.Location = new System.Drawing.Point(270, 50);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(175, 20);
-            this.label103.TabIndex = 115;
-            this.label103.Text = "Formacion civica y etica";
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label104.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label104.Location = new System.Drawing.Point(321, 211);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(102, 20);
-            this.label104.TabIndex = 119;
-            this.label104.Text = "Inasistencias";
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = true;
-            this.label105.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label105.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label105.Location = new System.Drawing.Point(312, 167);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(74, 20);
-            this.label105.TabIndex = 118;
-            this.label105.Text = "Ed.Fisica";
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label106.Location = new System.Drawing.Point(309, 128);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(77, 20);
-            this.label106.TabIndex = 117;
-            this.label106.Text = "Ed. Socio";
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label107.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label107.Location = new System.Drawing.Point(321, 89);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(47, 20);
-            this.label107.TabIndex = 116;
-            this.label107.Text = "Artes";
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label109.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label109.Location = new System.Drawing.Point(270, 45);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(175, 20);
-            this.label109.TabIndex = 115;
-            this.label109.Text = "Formacion civica y etica";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label110.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label110.Location = new System.Drawing.Point(307, 211);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(102, 20);
-            this.label110.TabIndex = 119;
-            this.label110.Text = "Inasistencias";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label111.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label111.Location = new System.Drawing.Point(298, 167);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(74, 20);
-            this.label111.TabIndex = 118;
-            this.label111.Text = "Ed.Fisica";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label112.Location = new System.Drawing.Point(295, 128);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(77, 20);
-            this.label112.TabIndex = 117;
-            this.label112.Text = "Ed. Socio";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label113.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label113.Location = new System.Drawing.Point(307, 89);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(47, 20);
-            this.label113.TabIndex = 116;
-            this.label113.Text = "Artes";
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label114.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label114.Location = new System.Drawing.Point(256, 45);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(175, 20);
-            this.label114.TabIndex = 115;
-            this.label114.Text = "Formacion civica y etica";
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label115.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label115.Location = new System.Drawing.Point(303, 211);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(102, 20);
-            this.label115.TabIndex = 119;
-            this.label115.Text = "Inasistencias";
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label116.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label116.Location = new System.Drawing.Point(294, 167);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(74, 20);
-            this.label116.TabIndex = 118;
-            this.label116.Text = "Ed.Fisica";
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label117.Location = new System.Drawing.Point(291, 128);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(77, 20);
-            this.label117.TabIndex = 117;
-            this.label117.Text = "Ed. Socio";
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label118.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label118.Location = new System.Drawing.Point(303, 89);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(47, 20);
-            this.label118.TabIndex = 116;
-            this.label118.Text = "Artes";
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label119.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label119.Location = new System.Drawing.Point(252, 45);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(175, 20);
-            this.label119.TabIndex = 115;
-            this.label119.Text = "Formacion civica y etica";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label17.Location = new System.Drawing.Point(281, 167);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(0, 20);
-            this.label17.TabIndex = 70;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label16.Location = new System.Drawing.Point(281, 127);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(0, 20);
-            this.label16.TabIndex = 71;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label15.Location = new System.Drawing.Point(281, 90);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(0, 20);
-            this.label15.TabIndex = 72;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label14.Location = new System.Drawing.Point(281, 50);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(0, 20);
-            this.label14.TabIndex = 73;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label13.Location = new System.Drawing.Point(281, 205);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(0, 20);
-            this.label13.TabIndex = 74;
-            // 
-            // cmbEspañol
-            // 
-            this.cmbEspañol.FormattingEnabled = true;
-            this.cmbEspañol.Items.AddRange(new object[] {
+            this.cmbJunioinasis.FormattingEnabled = true;
+            this.cmbJunioinasis.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4413,15 +4248,16 @@
             "6",
             "5.5",
             "5"});
-            this.cmbEspañol.Location = new System.Drawing.Point(176, 42);
-            this.cmbEspañol.Name = "cmbEspañol";
-            this.cmbEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbEspañol.TabIndex = 75;
+            this.cmbJunioinasis.Location = new System.Drawing.Point(433, 193);
+            this.cmbJunioinasis.Name = "cmbJunioinasis";
+            this.cmbJunioinasis.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioinasis.TabIndex = 96;
+            this.cmbJunioinasis.SelectedIndexChanged += new System.EventHandler(this.CmbMayoinasis_SelectedIndexChanged);
             // 
-            // cmbOctubreMate
+            // cmbJunioEdFis
             // 
-            this.cmbOctubreMate.FormattingEnabled = true;
-            this.cmbOctubreMate.Items.AddRange(new object[] {
+            this.cmbJunioEdFis.FormattingEnabled = true;
+            this.cmbJunioEdFis.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4433,15 +4269,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreMate.Location = new System.Drawing.Point(176, 81);
-            this.cmbOctubreMate.Name = "cmbOctubreMate";
-            this.cmbOctubreMate.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreMate.TabIndex = 87;
+            this.cmbJunioEdFis.Location = new System.Drawing.Point(433, 154);
+            this.cmbJunioEdFis.Name = "cmbJunioEdFis";
+            this.cmbJunioEdFis.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioEdFis.TabIndex = 95;
             // 
-            // cmbOctubreHistoria
+            // cmbJunioEdsocioe
             // 
-            this.cmbOctubreHistoria.FormattingEnabled = true;
-            this.cmbOctubreHistoria.Items.AddRange(new object[] {
+            this.cmbJunioEdsocioe.FormattingEnabled = true;
+            this.cmbJunioEdsocioe.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4453,15 +4289,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreHistoria.Location = new System.Drawing.Point(176, 237);
-            this.cmbOctubreHistoria.Name = "cmbOctubreHistoria";
-            this.cmbOctubreHistoria.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreHistoria.TabIndex = 91;
+            this.cmbJunioEdsocioe.Location = new System.Drawing.Point(433, 115);
+            this.cmbJunioEdsocioe.Name = "cmbJunioEdsocioe";
+            this.cmbJunioEdsocioe.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioEdsocioe.TabIndex = 94;
             // 
-            // cmbOctubreCiencias
+            // cmbJunioArtess
             // 
-            this.cmbOctubreCiencias.FormattingEnabled = true;
-            this.cmbOctubreCiencias.Items.AddRange(new object[] {
+            this.cmbJunioArtess.FormattingEnabled = true;
+            this.cmbJunioArtess.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4473,15 +4309,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreCiencias.Location = new System.Drawing.Point(176, 159);
-            this.cmbOctubreCiencias.Name = "cmbOctubreCiencias";
-            this.cmbOctubreCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreCiencias.TabIndex = 89;
+            this.cmbJunioArtess.Location = new System.Drawing.Point(433, 77);
+            this.cmbJunioArtess.Name = "cmbJunioArtess";
+            this.cmbJunioArtess.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioArtess.TabIndex = 93;
             // 
-            // cmbOctubreGeografia
+            // cmbJunioFormacionCivica
             // 
-            this.cmbOctubreGeografia.FormattingEnabled = true;
-            this.cmbOctubreGeografia.Items.AddRange(new object[] {
+            this.cmbJunioFormacionCivica.FormattingEnabled = true;
+            this.cmbJunioFormacionCivica.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4493,15 +4329,15 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreGeografia.Location = new System.Drawing.Point(176, 198);
-            this.cmbOctubreGeografia.Name = "cmbOctubreGeografia";
-            this.cmbOctubreGeografia.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreGeografia.TabIndex = 90;
+            this.cmbJunioFormacionCivica.Location = new System.Drawing.Point(433, 38);
+            this.cmbJunioFormacionCivica.Name = "cmbJunioFormacionCivica";
+            this.cmbJunioFormacionCivica.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioFormacionCivica.TabIndex = 92;
             // 
-            // cmbOctubreIngles
+            // cmbJuniohistorias
             // 
-            this.cmbOctubreIngles.FormattingEnabled = true;
-            this.cmbOctubreIngles.Items.AddRange(new object[] {
+            this.cmbJuniohistorias.FormattingEnabled = true;
+            this.cmbJuniohistorias.Items.AddRange(new object[] {
             "10",
             "9.5",
             "9",
@@ -4513,10 +4349,175 @@
             "6",
             "5.5",
             "5"});
-            this.cmbOctubreIngles.Location = new System.Drawing.Point(176, 120);
-            this.cmbOctubreIngles.Name = "cmbOctubreIngles";
-            this.cmbOctubreIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctubreIngles.TabIndex = 88;
+            this.cmbJuniohistorias.Location = new System.Drawing.Point(126, 238);
+            this.cmbJuniohistorias.Name = "cmbJuniohistorias";
+            this.cmbJuniohistorias.Size = new System.Drawing.Size(124, 33);
+            this.cmbJuniohistorias.TabIndex = 91;
+            // 
+            // cmbJunioGeofgrafia
+            // 
+            this.cmbJunioGeofgrafia.FormattingEnabled = true;
+            this.cmbJunioGeofgrafia.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbJunioGeofgrafia.Location = new System.Drawing.Point(126, 199);
+            this.cmbJunioGeofgrafia.Name = "cmbJunioGeofgrafia";
+            this.cmbJunioGeofgrafia.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioGeofgrafia.TabIndex = 90;
+            // 
+            // cmbJunioCienciass
+            // 
+            this.cmbJunioCienciass.FormattingEnabled = true;
+            this.cmbJunioCienciass.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbJunioCienciass.Location = new System.Drawing.Point(126, 160);
+            this.cmbJunioCienciass.Name = "cmbJunioCienciass";
+            this.cmbJunioCienciass.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioCienciass.TabIndex = 89;
+            // 
+            // cmbJunioingless
+            // 
+            this.cmbJunioingless.FormattingEnabled = true;
+            this.cmbJunioingless.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbJunioingless.Location = new System.Drawing.Point(126, 121);
+            this.cmbJunioingless.Name = "cmbJunioingless";
+            this.cmbJunioingless.Size = new System.Drawing.Size(124, 33);
+            this.cmbJunioingless.TabIndex = 88;
+            // 
+            // cmbJuniomate
+            // 
+            this.cmbJuniomate.FormattingEnabled = true;
+            this.cmbJuniomate.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbJuniomate.Location = new System.Drawing.Point(126, 82);
+            this.cmbJuniomate.Name = "cmbJuniomate";
+            this.cmbJuniomate.Size = new System.Drawing.Size(124, 33);
+            this.cmbJuniomate.TabIndex = 87;
+            // 
+            // cmbDJunioEspañol
+            // 
+            this.cmbDJunioEspañol.FormattingEnabled = true;
+            this.cmbDJunioEspañol.Items.AddRange(new object[] {
+            "10",
+            "9.5",
+            "9",
+            "8.5",
+            "8",
+            "7.5",
+            "7",
+            "6.5",
+            "6",
+            "5.5",
+            "5"});
+            this.cmbDJunioEspañol.Location = new System.Drawing.Point(126, 43);
+            this.cmbDJunioEspañol.Name = "cmbDJunioEspañol";
+            this.cmbDJunioEspañol.Size = new System.Drawing.Size(124, 33);
+            this.cmbDJunioEspañol.TabIndex = 75;
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label120.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label120.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label120.Location = new System.Drawing.Point(223, 0);
+            this.label120.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(147, 26);
+            this.label120.TabIndex = 44;
+            this.label120.Text = "Calificaciones";
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.materialTabSelector1.Location = new System.Drawing.Point(-21, 63);
+            this.materialTabSelector1.Margin = new System.Windows.Forms.Padding(1);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTabSelector1.Size = new System.Drawing.Size(1065, 49);
+            this.materialTabSelector1.TabIndex = 82;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(463, 525);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 56);
+            this.materialRaisedButton1.TabIndex = 70;
+            this.materialRaisedButton1.Text = "Guardar Calificaciones";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.MaterialRaisedButton1_Click);
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.Depth = 0;
+            this.btnPrincipal.Location = new System.Drawing.Point(125, 525);
+            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Primary = true;
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 56);
+            this.btnPrincipal.TabIndex = 83;
+            this.btnPrincipal.Text = "Volver al Menú Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            // 
+            // btnIrBoletas
+            // 
+            this.btnIrBoletas.Depth = 0;
+            this.btnIrBoletas.Location = new System.Drawing.Point(763, 525);
+            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnIrBoletas.Name = "btnIrBoletas";
+            this.btnIrBoletas.Primary = true;
+            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
+            this.btnIrBoletas.TabIndex = 86;
+            this.btnIrBoletas.Text = "Generar PDF";
+            this.btnIrBoletas.UseVisualStyleBackColor = true;
+            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click);
             // 
             // Calificaciones456
             // 
@@ -4683,43 +4684,43 @@
         private System.Windows.Forms.ComboBox cmbmarzoEspañol;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ComboBox cmbJunioArtes;
-        private System.Windows.Forms.ComboBox cmbMayoArtes;
-        private System.Windows.Forms.ComboBox cmbAbrilArtes;
-        private System.Windows.Forms.ComboBox cmbMarzoArtes;
-        private System.Windows.Forms.ComboBox cmbFebreroArtes;
-        private System.Windows.Forms.ComboBox cmbEneroArtes;
-        private System.Windows.Forms.ComboBox cmbDiciembreArtes;
-        private System.Windows.Forms.ComboBox cmbNoviembreArtes;
-        private System.Windows.Forms.ComboBox cmbOctubreArtes;
-        private System.Windows.Forms.ComboBox cmbSeptiembreArtes;
-        private System.Windows.Forms.ComboBox cmbDiagArtes;
+        private System.Windows.Forms.ComboBox cmbAbrilIna;
+        private System.Windows.Forms.ComboBox cmbAbrilEdfisica;
+        private System.Windows.Forms.ComboBox cmbAbrilEdsocio;
+        private System.Windows.Forms.ComboBox cmbAbrilArtess;
+        private System.Windows.Forms.ComboBox cmbAbrilFormacion;
+        private System.Windows.Forms.ComboBox cmbAbrilHistoria;
+        private System.Windows.Forms.ComboBox cmbAbrilGeografia;
+        private System.Windows.Forms.ComboBox cmbAbrilCiencias;
+        private System.Windows.Forms.ComboBox cmbAbrilIngles;
+        private System.Windows.Forms.ComboBox cmbAbrilmate;
+        private System.Windows.Forms.ComboBox cmbAbrilEspañol;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox cmbJunioSocio;
-        private System.Windows.Forms.ComboBox cmbMayoSocio;
-        private System.Windows.Forms.ComboBox cmbAbrilSocio;
-        private System.Windows.Forms.ComboBox cmbMarzoSocio;
-        private System.Windows.Forms.ComboBox cmbFebreroSocio;
-        private System.Windows.Forms.ComboBox cmbEneroSocio;
-        private System.Windows.Forms.ComboBox cmbDiciembreSocio;
-        private System.Windows.Forms.ComboBox cmbNoviembreSocio;
-        private System.Windows.Forms.ComboBox cmbOctubreSocio;
-        private System.Windows.Forms.ComboBox cmbSeptiembreSocio;
-        private System.Windows.Forms.ComboBox cmbDiagSocio;
+        private System.Windows.Forms.ComboBox cmbMayoIna;
+        private System.Windows.Forms.ComboBox cmbMayoEdfisica;
+        private System.Windows.Forms.ComboBox cmbMayoEdsocio;
+        private System.Windows.Forms.ComboBox cmbMayoArtes;
+        private System.Windows.Forms.ComboBox cmbMayoFormacion;
+        private System.Windows.Forms.ComboBox cmbMayohistoria;
+        private System.Windows.Forms.ComboBox cmbMayoGeografia;
+        private System.Windows.Forms.ComboBox cmbMayoCiencias;
+        private System.Windows.Forms.ComboBox cmbMayoIngles;
+        private System.Windows.Forms.ComboBox cmbMayoMate;
+        private System.Windows.Forms.ComboBox cmbmayoEspañol;
         private System.Windows.Forms.Label label108;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.ComboBox cmbJunioinasis;
         private System.Windows.Forms.ComboBox cmbJunioEdFis;
-        private System.Windows.Forms.ComboBox cmbMayoEdFis;
-        private System.Windows.Forms.ComboBox cmbAbrilEdFis;
-        private System.Windows.Forms.ComboBox cmbMarzoEdFis;
-        private System.Windows.Forms.ComboBox cmbFebreroEdFis;
-        private System.Windows.Forms.ComboBox cmbEneroEdFis;
-        private System.Windows.Forms.ComboBox cmbDiciembreEdFis;
-        private System.Windows.Forms.ComboBox cmbNoviembreEdFis;
-        private System.Windows.Forms.ComboBox cmbOctubreEdFis;
-        private System.Windows.Forms.ComboBox cmbSeptiembreEdFis;
-        private System.Windows.Forms.ComboBox cmbDiagEdFis;
+        private System.Windows.Forms.ComboBox cmbJunioEdsocioe;
+        private System.Windows.Forms.ComboBox cmbJunioArtess;
+        private System.Windows.Forms.ComboBox cmbJunioFormacionCivica;
+        private System.Windows.Forms.ComboBox cmbJuniohistorias;
+        private System.Windows.Forms.ComboBox cmbJunioGeofgrafia;
+        private System.Windows.Forms.ComboBox cmbJunioCienciass;
+        private System.Windows.Forms.ComboBox cmbJunioingless;
+        private System.Windows.Forms.ComboBox cmbJuniomate;
+        private System.Windows.Forms.ComboBox cmbDJunioEspañol;
         private System.Windows.Forms.Label label120;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;

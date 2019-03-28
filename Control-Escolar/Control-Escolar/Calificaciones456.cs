@@ -1025,8 +1025,10 @@ namespace Control_Escolar
 
         }
 
+        private void CmbJunioSocio_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-
+        }
 
         public void caliOct()
         {
@@ -1149,6 +1151,11 @@ namespace Control_Escolar
 
         }
 
+        private void CmbMayoinasis_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public void caliEnero()
         {
 
@@ -1245,6 +1252,125 @@ namespace Control_Escolar
             Ingless = cmbMarzoIngles.SelectedItem.ToString();
             CienciasN = cmbMarzoCiencias.SelectedItem.ToString();
             Geografia = cmbMarzoGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        public void caliAbril()
+        {
+
+
+            Español = cmbAbrilEspañol.SelectedItem.ToString();
+            Historia = cmbAbrilHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbAbrilFormacion.SelectedItem.ToString();
+            Artess = cmbAbrilArtess.SelectedItem.ToString();
+            Edsocio = cmbAbrilEdsocio.SelectedItem.ToString();
+            EducacionF = cmbAbrilEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbAbrilmate.SelectedItem.ToString();
+            Ingless = cmbAbrilIngles.SelectedItem.ToString();
+            CienciasN = cmbAbrilCiencias.SelectedItem.ToString();
+            Geografia = cmbAbrilGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+        public void caliMayo()
+        {
+
+
+            Español = cmbmayoEspañol.SelectedItem.ToString();
+            Historia = cmbMayohistoria.SelectedItem.ToString();
+            FormacionCiv = cmbMayoFormacion.SelectedItem.ToString();
+            Artess =cmbMayoArtes.SelectedItem.ToString();
+            Edsocio = cmbMayoEdsocio.SelectedItem.ToString();
+            EducacionF = cmbMayoEdfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbMayoMate.SelectedItem.ToString();
+            Ingless = cmbMayoIngles.SelectedItem.ToString();
+            CienciasN = cmbMayoCiencias.SelectedItem.ToString();
+            Geografia = cmbMayoGeografia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+
+        public void caliJunio()
+        {
+
+
+            Español = cmbDJunioEspañol.SelectedItem.ToString();
+            Historia = cmbJuniohistorias.SelectedItem.ToString();
+            FormacionCiv = cmbJunioFormacionCivica.SelectedItem.ToString();
+            Artess = cmbJunioArtess.SelectedItem.ToString();
+            Edsocio = cmbJunioEdsocioe.SelectedItem.ToString();
+            EducacionF = cmbJunioEdFis.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbJuniomate.SelectedItem.ToString();
+            Ingless = cmbJunioingless.SelectedItem.ToString();
+            CienciasN = cmbJunioingless.SelectedItem.ToString();
+            Geografia = cmbJunioGeofgrafia.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1743,6 +1869,27 @@ namespace Control_Escolar
                     {
                         caliMarzo();
                         MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                    }
+                    break;
+
+                case "Abril":
+                    {
+                        caliAbril();
+                        MessageBox.Show("Calificaciones  Abril registradas con exito");
+                    }
+                    break;
+
+                case "Mayo":
+                    {
+                        caliMayo();
+                        MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                    }
+                    break;
+
+                case "Junio":
+                    {
+                        caliJunio();
+                        MessageBox.Show("Calificaciones  Junio registradas con exito");
                     }
                     break;
 
