@@ -16,7 +16,7 @@ using System.IO;
 
 namespace Control_Escolar
 {
-    public partial class CadaGrupo : MaterialForm
+    public partial class DirectorioAlum : MaterialForm
     {
         MySqlCommand codigo = new MySqlCommand();
         MySqlConnection conectanos = new MySqlConnection();
@@ -24,19 +24,10 @@ namespace Control_Escolar
         MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
         conexion obj = new conexion();
 
-        public CadaGrupo()
+        public DirectorioAlum()
         {
            
             InitializeComponent();
-            switch (sesion.pictureb1)
-            {
-                case "1": { sesion.Grado = 1; txtGrado.Text = Convert.ToString(sesion.Grado); } break;
-                case "2": { sesion.Grado = 2; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "3": { sesion.Grado = 3; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "4": { sesion.Grado = 4; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "5": { sesion.Grado = 5; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "6": { sesion.Grado = 6; txtGrado.Text = sesion.Grado.ToString(); } break;
-            }
 
             datagrid(dataGridView1);
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -111,7 +102,7 @@ namespace Control_Escolar
 
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`  FROM  `alumno`  where  idGrado  ='" + sesion.Grado + "' "+ "ORDER BY  `ApellidoP`  ASC");
+            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`, `Alergias` FROM  `alumno` ORDER BY  `ApellidoP`  ASC");
 
 
             try
@@ -180,7 +171,7 @@ namespace Control_Escolar
             {
                 Directory.CreateDirectory(folderPath); // si no existe lo crea
             }
-            using (FileStream stream = new FileStream(folderPath + "listaalumno.pdf", FileMode.Create))
+            using (FileStream stream = new FileStream(folderPath + "Directorio_Alumnos.pdf", FileMode.Create))
             {
                 Document pdfDoc = new Document(PageSize.LETTER, 10f, 10f, 100f, 100f); //se declara las medidas y margenes del pdf por ejemplo tamaño CARTA
                 PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);//cosas de itextsharp xD
@@ -193,7 +184,7 @@ namespace Control_Escolar
                 // Header hola = new Header();
                // writer.PageEvent = new Header();
                 Header i = new Header();
-                i.Headerlista1A(writer,pdfDoc);
+                i.HeaderDirectorioAlumno(writer,pdfDoc);
 
                //se habre el docuemnto
 

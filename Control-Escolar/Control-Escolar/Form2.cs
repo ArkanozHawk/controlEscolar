@@ -69,7 +69,7 @@ namespace Control_Escolar
                int edad2 = Convert.ToInt32(txtEdad_A.Text);
                 if (edad1 == edad2)
                 {
-                   sesion.edad = edad1;
+                   sesion.edad = edad2;
                 }
 
                 else { MessageBox.Show("No coincide la edad con fecha de nacimiento "); }
@@ -125,12 +125,18 @@ namespace Control_Escolar
         //Ir al siguiente formulario
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
+           
+
+            string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+
+            sesion.fnac = nacimiento;
+            CalcEdad(sesion.fnac);
             bool validar = ValidarTodosDatos();
             ValidarTodosDatos2();
 
-            string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd"); 
-            sesion.fnac = nacimiento;
-            CalcEdad(sesion.fnac);
+           
+          
+
             inscripcion();
 
             if (validar == true)
@@ -392,7 +398,7 @@ namespace Control_Escolar
                         string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
                         sesion.fnac = nacimiento;
                         CalcEdad(sesion.fnac);
-                        if (sesion.fnac == txtEdad_A.Text)
+                        if (sesion.edad.ToString() == txtEdad_A.Text)
                         {
                             errorProvider1.SetError(this.txtEdad_A, "");
                         }
@@ -614,7 +620,7 @@ namespace Control_Escolar
                         string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
                         sesion.fnac = nacimiento;
                         CalcEdad(sesion.fnac);
-                        if (sesion.fnac == txtEdad_A.Text)
+                        if (sesion.edad.ToString() == txtEdad_A.Text)
                         {
                             errorProvider1.SetError(this.txtEdad_A, "");
                         }
@@ -1028,9 +1034,11 @@ namespace Control_Escolar
                     else
                     {
                         string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+                       
+
                         sesion.fnac = nacimiento;
                         CalcEdad(sesion.fnac);
-                        if (sesion.fnac == txtEdad_A.Text)
+                        if (sesion.edad.ToString() == txtEdad_A.Text)
                         {
                             errorProvider1.SetError(this.txtEdad_A, "");
                         }
@@ -1112,5 +1120,9 @@ namespace Control_Escolar
 
         }
 
+        private void bindingNavigator1_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }

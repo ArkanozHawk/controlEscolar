@@ -36,6 +36,18 @@ namespace Control_Escolar
             Application.Run(new principal());
         }
 
+        public static void DirectorioAlumno()
+
+        {
+            Application.Run(new DirectorioAlum());
+        }
+
+        public static void DirectorioProfes()
+
+        {
+            Application.Run(new DirectorioProfes());
+        }
+
         //-----------------------------------------Botones--------------------------------------------
         //Boton de cerrar sesion
         private void btnCerrar_Click(object sender, EventArgs e)
@@ -71,12 +83,18 @@ namespace Control_Escolar
         //Descargar directorio de alumnos de cada grado
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(DirectorioAlumno));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
         }
         //Descargar directorio de maestros
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(DirectorioProfes));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
         }
     }
 }

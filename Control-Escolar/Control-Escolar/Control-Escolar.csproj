@@ -101,6 +101,18 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="DirectorioProfes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorioProfes.Designer.cs">
+      <DependentUpon>DirectorioProfes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectorioAlum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DirectorioAlum.Designer.cs">
+      <DependentUpon>DirectorioAlum.cs</DependentUpon>
+    </Compile>
     <Compile Include="CadaGrupo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -198,6 +210,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Buscar.resx">
       <DependentUpon>Buscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorioProfes.resx">
+      <DependentUpon>DirectorioProfes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectorioAlum.resx">
+      <DependentUpon>DirectorioAlum.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CadaGrupo.resx">
       <DependentUpon>CadaGrupo.cs</DependentUpon>

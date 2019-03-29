@@ -16,7 +16,7 @@ using System.IO;
 
 namespace Control_Escolar
 {
-    public partial class CadaGrupo : MaterialForm
+    public partial class DirectorioProfes : MaterialForm
     {
         MySqlCommand codigo = new MySqlCommand();
         MySqlConnection conectanos = new MySqlConnection();
@@ -24,19 +24,10 @@ namespace Control_Escolar
         MySqlConnection coneccion = new MySqlConnection("host=localhost;Uid=root;Database=nerivela");
         conexion obj = new conexion();
 
-        public CadaGrupo()
+        public DirectorioProfes()
         {
            
             InitializeComponent();
-            switch (sesion.pictureb1)
-            {
-                case "1": { sesion.Grado = 1; txtGrado.Text = Convert.ToString(sesion.Grado); } break;
-                case "2": { sesion.Grado = 2; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "3": { sesion.Grado = 3; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "4": { sesion.Grado = 4; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "5": { sesion.Grado = 5; txtGrado.Text = sesion.Grado.ToString(); } break;
-                case "6": { sesion.Grado = 6; txtGrado.Text = sesion.Grado.ToString(); } break;
-            }
 
             datagrid(dataGridView1);
             var materialSkinManager = MaterialSkinManager.Instance;
@@ -111,7 +102,7 @@ namespace Control_Escolar
 
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`  FROM  `alumno`  where  idGrado  ='" + sesion.Grado + "' "+ "ORDER BY  `ApellidoP`  ASC");
+            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `RFC`,`Calle`, `Colonia`, `NumExt`, `cp`, `telefono`,`Email` FROM  `Maestros` ORDER BY  `ApellidoP`  ASC");
 
 
             try
@@ -120,13 +111,13 @@ namespace Control_Escolar
                 seleccionar.SelectCommand = codigo;
 
                 DataTable datostabla = new DataTable();
-                DataColumn numerodelista = new DataColumn();
-                numerodelista.ColumnName = "Numero de lista";
-                numerodelista.DataType = System.Type.GetType("System.Int32");
-                numerodelista.AutoIncrement = true;
-                numerodelista.AutoIncrementSeed = 1;
-                 numerodelista.AutoIncrementStep = 1;
-                datostabla.Columns.Add(numerodelista);
+                //DataColumn numerodelista = new DataColumn();
+                //numerodelista.ColumnName = "Numero de lista";
+                //numerodelista.DataType = System.Type.GetType("System.Int32");
+                //numerodelista.AutoIncrement = true;
+                //numerodelista.AutoIncrementSeed = 1;
+                // numerodelista.AutoIncrementStep = 1;
+                //datostabla.Columns.Add(numerodelista);
               
                 seleccionar.Fill(datostabla);
                 BindingSource formulario = new BindingSource();
@@ -180,9 +171,9 @@ namespace Control_Escolar
             {
                 Directory.CreateDirectory(folderPath); // si no existe lo crea
             }
-            using (FileStream stream = new FileStream(folderPath + "listaalumno.pdf", FileMode.Create))
+            using (FileStream stream = new FileStream(folderPath + "Directorio_Profes.pdf", FileMode.Create))
             {
-                Document pdfDoc = new Document(PageSize.LETTER, 10f, 10f, 100f, 100f); //se declara las medidas y margenes del pdf por ejemplo tamaño CARTA
+                Document pdfDoc = new Document(PageSize.LEGAL.Rotate(), 10f, 10f, 100f, 100f); //se declara las medidas y margenes del pdf por ejemplo tamaño CARTA
                 PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);//cosas de itextsharp xD
 
                 //iTextSharp.text.Image imagen = iTextSharp.text.Image.GetInstance("C:/Users/Tevi/Documents/Gestionde proyectos/controlEscolar-master/logo1.jpg");
@@ -193,7 +184,7 @@ namespace Control_Escolar
                 // Header hola = new Header();
                // writer.PageEvent = new Header();
                 Header i = new Header();
-                i.Headerlista1A(writer,pdfDoc);
+                i.HeaderDirectorioProfes(writer,pdfDoc);
 
                //se habre el docuemnto
 
