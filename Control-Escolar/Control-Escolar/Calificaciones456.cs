@@ -1001,6 +1001,7 @@ namespace Control_Escolar
             CienciasN = Espnov.SelectedItem.ToString();
             Geografia = Espdic.SelectedItem.ToString();
             Historia = Espene.SelectedItem.ToString();
+            Inasistencias=cmbsepina.SelectedItem.ToString();
 
             for (int i = 0; i <= 11; i++)
             {
@@ -1016,7 +1017,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                  //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                    // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1041,7 +1042,7 @@ namespace Control_Escolar
             Ingless = cmbOctubreIngles.SelectedItem.ToString();
             CienciasN = cmbOctubreCiencias.SelectedItem.ToString();
             Geografia = cmbOctubreGeografia.SelectedItem.ToString();
-            
+            Inasistencias = cmbOctubreIna.SelectedItem.ToString();
 
             for (int i = 0; i <= 11; i++)
             {
@@ -1057,7 +1058,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                  //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1082,6 +1083,7 @@ namespace Control_Escolar
             Ingless = cmbNovIngles.SelectedItem.ToString();
             CienciasN = cmbNovCiencias.SelectedItem.ToString();
             Geografia = cmbNovGeografia.SelectedItem.ToString();
+            Inasistencias = cmbNovIna.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1098,7 +1100,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1122,7 +1124,7 @@ namespace Control_Escolar
             Ingless = cmbDicIngles.SelectedItem.ToString();
             CienciasN = cmbDicCiencias.SelectedItem.ToString();
             Geografia = cmbDicGeografia.SelectedItem.ToString();
-
+            Inasistencias = cmbDicInasis.SelectedItem.ToString();
 
             for (int i = 0; i <= 11; i++)
             {
@@ -1138,7 +1140,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1163,6 +1165,7 @@ namespace Control_Escolar
             Ingless = cmbEneroIngles.SelectedItem.ToString();
             CienciasN = cmbEneroCiencias.SelectedItem.ToString();
             Geografia = cmbEneroGeografia.SelectedItem.ToString();
+            Inasistencias = cmbEneroIna.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1179,7 +1182,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1208,6 +1211,7 @@ namespace Control_Escolar
             Ingless = cmbfebreroIngles.SelectedItem.ToString();
             CienciasN = cmbFebreroCiencias.SelectedItem.ToString();
             Geografia = cmbFebreroGeo.SelectedItem.ToString();
+            Inasistencias = cmbfebreroIna.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1224,7 +1228,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1249,6 +1253,7 @@ namespace Control_Escolar
             Ingless = cmbMarzoIngles.SelectedItem.ToString();
             CienciasN = cmbMarzoCiencias.SelectedItem.ToString();
             Geografia = cmbMarzoGeografia.SelectedItem.ToString();
+            Inasistencias = cmbmarzoina.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1265,7 +1270,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1289,6 +1294,7 @@ namespace Control_Escolar
             Ingless = cmbAbrilIngles.SelectedItem.ToString();
             CienciasN = cmbAbrilCiencias.SelectedItem.ToString();
             Geografia = cmbAbrilGeografia.SelectedItem.ToString();
+            Inasistencias = cmbAbrilIna.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1305,7 +1311,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1328,6 +1334,7 @@ namespace Control_Escolar
             Ingless = cmbMayoIngles.SelectedItem.ToString();
             CienciasN = cmbMayoCiencias.SelectedItem.ToString();
             Geografia = cmbMayoGeografia.SelectedItem.ToString();
+            Inasistencias = cmbMayoIna.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1344,7 +1351,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1368,6 +1375,7 @@ namespace Control_Escolar
             Ingless = cmbJunioingless.SelectedItem.ToString();
             CienciasN = cmbJunioingless.SelectedItem.ToString();
             Geografia = cmbJunioGeofgrafia.SelectedItem.ToString();
+            Inasistencias = cmbJunioinasis.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1384,7 +1392,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
@@ -1477,6 +1485,7 @@ namespace Control_Escolar
             Ingless = cmbdiagingles.SelectedItem.ToString();
             CienciasN = cmbdiagciencias.SelectedItem.ToString();
             Geografia = cmbdiaggeografia.SelectedItem.ToString();
+            Inasistencias = cmbdiaginasis.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1493,7 +1502,7 @@ namespace Control_Escolar
                     case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
                     case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
                     case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
-                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 11: { materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali(); } break;
                         // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
 
                 }
