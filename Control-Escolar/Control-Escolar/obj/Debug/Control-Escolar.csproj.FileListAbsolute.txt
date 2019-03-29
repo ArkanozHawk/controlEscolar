@@ -165,7 +165,6 @@ C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Contr
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
-C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
@@ -446,3 +445,5 @@ C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
