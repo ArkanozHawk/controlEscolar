@@ -901,5 +901,15 @@ namespace Control_Escolar
 
             MessageBox.Show("¡PDF creado!");
         }
+
+        private void comboBox99_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

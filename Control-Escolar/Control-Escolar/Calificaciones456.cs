@@ -60,7 +60,7 @@ namespace Control_Escolar
 
         }
 
-        private void BtnCerrar_Click(object sender, EventArgs e)
+        private void btnCerrar_Click_1(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
             int idAccess = sesion.idAcceso;
@@ -74,7 +74,7 @@ namespace Control_Escolar
             this.Close();
         }
 
-        private void BtnPrincipal_Click(object sender, EventArgs e)
+        private void btnPrincipal_Click_1(object sender, EventArgs e)
         {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadPrincipal));
             pantalla.Start();
@@ -1025,10 +1025,6 @@ namespace Control_Escolar
 
         }
 
-        private void CmbJunioSocio_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         public void caliOct()
         {
@@ -1151,10 +1147,6 @@ namespace Control_Escolar
 
         }
 
-        private void CmbMayoinasis_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         public void caliEnero()
         {

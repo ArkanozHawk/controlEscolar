@@ -891,5 +891,10 @@ namespace Control_Escolar
         {
 
         }
+
+        private void tabPage11_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
