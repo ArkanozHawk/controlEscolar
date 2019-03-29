@@ -1424,24 +1424,43 @@ namespace Control_Escolar
 
             MySqlDataReader myreader2 = com.ExecuteReader();
 
-
             myreader2.Read();
             try
             {
                 string sept_Esp = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_Mat = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_Ing = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_CiNat = Convert.ToString(myreader2["CalificacionMen"]);
                 EspDiag.Text = sept_Esp;
+                EspSep.Text = sept_Mat;
+                EspOct.Text = sept_Ing;
+                Espnov.Text = sept_CiNat;
+
                 if (EspDiag.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (EspSep.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (EspOct.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (Espnov.Text != null)
                 {
                     EspDiag.Enabled = false;
                 }
 
 
-                MessageBox.Show(sept_Esp.ToString());
+                //MessageBox.Show(sept_Esp.ToString());
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
 
         public void caliDiagnostico()
         {
