@@ -101,6 +101,7 @@
     <Compile Include="Buscar.Designer.cs">
       <DependentUpon>Buscar.cs</DependentUpon>
     </Compile>
+    <Compile Include="calificaciones.cs" />
     <Compile Include="DirectorioProfes.cs">
       <SubType>Form</SubType>
     </Compile>
