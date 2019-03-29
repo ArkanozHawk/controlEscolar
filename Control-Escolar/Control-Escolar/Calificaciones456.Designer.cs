@@ -32,7 +32,7 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Septiembre = new System.Windows.Forms.TabPage();
             this.BoxGenero = new System.Windows.Forms.GroupBox();
-            this.Espjun = new System.Windows.Forms.ComboBox();
+            this.cmbsepina = new System.Windows.Forms.ComboBox();
             this.Espmay = new System.Windows.Forms.ComboBox();
             this.Espabril = new System.Windows.Forms.ComboBox();
             this.EspMarz = new System.Windows.Forms.ComboBox();
@@ -179,7 +179,7 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.cmbJunioHist = new System.Windows.Forms.ComboBox();
+            this.cmbfebreroIna = new System.Windows.Forms.ComboBox();
             this.cmbFebreroEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbFebreroEdsocio = new System.Windows.Forms.ComboBox();
             this.cmbFebreroArtess = new System.Windows.Forms.ComboBox();
@@ -204,7 +204,7 @@
             this.label59 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
-            this.cmbJunioFCE = new System.Windows.Forms.ComboBox();
+            this.cmbmarzoina = new System.Windows.Forms.ComboBox();
             this.cmbMarzoEdFisica = new System.Windows.Forms.ComboBox();
             this.cmbMarzoEdsocio = new System.Windows.Forms.ComboBox();
             this.cmbMarzoArtess = new System.Windows.Forms.ComboBox();
@@ -394,7 +394,7 @@
             // BoxGenero
             // 
             this.BoxGenero.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BoxGenero.Controls.Add(this.Espjun);
+            this.BoxGenero.Controls.Add(this.cmbsepina);
             this.BoxGenero.Controls.Add(this.Espmay);
             this.BoxGenero.Controls.Add(this.Espabril);
             this.BoxGenero.Controls.Add(this.EspMarz);
@@ -425,25 +425,25 @@
             this.BoxGenero.TabIndex = 82;
             this.BoxGenero.TabStop = false;
             // 
-            // Espjun
+            // cmbsepina
             // 
-            this.Espjun.FormattingEnabled = true;
-            this.Espjun.Items.AddRange(new object[] {
+            this.cmbsepina.FormattingEnabled = true;
+            this.cmbsepina.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
-            this.Espjun.Location = new System.Drawing.Point(488, 198);
-            this.Espjun.Name = "Espjun";
-            this.Espjun.Size = new System.Drawing.Size(124, 33);
-            this.Espjun.TabIndex = 96;
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.cmbsepina.Location = new System.Drawing.Point(488, 198);
+            this.cmbsepina.Name = "cmbsepina";
+            this.cmbsepina.Size = new System.Drawing.Size(124, 33);
+            this.cmbsepina.TabIndex = 96;
             // 
             // Espmay
             // 
@@ -1001,16 +1001,16 @@
             this.cmbOctubreIna.FormattingEnabled = true;
             this.cmbOctubreIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbOctubreIna.Location = new System.Drawing.Point(490, 198);
             this.cmbOctubreIna.Name = "cmbOctubreIna";
             this.cmbOctubreIna.Size = new System.Drawing.Size(124, 33);
@@ -1511,16 +1511,16 @@
             this.cmbNovIna.FormattingEnabled = true;
             this.cmbNovIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbNovIna.Location = new System.Drawing.Point(491, 188);
             this.cmbNovIna.Name = "cmbNovIna";
             this.cmbNovIna.Size = new System.Drawing.Size(124, 33);
@@ -1911,16 +1911,16 @@
             this.cmbDicInasis.FormattingEnabled = true;
             this.cmbDicInasis.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbDicInasis.Location = new System.Drawing.Point(485, 199);
             this.cmbDicInasis.Name = "cmbDicInasis";
             this.cmbDicInasis.Size = new System.Drawing.Size(124, 33);
@@ -2310,16 +2310,16 @@
             this.cmbEneroIna.FormattingEnabled = true;
             this.cmbEneroIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbEneroIna.Location = new System.Drawing.Point(475, 200);
             this.cmbEneroIna.Name = "cmbEneroIna";
             this.cmbEneroIna.Size = new System.Drawing.Size(124, 33);
@@ -2563,7 +2563,7 @@
             this.groupBox5.Controls.Add(this.label53);
             this.groupBox5.Controls.Add(this.label54);
             this.groupBox5.Controls.Add(this.label55);
-            this.groupBox5.Controls.Add(this.cmbJunioHist);
+            this.groupBox5.Controls.Add(this.cmbfebreroIna);
             this.groupBox5.Controls.Add(this.cmbFebreroEdfisica);
             this.groupBox5.Controls.Add(this.cmbFebreroEdsocio);
             this.groupBox5.Controls.Add(this.cmbFebreroArtess);
@@ -2704,25 +2704,25 @@
             this.label55.TabIndex = 109;
             this.label55.Text = "Español";
             // 
-            // cmbJunioHist
+            // cmbfebreroIna
             // 
-            this.cmbJunioHist.FormattingEnabled = true;
-            this.cmbJunioHist.Items.AddRange(new object[] {
+            this.cmbfebreroIna.FormattingEnabled = true;
+            this.cmbfebreroIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
-            this.cmbJunioHist.Location = new System.Drawing.Point(486, 199);
-            this.cmbJunioHist.Name = "cmbJunioHist";
-            this.cmbJunioHist.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioHist.TabIndex = 96;
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.cmbfebreroIna.Location = new System.Drawing.Point(486, 199);
+            this.cmbfebreroIna.Name = "cmbfebreroIna";
+            this.cmbfebreroIna.Size = new System.Drawing.Size(124, 33);
+            this.cmbfebreroIna.TabIndex = 96;
             // 
             // cmbFebreroEdfisica
             // 
@@ -2962,7 +2962,7 @@
             this.groupBox6.Controls.Add(this.label59);
             this.groupBox6.Controls.Add(this.label61);
             this.groupBox6.Controls.Add(this.label62);
-            this.groupBox6.Controls.Add(this.cmbJunioFCE);
+            this.groupBox6.Controls.Add(this.cmbmarzoina);
             this.groupBox6.Controls.Add(this.cmbMarzoEdFisica);
             this.groupBox6.Controls.Add(this.cmbMarzoEdsocio);
             this.groupBox6.Controls.Add(this.cmbMarzoArtess);
@@ -3104,25 +3104,25 @@
             this.label62.TabIndex = 109;
             this.label62.Text = "Español";
             // 
-            // cmbJunioFCE
+            // cmbmarzoina
             // 
-            this.cmbJunioFCE.FormattingEnabled = true;
-            this.cmbJunioFCE.Items.AddRange(new object[] {
+            this.cmbmarzoina.FormattingEnabled = true;
+            this.cmbmarzoina.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
-            this.cmbJunioFCE.Location = new System.Drawing.Point(499, 203);
-            this.cmbJunioFCE.Name = "cmbJunioFCE";
-            this.cmbJunioFCE.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunioFCE.TabIndex = 96;
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
+            this.cmbmarzoina.Location = new System.Drawing.Point(499, 203);
+            this.cmbmarzoina.Name = "cmbmarzoina";
+            this.cmbmarzoina.Size = new System.Drawing.Size(124, 33);
+            this.cmbmarzoina.TabIndex = 96;
             // 
             // cmbMarzoEdFisica
             // 
@@ -3508,16 +3508,16 @@
             this.cmbAbrilIna.FormattingEnabled = true;
             this.cmbAbrilIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbAbrilIna.Location = new System.Drawing.Point(504, 192);
             this.cmbAbrilIna.Name = "cmbAbrilIna";
             this.cmbAbrilIna.Size = new System.Drawing.Size(124, 33);
@@ -3907,16 +3907,16 @@
             this.cmbMayoIna.FormattingEnabled = true;
             this.cmbMayoIna.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbMayoIna.Location = new System.Drawing.Point(492, 199);
             this.cmbMayoIna.Name = "cmbMayoIna";
             this.cmbMayoIna.Size = new System.Drawing.Size(124, 33);
@@ -4306,16 +4306,16 @@
             this.cmbJunioinasis.FormattingEnabled = true;
             this.cmbJunioinasis.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbJunioinasis.Location = new System.Drawing.Point(502, 199);
             this.cmbJunioinasis.Name = "cmbJunioinasis";
             this.cmbJunioinasis.Size = new System.Drawing.Size(124, 33);
@@ -4705,16 +4705,16 @@
             this.cmbdiaginasis.FormattingEnabled = true;
             this.cmbdiaginasis.Items.AddRange(new object[] {
             "10",
-            "9.5",
             "9",
-            "8.5",
             "8",
-            "7.5",
             "7",
-            "6.5",
             "6",
-            "5.5",
-            "5"});
+            "5",
+            "4",
+            "3",
+            "2",
+            "1",
+            "0"});
             this.cmbdiaginasis.Location = new System.Drawing.Point(502, 199);
             this.cmbdiaginasis.Name = "cmbdiaginasis";
             this.cmbdiaginasis.Size = new System.Drawing.Size(124, 33);
@@ -5054,7 +5054,7 @@
         private System.Windows.Forms.TabPage Mayo;
         private System.Windows.Forms.TabPage Junio;
         private System.Windows.Forms.GroupBox BoxGenero;
-        private System.Windows.Forms.ComboBox Espjun;
+        private System.Windows.Forms.ComboBox cmbsepina;
         private System.Windows.Forms.ComboBox Espmay;
         private System.Windows.Forms.ComboBox Espabril;
         private System.Windows.Forms.ComboBox EspMarz;
@@ -5129,7 +5129,7 @@
         private System.Windows.Forms.ComboBox cmbEneroEspañol;
         private System.Windows.Forms.Label label60;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox cmbJunioHist;
+        private System.Windows.Forms.ComboBox cmbfebreroIna;
         private System.Windows.Forms.ComboBox cmbFebreroEdfisica;
         private System.Windows.Forms.ComboBox cmbFebreroEdsocio;
         private System.Windows.Forms.ComboBox cmbFebreroArtess;
@@ -5142,7 +5142,7 @@
         private System.Windows.Forms.ComboBox cmbFebreroEspañol;
         private System.Windows.Forms.Label label72;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox cmbJunioFCE;
+        private System.Windows.Forms.ComboBox cmbmarzoina;
         private System.Windows.Forms.ComboBox cmbMarzoEdFisica;
         private System.Windows.Forms.ComboBox cmbMarzoEdsocio;
         private System.Windows.Forms.ComboBox cmbMarzoArtess;
