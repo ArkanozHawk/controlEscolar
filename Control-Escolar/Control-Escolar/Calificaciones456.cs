@@ -24,6 +24,7 @@ namespace Control_Escolar
         public Calificaciones456()
         {
             InitializeComponent();
+            validaCalifMen();
         }
         conexion obj = new conexion();
 
@@ -988,7 +989,6 @@ namespace Control_Escolar
         public void calisep()
         {
 
-
             Español = EspDiag.SelectedItem.ToString();
             Historia = Espene.SelectedItem.ToString();
             FormacionCiv = EspFeb.SelectedItem.ToString();
@@ -1400,6 +1400,76 @@ namespace Control_Escolar
             }
 
         }
+
+        public void validaCalifMen()
+        {
+            MySqlConnection conn;
+            MySqlCommand com;
+            string conexion = "server=localhost;uid=root;database=nerivela";
+
+            string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            MessageBox.Show(sesion.Curp);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+
+            int idalumno = Convert.ToInt32(myreader["idAlumno"]);
+
+
+
+            string query2 = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + idalumno + "";
+            MessageBox.Show(query2);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query2, conn);
+
+            MySqlDataReader myreader2 = com.ExecuteReader();
+
+            myreader2.Read();
+            try
+            {
+                string sept_Esp = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_Mat = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_Ing = Convert.ToString(myreader2["CalificacionMen"]);
+                string sept_CiNat = Convert.ToString(myreader2["CalificacionMen"]);
+                EspDiag.Text = sept_Esp;
+                EspSep.Text = sept_Mat;
+                EspOct.Text = sept_Ing;
+                Espnov.Text = sept_CiNat;
+
+                if (EspDiag.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (EspSep.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (EspOct.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+                if (Espnov.Text != null)
+                {
+                    EspDiag.Enabled = false;
+                }
+
+
+                //MessageBox.Show(sept_Esp.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         public void caliDiagnostico()
         {
 
@@ -1438,6 +1508,7 @@ namespace Control_Escolar
                 }
 
             }
+
 
         }
         public void buscarmateria()
