@@ -1188,6 +1188,11 @@ namespace Control_Escolar
 
         }
 
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
         public void caliFebrero()
         {
 
@@ -1363,6 +1368,45 @@ namespace Control_Escolar
             Ingless = cmbJunioingless.SelectedItem.ToString();
             CienciasN = cmbJunioingless.SelectedItem.ToString();
             Geografia = cmbJunioGeofgrafia.SelectedItem.ToString();
+
+
+            for (int i = 0; i <= 11; i++)
+            {
+                switch (i)
+                {
+                    case 1: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+                    case 2: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                    case 3: { materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali(); } break;
+                    case 4: { materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali(); } break;
+                    case 5: { materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali(); } break;
+                    case 6: { materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali(); } break;
+                    case 7: { materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali(); } break;
+                    case 8: { materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali(); } break;
+                    case 9: { materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali(); } break;
+                    case 10: { materia = " 'Geografia' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali(); } break;
+                        //  case 11: { materia = " 'Historia' "; calificacion = Convert.ToDouble(Historia); buscarmateria(); insertarcali(); } break;
+                        // case 12: { materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali(); } break;
+
+                }
+
+            }
+
+        }
+        public void caliDiagnostico()
+        {
+
+
+            Español = cmbdiagespañol.SelectedItem.ToString();
+            Historia = cmbdiagHistoria.SelectedItem.ToString();
+            FormacionCiv = cmbdiagformacion.SelectedItem.ToString();
+            Artess = cmbdiagartes.SelectedItem.ToString();
+            Edsocio = cmbdiagedsocio.SelectedItem.ToString();
+            EducacionF = cmbdiagedfisica.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
+            Matematicas = cmbdiagmate.SelectedItem.ToString();
+            Ingless = cmbdiagingles.SelectedItem.ToString();
+            CienciasN = cmbdiagciencias.SelectedItem.ToString();
+            Geografia = cmbdiaggeografia.SelectedItem.ToString();
 
 
             for (int i = 0; i <= 11; i++)
@@ -1882,6 +1926,14 @@ namespace Control_Escolar
                     {
                         caliJunio();
                         MessageBox.Show("Calificaciones  Junio registradas con exito");
+                    }
+                    break;
+
+
+                case "Diagnostico":
+                    {
+                        caliDiagnostico();
+                        MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
                     }
                     break;
 
