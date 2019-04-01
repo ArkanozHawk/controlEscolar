@@ -3,10 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-03-2019 a las 01:35:26
+-- Tiempo de generación: 01-04-2019 a las 09:26:28
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
-
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -20,10 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `nerivela`
 --
--- DROP DATABASE nerivela;
-
-CREATE DATABASE IF NOT EXISTS `nerivela` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `nerivela`;
 
 -- --------------------------------------------------------
 
@@ -52,9 +47,12 @@ CREATE TABLE IF NOT EXISTS `alumno` (
   UNIQUE KEY `CURP` (`CURP`),
   KEY `idPadres` (`idPadres`),
   KEY `idGrado` (`idGrado`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=91 ;
 
--- --------------------------------------------------------
+--
+-- Volcado de datos para la tabla `alumno`
+--
+
 INSERT INTO `alumno` (`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES
 (1, ' JESUS LEONARDO ', 'AREVALO', 'CARDENAS', 'CAMPECHE', 'Vista Alegre', '34', '39855', '7441212567', 'Masculino', 'Acapulco de Juarez', '2010-04-29', 'Ninguna', 'AECJ090429HCHRRS01', 1, 4),
 (2, ' PERLA CLARISSA', 'ARIAS', ' HERNANDEZ', 'MAZATLAN', 'Nueva Linea', '670', '39809', '7445690991', 'Femenino', 'Acapulco', '2010-11-01', 'Ninguna', 'AIHP091101MCHRRR03', 2, 4),
@@ -162,9 +160,9 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `HoraEntrada` varchar(20) DEFAULT NULL,
   `HoraSalida` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idAcceso`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=36 ;
 
--- --------------------------------------------------------
+--
 -- Volcado de datos para la tabla `bitacora`
 --
 
@@ -181,7 +179,29 @@ INSERT INTO `bitacora` (`idAcceso`, `Usuario`, `Nombre`, `Apellido`, `Fecha`, `H
 (10, 'lizethepetete', 'MArtha', 'Teran', '22/03/2019', '07:19:46', '22/03/2019 09:00:23 '),
 (11, 'lizethepetete', 'MArtha', 'Teran', '22/03/2019', '06:53:33', NULL),
 (12, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '04:19:45', '23/03/2019 07:31:53 '),
-(13, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '07:58:38', '24/03/2019 01:39:11 ');
+(13, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '07:58:38', '24/03/2019 01:39:11 '),
+(14, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '04:38:39', '31/03/2019 04:45:24 '),
+(15, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '04:50:09', '31/03/2019 04:55:50 '),
+(16, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:01:48', '31/03/2019 05:02:36 '),
+(17, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:04:09', NULL),
+(18, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:06:45', NULL),
+(19, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:09:41', NULL),
+(20, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:24:35', NULL),
+(21, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:31:07', '31/03/2019 05:35:31 '),
+(22, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:37:42', '31/03/2019 05:44:54 '),
+(23, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:00:13', '31/03/2019 06:06:18 '),
+(24, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:08:19', '31/03/2019 06:09:40 '),
+(25, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:49:46', NULL),
+(26, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:52:32', NULL),
+(27, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:55:38', NULL),
+(28, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:00:39', NULL),
+(29, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:01:32', NULL),
+(30, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:08:31', NULL),
+(31, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:11:34', NULL),
+(32, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:12:15', NULL),
+(33, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '09:49:55', NULL),
+(34, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '11:07:06', '31/03/2019 11:08:18 '),
+(35, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '11:10:18', '31/03/2019 11:10:41 ');
 
 -- --------------------------------------------------------
 
@@ -191,14 +211,53 @@ INSERT INTO `bitacora` (`idAcceso`, `Usuario`, `Nombre`, `Apellido`, `Fecha`, `H
 
 CREATE TABLE IF NOT EXISTS `calificaciones` (
   `idCalificaciones` int(11) NOT NULL AUTO_INCREMENT,
-  `CalificacionMen` decimal(2,2) NOT NULL,
-   `idAlumno` int(11) NOT NULL ,
+  `CalificacionMen` decimal(3,1) NOT NULL,
+  `idAlumno` int(11) NOT NULL,
   `Mes` varchar(20) NOT NULL,
-   `idMaterias` int(11) NOT NULL ,
+  `idMaterias` int(11) NOT NULL,
   PRIMARY KEY (`idCalificaciones`),
-   KEY `fk_idAlumno` (`idAlumno`),
-    KEY `fk_idMaterias` (`idMaterias`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  KEY `fk_idAlumno` (`idAlumno`),
+  KEY `fk_idMaterias` (`idMaterias`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=177 ;
+
+--
+-- Volcado de datos para la tabla `calificaciones`
+--
+
+INSERT INTO `calificaciones` (`idCalificaciones`, `CalificacionMen`, `idAlumno`, `Mes`, `idMaterias`) VALUES
+(144, '10.0', 6, 'Septiembre', 4),
+(145, '10.0', 6, 'Septiembre', 33),
+(146, '8.0', 6, 'Septiembre', 27),
+(147, '8.5', 6, 'Septiembre', 39),
+(148, '9.0', 6, 'Septiembre', 45),
+(149, '10.0', 6, 'Septiembre', 51),
+(150, '10.0', 6, 'Septiembre', 10),
+(151, '7.5', 6, 'Septiembre', 16),
+(152, '10.0', 6, 'Septiembre', 22),
+(153, '10.0', 6, 'Septiembre', 30),
+(154, '0.0', 6, 'Septiembre', 30),
+(155, '10.0', 6, 'Octubre', 4),
+(156, '8.5', 6, 'Octubre', 33),
+(157, '9.5', 6, 'Octubre', 27),
+(158, '9.0', 6, 'Octubre', 39),
+(159, '9.5', 6, 'Octubre', 45),
+(160, '10.0', 6, 'Octubre', 51),
+(161, '9.0', 6, 'Octubre', 10),
+(162, '8.0', 6, 'Octubre', 16),
+(163, '7.5', 6, 'Octubre', 22),
+(164, '5.5', 6, 'Octubre', 30),
+(165, '2.0', 6, 'Octubre', 30),
+(166, '10.0', 5, 'Septiembre', 4),
+(167, '6.0', 5, 'Septiembre', 33),
+(168, '9.0', 5, 'Septiembre', 27),
+(169, '8.5', 5, 'Septiembre', 39),
+(170, '8.0', 5, 'Septiembre', 45),
+(171, '10.0', 5, 'Septiembre', 51),
+(172, '10.0', 5, 'Septiembre', 10),
+(173, '10.0', 5, 'Septiembre', 16),
+(174, '10.0', 5, 'Septiembre', 22),
+(175, '9.5', 5, 'Septiembre', 30),
+(176, '1.0', 5, 'Septiembre', 57);
 
 -- --------------------------------------------------------
 
@@ -219,7 +278,7 @@ CREATE TABLE IF NOT EXISTS `grado` (
 -- Volcado de datos para la tabla `grado`
 --
 
-INSERT INTO `grado` VALUES
+INSERT INTO `grado` (`idGrado`, `grado`, `grupo`, `idMaestros`) VALUES
 (1, '1', 'A', 1),
 (2, '2', 'A', 2),
 (3, '3', 'A', 3),
@@ -257,7 +316,7 @@ CREATE TABLE IF NOT EXISTS `maestros` (
 -- Volcado de datos para la tabla `maestros`
 --
 
-INSERT INTO `maestros` VALUES
+INSERT INTO `maestros` (`idMaestros`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telefono`, `Celular`, `Email`, `gradoEncargado`, `Profesion`, `FechNac`, `RFC`) VALUES
 (1, 'José', 'Jacinto', 'Cuevas', 'Morteros', 'Marroquin', '70', '39640', '1587496', '744610125', 'jjCuevas@hotmail.com', 1, 'Lic. en Educación Primaria', '1972-07-30', 'JJCM720730TE'),
 (2, 'Lucia', 'Figueroa', 'Pineda', 'SONORA', 'PROGRESO', '76', '39350', '1900893', '744763789', 'luciFigP43@outlock.com', 2, 'Lic. en Educación Primaria', '1967-03-25', 'LFPU670325'),
 (3, 'Rafael', 'Ramírez', 'Castañeda', 'AQUILES SERDÁN', 'SANTA DOROTE', '49', '39970', '1479632', '744827307', 'RafaCast100@hotmail.com', 3, 'Lic. en Educación Primaria', '1977-04-11', 'RRFP770411QO'),
@@ -277,13 +336,13 @@ CREATE TABLE IF NOT EXISTS `materias` (
   `idGrado` int(11) NOT NULL,
   PRIMARY KEY (`idMaterias`),
   KEY `fk_idGrado` (`idGrado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=54 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;
 
 --
 -- Volcado de datos para la tabla `materias`
 --
 
-INSERT INTO `materias` VALUES
+INSERT INTO `materias` (`idMaterias`, `nombre`, `idGrado`) VALUES
 (1, 'Español', 1),
 (2, 'Español', 2),
 (3, 'Español', 3),
@@ -303,7 +362,7 @@ INSERT INTO `materias` VALUES
 (17, 'Ingles', 5),
 (18, 'Ingles', 6),
 (19, 'Conocimiento del medio', 1),
-(20, 'Conocimiento del Medio', 2),
+(20, 'Conocimiento del medio', 2),
 (21, 'Ciencias Naturales', 3),
 (22, 'Ciencias Naturales', 4),
 (23, 'Ciencias Naturales', 5),
@@ -336,7 +395,13 @@ INSERT INTO `materias` VALUES
 (50, 'Educación Física', 3),
 (51, 'Educación Física', 4),
 (52, 'Educación Física', 5),
-(53, 'Educación Física', 6);
+(53, 'Educación Física', 6),
+(54, 'Inasistencia', 1),
+(55, 'Inasistencia', 2),
+(56, 'Inasistencia', 3),
+(57, 'Inasistencia', 4),
+(58, 'Inasistencia', 5),
+(59, 'Inasistencia', 6);
 
 -- --------------------------------------------------------
 
@@ -358,9 +423,8 @@ CREATE TABLE IF NOT EXISTS `padres` (
   `NumExt` varchar(5) DEFAULT NULL,
   `cp` varchar(5) NOT NULL,
   PRIMARY KEY (`idPadres`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=91 ;
 
--- --------------------------------------------------------
 --
 -- Volcado de datos para la tabla `padres`
 --
@@ -480,7 +544,8 @@ CREATE TABLE IF NOT EXISTS `personal` (
   `password` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `usuario` (`usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
 --
 -- Volcado de datos para la tabla `personal`
 --
@@ -496,8 +561,8 @@ INSERT INTO `personal` (`idUsuario`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`
 -- Filtros para la tabla `alumno`
 --
 ALTER TABLE `alumno`
-  ADD CONSTRAINT `idPadres` FOREIGN KEY (`idPadres`) REFERENCES `padres` (`idPadres`),
-  ADD CONSTRAINT `idGrado` FOREIGN KEY (`idGrado`) REFERENCES `grado` (`idGrado`);
+  ADD CONSTRAINT `idGrado` FOREIGN KEY (`idGrado`) REFERENCES `grado` (`idGrado`),
+  ADD CONSTRAINT `idPadres` FOREIGN KEY (`idPadres`) REFERENCES `padres` (`idPadres`);
 
 --
 -- Filtros para la tabla `grado`

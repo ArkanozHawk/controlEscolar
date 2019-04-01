@@ -1,6 +1,6 @@
 ﻿namespace Control_Escolar
 {
-    partial class GenerarBoletas
+    partial class Estadisticas
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -44,16 +43,22 @@
             this.materialDivider1 = new MaterialSkin.Controls.MaterialDivider();
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialDivider5 = new MaterialSkin.Controls.MaterialDivider();
+            this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
             // 
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
-            this.btnCerrar.Location = new System.Drawing.Point(658, 30);
+            this.btnCerrar.Location = new System.Drawing.Point(620, 29);
             this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Primary = true;
@@ -61,30 +66,21 @@
             this.btnCerrar.TabIndex = 81;
             this.btnCerrar.Text = "Cerrar Sesión";
             this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(331, 382);
-            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 56);
-            this.btnPrincipal.TabIndex = 84;
-            this.btnPrincipal.Text = "Volver al Menú Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = true;
-            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click_1);
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.pictureBox6);
+            this.groupBox2.Controls.Add(this.pictureBox3);
             this.groupBox2.Controls.Add(this.pictureBox1);
+            this.groupBox2.Controls.Add(this.materialLabel2);
             this.groupBox2.Controls.Add(this.materialLabel15);
             this.groupBox2.Controls.Add(this.lblMaestro2);
+            this.groupBox2.Controls.Add(this.materialDivider5);
             this.groupBox2.Controls.Add(this.materialLabel8);
             this.groupBox2.Controls.Add(this.lblMaestro1);
+            this.groupBox2.Controls.Add(this.materialDivider7);
             this.groupBox2.Controls.Add(this.materialDivider11);
             this.groupBox2.Controls.Add(this.materialDivider9);
             this.groupBox2.Controls.Add(this.materialDivider8);
@@ -93,11 +89,11 @@
             this.groupBox2.Controls.Add(this.materialDivider2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox2.Location = new System.Drawing.Point(128, 104);
+            this.groupBox2.Location = new System.Drawing.Point(110, 83);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox2.Size = new System.Drawing.Size(545, 243);
-            this.groupBox2.TabIndex = 85;
+            this.groupBox2.Size = new System.Drawing.Size(529, 285);
+            this.groupBox2.TabIndex = 83;
             this.groupBox2.TabStop = false;
             // 
             // pictureBox6
@@ -139,12 +135,12 @@
             this.lblMaestro2.Depth = 0;
             this.lblMaestro2.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblMaestro2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMaestro2.Location = new System.Drawing.Point(90, 148);
+            this.lblMaestro2.Location = new System.Drawing.Point(79, 147);
             this.lblMaestro2.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblMaestro2.Name = "lblMaestro2";
-            this.lblMaestro2.Size = new System.Drawing.Size(106, 19);
+            this.lblMaestro2.Size = new System.Drawing.Size(209, 19);
             this.lblMaestro2.TabIndex = 89;
-            this.lblMaestro2.Text = "Boleta Externa";
+            this.lblMaestro2.Text = "Alumnos con mejor promedio";
             // 
             // materialLabel8
             // 
@@ -155,9 +151,9 @@
             this.materialLabel8.Location = new System.Drawing.Point(123, 41);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
-            this.materialLabel8.Size = new System.Drawing.Size(73, 19);
+            this.materialLabel8.Size = new System.Drawing.Size(92, 19);
             this.materialLabel8.TabIndex = 83;
-            this.materialLabel8.Text = "Maestros";
+            this.materialLabel8.Text = "Estadisticas";
             // 
             // lblMaestro1
             // 
@@ -165,12 +161,12 @@
             this.lblMaestro1.Depth = 0;
             this.lblMaestro1.Font = new System.Drawing.Font("Roboto", 11F);
             this.lblMaestro1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.lblMaestro1.Location = new System.Drawing.Point(90, 92);
+            this.lblMaestro1.Location = new System.Drawing.Point(79, 92);
             this.lblMaestro1.MouseState = MaterialSkin.MouseState.HOVER;
             this.lblMaestro1.Name = "lblMaestro1";
-            this.lblMaestro1.Size = new System.Drawing.Size(102, 19);
+            this.lblMaestro1.Size = new System.Drawing.Size(175, 19);
             this.lblMaestro1.TabIndex = 82;
-            this.lblMaestro1.Text = "Boleta Interna";
+            this.lblMaestro1.Text = "Número de niños y niñas";
             // 
             // materialDivider11
             // 
@@ -244,27 +240,86 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label1.Location = new System.Drawing.Point(165, 0);
+            this.label1.Location = new System.Drawing.Point(178, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 26);
+            this.label1.Size = new System.Drawing.Size(194, 26);
             this.label1.TabIndex = 44;
-            this.label1.Text = "Selecionar Documento";
+            this.label1.Text = "Selecionar Archivo";
             // 
-            // GenerarBoletas
+            // btnPrincipal
+            // 
+            this.btnPrincipal.Depth = 0;
+            this.btnPrincipal.Location = new System.Drawing.Point(307, 421);
+            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Primary = true;
+            this.btnPrincipal.Size = new System.Drawing.Size(175, 50);
+            this.btnPrincipal.TabIndex = 82;
+            this.btnPrincipal.Text = "Volver al Menú Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
+            this.pictureBox3.Location = new System.Drawing.Point(415, 193);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 44);
+            this.pictureBox3.TabIndex = 105;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(79, 207);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(223, 19);
+            this.materialLabel2.TabIndex = 103;
+            this.materialLabel2.Text = "Numero de alumnos por edades";
+            // 
+            // materialDivider5
+            // 
+            this.materialDivider5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider5.Depth = 0;
+            this.materialDivider5.Location = new System.Drawing.Point(116, 240);
+            this.materialDivider5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider5.Name = "materialDivider5";
+            this.materialDivider5.Size = new System.Drawing.Size(380, 1);
+            this.materialDivider5.TabIndex = 101;
+            this.materialDivider5.Text = "materialDivider5";
+            // 
+            // materialDivider7
+            // 
+            this.materialDivider7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider7.Depth = 0;
+            this.materialDivider7.Location = new System.Drawing.Point(34, 240);
+            this.materialDivider7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider7.Name = "materialDivider7";
+            this.materialDivider7.Size = new System.Drawing.Size(380, 1);
+            this.materialDivider7.TabIndex = 99;
+            this.materialDivider7.Text = "materialDivider7";
+            // 
+            // Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(762, 508);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
-            this.Name = "GenerarBoletas";
-            this.Text = "GenerarBoletas";
+            this.Name = "Estadisticas";
+            this.Text = "Estadisticas";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -272,7 +327,6 @@
         #endregion
 
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
-        private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox1;
@@ -287,5 +341,10 @@
         private MaterialSkin.Controls.MaterialDivider materialDivider1;
         private MaterialSkin.Controls.MaterialDivider materialDivider2;
         private System.Windows.Forms.Label label1;
+        private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialDivider materialDivider5;
+        private MaterialSkin.Controls.MaterialDivider materialDivider7;
     }
 }
