@@ -23,20 +23,24 @@ namespace Control_Escolar
             InitializeComponent();
         }
 
-        double calificacion;
-        string Español, Matematicas, Ingless, Conocimiento, Artess, Edsocio, EducacionF, Inasistencias;
-        string materia, mes;
-
         conexion obj = new conexion();
 
         public static void ThreadProc()
+
         {
             Application.Run(new login());
         }
 
         public static void ThreadPrincipal()
+
         {
             Application.Run(new principal());
+        }
+
+        public static void ThreadGenerarBoletas()
+
+        {
+            Application.Run(new GenerarBoletas());
         }
 
         private void btnCerrar_Click_1(object sender, EventArgs e)
@@ -64,13 +68,16 @@ namespace Control_Escolar
         private void btnIrBoletas_Click_1(object sender, EventArgs e)
         {
 
-            //-------------Ingresar los datos del alumno en pdf--------------------------------
+
             MySqlConnection conn;
             MySqlCommand com;
 
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
-            string nombre, Apellidop, Apellidom, IdAlumno;
+            string nombre, Apellidop, Apellidom;
+           
+
+          
 
             conn = new MySqlConnection(conexion);
             conn.Open();
@@ -79,260 +86,28 @@ namespace Control_Escolar
 
             MySqlDataReader myreader = com.ExecuteReader();
 
-            myreader.Read();
+            
+                myreader.Read();
             nombre = Convert.ToString(myreader["nombre"]);
-            Apellidop = Convert.ToString(myreader["ApellidoP"]);
+            Apellidop = Convert.ToString(myreader[" ApellidoP"]);
             Apellidom = Convert.ToString(myreader["ApellidoM"]);
-            sesion.grado = Convert.ToString(myreader["idGrado"]);
-            IdAlumno = Convert.ToString(myreader["idAlumno"]);
-            conn.Close();
-
-            //-------------------------------Ingresar las calificaciones mensuales de los alumnos---------------------
-
-            //Septiembre------------------------------------------
-            string CalifSep = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Septiembre'";
-
-            MySqlConnection conn1;
-            MySqlCommand com1;
-
-            conn1 = new MySqlConnection(conexion);
-            conn1.Open();
-
-            com1 = new MySqlCommand(CalifSep, conn1);
-
-            MySqlDataReader myreader1 = com1.ExecuteReader();
-
-            double[] CalifSept = new double[8];
-            int L = 0;
-            while (myreader1.Read())
-            {
-                CalifSept[L] = Convert.ToDouble(myreader1["CalificacionMen"]);
-                L++;
-            }
-
-            //Octubre-----------------------------------------------------------------
-            string CalifOct = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Octubre'";
-
-            MySqlConnection conn2;
-            MySqlCommand com2;
-
-            conn2 = new MySqlConnection(conexion);
-            conn2.Open();
-
-            com2 = new MySqlCommand(CalifOct, conn2);
-
-            MySqlDataReader myreader2 = com2.ExecuteReader();
-
-            double[] CalifOctu = new double[8];
-            int I = 0;
-            while (myreader2.Read())
-            {
-                CalifOctu[I] = Convert.ToDouble(myreader1["CalificacionMen"]);
-                I++;
-            }
-
-            //Noviembre-----------------------------------------------------------------
-            string CalifNov = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Noviembre'";
-
-            MySqlConnection conn3;
-            MySqlCommand com3;
-
-            conn3 = new MySqlConnection(conexion);
-            conn3.Open();
-
-            com3 = new MySqlCommand(CalifNov, conn3);
-
-            MySqlDataReader myreader3 = com3.ExecuteReader();
-
-            double[] CalifNovi = new double[8];
-            int Z = 0;
-            while (myreader3.Read())
-            {
-                CalifNovi[Z] = Convert.ToDouble(myreader3["CalificacionMen"]);
-                Z++;
-            }
-
-            //Diciembre-----------------------------------------------------------------
-            string CalifDic = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Diciembre'";
-
-            MySqlConnection conn4;
-            MySqlCommand com4;
-
-            conn4 = new MySqlConnection(conexion);
-            conn4.Open();
-
-            com4 = new MySqlCommand(CalifDic, conn1);
-
-            MySqlDataReader myreader4 = com4.ExecuteReader();
-
-            double[] CalifDici = new double[8];
-            int E = 0;
-            while (myreader4.Read())
-            {
-                CalifDici[E] = Convert.ToDouble(myreader4["CalificacionMen"]);
-                E++;
-            }
-
-            //Enero-----------------------------------------------------------------
-            string CalifEne = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Enero'";
-
-            MySqlConnection conn5;
-            MySqlCommand com5;
-
-            conn5 = new MySqlConnection(conexion);
-            conn5.Open();
-
-            com5 = new MySqlCommand(CalifEne, conn5);
-
-            MySqlDataReader myreader5 = com5.ExecuteReader();
-
-            double[] CalifEner = new double[8];
-            int T = 0;
-            while (myreader5.Read())
-            {
-                CalifEner[T] = Convert.ToDouble(myreader5["CalificacionMen"]);
-                T++;
-            }
-
-            //Febrero-----------------------------------------------------------------
-            string CalifFeb = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Febrero'";
-
-            MySqlConnection conn6;
-            MySqlCommand com6;
-
-            conn6 = new MySqlConnection(conexion);
-            conn6.Open();
-
-            com6 = new MySqlCommand(CalifFeb, conn6);
-
-            MySqlDataReader myreader6 = com6.ExecuteReader();
-
-            double[] CalifFebr = new double[8];
-            int H = 0;
-            while (myreader6.Read())
-            {
-                CalifFebr[H] = Convert.ToDouble(myreader6["CalificacionMen"]);
-                H++;
-            }
-
-            //Marzo-----------------------------------------------------------------
-            string CalifMar = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Marzo'";
-
-            MySqlConnection conn7;
-            MySqlCommand com7;
-
-            conn7 = new MySqlConnection(conexion);
-            conn7.Open();
-
-            com7 = new MySqlCommand(CalifMar, conn7);
-
-            MySqlDataReader myreader7 = com7.ExecuteReader();
-
-            double[] CalifMarz = new double[8];
-            int B = 0;
-            while (myreader7.Read())
-            {
-                CalifMarz[B] = Convert.ToDouble(myreader7["CalificacionMen"]);
-                B++;
-            }
-
-            //Abril-----------------------------------------------------------------
-            string CalifAbr = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Abril'";
-
-            MySqlConnection conn8;
-            MySqlCommand com8;
-
-            conn8 = new MySqlConnection(conexion);
-            conn8.Open();
-
-            com8 = new MySqlCommand(CalifAbr, conn8);
-
-            MySqlDataReader myreader8 = com8.ExecuteReader();
-
-            double[] CalifAbri = new double[8];
-            int R = 0;
-            while (myreader8.Read())
-            {
-                CalifAbri[R] = Convert.ToDouble(myreader8["CalificacionMen"]);
-                R++;
-            }
-
-            //Mayo-----------------------------------------------------------------
-            string CalifMay = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Mayo'";
-
-            MySqlConnection conn9;
-            MySqlCommand com9;
-
-            conn9 = new MySqlConnection(conexion);
-            conn9.Open();
-
-            com9 = new MySqlCommand(CalifMay, conn9);
-
-            MySqlDataReader myreader9 = com9.ExecuteReader();
-
-            double[] CalifMayo = new double[8];
-            int Y = 0;
-            while (myreader9.Read())
-            {
-                CalifMayo[Y] = Convert.ToDouble(myreader9["CalificacionMen"]);
-                Y++;
-            }
-
-            //Junio-----------------------------------------------------------------
-            string CalifJun = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Junio'";
-
-            MySqlConnection conn10;
-            MySqlCommand com10;
-
-            conn10 = new MySqlConnection(conexion);
-            conn10.Open();
-
-            com10 = new MySqlCommand(CalifJun, conn10);
-
-            MySqlDataReader myreader10 = com10.ExecuteReader();
-
-            double[] CalifJuni = new double[8];
-            int A = 0;
-            while (myreader10.Read())
-            {
-                CalifJuni[A] = Convert.ToDouble(myreader10["CalificacionMen"]);
-                A++;
-            }
-
-            //Diagnostico-----------------------------------------------------------------
-            string CalifDig = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Diagnostico'";
-
-            MySqlConnection conn11;
-            MySqlCommand com11;
-
-            conn11 = new MySqlConnection(conexion);
-            conn11.Open();
-
-            com11 = new MySqlCommand(CalifDig, conn11);
-
-            MySqlDataReader myreader11 = com11.ExecuteReader();
-
-            double[] CalifDiag = new double[8];
-            int N = 0;
-            while (myreader11.Read())
-            {
-                CalifDiag[N] = Convert.ToDouble(myreader11["CalificacionMen"]);
-                N++;
-            }
-
-            //-------------------------------------------------------------------------------------------------------------------
-
-            // Creamos el documento con el tamaño de página tradicional
-            Document doc = new Document(PageSize.LETTER);
             string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
+
+            MessageBox.Show(nombre);
+            MessageBox.Show( Apellidop);
+            MessageBox.Show( Apellidom);
+
+
+
             if (!Directory.Exists(folderPath))// pregunt si no existe
             {
                 Directory.CreateDirectory(folderPath); // si no existe lo crea
             }
             // Creamos el documento con el tamaño de página tradicional
-            FileStream stream = new FileStream(folderPath + "calificaciones12.pdf", FileMode.Create);
+            FileStream stream = new FileStream(folderPath + "Bitacora2.pdf", FileMode.Create);
+            Document doc = new Document(PageSize.LETTER);
             // Indicamos donde vamos a guardar el documento
-            PdfWriter writer = PdfWriter.GetInstance(doc, stream);
+            PdfWriter writer = PdfWriter.GetInstance(doc,stream);
 
             // Le colocamos el título y el autor
             // **Nota: Esto no será visible en el documento
@@ -589,17 +364,17 @@ namespace Control_Escolar
             cell3.Colspan = 2;
             table.AddCell(cell3);
 
-            table.AddCell("" + CalifDiag[0]);
-            table.AddCell("" + CalifSept[0]);
-            table.AddCell("" + CalifOctu[0]);
-            table.AddCell("" + CalifNovi[0]);
-            table.AddCell("" + CalifDici[0]);
-            table.AddCell("" + CalifEner[0]);
-            table.AddCell("" + CalifFebr[0]);
-            table.AddCell("" + CalifMarz[0]);
-            table.AddCell("" + CalifAbri[0]);
-            table.AddCell("" + CalifMayo[0]);
-            table.AddCell("" + CalifJuni[0]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -615,17 +390,16 @@ namespace Control_Escolar
             cell4.Colspan = 2;
             table.AddCell(cell4);
 
-            table.AddCell("" + CalifDiag[1]);
-            table.AddCell("" + CalifSept[1]);
-            table.AddCell("" + CalifOctu[1]);
-            table.AddCell("" + CalifNovi[1]);
-            table.AddCell("" + CalifDici[1]);
-            table.AddCell("" + CalifEner[1]);
-            table.AddCell("" + CalifFebr[1]);
-            table.AddCell("" + CalifMarz[1]);
-            table.AddCell("" + CalifAbri[1]);
-            table.AddCell("" + CalifMayo[1]);
-            table.AddCell("" + CalifJuni[1]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -642,17 +416,17 @@ namespace Control_Escolar
             cell5.Colspan = 2;
             table.AddCell(cell5);
 
-            table.AddCell("" + CalifDiag[2]);
-            table.AddCell("" + CalifSept[2]);
-            table.AddCell("" + CalifOctu[2]);
-            table.AddCell("" + CalifNovi[2]);
-            table.AddCell("" + CalifDici[2]);
-            table.AddCell("" + CalifEner[2]);
-            table.AddCell("" + CalifFebr[2]);
-            table.AddCell("" + CalifMarz[2]);
-            table.AddCell("" + CalifAbri[2]);
-            table.AddCell("" + CalifMayo[2]);
-            table.AddCell("" + CalifJuni[2]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -668,16 +442,17 @@ namespace Control_Escolar
             cell6.Colspan = 2;
             table.AddCell(cell6);
 
-            table.AddCell("" + CalifDiag[3]);
-            table.AddCell("" + CalifSept[3]);
-            table.AddCell("" + CalifOctu[3]);
-            table.AddCell("" + CalifNovi[3]);
-            table.AddCell("" + CalifEner[3]);
-            table.AddCell("" + CalifFebr[3]);
-            table.AddCell("" + CalifMarz[3]);
-            table.AddCell("" + CalifAbri[3]);
-            table.AddCell("" + CalifMayo[3]);
-            table.AddCell("" + CalifJuni[3]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -693,16 +468,17 @@ namespace Control_Escolar
             cell7.Colspan = 2;
             table.AddCell(cell7);
 
-            table.AddCell("" + CalifDiag[4]);
-            table.AddCell("" + CalifSept[4]);
-            table.AddCell("" + CalifOctu[4]);
-            table.AddCell("" + CalifNovi[4]);
-            table.AddCell("" + CalifEner[4]);
-            table.AddCell("" + CalifFebr[4]);
-            table.AddCell("" + CalifMarz[4]);
-            table.AddCell("" + CalifAbri[4]);
-            table.AddCell("" + CalifMayo[4]);
-            table.AddCell("" + CalifJuni[4]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -718,16 +494,17 @@ namespace Control_Escolar
             cell9.Colspan = 2;
             table.AddCell(cell9);
 
-            table.AddCell("" + CalifDiag[5]);
-            table.AddCell("" + CalifSept[5]);
-            table.AddCell("" + CalifOctu[5]);
-            table.AddCell("" + CalifNovi[5]);
-            table.AddCell("" + CalifEner[5]);
-            table.AddCell("" + CalifFebr[5]);
-            table.AddCell("" + CalifMarz[5]);
-            table.AddCell("" + CalifAbri[5]);
-            table.AddCell("" + CalifMayo[5]);
-            table.AddCell("" + CalifJuni[5]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -867,16 +644,17 @@ namespace Control_Escolar
             cell13.Colspan = 2;
             table.AddCell(cell13);
 
-            table.AddCell("" + CalifDiag[6]);
-            table.AddCell("" + CalifSept[6]);
-            table.AddCell("" + CalifOctu[6]);
-            table.AddCell("" + CalifNovi[6]);
-            table.AddCell("" + CalifEner[6]);
-            table.AddCell("" + CalifFebr[6]);
-            table.AddCell("" + CalifMarz[6]);
-            table.AddCell("" + CalifAbri[6]);
-            table.AddCell("" + CalifMayo[6]);
-            table.AddCell("" + CalifJuni[6]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -893,16 +671,17 @@ namespace Control_Escolar
             cell14.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell14);
 
-            table.AddCell("" + CalifDiag[6]);
-            table.AddCell("" + CalifSept[6]);
-            table.AddCell("" + CalifOctu[6]);
-            table.AddCell("" + CalifNovi[6]);
-            table.AddCell("" + CalifEner[6]);
-            table.AddCell("" + CalifFebr[6]);
-            table.AddCell("" + CalifMarz[6]);
-            table.AddCell("" + CalifAbri[6]);
-            table.AddCell("" + CalifMayo[6]);
-            table.AddCell("" + CalifJuni[6]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
 
             //Espacios linea de español
             table.AddCell(" ");
@@ -967,16 +746,17 @@ namespace Control_Escolar
             cell18.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell18);
 
-            table.AddCell("" + CalifDiag[7]);
-            table.AddCell("" + CalifSept[7]);
-            table.AddCell("" + CalifOctu[7]);
-            table.AddCell("" + CalifNovi[7]);
-            table.AddCell("" + CalifEner[7]);
-            table.AddCell("" + CalifFebr[7]);
-            table.AddCell("" + CalifMarz[7]);
-            table.AddCell("" + CalifAbri[7]);
-            table.AddCell("" + CalifMayo[7]);
-            table.AddCell("" + CalifJuni[7]);
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
+            table.AddCell(" ");
             table.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
 
 
@@ -1104,334 +884,8 @@ namespace Control_Escolar
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
         {
-            //mes = materialTabControl1.SelectedTab.Name;
-            //    switch (mes)
-            //    {
-            //        case "Septiembre":
-            //            {
-            //                calisep();
-            //                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-            //            }
-            //            break;
 
-            //        case "Octubre":
-            //            {
-            //                caliOct();
-            //                MessageBox.Show("Calificaciones  octubre registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Noviembre":
-            //            {
-            //                caliNov();
-            //                MessageBox.Show("Calificaciones  noviembre registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Diciembre":
-            //            {
-            //                caliDic();
-            //                MessageBox.Show("Calificaciones  diciembre registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Enero":
-            //            {
-            //                caliEnero();
-            //                MessageBox.Show("Calificaciones  Enero registradas con exito");
-            //            }
-            //            break;
-            //        case "Febrero":
-            //            {
-            //                caliFebrero();
-            //                MessageBox.Show("Calificaciones  febrero registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Marzo":
-            //            {
-            //                caliMarzo();
-            //                MessageBox.Show("Calificaciones  Marzo registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Abril":
-            //            {
-            //                caliAbril();
-            //                MessageBox.Show("Calificaciones  Abril registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Mayo":
-            //            {
-            //                caliMayo();
-            //                MessageBox.Show("Calificaciones  Mayo registradas con exito");
-            //            }
-            //            break;
-
-            //        case "Junio":
-            //            {
-            //                caliJunio();
-            //                MessageBox.Show("Calificaciones  Junio registradas con exito");
-            //            }
-            //            break;
-
-
-            //        case "Diagnostico":
-            //            {
-            //                caliDiagnostico();
-            //                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
-            //            }
-            //            break;
-
-            //    }
         }
-
-        
-
-        //public void calisep()
-        //{
-
-        //    Español = EspDiag.SelectedItem.ToString();
-        //    Matematicas = EspSep.SelectedItem.ToString();
-        //    Ingless = EspOct.SelectedItem.ToString();
-        //    Conocimiento = Espnov.SelectedItem.ToString();
-        //    Artess = EspMarz.SelectedItem.ToString();
-        //    EducacionF = Espmay.SelectedItem.ToString();
-        //    Edsocio = Espabril.SelectedItem.ToString();
-        //    Inasistencias = cmbsepina.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-
-
-        //public void caliOct()
-        //{
-        //    Español = cmbEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbOctubreMate.SelectedItem.ToString();
-        //    Ingless = cmbOctubreIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbOctubreCiencias.SelectedItem.ToString();
-        //    Artess = cmboctubreArt.SelectedItem.ToString();
-        //    EducacionF = cmbOctubreEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbOctubreEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbOctubreIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-
-        //public void caliNov()
-        //{
-        //    Español = cmbNovEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbNovmate.SelectedItem.ToString();
-        //    Ingless = cmbNovIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbNovCiencias.SelectedItem.ToString();
-        //    Artess = cmbNovArtes.SelectedItem.ToString();
-        //    EducacionF = cmbNovEdFisi.SelectedItem.ToString();
-        //    Edsocio = cmbNovEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbNovIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-
-        //public void caliDic()
-        //{
-        //    Español = cmbDicEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbDicMate.SelectedItem.ToString();
-        //    Ingless = cmbDicIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbDicCiencias.SelectedItem.ToString();
-        //    Artess = cmbDicArtes.SelectedItem.ToString();
-        //    EducacionF = cmbDicEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbDicEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbDicInasis.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-
-        //public void caliEnero()
-        //{
-        //    Español = cmbEneroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbEneroMate.SelectedItem.ToString();
-        //    Ingless = cmbEneroIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbEneroCiencias.SelectedItem.ToString();
-        //    Artess = cmbEneroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbEneroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbEneroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbEneroIna.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-        //public void caliFebrero()
-        //{
-        //    Español = cmbFebreroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbFebreroMate.SelectedItem.ToString();
-        //    Ingless = cmbfebreroIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbFebreroCiencias.SelectedItem.ToString();
-        //    Artess = cmbFebreroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbFebreroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbFebreroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbfebreroIna.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-
-        //public void caliMarzo()
-        //{
-
-        //    Español = cmbmarzoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMarzoMate.SelectedItem.ToString();
-        //    Ingless = cmbMarzoIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbMarzoCiencias.SelectedItem.ToString();
-        //    Artess = cmbMarzoArtess.SelectedItem.ToString();
-        //    EducacionF = cmbMarzoEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbMarzoEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbmarzoina.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-        //public void caliAbril()
-        //{
-        //    Español = cmbAbrilEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbAbrilmate.SelectedItem.ToString();
-        //    Ingless = cmbAbrilIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbAbrilCiencias.SelectedItem.ToString();
-        //    Artess = cmbAbrilArtess.SelectedItem.ToString();
-        //    EducacionF = cmbAbrilEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbAbrilEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbAbrilIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-        //public void caliMayo()
-        //{
-        //    Español = cmbmayoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMayoMate.SelectedItem.ToString();
-        //    Ingless = cmbMayoIngles.SelectedItem.ToString();
-        //    Conocimiento = cmbMayoCiencias.SelectedItem.ToString();
-        //    Artess = cmbMayoArtes.SelectedItem.ToString();
-        //    Edsocio = cmbMayoEdsocio.SelectedItem.ToString();
-        //    EducacionF = cmbMayoEdfisica.SelectedItem.ToString();
-        //    Inasistencias = cmbMayoIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-        //public void caliJunio()
-        //{
-        //    Español = cmbDJunioEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbJuniomate.SelectedItem.ToString();
-        //    Ingless = cmbJunioingless.SelectedItem.ToString();
-        //    Conocimiento = cmbJunioingless.SelectedItem.ToString();
-        //    Artess = cmbJunioArtess.SelectedItem.ToString();
-        //    EducacionF = cmbJunioEdFis.SelectedItem.ToString();
-        //    Edsocio = cmbJunioEdsocioe.SelectedItem.ToString();
-        //    Inasistencias = cmbJunioinasis.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-        //public void caliDiagnostico()
-        //{
-        //    Español = cmbdiagespañol.SelectedItem.ToString();
-        //    Matematicas = cmbdiagmate.SelectedItem.ToString();
-        //    Ingless = cmbdiagingles.SelectedItem.ToString();
-        //    Conocimiento = cmbdiagciencias.SelectedItem.ToString();
-        //    Artess = cmbdiagartes.SelectedItem.ToString();
-        //    EducacionF = cmbdiagedfisica.SelectedItem.ToString();
-        //    Edsocio = cmbdiagedsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbdiaginasis.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Conocimiento del medio' "; calificacion = Convert.ToDouble(Conocimiento); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
 
         private void bindingNavigator2_RefreshItems(object sender, EventArgs e)
         {
@@ -1442,67 +896,5 @@ namespace Control_Escolar
         {
 
         }
-
-        //------------------------------------Metodo para buscar la materia-----------------------------------------------
-        public void buscarmateria()
-        {
-            mes = materialTabControl1.SelectedTab.Name;
-            MySqlConnection conn;
-            MySqlCommand com;
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT * FROM `materias` WHERE `nombre` = " + materia + "  AND `idGrado` = 3 ";
-            //MessageBox.Show(query);
-            conn = new MySqlConnection(conexion);
-            conn.Open();
-
-            com = new MySqlCommand(query, conn);
-
-            MySqlDataReader myreader = com.ExecuteReader();
-
-
-            myreader.Read();
-            try
-            {
-                sesion.idmateria = Convert.ToString(myreader["idMaterias"]);
-
-                //MessageBox.Show(sesion.idmateria.ToString());
-            }
-            catch (Exception ex)
-            {
-                //MessageBox.Show(ex.Message);
-            }
-
-        }
-
-        //----------------------------Metodo Insertar Califiaciones------------------------------------------
-        public void insertarcali()
-        {
-
-            MySqlConnection conn;
-            MySqlCommand com;
-
-            string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
-            //MessageBox.Show(sesion.Curp);
-            conn = new MySqlConnection(conexion);
-            conn.Open();
-
-            com = new MySqlCommand(query, conn);
-
-            MySqlDataReader myreader = com.ExecuteReader();
-
-
-            myreader.Read();
-
-            int idalumno = Convert.ToInt32(myreader["idAlumno"]);
-
-            string conexion1 = "server=localhost;uid=root;database=nerivela";
-
-            string inserta_bitacora = "INSERT INTO `calificaciones`( `CalificacionMen`, `idAlumno`,`Mes`, `idMaterias`) VALUES (" + calificacion + "," + idalumno + ",'" + mes + "'," + sesion.idmateria + ");";
-            //MessageBox.Show(inserta_bitacora);
-            obj.insBitacora(conexion1, inserta_bitacora);
-
-        }
-
     }
 }

@@ -31,16 +31,10 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox81 = new System.Windows.Forms.ComboBox();
-            this.comboBox82 = new System.Windows.Forms.ComboBox();
-            this.comboBox83 = new System.Windows.Forms.ComboBox();
-            this.comboBox84 = new System.Windows.Forms.ComboBox();
-            this.comboBox85 = new System.Windows.Forms.ComboBox();
             this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -48,6 +42,27 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+            this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox81 = new System.Windows.Forms.ComboBox();
+            this.comboBox82 = new System.Windows.Forms.ComboBox();
+            this.comboBox83 = new System.Windows.Forms.ComboBox();
+            this.comboBox84 = new System.Windows.Forms.ComboBox();
+            this.comboBox85 = new System.Windows.Forms.ComboBox();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -59,13 +74,13 @@
             this.comboBox88 = new System.Windows.Forms.ComboBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
             this.label48 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.comboBox10 = new System.Windows.Forms.ComboBox();
@@ -77,13 +92,13 @@
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
@@ -95,13 +110,13 @@
             this.comboBox24 = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.comboBox25 = new System.Windows.Forms.ComboBox();
             this.comboBox26 = new System.Windows.Forms.ComboBox();
@@ -113,13 +128,13 @@
             this.comboBox32 = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.comboBox33 = new System.Windows.Forms.ComboBox();
             this.comboBox34 = new System.Windows.Forms.ComboBox();
@@ -131,13 +146,13 @@
             this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.label38 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.label51 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.comboBox41 = new System.Windows.Forms.ComboBox();
             this.comboBox42 = new System.Windows.Forms.ComboBox();
@@ -149,13 +164,13 @@
             this.comboBox48 = new System.Windows.Forms.ComboBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label63 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.comboBox49 = new System.Windows.Forms.ComboBox();
             this.comboBox50 = new System.Windows.Forms.ComboBox();
@@ -167,13 +182,13 @@
             this.comboBox56 = new System.Windows.Forms.ComboBox();
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label70 = new System.Windows.Forms.Label();
             this.label71 = new System.Windows.Forms.Label();
             this.label72 = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.comboBox57 = new System.Windows.Forms.ComboBox();
             this.comboBox58 = new System.Windows.Forms.ComboBox();
@@ -185,13 +200,13 @@
             this.comboBox64 = new System.Windows.Forms.ComboBox();
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label81 = new System.Windows.Forms.Label();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.comboBox65 = new System.Windows.Forms.ComboBox();
             this.comboBox66 = new System.Windows.Forms.ComboBox();
@@ -203,13 +218,13 @@
             this.comboBox72 = new System.Windows.Forms.ComboBox();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label90 = new System.Windows.Forms.Label();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.comboBox73 = new System.Windows.Forms.ComboBox();
             this.comboBox74 = new System.Windows.Forms.ComboBox();
@@ -221,51 +236,35 @@
             this.comboBox80 = new System.Windows.Forms.ComboBox();
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
             this.label96 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
-            this.groupBox11.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.tabPage5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.tabPage6.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.tabPage7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
             this.tabPage8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.tabPage9.SuspendLayout();
-            this.groupBox8.SuspendLayout();
             this.tabPage10.SuspendLayout();
-            this.groupBox9.SuspendLayout();
             this.tabPage11.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -304,7 +303,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.comboBox6);
             this.groupBox1.Controls.Add(this.comboBox7);
             this.groupBox1.Controls.Add(this.comboBox81);
@@ -315,6 +313,7 @@
             this.groupBox1.Controls.Add(this.comboBox8);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label6);
@@ -328,6 +327,342 @@
             this.groupBox1.Size = new System.Drawing.Size(690, 249);
             this.groupBox1.TabIndex = 84;
             this.groupBox1.TabStop = false;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox8.Location = new System.Drawing.Point(206, 44);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(124, 33);
+            this.comboBox8.TabIndex = 75;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label1.Location = new System.Drawing.Point(359, 168);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 20);
+            this.label1.TabIndex = 74;
+            this.label1.Text = "Inasistencias";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label2.Location = new System.Drawing.Point(359, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(47, 20);
+            this.label2.TabIndex = 72;
+            this.label2.Text = "Artes";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label3.Location = new System.Drawing.Point(359, 90);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(154, 20);
+            this.label3.TabIndex = 71;
+            this.label3.Text = "Ed. Socioeconomica";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label4.Location = new System.Drawing.Point(359, 130);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(74, 20);
+            this.label4.TabIndex = 70;
+            this.label4.Text = "Ed.Fisica";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label5.Location = new System.Drawing.Point(17, 128);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(52, 20);
+            this.label5.TabIndex = 67;
+            this.label5.Text = "Ingles";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label6.Location = new System.Drawing.Point(17, 168);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(178, 20);
+            this.label6.TabIndex = 66;
+            this.label6.Text = "Conocimiento del medio";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label7.Location = new System.Drawing.Point(17, 91);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 20);
+            this.label7.TabIndex = 65;
+            this.label7.Text = "Matematicas";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label8.Location = new System.Drawing.Point(17, 51);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(67, 20);
+            this.label8.TabIndex = 62;
+            this.label8.Text = "Español";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label9.Location = new System.Drawing.Point(286, 0);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 26);
+            this.label9.TabIndex = 44;
+            this.label9.Text = "Calificaciones";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.groupBox11);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(936, 345);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Septiem.";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(936, 345);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Octubre";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.groupBox3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(936, 345);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Noviemb.";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.groupBox4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(936, 345);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Diciembre";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.groupBox5);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(936, 345);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Enero";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // tabPage7
+            // 
+            this.tabPage7.Controls.Add(this.groupBox6);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(936, 345);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Febrero";
+            this.tabPage7.UseVisualStyleBackColor = true;
+            // 
+            // tabPage8
+            // 
+            this.tabPage8.Controls.Add(this.groupBox7);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(936, 345);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Marzo";
+            this.tabPage8.UseVisualStyleBackColor = true;
+            // 
+            // tabPage9
+            // 
+            this.tabPage9.Controls.Add(this.groupBox8);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(936, 345);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Abril";
+            this.tabPage9.UseVisualStyleBackColor = true;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.groupBox9);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(936, 345);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Mayo";
+            this.tabPage10.UseVisualStyleBackColor = true;
+            // 
+            // tabPage11
+            // 
+            this.tabPage11.Controls.Add(this.groupBox10);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(936, 345);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Junio";
+            this.tabPage11.UseVisualStyleBackColor = true;
+            this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(-1, 63);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1046, 54);
+            this.materialTabSelector1.TabIndex = 1;
+            this.materialTabSelector1.Text = "materialTabSelector1";
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
+            this.btnCerrar.Depth = 0;
+            this.btnCerrar.Location = new System.Drawing.Point(902, 28);
+            this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Primary = true;
+            this.btnCerrar.Size = new System.Drawing.Size(130, 29);
+            this.btnCerrar.TabIndex = 80;
+            this.btnCerrar.Text = "Cerrar Sesión";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
+            // 
+            // btnIrBoletas
+            // 
+            this.btnIrBoletas.Depth = 0;
+            this.btnIrBoletas.Location = new System.Drawing.Point(764, 515);
+            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnIrBoletas.Name = "btnIrBoletas";
+            this.btnIrBoletas.Primary = true;
+            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
+            this.btnIrBoletas.TabIndex = 89;
+            this.btnIrBoletas.Text = "Generar PDF";
+            this.btnIrBoletas.UseVisualStyleBackColor = true;
+            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click_1);
+            // 
+            // btnPrincipal
+            // 
+            this.btnPrincipal.Depth = 0;
+            this.btnPrincipal.Location = new System.Drawing.Point(90, 515);
+            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
+            this.btnPrincipal.Name = "btnPrincipal";
+            this.btnPrincipal.Primary = true;
+            this.btnPrincipal.Size = new System.Drawing.Size(178, 54);
+            this.btnPrincipal.TabIndex = 87;
+            this.btnPrincipal.Text = "Volver al Menú Principal";
+            this.btnPrincipal.UseVisualStyleBackColor = true;
+            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
+            // 
+            // materialRaisedButton1
+            // 
+            this.materialRaisedButton1.Depth = 0;
+            this.materialRaisedButton1.Location = new System.Drawing.Point(419, 515);
+            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton1.Name = "materialRaisedButton1";
+            this.materialRaisedButton1.Primary = true;
+            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 54);
+            this.materialRaisedButton1.TabIndex = 88;
+            this.materialRaisedButton1.Text = "Guardar Calificaciones";
+            this.materialRaisedButton1.UseVisualStyleBackColor = true;
+            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // comboBox6
             // 
@@ -749,171 +1084,9 @@
             this.comboBox85.Size = new System.Drawing.Size(124, 33);
             this.comboBox85.TabIndex = 92;
             // 
-            // comboBox8
-            // 
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
-            "10",
-            "9.9",
-            "9.8",
-            "9.7",
-            "9.6",
-            "9.5",
-            "9.4",
-            "9.3",
-            "9.2",
-            "9.1",
-            "9",
-            "8.9",
-            "8.8",
-            "8.7",
-            "8.6",
-            "8.5",
-            "8.4",
-            "8.3",
-            "8.2",
-            "8.1",
-            "8",
-            "7.9",
-            "7.8",
-            "7.7",
-            "7.6",
-            "7.5",
-            "7.4",
-            "7.3",
-            "7.2",
-            "7.1",
-            "7",
-            "6.9",
-            "6.8",
-            "6.7",
-            "6.6",
-            "6.5",
-            "6.4",
-            "6.3",
-            "6.2",
-            "6.1",
-            "6",
-            "5.9",
-            "5.8",
-            "5.7",
-            "5.6",
-            "5.5",
-            "5.4",
-            "5.3",
-            "5.2",
-            "5.1",
-            "5"});
-            this.comboBox8.Location = new System.Drawing.Point(206, 44);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(124, 33);
-            this.comboBox8.TabIndex = 75;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label1.Location = new System.Drawing.Point(359, 168);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 20);
-            this.label1.TabIndex = 74;
-            this.label1.Text = "Inasistencias";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(359, 51);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(47, 20);
-            this.label2.TabIndex = 72;
-            this.label2.Text = "Artes";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Location = new System.Drawing.Point(359, 130);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(74, 20);
-            this.label4.TabIndex = 70;
-            this.label4.Text = "Ed.Fisica";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label5.Location = new System.Drawing.Point(17, 128);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 20);
-            this.label5.TabIndex = 67;
-            this.label5.Text = "Ingles";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label6.Location = new System.Drawing.Point(17, 168);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(178, 20);
-            this.label6.TabIndex = 66;
-            this.label6.Text = "Conocimiento del medio";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label7.Location = new System.Drawing.Point(17, 91);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 20);
-            this.label7.TabIndex = 65;
-            this.label7.Text = "Matematicas";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label8.Location = new System.Drawing.Point(17, 51);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(67, 20);
-            this.label8.TabIndex = 62;
-            this.label8.Text = "Español";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label9.Location = new System.Drawing.Point(286, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(147, 26);
-            this.label9.TabIndex = 44;
-            this.label9.Text = "Calificaciones";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.groupBox11);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(936, 345);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Septiem.";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox11.Controls.Add(this.label40);
             this.groupBox11.Controls.Add(this.comboBox1);
             this.groupBox11.Controls.Add(this.comboBox2);
             this.groupBox11.Controls.Add(this.comboBox3);
@@ -924,6 +1097,7 @@
             this.groupBox11.Controls.Add(this.comboBox88);
             this.groupBox11.Controls.Add(this.label37);
             this.groupBox11.Controls.Add(this.label39);
+            this.groupBox11.Controls.Add(this.label40);
             this.groupBox11.Controls.Add(this.label41);
             this.groupBox11.Controls.Add(this.label44);
             this.groupBox11.Controls.Add(this.label45);
@@ -1440,6 +1614,17 @@
             this.label39.TabIndex = 72;
             this.label39.Text = "Artes";
             // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label40.Location = new System.Drawing.Point(359, 90);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(154, 20);
+            this.label40.TabIndex = 71;
+            this.label40.Text = "Ed. Socioeconomica";
+            // 
             // label41
             // 
             this.label41.AutoSize = true;
@@ -1508,21 +1693,9 @@
             this.label48.TabIndex = 44;
             this.label48.Text = "Calificaciones";
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.groupBox2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(936, 345);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Octubre";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.comboBox9);
             this.groupBox2.Controls.Add(this.comboBox10);
             this.groupBox2.Controls.Add(this.comboBox11);
@@ -1533,6 +1706,7 @@
             this.groupBox2.Controls.Add(this.comboBox16);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label15);
@@ -2049,6 +2223,17 @@
             this.label11.TabIndex = 72;
             this.label11.Text = "Artes";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label12.Location = new System.Drawing.Point(359, 90);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(154, 20);
+            this.label12.TabIndex = 71;
+            this.label12.Text = "Ed. Socioeconomica";
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -2117,21 +2302,9 @@
             this.label18.TabIndex = 44;
             this.label18.Text = "Calificaciones";
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.groupBox3);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(936, 345);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Noviemb.";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.comboBox17);
             this.groupBox3.Controls.Add(this.comboBox18);
             this.groupBox3.Controls.Add(this.comboBox19);
@@ -2142,6 +2315,7 @@
             this.groupBox3.Controls.Add(this.comboBox24);
             this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.label21);
             this.groupBox3.Controls.Add(this.label22);
             this.groupBox3.Controls.Add(this.label23);
             this.groupBox3.Controls.Add(this.label24);
@@ -2658,6 +2832,17 @@
             this.label20.TabIndex = 72;
             this.label20.Text = "Artes";
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label21.Location = new System.Drawing.Point(359, 90);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(154, 20);
+            this.label21.TabIndex = 71;
+            this.label21.Text = "Ed. Socioeconomica";
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -2726,21 +2911,9 @@
             this.label27.TabIndex = 44;
             this.label27.Text = "Calificaciones";
             // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.groupBox4);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(936, 345);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "Diciembre";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox4.Controls.Add(this.label30);
             this.groupBox4.Controls.Add(this.comboBox25);
             this.groupBox4.Controls.Add(this.comboBox26);
             this.groupBox4.Controls.Add(this.comboBox27);
@@ -2751,6 +2924,7 @@
             this.groupBox4.Controls.Add(this.comboBox32);
             this.groupBox4.Controls.Add(this.label28);
             this.groupBox4.Controls.Add(this.label29);
+            this.groupBox4.Controls.Add(this.label30);
             this.groupBox4.Controls.Add(this.label31);
             this.groupBox4.Controls.Add(this.label32);
             this.groupBox4.Controls.Add(this.label33);
@@ -3267,6 +3441,17 @@
             this.label29.TabIndex = 72;
             this.label29.Text = "Artes";
             // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label30.Location = new System.Drawing.Point(359, 90);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(154, 20);
+            this.label30.TabIndex = 71;
+            this.label30.Text = "Ed. Socioeconomica";
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -3335,21 +3520,9 @@
             this.label36.TabIndex = 44;
             this.label36.Text = "Calificaciones";
             // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.groupBox5);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(936, 345);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "Enero";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox5.Controls.Add(this.label43);
             this.groupBox5.Controls.Add(this.comboBox33);
             this.groupBox5.Controls.Add(this.comboBox34);
             this.groupBox5.Controls.Add(this.comboBox35);
@@ -3360,6 +3533,7 @@
             this.groupBox5.Controls.Add(this.comboBox40);
             this.groupBox5.Controls.Add(this.label38);
             this.groupBox5.Controls.Add(this.label42);
+            this.groupBox5.Controls.Add(this.label43);
             this.groupBox5.Controls.Add(this.label49);
             this.groupBox5.Controls.Add(this.label50);
             this.groupBox5.Controls.Add(this.label51);
@@ -3876,6 +4050,17 @@
             this.label42.TabIndex = 72;
             this.label42.Text = "Artes";
             // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label43.Location = new System.Drawing.Point(359, 90);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(154, 20);
+            this.label43.TabIndex = 71;
+            this.label43.Text = "Ed. Socioeconomica";
+            // 
             // label49
             // 
             this.label49.AutoSize = true;
@@ -3944,21 +4129,9 @@
             this.label54.TabIndex = 44;
             this.label54.Text = "Calificaciones";
             // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.groupBox6);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(936, 345);
-            this.tabPage7.TabIndex = 6;
-            this.tabPage7.Text = "Febrero";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox6.Controls.Add(this.label57);
             this.groupBox6.Controls.Add(this.comboBox41);
             this.groupBox6.Controls.Add(this.comboBox42);
             this.groupBox6.Controls.Add(this.comboBox43);
@@ -3969,6 +4142,7 @@
             this.groupBox6.Controls.Add(this.comboBox48);
             this.groupBox6.Controls.Add(this.label55);
             this.groupBox6.Controls.Add(this.label56);
+            this.groupBox6.Controls.Add(this.label57);
             this.groupBox6.Controls.Add(this.label58);
             this.groupBox6.Controls.Add(this.label59);
             this.groupBox6.Controls.Add(this.label60);
@@ -4485,6 +4659,17 @@
             this.label56.TabIndex = 72;
             this.label56.Text = "Artes";
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label57.Location = new System.Drawing.Point(359, 90);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(154, 20);
+            this.label57.TabIndex = 71;
+            this.label57.Text = "Ed. Socioeconomica";
+            // 
             // label58
             // 
             this.label58.AutoSize = true;
@@ -4553,21 +4738,9 @@
             this.label63.TabIndex = 44;
             this.label63.Text = "Calificaciones";
             // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.groupBox7);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(936, 345);
-            this.tabPage8.TabIndex = 7;
-            this.tabPage8.Text = "Marzo";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox7.Controls.Add(this.label66);
             this.groupBox7.Controls.Add(this.comboBox49);
             this.groupBox7.Controls.Add(this.comboBox50);
             this.groupBox7.Controls.Add(this.comboBox51);
@@ -4578,6 +4751,7 @@
             this.groupBox7.Controls.Add(this.comboBox56);
             this.groupBox7.Controls.Add(this.label64);
             this.groupBox7.Controls.Add(this.label65);
+            this.groupBox7.Controls.Add(this.label66);
             this.groupBox7.Controls.Add(this.label67);
             this.groupBox7.Controls.Add(this.label68);
             this.groupBox7.Controls.Add(this.label69);
@@ -5094,6 +5268,17 @@
             this.label65.TabIndex = 72;
             this.label65.Text = "Artes";
             // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label66.Location = new System.Drawing.Point(359, 90);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(154, 20);
+            this.label66.TabIndex = 71;
+            this.label66.Text = "Ed. Socioeconomica";
+            // 
             // label67
             // 
             this.label67.AutoSize = true;
@@ -5162,21 +5347,9 @@
             this.label72.TabIndex = 44;
             this.label72.Text = "Calificaciones";
             // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.groupBox8);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(936, 345);
-            this.tabPage9.TabIndex = 8;
-            this.tabPage9.Text = "Abril";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox8.Controls.Add(this.label75);
             this.groupBox8.Controls.Add(this.comboBox57);
             this.groupBox8.Controls.Add(this.comboBox58);
             this.groupBox8.Controls.Add(this.comboBox59);
@@ -5187,6 +5360,7 @@
             this.groupBox8.Controls.Add(this.comboBox64);
             this.groupBox8.Controls.Add(this.label73);
             this.groupBox8.Controls.Add(this.label74);
+            this.groupBox8.Controls.Add(this.label75);
             this.groupBox8.Controls.Add(this.label76);
             this.groupBox8.Controls.Add(this.label77);
             this.groupBox8.Controls.Add(this.label78);
@@ -5703,6 +5877,17 @@
             this.label74.TabIndex = 72;
             this.label74.Text = "Artes";
             // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label75.Location = new System.Drawing.Point(359, 90);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(154, 20);
+            this.label75.TabIndex = 71;
+            this.label75.Text = "Ed. Socioeconomica";
+            // 
             // label76
             // 
             this.label76.AutoSize = true;
@@ -5771,21 +5956,9 @@
             this.label81.TabIndex = 44;
             this.label81.Text = "Calificaciones";
             // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.groupBox9);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(936, 345);
-            this.tabPage10.TabIndex = 9;
-            this.tabPage10.Text = "Mayo";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox9.Controls.Add(this.label84);
             this.groupBox9.Controls.Add(this.comboBox65);
             this.groupBox9.Controls.Add(this.comboBox66);
             this.groupBox9.Controls.Add(this.comboBox67);
@@ -5796,6 +5969,7 @@
             this.groupBox9.Controls.Add(this.comboBox72);
             this.groupBox9.Controls.Add(this.label82);
             this.groupBox9.Controls.Add(this.label83);
+            this.groupBox9.Controls.Add(this.label84);
             this.groupBox9.Controls.Add(this.label85);
             this.groupBox9.Controls.Add(this.label86);
             this.groupBox9.Controls.Add(this.label87);
@@ -6312,6 +6486,17 @@
             this.label83.TabIndex = 72;
             this.label83.Text = "Artes";
             // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label84.Location = new System.Drawing.Point(359, 90);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(154, 20);
+            this.label84.TabIndex = 71;
+            this.label84.Text = "Ed. Socioeconomica";
+            // 
             // label85
             // 
             this.label85.AutoSize = true;
@@ -6380,22 +6565,9 @@
             this.label90.TabIndex = 44;
             this.label90.Text = "Calificaciones";
             // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.groupBox10);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(936, 345);
-            this.tabPage11.TabIndex = 10;
-            this.tabPage11.Text = "Junio";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            this.tabPage11.Click += new System.EventHandler(this.tabPage11_Click);
-            // 
             // groupBox10
             // 
             this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox10.Controls.Add(this.label93);
             this.groupBox10.Controls.Add(this.comboBox73);
             this.groupBox10.Controls.Add(this.comboBox74);
             this.groupBox10.Controls.Add(this.comboBox75);
@@ -6406,6 +6578,7 @@
             this.groupBox10.Controls.Add(this.comboBox80);
             this.groupBox10.Controls.Add(this.label91);
             this.groupBox10.Controls.Add(this.label92);
+            this.groupBox10.Controls.Add(this.label93);
             this.groupBox10.Controls.Add(this.label94);
             this.groupBox10.Controls.Add(this.label95);
             this.groupBox10.Controls.Add(this.label96);
@@ -6922,6 +7095,17 @@
             this.label92.TabIndex = 72;
             this.label92.Text = "Artes";
             // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label93.Location = new System.Drawing.Point(359, 90);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(154, 20);
+            this.label93.TabIndex = 71;
+            this.label93.Text = "Ed. Socioeconomica";
+            // 
             // label94
             // 
             this.label94.AutoSize = true;
@@ -6990,209 +7174,11 @@
             this.label99.TabIndex = 44;
             this.label99.Text = "Calificaciones";
             // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(-1, 63);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1046, 54);
-            this.materialTabSelector1.TabIndex = 1;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
-            this.btnCerrar.Depth = 0;
-            this.btnCerrar.Location = new System.Drawing.Point(902, 28);
-            this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Primary = true;
-            this.btnCerrar.Size = new System.Drawing.Size(130, 29);
-            this.btnCerrar.TabIndex = 80;
-            this.btnCerrar.Text = "Cerrar Sesión";
-            this.btnCerrar.UseVisualStyleBackColor = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
-            // 
-            // btnIrBoletas
-            // 
-            this.btnIrBoletas.Depth = 0;
-            this.btnIrBoletas.Location = new System.Drawing.Point(530, 515);
-            this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnIrBoletas.Name = "btnIrBoletas";
-            this.btnIrBoletas.Primary = true;
-            this.btnIrBoletas.Size = new System.Drawing.Size(173, 56);
-            this.btnIrBoletas.TabIndex = 89;
-            this.btnIrBoletas.Text = "Generar Boleta Interna";
-            this.btnIrBoletas.UseVisualStyleBackColor = true;
-            this.btnIrBoletas.Click += new System.EventHandler(this.btnIrBoletas_Click_1);
-            // 
-            // btnPrincipal
-            // 
-            this.btnPrincipal.Depth = 0;
-            this.btnPrincipal.Location = new System.Drawing.Point(73, 515);
-            this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
-            this.btnPrincipal.Name = "btnPrincipal";
-            this.btnPrincipal.Primary = true;
-            this.btnPrincipal.Size = new System.Drawing.Size(178, 54);
-            this.btnPrincipal.TabIndex = 87;
-            this.btnPrincipal.Text = "Volver al Menú Principal";
-            this.btnPrincipal.UseVisualStyleBackColor = true;
-            this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
-            // 
-            // materialRaisedButton1
-            // 
-            this.materialRaisedButton1.Depth = 0;
-            this.materialRaisedButton1.Location = new System.Drawing.Point(303, 515);
-            this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton1.Name = "materialRaisedButton1";
-            this.materialRaisedButton1.Primary = true;
-            this.materialRaisedButton1.Size = new System.Drawing.Size(173, 54);
-            this.materialRaisedButton1.TabIndex = 88;
-            this.materialRaisedButton1.Text = "Guardar Calificaciones";
-            this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(763, 515);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(173, 56);
-            this.materialRaisedButton2.TabIndex = 97;
-            this.materialRaisedButton2.Text = "Generar Boleta Externa";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Location = new System.Drawing.Point(359, 90);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 20);
-            this.label3.TabIndex = 93;
-            this.label3.Text = "Ed. Socioemocional";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label40.Location = new System.Drawing.Point(359, 84);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(149, 20);
-            this.label40.TabIndex = 93;
-            this.label40.Text = "Ed. Socioemocional";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label12.Location = new System.Drawing.Point(359, 84);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(149, 20);
-            this.label12.TabIndex = 93;
-            this.label12.Text = "Ed. Socioemocional";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label21.Location = new System.Drawing.Point(359, 84);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(149, 20);
-            this.label21.TabIndex = 93;
-            this.label21.Text = "Ed. Socioemocional";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label30.Location = new System.Drawing.Point(359, 84);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(149, 20);
-            this.label30.TabIndex = 93;
-            this.label30.Text = "Ed. Socioemocional";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label43.Location = new System.Drawing.Point(359, 90);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(149, 20);
-            this.label43.TabIndex = 93;
-            this.label43.Text = "Ed. Socioemocional";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label57.Location = new System.Drawing.Point(359, 84);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(149, 20);
-            this.label57.TabIndex = 93;
-            this.label57.Text = "Ed. Socioemocional";
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label66.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label66.Location = new System.Drawing.Point(359, 90);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(149, 20);
-            this.label66.TabIndex = 93;
-            this.label66.Text = "Ed. Socioemocional";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label75.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label75.Location = new System.Drawing.Point(359, 84);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(149, 20);
-            this.label75.TabIndex = 93;
-            this.label75.Text = "Ed. Socioemocional";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label84.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label84.Location = new System.Drawing.Point(359, 84);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(149, 20);
-            this.label84.TabIndex = 93;
-            this.label84.Text = "Ed. Socioemocional";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label93.Location = new System.Drawing.Point(359, 84);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(149, 20);
-            this.label93.TabIndex = 93;
-            this.label93.Text = "Ed. Socioemocional";
-            // 
             // Calificaciones12
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 599);
-            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.btnIrBoletas);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.materialRaisedButton1);
@@ -7206,33 +7192,33 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.tabPage5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.tabPage6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tabPage7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.tabPage8.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.tabPage9.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.tabPage10.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.tabPage11.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
@@ -7262,6 +7248,7 @@
         private System.Windows.Forms.ComboBox comboBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -7286,6 +7273,7 @@
         private System.Windows.Forms.ComboBox comboBox88;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.Label label45;
@@ -7303,6 +7291,7 @@
         private System.Windows.Forms.ComboBox comboBox16;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -7320,6 +7309,7 @@
         private System.Windows.Forms.ComboBox comboBox24;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
@@ -7337,6 +7327,7 @@
         private System.Windows.Forms.ComboBox comboBox32;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
@@ -7354,6 +7345,7 @@
         private System.Windows.Forms.ComboBox comboBox40;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.Label label51;
@@ -7371,6 +7363,7 @@
         private System.Windows.Forms.ComboBox comboBox48;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.Label label60;
@@ -7388,6 +7381,7 @@
         private System.Windows.Forms.ComboBox comboBox56;
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
@@ -7405,6 +7399,7 @@
         private System.Windows.Forms.ComboBox comboBox64;
         private System.Windows.Forms.Label label73;
         private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.Label label78;
@@ -7422,6 +7417,7 @@
         private System.Windows.Forms.ComboBox comboBox72;
         private System.Windows.Forms.Label label82;
         private System.Windows.Forms.Label label83;
+        private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
@@ -7439,23 +7435,12 @@
         private System.Windows.Forms.ComboBox comboBox80;
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label97;
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label93;
     }
 }
