@@ -145,6 +145,12 @@
     <Compile Include="Docuementos.Designer.cs">
       <DependentUpon>Docuementos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estadisticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas.Designer.cs">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,12 +168,6 @@
     </Compile>
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GenerarBoletas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GenerarBoletas.Designer.cs">
-      <DependentUpon>GenerarBoletas.cs</DependentUpon>
     </Compile>
     <Compile Include="Grupos.cs">
       <SubType>Form</SubType>
@@ -234,6 +234,9 @@
     <EmbeddedResource Include="Docuementos.resx">
       <DependentUpon>Docuementos.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas.resx">
+      <DependentUpon>Estadisticas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -242,9 +245,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GenerarBoletas.resx">
-      <DependentUpon>GenerarBoletas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grupos.resx">
       <DependentUpon>Grupos.cs</DependentUpon>
