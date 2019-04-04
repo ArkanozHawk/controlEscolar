@@ -447,3 +447,77 @@ C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\
 C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
 C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+E:\descargas nuevo so\gestion-20190404T022411Z-001\gestion\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb

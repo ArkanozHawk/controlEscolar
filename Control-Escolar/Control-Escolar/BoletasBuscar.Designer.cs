@@ -36,6 +36,7 @@
             this.dataGridViewbuscar = new System.Windows.Forms.DataGridView();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).BeginInit();
@@ -44,6 +45,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Controls.Add(this.materialLabel1);
             this.groupBox1.Controls.Add(this.AgregarCalificaciones);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.txtAP_T);
@@ -152,6 +154,19 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(135, 37);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(513, 19);
+            this.materialLabel1.TabIndex = 74;
+            this.materialLabel1.Text = "Ingrese la informacion del alumno que desea buscar y seleccione su CURP:";
+            // 
             // BoletasBuscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -182,5 +197,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialRaisedButton AgregarCalificaciones;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
     }
 }
