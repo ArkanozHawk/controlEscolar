@@ -171,7 +171,7 @@ namespace Control_Escolar
             sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
             sesion.grado = Convert.ToString(fila.Cells[7].Value); //Obtenemos el grado del niño
 
-            MessageBox.Show(sesion.grado);
+            //MessageBox.Show(sesion.grado);
 
         }
 
