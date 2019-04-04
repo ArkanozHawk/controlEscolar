@@ -172,7 +172,7 @@ namespace Control_Escolar
             conn4 = new MySqlConnection(conexion);
             conn4.Open();
 
-            com4 = new MySqlCommand(CalifDic, conn1);
+            com4 = new MySqlCommand(CalifDic, conn4);
 
             MySqlDataReader myreader4 = com4.ExecuteReader();
 
