@@ -27,6 +27,92 @@ namespace Control_Escolar
         string Español, Matematicas, Ingless, CienciasN, LaEntidad, FormacionCiv, Artess, Edsocio, EducacionF, Inasistencias;
         string materia, mes;
 
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            mes = materialTabControl1.SelectedTab.Name;
+            switch (mes)
+            {
+                case "Septiembre":
+                    {
+                        calisep();
+                        MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                    }
+                    break;
+
+                case "Octubre":
+                    {
+                        caliOct();
+                        MessageBox.Show("Calificaciones  octubre registradas con exito");
+                    }
+                    break;
+
+                case "Noviembre":
+                    {
+                        caliNov();
+                        MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                    }
+                    break;
+
+                case "Diciembre":
+                    {
+                        caliDic();
+                        MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                    }
+                    break;
+
+                case "Enero":
+                    {
+                        caliEnero();
+                        MessageBox.Show("Calificaciones  Enero registradas con exito");
+                    }
+                    break;
+                case "Febrero":
+                    {
+                        caliFebrero();
+                        MessageBox.Show("Calificaciones  febrero registradas con exito");
+                    }
+                    break;
+
+                case "Marzo":
+                    {
+                        caliMarzo();
+                        MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                    }
+                    break;
+
+                case "Abril":
+                    {
+                        caliAbril();
+                        MessageBox.Show("Calificaciones  Abril registradas con exito");
+                    }
+                    break;
+
+                case "Mayo":
+                    {
+                        caliMayo();
+                        MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                    }
+                    break;
+
+                case "Junio":
+                    {
+                        caliJunio();
+                        MessageBox.Show("Calificaciones  Junio registradas con exito");
+                    }
+                    break;
+
+
+                case "Diagnostico":
+                    {
+                        caliDiagnostico();
+                        MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                    }
+                    break;
+
+            }
+
+        }
+
         conexion obj = new conexion();
 
         public static void ThreadProc()
@@ -171,7 +257,7 @@ namespace Control_Escolar
             conn4 = new MySqlConnection(conexion);
             conn4.Open();
 
-            com4 = new MySqlCommand(CalifDic, conn1);
+            com4 = new MySqlCommand(CalifDic, conn4);
 
             MySqlDataReader myreader4 = com4.ExecuteReader();
 
@@ -1155,304 +1241,305 @@ namespace Control_Escolar
 
 
 
-        //public void calisep()
-        //{
+        public void calisep()
+        {
 
-        //    Español = EspDiag.SelectedItem.ToString();
-        //    Matematicas = EspSep.SelectedItem.ToString();
-        //    Ingless = EspOct.SelectedItem.ToString();
-        //    CienciasN = Espnov.SelectedItem.ToString();
-        //    LaEntidad = Espdic.SelectedItem.ToString();
-        //    FormacionCiv = EspFeb.SelectedItem.ToString();
-        //    Artess = EspMarz.SelectedItem.ToString();
-        //    EducacionF = Espmay.SelectedItem.ToString();
-        //    Edsocio = Espabril.SelectedItem.ToString();
-        //    Inasistencias = cmbsepina.SelectedItem.ToString();
-        //    //Historia = Espene.SelectedItem.ToString();
-        //    //Inasistencias = Espjun.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+            Español = cmbSepEspañol.SelectedItem.ToString();
+            Matematicas = cmbSepMatematicas.SelectedItem.ToString();
+            Ingless = cmbSepIngles.SelectedItem.ToString();
+            CienciasN = cmbSepCiencias.SelectedItem.ToString();
+            LaEntidad = cmbSepEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbSepFormacion.SelectedItem.ToString();
+            Artess = cmbSepArtes.SelectedItem.ToString();
+            EducacionF = cmbSepEdFisica.SelectedItem.ToString();
+            Edsocio = cmbSepSocio.SelectedItem.ToString();
+            Inasistencias = cmbSepInasis.SelectedItem.ToString();
+            //Historia = Espene.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
 
 
-        //public void caliOct()
-        //{
-        //    Español = cmbEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbOctubreMate.SelectedItem.ToString();
-        //    Ingless = cmbOctubreIngles.SelectedItem.ToString();
-        //    CienciasN = cmbOctubreCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbOctubreGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbOctubreFormacion.SelectedItem.ToString();
-        //    Artess = cmboctubreArt.SelectedItem.ToString();
-        //    EducacionF = cmbOctubreEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbOctubreEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbOctubreIna.SelectedItem.ToString();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+        }
 
 
-        //public void caliNov()
-        //{
-        //    Español = cmbNovEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbNovmate.SelectedItem.ToString();
-        //    Ingless = cmbNovIngles.SelectedItem.ToString();
-        //    CienciasN = cmbNovCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbNovGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbNovFormacion.SelectedItem.ToString();
-        //    Artess = cmbNovArtes.SelectedItem.ToString();
-        //    EducacionF = cmbNovEdFisi.SelectedItem.ToString();
-        //    Edsocio = cmbNovEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbNovIna.SelectedItem.ToString();
+        public void caliOct()
+        {
+            Español = cmbOctEspañol.SelectedItem.ToString();
+            Matematicas = cmbOctMatematicas.SelectedItem.ToString();
+            Ingless = cmbOctIngles.SelectedItem.ToString();
+            CienciasN = cmbOctCiencias.SelectedItem.ToString();
+            LaEntidad = cmbOctEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbOctFormacion.SelectedItem.ToString();
+            Artess = cmbOctArtes.SelectedItem.ToString();
+            EducacionF = cmbOctEdFisica.SelectedItem.ToString();
+            Edsocio = cmbOctSocio.SelectedItem.ToString();
+            Inasistencias = cmbOctInasis.SelectedItem.ToString();
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //}
-
-
-        //public void caliDic()
-        //{
-        //    Español = cmbDicEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbDicMate.SelectedItem.ToString();
-        //    Ingless = cmbDicIngles.SelectedItem.ToString();
-        //    CienciasN = cmbDicCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbDicGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbDicForm.SelectedItem.ToString();
-        //    Artess = cmbDicArtes.SelectedItem.ToString();
-        //    EducacionF = cmbDicEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbDicEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbDicInasis.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+        }
 
 
-        //public void caliEnero()
-        //{
-        //    Español = cmbEneroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbEneroMate.SelectedItem.ToString();
-        //    Ingless = cmbEneroIngles.SelectedItem.ToString();
-        //    CienciasN = cmbEneroCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbEneroGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbEneroFormacion.SelectedItem.ToString();
-        //    Artess = cmbEneroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbEneroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbEneroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbEneroIna.SelectedItem.ToString();
+        public void caliNov()
+        {
+            Español = cmbNovEspañol.SelectedItem.ToString();
+            Matematicas = cmbNovMatematicas.SelectedItem.ToString();
+            Ingless = cmbNovIngles.SelectedItem.ToString();
+            CienciasN = cmbNovCiencias.SelectedItem.ToString();
+            LaEntidad = cmbNovEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbNovFormacion.SelectedItem.ToString();
+            Artess = cmbNovArtes.SelectedItem.ToString();
+            EducacionF = cmbNovEdFisica.SelectedItem.ToString();
+            Edsocio = cmbNovSocio.SelectedItem.ToString();
+            Inasistencias = cmbNovInasis.SelectedItem.ToString();
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+        public void caliDic()
+        {
+            Español = cmbDicEspañol.SelectedItem.ToString();
+            Matematicas = cmbDicMatematicas.SelectedItem.ToString();
+            Ingless = cmbDicIngles.SelectedItem.ToString();
+            CienciasN = cmbDicCiencias.SelectedItem.ToString();
+            LaEntidad = cmbDicEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbDicFormacion.SelectedItem.ToString();
+            Artess = cmbDicArtes.SelectedItem.ToString();
+            EducacionF = cmbDicEdFisica.SelectedItem.ToString();
+            Edsocio = cmbDicSocio.SelectedItem.ToString();
+            Inasistencias = cmbDicInasis.SelectedItem.ToString();
 
-        //}
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //public void caliFebrero()
-        //{
-        //    Español = cmbFebreroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbFebreroMate.SelectedItem.ToString();
-        //    Ingless = cmbfebreroIngles.SelectedItem.ToString();
-        //    CienciasN = cmbFebreroCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbFebreroGeo.SelectedItem.ToString();
-        //    FormacionCiv = cmbFebreroFormacion.SelectedItem.ToString();
-        //    Artess = cmbFebreroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbFebreroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbFebreroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbfebreroIna.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+        }
 
 
-        //public void caliMarzo()
-        //{
-
-        //    Español = cmbmarzoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMarzoMate.SelectedItem.ToString();
-        //    Ingless = cmbMarzoIngles.SelectedItem.ToString();
-        //    CienciasN = cmbMarzoCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbMarzoGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbMarzoFormacion.SelectedItem.ToString();
-        //    Artess = cmbMarzoArtess.SelectedItem.ToString();
-        //    EducacionF = cmbMarzoEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbMarzoEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbmarzoina.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-
-        //public void caliAbril()
-        //{
-        //    Español = cmbAbrilEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbAbrilmate.SelectedItem.ToString();
-        //    Ingless = cmbAbrilIngles.SelectedItem.ToString();
-        //    CienciasN = cmbAbrilCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbAbrilGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbAbrilFormacion.SelectedItem.ToString();
-        //    Artess = cmbAbrilArtess.SelectedItem.ToString();
-        //    EducacionF = cmbAbrilEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbAbrilEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbAbrilIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-        //public void caliMayo()
-        //{
-        //    Español = cmbmayoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMayoMate.SelectedItem.ToString();
-        //    Ingless = cmbMayoIngles.SelectedItem.ToString();
-        //    CienciasN = cmbMayoCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbMayoGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbMayoFormacion.SelectedItem.ToString();
-        //    Artess = cmbMayoArtes.SelectedItem.ToString();
-        //    Edsocio = cmbMayoEdsocio.SelectedItem.ToString();
-        //    EducacionF = cmbMayoEdfisica.SelectedItem.ToString();
-        //    Inasistencias = cmbMayoIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-
-        //public void caliJunio()
-        //{
-        //    Español = cmbDJunioEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbJuniomate.SelectedItem.ToString();
-        //    Ingless = cmbJunioingless.SelectedItem.ToString();
-        //    CienciasN = cmbJunioingless.SelectedItem.ToString();
-        //    LaEntidad = cmbJunioGeofgrafia.SelectedItem.ToString();
-        //    FormacionCiv = cmbJunioFormacionCivica.SelectedItem.ToString();
-        //    Artess = cmbJunioArtess.SelectedItem.ToString();
-        //    EducacionF = cmbJunioEdFis.SelectedItem.ToString();
-        //    Edsocio = cmbJunioEdsocioe.SelectedItem.ToString();
-        //    Inasistencias = cmbJunioinasis.SelectedItem.ToString();
+        public void caliEnero()
+        {
+            Español = cmbEneEspañol.SelectedItem.ToString();
+            Matematicas = cmbEneMatematicas.SelectedItem.ToString();
+            Ingless = cmbEneIngles.SelectedItem.ToString();
+            CienciasN = cmbEneCiencias.SelectedItem.ToString();
+            LaEntidad = cmbEneEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbEneFormacion.SelectedItem.ToString();
+            Artess = cmbEneArtes.SelectedItem.ToString();
+            EducacionF = cmbEneEdFisica.SelectedItem.ToString();
+            Edsocio = cmbEneSocio.SelectedItem.ToString();
+            Inasistencias = cmbEneInasis.SelectedItem.ToString();
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //public void caliDiagnostico()
-        //{
-        //    Español = cmbdiagespañol.SelectedItem.ToString();
-        //    Matematicas = cmbdiagmate.SelectedItem.ToString();
-        //    Ingless = cmbdiagingles.SelectedItem.ToString();
-        //    CienciasN = cmbdiagciencias.SelectedItem.ToString();
-        //    LaEntidad = cmbdiaggeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbdiagformacion.SelectedItem.ToString();
-        //    Artess = cmbdiagartes.SelectedItem.ToString();
-        //    EducacionF = cmbdiagedfisica.SelectedItem.ToString();
-        //    Edsocio = cmbdiagedsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbdiaginasis.SelectedItem.ToString();
+        }
+
+        public void caliFebrero()
+        {
+            Español = cmbFebEspañol.SelectedItem.ToString();
+            Matematicas = cmbFebMatematicas.SelectedItem.ToString();
+            Ingless = cmbFebIngles.SelectedItem.ToString();
+            CienciasN = cmbFebCiencias.SelectedItem.ToString();
+            LaEntidad = cmbFebEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbFebFormacion.SelectedItem.ToString();
+            Artess = cmbFebArtes.SelectedItem.ToString();
+            EducacionF = cmbFebEdFisica.SelectedItem.ToString();
+            Edsocio = cmbFebSocio.SelectedItem.ToString();
+            Inasistencias = cmbFebInasis.SelectedItem.ToString();
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //}
+        }
+
+
+        public void caliMarzo()
+        {
+
+            Español = cmbMarEspañol.SelectedItem.ToString();
+            Matematicas = cmbMarMatematicas.SelectedItem.ToString();
+            Ingless = cmbMarIngles.SelectedItem.ToString();
+            CienciasN = cmbMarCiencias.SelectedItem.ToString();
+            LaEntidad = cmbMarEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbMarFormacion.SelectedItem.ToString();
+            Artess = cmbMarArtes.SelectedItem.ToString();
+            EducacionF = cmbMarEdFisica.SelectedItem.ToString();
+            Edsocio = cmbMarSocio.SelectedItem.ToString();
+            Inasistencias = cmbMarInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliAbril()
+        {
+            Español = cmbAbrEspañol.SelectedItem.ToString();
+            Matematicas = cmbAbrMatematicas.SelectedItem.ToString();
+            Ingless = cmbAbrIngles.SelectedItem.ToString();
+            CienciasN = cmbAbrCiencias.SelectedItem.ToString();
+            LaEntidad = cmbAbrEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbAbrFormacion.SelectedItem.ToString();
+            Artess = cmbAbrArtes.SelectedItem.ToString();
+            EducacionF = cmbAbrEdFisica.SelectedItem.ToString();
+            Edsocio = cmbAbrSocio.SelectedItem.ToString();
+            Inasistencias = cmbAbrInasis.SelectedItem.ToString();
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliMayo()
+        {
+            Español = cmbMayEspañol.SelectedItem.ToString();
+            Matematicas = cmbMayMatematicas.SelectedItem.ToString();
+            Ingless = cmbMayIngles.SelectedItem.ToString();
+            CienciasN = cmbMayCiencias.SelectedItem.ToString();
+            LaEntidad = cmbMayEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbMayFormacion.SelectedItem.ToString();
+            Artess = cmbMayArtes.SelectedItem.ToString();
+            Edsocio = cmbMaySocio.SelectedItem.ToString();
+            EducacionF = cmbMaySocio.SelectedItem.ToString();
+            Inasistencias = cmbMayInasis.SelectedItem.ToString();
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliJunio()
+        {
+            Español = cmbJunEspañol.SelectedItem.ToString();
+            Matematicas = cmbJunMatematicas.SelectedItem.ToString();
+            Ingless = cmbJunIngles.SelectedItem.ToString();
+            CienciasN = cmbJunCiencias.SelectedItem.ToString();
+            LaEntidad = cmbJunEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbJunFormacion.SelectedItem.ToString();
+            Artess = cmbJunArtes.SelectedItem.ToString();
+            EducacionF = cmbJunEdFisica.SelectedItem.ToString();
+            Edsocio = cmbJunSocio.SelectedItem.ToString();
+            Inasistencias = cmbJunInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+        }
+
+        public void caliDiagnostico()
+        {
+            Español = cmbDiagEspañol.SelectedItem.ToString();
+            Matematicas = cmbDiagMatematicas.SelectedItem.ToString();
+            Ingless = cmbDiagIngles.SelectedItem.ToString();
+            CienciasN = cmbDiagCiencias.SelectedItem.ToString();
+            LaEntidad = cmbDiagEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbDiagFormacion.SelectedItem.ToString();
+            Artess = cmbDiagArtes.SelectedItem.ToString();
+            EducacionF = cmbDiagEdFisica.SelectedItem.ToString();
+            Edsocio = cmbDiagSocio.SelectedItem.ToString();
+            Inasistencias = cmbDiagInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
 
         //------------------------------------Metodo para buscar la materia-----------------------------------------------
         public void buscarmateria()
@@ -1516,92 +1603,6 @@ namespace Control_Escolar
         }
 
     }
-
-    //private void materialRaisedButton1_Click(object sender, EventArgs e)
-    //{
-    //    mes = materialTabControl1.SelectedTab.Name;
-    //    switch (mes)
-    //    {
-    //        case "Septiembre":
-    //            {
-    //                calisep();
-    //                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-    //            }
-    //            break;
-
-    //        case "Octubre":
-    //            {
-    //                caliOct();
-    //                MessageBox.Show("Calificaciones  octubre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Noviembre":
-    //            {
-    //                caliNov();
-    //                MessageBox.Show("Calificaciones  noviembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Diciembre":
-    //            {
-    //                caliDic();
-    //                MessageBox.Show("Calificaciones  diciembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Enero":
-    //            {
-    //                caliEnero();
-    //                MessageBox.Show("Calificaciones  Enero registradas con exito");
-    //            }
-    //            break;
-    //        case "Febrero":
-    //            {
-    //                caliFebrero();
-    //                MessageBox.Show("Calificaciones  febrero registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Marzo":
-    //            {
-    //                caliMarzo();
-    //                MessageBox.Show("Calificaciones  Marzo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Abril":
-    //            {
-    //                caliAbril();
-    //                MessageBox.Show("Calificaciones  Abril registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Mayo":
-    //            {
-    //                caliMayo();
-    //                MessageBox.Show("Calificaciones  Mayo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Junio":
-    //            {
-    //                caliJunio();
-    //                MessageBox.Show("Calificaciones  Junio registradas con exito");
-    //            }
-    //            break;
-
-
-    //        case "Diagnostico":
-    //            {
-    //                caliDiagnostico();
-    //                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
-    //            }
-    //            break;
-
-    //    }
-
-    //}
 
 
 
