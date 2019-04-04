@@ -69,8 +69,7 @@ namespace Control_Escolar
         }
 
         private void btnIrBoletas_Click(object sender, EventArgs e)
-        {
-            //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGenerarBoletas));
+        { //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGenerarBoletas));
             //pantalla.Start();
             //CheckForIllegalCrossThreadCalls = false;
             //this.Close();
@@ -82,14 +81,14 @@ namespace Control_Escolar
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
             string nombre, Apellidop, Apellidom, IdAlumno;
-            
+
             conn = new MySqlConnection(conexion);
             conn.Open();
 
             com = new MySqlCommand(query, conn);
 
             MySqlDataReader myreader = com.ExecuteReader();
-            
+
             myreader.Read();
             nombre = Convert.ToString(myreader["nombre"]);
             Apellidop = Convert.ToString(myreader["ApellidoP"]);
@@ -99,9 +98,9 @@ namespace Control_Escolar
             conn.Close();
 
             //-------------------------------Ingresar las calificaciones mensuales de los alumnos---------------------
-            
+
             //Septiembre------------------------------------------
-            string CalifSep = "SELECT * FROM `calificaciones` WHERE `idAlumno` = "+IdAlumno+" AND `Mes` = 'Septiembre'";
+            string CalifSep = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Septiembre'";
 
             MySqlConnection conn1;
             MySqlCommand com1;
@@ -113,13 +112,45 @@ namespace Control_Escolar
 
             MySqlDataReader myreader1 = com1.ExecuteReader();
 
-            double[] CalifSept = new double[11];
-            int L = 0;
-            while (myreader1.Read())
+            string[] CalifSept = new string[11];
+            string PromSept = " ";
+            string PromSeptGeneral = " ";
+
+            if (myreader1.HasRows) //Checa si las celdas estan vacias
             {
-                CalifSept[L] = Convert.ToDouble(myreader1["CalificacionMen"]);
-                L++;
+                int L = 0;
+                while (myreader1.Read())//Agrega calificaciones
+                {
+                    double[] CalifSeptemp = new double[11];
+                    CalifSeptemp[L] = Convert.ToDouble(myreader1["CalificacionMen"]);
+                    CalifSept[L] = CalifSeptemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromSeptTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromSeptTemp = PromSeptTemp + Convert.ToDouble(CalifSept[i]);
+                }
+
+                PromSeptTemp = PromSeptTemp / 9;
+                PromSept = PromSeptTemp.ToString("0.#"); //Promedio de septiembre
+
+                double PromSeptGen = 0;
+
+                PromSeptGen = Convert.ToDouble(PromSept) + Convert.ToDouble(CalifSept[9]);
+                PromSeptGen = PromSeptGen / 2;
+                PromSeptGeneral = PromSeptGen.ToString("0.#"); //Promedio general de semptiembre
             }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifSept[i] = " ";
+                }
+            }
+            conn1.Close();
 
             //Octubre-----------------------------------------------------------------
             string CalifOct = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Octubre'";
@@ -134,14 +165,46 @@ namespace Control_Escolar
 
             MySqlDataReader myreader2 = com2.ExecuteReader();
 
-            double[] CalifOctu = new double[11];
-            int I = 0;
-            while (myreader2.Read())
-            {
-                CalifOctu[I] = Convert.ToDouble(myreader1["CalificacionMen"]);
-                I++;
-            }
+            string[] CalifOctu = new string[11];
+            string PromOct = " ";
+            string PromOctuGeneral = " ";
 
+            if (myreader2.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader2.Read())//Agrega calificaciones
+                {
+                    double[] CalifOctutemp = new double[11];
+                    CalifOctutemp[L] = Convert.ToDouble(myreader2["CalificacionMen"]);
+                    CalifOctu[L] = CalifOctutemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromOctTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromOctTemp = PromOctTemp + Convert.ToDouble(CalifOctu[i]);
+                }
+
+                PromOctTemp = PromOctTemp / 9;
+                PromOct = PromOctTemp.ToString("0.#"); //Promedio de octubre
+
+                double PromOctGen = 0;
+
+                PromOctGen = Convert.ToDouble(PromOct) + Convert.ToDouble(CalifOctu[9]);
+                PromOctGen = PromOctGen / 2;
+                PromOctuGeneral = PromOctGen.ToString("0.#"); //Promedio general de semptiembre
+            }
+            else
+            {
+
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifOctu[i] = " ";
+                }
+            }
+            conn2.Close();
             //Noviembre-----------------------------------------------------------------
             string CalifNov = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Noviembre'";
 
@@ -155,13 +218,536 @@ namespace Control_Escolar
 
             MySqlDataReader myreader3 = com3.ExecuteReader();
 
-            double[] CalifNovi = new double[11];
-            int Z = 0;
-            while (myreader3.Read())
+            string[] CalifNovi = new string[11];
+            string PromNov = " ";
+            string PromTriSen1 = " ";
+            string PromTriEsp1 = " ";
+            string PromTriMat1 = " ";
+            string PromTriIng1 = " ";
+            string PromTricn1 = " ";
+            string PromTriGeo1 = " ";
+            string PromTriHis1 = " ";
+            string PromTriCiv1 = " ";
+            string PromTriArt1 = " ";
+            string PromTriFis1 = " ";
+            string PromTriSoc1 = " ";
+            string SumaInasisTri1 = " ";
+            string NivelPromSen = " ";
+            string Nivel1 = " ";
+            string NivelMat1 = " ";
+            string NivelIng1 = " ";
+            string Nivelcn1 = " ";
+            string NivelGeo1 = " ";
+            string NivelHis1 = " ";
+            string NivelCiv1 = " ";
+            string NivelArt1 = " ";
+            string NivelFis1 = " ";
+            string NivelSoc1 = " ";
+            string PromNoviGeneral = " ";
+            string PromTriGen1 = " ";
+            string NivelGen1 = " ";
+
+            if (myreader3.HasRows) //Checa si las celdas estan vacias
             {
-                CalifNovi[Z] = Convert.ToDouble(myreader3["CalificacionMen"]);
-                Z++;
+                int L = 0;
+                while (myreader3.Read())//Agrega calificaciones
+                {
+                    double[] CalifNovitemp = new double[11];
+                    CalifNovitemp[L] = Convert.ToDouble(myreader3["CalificacionMen"]);
+                    CalifNovi[L] = CalifNovitemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromNovTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromNovTemp = PromNovTemp + Convert.ToDouble(CalifNovi[i]);
+                }
+
+                PromNovTemp = PromNovTemp / 9;
+                PromNov = PromNovTemp.ToString("0.#");//Promedio de noviembre
+
+                double PromNovGen = 0;
+
+                PromNovGen = Convert.ToDouble(PromNov) + Convert.ToDouble(CalifNovi[9]);
+                PromNovGen = PromNovGen / 2;
+                PromNoviGeneral = PromNovGen.ToString("0.#"); //Promedio general de nociembre
+
+                //------------------------------------Promedio de materias sencillas primer trimestre-------------------------------------------------
+                double PromSen31 = 0;
+
+                PromSen31 = Convert.ToDouble(PromSept) + Convert.ToDouble(PromOct) + Convert.ToDouble(PromNov);
+                PromSen31 = PromSen31 / 3;
+                PromTriSen1 = PromSen31.ToString("0.#");//Promedio del primer trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriSen1) >= 5 && Convert.ToDouble(PromTriSen1) < 6)
+                {
+                    NivelPromSen = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSen1) >= 6 && Convert.ToDouble(PromTriSen1) < 8)
+                    {
+                        NivelPromSen = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSen1) >= 8 && Convert.ToDouble(PromTriSen1) < 10)
+                        {
+                            NivelPromSen = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSen1) == 10)
+                            {
+                                NivelPromSen = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelPromSen = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Promedio General primer trimestre-------------------------------------------------
+                double PromGen31 = 0;
+
+                PromGen31 = Convert.ToDouble(PromSeptGeneral) + Convert.ToDouble(PromOctuGeneral) + Convert.ToDouble(PromNoviGeneral);
+                PromGen31 = PromGen31 / 3;
+                PromTriGen1 = PromGen31.ToString("0.#");//Promedio del primer trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriGen1) >= 5 && Convert.ToDouble(PromTriGen1) < 6)
+                {
+                    NivelGen1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGen1) >= 6 && Convert.ToDouble(PromTriGen1) < 8)
+                    {
+                        NivelGen1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGen1) >= 8 && Convert.ToDouble(PromTriGen1) < 10)
+                        {
+                            NivelGen1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGen1) == 10)
+                            {
+                                NivelGen1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGen1 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Español-------------------------------------------------
+                double PromEsp31 = 0;
+
+                PromEsp31 = Convert.ToDouble(CalifSept[0]) + Convert.ToDouble(CalifOctu[0]) + Convert.ToDouble(CalifNovi[0]);
+                PromEsp31 = PromEsp31 / 3;
+                PromTriEsp1 = PromEsp31.ToString("0.#");//Promedio del primer trimestre de español
+
+                //Asignacion del nivel del primer trimestre de español
+                if (Convert.ToDouble(PromTriEsp1) >= 5 && Convert.ToDouble(PromTriEsp1) < 6)
+                {
+                    Nivel1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriEsp1) >= 6 && Convert.ToDouble(PromTriEsp1) < 8)
+                    {
+                        Nivel1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriEsp1) >= 8 && Convert.ToDouble(PromTriEsp1) < 10)
+                        {
+                            Nivel1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriEsp1) == 10)
+                            {
+                                Nivel1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivel1 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Matematicas--------------------------------------------------------
+                double PromMat31 = 0;
+
+                PromMat31 = Convert.ToDouble(CalifSept[1]) + Convert.ToDouble(CalifOctu[1]) + Convert.ToDouble(CalifNovi[1]);
+                PromMat31 = PromMat31 / 3;
+                PromTriMat1 = PromMat31.ToString("0.#");//Promedio del primer trimestre de matematicas
+
+                //Asignacion del nivel del primer trimestre de matematicas
+                if (Convert.ToDouble(PromTriMat1) >= 5 && Convert.ToDouble(PromTriMat1) < 6)
+                {
+                    NivelMat1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriMat1) >= 6 && Convert.ToDouble(PromTriMat1) < 8)
+                    {
+                        NivelMat1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriMat1) >= 8 && Convert.ToDouble(PromTriMat1) < 10)
+                        {
+                            NivelMat1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriMat1) == 10)
+                            {
+                                NivelMat1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelMat1 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ingles-------------------------------------------------
+                double PromIng31 = 0;
+
+                PromIng31 = Convert.ToDouble(CalifSept[2]) + Convert.ToDouble(CalifOctu[2]) + Convert.ToDouble(CalifNovi[2]);
+                PromIng31 = PromIng31 / 3;
+                PromTriIng1 = PromIng31.ToString("0.#");//Promedio del primer trimestre de Ingles
+
+                //Asignacion del nivel del primer trimestre de Ingles
+                if (Convert.ToDouble(PromTriIng1) >= 5 && Convert.ToDouble(PromTriIng1) < 6)
+                {
+                    NivelIng1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriIng1) >= 6 && Convert.ToDouble(PromTriIng1) < 8)
+                    {
+                        NivelIng1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriIng1) >= 8 && Convert.ToDouble(PromTriIng1) < 10)
+                        {
+                            NivelIng1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriIng1) == 10)
+                            {
+                                NivelIng1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelIng1 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ciencias Nacturales--------------------------------------------------------
+                double Promcn31 = 0;
+
+                Promcn31 = Convert.ToDouble(CalifSept[3]) + Convert.ToDouble(CalifOctu[3]) + Convert.ToDouble(CalifNovi[3]);
+                Promcn31 = Promcn31 / 3;
+                PromTricn1 = Promcn31.ToString("0.#");//Promedio del primer trimestre de Ciencias
+
+                //Asignacion del nivel del primer trimestre de Ciencias
+                if (Convert.ToDouble(PromTricn1) >= 5 && Convert.ToDouble(PromTricn1) < 6)
+                {
+                    Nivelcn1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTricn1) >= 6 && Convert.ToDouble(PromTricn1) < 8)
+                    {
+                        Nivelcn1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTricn1) >= 8 && Convert.ToDouble(PromTricn1) < 10)
+                        {
+                            Nivelcn1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTricn1) == 10)
+                            {
+                                Nivelcn1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivelcn1 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Geografia-------------------------------------------------
+                double PromGeo31 = 0;
+
+                PromGeo31 = Convert.ToDouble(CalifSept[4]) + Convert.ToDouble(CalifOctu[4]) + Convert.ToDouble(CalifNovi[4]);
+                PromGeo31 = PromGeo31 / 3;
+                PromTriGeo1 = PromGeo31.ToString("0.#");//Promedio del primer trimestre de Geografia
+
+                //Asignacion del nivel del primer trimestre de Geografia
+                if (Convert.ToDouble(PromTriGeo1) >= 5 && Convert.ToDouble(PromTriGeo1) < 6)
+                {
+                    NivelGeo1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGeo1) >= 6 && Convert.ToDouble(PromTriGeo1) < 8)
+                    {
+                        NivelGeo1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGeo1) >= 8 && Convert.ToDouble(PromTriGeo1) < 10)
+                        {
+                            NivelGeo1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGeo1) == 10)
+                            {
+                                NivelGeo1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGeo1 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Historia--------------------------------------------------------
+                double PromHis31 = 0;
+
+                PromHis31 = Convert.ToDouble(CalifSept[5]) + Convert.ToDouble(CalifOctu[5]) + Convert.ToDouble(CalifNovi[5]);
+                PromHis31 = PromHis31 / 3;
+                PromTriHis1 = PromHis31.ToString("0.#");//Promedio del primer trimestre de Historia
+
+                //Asignacion del nivel del primer trimestre de Historia
+                if (Convert.ToDouble(PromTriHis1) >= 5 && Convert.ToDouble(PromTriHis1) < 6)
+                {
+                    NivelHis1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriHis1) >= 6 && Convert.ToDouble(PromTriHis1) < 8)
+                    {
+                        NivelHis1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriHis1) >= 8 && Convert.ToDouble(PromTriHis1) < 10)
+                        {
+                            NivelHis1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriHis1) == 10)
+                            {
+                                NivelHis1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelHis1 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Formacion Civica y etica-------------------------------------------------
+                double PromCiv31 = 0;
+
+                PromCiv31 = Convert.ToDouble(CalifSept[6]) + Convert.ToDouble(CalifOctu[6]) + Convert.ToDouble(CalifNovi[6]);
+                PromCiv31 = PromCiv31 / 3;
+                PromTriCiv1 = PromCiv31.ToString("0.#");//Promedio del primer trimestre de Formacion Civica y etica
+
+                //Asignacion del nivel del primer trimestre de Formacion Civica y etica
+                if (Convert.ToDouble(PromTriCiv1) >= 5 && Convert.ToDouble(PromTriCiv1) < 6)
+                {
+                    NivelCiv1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriCiv1) >= 6 && Convert.ToDouble(PromTriCiv1) < 8)
+                    {
+                        NivelCiv1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriCiv1) >= 8 && Convert.ToDouble(PromTriCiv1) < 10)
+                        {
+                            NivelCiv1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriCiv1) == 10)
+                            {
+                                NivelCiv1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelCiv1 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Artes--------------------------------------------------------
+                double PromArt31 = 0;
+
+                PromArt31 = Convert.ToDouble(CalifSept[7]) + Convert.ToDouble(CalifOctu[7]) + Convert.ToDouble(CalifNovi[7]);
+                PromArt31 = PromArt31 / 3;
+                PromTriArt1 = PromArt31.ToString("0.#");//Promedio del primer trimestre de Artes
+
+                //Asignacion del nivel del primer trimestre de Artes
+                if (Convert.ToDouble(PromTriArt1) >= 5 && Convert.ToDouble(PromTriArt1) < 6)
+                {
+                    NivelArt1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriArt1) >= 6 && Convert.ToDouble(PromTriArt1) < 8)
+                    {
+                        NivelArt1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriArt1) >= 8 && Convert.ToDouble(PromTriArt1) < 10)
+                        {
+                            NivelArt1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriArt1) == 10)
+                            {
+                                NivelArt1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelArt1 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ed. Fisica-------------------------------------------------
+                double PromFis31 = 0;
+
+                PromFis31 = Convert.ToDouble(CalifSept[8]) + Convert.ToDouble(CalifOctu[8]) + Convert.ToDouble(CalifNovi[8]);
+                PromFis31 = PromFis31 / 3;
+                PromTriFis1 = PromFis31.ToString("0.#");//Promedio del primer trimestre de Ed. Fisica
+
+                //Asignacion del nivel del primer trimestre de Ed. Fisica
+                if (Convert.ToDouble(PromTriFis1) >= 5 && Convert.ToDouble(PromTriFis1) < 6)
+                {
+                    NivelFis1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriFis1) >= 6 && Convert.ToDouble(PromTriFis1) < 8)
+                    {
+                        NivelFis1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriFis1) >= 8 && Convert.ToDouble(PromTriFis1) < 10)
+                        {
+                            NivelFis1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriFis1) == 10)
+                            {
+                                NivelFis1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelFis1 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ed. Socioemocional--------------------------------------------------------
+                double PromSoc31 = 0;
+
+                PromSoc31 = Convert.ToDouble(CalifSept[9]) + Convert.ToDouble(CalifOctu[9]) + Convert.ToDouble(CalifNovi[9]);
+                PromSoc31 = PromSoc31 / 3;
+                PromTriSoc1 = PromSoc31.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
+
+                //Asignacion del nivel del primer trimestre de Ed. Socioemocional
+                if (Convert.ToDouble(PromTriSoc1) >= 5 && Convert.ToDouble(PromTriSoc1) < 6)
+                {
+                    NivelSoc1 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSoc1) >= 6 && Convert.ToDouble(PromTriSoc1) < 8)
+                    {
+                        NivelSoc1 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSoc1) >= 8 && Convert.ToDouble(PromTriSoc1) < 10)
+                        {
+                            NivelSoc1 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSoc1) == 10)
+                            {
+                                NivelSoc1 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelSoc1 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Inasistencias----------------------------------------------------
+                double SumaInasis31 = 0;
+
+                SumaInasis31 = Convert.ToDouble(CalifSept[10]) + Convert.ToDouble(CalifOctu[10]) + Convert.ToDouble(CalifNovi[10]);
+                SumaInasisTri1 = SumaInasis31.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
             }
+            else
+            {
+
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifNovi[i] = " ";
+                }
+            }
+            conn3.Close();
 
             //Diciembre-----------------------------------------------------------------
             string CalifDic = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Diciembre'";
@@ -176,14 +762,46 @@ namespace Control_Escolar
 
             MySqlDataReader myreader4 = com4.ExecuteReader();
 
-            double[] CalifDici = new double[11];
-            int E = 0;
-            while (myreader4.Read())
-            {
-                CalifDici[E] = Convert.ToDouble(myreader4["CalificacionMen"]);
-                E++;
-            }
+            string[] CalifDici = new string[11];
+            string PromDic = " ";
+            string PromDiciGeneral = " ";
 
+            if (myreader4.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader4.Read())//Agrega calificaciones
+                {
+                    double[] CalifDicitemp = new double[11];
+                    CalifDicitemp[L] = Convert.ToDouble(myreader4["CalificacionMen"]);
+                    CalifDici[L] = CalifDicitemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromDicTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromDicTemp = PromDicTemp + Convert.ToDouble(CalifDici[i]);
+                }
+
+                PromDicTemp = PromDicTemp / 9;
+                PromDic = PromDicTemp.ToString("0.#");//Promedio de diciembre
+
+                double PromDiciGen = 0;
+
+                PromDiciGen = Convert.ToDouble(PromDic) + Convert.ToDouble(CalifDici[9]);
+                PromDiciGen = PromDiciGen / 2;
+                PromDiciGeneral = PromDiciGen.ToString("0.#"); //Promedio general de diciembre
+            }
+            else
+            {
+
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifDici[i] = " ";
+                }
+            }
+            conn4.Close();
             //Enero-----------------------------------------------------------------
             string CalifEne = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Enero'";
 
@@ -197,13 +815,46 @@ namespace Control_Escolar
 
             MySqlDataReader myreader5 = com5.ExecuteReader();
 
-            double[] CalifEner = new double[11];
-            int T = 0;
-            while (myreader5.Read())
+            string[] CalifEner = new string[11];
+            string PromEne = " ";
+            string PromEnerGeneral = " ";
+
+            if (myreader5.HasRows) //Checa si las celdas estan vacias
             {
-                CalifEner[T] = Convert.ToDouble(myreader5["CalificacionMen"]);
-                T++;
+                int L = 0;
+                while (myreader5.Read())//Agrega calificaciones
+                {
+                    double[] CalifEnertemp = new double[11];
+                    CalifEnertemp[L] = Convert.ToDouble(myreader5["CalificacionMen"]);
+                    CalifEner[L] = CalifEnertemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromEneTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromEneTemp = PromEneTemp + Convert.ToDouble(CalifEner[i]);
+                }
+
+                PromEneTemp = PromEneTemp / 9;
+                PromEne = PromEneTemp.ToString("0.#");//Promedio de enero
+
+                double PromEnerGen = 0;
+
+                PromEnerGen = Convert.ToDouble(PromEne) + Convert.ToDouble(CalifEner[9]);
+                PromEnerGen = PromEnerGen / 2;
+                PromEnerGeneral = PromEnerGen.ToString("0.#"); //Promedio general de enero
             }
+            else
+            {
+
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifEner[i] = " ";
+                }
+            }
+            conn5.Close();
 
             //Febrero-----------------------------------------------------------------
             string CalifFeb = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Febrero'";
@@ -218,14 +869,534 @@ namespace Control_Escolar
 
             MySqlDataReader myreader6 = com6.ExecuteReader();
 
-            double[] CalifFebr = new double[11];
-            int H = 0;
-            while (myreader6.Read())
-            {
-                CalifFebr[H] = Convert.ToDouble(myreader6["CalificacionMen"]);
-                H++;
-            }
+            string[] CalifFebr = new string[11];
+            string PromFeb = " ";
+            string PromTriEsp2 = " ";
+            string PromTriMat2 = " ";
+            string PromTriIng2 = " ";
+            string PromTricn2 = " ";
+            string PromTriGeo2 = " ";
+            string PromTriHis2 = " ";
+            string PromTriCiv2 = " ";
+            string PromTriArt2 = " ";
+            string PromTriFis2 = " ";
+            string PromTriSoc2 = " ";
+            string PromTriSen2 = " ";
+            string SumaInasisTri2 = " ";
+            string Nivel2 = " ";
+            string NivelMat2 = " ";
+            string NivelIng2 = " ";
+            string Nivelcn2 = " ";
+            string NivelGeo2 = " ";
+            string NivelHis2 = " ";
+            string NivelCiv2 = " ";
+            string NivelArt2 = " ";
+            string NivelFis2 = " ";
+            string NivelSoc2 = " ";
+            string NivelPromSen2 = " ";
+            string PromFebrGeneral = " ";
+            string PromTriGen2 = " ";
+            string NivelGen2 = " ";
 
+            if (myreader6.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader6.Read())//Agrega calificaciones
+                {
+                    double[] CalifFebrtemp = new double[11];
+                    CalifFebrtemp[L] = Convert.ToDouble(myreader6["CalificacionMen"]);
+                    CalifFebr[L] = CalifFebrtemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromFebTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromFebTemp = PromFebTemp + Convert.ToDouble(CalifFebr[i]);
+                }
+
+                PromFebTemp = PromFebTemp / 9;
+                PromFeb = PromFebTemp.ToString("0.#");//Promedio de febrero
+
+                double PromFebrGen = 0;
+
+                PromFebrGen = Convert.ToDouble(PromFeb) + Convert.ToDouble(CalifFebr[9]);
+                PromFebrGen = PromFebrGen / 2;
+                PromFebrGeneral = PromFebrGen.ToString("0.#"); //Promedio general de febrero
+
+                //------------------------------------Promedio de materias sencillas segundo trimestre-------------------------------------------------
+                double PromSen32 = 0;
+
+                PromSen32 = Convert.ToDouble(PromEne) + Convert.ToDouble(PromDic) + Convert.ToDouble(PromFeb);
+                PromSen32 = PromSen32 / 3;
+                PromTriSen2 = PromSen32.ToString("0.#");//Promedio del segundo trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriSen1) >= 5 && Convert.ToDouble(PromTriSen1) < 6)
+                {
+                    NivelPromSen2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSen1) >= 6 && Convert.ToDouble(PromTriSen1) < 8)
+                    {
+                        NivelPromSen2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSen1) >= 8 && Convert.ToDouble(PromTriSen1) < 10)
+                        {
+                            NivelPromSen2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSen1) == 10)
+                            {
+                                NivelPromSen2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelPromSen2 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Promedio General segundo trimestre-------------------------------------------------
+                double PromGen32 = 0;
+
+                PromGen32 = Convert.ToDouble(PromDiciGeneral) + Convert.ToDouble(PromEnerGeneral) + Convert.ToDouble(PromFebrGeneral);
+                PromGen32 = PromGen32 / 3;
+                PromTriGen2 = PromGen32.ToString("0.#");//Promedio del primer trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriGen2) >= 5 && Convert.ToDouble(PromTriGen2) < 6)
+                {
+                    NivelGen2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGen2) >= 6 && Convert.ToDouble(PromTriGen2) < 8)
+                    {
+                        NivelGen2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGen2) >= 8 && Convert.ToDouble(PromTriGen2) < 10)
+                        {
+                            NivelGen2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGen2) == 10)
+                            {
+                                NivelGen2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGen2 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Español-------------------------------------------------
+                double PromEsp32 = 0;
+
+                PromEsp32 = Convert.ToDouble(CalifDici[0]) + Convert.ToDouble(CalifEner[0]) + Convert.ToDouble(CalifFebr[0]);
+                PromEsp32 = PromEsp32 / 3;
+                PromTriEsp2 = PromEsp32.ToString("0.#");//Promedio del primer trimestre de español
+
+                //Asignacion del nivel del primer trimestre de español
+                if (Convert.ToDouble(PromTriEsp2) >= 5 && Convert.ToDouble(PromTriEsp2) < 6)
+                {
+                    Nivel2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriEsp2) >= 6 && Convert.ToDouble(PromTriEsp2) < 8)
+                    {
+                        Nivel2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriEsp2) >= 8 && Convert.ToDouble(PromTriEsp2) < 10)
+                        {
+                            Nivel2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriEsp2) == 10)
+                            {
+                                Nivel2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivel2 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Matematicas--------------------------------------------------------
+                double PromMat32 = 0;
+
+                PromMat32 = Convert.ToDouble(CalifDici[1]) + Convert.ToDouble(CalifEner[1]) + Convert.ToDouble(CalifFebr[1]);
+                PromMat32 = PromMat32 / 3;
+                PromTriMat2 = PromMat32.ToString("0.#");//Promedio del primer trimestre de matematicas
+
+                //Asignacion del nivel del primer trimestre de matematicas
+                if (Convert.ToDouble(PromTriMat2) >= 5 && Convert.ToDouble(PromTriMat2) < 6)
+                {
+                    NivelMat2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriMat2) >= 6 && Convert.ToDouble(PromTriMat2) < 8)
+                    {
+                        NivelMat2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriMat2) >= 8 && Convert.ToDouble(PromTriMat2) < 10)
+                        {
+                            NivelMat2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriMat2) == 10)
+                            {
+                                NivelMat2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelMat2 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ingles-------------------------------------------------
+                double PromIng32 = 0;
+
+                PromIng32 = Convert.ToDouble(CalifDici[2]) + Convert.ToDouble(CalifEner[2]) + Convert.ToDouble(CalifFebr[2]);
+                PromIng32 = PromIng32 / 3;
+                PromTriIng2 = PromIng32.ToString("0.#");//Promedio del primer trimestre de Ingles
+
+                //Asignacion del nivel del primer trimestre de Ingles
+                if (Convert.ToDouble(PromTriIng2) >= 5 && Convert.ToDouble(PromTriIng2) < 6)
+                {
+                    NivelIng2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriIng2) >= 6 && Convert.ToDouble(PromTriIng2) < 8)
+                    {
+                        NivelIng2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriIng2) >= 8 && Convert.ToDouble(PromTriIng2) < 10)
+                        {
+                            NivelIng2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriIng2) == 10)
+                            {
+                                NivelIng2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelIng2 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ciencias Nacturales--------------------------------------------------------
+                double Promcn32 = 0;
+
+                Promcn32 = Convert.ToDouble(CalifDici[3]) + Convert.ToDouble(CalifEner[3]) + Convert.ToDouble(CalifFebr[3]);
+                Promcn32 = Promcn32 / 3;
+                PromTricn2 = Promcn32.ToString("0.#");//Promedio del primer trimestre de Ciencias
+
+                //Asignacion del nivel del primer trimestre de Ciencias
+                if (Convert.ToDouble(PromTricn2) >= 5 && Convert.ToDouble(PromTricn2) < 6)
+                {
+                    Nivelcn2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTricn2) >= 6 && Convert.ToDouble(PromTricn2) < 8)
+                    {
+                        Nivelcn2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTricn2) >= 8 && Convert.ToDouble(PromTricn2) < 10)
+                        {
+                            Nivelcn2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTricn2) == 10)
+                            {
+                                Nivelcn2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivelcn2 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Geografia-------------------------------------------------
+                double PromGeo32 = 0;
+
+                PromGeo32 = Convert.ToDouble(CalifDici[4]) + Convert.ToDouble(CalifEner[4]) + Convert.ToDouble(CalifFebr[4]);
+                PromGeo32 = PromGeo32 / 3;
+                PromTriGeo2 = PromGeo32.ToString("0.#");//Promedio del primer trimestre de Geografia
+
+                //Asignacion del nivel del primer trimestre de Geografia
+                if (Convert.ToDouble(PromTriGeo2) >= 5 && Convert.ToDouble(PromTriGeo2) < 6)
+                {
+                    NivelGeo2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGeo2) >= 6 && Convert.ToDouble(PromTriGeo2) < 8)
+                    {
+                        NivelGeo2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGeo2) >= 8 && Convert.ToDouble(PromTriGeo2) < 10)
+                        {
+                            NivelGeo2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGeo2) == 10)
+                            {
+                                NivelGeo2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGeo2 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Historia--------------------------------------------------------
+                double PromHis32 = 0;
+
+                PromHis32 = Convert.ToDouble(CalifDici[5]) + Convert.ToDouble(CalifEner[5]) + Convert.ToDouble(CalifFebr[5]);
+                PromHis32 = PromHis32 / 3;
+                PromTriHis2 = PromHis32.ToString("0.#");//Promedio del primer trimestre de Historia
+
+                //Asignacion del nivel del primer trimestre de Historia
+                if (Convert.ToDouble(PromTriHis2) >= 5 && Convert.ToDouble(PromTriHis2) < 6)
+                {
+                    NivelHis2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriHis2) >= 6 && Convert.ToDouble(PromTriHis2) < 8)
+                    {
+                        NivelHis2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriHis2) >= 8 && Convert.ToDouble(PromTriHis2) < 10)
+                        {
+                            NivelHis2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriHis2) == 10)
+                            {
+                                NivelHis2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelHis2 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Formacion Civica y etica-------------------------------------------------
+                double PromCiv32 = 0;
+
+                PromCiv32 = Convert.ToDouble(CalifDici[6]) + Convert.ToDouble(CalifEner[6]) + Convert.ToDouble(CalifFebr[6]);
+                PromCiv32 = PromCiv32 / 3;
+                PromTriCiv2 = PromCiv32.ToString("0.#");//Promedio del primer trimestre de Formacion Civica y etica
+
+                //Asignacion del nivel del primer trimestre de Formacion Civica y etica
+                if (Convert.ToDouble(PromTriCiv2) >= 5 && Convert.ToDouble(PromTriCiv2) < 6)
+                {
+                    NivelCiv2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriCiv2) >= 6 && Convert.ToDouble(PromTriCiv2) < 8)
+                    {
+                        NivelCiv2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriCiv2) >= 8 && Convert.ToDouble(PromTriCiv2) < 10)
+                        {
+                            NivelCiv2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriCiv2) == 10)
+                            {
+                                NivelCiv2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelCiv2 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Artes--------------------------------------------------------
+                double PromArt32 = 0;
+
+                PromArt32 = Convert.ToDouble(CalifDici[7]) + Convert.ToDouble(CalifEner[7]) + Convert.ToDouble(CalifFebr[7]);
+                PromArt32 = PromArt32 / 3;
+                PromTriArt2 = PromArt32.ToString("0.#");//Promedio del primer trimestre de Artes
+
+                //Asignacion del nivel del primer trimestre de Artes
+                if (Convert.ToDouble(PromTriArt2) >= 5 && Convert.ToDouble(PromTriArt2) < 6)
+                {
+                    NivelArt2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriArt2) >= 6 && Convert.ToDouble(PromTriArt2) < 8)
+                    {
+                        NivelArt2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriArt2) >= 8 && Convert.ToDouble(PromTriArt2) < 10)
+                        {
+                            NivelArt2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriArt2) == 10)
+                            {
+                                NivelArt2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelArt2 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ed. Fisica-------------------------------------------------
+                double PromFis32 = 0;
+
+                PromFis32 = Convert.ToDouble(CalifDici[8]) + Convert.ToDouble(CalifEner[8]) + Convert.ToDouble(CalifFebr[8]);
+                PromFis32 = PromFis32 / 3;
+                PromTriFis2 = PromFis32.ToString("0.#");//Promedio del primer trimestre de Ed. Fisica
+
+                //Asignacion del nivel del primer trimestre de Ed. Fisica
+                if (Convert.ToDouble(PromTriFis2) >= 5 && Convert.ToDouble(PromTriFis2) < 6)
+                {
+                    NivelFis2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriFis2) >= 6 && Convert.ToDouble(PromTriFis2) < 8)
+                    {
+                        NivelFis2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriFis2) >= 8 && Convert.ToDouble(PromTriFis2) < 10)
+                        {
+                            NivelFis2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriFis2) == 10)
+                            {
+                                NivelFis2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelFis2 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ed. Socioemocional--------------------------------------------------------
+                double PromSoc32 = 0;
+
+                PromSoc32 = Convert.ToDouble(CalifDici[9]) + Convert.ToDouble(CalifEner[9]) + Convert.ToDouble(CalifFebr[9]);
+                PromSoc32 = PromSoc32 / 3;
+                PromTriSoc2 = PromSoc32.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
+
+                //Asignacion del nivel del primer trimestre de Ed. Socioemocional
+                if (Convert.ToDouble(PromTriSoc2) >= 5 && Convert.ToDouble(PromTriSoc2) < 6)
+                {
+                    NivelSoc2 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSoc2) >= 6 && Convert.ToDouble(PromTriSoc2) < 8)
+                    {
+                        NivelSoc2 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSoc2) >= 8 && Convert.ToDouble(PromTriSoc2) < 10)
+                        {
+                            NivelSoc2 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSoc2) == 10)
+                            {
+                                NivelSoc2 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelSoc2 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //-----------------------------Inasistencia-----------------------------------------------------
+                double SumaInasis32 = 0;
+
+                SumaInasis32 = Convert.ToDouble(CalifDici[10]) + Convert.ToDouble(CalifEner[10]) + Convert.ToDouble(CalifFebr[10]);
+                SumaInasisTri2 = SumaInasis32.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
+            }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifFebr[i] = " ";
+                }
+            }
+            conn6.Close();
             //Marzo-----------------------------------------------------------------
             string CalifMar = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Marzo'";
 
@@ -239,14 +1410,46 @@ namespace Control_Escolar
 
             MySqlDataReader myreader7 = com7.ExecuteReader();
 
-            double[] CalifMarz = new double[11];
-            int B = 0;
-            while (myreader7.Read())
-            {
-                CalifMarz[B] = Convert.ToDouble(myreader7["CalificacionMen"]);
-                B++;
-            }
+            string[] CalifMarz = new string[11];
+            string PromMar = " ";
+            string PromMarzGeneral = " ";
 
+            if (myreader7.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader7.Read())//Agrega calificaciones
+                {
+                    double[] CalifMarztemp = new double[11];
+                    CalifMarztemp[L] = Convert.ToDouble(myreader7["CalificacionMen"]);
+                    CalifMarz[L] = CalifMarztemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromMarTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromMarTemp = PromMarTemp + Convert.ToDouble(CalifMarz[i]);
+                }
+
+                PromMarTemp = PromMarTemp / 9;
+                PromMar = PromMarTemp.ToString("0.#");//Promedio de  marzo
+
+                double PromMarzGen = 0;
+
+                PromMarzGen = Convert.ToDouble(PromMar) + Convert.ToDouble(CalifMarz[9]);
+                PromMarzGen = PromMarzGen / 2;
+                PromMarzGeneral = PromMarzGen.ToString("0.#"); //Promedio general de marzo
+
+            }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifMarz[i] = " ";
+                }
+            }
+            conn7.Close();
             //Abril-----------------------------------------------------------------
             string CalifAbr = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Abril'";
 
@@ -260,14 +1463,46 @@ namespace Control_Escolar
 
             MySqlDataReader myreader8 = com8.ExecuteReader();
 
-            double[] CalifAbri = new double[11];
-            int R = 0;
-            while (myreader8.Read())
-            {
-                CalifAbri[R] = Convert.ToDouble(myreader8["CalificacionMen"]);
-                R++;
-            }
+            string[] CalifAbri = new string[11];
+            string PromAbr = " ";
+            string PromAbriGeneral = " ";
 
+            if (myreader8.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader8.Read())//Agrega calificaciones
+                {
+                    double[] CalifAbritemp = new double[11];
+                    CalifAbritemp[L] = Convert.ToDouble(myreader8["CalificacionMen"]);
+                    CalifAbri[L] = CalifAbritemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromAbrTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromAbrTemp = PromAbrTemp + Convert.ToDouble(CalifAbri[i]);
+                }
+
+                PromAbrTemp = PromAbrTemp / 9;
+                PromAbr = PromAbrTemp.ToString("0.#");//Promedio de abril
+
+                double PromAbriGen = 0;
+
+                PromAbriGen = Convert.ToDouble(PromAbr) + Convert.ToDouble(CalifAbri[9]);
+                PromAbriGen = PromAbriGen / 2;
+                PromAbriGeneral = PromAbriGen.ToString("0.#"); //Promedio general de abril
+
+            }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifAbri[i] = " ";
+                }
+            }
+            conn8.Close();
             //Mayo-----------------------------------------------------------------
             string CalifMay = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Mayo'";
 
@@ -281,14 +1516,45 @@ namespace Control_Escolar
 
             MySqlDataReader myreader9 = com9.ExecuteReader();
 
-            double[] CalifMayo = new double[11];
-            int Y = 0;
-            while (myreader9.Read())
-            {
-                CalifMayo[Y] = Convert.ToDouble(myreader9["CalificacionMen"]);
-                Y++;
-            }
+            string[] CalifMayo = new string[11];
+            string PromMay = " ";
+            string PromMayoGeneral = " ";
 
+            if (myreader9.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader9.Read())//Agrega calificaciones
+                {
+                    double[] CalifMayotemp = new double[11];
+                    CalifMayotemp[L] = Convert.ToDouble(myreader9["CalificacionMen"]);
+                    CalifMayo[L] = CalifMayotemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromMayTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromMayTemp = PromMayTemp + Convert.ToDouble(CalifMayo[i]);
+                }
+
+                PromMayTemp = PromMayTemp / 9;
+                PromMay = PromMayTemp.ToString("0.#");//Promedio de mayo
+
+                double PromMayoGen = 0;
+
+                PromMayoGen = Convert.ToDouble(PromMay) + Convert.ToDouble(CalifMayo[9]);
+                PromMayoGen = PromMayoGen / 2;
+                PromMayoGeneral = PromMayoGen.ToString("0.#"); //Promedio general de mayo
+            }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifMayo[i] = " ";
+                }
+            }
+            conn9.Close();
             //Junio-----------------------------------------------------------------
             string CalifJun = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Junio'";
 
@@ -302,14 +1568,1029 @@ namespace Control_Escolar
 
             MySqlDataReader myreader10 = com10.ExecuteReader();
 
-            double[] CalifJuni = new double[11];
-            int A = 0;
-            while (myreader10.Read())
-            {
-                CalifJuni[A] = Convert.ToDouble(myreader10["CalificacionMen"]);
-                A++;
-            }
+            string[] CalifJuni = new string[11];
+            string PromJun = " ";
+            string PromTriEsp3 = " ";
+            string PromTriMat3 = " ";
+            string PromTriIng3 = " ";
+            string PromTricn3 = " ";
+            string PromTriGeo3 = " ";
+            string PromTriHis3 = " ";
+            string PromTriCiv3 = " ";
+            string PromTriArt3 = " ";
+            string PromTriFis3 = " ";
+            string PromTriSoc3 = " ";
+            string SumaInasisTri3 = " ";
+            string Nivel3 = " ";
+            string NivelMat3 = " ";
+            string NivelIng3 = " ";
+            string Nivelcn3 = " ";
+            string NivelGeo3 = " ";
+            string NivelHis3 = " ";
+            string NivelCiv3 = " ";
+            string NivelArt3 = " ";
+            string NivelFis3 = " ";
+            string NivelSoc3 = " ";
+            string PromTriGen3 = " ";
+            string NivelGen3 = " ";
+            string PromFinTriEsp = " ";
+            string NivelFin = " ";
+            string PromFinTriMat = " ";
+            string NivelMatFin = " ";
+            string PromFinTriIng = " ";
+            string NivelIngFin = " ";
+            string PromFinTricn = " ";
+            string NivelcnFin = " ";
+            string PromFinTriGeo = " ";
+            string NivelGeoFin = " ";
+            string PromFinTriHis = " ";
+            string NivelHisFin = " ";
+            string PromFinTriCiv = " ";
+            string NivelCivFin = " ";
+            string PromFinTriArt = " ";
+            string NivelArtFin = " ";
+            string PromFinTriFis = " ";
+            string NivelFisFin = " ";
+            string PromFinTriSoc = " ";
+            string NivelSocFin = " ";
+            string PromTriSen3 = " ";
+            string NivelPromSen3 = " ";
+            string PromTriSenFin = " ";
+            string NivelPromSenFin = " ";
+            string PromTriGenFin = " ";
+            string NivelGenFin = " ";
+            string SumInasisTriFin = " ";
 
+            string PromJuniGeneral = " ";
+
+            if (myreader10.HasRows) //Checa si las celdas estan vacias
+            {
+                int L = 0;
+                while (myreader10.Read())//Agrega calificaciones
+                {
+                    double[] CalifJunitemp = new double[11];
+                    CalifJunitemp[L] = Convert.ToDouble(myreader10["CalificacionMen"]);
+                    CalifJuni[L] = CalifJunitemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromJunTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromJunTemp = PromJunTemp + Convert.ToDouble(CalifJuni[i]);
+                }
+
+                PromJunTemp = PromJunTemp / 9;
+                PromJun = PromJunTemp.ToString("0.#");//Promedio de junio
+
+                double PromJuniGen = 0;
+
+                PromJuniGen = Convert.ToDouble(PromJun) + Convert.ToDouble(CalifJuni[9]);
+                PromJuniGen = PromJuniGen / 2;
+                PromJuniGeneral = PromJuniGen.ToString("0.#"); //Promedio general de junio
+
+                //------------------------------------Promedio de materias sencillas segundo trimestre-------------------------------------------------
+                double PromSen33 = 0;
+
+                PromSen33 = Convert.ToDouble(PromMar) + Convert.ToDouble(PromAbr) + Convert.ToDouble(PromMay) + Convert.ToDouble(PromJun);
+                PromSen33 = PromSen33 / 4;
+                PromTriSen3 = PromSen33.ToString("0.#");//Promedio del segundo trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriSen3) >= 5 && Convert.ToDouble(PromTriSen3) < 6)
+                {
+                    NivelPromSen3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSen3) >= 6 && Convert.ToDouble(PromTriSen3) < 8)
+                    {
+                        NivelPromSen3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSen3) >= 8 && Convert.ToDouble(PromTriSen3) < 10)
+                        {
+                            NivelPromSen3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSen3) == 10)
+                            {
+                                NivelPromSen3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelPromSen3 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Promedio General tercer trimestre-------------------------------------------------
+                double PromGen33 = 0;
+
+                PromGen33 = Convert.ToDouble(PromMarzGeneral) + Convert.ToDouble(PromAbriGeneral) + Convert.ToDouble(PromMayoGeneral) + Convert.ToDouble(PromJuniGeneral);
+                PromGen33 = PromGen33 / 4;
+                PromTriGen3 = PromGen33.ToString("0.#");//Promedio del primer trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriGen3) >= 5 && Convert.ToDouble(PromTriGen3) < 6)
+                {
+                    NivelGen3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGen3) >= 6 && Convert.ToDouble(PromTriGen3) < 8)
+                    {
+                        NivelGen3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGen3) >= 8 && Convert.ToDouble(PromTriGen3) < 10)
+                        {
+                            NivelGen3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGen3) == 10)
+                            {
+                                NivelGen3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGen3 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Español-------------------------------------------------
+
+                double PromEsp33 = 0;
+
+                PromEsp33 = Convert.ToDouble(CalifMarz[0]) + Convert.ToDouble(CalifAbri[0]) + Convert.ToDouble(CalifMayo[0]) + Convert.ToDouble(CalifJuni[0]);
+                PromEsp33 = PromEsp33 / 4;
+                PromTriEsp3 = PromEsp33.ToString("0.#");//Promedio del tercer trimestre de español
+
+                //Asignacion del nivel del tercer trimestre de español
+                if (Convert.ToDouble(PromTriEsp3) >= 5 && Convert.ToDouble(PromTriEsp3) < 6)
+                {
+                    Nivel3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriEsp3) >= 6 && Convert.ToDouble(PromTriEsp3) < 8)
+                    {
+                        Nivel3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriEsp3) >= 8 && Convert.ToDouble(PromTriEsp3) < 10)
+                        {
+                            Nivel3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriEsp3) == 10)
+                            {
+                                Nivel3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivel3 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //-------------------------------------Matematicas--------------------------------------------------------
+                double PromMat33 = 0;
+
+                PromMat33 = Convert.ToDouble(CalifMarz[1]) + Convert.ToDouble(CalifAbri[1]) + Convert.ToDouble(CalifMayo[1]) + Convert.ToDouble(CalifJuni[1]);
+                PromMat33 = PromMat33 / 4;
+                PromTriMat3 = PromMat33.ToString("0.#");//Promedio del primer trimestre de matematicas
+
+                //Asignacion del nivel del primer trimestre de matematicas
+                if (Convert.ToDouble(PromTriMat3) >= 5 && Convert.ToDouble(PromTriMat3) < 6)
+                {
+                    NivelMat3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriMat3) >= 6 && Convert.ToDouble(PromTriMat3) < 8)
+                    {
+                        NivelMat3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriMat3) >= 8 && Convert.ToDouble(PromTriMat3) < 10)
+                        {
+                            NivelMat3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriMat3) == 10)
+                            {
+                                NivelMat3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelMat3 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ingles-------------------------------------------------
+                double PromIng33 = 0;
+
+                PromIng33 = Convert.ToDouble(CalifMarz[2]) + Convert.ToDouble(CalifAbri[2]) + Convert.ToDouble(CalifMayo[2]) + Convert.ToDouble(CalifJuni[2]);
+                PromIng33 = PromIng33 / 4;
+                PromTriIng3 = PromIng33.ToString("0.#");//Promedio del tercer trimestre de Ingles
+
+                //Asignacion del nivel del tercer trimestre de Ingles
+                if (Convert.ToDouble(PromTriIng3) >= 5 && Convert.ToDouble(PromTriIng3) < 6)
+                {
+                    NivelIng3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriIng3) >= 6 && Convert.ToDouble(PromTriIng3) < 8)
+                    {
+                        NivelIng3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriIng3) >= 8 && Convert.ToDouble(PromTriIng3) < 10)
+                        {
+                            NivelIng3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriIng3) == 10)
+                            {
+                                NivelIng3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelIng3 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ciencias Nacturales--------------------------------------------------------
+                double Promcn33 = 0;
+
+                Promcn33 = Convert.ToDouble(CalifMarz[3]) + Convert.ToDouble(CalifAbri[3]) + Convert.ToDouble(CalifMayo[3]) + Convert.ToDouble(CalifJuni[3]);
+                Promcn33 = Promcn33 / 4;
+                PromTricn3 = Promcn33.ToString("0.#");//Promedio del tercer trimestre de Ciencias
+
+                //Asignacion del nivel del tercer trimestre de Ciencias
+                if (Convert.ToDouble(PromTricn3) >= 5 && Convert.ToDouble(PromTricn3) < 6)
+                {
+                    Nivelcn3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTricn3) >= 6 && Convert.ToDouble(PromTricn3) < 8)
+                    {
+                        Nivelcn3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTricn3) >= 8 && Convert.ToDouble(PromTricn3) < 10)
+                        {
+                            Nivelcn3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTricn3) == 10)
+                            {
+                                Nivelcn3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                Nivelcn3 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Geografia-------------------------------------------------
+                double PromGeo33 = 0;
+
+                PromGeo33 = Convert.ToDouble(CalifMarz[4]) + Convert.ToDouble(CalifAbri[4]) + Convert.ToDouble(CalifMayo[4]) + Convert.ToDouble(CalifJuni[4]);
+                PromGeo33 = PromGeo33 / 4;
+                PromTriGeo3 = PromGeo33.ToString("0.#");//Promedio del tercer trimestre de Geografia
+
+                //Asignacion del nivel del tercer trimestre de Geografia
+                if (Convert.ToDouble(PromTriGeo3) >= 5 && Convert.ToDouble(PromTriGeo3) < 6)
+                {
+                    NivelGeo3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGeo3) >= 6 && Convert.ToDouble(PromTriGeo3) < 8)
+                    {
+                        NivelGeo3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGeo3) >= 8 && Convert.ToDouble(PromTriGeo3) < 10)
+                        {
+                            NivelGeo3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGeo3) == 10)
+                            {
+                                NivelGeo3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGeo3 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Historia--------------------------------------------------------
+                double PromHis33 = 0;
+
+                PromHis33 = Convert.ToDouble(CalifMarz[5]) + Convert.ToDouble(CalifAbri[5]) + Convert.ToDouble(CalifMayo[5]) + Convert.ToDouble(CalifJuni[5]);
+                PromHis33 = PromHis33 / 4;
+                PromTriHis3 = PromHis33.ToString("0.#");//Promedio del tercer trimestre de Historia
+
+                //Asignacion del nivel del tercer trimestre de Historia
+                if (Convert.ToDouble(PromTriHis3) >= 5 && Convert.ToDouble(PromTriHis3) < 6)
+                {
+                    NivelHis3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriHis3) >= 6 && Convert.ToDouble(PromTriHis3) < 8)
+                    {
+                        NivelHis3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriHis3) >= 8 && Convert.ToDouble(PromTriHis3) < 10)
+                        {
+                            NivelHis3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriHis3) == 10)
+                            {
+                                NivelHis3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelHis3 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Formacion Civica y etica-------------------------------------------------
+                double PromCiv33 = 0;
+
+                PromCiv33 = Convert.ToDouble(CalifMarz[6]) + Convert.ToDouble(CalifAbri[6]) + Convert.ToDouble(CalifMayo[6]) + Convert.ToDouble(CalifJuni[6]);
+                PromCiv33 = PromCiv33 / 4;
+                PromTriCiv3 = PromCiv33.ToString("0.#");//Promedio del tercer trimestre de Formacion Civica y etica
+
+                //Asignacion del nivel del tercer trimestre de Formacion Civica y etica
+                if (Convert.ToDouble(PromTriCiv3) >= 5 && Convert.ToDouble(PromTriCiv3) < 6)
+                {
+                    NivelCiv3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriCiv3) >= 6 && Convert.ToDouble(PromTriCiv3) < 8)
+                    {
+                        NivelCiv3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriCiv3) >= 8 && Convert.ToDouble(PromTriCiv3) < 10)
+                        {
+                            NivelCiv3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriCiv3) == 10)
+                            {
+                                NivelCiv3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelCiv3 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Artes--------------------------------------------------------
+                double PromArt33 = 0;
+
+                PromArt33 = Convert.ToDouble(CalifMarz[7]) + Convert.ToDouble(CalifAbri[7]) + Convert.ToDouble(CalifMayo[7]) + Convert.ToDouble(CalifJuni[7]);
+                PromArt33 = PromArt33 / 4;
+                PromTriArt3 = PromArt33.ToString("0.#");//Promedio del tercer trimestre de Artes
+
+                //Asignacion del nivel del tercer trimestre de Artes
+                if (Convert.ToDouble(PromTriArt3) >= 5 && Convert.ToDouble(PromTriArt3) < 6)
+                {
+                    NivelArt3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriArt3) >= 6 && Convert.ToDouble(PromTriArt3) < 8)
+                    {
+                        NivelArt3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriArt3) >= 8 && Convert.ToDouble(PromTriArt3) < 10)
+                        {
+                            NivelArt3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriArt3) == 10)
+                            {
+                                NivelArt3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelArt3 = " ";
+                            }
+                        }
+                    }
+                }
+                //------------------------------------Ed. Fisica-------------------------------------------------
+                double PromFis33 = 0;
+
+                PromFis33 = Convert.ToDouble(CalifMarz[8]) + Convert.ToDouble(CalifAbri[8]) + Convert.ToDouble(CalifMayo[8]) + Convert.ToDouble(CalifJuni[8]);
+                PromFis33 = PromFis33 / 4;
+                PromTriFis3 = PromFis33.ToString("0.#");//Promedio del tercer trimestre de Ed. Fisica
+
+                //Asignacion del nivel del tercer trimestre de Ed. Fisica
+                if (Convert.ToDouble(PromTriFis3) >= 5 && Convert.ToDouble(PromTriFis3) < 6)
+                {
+                    NivelFis3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriFis3) >= 6 && Convert.ToDouble(PromTriFis3) < 8)
+                    {
+                        NivelFis3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriFis3) >= 8 && Convert.ToDouble(PromTriFis3) < 10)
+                        {
+                            NivelFis3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriFis3) == 10)
+                            {
+                                NivelFis3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelFis3 = " ";
+                            }
+                        }
+                    }
+                }
+                //-------------------------------------Ed. Socioemocional--------------------------------------------------------
+                double PromSoc33 = 0;
+
+                PromSoc33 = Convert.ToDouble(CalifMarz[9]) + Convert.ToDouble(CalifAbri[9]) + Convert.ToDouble(CalifMayo[9]) + Convert.ToDouble(CalifJuni[9]);
+                PromSoc33 = PromSoc33 / 4;
+                PromTriSoc3 = PromSoc33.ToString("0.#");//Promedio del tercer trimestre de Ed. Socioemocional
+
+                //Asignacion del nivel del tercer trimestre de Ed. Socioemocional
+                if (Convert.ToDouble(PromTriSoc3) >= 5 && Convert.ToDouble(PromTriSoc3) < 6)
+                {
+                    NivelSoc3 = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSoc3) >= 6 && Convert.ToDouble(PromTriSoc3) < 8)
+                    {
+                        NivelSoc3 = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSoc3) >= 8 && Convert.ToDouble(PromTriSoc3) < 10)
+                        {
+                            NivelSoc3 = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSoc3) == 10)
+                            {
+                                NivelSoc3 = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelSoc3 = " ";
+                            }
+                        }
+                    }
+                }
+
+                //-----------------------------Inasistencia-----------------------------------------------------
+                double SumaInasis33 = 0;
+
+                SumaInasis33 = Convert.ToDouble(CalifMarz[10]) + Convert.ToDouble(CalifAbri[10]) + Convert.ToDouble(CalifMayo[10]) + Convert.ToDouble(CalifJuni[10]);
+                SumaInasisTri3 = SumaInasis33.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
+
+                //------------------------------------Promedio de materias sencillas final trimestres-------------------------------------------------
+                double PromSenFin = 0;
+
+                PromSenFin = Convert.ToDouble(PromTriSen1) + Convert.ToDouble(PromTriSen2) + Convert.ToDouble(PromTriSen3);
+                PromSenFin = PromSenFin / 3;
+                PromTriSenFin = PromSenFin.ToString("0.#");//Promedio del segundo trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriSenFin) >= 5 && Convert.ToDouble(PromTriSenFin) < 6)
+                {
+                    NivelPromSenFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriSenFin) >= 6 && Convert.ToDouble(PromTriSenFin) < 8)
+                    {
+                        NivelPromSenFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriSenFin) >= 8 && Convert.ToDouble(PromTriSenFin) < 10)
+                        {
+                            NivelPromSenFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriSenFin) == 10)
+                            {
+                                NivelPromSenFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelPromSenFin = " ";
+                            }
+                        }
+                    }
+                }
+
+                //------------------------------------Promedio General tercer trimestre-------------------------------------------------
+                double PromGen3Fin = 0;
+
+                PromGen3Fin = Convert.ToDouble(PromTriGen1) + Convert.ToDouble(PromTriGen2) + Convert.ToDouble(PromTriGen3);
+                PromGen3Fin = PromGen3Fin / 3;
+                PromTriGenFin = PromGen3Fin.ToString("0.#");//Promedio del primer trimestre 
+
+                //Asignacion del nivel del primer trimestre 
+                if (Convert.ToDouble(PromTriGenFin) >= 5 && Convert.ToDouble(PromTriGenFin) < 6)
+                {
+                    NivelGenFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromTriGenFin) >= 6 && Convert.ToDouble(PromTriGenFin) < 8)
+                    {
+                        NivelGenFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromTriGenFin) >= 8 && Convert.ToDouble(PromTriGenFin) < 10)
+                        {
+                            NivelGenFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromTriGenFin) == 10)
+                            {
+                                NivelGenFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGenFin = " ";
+                            }
+                        }
+                    }
+                }
+
+                //--------------------------------------Promedio final de español trimestral--------------------------------
+                double PromFin = 0;
+
+                PromFin = Convert.ToDouble(PromTriEsp1) + Convert.ToDouble(PromTriEsp2) + Convert.ToDouble(PromTriEsp3);
+                PromFin = PromFin / 3;
+                PromFinTriEsp = PromFin.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriEsp) >= 5 && Convert.ToDouble(PromFinTriEsp) < 6)
+                {
+                    NivelFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriEsp) >= 6 && Convert.ToDouble(PromFinTriEsp) < 8)
+                    {
+                        NivelFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriEsp) >= 8 && Convert.ToDouble(PromFinTriEsp) < 10)
+                        {
+                            NivelFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriEsp) == 10)
+                            {
+                                NivelFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelFin = " ";
+                            }
+                        }
+                    }
+                }
+
+                //--------------------------------------Promedio final de matematicas trimestral--------------------------------
+                double PromFinMat = 0;
+
+                PromFinMat = Convert.ToDouble(PromTriMat1) + Convert.ToDouble(PromTriMat2) + Convert.ToDouble(PromTriMat3);
+                PromFinMat = PromFinMat / 3;
+                PromFinTriMat = PromFinMat.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriMat) >= 5 && Convert.ToDouble(PromFinTriMat) < 6)
+                {
+                    NivelMatFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriMat) >= 6 && Convert.ToDouble(PromFinTriMat) < 8)
+                    {
+                        NivelMatFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriMat) >= 8 && Convert.ToDouble(PromFinTriMat) < 10)
+                        {
+                            NivelMatFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriMat) == 10)
+                            {
+                                NivelMatFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelMatFin = " ";
+                            }
+                        }
+                    }
+                }
+
+                //--------------------------------------Promedio final de Ingles trimestral--------------------------------
+                double PromFinIng = 0;
+
+                PromFinIng = Convert.ToDouble(PromTriIng1) + Convert.ToDouble(PromTriIng2) + Convert.ToDouble(PromTriIng3);
+                PromFinIng = PromFinIng / 3;
+                PromFinTriIng = PromFinIng.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriIng) >= 5 && Convert.ToDouble(PromFinTriIng) < 6)
+                {
+                    NivelIngFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriIng) >= 6 && Convert.ToDouble(PromFinTriIng) < 8)
+                    {
+                        NivelIngFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriIng) >= 8 && Convert.ToDouble(PromFinTriIng) < 10)
+                        {
+                            NivelIngFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriIng) == 10)
+                            {
+                                NivelIngFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelIngFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Ciencias Naturales trimestral--------------------------------
+                double PromFincn = 0;
+
+                PromFincn = Convert.ToDouble(PromTricn1) + Convert.ToDouble(PromTricn2) + Convert.ToDouble(PromTricn3);
+                PromFincn = PromFincn / 3;
+                PromFinTricn = PromFincn.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTricn) >= 5 && Convert.ToDouble(PromFinTricn) < 6)
+                {
+                    NivelcnFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTricn) >= 6 && Convert.ToDouble(PromFinTricn) < 8)
+                    {
+                        NivelcnFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTricn) >= 8 && Convert.ToDouble(PromFinTricn) < 10)
+                        {
+                            NivelcnFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTricn) == 10)
+                            {
+                                NivelcnFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelcnFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Geografia trimestral--------------------------------
+                double PromFinGeo = 0;
+
+                PromFinGeo = Convert.ToDouble(PromTriGeo1) + Convert.ToDouble(PromTriGeo2) + Convert.ToDouble(PromTriGeo3);
+                PromFinGeo = PromFinGeo / 3;
+                PromFinTriGeo = PromFinGeo.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriGeo) >= 5 && Convert.ToDouble(PromFinTriGeo) < 6)
+                {
+                    NivelGeoFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriGeo) >= 6 && Convert.ToDouble(PromFinTriGeo) < 8)
+                    {
+                        NivelGeoFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriGeo) >= 8 && Convert.ToDouble(PromFinTriGeo) < 10)
+                        {
+                            NivelGeoFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriGeo) == 10)
+                            {
+                                NivelGeoFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelGeoFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Historia trimestral--------------------------------
+                double PromFinHis = 0;
+
+                PromFinHis = Convert.ToDouble(PromTriHis1) + Convert.ToDouble(PromTriHis2) + Convert.ToDouble(PromTriHis3);
+                PromFinHis = PromFinHis / 3;
+                PromFinTriHis = PromFinHis.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriHis) >= 5 && Convert.ToDouble(PromFinTriHis) < 6)
+                {
+                    NivelHisFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriHis) >= 6 && Convert.ToDouble(PromFinTriHis) < 8)
+                    {
+                        NivelHisFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriHis) >= 8 && Convert.ToDouble(PromFinTriHis) < 10)
+                        {
+                            NivelHisFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriHis) == 10)
+                            {
+                                NivelHisFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelHisFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Formacion Civica y etica trimestral--------------------------------
+                double PromFinCiv = 0;
+
+                PromFinCiv = Convert.ToDouble(PromTriCiv1) + Convert.ToDouble(PromTriCiv2) + Convert.ToDouble(PromTriCiv3);
+                PromFinCiv = PromFinCiv / 3;
+                PromFinTriCiv = PromFinCiv.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriCiv) >= 5 && Convert.ToDouble(PromFinTriCiv) < 6)
+                {
+                    NivelCivFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriCiv) >= 6 && Convert.ToDouble(PromFinTriCiv) < 8)
+                    {
+                        NivelCivFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriCiv) >= 8 && Convert.ToDouble(PromFinTriCiv) < 10)
+                        {
+                            NivelCivFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriCiv) == 10)
+                            {
+                                NivelCivFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelCivFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Artes trimestral--------------------------------
+                double PromFinArt = 0;
+
+                PromFinArt = Convert.ToDouble(PromTriArt1) + Convert.ToDouble(PromTriArt2) + Convert.ToDouble(PromTriArt3);
+                PromFinArt = PromFinArt / 3;
+                PromFinTriArt = PromFinArt.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriArt) >= 5 && Convert.ToDouble(PromFinTriArt) < 6)
+                {
+                    NivelArtFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriArt) >= 6 && Convert.ToDouble(PromFinTriArt) < 8)
+                    {
+                        NivelArtFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriArt) >= 8 && Convert.ToDouble(PromFinTriArt) < 10)
+                        {
+                            NivelArtFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriArt) == 10)
+                            {
+                                NivelArtFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelArtFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Ed. Fisica trimestral--------------------------------
+                double PromFinFis = 0;
+
+                PromFinFis = Convert.ToDouble(PromTriFis1) + Convert.ToDouble(PromTriFis2) + Convert.ToDouble(PromTriFis3);
+                PromFinFis = PromFinFis / 3;
+                PromFinTriFis = PromFinFis.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriFis) >= 5 && Convert.ToDouble(PromFinTriFis) < 6)
+                {
+                    NivelFisFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriFis) >= 6 && Convert.ToDouble(PromFinTriFis) < 8)
+                    {
+                        NivelFisFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriFis) >= 8 && Convert.ToDouble(PromFinTriFis) < 10)
+                        {
+                            NivelFisFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriFis) == 10)
+                            {
+                                NivelFisFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelFisFin = " ";
+                            }
+                        }
+                    }
+                }
+                //--------------------------------------Promedio final de Ed. Socioemocional trimestral--------------------------------
+                double PromFinSoc = 0;
+
+                PromFinSoc = Convert.ToDouble(PromTriSoc1) + Convert.ToDouble(PromTriSoc2) + Convert.ToDouble(PromTriSoc3);
+                PromFinSoc = PromFinSoc / 3;
+                PromFinTriSoc = PromFinSoc.ToString("0.#");//Promedio final de los trimestres de español
+
+                //Asignacion del nivel de los trimestres de español
+                if (Convert.ToDouble(PromFinTriSoc) >= 5 && Convert.ToDouble(PromFinTriSoc) < 6)
+                {
+                    NivelSocFin = "I";
+                }
+                else
+                {
+                    if (Convert.ToDouble(PromFinTriSoc) >= 6 && Convert.ToDouble(PromFinTriSoc) < 8)
+                    {
+                        NivelSocFin = "II";
+                    }
+                    else
+                    {
+                        if (Convert.ToDouble(PromFinTriSoc) >= 8 && Convert.ToDouble(PromFinTriSoc) < 10)
+                        {
+                            NivelSocFin = "III";
+                        }
+                        else
+                        {
+                            if (Convert.ToDouble(PromFinTriSoc) == 10)
+                            {
+                                NivelSocFin = "IV";
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se encuentra en ningun nivel de desempeño");
+                                NivelSocFin = " ";
+                            }
+                        }
+                    }
+                }
+
+                //-----------------------------Numero final de Inasistencia-----------------------------------------------------
+                double SumaInasisFin = 0;
+
+                SumaInasisFin = Convert.ToDouble(SumaInasisTri1) + Convert.ToDouble(SumaInasisTri2) + Convert.ToDouble(SumaInasisTri3);
+                SumInasisTriFin = SumaInasisFin.ToString("0.#");//Promedio del primer trimestre de Ed. Socioemocional
+            }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifJuni[i] = " ";
+                }
+            }
+            conn10.Close();
             //Diagnostico-----------------------------------------------------------------
             string CalifDig = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + IdAlumno + " AND `Mes` = 'Diagnostico'";
 
@@ -323,13 +2604,45 @@ namespace Control_Escolar
 
             MySqlDataReader myreader11 = com11.ExecuteReader();
 
-            double[] CalifDiag = new double[11];
-            int N = 0;
-            while (myreader11.Read())
+            string[] CalifDiag = new string[11];
+            string PromDiag = " ";
+            string PromDiagGeneral = " ";
+
+            if (myreader11.HasRows) //Checa si las celdas estan vacias
             {
-                CalifDiag[N] = Convert.ToDouble(myreader11["CalificacionMen"]);
-                N++;
+                int L = 0;
+                while (myreader11.Read())//Agrega calificaciones
+                {
+                    double[] CalifDiagtemp = new double[11];
+                    CalifDiagtemp[L] = Convert.ToDouble(myreader11["CalificacionMen"]);
+                    CalifDiag[L] = CalifDiagtemp[L].ToString("0.#");
+                    L++;
+                }
+
+                double PromDiagTemp = 0;
+
+                for (int i = 0; i < 9; i++)
+                {
+                    PromDiagTemp = PromDiagTemp + Convert.ToDouble(CalifDiag[i]);
+                }
+
+                PromDiagTemp = PromDiagTemp / 9;
+                PromDiag = PromDiagTemp.ToString("0.#");//Promedio de diagnostico
+
+                double PromDiagGen = 0;
+
+                PromDiagGen = Convert.ToDouble(PromDiag) + Convert.ToDouble(CalifDiag[9]);
+                PromDiagGen = PromDiagGen / 2;
+                PromDiagGeneral = PromDiagGen.ToString("0.#"); //Promedio general de diagnostico
             }
+            else
+            {
+                for (int i = 0; i < 11; i++)
+                {
+                    CalifDiag[i] = " ";
+                }
+            }
+            conn11.Close();
 
             //-------------------------------------------------------------------------------------------------------------------
             // Creamos el documento con el tamaño de página tradicional
@@ -377,7 +2690,7 @@ namespace Control_Escolar
 
 
             // CREO UN ARREGLO QUE CONTIENE LAS MEDIDAS DE CADA UNA DE LAS COLUMNAS
-            float[] Celdas = { 1.50f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f, 0.25f };
+            float[] Celdas = { 1.50f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.35f, 0.25f, 0.35f, 0.25f, 0.35f, 0.25f, 0.35f, 0.25f, 0.35f, 0.25f };
 
             // ASIGNAS LAS MEDIDAS A LA TABLA (ANCHO)
             table.SetWidths(Celdas);
@@ -600,10 +2913,10 @@ namespace Control_Escolar
             table.AddCell(cell3);
 
             table.AddCell("" + CalifDiag[0]);
-            table.AddCell(""+CalifSept[0]);
-            table.AddCell(""+ CalifOctu[0]);
-            table.AddCell(""+ CalifNovi[0]);
-            table.AddCell(""+ CalifDici[0]);
+            table.AddCell("" + CalifSept[0]);
+            table.AddCell("" + CalifOctu[0]);
+            table.AddCell("" + CalifNovi[0]);
+            table.AddCell("" + CalifDici[0]);
             table.AddCell("" + CalifEner[0]);
             table.AddCell("" + CalifFebr[0]);
             table.AddCell("" + CalifMarz[0]);
@@ -612,14 +2925,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[0]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriEsp1);
+            table.AddCell("" + Nivel1);
+            table.AddCell("" + PromTriEsp2);
+            table.AddCell("" + Nivel2);
+            table.AddCell("" + PromTriEsp3);
+            table.AddCell("" + Nivel3);
+            table.AddCell("" + PromFinTriEsp);
+            table.AddCell("" + NivelFin);
 
             PdfPCell cell4 = new PdfPCell(new Phrase("MATEMÁTICAS", cuerpo));
             cell4.Colspan = 2;
@@ -638,15 +2951,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[1]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriMat1);
+            table.AddCell("" + NivelMat1);
+            table.AddCell("" + PromTriMat2);
+            table.AddCell("" + NivelMat2);
+            table.AddCell("" + PromTriMat3);
+            table.AddCell("" + NivelMat3);
+            table.AddCell("" + PromFinTriMat);
+            table.AddCell("" + NivelMatFin);
 
             PdfPCell cell5 = new PdfPCell(new Phrase("INGLÉS", cuerpo));
             cell5.Colspan = 2;
@@ -665,14 +2977,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[2]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriIng1);
+            table.AddCell("" + NivelIng1);
+            table.AddCell("" + PromTriIng2);
+            table.AddCell("" + NivelIng2);
+            table.AddCell("" + PromTriIng3);
+            table.AddCell("" + NivelIng3);
+            table.AddCell("" + PromFinTriIng);
+            table.AddCell("" + NivelIngFin);
 
             PdfPCell cell6 = new PdfPCell(new Phrase("CIENCIAS NATURALES", cuerpo));
             cell6.Colspan = 2;
@@ -682,6 +2994,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[3]);
             table.AddCell("" + CalifOctu[3]);
             table.AddCell("" + CalifNovi[3]);
+            table.AddCell("" + CalifDici[3]);
             table.AddCell("" + CalifEner[3]);
             table.AddCell("" + CalifFebr[3]);
             table.AddCell("" + CalifMarz[3]);
@@ -690,14 +3003,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[3]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTricn1);
+            table.AddCell("" + Nivelcn1);
+            table.AddCell("" + PromTricn2);
+            table.AddCell("" + Nivelcn2);
+            table.AddCell("" + PromTricn3);
+            table.AddCell("" + Nivelcn3);
+            table.AddCell("" + PromFinTricn);
+            table.AddCell("" + NivelcnFin);
 
             PdfPCell cell50 = new PdfPCell(new Phrase("GEOGRAFÍA", cuerpo));
             cell50.Colspan = 2;
@@ -707,6 +3020,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[4]);
             table.AddCell("" + CalifOctu[4]);
             table.AddCell("" + CalifNovi[4]);
+            table.AddCell("" + CalifDici[4]);
             table.AddCell("" + CalifEner[4]);
             table.AddCell("" + CalifFebr[4]);
             table.AddCell("" + CalifMarz[4]);
@@ -715,14 +3029,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[4]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriGeo1);
+            table.AddCell("" + NivelGeo1);
+            table.AddCell("" + PromTriGeo2);
+            table.AddCell("" + NivelGeo2);
+            table.AddCell("" + PromTriGeo3);
+            table.AddCell("" + NivelGeo3);
+            table.AddCell("" + PromFinTriGeo);
+            table.AddCell("" + NivelGeoFin);
 
             PdfPCell cell52 = new PdfPCell(new Phrase("HISTORIA", cuerpo));
             cell52.Colspan = 2;
@@ -732,6 +3046,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[5]);
             table.AddCell("" + CalifOctu[5]);
             table.AddCell("" + CalifNovi[5]);
+            table.AddCell("" + CalifDici[5]);
             table.AddCell("" + CalifEner[5]);
             table.AddCell("" + CalifFebr[5]);
             table.AddCell("" + CalifMarz[5]);
@@ -740,14 +3055,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[5]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriHis1);
+            table.AddCell("" + NivelHis1);
+            table.AddCell("" + PromTriHis2);
+            table.AddCell("" + NivelHis2);
+            table.AddCell("" + PromTriHis3);
+            table.AddCell("" + NivelHis3);
+            table.AddCell("" + PromFinTriHis);
+            table.AddCell("" + NivelHisFin);
 
 
             PdfPCell cell51 = new PdfPCell(new Phrase("FORMACIÓN CÍVICA Y ÉTICA", cuerpo));
@@ -758,6 +3073,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[6]);
             table.AddCell("" + CalifOctu[6]);
             table.AddCell("" + CalifNovi[6]);
+            table.AddCell("" + CalifDici[6]);
             table.AddCell("" + CalifEner[6]);
             table.AddCell("" + CalifFebr[6]);
             table.AddCell("" + CalifMarz[6]);
@@ -766,14 +3082,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[6]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriCiv1);
+            table.AddCell("" + NivelCiv1);
+            table.AddCell("" + PromTriCiv2);
+            table.AddCell("" + NivelCiv2);
+            table.AddCell("" + PromTriCiv3);
+            table.AddCell("" + NivelCiv3);
+            table.AddCell("" + PromFinTriCiv);
+            table.AddCell("" + NivelCivFin);
 
             PdfPCell cell7 = new PdfPCell(new Phrase("ARTES", cuerpo));
             cell7.Colspan = 2;
@@ -783,6 +3099,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[7]);
             table.AddCell("" + CalifOctu[7]);
             table.AddCell("" + CalifNovi[7]);
+            table.AddCell("" + CalifDici[7]);
             table.AddCell("" + CalifEner[7]);
             table.AddCell("" + CalifFebr[7]);
             table.AddCell("" + CalifMarz[7]);
@@ -791,14 +3108,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[7]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriArt1);
+            table.AddCell("" + NivelArt1);
+            table.AddCell("" + PromTriArt2);
+            table.AddCell("" + NivelArt2);
+            table.AddCell("" + PromTriArt3);
+            table.AddCell("" + NivelArt3);
+            table.AddCell("" + PromFinTriArt);
+            table.AddCell("" + NivelArtFin);
 
             PdfPCell cell9 = new PdfPCell(new Phrase("EDUCACIÓN FÍSICA", cuerpo));
             cell9.Colspan = 2;
@@ -808,6 +3125,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[8]);
             table.AddCell("" + CalifOctu[8]);
             table.AddCell("" + CalifNovi[8]);
+            table.AddCell("" + CalifDici[8]);
             table.AddCell("" + CalifEner[8]);
             table.AddCell("" + CalifFebr[8]);
             table.AddCell("" + CalifMarz[8]);
@@ -816,41 +3134,41 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[8]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriFis1);
+            table.AddCell("" + NivelFis1);
+            table.AddCell("" + PromTriFis2);
+            table.AddCell("" + NivelFis2);
+            table.AddCell("" + PromTriFis3);
+            table.AddCell("" + NivelFis3);
+            table.AddCell("" + PromFinTriFis);
+            table.AddCell("" + NivelFisFin);
 
             PdfPCell cell10 = new PdfPCell(new Phrase("PROM. FINAL FORMACIÓN ACADÉMICA", letchica));
             cell10.Colspan = 2;
             cell10.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell10);
 
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromDiag);
+            table.AddCell("" + PromSept);
+            table.AddCell("" + PromOct);
+            table.AddCell("" + PromNov);
+            table.AddCell("" + PromDic);
+            table.AddCell("" + PromEne);
+            table.AddCell("" + PromFeb);
+            table.AddCell("" + PromMar);
+            table.AddCell("" + PromAbr);
+            table.AddCell("" + PromMay);
+            table.AddCell("" + PromJun);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriSen1);
+            table.AddCell("" + NivelPromSen);
+            table.AddCell("" + PromTriSen2);
+            table.AddCell("" + NivelPromSen2);
+            table.AddCell("" + PromTriSen3);
+            table.AddCell("" + NivelPromSen3);
+            table.AddCell("" + PromTriSenFin);
+            table.AddCell("" + NivelPromSenFin);
 
             //Fila para dar espaciado entre tablas
             PdfPCell cell11 = new PdfPCell(new Phrase(" ", cuerpo));
@@ -957,6 +3275,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[9]);
             table.AddCell("" + CalifOctu[9]);
             table.AddCell("" + CalifNovi[9]);
+            table.AddCell("" + CalifDici[9]);
             table.AddCell("" + CalifEner[9]);
             table.AddCell("" + CalifFebr[9]);
             table.AddCell("" + CalifMarz[9]);
@@ -965,14 +3284,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[9]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriSoc1);
+            table.AddCell("" + NivelSoc1);
+            table.AddCell("" + PromTriSoc2);
+            table.AddCell("" + NivelSoc2);
+            table.AddCell("" + PromTriSoc3);
+            table.AddCell("" + NivelSoc3);
+            table.AddCell("" + PromFinTriSoc);
+            table.AddCell("" + NivelSocFin);
 
             PdfPCell cell14 = new PdfPCell(new Phrase("PROM. FINAL DE LAS ÁREAS DESARROLLO PERSONAL Y SOCIAL FORMACIÓN ACADÉMICA", letchica));
             cell14.Colspan = 2;
@@ -983,6 +3302,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[9]);
             table.AddCell("" + CalifOctu[9]);
             table.AddCell("" + CalifNovi[9]);
+            table.AddCell("" + CalifDici[9]);
             table.AddCell("" + CalifEner[9]);
             table.AddCell("" + CalifFebr[9]);
             table.AddCell("" + CalifMarz[9]);
@@ -991,14 +3311,14 @@ namespace Control_Escolar
             table.AddCell("" + CalifJuni[9]);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriSoc1);
+            table.AddCell("" + NivelSoc1);
+            table.AddCell("" + PromTriSoc2);
+            table.AddCell("" + NivelSoc2);
+            table.AddCell("" + PromTriSoc3);
+            table.AddCell("" + NivelSoc3);
+            table.AddCell("" + PromFinTriSoc);
+            table.AddCell("" + NivelSocFin);
 
             //Fila para dar espaciado entre tablas
             PdfPCell cell15 = new PdfPCell(new Phrase(" ", cuerpo));
@@ -1012,17 +3332,17 @@ namespace Control_Escolar
             cell16.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell16);
 
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromDiagGeneral);
+            table.AddCell("" + PromSeptGeneral);
+            table.AddCell("" + PromOctuGeneral);
+            table.AddCell("" + PromNoviGeneral);
+            table.AddCell("" + PromDiciGeneral);
+            table.AddCell("" + PromEnerGeneral);
+            table.AddCell("" + PromFebrGeneral);
+            table.AddCell("" + PromMarzGeneral);
+            table.AddCell("" + PromAbriGeneral);
+            table.AddCell("" + PromMayoGeneral);
+            table.AddCell("" + PromJuniGeneral);
             table.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
 
             //tabla vacia vertical
@@ -1032,14 +3352,14 @@ namespace Control_Escolar
             table.AddCell(cell1i);
 
             //Espacios linea de español
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + PromTriGen1);
+            table.AddCell("" + NivelGen1);
+            table.AddCell("" + PromTriGen2);
+            table.AddCell("" + NivelGen2);
+            table.AddCell("" + PromTriGen3);
+            table.AddCell("" + NivelGen3);
+            table.AddCell("" + PromTriGenFin);
+            table.AddCell("" + NivelGenFin);
 
             //Fila para dar espaciado entre tablas
             PdfPCell cell17 = new PdfPCell(new Phrase(" ", cuerpo));
@@ -1057,6 +3377,7 @@ namespace Control_Escolar
             table.AddCell("" + CalifSept[10]);
             table.AddCell("" + CalifOctu[10]);
             table.AddCell("" + CalifNovi[10]);
+            table.AddCell("" + CalifDici[10]);
             table.AddCell("" + CalifEner[10]);
             table.AddCell("" + CalifFebr[10]);
             table.AddCell("" + CalifMarz[10]);
@@ -1073,13 +3394,13 @@ namespace Control_Escolar
             table.AddCell(cell1e);
 
             //Espacios linea de español
+            table.AddCell("" + SumaInasisTri1);
             table.AddCell(" ");
+            table.AddCell("" + SumaInasisTri2);
             table.AddCell(" ");
+            table.AddCell("" + SumaInasisTri3);
             table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
-            table.AddCell(" ");
+            table.AddCell("" + SumInasisTriFin);
             table.AddCell(" ");
 
 
@@ -1188,9 +3509,11 @@ namespace Control_Escolar
             MessageBox.Show("¡PDF creado!");
         }
 
-       
+    
 
-        public void calisep()
+
+
+    public void calisep()
         {
 
             Español = EspDiag.SelectedItem.ToString();
