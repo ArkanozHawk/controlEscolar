@@ -37,7 +37,7 @@ namespace Control_Escolar
                     {
                         if(cmbSepInasis.Enabled == false)
                         {
-                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. ¡No se puede Editar!");
                         }
                         else
                         {
@@ -45,10 +45,11 @@ namespace Control_Escolar
                             {
                                 calisep();
                                 MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                                validaCalifMen();
                             }
                             else
                             {
-                                MessageBox.Show("No Se pueden Registrar Calificaciones, Falta Registrar Calificaciones de Diagnóstico");
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Diagnóstico no se han Registrado.");
                             }
                         }
                     }
@@ -56,71 +57,231 @@ namespace Control_Escolar
 
                 case "Octubre":
                     {
-                        caliOct();
-                        MessageBox.Show("Calificaciones  octubre registradas con exito");
+                        if (cmbOctInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbSepInasis.Enabled == false)
+                            {
+                                caliOct();
+                                MessageBox.Show("Calificaciones  octubre registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Septiembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Noviembre":
                     {
-                        caliNov();
-                        MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                        if (cmbNovInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbOctInasis.Enabled == false)
+                            {
+                                caliNov();
+                                MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Octubre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Diciembre":
                     {
-                        caliDic();
-                        MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                        if (cmbDicInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovInasis.Enabled == false)
+                            {
+                                caliDic();
+                                MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Noviembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Enero":
                     {
-                        caliEnero();
-                        MessageBox.Show("Calificaciones  Enero registradas con exito");
+                        if (cmbEneInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovInasis.Enabled == false)
+                            {
+                                caliEnero();
+                                MessageBox.Show("Calificaciones  Enero registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Diciembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
+
                 case "Febrero":
                     {
-                        caliFebrero();
-                        MessageBox.Show("Calificaciones  febrero registradas con exito");
+                        if (cmbFebInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbEneInasis.Enabled == false)
+                            {
+                                caliFebrero();
+                                MessageBox.Show("Calificaciones  febrero registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Enero no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Marzo":
                     {
-                        caliMarzo();
-                        MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                        if (cmbMarInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbFebInasis.Enabled == false)
+                            {
+                                caliMarzo();
+                                MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Febrero no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Abril":
                     {
-                        caliAbril();
-                        MessageBox.Show("Calificaciones  Abril registradas con exito");
+                        if (cmbAbrInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbMarInasis.Enabled == false)
+                            {
+                                caliAbril();
+                                MessageBox.Show("Calificaciones  Abril registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Marzo no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Mayo":
                     {
-                        caliMayo();
-                        MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                        if (cmbMayInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbAbrInasis.Enabled == false)
+                            {
+                                caliMayo();
+                                MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                                validaCalifMen();
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Abril no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Junio":
                     {
-                        caliJunio();
-                        MessageBox.Show("Calificaciones  Junio registradas con exito");
+                        if (cmbJunInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbMayInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox10) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliJunio();
+                                    MessageBox.Show("Calificaciones  Junio registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Mayo no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
 
                 case "Diagnostico":
                     {
-                        caliDiagnostico();
-                        MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                        if (cmbDiagInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if(ValidaCampos(groupBox11) == true)
+                            {
+                                MessageBox.Show("Error al Guardar los Datos");
+                            }
+                            else
+                            {
+                                caliDiagnostico();
+                                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                                validaCalifMen();
+                            }
+                            
+                        }
                     }
                     break;
 
@@ -1258,6 +1419,26 @@ namespace Control_Escolar
 
         public void calisep()
         {
+            foreach (Control _group in groupBox1.Controls)
+            {
+                // Do Something
+
+                if (_group is ComboBox)
+                {
+                    ComboBox combo = new ComboBox();
+                    combo.Name = _group.Name;
+                    if (combo.Text == string.Empty)
+                    {
+                        MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
+                    }
+                    else
+                    {
+
+                    }
+
+                }
+
+            }
 
             Español = cmbSepEspañol.SelectedItem.ToString();
             Matematicas = cmbSepMatematicas.SelectedItem.ToString();
@@ -1531,6 +1712,7 @@ namespace Control_Escolar
 
         public void caliDiagnostico()
         {
+
             Español = cmbDiagEspañol.SelectedItem.ToString();
             Matematicas = cmbDiagMatematicas.SelectedItem.ToString();
             Ingless = cmbDiagIngles.SelectedItem.ToString();
@@ -2377,6 +2559,29 @@ namespace Control_Escolar
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public bool ValidaCampos(GroupBox Grupo)
+        {
+            foreach (Control _group in Grupo.Controls)
+            {
+                if (_group is ComboBox)
+                {
+                    ComboBox combo = new ComboBox();
+                    combo.Name = _group.Name;
+                    if (combo.Text == string.Empty)
+                    {
+                        MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
+                        return true;
+                    }
+                    else
+                    {
+                        return true;
+                    }
+                }
+
+            }
+            return false;
         }
 
     }
