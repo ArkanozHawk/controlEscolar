@@ -32,6 +32,7 @@
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Septiembre = new System.Windows.Forms.TabPage();
             this.BoxGenero = new System.Windows.Forms.GroupBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.cmbsepina = new System.Windows.Forms.ComboBox();
             this.Espmay = new System.Windows.Forms.ComboBox();
             this.Espabril = new System.Windows.Forms.ComboBox();
@@ -56,6 +57,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.Octubre = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label129 = new System.Windows.Forms.Label();
             this.label131 = new System.Windows.Forms.Label();
             this.label130 = new System.Windows.Forms.Label();
             this.label128 = new System.Windows.Forms.Label();
@@ -91,6 +93,7 @@
             this.label24 = new System.Windows.Forms.Label();
             this.Noviembre = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -115,6 +118,7 @@
             this.label36 = new System.Windows.Forms.Label();
             this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label85 = new System.Windows.Forms.Label();
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
@@ -139,6 +143,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.label132 = new System.Windows.Forms.Label();
             this.label88 = new System.Windows.Forms.Label();
             this.label89 = new System.Windows.Forms.Label();
             this.label91 = new System.Windows.Forms.Label();
@@ -163,6 +168,7 @@
             this.label60 = new System.Windows.Forms.Label();
             this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label90 = new System.Windows.Forms.Label();
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label97 = new System.Windows.Forms.Label();
@@ -187,6 +193,7 @@
             this.label72 = new System.Windows.Forms.Label();
             this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label95 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
@@ -211,6 +218,7 @@
             this.label84 = new System.Windows.Forms.Label();
             this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label101 = new System.Windows.Forms.Label();
             this.label104 = new System.Windows.Forms.Label();
             this.label105 = new System.Windows.Forms.Label();
             this.label107 = new System.Windows.Forms.Label();
@@ -235,6 +243,7 @@
             this.label96 = new System.Windows.Forms.Label();
             this.Mayo = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label106 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
@@ -259,6 +268,7 @@
             this.label108 = new System.Windows.Forms.Label();
             this.Junio = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.label112 = new System.Windows.Forms.Label();
             this.label115 = new System.Windows.Forms.Label();
             this.label116 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
@@ -283,6 +293,7 @@
             this.label120 = new System.Windows.Forms.Label();
             this.Diagnostico = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.label117 = new System.Windows.Forms.Label();
             this.label133 = new System.Windows.Forms.Label();
             this.label134 = new System.Windows.Forms.Label();
             this.label135 = new System.Windows.Forms.Label();
@@ -310,17 +321,6 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.Septiembre.SuspendLayout();
             this.BoxGenero.SuspendLayout();
@@ -425,6 +425,17 @@
             this.BoxGenero.Size = new System.Drawing.Size(660, 319);
             this.BoxGenero.TabIndex = 82;
             this.BoxGenero.TabStop = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label9.Location = new System.Drawing.Point(307, 126);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(149, 20);
+            this.label9.TabIndex = 97;
+            this.label9.Text = "Ed. Socioemocional";
             // 
             // cmbsepina
             // 
@@ -958,6 +969,17 @@
             this.groupBox1.TabIndex = 82;
             this.groupBox1.TabStop = false;
             // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label129.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label129.Location = new System.Drawing.Point(315, 125);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(149, 20);
+            this.label129.TabIndex = 108;
+            this.label129.Text = "Ed. Socioemocional";
+            // 
             // label131
             // 
             this.label131.AutoSize = true;
@@ -1456,6 +1478,17 @@
             this.groupBox2.TabIndex = 82;
             this.groupBox2.TabStop = false;
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label33.Location = new System.Drawing.Point(310, 117);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(149, 20);
+            this.label33.TabIndex = 114;
+            this.label33.Text = "Ed. Socioemocional";
+            // 
             // label31
             // 
             this.label31.AutoSize = true;
@@ -1843,6 +1876,17 @@
             this.groupBox3.Size = new System.Drawing.Size(650, 319);
             this.groupBox3.TabIndex = 82;
             this.groupBox3.TabStop = false;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label85.Location = new System.Drawing.Point(306, 128);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(149, 20);
+            this.label85.TabIndex = 120;
+            this.label85.Text = "Ed. Socioemocional";
             // 
             // label82
             // 
@@ -2232,6 +2276,17 @@
             this.groupBox4.TabIndex = 82;
             this.groupBox4.TabStop = false;
             // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label132.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label132.Location = new System.Drawing.Point(294, 128);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(149, 20);
+            this.label132.TabIndex = 120;
+            this.label132.Text = "Ed. Socioemocional";
+            // 
             // label88
             // 
             this.label88.AutoSize = true;
@@ -2619,6 +2674,17 @@
             this.groupBox5.Size = new System.Drawing.Size(625, 319);
             this.groupBox5.TabIndex = 82;
             this.groupBox5.TabStop = false;
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label90.Location = new System.Drawing.Point(305, 128);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(149, 20);
+            this.label90.TabIndex = 120;
+            this.label90.Text = "Ed. Socioemocional";
             // 
             // label93
             // 
@@ -3008,6 +3074,17 @@
             this.groupBox6.TabIndex = 82;
             this.groupBox6.TabStop = false;
             // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label95.Location = new System.Drawing.Point(309, 131);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(149, 20);
+            this.label95.TabIndex = 120;
+            this.label95.Text = "Ed. Socioemocional";
+            // 
             // label99
             // 
             this.label99.AutoSize = true;
@@ -3395,6 +3472,17 @@
             this.groupBox7.Size = new System.Drawing.Size(657, 319);
             this.groupBox7.TabIndex = 82;
             this.groupBox7.TabStop = false;
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label101.Location = new System.Drawing.Point(323, 128);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(149, 20);
+            this.label101.TabIndex = 120;
+            this.label101.Text = "Ed. Socioemocional";
             // 
             // label104
             // 
@@ -3784,6 +3872,17 @@
             this.groupBox8.TabIndex = 82;
             this.groupBox8.TabStop = false;
             // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label106.Location = new System.Drawing.Point(312, 128);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(149, 20);
+            this.label106.TabIndex = 120;
+            this.label106.Text = "Ed. Socioemocional";
+            // 
             // label110
             // 
             this.label110.AutoSize = true;
@@ -4172,6 +4271,17 @@
             this.groupBox9.TabIndex = 82;
             this.groupBox9.TabStop = false;
             // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label112.Location = new System.Drawing.Point(316, 128);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(149, 20);
+            this.label112.TabIndex = 120;
+            this.label112.Text = "Ed. Socioemocional";
+            // 
             // label115
             // 
             this.label115.AutoSize = true;
@@ -4559,6 +4669,17 @@
             this.groupBox10.Size = new System.Drawing.Size(651, 319);
             this.groupBox10.TabIndex = 83;
             this.groupBox10.TabStop = false;
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label117.Location = new System.Drawing.Point(316, 128);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(149, 20);
+            this.label117.TabIndex = 120;
+            this.label117.Text = "Ed. Socioemocional";
             // 
             // label133
             // 
@@ -4968,127 +5089,6 @@
             this.materialRaisedButton2.Text = "Generar Boleta Externa";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label9.Location = new System.Drawing.Point(307, 126);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(149, 20);
-            this.label9.TabIndex = 97;
-            this.label9.Text = "Ed. Socioemocional";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label129.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label129.Location = new System.Drawing.Point(315, 125);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(149, 20);
-            this.label129.TabIndex = 108;
-            this.label129.Text = "Ed. Socioemocional";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label33.Location = new System.Drawing.Point(310, 117);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(149, 20);
-            this.label33.TabIndex = 114;
-            this.label33.Text = "Ed. Socioemocional";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label85.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label85.Location = new System.Drawing.Point(306, 128);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(149, 20);
-            this.label85.TabIndex = 120;
-            this.label85.Text = "Ed. Socioemocional";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label132.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label132.Location = new System.Drawing.Point(294, 128);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(149, 20);
-            this.label132.TabIndex = 120;
-            this.label132.Text = "Ed. Socioemocional";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label90.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label90.Location = new System.Drawing.Point(305, 128);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(149, 20);
-            this.label90.TabIndex = 120;
-            this.label90.Text = "Ed. Socioemocional";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label95.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label95.Location = new System.Drawing.Point(309, 131);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(149, 20);
-            this.label95.TabIndex = 120;
-            this.label95.Text = "Ed. Socioemocional";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label101.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label101.Location = new System.Drawing.Point(323, 128);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(149, 20);
-            this.label101.TabIndex = 120;
-            this.label101.Text = "Ed. Socioemocional";
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label106.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label106.Location = new System.Drawing.Point(312, 128);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(149, 20);
-            this.label106.TabIndex = 120;
-            this.label106.Text = "Ed. Socioemocional";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label112.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label112.Location = new System.Drawing.Point(316, 128);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(149, 20);
-            this.label112.TabIndex = 120;
-            this.label112.Text = "Ed. Socioemocional";
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label117.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label117.Location = new System.Drawing.Point(316, 128);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(149, 20);
-            this.label117.TabIndex = 120;
-            this.label117.Text = "Ed. Socioemocional";
-            // 
             // Calificaciones456
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5103,6 +5103,7 @@
             this.Controls.Add(this.materialRaisedButton1);
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
+            this.Load += new System.EventHandler(this.Calificaciones456_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.Septiembre.ResumeLayout(false);
             this.BoxGenero.ResumeLayout(false);

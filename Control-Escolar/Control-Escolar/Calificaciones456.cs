@@ -3690,6 +3690,10 @@ namespace Control_Escolar
 
         }
 
+        private void Calificaciones456_Load(object sender, EventArgs e)
+        {
+            validaCalifMen();
+        }
 
         public void caliMarzo()
         {
@@ -4655,6 +4659,7 @@ namespace Control_Escolar
 
                 //MessageBox.Show(sept_Esp.ToString());
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);

@@ -54,9 +54,9 @@ namespace Control_Escolar
             Application.Run(new BoletasBuscar());
         }
 
-        public static void ThreadEstadisticas()
+        public static void ThreadEstVisual()
         {
-            Application.Run(new Estadisticas());
+            Application.Run(new Graficas_Estad());
         }
 
         public principal()
@@ -133,7 +133,7 @@ namespace Control_Escolar
 
         private void btnEstadisticas_Click(object sender, EventArgs e)
         {
-            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadEstadisticas));
+            System.Threading.Thread pantalla1 = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadEstVisual));
             pantalla1.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();

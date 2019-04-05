@@ -377,8 +377,9 @@ namespace Control_Escolar
         public static void ThreadGenerarBoletas()
 
         {
-
+            
         }
+
         private void btnCerrar_Click_1(object sender, EventArgs e)
         {
             string HoraSalida = Convert.ToString(DateTime.Now);
