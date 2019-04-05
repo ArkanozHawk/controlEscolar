@@ -21,11 +21,344 @@ namespace Control_Escolar
         public Calificaciones3()
         {
             InitializeComponent();
+            validaCalifMen();
         }
 
         double calificacion;
         string Español, Matematicas, Ingless, CienciasN, LaEntidad, FormacionCiv, Artess, Edsocio, EducacionF, Inasistencias;
         string materia, mes;
+
+        private void materialRaisedButton1_Click(object sender, EventArgs e)
+        {
+            mes = materialTabControl1.SelectedTab.Name;
+            switch (mes)
+            {
+                case "Septiembre":
+                    {
+                        if(cmbSepInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. ¡No se puede Editar!");
+                        }
+                        else
+                        {
+                            if (cmbDiagInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox1) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    calisep();
+                                    MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                                    validaCalifMen();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Diagnóstico no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Octubre":
+                    {
+                        if (cmbOctInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbSepInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox2) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliOct();
+                                    MessageBox.Show("Calificaciones  octubre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Septiembre no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Noviembre":
+                    {
+                        if (cmbNovInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbOctInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox3) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliNov();
+                                    MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Octubre no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Diciembre":
+                    {
+                        if (cmbDicInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox4) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliDic();
+                                    MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Noviembre no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Enero":
+                    {
+                        if (cmbEneInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox5) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliEnero();
+                                    MessageBox.Show("Calificaciones  Enero registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Diciembre no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Febrero":
+                    {
+                        if (cmbFebInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbEneInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox6) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliFebrero();
+                                    MessageBox.Show("Calificaciones  febrero registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Enero no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Marzo":
+                    {
+                        if (cmbMarInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbFebInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox7) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMarzo();
+                                    MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Febrero no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Abril":
+                    {
+                        if (cmbAbrInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbMarInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox9) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliAbril();
+                                    MessageBox.Show("Calificaciones  Abril registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Marzo no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Mayo":
+                    {
+                        if (cmbMayInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbAbrInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox8) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMayo();
+                                    MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Abril no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+                case "Junio":
+                    {
+                        if (cmbJunInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbMayInasis.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox10) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliJunio();
+                                    MessageBox.Show("Calificaciones  Junio registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Mayo no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
+
+
+                case "Diagnostico":
+                    {
+                        if (cmbDiagInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if(ValidaCampos(groupBox11) == true)
+                            {
+                                MessageBox.Show("Error al Guardar los Datos");
+                            }
+                            else
+                            {
+                                caliDiagnostico();
+                                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                                validaCalifMen();
+                            }
+                            
+                        }
+                    }
+                    break;
+
+            }
+
+        }
 
         conexion obj = new conexion();
 
@@ -172,7 +505,7 @@ namespace Control_Escolar
             conn4 = new MySqlConnection(conexion);
             conn4.Open();
 
-            com4 = new MySqlCommand(CalifDic, conn1);
+            com4 = new MySqlCommand(CalifDic, conn4);
 
             MySqlDataReader myreader4 = com4.ExecuteReader();
 
@@ -1156,304 +1489,326 @@ namespace Control_Escolar
 
 
 
-        //public void calisep()
-        //{
+        public void calisep()
+        {
+            foreach (Control _group in groupBox1.Controls)
+            {
+                // Do Something
 
-        //    Español = EspDiag.SelectedItem.ToString();
-        //    Matematicas = EspSep.SelectedItem.ToString();
-        //    Ingless = EspOct.SelectedItem.ToString();
-        //    CienciasN = Espnov.SelectedItem.ToString();
-        //    LaEntidad = Espdic.SelectedItem.ToString();
-        //    FormacionCiv = EspFeb.SelectedItem.ToString();
-        //    Artess = EspMarz.SelectedItem.ToString();
-        //    EducacionF = Espmay.SelectedItem.ToString();
-        //    Edsocio = Espabril.SelectedItem.ToString();
-        //    Inasistencias = cmbsepina.SelectedItem.ToString();
-        //    //Historia = Espene.SelectedItem.ToString();
-        //    //Inasistencias = Espjun.SelectedItem.ToString();
+                if (_group is ComboBox)
+                {
+                    ComboBox combo = new ComboBox();
+                    combo.Name = _group.Name;
+                    if (combo.Text == string.Empty)
+                    {
+                        MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
+                    }
+                    else
+                    {
 
+                    }
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+                }
 
-        //}
+            }
 
-
-        //public void caliOct()
-        //{
-        //    Español = cmbEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbOctubreMate.SelectedItem.ToString();
-        //    Ingless = cmbOctubreIngles.SelectedItem.ToString();
-        //    CienciasN = cmbOctubreCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbOctubreGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbOctubreFormacion.SelectedItem.ToString();
-        //    Artess = cmboctubreArt.SelectedItem.ToString();
-        //    EducacionF = cmbOctubreEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbOctubreEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbOctubreIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+            Español = cmbSepEspañol.SelectedItem.ToString();
+            Matematicas = cmbSepMatematicas.SelectedItem.ToString();
+            Ingless = cmbSepIngles.SelectedItem.ToString();
+            CienciasN = cmbSepCiencias.SelectedItem.ToString();
+            LaEntidad = cmbSepEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbSepFormacion.SelectedItem.ToString();
+            Artess = cmbSepArtes.SelectedItem.ToString();
+            EducacionF = cmbSepEdFisica.SelectedItem.ToString();
+            Edsocio = cmbSepSocio.SelectedItem.ToString();
+            Inasistencias = cmbSepInasis.SelectedItem.ToString();
+            //Historia = Espene.SelectedItem.ToString();
+            //Inasistencias = Espjun.SelectedItem.ToString();
 
 
-        //public void caliNov()
-        //{
-        //    Español = cmbNovEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbNovmate.SelectedItem.ToString();
-        //    Ingless = cmbNovIngles.SelectedItem.ToString();
-        //    CienciasN = cmbNovCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbNovGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbNovFormacion.SelectedItem.ToString();
-        //    Artess = cmbNovArtes.SelectedItem.ToString();
-        //    EducacionF = cmbNovEdFisi.SelectedItem.ToString();
-        //    Edsocio = cmbNovEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbNovIna.SelectedItem.ToString();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+        }
 
 
-        //public void caliDic()
-        //{
-        //    Español = cmbDicEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbDicMate.SelectedItem.ToString();
-        //    Ingless = cmbDicIngles.SelectedItem.ToString();
-        //    CienciasN = cmbDicCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbDicGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbDicForm.SelectedItem.ToString();
-        //    Artess = cmbDicArtes.SelectedItem.ToString();
-        //    EducacionF = cmbDicEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbDicEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbDicInasis.SelectedItem.ToString();
+        public void caliOct()
+        {
+            Español = cmbOctEspañol.SelectedItem.ToString();
+            Matematicas = cmbOctMatematicas.SelectedItem.ToString();
+            Ingless = cmbOctIngles.SelectedItem.ToString();
+            CienciasN = cmbOctCiencias.SelectedItem.ToString();
+            LaEntidad = cmbOctEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbOctFormacion.SelectedItem.ToString();
+            Artess = cmbOctArtes.SelectedItem.ToString();
+            EducacionF = cmbOctEdFisica.SelectedItem.ToString();
+            Edsocio = cmbOctSocio.SelectedItem.ToString();
+            Inasistencias = cmbOctInasis.SelectedItem.ToString();
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(Geografia); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //}
-
-
-        //public void caliEnero()
-        //{
-        //    Español = cmbEneroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbEneroMate.SelectedItem.ToString();
-        //    Ingless = cmbEneroIngles.SelectedItem.ToString();
-        //    CienciasN = cmbEneroCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbEneroGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbEneroFormacion.SelectedItem.ToString();
-        //    Artess = cmbEneroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbEneroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbEneroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbEneroIna.SelectedItem.ToString();
+        }
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+        public void caliNov()
+        {
+            Español = cmbNovEspañol.SelectedItem.ToString();
+            Matematicas = cmbNovMatematicas.SelectedItem.ToString();
+            Ingless = cmbNovIngles.SelectedItem.ToString();
+            CienciasN = cmbNovCiencias.SelectedItem.ToString();
+            LaEntidad = cmbNovEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbNovFormacion.SelectedItem.ToString();
+            Artess = cmbNovArtes.SelectedItem.ToString();
+            EducacionF = cmbNovEdFisica.SelectedItem.ToString();
+            Edsocio = cmbNovSocio.SelectedItem.ToString();
+            Inasistencias = cmbNovInasis.SelectedItem.ToString();
 
-        //}
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //public void caliFebrero()
-        //{
-        //    Español = cmbFebreroEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbFebreroMate.SelectedItem.ToString();
-        //    Ingless = cmbfebreroIngles.SelectedItem.ToString();
-        //    CienciasN = cmbFebreroCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbFebreroGeo.SelectedItem.ToString();
-        //    FormacionCiv = cmbFebreroFormacion.SelectedItem.ToString();
-        //    Artess = cmbFebreroArtess.SelectedItem.ToString();
-        //    EducacionF = cmbFebreroEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbFebreroEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbfebreroIna.SelectedItem.ToString();
-
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
+        }
 
 
-        //public void caliMarzo()
-        //{
+        public void caliDic()
+        {
+            Español = cmbDicEspañol.SelectedItem.ToString();
+            Matematicas = cmbDicMatematicas.SelectedItem.ToString();
+            Ingless = cmbDicIngles.SelectedItem.ToString();
+            CienciasN = cmbDicCiencias.SelectedItem.ToString();
+            LaEntidad = cmbDicEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbDicFormacion.SelectedItem.ToString();
+            Artess = cmbDicArtes.SelectedItem.ToString();
+            EducacionF = cmbDicEdFisica.SelectedItem.ToString();
+            Edsocio = cmbDicSocio.SelectedItem.ToString();
+            Inasistencias = cmbDicInasis.SelectedItem.ToString();
 
-        //    Español = cmbmarzoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMarzoMate.SelectedItem.ToString();
-        //    Ingless = cmbMarzoIngles.SelectedItem.ToString();
-        //    CienciasN = cmbMarzoCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbMarzoGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbMarzoFormacion.SelectedItem.ToString();
-        //    Artess = cmbMarzoArtess.SelectedItem.ToString();
-        //    EducacionF = cmbMarzoEdFisica.SelectedItem.ToString();
-        //    Edsocio = cmbMarzoEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbmarzoina.SelectedItem.ToString();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-
-        //public void caliAbril()
-        //{
-        //    Español = cmbAbrilEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbAbrilmate.SelectedItem.ToString();
-        //    Ingless = cmbAbrilIngles.SelectedItem.ToString();
-        //    CienciasN = cmbAbrilCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbAbrilGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbAbrilFormacion.SelectedItem.ToString();
-        //    Artess = cmbAbrilArtess.SelectedItem.ToString();
-        //    EducacionF = cmbAbrilEdfisica.SelectedItem.ToString();
-        //    Edsocio = cmbAbrilEdsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbAbrilIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-        //public void caliMayo()
-        //{
-        //    Español = cmbmayoEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbMayoMate.SelectedItem.ToString();
-        //    Ingless = cmbMayoIngles.SelectedItem.ToString();
-        //    CienciasN = cmbMayoCiencias.SelectedItem.ToString();
-        //    LaEntidad = cmbMayoGeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbMayoFormacion.SelectedItem.ToString();
-        //    Artess = cmbMayoArtes.SelectedItem.ToString();
-        //    Edsocio = cmbMayoEdsocio.SelectedItem.ToString();
-        //    EducacionF = cmbMayoEdfisica.SelectedItem.ToString();
-        //    Inasistencias = cmbMayoIna.SelectedItem.ToString();
-
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-
-        //}
-
-        //public void caliJunio()
-        //{
-        //    Español = cmbDJunioEspañol.SelectedItem.ToString();
-        //    Matematicas = cmbJuniomate.SelectedItem.ToString();
-        //    Ingless = cmbJunioingless.SelectedItem.ToString();
-        //    CienciasN = cmbJunioingless.SelectedItem.ToString();
-        //    LaEntidad = cmbJunioGeofgrafia.SelectedItem.ToString();
-        //    FormacionCiv = cmbJunioFormacionCivica.SelectedItem.ToString();
-        //    Artess = cmbJunioArtess.SelectedItem.ToString();
-        //    EducacionF = cmbJunioEdFis.SelectedItem.ToString();
-        //    Edsocio = cmbJunioEdsocioe.SelectedItem.ToString();
-        //    Inasistencias = cmbJunioinasis.SelectedItem.ToString();
+        }
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
-        //}
-
-        //public void caliDiagnostico()
-        //{
-        //    Español = cmbdiagespañol.SelectedItem.ToString();
-        //    Matematicas = cmbdiagmate.SelectedItem.ToString();
-        //    Ingless = cmbdiagingles.SelectedItem.ToString();
-        //    CienciasN = cmbdiagciencias.SelectedItem.ToString();
-        //    LaEntidad = cmbdiaggeografia.SelectedItem.ToString();
-        //    FormacionCiv = cmbdiagformacion.SelectedItem.ToString();
-        //    Artess = cmbdiagartes.SelectedItem.ToString();
-        //    EducacionF = cmbdiagedfisica.SelectedItem.ToString();
-        //    Edsocio = cmbdiagedsocio.SelectedItem.ToString();
-        //    Inasistencias = cmbdiaginasis.SelectedItem.ToString();
+        public void caliEnero()
+        {
+            Español = cmbEneEspañol.SelectedItem.ToString();
+            Matematicas = cmbEneMatematicas.SelectedItem.ToString();
+            Ingless = cmbEneIngles.SelectedItem.ToString();
+            CienciasN = cmbEneCiencias.SelectedItem.ToString();
+            LaEntidad = cmbEneEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbEneFormacion.SelectedItem.ToString();
+            Artess = cmbEneArtes.SelectedItem.ToString();
+            EducacionF = cmbEneEdFisica.SelectedItem.ToString();
+            Edsocio = cmbEneSocio.SelectedItem.ToString();
+            Inasistencias = cmbEneInasis.SelectedItem.ToString();
 
 
-        //    materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
-        //    materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
-        //    materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
-        //    materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
-        //    materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
-        //    materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
-        //    materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
-        //    materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
-        //    materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
 
-        //}
+        }
+
+        public void caliFebrero()
+        {
+            Español = cmbFebEspañol.SelectedItem.ToString();
+            Matematicas = cmbFebMatematicas.SelectedItem.ToString();
+            Ingless = cmbFebIngles.SelectedItem.ToString();
+            CienciasN = cmbFebCiencias.SelectedItem.ToString();
+            LaEntidad = cmbFebEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbFebFormacion.SelectedItem.ToString();
+            Artess = cmbFebArtes.SelectedItem.ToString();
+            EducacionF = cmbFebEdFisica.SelectedItem.ToString();
+            Edsocio = cmbFebSocio.SelectedItem.ToString();
+            Inasistencias = cmbFebInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+
+        public void caliMarzo()
+        {
+
+            Español = cmbMarEspañol.SelectedItem.ToString();
+            Matematicas = cmbMarMatematicas.SelectedItem.ToString();
+            Ingless = cmbMarIngles.SelectedItem.ToString();
+            CienciasN = cmbMarCiencias.SelectedItem.ToString();
+            LaEntidad = cmbMarEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbMarFormacion.SelectedItem.ToString();
+            Artess = cmbMarArtes.SelectedItem.ToString();
+            EducacionF = cmbMarEdFisica.SelectedItem.ToString();
+            Edsocio = cmbMarSocio.SelectedItem.ToString();
+            Inasistencias = cmbMarInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliAbril()
+        {
+            Español = cmbAbrEspañol.SelectedItem.ToString();
+            Matematicas = cmbAbrMatematicas.SelectedItem.ToString();
+            Ingless = cmbAbrIngles.SelectedItem.ToString();
+            CienciasN = cmbAbrCiencias.SelectedItem.ToString();
+            LaEntidad = cmbAbrEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbAbrFormacion.SelectedItem.ToString();
+            Artess = cmbAbrArtes.SelectedItem.ToString();
+            EducacionF = cmbAbrEdFisica.SelectedItem.ToString();
+            Edsocio = cmbAbrSocio.SelectedItem.ToString();
+            Inasistencias = cmbAbrInasis.SelectedItem.ToString();
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliMayo()
+        {
+            Español = cmbMayEspañol.SelectedItem.ToString();
+            Matematicas = cmbMayMatematicas.SelectedItem.ToString();
+            Ingless = cmbMayIngles.SelectedItem.ToString();
+            CienciasN = cmbMayCiencias.SelectedItem.ToString();
+            LaEntidad = cmbMayEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbMayFormacion.SelectedItem.ToString();
+            Artess = cmbMayArtes.SelectedItem.ToString();
+            Edsocio = cmbMaySocio.SelectedItem.ToString();
+            EducacionF = cmbMaySocio.SelectedItem.ToString();
+            Inasistencias = cmbMayInasis.SelectedItem.ToString();
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
+
+        public void caliJunio()
+        {
+            Español = cmbJunEspañol.SelectedItem.ToString();
+            Matematicas = cmbJunMatematicas.SelectedItem.ToString();
+            Ingless = cmbJunIngles.SelectedItem.ToString();
+            CienciasN = cmbJunCiencias.SelectedItem.ToString();
+            LaEntidad = cmbJunEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbJunFormacion.SelectedItem.ToString();
+            Artess = cmbJunArtes.SelectedItem.ToString();
+            EducacionF = cmbJunEdFisica.SelectedItem.ToString();
+            Edsocio = cmbJunSocio.SelectedItem.ToString();
+            Inasistencias = cmbJunInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+        }
+
+        public void caliDiagnostico()
+        {
+
+            Español = cmbDiagEspañol.SelectedItem.ToString();
+            Matematicas = cmbDiagMatematicas.SelectedItem.ToString();
+            Ingless = cmbDiagIngles.SelectedItem.ToString();
+            CienciasN = cmbDiagCiencias.SelectedItem.ToString();
+            LaEntidad = cmbDiagEntidad.SelectedItem.ToString();
+            FormacionCiv = cmbDiagFormacion.SelectedItem.ToString();
+            Artess = cmbDiagArtes.SelectedItem.ToString();
+            EducacionF = cmbDiagEdFisica.SelectedItem.ToString();
+            Edsocio = cmbDiagSocio.SelectedItem.ToString();
+            Inasistencias = cmbDiagInasis.SelectedItem.ToString();
+
+
+            materia = " 'Español' "; calificacion = Convert.ToDouble(Español); buscarmateria(); insertarcali();
+            materia = " 'Matematicas' "; calificacion = Convert.ToDouble(Matematicas); buscarmateria(); insertarcali();
+            materia = " 'Ingles' "; calificacion = Convert.ToDouble(Ingless); buscarmateria(); insertarcali();
+            materia = " 'Ciencias Naturales' "; calificacion = Convert.ToDouble(CienciasN); buscarmateria(); insertarcali();
+            materia = " 'La entidad donde vivo' "; calificacion = Convert.ToDouble(LaEntidad); buscarmateria(); insertarcali();
+            materia = " 'Formación Cívica y Ética' "; calificacion = Convert.ToDouble(FormacionCiv); buscarmateria(); insertarcali();
+            materia = " 'Artes' "; calificacion = Convert.ToDouble(Artess); buscarmateria(); insertarcali();
+            materia = " 'Educación Física' "; calificacion = Convert.ToDouble(EducacionF); buscarmateria(); insertarcali();
+            materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
+            materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
+
+        }
 
         //------------------------------------Metodo para buscar la materia-----------------------------------------------
         public void buscarmateria()
@@ -1516,93 +1871,788 @@ namespace Control_Escolar
 
         }
 
+        //--------------------------------------------------Validaciones-------------------------------------------
+        public void validaCalifMen()
+        {
+            MySqlConnection conn;
+            MySqlCommand com;
+            string conexion = "server=localhost;uid=root;database=nerivela";
+
+            string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            MessageBox.Show(sesion.Curp);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+
+            int idalumno = Convert.ToInt32(myreader["idAlumno"]);
+
+
+
+            string query2 = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + idalumno + "";
+            MessageBox.Show(query2);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+
+            com = new MySqlCommand(query2, conn);
+
+            MySqlDataReader myreader2 = com.ExecuteReader();
+
+            string[] Calificaciones = new string[300];
+            int i = 0;
+            if (myreader2.HasRows)
+            {
+                while (myreader2.Read())
+                {
+                    Calificaciones[i] = myreader2["CalificacionMen"].ToString();
+                    i++;
+                }
+            }
+            //myreader2.Read();
+            try
+            {
+                // DIAGNOSTICO
+                string diag_Esp = Calificaciones[0];
+                string diag_Mat = Calificaciones[1];
+                string diag_Ing = Calificaciones[2];
+                string diag_CiNat = Calificaciones[3];
+                string diag_Ent = Calificaciones[4];
+                string diag_FCE = Calificaciones[5];
+                string diag_Artes = Calificaciones[6];
+                string diag_Socio = Calificaciones[7];
+                string diag_EdFis = Calificaciones[8];
+                string diag_Inasis = Calificaciones[9];
+                // SEPTIEMBRE
+                string sept_Esp = Calificaciones[10];
+                string sept_Mat = Calificaciones[11];
+                string sept_Ing = Calificaciones[12];
+                string sept_CiNat = Calificaciones[13];
+                string sept_Ent = Calificaciones[14];
+                string sept_FCE = Calificaciones[15];
+                string sept_Artes = Calificaciones[16];
+                string sept_Socio = Calificaciones[17];
+                string sept_EdFis = Calificaciones[18];
+                string sept_Inasis = Calificaciones[19];
+                // OCTUBRE
+                string oct_Esp = Calificaciones[20];
+                string oct_Mat = Calificaciones[21];
+                string oct_Ing = Calificaciones[22];
+                string oct_CiNat = Calificaciones[23];
+                string oct_Ent = Calificaciones[24];
+                string oct_FCE = Calificaciones[25];
+                string oct_Artes = Calificaciones[26];
+                string oct_Socio = Calificaciones[27];
+                string oct_EdFis = Calificaciones[28];
+                string oct_Inasis = Calificaciones[29];
+                // NOVIEMBRE
+                string nov_Esp = Calificaciones[30];
+                string nov_Mat = Calificaciones[31];
+                string nov_Ing = Calificaciones[32];
+                string nov_CiNat = Calificaciones[33];
+                string nov_Ent = Calificaciones[34];
+                string nov_FCE = Calificaciones[35];
+                string nov_Artes = Calificaciones[36];
+                string nov_Socio = Calificaciones[37];
+                string nov_EdFis = Calificaciones[38];
+                string nov_Inasis = Calificaciones[39];
+                // DICIEMBRE
+                string dic_Esp = Calificaciones[40];
+                string dic_Mat = Calificaciones[41];
+                string dic_Ing = Calificaciones[42];
+                string dic_CiNat = Calificaciones[43];
+                string dic_Ent = Calificaciones[44];
+                string dic_FCE = Calificaciones[45];
+                string dic_Artes = Calificaciones[46];
+                string dic_Socio = Calificaciones[47];
+                string dic_EdFis = Calificaciones[48];
+                string dic_Inasis = Calificaciones[49];
+                // ENERO
+                string ene_Esp = Calificaciones[50];
+                string ene_Mat = Calificaciones[51];
+                string ene_Ing = Calificaciones[52];
+                string ene_CiNat = Calificaciones[53];
+                string ene_Ent = Calificaciones[54];
+                string ene_FCE = Calificaciones[55];
+                string ene_Artes = Calificaciones[56];
+                string ene_Socio = Calificaciones[57];
+                string ene_EdFis = Calificaciones[58];
+                string ene_Inasis = Calificaciones[59];
+                // FEBRERO
+                string feb_Esp = Calificaciones[60];
+                string feb_Mat = Calificaciones[61];
+                string feb_Ing = Calificaciones[62];
+                string feb_CiNat = Calificaciones[63];
+                string feb_ent = Calificaciones[64];
+                string feb_FCE = Calificaciones[65];
+                string feb_Artes = Calificaciones[66];
+                string feb_Socio = Calificaciones[67];
+                string feb_EdFis = Calificaciones[68];
+                string feb_Inasis = Calificaciones[69];
+                // MARZO
+                string mar_Esp = Calificaciones[70];
+                string mar_Mat = Calificaciones[71];
+                string mar_Ing = Calificaciones[72];
+                string mar_CiNat = Calificaciones[73];
+                string mar_ent = Calificaciones[74];
+                string mar_FCE = Calificaciones[75];
+                string mar_Artes = Calificaciones[76];
+                string mar_Socio = Calificaciones[77];
+                string mar_EdFis = Calificaciones[78];
+                string mar_Inasis = Calificaciones[79];
+                // ABRIL
+                string abr_Esp = Calificaciones[80];
+                string abr_Mat = Calificaciones[81];
+                string abr_Ing = Calificaciones[82];
+                string abr_CiNat = Calificaciones[83];
+                string abr_ent = Calificaciones[84];
+                string abr_FCE = Calificaciones[85];
+                string abr_Artes = Calificaciones[86];
+                string abr_Socio = Calificaciones[87];
+                string abr_EdFis = Calificaciones[88];
+                string abr_Inasis = Calificaciones[89];
+                // MAYO
+                string may_Esp = Calificaciones[90];
+                string may_Mat = Calificaciones[91];
+                string may_Ing = Calificaciones[92];
+                string may_CiNat = Calificaciones[93];
+                string may_ent = Calificaciones[94];
+                string may_FCE = Calificaciones[95];
+                string may_Artes = Calificaciones[96];
+                string may_Socio = Calificaciones[97];
+                string may_EdFis = Calificaciones[98];
+                string may_Inasis = Calificaciones[99];
+                // JUNIO
+                string jun_Esp = Calificaciones[100];
+                string jun_Mat = Calificaciones[101];
+                string jun_Ing = Calificaciones[102];
+                string jun_CiNat = Calificaciones[103];
+                string jun_ent = Calificaciones[104];
+                string jun_FCE = Calificaciones[105];
+                string jun_Artes = Calificaciones[106];
+                string jun_Socio = Calificaciones[107];
+                string jun_EdFis = Calificaciones[108];
+                string jun_Inasis = Calificaciones[109];
+
+
+                // AGREGADO SEPTIEMBRE
+                cmbSepEspañol.Text = sept_Esp;
+                cmbSepMatematicas.Text = sept_Mat;
+                cmbSepIngles.Text = sept_Ing;
+                cmbSepCiencias.Text = sept_CiNat;
+                cmbSepEntidad.Text = sept_Ent;
+                cmbSepFormacion.Text = sept_FCE;
+                cmbSepArtes.Text = sept_Artes;
+                cmbSepSocio.Text = sept_Socio;
+                cmbSepEdFisica.Text = sept_EdFis;
+                cmbSepInasis.Text = sept_Inasis;
+                // AGREGADO OCTUBRE
+                cmbOctEspañol.Text = oct_Esp;
+                cmbOctMatematicas.Text = oct_Mat;
+                cmbOctIngles.Text = oct_Ing;
+                cmbOctCiencias.Text = oct_CiNat;
+                cmbOctEntidad.Text = oct_Ent;
+                cmbOctFormacion.Text = oct_FCE;
+                cmbOctArtes.Text = oct_Artes;
+                cmbOctSocio.Text = oct_Socio;
+                cmbOctEdFisica.Text = oct_EdFis;
+                cmbOctInasis.Text = oct_Inasis;
+                // AGREGADO NOVIEMBRE
+                cmbNovEspañol.Text = nov_Esp;
+                cmbNovMatematicas.Text = nov_Mat;
+                cmbNovIngles.Text = nov_Ing;
+                cmbNovCiencias.Text = nov_CiNat;
+                cmbNovEntidad.Text = nov_Ent;
+                cmbNovFormacion.Text = nov_FCE;
+                cmbNovArtes.Text = nov_Artes;
+                cmbNovSocio.Text = nov_Socio;
+                cmbNovEdFisica.Text = nov_EdFis;
+                cmbNovInasis.Text = nov_Inasis;
+                // AGREGADO DICIEMBRE
+                cmbDicEspañol.Text = dic_Esp;
+                cmbDicMatematicas.Text = dic_Mat;
+                cmbDicIngles.Text = dic_Ing;
+                cmbDicCiencias.Text = dic_CiNat;
+                cmbDicEntidad.Text = dic_Ent;
+                cmbDicFormacion.Text = dic_FCE;
+                cmbDicArtes.Text = dic_Artes;
+                cmbDicSocio.Text = dic_Socio;
+                cmbDicEdFisica.Text = dic_EdFis;
+                cmbDicInasis.Text = dic_Inasis;
+                // AGREGADO ENERO
+                cmbEneEspañol.Text = ene_Esp;
+                cmbEneMatematicas.Text = ene_Mat;
+                cmbEneIngles.Text = ene_Ing;
+                cmbEneCiencias.Text = ene_CiNat;
+                cmbEneEntidad.Text = ene_Ent;
+                cmbEneFormacion.Text = ene_FCE;
+                cmbEneArtes.Text = ene_Artes;
+                cmbEneSocio.Text = ene_Socio;
+                cmbEneEdFisica.Text = ene_EdFis;
+                cmbEneInasis.Text = ene_Inasis;
+                // AGREGADO FEBRERO
+                cmbFebEspañol.Text = feb_Esp;
+                cmbFebMatematicas.Text = feb_Mat;
+                cmbFebIngles.Text = feb_Ing;
+                cmbFebCiencias.Text = feb_CiNat;
+                cmbFebEntidad.Text = feb_ent;
+                cmbFebFormacion.Text = feb_FCE;
+                cmbFebArtes.Text = feb_Artes;
+                cmbFebSocio.Text = feb_Socio;
+                cmbFebEdFisica.Text = feb_EdFis;
+                cmbFebInasis.Text = feb_Inasis;
+                // AGREGADO MARZO
+                cmbMarEspañol.Text = mar_Esp;
+                cmbMarMatematicas.Text = mar_Mat;
+                cmbMarIngles.Text = mar_Ing;
+                cmbMarCiencias.Text = mar_CiNat;
+                cmbMarEntidad.Text = mar_ent;
+                cmbMarFormacion.Text = mar_FCE;
+                cmbMarArtes.Text = mar_Artes;
+                cmbMarSocio.Text = mar_Socio;
+                cmbMarEdFisica.Text = mar_EdFis;
+                cmbMarInasis.Text = mar_Inasis;
+                // AGREGADO ABRIL
+                cmbAbrEspañol.Text = abr_Esp;
+                cmbAbrMatematicas.Text = abr_Mat;
+                cmbAbrIngles.Text = abr_Ing;
+                cmbAbrCiencias.Text = abr_CiNat;
+                cmbAbrEntidad.Text = abr_ent;
+                cmbAbrFormacion.Text = abr_FCE;
+                cmbAbrArtes.Text = abr_Artes;
+                cmbAbrSocio.Text = abr_Socio;
+                cmbAbrEdFisica.Text = abr_EdFis;
+                cmbAbrInasis.Text = abr_Inasis;
+                // AGREGADO MAYO
+                cmbMayEspañol.Text = may_Esp;
+                cmbMayMatematicas.Text = may_Mat;
+                cmbMayIngles.Text = may_Ing;
+                cmbMayCiencias.Text = may_CiNat;
+                cmbMayEntidad.Text = may_ent;
+                cmbMayFormacion.Text = may_FCE;
+                cmbMarArtes.Text = may_Artes;
+                cmbMaySocio.Text = may_Socio;
+                cmbMayEdFisica.Text = may_EdFis;
+                cmbMayInasis.Text = may_Inasis;
+                // AGREGADO JUNIO
+                cmbJunEspañol.Text = jun_Esp;
+                cmbJunMatematicas.Text = jun_Mat;
+                cmbJunIngles.Text = jun_Ing;
+                cmbJunCiencias.Text = jun_CiNat;
+                cmbJunEntidad.Text = jun_ent;
+                cmbJunFormacion.Text = jun_FCE;
+                cmbJunArtes.Text = jun_Artes;
+                cmbJunSocio.Text = jun_Socio;
+                cmbJunEdFisica.Text = jun_EdFis;
+                cmbJunInasis.Text = jun_Inasis;
+                // AGREGADO DIAGNOSTICO
+                cmbDiagEspañol.Text = diag_Esp;
+                cmbDiagMatematicas.Text = diag_Mat;
+                cmbDiagIngles.Text = diag_Ing;
+                cmbDiagCiencias.Text = diag_CiNat;
+                cmbDiagEntidad.Text = diag_Ent;
+                cmbDiagFormacion.Text = diag_FCE;
+                cmbDiagArtes.Text = diag_Artes;
+                cmbDiagSocio.Text = diag_Socio;
+                cmbDiagEdFisica.Text = diag_EdFis;
+                cmbDiagInasis.Text = diag_Inasis;
+
+                               
+                // BLOQUEO SEPTIEMBRE
+                if (cmbSepEspañol.Text != "")
+                {
+                    cmbSepEspañol.Enabled = false;
+                }
+                if (cmbSepMatematicas.Text != "")
+                {
+                    cmbSepMatematicas.Enabled = false;
+                }
+                if (cmbSepCiencias.Text != "")
+                {
+                    cmbSepCiencias.Enabled = false;
+                }
+                if (cmbSepEntidad.Text != "")
+                {
+                    cmbSepEntidad.Enabled = false;
+                }
+                if (cmbSepFormacion.Text != "")
+                {
+                    cmbSepFormacion.Enabled = false;
+                }
+                if (cmbSepArtes.Text != "")
+                {
+                    cmbSepArtes.Enabled = false;
+                }
+                if (cmbSepSocio.Text != "")
+                {
+                    cmbSepSocio.Enabled = false;
+                }
+                if (cmbSepEdFisica.Text != "")
+                {
+                    cmbSepEdFisica.Enabled = false;
+                }
+                if (cmbSepIngles.Text != "")
+                {
+                    cmbSepIngles.Enabled = false;
+                }
+                if (cmbSepInasis.Text != "")
+                {
+                    cmbSepInasis.Enabled = false;
+                }
+
+                // BLOQUEO OCTUBRE
+                if (cmbOctEspañol.Text != "")
+                {
+                    cmbOctEspañol.Enabled = false;
+                }
+                if (cmbOctMatematicas.Text != "")
+                {
+                    cmbOctMatematicas.Enabled = false;
+                }
+                if (cmbOctIngles.Text != "")
+                {
+                    cmbOctIngles.Enabled = false;
+                }
+                if (cmbOctCiencias.Text != "")
+                {
+                    cmbOctCiencias.Enabled = false;
+                }
+                if (cmbOctEntidad.Text != "")
+                {
+                    cmbOctEntidad.Enabled = false;
+                }
+                if (cmbOctFormacion.Text != "")
+                {
+                    cmbOctFormacion.Enabled = false;
+                }
+                if (cmbOctArtes.Text != "")
+                {
+                    cmbOctArtes.Enabled = false;
+                }
+                if (cmbOctSocio.Text != "")
+                {
+                    cmbOctSocio.Enabled = false;
+                }
+                if (cmbOctEdFisica.Text != "")
+                {
+                    cmbOctEdFisica.Enabled = false;
+                }
+                if (cmbOctInasis.Text != "")
+                {
+                    cmbOctInasis.Enabled = false;
+                }
+
+                // BLOQUEO NOVIEMBRE
+                if (cmbNovEspañol.Text != "")
+                {
+                    cmbNovEspañol.Enabled = false;
+                }
+                if (cmbNovMatematicas.Text != "")
+                {
+                    cmbNovMatematicas.Enabled = false;
+                }
+                if (cmbNovIngles.Text != "")
+                {
+                    cmbNovIngles.Enabled = false;
+                }
+                if (cmbNovCiencias.Text != "")
+                {
+                    cmbNovCiencias.Enabled = false;
+                }
+                if (cmbNovEntidad.Text != "")
+                {
+                    cmbNovEntidad.Enabled = false;
+                }
+                if (cmbNovFormacion.Text != "")
+                {
+                    cmbNovFormacion.Enabled = false;
+                }
+                if (cmbNovArtes.Text != "")
+                {
+                    cmbNovArtes.Enabled = false;
+                }
+                if (cmbNovSocio.Text != "")
+                {
+                    cmbNovSocio.Enabled = false;
+                }
+                if (cmbNovEdFisica.Text != "")
+                {
+                    cmbNovEdFisica.Enabled = false;
+                }
+                if (cmbNovInasis.Text != "")
+                {
+                    cmbNovInasis.Enabled = false;
+                }
+
+                // BLOQUEO DICIEMBRE
+                if (cmbDicEspañol.Text != "")
+                {
+                    cmbDicEspañol.Enabled = false;
+                }
+                if (cmbDicMatematicas.Text != "")
+                {
+                    cmbDicMatematicas.Enabled = false;
+                }
+                if (cmbDicIngles.Text != "")
+                {
+                    cmbDicIngles.Enabled = false;
+                }
+                if (cmbDicCiencias.Text != "")
+                {
+                    cmbDicCiencias.Enabled = false;
+                }
+                if (cmbDicEntidad.Text != "")
+                {
+                    cmbDicEntidad.Enabled = false;
+                }
+                if (cmbDicFormacion.Text != "")
+                {
+                    cmbDicFormacion.Enabled = false;
+                }
+                if (cmbDicArtes.Text != "")
+                {
+                    cmbDicArtes.Enabled = false;
+                }
+                if (cmbDicSocio.Text != "")
+                {
+                    cmbDicSocio.Enabled = false;
+                }
+                if (cmbDicEdFisica.Text != "")
+                {
+                    cmbDicEdFisica.Enabled = false;
+                }
+                if (cmbDicInasis.Text != "")
+                {
+                    cmbDicInasis.Enabled = false;
+                }
+
+                // BLOQUEO ENERO
+                if (cmbEneEspañol.Text != "")
+                {
+                    cmbEneEspañol.Enabled = false;
+                }
+                if (cmbEneMatematicas.Text != "")
+                {
+                    cmbEneMatematicas.Enabled = false;
+                }
+                if (cmbEneIngles.Text != "")
+                {
+                    cmbEneIngles.Enabled = false;
+                }
+                if (cmbEneCiencias.Text != "")
+                {
+                    cmbEneCiencias.Enabled = false;
+                }
+                if (cmbEneEntidad.Text != "")
+                {
+                    cmbEneEntidad.Enabled = false;
+                }
+                if (cmbEneFormacion.Text != "")
+                {
+                    cmbEneFormacion.Enabled = false;
+                }
+                if (cmbEneArtes.Text != "")
+                {
+                    cmbEneArtes.Enabled = false;
+                }
+                if (cmbEneSocio.Text != "")
+                {
+                    cmbEneSocio.Enabled = false;
+                }
+                if (cmbEneEdFisica.Text != "")
+                {
+                    cmbEneEdFisica.Enabled = false;
+                }
+                if (cmbEneInasis.Text != "")
+                {
+                    cmbEneInasis.Enabled = false;
+                }
+
+                // BLOQUEO FEBRERO
+                if (cmbFebEspañol.Text != "")
+                {
+                    cmbFebEspañol.Enabled = false;
+                }
+                if (cmbFebMatematicas.Text != "")
+                {
+                    cmbFebMatematicas.Enabled = false;
+                }
+                if (cmbFebIngles.Text != "")
+                {
+                    cmbFebIngles.Enabled = false;
+                }
+                if (cmbFebCiencias.Text != "")
+                {
+                    cmbFebCiencias.Enabled = false;
+                }
+                if (cmbFebEntidad.Text != "")
+                {
+                    cmbFebEntidad.Enabled = false;
+                }
+                if (cmbFebFormacion.Text != "")
+                {
+                    cmbFebFormacion.Enabled = false;
+                }
+                if (cmbFebArtes.Text != "")
+                {
+                    cmbFebArtes.Enabled = false;
+                }
+                if (cmbFebSocio.Text != "")
+                {
+                    cmbFebSocio.Enabled = false;
+                }
+                if (cmbFebEdFisica.Text != "")
+                {
+                    cmbFebEdFisica.Enabled = false;
+                }
+                if (cmbFebInasis.Text != "")
+                {
+                    cmbFebInasis.Enabled = false;
+                }
+
+                // BLOQUEO MARZO
+                if (cmbMarEspañol.Text != "")
+                {
+                    cmbMarEspañol.Enabled = false;
+                }
+                if (cmbMarMatematicas.Text != "")
+                {
+                    cmbMarMatematicas.Enabled = false;
+                }
+                if (cmbMarIngles.Text != "")
+                {
+                    cmbMarIngles.Enabled = false;
+                }
+                if (cmbMarCiencias.Text != "")
+                {
+                    cmbMarCiencias.Enabled = false;
+                }
+                if (cmbMarEntidad.Text != "")
+                {
+                    cmbMarEntidad.Enabled = false;
+                }
+                if (cmbMarFormacion.Text != "")
+                {
+                    cmbMarFormacion.Enabled = false;
+                }
+                if (cmbMarArtes.Text != "")
+                {
+                    cmbMarArtes.Enabled = false;
+                }
+                if (cmbMarSocio.Text != "")
+                {
+                    cmbMarSocio.Enabled = false;
+                }
+                if (cmbMarEdFisica.Text != "")
+                {
+                    cmbMarEdFisica.Enabled = false;
+                }
+                if (cmbMarInasis.Text != "")
+                {
+                    cmbMarInasis.Enabled = false;
+                }
+
+                // BLOQUEO ABRIL
+                if (cmbAbrEspañol.Text != "")
+                {
+                    cmbAbrEspañol.Enabled = false;
+                }
+                if (cmbAbrMatematicas.Text != "")
+                {
+                    cmbAbrMatematicas.Enabled = false;
+                }
+                if (cmbAbrIngles.Text != "")
+                {
+                    cmbAbrIngles.Enabled = false;
+                }
+                if (cmbAbrCiencias.Text != "")
+                {
+                    cmbAbrCiencias.Enabled = false;
+                }
+                if (cmbAbrEntidad.Text != "")
+                {
+                    cmbAbrEntidad.Enabled = false;
+                }
+                if (cmbAbrFormacion.Text != "")
+                {
+                    cmbAbrFormacion.Enabled = false;
+                }
+                if (cmbAbrArtes.Text != "")
+                {
+                    cmbAbrArtes.Enabled = false;
+                }
+                if (cmbAbrSocio.Text != "")
+                {
+                    cmbAbrSocio.Enabled = false;
+                }
+                if (cmbAbrEdFisica.Text != "")
+                {
+                    cmbAbrEdFisica.Enabled = false;
+                }
+                if (cmbAbrInasis.Text != "")
+                {
+                    cmbAbrInasis.Enabled = false;
+                }
+
+                // BLOQUEO MAYO
+                if (cmbMayEspañol.Text != "")
+                {
+                    cmbMayEspañol.Enabled = false;
+                }
+                if (cmbMayMatematicas.Text != "")
+                {
+                    cmbMayMatematicas.Enabled = false;
+                }
+                if (cmbMayIngles.Text != "")
+                {
+                    cmbMayIngles.Enabled = false;
+                }
+                if (cmbMayCiencias.Text != "")
+                {
+                    cmbMayCiencias.Enabled = false;
+                }
+                if (cmbMayEntidad.Text != "")
+                {
+                    cmbMayEntidad.Enabled = false;
+                }
+                if (cmbMayFormacion.Text != "")
+                {
+                    cmbMayFormacion.Enabled = false;
+                }
+                if (cmbMayArtes.Text != "")
+                {
+                    cmbMayArtes.Enabled = false;
+                }
+                if (cmbMaySocio.Text != "")
+                {
+                    cmbMaySocio.Enabled = false;
+                }
+                if (cmbMayEdFisica.Text != "")
+                {
+                    cmbMayEdFisica.Enabled = false;
+                }
+                if (cmbMayInasis.Text != "")
+                {
+                    cmbMayInasis.Enabled = false;
+                }
+
+                // BLOQUEO JUNIO
+                if (cmbJunEspañol.Text != "")
+                {
+                    cmbJunEspañol.Enabled = false;
+                }
+                if (cmbJunMatematicas.Text != "")
+                {
+                    cmbJunMatematicas.Enabled = false;
+                }
+                if (cmbJunIngles.Text != "")
+                {
+                    cmbJunIngles.Enabled = false;
+                }
+                if (cmbJunCiencias.Text != "")
+                {
+                    cmbJunCiencias.Enabled = false;
+                }
+                if (cmbJunEntidad.Text != "")
+                {
+                    cmbJunEntidad.Enabled = false;
+                }
+                if (cmbJunFormacion.Text != "")
+                {
+                    cmbJunFormacion.Enabled = false;
+                }
+                if (cmbJunArtes.Text != "")
+                {
+                    cmbJunArtes.Enabled = false;
+                }
+                if (cmbJunSocio.Text != "")
+                {
+                    cmbJunSocio.Enabled = false;
+                }
+                if (cmbJunEdFisica.Text != "")
+                {
+                    cmbJunEdFisica.Enabled = false;
+                }
+                if (cmbJunInasis.Text != "")
+                {
+                    cmbJunInasis.Enabled = false;
+                }
+
+                // BLOQUEO DIAGNOSTICO
+                if (cmbDiagEspañol.Text != "")
+                {
+                    cmbDiagEspañol.Enabled = false;
+                }
+                if (cmbDiagMatematicas.Text != "")
+                {
+                    cmbDiagMatematicas.Enabled = false;
+                }
+                if (cmbDiagIngles.Text != "")
+                {
+                    cmbDiagIngles.Enabled = false;
+                }
+                if (cmbDiagCiencias.Text != "")
+                {
+                    cmbDiagCiencias.Enabled = false;
+                }
+                if (cmbDiagEntidad.Text != "")
+                {
+                    cmbDiagEntidad.Enabled = false;
+                }
+                if (cmbDiagFormacion.Text != "")
+                {
+                    cmbDiagFormacion.Enabled = false;
+                }
+                if (cmbDiagArtes.Text != "")
+                {
+                    cmbDiagArtes.Enabled = false;
+                }
+                if (cmbDiagSocio.Text != "")
+                {
+                    cmbDiagSocio.Enabled = false;
+                }
+                if (cmbDiagEdFisica.Text != "")
+                {
+                    cmbDiagEdFisica.Enabled = false;
+                }
+                if (cmbDiagInasis.Text != "")
+                {
+                    cmbDiagInasis.Enabled = false;
+                }
+
+                //MessageBox.Show(sept_Esp.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public bool ValidaCampos(GroupBox Grupo)
+        {
+            foreach (Control combo in Grupo.Controls)
+            {
+                if (combo is ComboBox)
+                {
+                    //ComboBox combo = new ComboBox();
+                    //combo.Name = grupo.Name;
+                    if (combo.Text == string.Empty)
+                    {
+                        MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
+                        return true;
+                    }
+                }
+
+            }
+            return false;
+        }
+
     }
-
-    //private void materialRaisedButton1_Click(object sender, EventArgs e)
-    //{
-    //    mes = materialTabControl1.SelectedTab.Name;
-    //    switch (mes)
-    //    {
-    //        case "Septiembre":
-    //            {
-    //                calisep();
-    //                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-    //            }
-    //            break;
-
-    //        case "Octubre":
-    //            {
-    //                caliOct();
-    //                MessageBox.Show("Calificaciones  octubre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Noviembre":
-    //            {
-    //                caliNov();
-    //                MessageBox.Show("Calificaciones  noviembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Diciembre":
-    //            {
-    //                caliDic();
-    //                MessageBox.Show("Calificaciones  diciembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Enero":
-    //            {
-    //                caliEnero();
-    //                MessageBox.Show("Calificaciones  Enero registradas con exito");
-    //            }
-    //            break;
-    //        case "Febrero":
-    //            {
-    //                caliFebrero();
-    //                MessageBox.Show("Calificaciones  febrero registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Marzo":
-    //            {
-    //                caliMarzo();
-    //                MessageBox.Show("Calificaciones  Marzo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Abril":
-    //            {
-    //                caliAbril();
-    //                MessageBox.Show("Calificaciones  Abril registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Mayo":
-    //            {
-    //                caliMayo();
-    //                MessageBox.Show("Calificaciones  Mayo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Junio":
-    //            {
-    //                caliJunio();
-    //                MessageBox.Show("Calificaciones  Junio registradas con exito");
-    //            }
-    //            break;
-
-
-    //        case "Diagnostico":
-    //            {
-    //                caliDiagnostico();
-    //                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
-    //            }
-    //            break;
-
-    //    }
-
-    //}
 
 
 
