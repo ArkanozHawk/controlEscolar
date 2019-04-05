@@ -751,6 +751,28 @@ namespace Control_Escolar
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            //-------------Ingresar los datos del alumno en pdf--------------------------------
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            string nombre, Apellidop, Apellidom, IdAlumno;
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+            myreader.Read();
+            nombre = Convert.ToString(myreader["nombre"]);
+            Apellidop = Convert.ToString(myreader["ApellidoP"]);
+            Apellidom = Convert.ToString(myreader["ApellidoM"]);
+            sesion.grado = Convert.ToString(myreader["idGrado"]);
+            IdAlumno = Convert.ToString(myreader["idAlumno"]);
+            conn.Close();
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
             string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
