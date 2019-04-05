@@ -300,6 +300,7 @@
             this.Diagnostico.TabIndex = 0;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
+            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox1
             // 
@@ -6200,7 +6201,6 @@
             this.Junio.TabIndex = 10;
             this.Junio.Text = "Junio";
             this.Junio.UseVisualStyleBackColor = true;
-            this.Junio.Click += new System.EventHandler(this.tabPage11_Click);
             // 
             // groupBox10
             // 

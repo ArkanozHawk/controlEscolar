@@ -44,7 +44,7 @@ namespace Control_Escolar
         public static void ThreadGenerarBoletas()
 
         {
-            Application.Run(new GenerarBoletas());
+            
         }
 
         private void btnCerrar_Click_1(object sender, EventArgs e)

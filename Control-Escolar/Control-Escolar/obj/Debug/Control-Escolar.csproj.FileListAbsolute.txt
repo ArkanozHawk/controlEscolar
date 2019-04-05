@@ -495,7 +495,6 @@ E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsha
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
-E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
@@ -521,3 +520,5 @@ E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
