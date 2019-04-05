@@ -169,6 +169,12 @@
     <Compile Include="Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
+    <Compile Include="Graficas-Estad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Graficas-Estad.Designer.cs">
+      <DependentUpon>Graficas-Estad.cs</DependentUpon>
+    </Compile>
     <Compile Include="Grupos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Graficas-Estad.resx">
+      <DependentUpon>Graficas-Estad.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Grupos.resx">
       <DependentUpon>Grupos.cs</DependentUpon>
