@@ -425,7 +425,6 @@ C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\ob
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
-C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
@@ -521,3 +520,4 @@ E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
