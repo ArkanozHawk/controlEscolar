@@ -43,9 +43,16 @@ namespace Control_Escolar
                         {
                             if (cmbDiagInasis.Enabled == false)
                             {
-                                calisep();
-                                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox1) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    calisep();
+                                    MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                                    validaCalifMen();
+                                }
                             }
                             else
                             {
@@ -65,9 +72,17 @@ namespace Control_Escolar
                         {
                             if (cmbSepInasis.Enabled == false)
                             {
-                                caliOct();
-                                MessageBox.Show("Calificaciones  octubre registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox2) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliOct();
+                                    MessageBox.Show("Calificaciones  octubre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -87,9 +102,17 @@ namespace Control_Escolar
                         {
                             if (cmbOctInasis.Enabled == false)
                             {
-                                caliNov();
-                                MessageBox.Show("Calificaciones  noviembre registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox3) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliNov();
+                                    MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -109,9 +132,17 @@ namespace Control_Escolar
                         {
                             if (cmbNovInasis.Enabled == false)
                             {
-                                caliDic();
-                                MessageBox.Show("Calificaciones  diciembre registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox4) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliDic();
+                                    MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -131,9 +162,17 @@ namespace Control_Escolar
                         {
                             if (cmbNovInasis.Enabled == false)
                             {
-                                caliEnero();
-                                MessageBox.Show("Calificaciones  Enero registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox5) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliEnero();
+                                    MessageBox.Show("Calificaciones  Enero registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -153,9 +192,17 @@ namespace Control_Escolar
                         {
                             if (cmbEneInasis.Enabled == false)
                             {
-                                caliFebrero();
-                                MessageBox.Show("Calificaciones  febrero registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox6) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliFebrero();
+                                    MessageBox.Show("Calificaciones  febrero registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -175,9 +222,17 @@ namespace Control_Escolar
                         {
                             if (cmbFebInasis.Enabled == false)
                             {
-                                caliMarzo();
-                                MessageBox.Show("Calificaciones  Marzo registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox7) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMarzo();
+                                    MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -197,9 +252,17 @@ namespace Control_Escolar
                         {
                             if (cmbMarInasis.Enabled == false)
                             {
-                                caliAbril();
-                                MessageBox.Show("Calificaciones  Abril registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox9) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliAbril();
+                                    MessageBox.Show("Calificaciones  Abril registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -219,9 +282,17 @@ namespace Control_Escolar
                         {
                             if (cmbAbrInasis.Enabled == false)
                             {
-                                caliMayo();
-                                MessageBox.Show("Calificaciones  Mayo registradas con exito");
-                                validaCalifMen();
+                                if (ValidaCampos(groupBox8) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMayo();
+                                    MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                                    validaCalifMen();
+                                }
+                                
                             }
                             else
                             {
@@ -2563,19 +2634,15 @@ namespace Control_Escolar
 
         public bool ValidaCampos(GroupBox Grupo)
         {
-            foreach (Control _group in Grupo.Controls)
+            foreach (Control combo in Grupo.Controls)
             {
-                if (_group is ComboBox)
+                if (combo is ComboBox)
                 {
-                    ComboBox combo = new ComboBox();
-                    combo.Name = _group.Name;
+                    //ComboBox combo = new ComboBox();
+                    //combo.Name = grupo.Name;
                     if (combo.Text == string.Empty)
                     {
                         MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
-                        return true;
-                    }
-                    else
-                    {
                         return true;
                     }
                 }
