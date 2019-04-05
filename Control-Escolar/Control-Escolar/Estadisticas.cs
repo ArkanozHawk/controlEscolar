@@ -74,7 +74,10 @@ namespace Control_Escolar
             com1 = new MySqlCommand(numHombres1, conn1);
 
             MySqlDataReader myreader1 = com1.ExecuteReader();
-            
+            myreader1.Read();
+            int hombres1 = Convert.ToInt32(myreader1["COUNT(*)"]);
+            MessageBox.Show(hombres1.ToString());
+
             total1 = numHombres1 + numMujeres1;
 
             conn1.Close();
@@ -345,7 +348,7 @@ namespace Control_Escolar
             cell425.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell425);
 
-            PdfPCell cell447 = new PdfPCell(new Phrase(" "+ numHombres1, cuerpo));
+            PdfPCell cell447 = new PdfPCell(new Phrase(" "+ hombres1, cuerpo));
             cell447.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell447);
 
