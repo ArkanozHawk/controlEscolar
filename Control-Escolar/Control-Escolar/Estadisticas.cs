@@ -60,47 +60,137 @@ namespace Control_Escolar
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             //--------------------------------Seleccionamos todo de los alumnos de 1°--------------------------------
-            MySqlConnection conn;
-            MySqlCommand com;
-
+  
             string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT  *  FROM  `alumno`  where  idGrado = 1";
-            string genero, grado1;
-            int SumHomb = 0;
-            double numAlum = 0;
+            string numHombres1 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 1 AND `Genero` = 'Masculino'";
+            string numMujeres1 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 1 AND `Genero` = 'Femenino'";
+            string total1 = " " ;
+            MySqlConnection conn1;
+            MySqlCommand com1;
 
-            conn = new MySqlConnection(conexion);
-            conn.Open();
+            conn1 = new MySqlConnection(conexion);
+            conn1.Open();
 
-            com = new MySqlCommand(query, conn);
+            com1 = new MySqlCommand(numHombres1, conn1);
 
-            MySqlDataReader myreader = com.ExecuteReader();
+            MySqlDataReader myreader1 = com1.ExecuteReader();
+            
+            total1 = numHombres1 + numMujeres1;
 
-            myreader.Read();
-            grado1 = Convert.ToString(myreader["idGrado"]);
-            numAlum = Convert.ToDouble(myreader["idAlumno"]);
-            conn.Close();
+            conn1.Close();
+            //--------------------------------Seleccionamos todo de los alumnos de 2°--------------------------------
 
-            //int L = 0;
-            //while (myreader.Read())//guardar genero
-            //{
-            //    double[] numgenero = new double[numAlum];
-            //    numgenero[L] = Convert.ToDouble(myreader["Genero"]);
-            //    L++;
-            //}
+            string conexion1 = "server=localhost;uid=root;database=nerivela";
+            string numHombres2 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 2 AND `Genero` = 'Masculino'";
+            string numMujeres2 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 2 AND `Genero` = 'Femenino'";
+            string total2 = " ";
+            MySqlConnection conn2;
+            MySqlCommand com2;
 
-            //double PromSeptTemp = 0;
+            conn2 = new MySqlConnection(conexion1);
+            conn2.Open();
 
-            //for (int i = 0; i < 9; i++)
-            //{
-            //    PromSeptTemp = PromSeptTemp + Convert.ToDouble(CalifSept[i]);
-            //}
+            com2 = new MySqlCommand(numHombres2, conn2);
 
-            //if (genero == "Masculino")
-            //{
-            //    SumHomb = SumHomb + 1;
-            //}
+            MySqlDataReader myreader2 = com2.ExecuteReader();
 
+            total2 = numHombres2 + numMujeres2;
+
+            conn2.Close();
+            
+            //--------------------------------Seleccionamos todo de los alumnos de 3°--------------------------------
+
+            string conexion2 = "server=localhost;uid=root;database=nerivela";
+            string numHombres3 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 3 AND `Genero` = 'Masculino'";
+            string numMujeres3 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 3 AND `Genero` = 'Femenino'";
+            string total3 = " ";
+            MySqlConnection conn3;
+            MySqlCommand com3;
+
+            conn3 = new MySqlConnection(conexion2);
+            conn3.Open();
+
+            com3 = new MySqlCommand(numHombres3, conn3);
+
+            MySqlDataReader myreader3 = com3.ExecuteReader();
+
+            total3 = numHombres3 + numMujeres3;
+
+            conn3.Close();
+            //--------------------------------Seleccionamos todo de los alumnos de 4°--------------------------------
+
+            string conexion3 = "server=localhost;uid=root;database=nerivela";
+            string numHombres4 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 4 AND `Genero` = 'Masculino'";
+            string numMujeres4 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 4 AND `Genero` = 'Femenino'";
+            string total4 = " ";
+
+            MySqlConnection conn4;
+            MySqlCommand com4;
+
+            conn4 = new MySqlConnection(conexion3);
+            conn4.Open();
+
+            com4 = new MySqlCommand(numHombres4, conn4);
+
+            MySqlDataReader myreader4 = com4.ExecuteReader();
+
+            total4 = numHombres4 + numMujeres4;
+
+            conn4.Close();
+            //--------------------------------Seleccionamos todo de los alumnos de 5°--------------------------------
+
+            string conexion4 = "server=localhost;uid=root;database=nerivela";
+            string numHombres5 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 5 AND `Genero` = 'Masculino'";
+            string numMujeres5 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 5 AND `Genero` = 'Femenino'";
+            string total5 = " ";
+
+            MySqlConnection conn5;
+            MySqlCommand com5;
+
+            conn5 = new MySqlConnection(conexion4);
+            conn5.Open();
+
+            com5 = new MySqlCommand(numHombres5, conn5);
+
+            MySqlDataReader myreader5 = com5.ExecuteReader();
+
+            total5 = numHombres5 + numMujeres5;
+
+            conn5.Close();
+            //--------------------------------Seleccionamos todo de los alumnos de 6°--------------------------------
+            
+            string conexion5 = "server=localhost;uid=root;database=nerivela";
+            string numHombres6 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 6 AND `Genero` = 'Masculino'";
+            string numMujeres6 = "SELECT COUNT(*) FROM `alumno` WHERE `idGrado` = 6 AND `Genero` = 'Femenino'";
+            string total6 = " ";
+
+            MySqlConnection conn6;
+            MySqlCommand com6;
+
+            conn6 = new MySqlConnection(conexion5);
+            conn6.Open();
+
+            com6 = new MySqlCommand(numHombres6, conn6);
+
+            MySqlDataReader myreader6 = com6.ExecuteReader();
+
+            total6 = numHombres6 + numMujeres6;
+
+            conn6.Close();
+            //------------------------------------------Suma de todos los hombres-----------------------------
+            string numHombresFin = " ";
+
+            numHombresFin = numHombres1 + numHombres2 + numHombres3 + numHombres4 + numHombres5 + numHombres6;
+
+            //------------------------------------------Suma de todos las mujeres-----------------------------
+            string numMujeresFin = " ";
+
+            numMujeresFin = numMujeres1 + numMujeres2 + numMujeres3 + numMujeres4 + numMujeres5 + numMujeres6;
+
+            //-----------------------------------Suma de todas las mujeres y hombres-----------------------------
+            string totalFin = " ";
+
+            totalFin = numHombresFin + numMujeresFin;
             //------------------------------------------------------------------------------------------------------
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
@@ -146,8 +236,7 @@ namespace Control_Escolar
 
 
             // CREO UN ARREGLO QUE CONTIENE LAS MEDIDAS DE CADA UNA DE LAS COLUMNAS
-            // EN MI CASO SON 4, (TB PUEDES PASAR EL ARREGLO DIRECTAMENTE)
-            float[] Celdas = { 0.25f, 0.55f, 0.50f, 0.20f, 0.20f };
+            float[] Celdas = { 0.25f, 0.45f, 0.20f, 0.20f, 0.20f };
 
             // ASIGNAS LAS MEDIDAS A LA TABLA (ANCHO)
             table.SetWidths(Celdas);
@@ -256,15 +345,15 @@ namespace Control_Escolar
             cell425.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell425);
 
-            PdfPCell cell447 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell447 = new PdfPCell(new Phrase(" "+ numHombres1, cuerpo));
             cell447.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell447);
 
-            PdfPCell cell427 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell427 = new PdfPCell(new Phrase(" " + numMujeres1, cuerpo));
             cell427.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell427);
 
-            PdfPCell cell428 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell428 = new PdfPCell(new Phrase(" " + total1, cuerpo));
             cell428.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell428);
 
@@ -276,15 +365,15 @@ namespace Control_Escolar
             cell725.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell725);
 
-            PdfPCell cell747 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell747 = new PdfPCell(new Phrase(" " + numHombres1, cuerpo));
             cell747.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell747);
 
-            PdfPCell cell727 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell727 = new PdfPCell(new Phrase(" " + numMujeres1, cuerpo));
             cell727.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell727);
 
-            PdfPCell cell728 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell728 = new PdfPCell(new Phrase(" " + total1, cuerpo));
             cell728.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell728);
 
@@ -301,15 +390,15 @@ namespace Control_Escolar
             cell415.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell415);
 
-            PdfPCell cell417 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell417 = new PdfPCell(new Phrase(" " + numHombres2, cuerpo));
             cell417.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell417);
 
-            PdfPCell cell437 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell437 = new PdfPCell(new Phrase(" " + numMujeres2, cuerpo));
             cell437.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell437);
 
-            PdfPCell cell468 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell468 = new PdfPCell(new Phrase(" " + total2, cuerpo));
             cell468.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell468);
 
@@ -321,15 +410,15 @@ namespace Control_Escolar
             cell765.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell765);
 
-            PdfPCell cell767 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell767 = new PdfPCell(new Phrase(" " + numHombres2, cuerpo));
             cell767.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell767);
 
-            PdfPCell cell777 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell777 = new PdfPCell(new Phrase(" " + numMujeres2, cuerpo));
             cell777.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell777);
 
-            PdfPCell cell778 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell778 = new PdfPCell(new Phrase(" " + total2, cuerpo));
             cell778.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell778);
 
@@ -346,15 +435,15 @@ namespace Control_Escolar
             cell06.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell06);
 
-            PdfPCell cell07 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell07 = new PdfPCell(new Phrase(" " + numHombres3, cuerpo));
             cell07.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell07);
 
-            PdfPCell cell071 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell071 = new PdfPCell(new Phrase(" " + numMujeres3, cuerpo));
             cell071.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell071);
 
-            PdfPCell cell08 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell08 = new PdfPCell(new Phrase(" " + total3, cuerpo));
             cell08.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell08);
 
@@ -366,15 +455,15 @@ namespace Control_Escolar
             cell010.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell010);
 
-            PdfPCell cell011 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell011 = new PdfPCell(new Phrase(" " + numHombres3, cuerpo));
             cell011.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell011);
 
-            PdfPCell cell012 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell012 = new PdfPCell(new Phrase(" " + numMujeres3, cuerpo));
             cell012.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell012);
 
-            PdfPCell cell013 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell013 = new PdfPCell(new Phrase(" "+ total3, cuerpo));
             cell013.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell013);
 
@@ -391,15 +480,15 @@ namespace Control_Escolar
             cell016.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell016);
 
-            PdfPCell cell017 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell017 = new PdfPCell(new Phrase("  " + numHombres4, cuerpo));
             cell017.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell017);
 
-            PdfPCell cell018 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell018 = new PdfPCell(new Phrase(" " + numHombres4, cuerpo));
             cell018.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell018);
 
-            PdfPCell cell019 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell019 = new PdfPCell(new Phrase(" " + total4, cuerpo));
             cell019.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell019);
 
@@ -411,15 +500,15 @@ namespace Control_Escolar
             cell021.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell021);
 
-            PdfPCell cell022 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell022 = new PdfPCell(new Phrase(" " + numHombres4, cuerpo));
             cell022.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell022);
 
-            PdfPCell cell023 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell023 = new PdfPCell(new Phrase(" " + numMujeres4, cuerpo));
             cell023.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell023);
 
-            PdfPCell cell024 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell024 = new PdfPCell(new Phrase(" " + total4, cuerpo));
             cell024.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell024);
 
@@ -436,15 +525,15 @@ namespace Control_Escolar
             cell036.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell036);
 
-            PdfPCell cell037 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell037 = new PdfPCell(new Phrase(" " + numHombres5, cuerpo));
             cell037.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell037);
 
-            PdfPCell cell0373 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell0373 = new PdfPCell(new Phrase(" " + numMujeres5, cuerpo));
             cell0373.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell0373);
 
-            PdfPCell cell038 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell038 = new PdfPCell(new Phrase(" " + total5, cuerpo));
             cell038.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell038);
 
@@ -456,15 +545,15 @@ namespace Control_Escolar
             cell040.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell040);
 
-            PdfPCell cell041 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell041 = new PdfPCell(new Phrase(" " + numHombres5, cuerpo));
             cell041.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell041);
 
-            PdfPCell cell042 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell042 = new PdfPCell(new Phrase(" " + numMujeres5, cuerpo));
             cell042.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell042);
 
-            PdfPCell cell043 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell043 = new PdfPCell(new Phrase(" " + total5, cuerpo));
             cell043.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell043);
 
@@ -481,15 +570,15 @@ namespace Control_Escolar
             cell046.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell046);
 
-            PdfPCell cell047 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell047 = new PdfPCell(new Phrase(" " + numHombres6, cuerpo));
             cell047.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell047);
 
-            PdfPCell cell048 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell048 = new PdfPCell(new Phrase(" " + numMujeres6, cuerpo));
             cell048.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell048);
 
-            PdfPCell cell049 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell049 = new PdfPCell(new Phrase(" "+ total6, cuerpo));
             cell049.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell049);
 
@@ -501,15 +590,15 @@ namespace Control_Escolar
             cell051.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell051);
 
-            PdfPCell cell052 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell052 = new PdfPCell(new Phrase(" " + numHombres6, cuerpo));
             cell052.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell052);
 
-            PdfPCell cell053 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell053 = new PdfPCell(new Phrase(" " + numMujeres6, cuerpo));
             cell053.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell053);
 
-            PdfPCell cell054 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell054 = new PdfPCell(new Phrase(" " + total6, cuerpo));
             cell054.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell054);
 
@@ -526,15 +615,15 @@ namespace Control_Escolar
             cell242.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell242);
 
-            PdfPCell cell241 = new PdfPCell(new Phrase("  ", cuerpo));
+            PdfPCell cell241 = new PdfPCell(new Phrase(" " + numHombresFin, cuerpo));
             cell241.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell241);
 
-            PdfPCell cell221 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell221 = new PdfPCell(new Phrase(" " + numMujeresFin, cuerpo));
             cell221.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell221);
 
-            PdfPCell cell226 = new PdfPCell(new Phrase(" ", cuerpo));
+            PdfPCell cell226 = new PdfPCell(new Phrase(" " + totalFin, cuerpo));
             cell226.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
             table.AddCell(cell226);
 
