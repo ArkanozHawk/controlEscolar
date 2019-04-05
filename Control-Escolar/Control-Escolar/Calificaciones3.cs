@@ -21,6 +21,7 @@ namespace Control_Escolar
         public Calificaciones3()
         {
             InitializeComponent();
+            validaCalifMen();
         }
 
         double calificacion;
@@ -34,8 +35,22 @@ namespace Control_Escolar
             {
                 case "Septiembre":
                     {
-                        calisep();
-                        MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                        if(cmbSepInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbDiagInasis.Enabled == false)
+                            {
+                                calisep();
+                                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones, Falta Registrar Calificaciones de Diagnóstico");
+                            }
+                        }
                     }
                     break;
 
@@ -1600,6 +1615,768 @@ namespace Control_Escolar
             //MessageBox.Show(inserta_bitacora);
             obj.insBitacora(conexion1, inserta_bitacora);
 
+        }
+
+        //--------------------------------------------------Validaciones-------------------------------------------
+        public void validaCalifMen()
+        {
+            MySqlConnection conn;
+            MySqlCommand com;
+            string conexion = "server=localhost;uid=root;database=nerivela";
+
+            string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            MessageBox.Show(sesion.Curp);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+
+            myreader.Read();
+
+            int idalumno = Convert.ToInt32(myreader["idAlumno"]);
+
+
+
+            string query2 = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + idalumno + "";
+            MessageBox.Show(query2);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+
+            com = new MySqlCommand(query2, conn);
+
+            MySqlDataReader myreader2 = com.ExecuteReader();
+
+            string[] Calificaciones = new string[300];
+            int i = 0;
+            if (myreader2.HasRows)
+            {
+                while (myreader2.Read())
+                {
+                    Calificaciones[i] = myreader2["CalificacionMen"].ToString();
+                    i++;
+                }
+            }
+            //myreader2.Read();
+            try
+            {
+                // DIAGNOSTICO
+                string diag_Esp = Calificaciones[0];
+                string diag_Mat = Calificaciones[1];
+                string diag_Ing = Calificaciones[2];
+                string diag_CiNat = Calificaciones[3];
+                string diag_Ent = Calificaciones[4];
+                string diag_FCE = Calificaciones[5];
+                string diag_Artes = Calificaciones[6];
+                string diag_Socio = Calificaciones[7];
+                string diag_EdFis = Calificaciones[8];
+                string diag_Inasis = Calificaciones[9];
+                // SEPTIEMBRE
+                string sept_Esp = Calificaciones[10];
+                string sept_Mat = Calificaciones[11];
+                string sept_Ing = Calificaciones[12];
+                string sept_CiNat = Calificaciones[13];
+                string sept_Ent = Calificaciones[14];
+                string sept_FCE = Calificaciones[15];
+                string sept_Artes = Calificaciones[16];
+                string sept_Socio = Calificaciones[17];
+                string sept_EdFis = Calificaciones[18];
+                string sept_Inasis = Calificaciones[19];
+                // OCTUBRE
+                string oct_Esp = Calificaciones[20];
+                string oct_Mat = Calificaciones[21];
+                string oct_Ing = Calificaciones[22];
+                string oct_CiNat = Calificaciones[23];
+                string oct_Ent = Calificaciones[24];
+                string oct_FCE = Calificaciones[25];
+                string oct_Artes = Calificaciones[26];
+                string oct_Socio = Calificaciones[27];
+                string oct_EdFis = Calificaciones[28];
+                string oct_Inasis = Calificaciones[29];
+                // NOVIEMBRE
+                string nov_Esp = Calificaciones[30];
+                string nov_Mat = Calificaciones[31];
+                string nov_Ing = Calificaciones[32];
+                string nov_CiNat = Calificaciones[33];
+                string nov_Ent = Calificaciones[34];
+                string nov_FCE = Calificaciones[35];
+                string nov_Artes = Calificaciones[36];
+                string nov_Socio = Calificaciones[37];
+                string nov_EdFis = Calificaciones[38];
+                string nov_Inasis = Calificaciones[39];
+                // DICIEMBRE
+                string dic_Esp = Calificaciones[40];
+                string dic_Mat = Calificaciones[41];
+                string dic_Ing = Calificaciones[42];
+                string dic_CiNat = Calificaciones[43];
+                string dic_Ent = Calificaciones[44];
+                string dic_FCE = Calificaciones[45];
+                string dic_Artes = Calificaciones[46];
+                string dic_Socio = Calificaciones[47];
+                string dic_EdFis = Calificaciones[48];
+                string dic_Inasis = Calificaciones[49];
+                // ENERO
+                string ene_Esp = Calificaciones[50];
+                string ene_Mat = Calificaciones[51];
+                string ene_Ing = Calificaciones[52];
+                string ene_CiNat = Calificaciones[53];
+                string ene_Ent = Calificaciones[54];
+                string ene_FCE = Calificaciones[55];
+                string ene_Artes = Calificaciones[56];
+                string ene_Socio = Calificaciones[57];
+                string ene_EdFis = Calificaciones[58];
+                string ene_Inasis = Calificaciones[59];
+                // FEBRERO
+                string feb_Esp = Calificaciones[60];
+                string feb_Mat = Calificaciones[61];
+                string feb_Ing = Calificaciones[62];
+                string feb_CiNat = Calificaciones[63];
+                string feb_ent = Calificaciones[64];
+                string feb_FCE = Calificaciones[65];
+                string feb_Artes = Calificaciones[66];
+                string feb_Socio = Calificaciones[67];
+                string feb_EdFis = Calificaciones[68];
+                string feb_Inasis = Calificaciones[69];
+                // MARZO
+                string mar_Esp = Calificaciones[70];
+                string mar_Mat = Calificaciones[71];
+                string mar_Ing = Calificaciones[72];
+                string mar_CiNat = Calificaciones[73];
+                string mar_ent = Calificaciones[74];
+                string mar_FCE = Calificaciones[75];
+                string mar_Artes = Calificaciones[76];
+                string mar_Socio = Calificaciones[77];
+                string mar_EdFis = Calificaciones[78];
+                string mar_Inasis = Calificaciones[79];
+                // ABRIL
+                string abr_Esp = Calificaciones[80];
+                string abr_Mat = Calificaciones[81];
+                string abr_Ing = Calificaciones[82];
+                string abr_CiNat = Calificaciones[83];
+                string abr_ent = Calificaciones[84];
+                string abr_FCE = Calificaciones[85];
+                string abr_Artes = Calificaciones[86];
+                string abr_Socio = Calificaciones[87];
+                string abr_EdFis = Calificaciones[88];
+                string abr_Inasis = Calificaciones[89];
+                // MAYO
+                string may_Esp = Calificaciones[90];
+                string may_Mat = Calificaciones[91];
+                string may_Ing = Calificaciones[92];
+                string may_CiNat = Calificaciones[93];
+                string may_ent = Calificaciones[94];
+                string may_FCE = Calificaciones[95];
+                string may_Artes = Calificaciones[96];
+                string may_Socio = Calificaciones[97];
+                string may_EdFis = Calificaciones[98];
+                string may_Inasis = Calificaciones[99];
+                // JUNIO
+                string jun_Esp = Calificaciones[100];
+                string jun_Mat = Calificaciones[101];
+                string jun_Ing = Calificaciones[102];
+                string jun_CiNat = Calificaciones[103];
+                string jun_ent = Calificaciones[104];
+                string jun_FCE = Calificaciones[105];
+                string jun_Artes = Calificaciones[106];
+                string jun_Socio = Calificaciones[107];
+                string jun_EdFis = Calificaciones[108];
+                string jun_Inasis = Calificaciones[109];
+
+
+                // AGREGADO SEPTIEMBRE
+                cmbSepEspañol.Text = sept_Esp;
+                cmbSepMatematicas.Text = sept_Mat;
+                cmbSepIngles.Text = sept_Ing;
+                cmbSepCiencias.Text = sept_CiNat;
+                cmbSepEntidad.Text = sept_Ent;
+                cmbSepFormacion.Text = sept_FCE;
+                cmbSepArtes.Text = sept_Artes;
+                cmbSepSocio.Text = sept_Socio;
+                cmbSepEdFisica.Text = sept_EdFis;
+                cmbSepInasis.Text = sept_Inasis;
+                // AGREGADO OCTUBRE
+                cmbOctEspañol.Text = oct_Esp;
+                cmbOctMatematicas.Text = oct_Mat;
+                cmbOctIngles.Text = oct_Ing;
+                cmbOctCiencias.Text = oct_CiNat;
+                cmbOctEntidad.Text = oct_Ent;
+                cmbOctFormacion.Text = oct_FCE;
+                cmbOctArtes.Text = oct_Artes;
+                cmbOctSocio.Text = oct_Socio;
+                cmbOctEdFisica.Text = oct_EdFis;
+                cmbOctInasis.Text = oct_Inasis;
+                // AGREGADO NOVIEMBRE
+                cmbNovEspañol.Text = nov_Esp;
+                cmbNovMatematicas.Text = nov_Mat;
+                cmbNovIngles.Text = nov_Ing;
+                cmbNovCiencias.Text = nov_CiNat;
+                cmbNovEntidad.Text = nov_Ent;
+                cmbNovFormacion.Text = nov_FCE;
+                cmbNovArtes.Text = nov_Artes;
+                cmbNovSocio.Text = nov_Socio;
+                cmbNovEdFisica.Text = nov_EdFis;
+                cmbNovInasis.Text = nov_Inasis;
+                // AGREGADO DICIEMBRE
+                cmbDicEspañol.Text = dic_Esp;
+                cmbDicMatematicas.Text = dic_Mat;
+                cmbDicIngles.Text = dic_Ing;
+                cmbDicCiencias.Text = dic_CiNat;
+                cmbDicEntidad.Text = dic_Ent;
+                cmbDicFormacion.Text = dic_FCE;
+                cmbDicArtes.Text = dic_Artes;
+                cmbDicSocio.Text = dic_Socio;
+                cmbDicEdFisica.Text = dic_EdFis;
+                cmbDicInasis.Text = dic_Inasis;
+                // AGREGADO ENERO
+                cmbEneEspañol.Text = ene_Esp;
+                cmbEneMatematicas.Text = ene_Mat;
+                cmbEneIngles.Text = ene_Ing;
+                cmbEneCiencias.Text = ene_CiNat;
+                cmbEneEntidad.Text = ene_Ent;
+                cmbEneFormacion.Text = ene_FCE;
+                cmbEneArtes.Text = ene_Artes;
+                cmbEneSocio.Text = ene_Socio;
+                cmbEneEdFisica.Text = ene_EdFis;
+                cmbEneInasis.Text = ene_Inasis;
+                // AGREGADO FEBRERO
+                cmbFebEspañol.Text = feb_Esp;
+                cmbFebMatematicas.Text = feb_Mat;
+                cmbFebIngles.Text = feb_Ing;
+                cmbFebCiencias.Text = feb_CiNat;
+                cmbFebEntidad.Text = feb_ent;
+                cmbFebFormacion.Text = feb_FCE;
+                cmbFebArtes.Text = feb_Artes;
+                cmbFebSocio.Text = feb_Socio;
+                cmbFebEdFisica.Text = feb_EdFis;
+                cmbFebInasis.Text = feb_Inasis;
+                // AGREGADO MARZO
+                cmbMarEspañol.Text = mar_Esp;
+                cmbMarMatematicas.Text = mar_Mat;
+                cmbMarIngles.Text = mar_Ing;
+                cmbMarCiencias.Text = mar_CiNat;
+                cmbMarEntidad.Text = mar_ent;
+                cmbMarFormacion.Text = mar_FCE;
+                cmbMarArtes.Text = mar_Artes;
+                cmbMarSocio.Text = mar_Socio;
+                cmbMarEdFisica.Text = mar_EdFis;
+                cmbMarInasis.Text = mar_Inasis;
+                // AGREGADO ABRIL
+                cmbAbrEspañol.Text = abr_Esp;
+                cmbAbrMatematicas.Text = abr_Mat;
+                cmbAbrIngles.Text = abr_Ing;
+                cmbAbrCiencias.Text = abr_CiNat;
+                cmbAbrEntidad.Text = abr_ent;
+                cmbAbrFormacion.Text = abr_FCE;
+                cmbAbrArtes.Text = abr_Artes;
+                cmbAbrSocio.Text = abr_Socio;
+                cmbAbrEdFisica.Text = abr_EdFis;
+                cmbAbrInasis.Text = abr_Inasis;
+                // AGREGADO MAYO
+                cmbMayEspañol.Text = may_Esp;
+                cmbMayMatematicas.Text = may_Mat;
+                cmbMayIngles.Text = may_Ing;
+                cmbMayCiencias.Text = may_CiNat;
+                cmbMayEntidad.Text = may_ent;
+                cmbMayFormacion.Text = may_FCE;
+                cmbMarArtes.Text = may_Artes;
+                cmbMaySocio.Text = may_Socio;
+                cmbMayEdFisica.Text = may_EdFis;
+                cmbMayInasis.Text = may_Inasis;
+                // AGREGADO JUNIO
+                cmbJunEspañol.Text = jun_Esp;
+                cmbJunMatematicas.Text = jun_Mat;
+                cmbJunIngles.Text = jun_Ing;
+                cmbJunCiencias.Text = jun_CiNat;
+                cmbJunEntidad.Text = jun_ent;
+                cmbJunFormacion.Text = jun_FCE;
+                cmbJunArtes.Text = jun_Artes;
+                cmbJunSocio.Text = jun_Socio;
+                cmbJunEdFisica.Text = jun_EdFis;
+                cmbJunInasis.Text = jun_Inasis;
+                // AGREGADO DIAGNOSTICO
+                cmbDiagEspañol.Text = diag_Esp;
+                cmbDiagMatematicas.Text = diag_Mat;
+                cmbDiagIngles.Text = diag_Ing;
+                cmbDiagCiencias.Text = diag_CiNat;
+                cmbDiagEntidad.Text = diag_Ent;
+                cmbDiagFormacion.Text = diag_FCE;
+                cmbDiagArtes.Text = diag_Artes;
+                cmbDiagSocio.Text = diag_Socio;
+                cmbDiagEdFisica.Text = diag_EdFis;
+                cmbDiagInasis.Text = diag_Inasis;
+
+                               
+                // BLOQUEO SEPTIEMBRE
+                if (cmbSepEspañol.Text != "")
+                {
+                    cmbSepEspañol.Enabled = false;
+                }
+                if (cmbSepMatematicas.Text != "")
+                {
+                    cmbSepMatematicas.Enabled = false;
+                }
+                if (cmbSepCiencias.Text != "")
+                {
+                    cmbSepCiencias.Enabled = false;
+                }
+                if (cmbSepEntidad.Text != "")
+                {
+                    cmbSepEntidad.Enabled = false;
+                }
+                if (cmbSepFormacion.Text != "")
+                {
+                    cmbSepFormacion.Enabled = false;
+                }
+                if (cmbSepArtes.Text != "")
+                {
+                    cmbSepArtes.Enabled = false;
+                }
+                if (cmbSepSocio.Text != "")
+                {
+                    cmbSepSocio.Enabled = false;
+                }
+                if (cmbSepEdFisica.Text != "")
+                {
+                    cmbSepEdFisica.Enabled = false;
+                }
+                if (cmbSepIngles.Text != "")
+                {
+                    cmbSepIngles.Enabled = false;
+                }
+                if (cmbSepInasis.Text != "")
+                {
+                    cmbSepInasis.Enabled = false;
+                }
+
+                // BLOQUEO OCTUBRE
+                if (cmbOctEspañol.Text != "")
+                {
+                    cmbOctEspañol.Enabled = false;
+                }
+                if (cmbOctMatematicas.Text != "")
+                {
+                    cmbOctMatematicas.Enabled = false;
+                }
+                if (cmbOctIngles.Text != "")
+                {
+                    cmbOctIngles.Enabled = false;
+                }
+                if (cmbOctCiencias.Text != "")
+                {
+                    cmbOctCiencias.Enabled = false;
+                }
+                if (cmbOctEntidad.Text != "")
+                {
+                    cmbOctEntidad.Enabled = false;
+                }
+                if (cmbOctFormacion.Text != "")
+                {
+                    cmbOctFormacion.Enabled = false;
+                }
+                if (cmbOctArtes.Text != "")
+                {
+                    cmbOctArtes.Enabled = false;
+                }
+                if (cmbOctSocio.Text != "")
+                {
+                    cmbOctSocio.Enabled = false;
+                }
+                if (cmbOctEdFisica.Text != "")
+                {
+                    cmbOctEdFisica.Enabled = false;
+                }
+                if (cmbOctInasis.Text != "")
+                {
+                    cmbOctInasis.Enabled = false;
+                }
+
+                // BLOQUEO NOVIEMBRE
+                if (cmbNovEspañol.Text != "")
+                {
+                    cmbNovEspañol.Enabled = false;
+                }
+                if (cmbNovMatematicas.Text != "")
+                {
+                    cmbNovMatematicas.Enabled = false;
+                }
+                if (cmbNovIngles.Text != "")
+                {
+                    cmbNovIngles.Enabled = false;
+                }
+                if (cmbNovCiencias.Text != "")
+                {
+                    cmbNovCiencias.Enabled = false;
+                }
+                if (cmbNovEntidad.Text != "")
+                {
+                    cmbNovEntidad.Enabled = false;
+                }
+                if (cmbNovFormacion.Text != "")
+                {
+                    cmbNovFormacion.Enabled = false;
+                }
+                if (cmbNovArtes.Text != "")
+                {
+                    cmbNovArtes.Enabled = false;
+                }
+                if (cmbNovSocio.Text != "")
+                {
+                    cmbNovSocio.Enabled = false;
+                }
+                if (cmbNovEdFisica.Text != "")
+                {
+                    cmbNovEdFisica.Enabled = false;
+                }
+                if (cmbNovInasis.Text != "")
+                {
+                    cmbNovInasis.Enabled = false;
+                }
+
+                // BLOQUEO DICIEMBRE
+                if (cmbDicEspañol.Text != "")
+                {
+                    cmbDicEspañol.Enabled = false;
+                }
+                if (cmbDicMatematicas.Text != "")
+                {
+                    cmbDicMatematicas.Enabled = false;
+                }
+                if (cmbDicIngles.Text != "")
+                {
+                    cmbDicIngles.Enabled = false;
+                }
+                if (cmbDicCiencias.Text != "")
+                {
+                    cmbDicCiencias.Enabled = false;
+                }
+                if (cmbDicEntidad.Text != "")
+                {
+                    cmbDicEntidad.Enabled = false;
+                }
+                if (cmbDicFormacion.Text != "")
+                {
+                    cmbDicFormacion.Enabled = false;
+                }
+                if (cmbDicArtes.Text != "")
+                {
+                    cmbDicArtes.Enabled = false;
+                }
+                if (cmbDicSocio.Text != "")
+                {
+                    cmbDicSocio.Enabled = false;
+                }
+                if (cmbDicEdFisica.Text != "")
+                {
+                    cmbDicEdFisica.Enabled = false;
+                }
+                if (cmbDicInasis.Text != "")
+                {
+                    cmbDicInasis.Enabled = false;
+                }
+
+                // BLOQUEO ENERO
+                if (cmbEneEspañol.Text != "")
+                {
+                    cmbEneEspañol.Enabled = false;
+                }
+                if (cmbEneMatematicas.Text != "")
+                {
+                    cmbEneMatematicas.Enabled = false;
+                }
+                if (cmbEneIngles.Text != "")
+                {
+                    cmbEneIngles.Enabled = false;
+                }
+                if (cmbEneCiencias.Text != "")
+                {
+                    cmbEneCiencias.Enabled = false;
+                }
+                if (cmbEneEntidad.Text != "")
+                {
+                    cmbEneEntidad.Enabled = false;
+                }
+                if (cmbEneFormacion.Text != "")
+                {
+                    cmbEneFormacion.Enabled = false;
+                }
+                if (cmbEneArtes.Text != "")
+                {
+                    cmbEneArtes.Enabled = false;
+                }
+                if (cmbEneSocio.Text != "")
+                {
+                    cmbEneSocio.Enabled = false;
+                }
+                if (cmbEneEdFisica.Text != "")
+                {
+                    cmbEneEdFisica.Enabled = false;
+                }
+                if (cmbEneInasis.Text != "")
+                {
+                    cmbEneInasis.Enabled = false;
+                }
+
+                // BLOQUEO FEBRERO
+                if (cmbFebEspañol.Text != "")
+                {
+                    cmbFebEspañol.Enabled = false;
+                }
+                if (cmbFebMatematicas.Text != "")
+                {
+                    cmbFebMatematicas.Enabled = false;
+                }
+                if (cmbFebIngles.Text != "")
+                {
+                    cmbFebIngles.Enabled = false;
+                }
+                if (cmbFebCiencias.Text != "")
+                {
+                    cmbFebCiencias.Enabled = false;
+                }
+                if (cmbFebEntidad.Text != "")
+                {
+                    cmbFebEntidad.Enabled = false;
+                }
+                if (cmbFebFormacion.Text != "")
+                {
+                    cmbFebFormacion.Enabled = false;
+                }
+                if (cmbFebArtes.Text != "")
+                {
+                    cmbFebArtes.Enabled = false;
+                }
+                if (cmbFebSocio.Text != "")
+                {
+                    cmbFebSocio.Enabled = false;
+                }
+                if (cmbFebEdFisica.Text != "")
+                {
+                    cmbFebEdFisica.Enabled = false;
+                }
+                if (cmbFebInasis.Text != "")
+                {
+                    cmbFebInasis.Enabled = false;
+                }
+
+                // BLOQUEO MARZO
+                if (cmbMarEspañol.Text != "")
+                {
+                    cmbMarEspañol.Enabled = false;
+                }
+                if (cmbMarMatematicas.Text != "")
+                {
+                    cmbMarMatematicas.Enabled = false;
+                }
+                if (cmbMarIngles.Text != "")
+                {
+                    cmbMarIngles.Enabled = false;
+                }
+                if (cmbMarCiencias.Text != "")
+                {
+                    cmbMarCiencias.Enabled = false;
+                }
+                if (cmbMarEntidad.Text != "")
+                {
+                    cmbMarEntidad.Enabled = false;
+                }
+                if (cmbMarFormacion.Text != "")
+                {
+                    cmbMarFormacion.Enabled = false;
+                }
+                if (cmbMarArtes.Text != "")
+                {
+                    cmbMarArtes.Enabled = false;
+                }
+                if (cmbMarSocio.Text != "")
+                {
+                    cmbMarSocio.Enabled = false;
+                }
+                if (cmbMarEdFisica.Text != "")
+                {
+                    cmbMarEdFisica.Enabled = false;
+                }
+                if (cmbMarInasis.Text != "")
+                {
+                    cmbMarInasis.Enabled = false;
+                }
+
+                // BLOQUEO ABRIL
+                if (cmbAbrEspañol.Text != "")
+                {
+                    cmbAbrEspañol.Enabled = false;
+                }
+                if (cmbAbrMatematicas.Text != "")
+                {
+                    cmbAbrMatematicas.Enabled = false;
+                }
+                if (cmbAbrIngles.Text != "")
+                {
+                    cmbAbrIngles.Enabled = false;
+                }
+                if (cmbAbrCiencias.Text != "")
+                {
+                    cmbAbrCiencias.Enabled = false;
+                }
+                if (cmbAbrEntidad.Text != "")
+                {
+                    cmbAbrEntidad.Enabled = false;
+                }
+                if (cmbAbrFormacion.Text != "")
+                {
+                    cmbAbrFormacion.Enabled = false;
+                }
+                if (cmbAbrArtes.Text != "")
+                {
+                    cmbAbrArtes.Enabled = false;
+                }
+                if (cmbAbrSocio.Text != "")
+                {
+                    cmbAbrSocio.Enabled = false;
+                }
+                if (cmbAbrEdFisica.Text != "")
+                {
+                    cmbAbrEdFisica.Enabled = false;
+                }
+                if (cmbAbrInasis.Text != "")
+                {
+                    cmbAbrInasis.Enabled = false;
+                }
+
+                // BLOQUEO MAYO
+                if (cmbMayEspañol.Text != "")
+                {
+                    cmbMayEspañol.Enabled = false;
+                }
+                if (cmbMayMatematicas.Text != "")
+                {
+                    cmbMayMatematicas.Enabled = false;
+                }
+                if (cmbMayIngles.Text != "")
+                {
+                    cmbMayIngles.Enabled = false;
+                }
+                if (cmbMayCiencias.Text != "")
+                {
+                    cmbMayCiencias.Enabled = false;
+                }
+                if (cmbMayEntidad.Text != "")
+                {
+                    cmbMayEntidad.Enabled = false;
+                }
+                if (cmbMayFormacion.Text != "")
+                {
+                    cmbMayFormacion.Enabled = false;
+                }
+                if (cmbMayArtes.Text != "")
+                {
+                    cmbMayArtes.Enabled = false;
+                }
+                if (cmbMaySocio.Text != "")
+                {
+                    cmbMaySocio.Enabled = false;
+                }
+                if (cmbMayEdFisica.Text != "")
+                {
+                    cmbMayEdFisica.Enabled = false;
+                }
+                if (cmbMayInasis.Text != "")
+                {
+                    cmbMayInasis.Enabled = false;
+                }
+
+                // BLOQUEO JUNIO
+                if (cmbJunEspañol.Text != "")
+                {
+                    cmbJunEspañol.Enabled = false;
+                }
+                if (cmbJunMatematicas.Text != "")
+                {
+                    cmbJunMatematicas.Enabled = false;
+                }
+                if (cmbJunIngles.Text != "")
+                {
+                    cmbJunIngles.Enabled = false;
+                }
+                if (cmbJunCiencias.Text != "")
+                {
+                    cmbJunCiencias.Enabled = false;
+                }
+                if (cmbJunEntidad.Text != "")
+                {
+                    cmbJunEntidad.Enabled = false;
+                }
+                if (cmbJunFormacion.Text != "")
+                {
+                    cmbJunFormacion.Enabled = false;
+                }
+                if (cmbJunArtes.Text != "")
+                {
+                    cmbJunArtes.Enabled = false;
+                }
+                if (cmbJunSocio.Text != "")
+                {
+                    cmbJunSocio.Enabled = false;
+                }
+                if (cmbJunEdFisica.Text != "")
+                {
+                    cmbJunEdFisica.Enabled = false;
+                }
+                if (cmbJunInasis.Text != "")
+                {
+                    cmbJunInasis.Enabled = false;
+                }
+
+                // BLOQUEO DIAGNOSTICO
+                if (cmbDiagEspañol.Text != "")
+                {
+                    cmbDiagEspañol.Enabled = false;
+                }
+                if (cmbDiagMatematicas.Text != "")
+                {
+                    cmbDiagMatematicas.Enabled = false;
+                }
+                if (cmbDiagIngles.Text != "")
+                {
+                    cmbDiagIngles.Enabled = false;
+                }
+                if (cmbDiagCiencias.Text != "")
+                {
+                    cmbDiagCiencias.Enabled = false;
+                }
+                if (cmbDiagEntidad.Text != "")
+                {
+                    cmbDiagEntidad.Enabled = false;
+                }
+                if (cmbDiagFormacion.Text != "")
+                {
+                    cmbDiagFormacion.Enabled = false;
+                }
+                if (cmbDiagArtes.Text != "")
+                {
+                    cmbDiagArtes.Enabled = false;
+                }
+                if (cmbDiagSocio.Text != "")
+                {
+                    cmbDiagSocio.Enabled = false;
+                }
+                if (cmbDiagEdFisica.Text != "")
+                {
+                    cmbDiagEdFisica.Enabled = false;
+                }
+                if (cmbDiagInasis.Text != "")
+                {
+                    cmbDiagInasis.Enabled = false;
+                }
+
+                //MessageBox.Show(sept_Esp.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
     }
