@@ -411,7 +411,6 @@ C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bi
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
-C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
@@ -521,3 +520,5 @@ E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
