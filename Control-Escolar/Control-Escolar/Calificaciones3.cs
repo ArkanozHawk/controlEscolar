@@ -2135,7 +2135,7 @@ namespace Control_Escolar
                 cmbMayCiencias.Text = may_CiNat;
                 cmbMayEntidad.Text = may_ent;
                 cmbMayFormacion.Text = may_FCE;
-                cmbMarArtes.Text = may_Artes;
+                cmbMayArtes.Text = may_Artes;
                 cmbMaySocio.Text = may_Socio;
                 cmbMayEdFisica.Text = may_EdFis;
                 cmbMayInasis.Text = may_Inasis;
