@@ -300,7 +300,7 @@
             this.Diagnostico.TabIndex = 0;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
-            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
+           
             // 
             // groupBox1
             // 
