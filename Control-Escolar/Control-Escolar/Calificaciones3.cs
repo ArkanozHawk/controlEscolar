@@ -2173,8 +2173,7 @@ namespace Control_Escolar
                 cmbDiagEdFisica.Text = diag_EdFis;
                 cmbDiagInasis.Text = diag_Inasis;
 
-                /* SECCIÓN DE BLOQUEOS DE COMBOX INHABILITADO POR EL MOMENTO
-                 * 
+                
                 // BLOQUEO SEPTIEMBRE
                 if (cmbSepEspañol.Text != "")
                 {
@@ -2636,7 +2635,7 @@ namespace Control_Escolar
                 {
                     cmbDiagInasis.Enabled = false;
                 }
-                */
+
 
                 //MessageBox.Show(sept_Esp.ToString());
             }
