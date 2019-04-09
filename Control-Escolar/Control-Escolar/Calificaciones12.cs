@@ -1629,6 +1629,59 @@ namespace Control_Escolar
             materia = " 'Educación Socioemocional' "; calificacion = Convert.ToDouble(Edsocio); buscarmateria(); insertarcali();
             materia = " 'Inasistencia' "; calificacion = Convert.ToInt32(Inasistencias); buscarmateria(); insertarcali();
         }
+
+        private void Septiembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox11);
+        }
+
+        private void Octubre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox2);
+        }
+
+       
+
+        private void Noviembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox3);
+        }
+
+        private void Diciembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox4);
+        }
+
+        private void Enero_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox5);
+        }
+
+        private void Febrero_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox6);
+        }
+
+        private void Marzo_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox7);
+        }
+
+        private void Abril_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox8);
+        }
+
+        private void Mayo_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox9);
+        }
+
+        private void Junio_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox10);
+        }
+
         public void caliMayo()
         {
             Español = cmbMayoEspañol.SelectedItem.ToString();
@@ -2507,10 +2560,7 @@ namespace Control_Escolar
                 if (combo is ComboBox)
 
                 {
-                    if (combo.Name != "cmbDiagIna")
-                    {
-                        
-
+                   
                         if (combo.Text != string.Empty)
                         {
                             double valor = Convert.ToDouble(combo.Text);
@@ -2520,9 +2570,14 @@ namespace Control_Escolar
 
                             }
 
+                        if (combo.Name == "cmbDiagIna" || combo.Name == "cmbSepIna" || combo.Name == "cmbOctIna" || combo.Name == "cmbNovIna" || combo.Name == "cmbDicIna" || combo.Name == "cmbEneroIna" || combo.Name == "cmbfebIna" || combo.Name == "cmbmarzIna" || combo.Name == "cmbAbrilIna" || combo.Name == "cmbMayoIna" || combo.Name == "cmbJunioIna")
+                        {
+                            combo.ForeColor = Color.Black;
                         }
 
                     }
+
+                    
                 }
 
             }
