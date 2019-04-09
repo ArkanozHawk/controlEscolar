@@ -32,7 +32,6 @@
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Septiembre = new System.Windows.Forms.TabPage();
-            this.BoxGenero = new System.Windows.Forms.GroupBox();
             this.label9 = new System.Windows.Forms.Label();
             this.cmbsepina = new System.Windows.Forms.ComboBox();
             this.Espmay = new System.Windows.Forms.ComboBox();
@@ -55,7 +54,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.Octubre = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label129 = new System.Windows.Forms.Label();
@@ -322,9 +320,16 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.label166 = new System.Windows.Forms.Label();
+            this.label165 = new System.Windows.Forms.Label();
+            this.label164 = new System.Windows.Forms.Label();
+            this.label163 = new System.Windows.Forms.Label();
+            this.label162 = new System.Windows.Forms.Label();
+            this.label161 = new System.Windows.Forms.Label();
+            this.label160 = new System.Windows.Forms.Label();
             this.materialTabControl1.SuspendLayout();
             this.Septiembre.SuspendLayout();
-            this.BoxGenero.SuspendLayout();
             this.Octubre.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.Noviembre.SuspendLayout();
@@ -345,6 +350,7 @@
             this.groupBox9.SuspendLayout();
             this.Diagnostico.SuspendLayout();
             this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -386,7 +392,7 @@
             // 
             // Septiembre
             // 
-            this.Septiembre.Controls.Add(this.BoxGenero);
+            this.Septiembre.Controls.Add(this.groupBox11);
             this.Septiembre.Location = new System.Drawing.Point(4, 22);
             this.Septiembre.Name = "Septiembre";
             this.Septiembre.Padding = new System.Windows.Forms.Padding(3);
@@ -394,47 +400,14 @@
             this.Septiembre.TabIndex = 0;
             this.Septiembre.Text = "Septiem.";
             this.Septiembre.UseVisualStyleBackColor = true;
-            // 
-            // BoxGenero
-            // 
-            this.BoxGenero.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.BoxGenero.Controls.Add(this.label9);
-            this.BoxGenero.Controls.Add(this.cmbsepina);
-            this.BoxGenero.Controls.Add(this.Espmay);
-            this.BoxGenero.Controls.Add(this.Espabril);
-            this.BoxGenero.Controls.Add(this.EspMarz);
-            this.BoxGenero.Controls.Add(this.EspFeb);
-            this.BoxGenero.Controls.Add(this.Espene);
-            this.BoxGenero.Controls.Add(this.Espdic);
-            this.BoxGenero.Controls.Add(this.Espnov);
-            this.BoxGenero.Controls.Add(this.EspOct);
-            this.BoxGenero.Controls.Add(this.EspSep);
-            this.BoxGenero.Controls.Add(this.EspDiag);
-            this.BoxGenero.Controls.Add(this.label12);
-            this.BoxGenero.Controls.Add(this.label11);
-            this.BoxGenero.Controls.Add(this.label10);
-            this.BoxGenero.Controls.Add(this.label8);
-            this.BoxGenero.Controls.Add(this.label7);
-            this.BoxGenero.Controls.Add(this.label6);
-            this.BoxGenero.Controls.Add(this.label3);
-            this.BoxGenero.Controls.Add(this.label1);
-            this.BoxGenero.Controls.Add(this.label4);
-            this.BoxGenero.Controls.Add(this.label2);
-            this.BoxGenero.Controls.Add(this.label5);
-            this.BoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.BoxGenero.Location = new System.Drawing.Point(151, 17);
-            this.BoxGenero.Name = "BoxGenero";
-            this.BoxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.BoxGenero.Size = new System.Drawing.Size(660, 319);
-            this.BoxGenero.TabIndex = 82;
-            this.BoxGenero.TabStop = false;
+            this.Septiembre.MouseEnter += new System.EventHandler(this.Septiembre_MouseEnter);
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label9.Location = new System.Drawing.Point(307, 126);
+            this.label9.Location = new System.Drawing.Point(323, 134);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(149, 20);
             this.label9.TabIndex = 97;
@@ -465,7 +438,7 @@
             "2",
             "1",
             "0"});
-            this.cmbsepina.Location = new System.Drawing.Point(488, 198);
+            this.cmbsepina.Location = new System.Drawing.Point(504, 206);
             this.cmbsepina.Name = "cmbsepina";
             this.cmbsepina.Size = new System.Drawing.Size(124, 33);
             this.cmbsepina.TabIndex = 96;
@@ -485,7 +458,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espmay.Location = new System.Drawing.Point(488, 159);
+            this.Espmay.Location = new System.Drawing.Point(504, 167);
             this.Espmay.Name = "Espmay";
             this.Espmay.Size = new System.Drawing.Size(124, 33);
             this.Espmay.TabIndex = 95;
@@ -505,7 +478,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espabril.Location = new System.Drawing.Point(488, 120);
+            this.Espabril.Location = new System.Drawing.Point(504, 128);
             this.Espabril.Name = "Espabril";
             this.Espabril.Size = new System.Drawing.Size(124, 33);
             this.Espabril.TabIndex = 94;
@@ -525,7 +498,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspMarz.Location = new System.Drawing.Point(488, 82);
+            this.EspMarz.Location = new System.Drawing.Point(504, 90);
             this.EspMarz.Name = "EspMarz";
             this.EspMarz.Size = new System.Drawing.Size(124, 33);
             this.EspMarz.TabIndex = 93;
@@ -545,7 +518,7 @@
             "6",
             "5.5",
             "5"});
-            this.EspFeb.Location = new System.Drawing.Point(488, 42);
+            this.EspFeb.Location = new System.Drawing.Point(504, 50);
             this.EspFeb.Name = "EspFeb";
             this.EspFeb.Size = new System.Drawing.Size(124, 33);
             this.EspFeb.TabIndex = 92;
@@ -565,7 +538,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espene.Location = new System.Drawing.Point(168, 237);
+            this.Espene.Location = new System.Drawing.Point(184, 245);
             this.Espene.Name = "Espene";
             this.Espene.Size = new System.Drawing.Size(124, 33);
             this.Espene.TabIndex = 91;
@@ -585,7 +558,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espdic.Location = new System.Drawing.Point(168, 198);
+            this.Espdic.Location = new System.Drawing.Point(184, 206);
             this.Espdic.Name = "Espdic";
             this.Espdic.Size = new System.Drawing.Size(124, 33);
             this.Espdic.TabIndex = 90;
@@ -605,7 +578,7 @@
             "6",
             "5.5",
             "5"});
-            this.Espnov.Location = new System.Drawing.Point(168, 159);
+            this.Espnov.Location = new System.Drawing.Point(184, 167);
             this.Espnov.Name = "Espnov";
             this.Espnov.Size = new System.Drawing.Size(124, 33);
             this.Espnov.TabIndex = 89;
@@ -666,7 +639,7 @@
             "5.2",
             "5.1",
             "5"});
-            this.EspOct.Location = new System.Drawing.Point(168, 120);
+            this.EspOct.Location = new System.Drawing.Point(184, 128);
             this.EspOct.Name = "EspOct";
             this.EspOct.Size = new System.Drawing.Size(124, 33);
             this.EspOct.TabIndex = 88;
@@ -727,7 +700,7 @@
             "5.2",
             "5.1",
             "5"});
-            this.EspSep.Location = new System.Drawing.Point(168, 81);
+            this.EspSep.Location = new System.Drawing.Point(184, 89);
             this.EspSep.Name = "EspSep";
             this.EspSep.Size = new System.Drawing.Size(124, 33);
             this.EspSep.TabIndex = 87;
@@ -788,7 +761,7 @@
             "5.2",
             "5.1",
             "5"});
-            this.EspDiag.Location = new System.Drawing.Point(168, 42);
+            this.EspDiag.Location = new System.Drawing.Point(184, 50);
             this.EspDiag.Name = "EspDiag";
             this.EspDiag.Size = new System.Drawing.Size(124, 33);
             this.EspDiag.TabIndex = 75;
@@ -798,7 +771,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label12.Location = new System.Drawing.Point(307, 204);
+            this.label12.Location = new System.Drawing.Point(323, 212);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(102, 20);
             this.label12.TabIndex = 74;
@@ -809,7 +782,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label11.Location = new System.Drawing.Point(307, 49);
+            this.label11.Location = new System.Drawing.Point(323, 57);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(175, 20);
             this.label11.TabIndex = 73;
@@ -820,7 +793,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label10.Location = new System.Drawing.Point(307, 88);
+            this.label10.Location = new System.Drawing.Point(323, 96);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 20);
             this.label10.TabIndex = 72;
@@ -831,7 +804,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label8.Location = new System.Drawing.Point(307, 166);
+            this.label8.Location = new System.Drawing.Point(323, 174);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(74, 20);
             this.label8.TabIndex = 70;
@@ -842,7 +815,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label7.Location = new System.Drawing.Point(21, 205);
+            this.label7.Location = new System.Drawing.Point(37, 213);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 20);
             this.label7.TabIndex = 69;
@@ -853,7 +826,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label6.Location = new System.Drawing.Point(21, 244);
+            this.label6.Location = new System.Drawing.Point(37, 252);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(63, 20);
             this.label6.TabIndex = 68;
@@ -864,7 +837,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label3.Location = new System.Drawing.Point(21, 126);
+            this.label3.Location = new System.Drawing.Point(37, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 20);
             this.label3.TabIndex = 67;
@@ -875,7 +848,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label1.Location = new System.Drawing.Point(21, 166);
+            this.label1.Location = new System.Drawing.Point(37, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(141, 20);
             this.label1.TabIndex = 66;
@@ -886,7 +859,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label4.Location = new System.Drawing.Point(21, 89);
+            this.label4.Location = new System.Drawing.Point(37, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 20);
             this.label4.TabIndex = 65;
@@ -897,24 +870,11 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.label2.Location = new System.Drawing.Point(21, 49);
+            this.label2.Location = new System.Drawing.Point(37, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 62;
             this.label2.Text = "Español";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.label5.Location = new System.Drawing.Point(223, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 26);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Calificaciones";
             // 
             // Octubre
             // 
@@ -926,6 +886,7 @@
             this.Octubre.TabIndex = 1;
             this.Octubre.Text = "Octubre";
             this.Octubre.UseVisualStyleBackColor = true;
+            this.Octubre.MouseEnter += new System.EventHandler(this.Octubre_MouseEnter);
             // 
             // groupBox1
             // 
@@ -965,10 +926,10 @@
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label24);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox1.Location = new System.Drawing.Point(87, 18);
+            this.groupBox1.Location = new System.Drawing.Point(140, 28);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(716, 321);
+            this.groupBox1.Size = new System.Drawing.Size(640, 295);
             this.groupBox1.TabIndex = 82;
             this.groupBox1.TabStop = false;
             // 
@@ -1446,6 +1407,7 @@
             this.Noviembre.TabIndex = 2;
             this.Noviembre.Text = "Noviembre";
             this.Noviembre.UseVisualStyleBackColor = true;
+            this.Noviembre.MouseEnter += new System.EventHandler(this.Noviembre_MouseEnter);
             // 
             // groupBox2
             // 
@@ -1474,10 +1436,10 @@
             this.groupBox2.Controls.Add(this.cmbNovEspañol);
             this.groupBox2.Controls.Add(this.label36);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox2.Location = new System.Drawing.Point(107, 18);
+            this.groupBox2.Location = new System.Drawing.Point(107, 42);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox2.Size = new System.Drawing.Size(685, 330);
+            this.groupBox2.Size = new System.Drawing.Size(680, 269);
             this.groupBox2.TabIndex = 82;
             this.groupBox2.TabStop = false;
             // 
@@ -1845,6 +1807,7 @@
             this.Diciembre.TabIndex = 3;
             this.Diciembre.Text = "Diciembre";
             this.Diciembre.UseVisualStyleBackColor = true;
+            this.Diciembre.MouseEnter += new System.EventHandler(this.Diciembre_MouseEnter);
             // 
             // groupBox3
             // 
@@ -1873,10 +1836,10 @@
             this.groupBox3.Controls.Add(this.cmbDicEspañol);
             this.groupBox3.Controls.Add(this.label48);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox3.Location = new System.Drawing.Point(109, 18);
+            this.groupBox3.Location = new System.Drawing.Point(133, 39);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox3.Size = new System.Drawing.Size(650, 319);
+            this.groupBox3.Size = new System.Drawing.Size(640, 282);
             this.groupBox3.TabIndex = 82;
             this.groupBox3.TabStop = false;
             // 
@@ -2244,6 +2207,7 @@
             this.Enero.TabIndex = 4;
             this.Enero.Text = "Enero";
             this.Enero.UseVisualStyleBackColor = true;
+            this.Enero.MouseEnter += new System.EventHandler(this.Enero_MouseEnter);
             // 
             // groupBox4
             // 
@@ -2272,10 +2236,10 @@
             this.groupBox4.Controls.Add(this.cmbEneroEspañol);
             this.groupBox4.Controls.Add(this.label60);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox4.Location = new System.Drawing.Point(129, 18);
+            this.groupBox4.Location = new System.Drawing.Point(151, 36);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox4.Size = new System.Drawing.Size(630, 319);
+            this.groupBox4.Size = new System.Drawing.Size(613, 282);
             this.groupBox4.TabIndex = 82;
             this.groupBox4.TabStop = false;
             // 
@@ -2643,6 +2607,7 @@
             this.Febrero.TabIndex = 5;
             this.Febrero.Text = "Febrero";
             this.Febrero.UseVisualStyleBackColor = true;
+            this.Febrero.MouseEnter += new System.EventHandler(this.Febrero_MouseEnter);
             // 
             // groupBox5
             // 
@@ -2671,10 +2636,10 @@
             this.groupBox5.Controls.Add(this.cmbFebreroEspañol);
             this.groupBox5.Controls.Add(this.label72);
             this.groupBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox5.Location = new System.Drawing.Point(134, 18);
+            this.groupBox5.Location = new System.Drawing.Point(128, 28);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox5.Size = new System.Drawing.Size(625, 319);
+            this.groupBox5.Size = new System.Drawing.Size(633, 284);
             this.groupBox5.TabIndex = 82;
             this.groupBox5.TabStop = false;
             // 
@@ -3042,6 +3007,7 @@
             this.Marzo.TabIndex = 6;
             this.Marzo.Text = "Marzo";
             this.Marzo.UseVisualStyleBackColor = true;
+            this.Marzo.MouseEnter += new System.EventHandler(this.Marzo_MouseEnter);
             // 
             // groupBox6
             // 
@@ -3070,10 +3036,10 @@
             this.groupBox6.Controls.Add(this.cmbmarzoEspañol);
             this.groupBox6.Controls.Add(this.label84);
             this.groupBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox6.Location = new System.Drawing.Point(106, 18);
+            this.groupBox6.Location = new System.Drawing.Point(144, 41);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox6.Size = new System.Drawing.Size(653, 319);
+            this.groupBox6.Size = new System.Drawing.Size(637, 283);
             this.groupBox6.TabIndex = 82;
             this.groupBox6.TabStop = false;
             // 
@@ -3441,6 +3407,7 @@
             this.Abril.TabIndex = 7;
             this.Abril.Text = "Abril";
             this.Abril.UseVisualStyleBackColor = true;
+            this.Abril.MouseEnter += new System.EventHandler(this.Abril_MouseEnter);
             // 
             // groupBox7
             // 
@@ -3469,10 +3436,10 @@
             this.groupBox7.Controls.Add(this.cmbAbrilEspañol);
             this.groupBox7.Controls.Add(this.label96);
             this.groupBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox7.Location = new System.Drawing.Point(137, 18);
+            this.groupBox7.Location = new System.Drawing.Point(98, 38);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox7.Size = new System.Drawing.Size(657, 319);
+            this.groupBox7.Size = new System.Drawing.Size(660, 284);
             this.groupBox7.TabIndex = 82;
             this.groupBox7.TabStop = false;
             // 
@@ -3840,6 +3807,7 @@
             this.Mayo.TabIndex = 8;
             this.Mayo.Text = "Mayo";
             this.Mayo.UseVisualStyleBackColor = true;
+            this.Mayo.MouseEnter += new System.EventHandler(this.Mayo_MouseEnter);
             // 
             // groupBox8
             // 
@@ -3868,10 +3836,10 @@
             this.groupBox8.Controls.Add(this.cmbmayoEspañol);
             this.groupBox8.Controls.Add(this.label108);
             this.groupBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox8.Location = new System.Drawing.Point(178, 18);
+            this.groupBox8.Location = new System.Drawing.Point(130, 38);
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox8.Size = new System.Drawing.Size(633, 319);
+            this.groupBox8.Size = new System.Drawing.Size(641, 281);
             this.groupBox8.TabIndex = 82;
             this.groupBox8.TabStop = false;
             // 
@@ -4239,6 +4207,7 @@
             this.Junio.TabIndex = 9;
             this.Junio.Text = "Junio";
             this.Junio.UseVisualStyleBackColor = true;
+            this.Junio.MouseEnter += new System.EventHandler(this.Junio_MouseEnter);
             // 
             // groupBox9
             // 
@@ -4267,10 +4236,10 @@
             this.groupBox9.Controls.Add(this.cmbDJunioEspañol);
             this.groupBox9.Controls.Add(this.label120);
             this.groupBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox9.Location = new System.Drawing.Point(165, 15);
+            this.groupBox9.Location = new System.Drawing.Point(125, 42);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox9.Size = new System.Drawing.Size(651, 319);
+            this.groupBox9.Size = new System.Drawing.Size(661, 288);
             this.groupBox9.TabIndex = 82;
             this.groupBox9.TabStop = false;
             // 
@@ -4638,6 +4607,7 @@
             this.Diagnostico.TabIndex = 10;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
+            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox10
             // 
@@ -4666,12 +4636,13 @@
             this.groupBox10.Controls.Add(this.cmbdiagespañol);
             this.groupBox10.Controls.Add(this.label143);
             this.groupBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox10.Location = new System.Drawing.Point(143, 18);
+            this.groupBox10.Location = new System.Drawing.Point(121, 39);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox10.Size = new System.Drawing.Size(651, 319);
+            this.groupBox10.Size = new System.Drawing.Size(629, 277);
             this.groupBox10.TabIndex = 83;
             this.groupBox10.TabStop = false;
+            this.groupBox10.MouseHover += new System.EventHandler(this.GroupBox10_MouseHover);
             // 
             // label117
             // 
@@ -5098,6 +5069,119 @@
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
             this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
+            // groupBox11
+            // 
+            this.groupBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox11.Controls.Add(this.label160);
+            this.groupBox11.Controls.Add(this.label9);
+            this.groupBox11.Controls.Add(this.label161);
+            this.groupBox11.Controls.Add(this.cmbsepina);
+            this.groupBox11.Controls.Add(this.label162);
+            this.groupBox11.Controls.Add(this.Espmay);
+            this.groupBox11.Controls.Add(this.label163);
+            this.groupBox11.Controls.Add(this.Espabril);
+            this.groupBox11.Controls.Add(this.label164);
+            this.groupBox11.Controls.Add(this.EspMarz);
+            this.groupBox11.Controls.Add(this.label165);
+            this.groupBox11.Controls.Add(this.EspFeb);
+            this.groupBox11.Controls.Add(this.label166);
+            this.groupBox11.Controls.Add(this.Espene);
+            this.groupBox11.Controls.Add(this.EspDiag);
+            this.groupBox11.Controls.Add(this.Espdic);
+            this.groupBox11.Controls.Add(this.label2);
+            this.groupBox11.Controls.Add(this.Espnov);
+            this.groupBox11.Controls.Add(this.label4);
+            this.groupBox11.Controls.Add(this.EspOct);
+            this.groupBox11.Controls.Add(this.label1);
+            this.groupBox11.Controls.Add(this.EspSep);
+            this.groupBox11.Controls.Add(this.label3);
+            this.groupBox11.Controls.Add(this.label6);
+            this.groupBox11.Controls.Add(this.label12);
+            this.groupBox11.Controls.Add(this.label7);
+            this.groupBox11.Controls.Add(this.label11);
+            this.groupBox11.Controls.Add(this.label8);
+            this.groupBox11.Controls.Add(this.label10);
+            this.groupBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox11.Location = new System.Drawing.Point(129, 19);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox11.Size = new System.Drawing.Size(640, 292);
+            this.groupBox11.TabIndex = 83;
+            this.groupBox11.TabStop = false;
+            // 
+            // label166
+            // 
+            this.label166.AutoSize = true;
+            this.label166.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label166.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label166.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label166.Location = new System.Drawing.Point(223, 0);
+            this.label166.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label166.Name = "label166";
+            this.label166.Size = new System.Drawing.Size(147, 26);
+            this.label166.TabIndex = 44;
+            this.label166.Text = "Calificaciones";
+            // 
+            // label165
+            // 
+            this.label165.AutoSize = true;
+            this.label165.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label165.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label165.Location = new System.Drawing.Point(16, 50);
+            this.label165.Name = "label165";
+            this.label165.Size = new System.Drawing.Size(0, 20);
+            this.label165.TabIndex = 62;
+            // 
+            // label164
+            // 
+            this.label164.AutoSize = true;
+            this.label164.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label164.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label164.Location = new System.Drawing.Point(16, 90);
+            this.label164.Name = "label164";
+            this.label164.Size = new System.Drawing.Size(0, 20);
+            this.label164.TabIndex = 65;
+            // 
+            // label163
+            // 
+            this.label163.AutoSize = true;
+            this.label163.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label163.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label163.Location = new System.Drawing.Point(16, 167);
+            this.label163.Name = "label163";
+            this.label163.Size = new System.Drawing.Size(0, 20);
+            this.label163.TabIndex = 66;
+            // 
+            // label162
+            // 
+            this.label162.AutoSize = true;
+            this.label162.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label162.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label162.Location = new System.Drawing.Point(16, 127);
+            this.label162.Name = "label162";
+            this.label162.Size = new System.Drawing.Size(0, 20);
+            this.label162.TabIndex = 67;
+            // 
+            // label161
+            // 
+            this.label161.AutoSize = true;
+            this.label161.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label161.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label161.Location = new System.Drawing.Point(16, 245);
+            this.label161.Name = "label161";
+            this.label161.Size = new System.Drawing.Size(0, 20);
+            this.label161.TabIndex = 68;
+            // 
+            // label160
+            // 
+            this.label160.AutoSize = true;
+            this.label160.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label160.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label160.Location = new System.Drawing.Point(16, 206);
+            this.label160.Name = "label160";
+            this.label160.Size = new System.Drawing.Size(0, 20);
+            this.label160.TabIndex = 69;
+            // 
             // Calificaciones456
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -5113,10 +5197,9 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
+            this.Load += new System.EventHandler(this.Calificaciones456_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.Septiembre.ResumeLayout(false);
-            this.BoxGenero.ResumeLayout(false);
-            this.BoxGenero.PerformLayout();
             this.Octubre.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -5147,6 +5230,8 @@
             this.Diagnostico.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -5155,7 +5240,6 @@
 
         private MaterialSkin.Controls.MaterialRaisedButton btnCerrar;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage Septiembre;
         private System.Windows.Forms.TabPage Octubre;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private System.Windows.Forms.TabPage Noviembre;
@@ -5166,28 +5250,6 @@
         private System.Windows.Forms.TabPage Abril;
         private System.Windows.Forms.TabPage Mayo;
         private System.Windows.Forms.TabPage Junio;
-        private System.Windows.Forms.GroupBox BoxGenero;
-        private System.Windows.Forms.ComboBox cmbsepina;
-        private System.Windows.Forms.ComboBox Espmay;
-        private System.Windows.Forms.ComboBox Espabril;
-        private System.Windows.Forms.ComboBox EspMarz;
-        private System.Windows.Forms.ComboBox EspFeb;
-        private System.Windows.Forms.ComboBox Espene;
-        private System.Windows.Forms.ComboBox Espdic;
-        private System.Windows.Forms.ComboBox Espnov;
-        private System.Windows.Forms.ComboBox EspOct;
-        private System.Windows.Forms.ComboBox EspSep;
-        private System.Windows.Forms.ComboBox EspDiag;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.ComboBox cmbOctubreIna;
         private System.Windows.Forms.ComboBox cmbOctubreEdFisica;
@@ -5308,7 +5370,6 @@
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label131;
         private System.Windows.Forms.Label label130;
         private System.Windows.Forms.Label label128;
@@ -5435,7 +5496,6 @@
         private System.Windows.Forms.ComboBox cmbdiagespañol;
         private System.Windows.Forms.Label label143;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label129;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label85;
@@ -5446,5 +5506,36 @@
         private System.Windows.Forms.Label label106;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label117;
+        private System.Windows.Forms.TabPage Septiembre;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox cmbsepina;
+        private System.Windows.Forms.ComboBox Espmay;
+        private System.Windows.Forms.ComboBox Espabril;
+        private System.Windows.Forms.ComboBox EspMarz;
+        private System.Windows.Forms.ComboBox EspFeb;
+        private System.Windows.Forms.ComboBox Espene;
+        private System.Windows.Forms.ComboBox Espdic;
+        private System.Windows.Forms.ComboBox Espnov;
+        private System.Windows.Forms.ComboBox EspOct;
+        private System.Windows.Forms.ComboBox EspSep;
+        private System.Windows.Forms.ComboBox EspDiag;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.Label label160;
+        private System.Windows.Forms.Label label161;
+        private System.Windows.Forms.Label label162;
+        private System.Windows.Forms.Label label163;
+        private System.Windows.Forms.Label label164;
+        private System.Windows.Forms.Label label165;
+        private System.Windows.Forms.Label label166;
     }
 }
