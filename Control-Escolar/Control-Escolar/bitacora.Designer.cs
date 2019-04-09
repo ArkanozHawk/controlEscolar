@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(bitacora));
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.GenerarPDF = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -40,6 +41,7 @@
             // 
             // btnPrincipal
             // 
+            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(196, 364);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -57,6 +59,7 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
+            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -70,6 +73,7 @@
             // 
             // GenerarPDF
             // 
+            this.GenerarPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GenerarPDF.Depth = 0;
             this.GenerarPDF.Location = new System.Drawing.Point(478, 364);
             this.GenerarPDF.MouseState = MaterialSkin.MouseState.HOVER;
@@ -83,6 +87,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(647, 29);
@@ -97,6 +102,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_48;
             this.pictureBox1.Location = new System.Drawing.Point(422, 361);
             this.pictureBox1.Name = "pictureBox1";
@@ -106,6 +112,7 @@
             // 
             // padre
             // 
+            this.padre.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.padre.AutoSize = true;
             this.padre.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.padre.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,6 +135,7 @@
             this.Controls.Add(this.GenerarPDF);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrincipal);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "bitacora";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Bitácora";
