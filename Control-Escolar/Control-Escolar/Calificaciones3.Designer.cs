@@ -386,6 +386,7 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(947, 402);
             this.materialTabControl1.TabIndex = 93;
+            this.materialTabControl1.MouseEnter += new System.EventHandler(this.Marzo_MouseEnter);
             // 
             // Diagnostico
             // 
@@ -397,6 +398,7 @@
             this.Diagnostico.TabIndex = 0;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
+            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox11
             // 
@@ -1124,6 +1126,7 @@
             this.Septiembre.TabIndex = 1;
             this.Septiembre.Text = "Septiem.";
             this.Septiembre.UseVisualStyleBackColor = true;
+            this.Septiembre.MouseEnter += new System.EventHandler(this.Septiembre_MouseEnter);
             // 
             // groupBox1
             // 
@@ -1850,6 +1853,7 @@
             this.Octubre.TabIndex = 2;
             this.Octubre.Text = "Octubre";
             this.Octubre.UseVisualStyleBackColor = true;
+            this.Octubre.MouseEnter += new System.EventHandler(this.Octubre_MouseEnter);
             // 
             // groupBox2
             // 
@@ -2576,6 +2580,7 @@
             this.Noviembre.TabIndex = 3;
             this.Noviembre.Text = "Noviem.";
             this.Noviembre.UseVisualStyleBackColor = true;
+            this.Noviembre.MouseEnter += new System.EventHandler(this.Noviembre_MouseEnter);
             // 
             // groupBox3
             // 
@@ -3302,6 +3307,7 @@
             this.Diciembre.TabIndex = 4;
             this.Diciembre.Text = "Diciembre";
             this.Diciembre.UseVisualStyleBackColor = true;
+            this.Diciembre.MouseEnter += new System.EventHandler(this.Diciembre_MouseEnter);
             // 
             // groupBox4
             // 
@@ -4028,6 +4034,7 @@
             this.Enero.TabIndex = 5;
             this.Enero.Text = "Enero";
             this.Enero.UseVisualStyleBackColor = true;
+            this.Enero.MouseEnter += new System.EventHandler(this.Enero_MouseEnter);
             // 
             // groupBox5
             // 
@@ -4754,6 +4761,7 @@
             this.Febrero.TabIndex = 6;
             this.Febrero.Text = "Febrero";
             this.Febrero.UseVisualStyleBackColor = true;
+            this.Febrero.MouseEnter += new System.EventHandler(this.Febrero_MouseEnter);
             // 
             // groupBox6
             // 
@@ -6206,6 +6214,7 @@
             this.Abril.TabIndex = 8;
             this.Abril.Text = "Abril";
             this.Abril.UseVisualStyleBackColor = true;
+            this.Abril.MouseEnter += new System.EventHandler(this.Abril_MouseEnter);
             // 
             // groupBox9
             // 
@@ -6932,6 +6941,7 @@
             this.Mayo.TabIndex = 9;
             this.Mayo.Text = "Mayo";
             this.Mayo.UseVisualStyleBackColor = true;
+            this.Mayo.MouseEnter += new System.EventHandler(this.Mayo_MouseEnter);
             // 
             // groupBox8
             // 
@@ -7658,6 +7668,7 @@
             this.Junio.TabIndex = 10;
             this.Junio.Text = "Junio";
             this.Junio.UseVisualStyleBackColor = true;
+            this.Junio.MouseEnter += new System.EventHandler(this.Junio_MouseEnter);
             // 
             // groupBox10
             // 

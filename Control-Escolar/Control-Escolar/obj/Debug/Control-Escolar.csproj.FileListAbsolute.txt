@@ -523,3 +523,4 @@ C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\ob
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
 C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
