@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificaciones3));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -315,6 +316,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(902, 28);
@@ -329,6 +331,7 @@
             // 
             // btnIrBoletas
             // 
+            this.btnIrBoletas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnIrBoletas.Depth = 0;
             this.btnIrBoletas.Location = new System.Drawing.Point(582, 556);
             this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
@@ -342,6 +345,7 @@
             // 
             // btnPrincipal
             // 
+            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(89, 558);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -355,6 +359,7 @@
             // 
             // materialRaisedButton1
             // 
+            this.materialRaisedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Location = new System.Drawing.Point(330, 560);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -367,6 +372,7 @@
             // 
             // materialTabControl1
             // 
+            this.materialTabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
             this.materialTabControl1.Controls.Add(this.tabPage3);
@@ -8814,6 +8820,7 @@
             // 
             // materialTabSelector1
             // 
+            this.materialTabSelector1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Location = new System.Drawing.Point(-7, 64);
@@ -8825,6 +8832,7 @@
             // 
             // materialRaisedButton2
             // 
+            this.materialRaisedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.Location = new System.Drawing.Point(820, 558);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -8834,6 +8842,7 @@
             this.materialRaisedButton2.TabIndex = 95;
             this.materialRaisedButton2.Text = "Generar Boleta Externa";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // Calificaciones3
             // 
@@ -8847,8 +8856,10 @@
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.materialRaisedButton1);
             this.Controls.Add(this.btnCerrar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones3";
             this.Text = "Calificaciones";
+            this.Load += new System.EventHandler(this.Calificaciones3_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
