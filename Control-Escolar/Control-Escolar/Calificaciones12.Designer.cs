@@ -300,7 +300,7 @@
             this.Diagnostico.TabIndex = 0;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
-           
+            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox1
             // 
@@ -6929,7 +6929,6 @@
         private System.Windows.Forms.TabPage Mayo;
         private System.Windows.Forms.TabPage Junio;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmbDiagEspañol;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -7127,5 +7126,6 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label84;
         private System.Windows.Forms.Label label93;
+        public System.Windows.Forms.ComboBox cmbDiagEspañol;
     }
 }
