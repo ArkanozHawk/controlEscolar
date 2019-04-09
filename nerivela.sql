@@ -3,10 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 12-03-2019 a las 01:35:26
+-- Tiempo de generación: 09-04-2019 a las 10:42:57
 -- Versión del servidor: 5.6.17
 -- Versión de PHP: 5.5.12
-
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -20,10 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `nerivela`
 --
--- DROP DATABASE nerivela;
-
-CREATE DATABASE IF NOT EXISTS `nerivela` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `nerivela`;
 
 -- --------------------------------------------------------
 
@@ -52,9 +47,12 @@ CREATE TABLE IF NOT EXISTS `alumno` (
   UNIQUE KEY `CURP` (`CURP`),
   KEY `idPadres` (`idPadres`),
   KEY `idGrado` (`idGrado`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=92 ;
 
--- --------------------------------------------------------
+--
+-- Volcado de datos para la tabla `alumno`
+--
+
 INSERT INTO `alumno` (`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telEmer`, `Genero`, `lugNac`, `FechNac`, `Alergias`, `CURP`, `idPadres`, `idGrado`) VALUES
 (1, ' JESUS LEONARDO ', 'AREVALO', 'CARDENAS', 'CAMPECHE', 'Vista Alegre', '34', '39855', '7441212567', 'Masculino', 'Acapulco de Juarez', '2010-04-29', 'Ninguna', 'AECJ090429HCHRRS01', 1, 4),
 (2, ' PERLA CLARISSA', 'ARIAS', ' HERNANDEZ', 'MAZATLAN', 'Nueva Linea', '670', '39809', '7445690991', 'Femenino', 'Acapulco', '2010-11-01', 'Ninguna', 'AIHP091101MCHRRR03', 2, 4),
@@ -145,7 +143,8 @@ INSERT INTO `alumno` (`idAlumno`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `
 (87, 'MIGUEL ANGEL', 'CABRERA', 'ADAME ', 'DAMIAN', 'VISTA ALEGRE', '60', '39874', '7446465454', 'Masculino', 'ACAPULCO DE JUAREZ', '2009-11-17', 'PARACETAMOL', 'CAAM091117HGRBDG13', 87, 5),
 (88, 'MILTON EMANUEL', ' ARROYO', 'AGUILAR ', 'SONORA', 'LA POZA', '492', '39084', '7449355799', 'Masculino', 'ACAPULCO DE JUAREZ', '2009-06-20', 'NINGUNA', 'AOAM090620HGRRGL04', 88, 5),
 (89, 'LUIS RANGEL', ' DE LA O', 'ARROYO', 'LOS ALTOS', 'LOS TIGRES', '231', '39284', '7446298168', 'Masculino', 'ACAPULCO DE JUAREZ', '2009-05-11', 'NINGUNA', 'OXAL090511HGRXRS05', 89, 5),
-(90, 'RODRIGO', 'DONJUAN ', 'MORA ', 'MATA', 'LA MIRA', '693', '39657', '7446915935', 'Masculino', 'VERACRUZ', '2009-11-10', 'NINGUNA', 'DOMR091104HGRNRD06', 90, 5);
+(90, 'RODRIGO', 'DONJUAN ', 'MORA ', 'MATA', 'LA MIRA', '693', '39657', '7446915935', 'Masculino', 'VERACRUZ', '2009-11-10', 'NINGUNA', 'DOMR091104HGRNRD06', 90, 5),
+(91, 'MARTHA', 'TERAN', 'LARA', '52', 'CARABALI', '52', '39560', '7444383583', 'Femenino', 'ACAPULCO DE JUAREZ', '2012-08-03', 'PELICILINA', 'TEML030813MGRRRR09', 91, 1);
 
 -- --------------------------------------------------------
 
@@ -162,9 +161,9 @@ CREATE TABLE IF NOT EXISTS `bitacora` (
   `HoraEntrada` varchar(20) DEFAULT NULL,
   `HoraSalida` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idAcceso`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=191 ;
 
--- --------------------------------------------------------
+--
 -- Volcado de datos para la tabla `bitacora`
 --
 
@@ -181,7 +180,184 @@ INSERT INTO `bitacora` (`idAcceso`, `Usuario`, `Nombre`, `Apellido`, `Fecha`, `H
 (10, 'lizethepetete', 'MArtha', 'Teran', '22/03/2019', '07:19:46', '22/03/2019 09:00:23 '),
 (11, 'lizethepetete', 'MArtha', 'Teran', '22/03/2019', '06:53:33', NULL),
 (12, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '04:19:45', '23/03/2019 07:31:53 '),
-(13, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '07:58:38', '24/03/2019 01:39:11 ');
+(13, 'lizethepetete', 'MArtha', 'Teran', '23/03/2019', '07:58:38', '24/03/2019 01:39:11 '),
+(14, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '04:38:39', '31/03/2019 04:45:24 '),
+(15, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '04:50:09', '31/03/2019 04:55:50 '),
+(16, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:01:48', '31/03/2019 05:02:36 '),
+(17, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:04:09', NULL),
+(18, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:06:45', NULL),
+(19, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:09:41', NULL),
+(20, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:24:35', NULL),
+(21, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:31:07', '31/03/2019 05:35:31 '),
+(22, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '05:37:42', '31/03/2019 05:44:54 '),
+(23, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:00:13', '31/03/2019 06:06:18 '),
+(24, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:08:19', '31/03/2019 06:09:40 '),
+(25, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:49:46', NULL),
+(26, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:52:32', NULL),
+(27, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '06:55:38', NULL),
+(28, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:00:39', NULL),
+(29, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:01:32', NULL),
+(30, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:08:31', NULL),
+(31, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:11:34', NULL),
+(32, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '07:12:15', NULL),
+(33, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '09:49:55', NULL),
+(34, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '11:07:06', '31/03/2019 11:08:18 '),
+(35, 'lizethepetete', 'Martha Lizeth', 'Teran', '31/03/2019', '11:10:18', '31/03/2019 11:10:41 '),
+(36, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '12:08:54', NULL),
+(37, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '07:46:17', NULL),
+(38, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '07:50:18', '02/04/2019 07:52:01 '),
+(39, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '07:54:01', '02/04/2019 07:54:26 '),
+(40, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '07:59:31', NULL),
+(41, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '08:00:03', NULL),
+(42, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:20:17', '02/04/2019 09:21:34 '),
+(43, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:24:07', '02/04/2019 09:24:48 '),
+(44, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:25:22', '02/04/2019 09:25:35 '),
+(45, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:28:12', '02/04/2019 09:28:24 '),
+(46, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:29:42', '02/04/2019 09:30:04 '),
+(47, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:31:22', '02/04/2019 09:31:39 '),
+(48, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:33:23', '02/04/2019 09:33:38 '),
+(49, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:34:30', '02/04/2019 09:34:52 '),
+(50, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:35:43', '02/04/2019 09:36:28 '),
+(51, 'lizethepetete', 'Martha Lizeth', 'Teran', '02/04/2019', '09:38:08', '02/04/2019 09:38:28 '),
+(52, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '06:00:38', '03/04/2019 06:03:55 '),
+(53, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '06:32:21', '03/04/2019 06:34:28 '),
+(54, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '07:39:45', '03/04/2019 07:51:39 '),
+(55, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '08:23:17', '03/04/2019 08:23:43 '),
+(56, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '08:25:06', '03/04/2019 08:25:30 '),
+(57, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '08:27:26', '03/04/2019 08:27:53 '),
+(58, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '08:54:59', '03/04/2019 08:55:45 '),
+(59, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:00:03', NULL),
+(60, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:04:04', NULL),
+(61, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:05:01', NULL),
+(62, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:05:47', NULL),
+(63, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:07:36', '03/04/2019 09:12:15 '),
+(64, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:35:04', '03/04/2019 09:35:23 '),
+(65, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:48:34', NULL),
+(66, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '09:59:32', NULL),
+(67, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '10:03:52', NULL),
+(68, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '10:05:42', '03/04/2019 10:06:20 '),
+(69, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '10:10:10', '03/04/2019 10:11:53 '),
+(70, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '10:25:09', '03/04/2019 10:25:38 '),
+(71, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '11:23:06', '03/04/2019 11:23:46 '),
+(72, 'lizethepetete', 'Martha Lizeth', 'Teran', '03/04/2019', '11:24:54', '03/04/2019 11:25:06 '),
+(73, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '01:03:30', NULL),
+(74, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '01:08:24', '04/04/2019 01:08:38 '),
+(75, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '06:27:42', '04/04/2019 06:29:05 '),
+(76, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:16:16', '04/04/2019 07:17:33 '),
+(77, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:27:36', '04/04/2019 07:27:48 '),
+(78, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:40:25', '04/04/2019 07:41:55 '),
+(79, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:43:16', '04/04/2019 07:43:30 '),
+(80, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:44:19', '04/04/2019 07:44:29 '),
+(81, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '05:22:19', '04/04/2019 05:23:55 '),
+(82, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '05:26:05', NULL),
+(83, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '05:26:47', '04/04/2019 05:27:32 '),
+(84, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '06:04:42', '04/04/2019 06:05:33 '),
+(85, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '06:07:53', '04/04/2019 06:09:43 '),
+(86, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '07:42:25', NULL),
+(87, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '09:08:03', NULL),
+(88, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '09:10:00', NULL),
+(89, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '10:51:21', NULL),
+(90, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '10:52:10', NULL),
+(91, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '10:53:40', '04/04/2019 10:53:51 '),
+(92, 'lizethepetete', 'Martha Lizeth', 'Teran', '04/04/2019', '10:58:19', '04/04/2019 10:58:28 '),
+(93, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:38:31', NULL),
+(94, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:48:21', NULL),
+(95, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:49:14', NULL),
+(96, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:51:28', '05/04/2019 04:53:58 '),
+(97, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:54:53', '05/04/2019 04:55:01 '),
+(98, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '04:55:13', '05/04/2019 04:55:19 '),
+(99, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '05:02:41', '05/04/2019 05:02:55 '),
+(100, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '05:04:19', '05/04/2019 05:05:23 '),
+(101, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '06:23:03', '05/04/2019 06:24:36 '),
+(102, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '06:44:53', '05/04/2019 06:45:46 '),
+(103, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '06:56:32', '05/04/2019 06:57:23 '),
+(104, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '07:00:09', '05/04/2019 07:03:23 '),
+(105, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '07:27:19', NULL),
+(106, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '07:28:23', '05/04/2019 07:31:44 '),
+(107, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '07:33:42', '05/04/2019 07:39:59 '),
+(108, 'lizethepetete', 'Martha Lizeth', 'Teran', '05/04/2019', '11:55:38', NULL),
+(109, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '12:59:19', '06/04/2019 01:00:01 '),
+(110, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '01:21:01', NULL),
+(111, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '06:30:01', NULL),
+(112, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '06:37:36', NULL),
+(113, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '06:39:40', NULL),
+(114, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '07:07:38', '06/04/2019 07:12:30 '),
+(115, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '07:35:43', '06/04/2019 07:37:08 '),
+(116, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '07:41:54', '06/04/2019 07:42:06 '),
+(117, 'lizethepetete', 'Martha Lizeth', 'Teran', '06/04/2019', '08:41:44', '06/04/2019 08:42:13 '),
+(118, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '01:25:58', NULL),
+(119, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '01:28:27', NULL),
+(120, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '01:38:01', NULL),
+(121, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '01:40:18', '07/04/2019 01:41:57 '),
+(122, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '02:49:52', NULL),
+(123, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '03:59:19', NULL),
+(124, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '04:01:09', NULL),
+(125, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '04:03:01', NULL),
+(126, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '04:03:59', NULL),
+(127, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '04:22:45', NULL),
+(128, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '05:27:12', '07/04/2019 05:27:25 '),
+(129, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '05:50:43', '07/04/2019 05:52:41 '),
+(130, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '05:54:49', '07/04/2019 05:56:45 '),
+(131, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '05:56:55', NULL),
+(132, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '06:53:13', '07/04/2019 06:58:26 '),
+(133, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '08:03:46', NULL),
+(134, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '08:04:34', NULL),
+(135, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '08:43:49', NULL),
+(136, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '08:45:27', '07/04/2019 08:46:20 '),
+(137, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '08:47:49', '07/04/2019 08:48:52 '),
+(138, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '10:21:04', '07/04/2019 10:22:13 '),
+(139, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '10:23:28', '07/04/2019 10:23:38 '),
+(140, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '10:38:59', NULL),
+(141, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '10:42:07', NULL),
+(142, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '11:11:34', NULL),
+(143, 'LIZETHEPETETE', 'Martha Lizeth', 'Teran', '07/04/2019', '11:18:01', NULL),
+(144, 'lizethepetete', 'Martha Lizeth', 'Teran', '07/04/2019', '11:20:01', '07/04/2019 11:22:37 '),
+(145, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '12:05:31', '08/04/2019 12:06:19 '),
+(146, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '12:08:16', '08/04/2019 12:08:38 '),
+(147, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '12:57:47', NULL),
+(148, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '12:59:57', NULL),
+(149, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:08:09', NULL),
+(150, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:09:01', NULL),
+(151, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:13:30', NULL),
+(152, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:22:12', NULL),
+(153, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:24:12', '08/04/2019 01:25:52 '),
+(154, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:36:30', '08/04/2019 01:38:25 '),
+(155, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '01:59:07', '08/04/2019 01:59:37 '),
+(156, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:05:37', '08/04/2019 02:06:30 '),
+(157, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:09:36', '08/04/2019 02:10:23 '),
+(158, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:11:47', '08/04/2019 02:12:46 '),
+(159, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:35:49', NULL),
+(160, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:38:48', NULL),
+(161, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:41:02', NULL),
+(162, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:43:36', '08/04/2019 02:44:28 '),
+(163, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:53:32', NULL),
+(164, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '02:54:00', '08/04/2019 02:54:47 '),
+(165, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:03:40', '08/04/2019 03:04:46 '),
+(166, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:06:57', NULL),
+(167, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:17:30', '08/04/2019 03:17:40 '),
+(168, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:05:53', '08/04/2019 03:06:12 '),
+(169, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:06:46', NULL),
+(170, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:07:59', NULL),
+(171, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:18:38', '08/04/2019 03:19:11 '),
+(172, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:20:44', '08/04/2019 03:21:36 '),
+(173, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:22:53', '08/04/2019 03:23:56 '),
+(174, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '03:25:16', '08/04/2019 03:41:57 '),
+(175, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '05:26:00', '08/04/2019 05:28:20 '),
+(176, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '05:38:02', NULL),
+(177, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '07:31:01', NULL),
+(178, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '07:52:28', '08/04/2019 07:54:18 '),
+(179, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '08:12:06', '08/04/2019 08:13:53 '),
+(180, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '09:14:01', '08/04/2019 09:14:26 '),
+(181, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '09:29:03', '08/04/2019 09:29:14 '),
+(182, 'lizethepetete', NULL, NULL, NULL, '08/04/2019 09:37:14 ', '08/04/2019 09:37:26 '),
+(183, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '09:39:21', '08/04/2019 09:39:38 '),
+(184, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '10:09:00', NULL),
+(185, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '10:15:10', NULL),
+(186, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '10:25:55', '08/04/2019 10:26:17 '),
+(187, 'lizethepetete', 'Martha Lizeth', 'Teran', '08/04/2019', '10:29:53', '08/04/2019 10:30:16 '),
+(188, 'lizethepetete', 'Martha Lizeth', 'Teran', '09/04/2019', '03:04:05', '09/04/2019 03:06:57 '),
+(189, 'lizethepetete', 'Martha Lizeth', 'Teran', '09/04/2019', '03:07:58', '09/04/2019 03:09:22 '),
+(190, 'lizethepetete', 'Martha Lizeth', 'Teran', '09/04/2019', '03:13:42', '09/04/2019 03:14:46 ');
 
 -- --------------------------------------------------------
 
@@ -191,14 +367,196 @@ INSERT INTO `bitacora` (`idAcceso`, `Usuario`, `Nombre`, `Apellido`, `Fecha`, `H
 
 CREATE TABLE IF NOT EXISTS `calificaciones` (
   `idCalificaciones` int(11) NOT NULL AUTO_INCREMENT,
-  `CalificacionMen` decimal(2,2) NOT NULL,
-   `idAlumno` int(11) NOT NULL ,
+  `CalificacionMen` decimal(3,1) NOT NULL,
+  `idAlumno` int(11) NOT NULL,
   `Mes` varchar(20) NOT NULL,
-   `idMaterias` int(11) NOT NULL ,
+  `idMaterias` int(11) NOT NULL,
   PRIMARY KEY (`idCalificaciones`),
-   KEY `fk_idAlumno` (`idAlumno`),
-    KEY `fk_idMaterias` (`idMaterias`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+  KEY `fk_idAlumno` (`idAlumno`),
+  KEY `fk_idMaterias` (`idMaterias`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=324 ;
+
+--
+-- Volcado de datos para la tabla `calificaciones`
+--
+
+INSERT INTO `calificaciones` (`idCalificaciones`, `CalificacionMen`, `idAlumno`, `Mes`, `idMaterias`) VALUES
+(144, '10.0', 6, 'Septiembre', 4),
+(145, '10.0', 6, 'Septiembre', 33),
+(146, '8.0', 6, 'Septiembre', 27),
+(147, '8.5', 6, 'Septiembre', 39),
+(148, '9.0', 6, 'Septiembre', 45),
+(149, '10.0', 6, 'Septiembre', 51),
+(150, '10.0', 6, 'Septiembre', 10),
+(151, '7.5', 6, 'Septiembre', 16),
+(152, '10.0', 6, 'Septiembre', 22),
+(153, '10.0', 6, 'Septiembre', 30),
+(154, '0.0', 6, 'Septiembre', 57),
+(155, '10.0', 6, 'Octubre', 4),
+(156, '8.5', 6, 'Octubre', 33),
+(157, '9.5', 6, 'Octubre', 27),
+(158, '9.0', 6, 'Octubre', 39),
+(159, '9.5', 6, 'Octubre', 45),
+(160, '10.0', 6, 'Octubre', 51),
+(161, '9.0', 6, 'Octubre', 10),
+(162, '8.0', 6, 'Octubre', 16),
+(163, '7.5', 6, 'Octubre', 22),
+(164, '5.5', 6, 'Octubre', 30),
+(165, '2.0', 6, 'Octubre', 57),
+(166, '10.0', 5, 'Septiembre', 4),
+(167, '6.0', 5, 'Septiembre', 33),
+(168, '9.0', 5, 'Septiembre', 27),
+(169, '8.5', 5, 'Septiembre', 39),
+(170, '8.0', 5, 'Septiembre', 45),
+(171, '10.0', 5, 'Septiembre', 51),
+(172, '10.0', 5, 'Septiembre', 10),
+(173, '10.0', 5, 'Septiembre', 16),
+(174, '10.0', 5, 'Septiembre', 22),
+(175, '9.5', 5, 'Septiembre', 30),
+(176, '1.0', 5, 'Septiembre', 57),
+(177, '10.0', 6, 'Noviembre', 4),
+(178, '9.0', 6, 'Noviembre', 10),
+(179, '8.0', 6, 'Noviembre', 16),
+(180, '8.0', 6, 'Noviembre', 22),
+(181, '5.5', 6, 'Noviembre', 30),
+(182, '7.5', 6, 'Noviembre', 33),
+(183, '9.5', 6, 'Noviembre', 27),
+(184, '9.0', 6, 'Noviembre', 39),
+(185, '8.5', 6, 'Noviembre', 51),
+(186, '7.5', 6, 'Noviembre', 45),
+(187, '3.0', 6, 'Noviembre', 57),
+(188, '8.5', 6, 'Diciembre', 4),
+(189, '9.5', 6, 'Diciembre', 10),
+(190, '9.0', 6, 'Diciembre', 16),
+(191, '7.5', 6, 'Diciembre', 22),
+(192, '6.0', 6, 'Diciembre', 30),
+(193, '5.5', 6, 'Diciembre', 33),
+(194, '5.0', 6, 'Diciembre', 27),
+(195, '9.5', 6, 'Diciembre', 39),
+(196, '9.5', 6, 'Diciembre', 51),
+(197, '10.0', 6, 'Diciembre', 45),
+(198, '4.0', 6, 'Diciembre', 57),
+(199, '8.5', 6, 'Enero', 4),
+(200, '7.5', 6, 'Enero', 10),
+(201, '10.0', 6, 'Enero', 16),
+(202, '7.5', 6, 'Enero', 22),
+(203, '6.5', 6, 'Enero', 30),
+(204, '5.0', 6, 'Enero', 33),
+(205, '10.0', 6, 'Enero', 27),
+(206, '9.0', 6, 'Enero', 39),
+(207, '9.0', 6, 'Enero', 51),
+(208, '8.5', 6, 'Enero', 45),
+(209, '0.0', 6, 'Enero', 57),
+(210, '10.0', 6, 'Febrero', 4),
+(211, '7.0', 6, 'Febrero', 10),
+(212, '8.5', 6, 'Febrero', 16),
+(213, '7.5', 6, 'Febrero', 22),
+(214, '7.0', 6, 'Febrero', 30),
+(215, '5.5', 6, 'Febrero', 33),
+(216, '10.0', 6, 'Febrero', 27),
+(217, '10.0', 6, 'Febrero', 39),
+(218, '8.5', 6, 'Febrero', 51),
+(219, '9.0', 6, 'Febrero', 45),
+(220, '1.0', 6, 'Febrero', 57),
+(221, '8.5', 6, 'Marzo', 4),
+(222, '8.5', 6, 'Marzo', 10),
+(223, '7.0', 6, 'Marzo', 16),
+(224, '8.5', 6, 'Marzo', 22),
+(225, '7.5', 6, 'Marzo', 30),
+(226, '6.5', 6, 'Marzo', 33),
+(227, '10.0', 6, 'Marzo', 27),
+(228, '9.5', 6, 'Marzo', 39),
+(229, '8.0', 6, 'Marzo', 51),
+(230, '9.0', 6, 'Marzo', 45),
+(231, '1.0', 6, 'Marzo', 57),
+(232, '9.5', 6, 'Abril', 4),
+(233, '9.0', 6, 'Abril', 10),
+(234, '9.0', 6, 'Abril', 16),
+(235, '9.0', 6, 'Abril', 22),
+(236, '8.5', 6, 'Abril', 30),
+(237, '10.0', 6, 'Abril', 33),
+(238, '10.0', 6, 'Abril', 27),
+(239, '9.5', 6, 'Abril', 39),
+(240, '8.0', 6, 'Abril', 51),
+(241, '8.5', 6, 'Abril', 45),
+(242, '2.0', 6, 'Abril', 57),
+(243, '10.0', 6, 'Mayo', 4),
+(244, '9.5', 6, 'Mayo', 10),
+(245, '10.0', 6, 'Mayo', 16),
+(246, '8.5', 6, 'Mayo', 22),
+(247, '8.0', 6, 'Mayo', 30),
+(248, '7.5', 6, 'Mayo', 33),
+(249, '10.0', 6, 'Mayo', 27),
+(250, '9.5', 6, 'Mayo', 39),
+(251, '9.5', 6, 'Mayo', 51),
+(252, '9.0', 6, 'Mayo', 45),
+(253, '0.0', 6, 'Mayo', 57),
+(254, '10.0', 6, 'Junio', 4),
+(255, '9.5', 6, 'Junio', 10),
+(256, '9.0', 6, 'Junio', 16),
+(257, '9.0', 6, 'Junio', 22),
+(258, '8.0', 6, 'Junio', 30),
+(259, '7.5', 6, 'Junio', 33),
+(260, '10.0', 6, 'Junio', 27),
+(261, '8.5', 6, 'Junio', 39),
+(262, '9.5', 6, 'Junio', 51),
+(263, '8.0', 6, 'Junio', 45),
+(264, '2.0', 6, 'Junio', 57),
+(269, '10.0', 6, 'Diagnostico', 4),
+(270, '9.5', 6, 'Diagnostico', 10),
+(271, '9.0', 6, 'Diagnostico', 16),
+(272, '8.0', 6, 'Diagnostico', 22),
+(273, '8.0', 6, 'Diagnostico', 30),
+(274, '5.5', 6, 'Diagnostico', 33),
+(275, '9.5', 6, 'Diagnostico', 27),
+(276, '7.0', 6, 'Diagnostico', 39),
+(277, '7.0', 6, 'Diagnostico', 51),
+(278, '9.0', 6, 'Diagnostico', 45),
+(279, '0.0', 6, 'Diagnostico', 57),
+(280, '8.5', 2, 'Octubre', 4),
+(281, '8.5', 2, 'Octubre', 10),
+(282, '7.5', 2, 'Octubre', 16),
+(283, '6.5', 2, 'Octubre', 22),
+(284, '5.5', 2, 'Octubre', 30),
+(285, '9.0', 2, 'Octubre', 33),
+(286, '9.0', 2, 'Octubre', 27),
+(287, '8.5', 2, 'Octubre', 39),
+(288, '8.5', 2, 'Octubre', 51),
+(289, '8.5', 2, 'Octubre', 45),
+(290, '1.0', 2, 'Octubre', 57),
+(291, '8.6', 2, 'Septiembre', 4),
+(292, '8.2', 2, 'Septiembre', 10),
+(293, '8.0', 2, 'Septiembre', 16),
+(294, '8.5', 2, 'Septiembre', 22),
+(295, '5.0', 2, 'Septiembre', 30),
+(296, '7.0', 2, 'Septiembre', 33),
+(297, '10.0', 2, 'Septiembre', 27),
+(298, '10.0', 2, 'Septiembre', 39),
+(299, '8.0', 2, 'Septiembre', 51),
+(300, '9.5', 2, 'Septiembre', 45),
+(301, '0.0', 2, 'Septiembre', 57),
+(302, '8.0', 2, 'Noviembre', 4),
+(303, '8.5', 2, 'Noviembre', 10),
+(304, '7.5', 2, 'Noviembre', 16),
+(305, '7.0', 2, 'Noviembre', 22),
+(306, '5.5', 2, 'Noviembre', 30),
+(307, '8.5', 2, 'Noviembre', 33),
+(308, '9.0', 2, 'Noviembre', 27),
+(309, '8.5', 2, 'Noviembre', 39),
+(310, '8.5', 2, 'Noviembre', 51),
+(311, '8.0', 2, 'Noviembre', 45),
+(312, '1.0', 2, 'Noviembre', 57),
+(313, '9.0', 2, 'Diciembre', 4),
+(314, '9.5', 2, 'Diciembre', 10),
+(315, '9.0', 2, 'Diciembre', 16),
+(316, '9.0', 2, 'Diciembre', 22),
+(317, '5.5', 2, 'Diciembre', 30),
+(318, '6.5', 2, 'Diciembre', 33),
+(319, '10.0', 2, 'Diciembre', 27),
+(320, '9.0', 2, 'Diciembre', 39),
+(321, '9.5', 2, 'Diciembre', 51),
+(322, '9.5', 2, 'Diciembre', 45),
+(323, '0.0', 2, 'Diciembre', 57);
 
 -- --------------------------------------------------------
 
@@ -219,7 +577,7 @@ CREATE TABLE IF NOT EXISTS `grado` (
 -- Volcado de datos para la tabla `grado`
 --
 
-INSERT INTO `grado` VALUES
+INSERT INTO `grado` (`idGrado`, `grado`, `grupo`, `idMaestros`) VALUES
 (1, '1', 'A', 1),
 (2, '2', 'A', 2),
 (3, '3', 'A', 3),
@@ -257,7 +615,7 @@ CREATE TABLE IF NOT EXISTS `maestros` (
 -- Volcado de datos para la tabla `maestros`
 --
 
-INSERT INTO `maestros` VALUES
+INSERT INTO `maestros` (`idMaestros`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`, `colonia`, `numExt`, `cp`, `telefono`, `Celular`, `Email`, `gradoEncargado`, `Profesion`, `FechNac`, `RFC`) VALUES
 (1, 'José', 'Jacinto', 'Cuevas', 'Morteros', 'Marroquin', '70', '39640', '1587496', '744610125', 'jjCuevas@hotmail.com', 1, 'Lic. en Educación Primaria', '1972-07-30', 'JJCM720730TE'),
 (2, 'Lucia', 'Figueroa', 'Pineda', 'SONORA', 'PROGRESO', '76', '39350', '1900893', '744763789', 'luciFigP43@outlock.com', 2, 'Lic. en Educación Primaria', '1967-03-25', 'LFPU670325'),
 (3, 'Rafael', 'Ramírez', 'Castañeda', 'AQUILES SERDÁN', 'SANTA DOROTE', '49', '39970', '1479632', '744827307', 'RafaCast100@hotmail.com', 3, 'Lic. en Educación Primaria', '1977-04-11', 'RRFP770411QO'),
@@ -277,13 +635,13 @@ CREATE TABLE IF NOT EXISTS `materias` (
   `idGrado` int(11) NOT NULL,
   PRIMARY KEY (`idMaterias`),
   KEY `fk_idGrado` (`idGrado`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=54 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=60 ;
 
 --
 -- Volcado de datos para la tabla `materias`
 --
 
-INSERT INTO `materias` VALUES
+INSERT INTO `materias` (`idMaterias`, `nombre`, `idGrado`) VALUES
 (1, 'Español', 1),
 (2, 'Español', 2),
 (3, 'Español', 3),
@@ -303,7 +661,7 @@ INSERT INTO `materias` VALUES
 (17, 'Ingles', 5),
 (18, 'Ingles', 6),
 (19, 'Conocimiento del medio', 1),
-(20, 'Conocimiento del Medio', 2),
+(20, 'Conocimiento del medio', 2),
 (21, 'Ciencias Naturales', 3),
 (22, 'Ciencias Naturales', 4),
 (23, 'Ciencias Naturales', 5),
@@ -336,7 +694,13 @@ INSERT INTO `materias` VALUES
 (50, 'Educación Física', 3),
 (51, 'Educación Física', 4),
 (52, 'Educación Física', 5),
-(53, 'Educación Física', 6);
+(53, 'Educación Física', 6),
+(54, 'Inasistencia', 1),
+(55, 'Inasistencia', 2),
+(56, 'Inasistencia', 3),
+(57, 'Inasistencia', 4),
+(58, 'Inasistencia', 5),
+(59, 'Inasistencia', 6);
 
 -- --------------------------------------------------------
 
@@ -358,9 +722,8 @@ CREATE TABLE IF NOT EXISTS `padres` (
   `NumExt` varchar(5) DEFAULT NULL,
   `cp` varchar(5) NOT NULL,
   PRIMARY KEY (`idPadres`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=92 ;
 
--- --------------------------------------------------------
 --
 -- Volcado de datos para la tabla `padres`
 --
@@ -455,7 +818,8 @@ INSERT INTO `padres` (`idPadres`, `nombre`, `ApellidoP`, `ApellidoM`, `lugTrabaj
 (87, 'ARTURO', 'POLACO', 'ROMAN', 'SALON BELLA Y LISTA', 'ESTILISTA', '7446456450', '7440320632', 'VILLAS', 'VISTA ALEGRE', '452', '39250'),
 (88, 'ROMAN', 'FUENTES', 'GRIJALBA', 'GYM ROMAN', 'INSTRUCTOR', '7442128542', '7448534334', 'PROVIDENCIA', 'LA POZA', '456', '39065'),
 (89, 'GUSTAVO', 'RIVERA', 'LARA', 'NEGOCIO PROPIO', 'ING EN ELECTRONICA', '7442138587', '7442010120', 'CAMPECHE', 'LOS TIGRES', '4265', '39658'),
-(90, 'ARANZA', 'ALMAZAN', 'GALAN', 'ISSTE', 'ENFERMERA', '7449820023', '7444969030', 'LIBERTAD', 'LA MIRA', '39', '39744');
+(90, 'ARANZA', 'ALMAZAN', 'GALAN', 'ISSTE', 'ENFERMERA', '7449820023', '7444969030', 'LIBERTAD', 'LA MIRA', '39', '39744'),
+(91, 'MONICA', 'LARA ', 'CHIQUITO', 'NEGOCIO PROPIO', 'COMERCIANTE', '7441212091', '7441900783', 'CAMPECHE', 'CARABALI', '52', '39560');
 
 -- --------------------------------------------------------
 
@@ -480,7 +844,8 @@ CREATE TABLE IF NOT EXISTS `personal` (
   `password` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`idUsuario`),
   UNIQUE KEY `usuario` (`usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
 --
 -- Volcado de datos para la tabla `personal`
 --
@@ -496,8 +861,8 @@ INSERT INTO `personal` (`idUsuario`, `nombre`, `ApellidoP`, `ApellidoM`, `calle`
 -- Filtros para la tabla `alumno`
 --
 ALTER TABLE `alumno`
-  ADD CONSTRAINT `idPadres` FOREIGN KEY (`idPadres`) REFERENCES `padres` (`idPadres`),
-  ADD CONSTRAINT `idGrado` FOREIGN KEY (`idGrado`) REFERENCES `grado` (`idGrado`);
+  ADD CONSTRAINT `idGrado` FOREIGN KEY (`idGrado`) REFERENCES `grado` (`idGrado`),
+  ADD CONSTRAINT `idPadres` FOREIGN KEY (`idPadres`) REFERENCES `padres` (`idPadres`);
 
 --
 -- Filtros para la tabla `grado`

@@ -22,6 +22,17 @@ namespace Control_Escolar
         {
             InitializeComponent();
             validaCalifMen();
+            cambiacolor(groupBox1);
+            cambiacolor(groupBox2);
+            cambiacolor(groupBox3);
+            cambiacolor(groupBox4);
+            cambiacolor(groupBox5);
+            cambiacolor(groupBox6);
+            cambiacolor(groupBox7);
+            cambiacolor(groupBox8);
+            cambiacolor(groupBox9);
+            cambiacolor(groupBox10);
+            cambiacolor(groupBox11);
         }
 
         double calificacion;
@@ -2162,7 +2173,7 @@ namespace Control_Escolar
                 cmbDiagEdFisica.Text = diag_EdFis;
                 cmbDiagInasis.Text = diag_Inasis;
 
-                               
+                
                 // BLOQUEO SEPTIEMBRE
                 if (cmbSepEspañol.Text != "")
                 {
@@ -2625,6 +2636,7 @@ namespace Control_Escolar
                     cmbDiagInasis.Enabled = false;
                 }
 
+
                 //MessageBox.Show(sept_Esp.ToString());
             }
             catch (Exception ex)
@@ -2650,6 +2662,91 @@ namespace Control_Escolar
 
             }
             return false;
+        }
+
+        public void cambiacolor(GroupBox Grupo)
+        {
+            foreach (Control combo in Grupo.Controls)
+            {
+                if (combo is ComboBox)
+
+                {
+
+                    if (combo.Text != string.Empty)
+                    {
+                        double valor = Convert.ToDouble(combo.Text);
+                        if (valor >= 5 && valor <= 5.9)
+                        {
+                            combo.ForeColor = Color.Red;
+
+                        }
+
+                        if (combo.Name == "cmbDiagIna" || combo.Name == "cmbSepIna" || combo.Name == "cmbOctIna" || combo.Name == "cmbNovIna" || combo.Name == "cmbDicIna" || combo.Name == "cmbEneroIna" || combo.Name == "cmbfebIna" || combo.Name == "cmbmarzIna" || combo.Name == "cmbAbrilIna" || combo.Name == "cmbMayoIna" || combo.Name == "cmbJunioIna")
+                        {
+                            combo.ForeColor = Color.Black;
+                        }
+
+                    }
+
+
+                }
+
+            }
+        }
+
+        private void Diagnostico_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox11);
+        }
+
+        private void Septiembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox1);
+        }
+                       
+        private void Octubre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox2);
+        }
+
+        private void Noviembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox3);
+        }
+
+        private void Diciembre_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox4);
+        }
+
+        private void Enero_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox5);
+        }
+
+        private void Febrero_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox6);
+        }
+
+        private void Marzo_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox7);
+        }
+
+        private void Abril_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox9);
+        }
+
+        private void Mayo_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox8);
+        }
+
+        private void Junio_MouseEnter(object sender, EventArgs e)
+        {
+            cambiacolor(groupBox10);
         }
 
     }
