@@ -13,7 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
-
+//CAMBIOS EVERYWHERE!!!
 namespace Control_Escolar
 {
     public partial class Calificaciones456 : MaterialForm
@@ -5514,6 +5514,8 @@ namespace Control_Escolar
 
             }
         }
+
+        // CAMBIOS!!!
         public bool ValidaCampos(GroupBox Grupo)
         {
             foreach (Control combo in Grupo.Controls)
