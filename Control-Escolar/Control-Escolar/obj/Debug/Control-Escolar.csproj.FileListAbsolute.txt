@@ -361,7 +361,6 @@ C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
 C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
-C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
 C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
 C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
 C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
@@ -562,3 +561,5 @@ E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
 E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
