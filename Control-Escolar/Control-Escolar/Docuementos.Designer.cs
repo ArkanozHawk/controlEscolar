@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Docuementos));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,7 +51,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(666, 25);
@@ -67,7 +65,6 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(604, 370);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -81,7 +78,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.pictureBox6);
             this.groupBox2.Controls.Add(this.pictureBox1);
@@ -97,7 +93,7 @@
             this.groupBox2.Controls.Add(this.materialDivider2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox2.Location = new System.Drawing.Point(129, 88);
+            this.groupBox2.Location = new System.Drawing.Point(165, 90);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox2.Size = new System.Drawing.Size(545, 243);
@@ -263,7 +259,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Docuementos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Documentos";

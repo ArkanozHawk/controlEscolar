@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Modificar));
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -123,7 +122,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(894, 26);
@@ -138,7 +136,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox3.Controls.Add(this.txtCP_A);
             this.groupBox3.Controls.Add(this.txtColonia_C);
@@ -228,7 +225,6 @@
             // 
             // BoxGenero
             // 
-            this.BoxGenero.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.BoxGenero.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.BoxGenero.Controls.Add(this.label4);
             this.BoxGenero.Controls.Add(this.RadFemenino);
@@ -389,7 +385,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.txtCURP_A);
             this.groupBox2.Controls.Add(this.txtApMat_A);
@@ -479,7 +474,6 @@
             // 
             // btnSiguiente
             // 
-            this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSiguiente.Depth = 0;
             this.btnSiguiente.Location = new System.Drawing.Point(841, 230);
             this.btnSiguiente.MouseState = MaterialSkin.MouseState.HOVER;
@@ -509,7 +503,6 @@
             this.Controls.Add(this.btnInscripcion);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnModificar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Modificar";
             this.Text = "Modificar";
             this.groupBox3.ResumeLayout(false);

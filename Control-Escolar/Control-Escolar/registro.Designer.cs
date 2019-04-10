@@ -29,13 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(registro));
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnVolver = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnRegistrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnLimpiar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProf = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -58,6 +56,7 @@
             this.txtcontra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -69,7 +68,6 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panel1.Controls.Add(this.btnVolver);
@@ -138,17 +136,6 @@
             this.groupBox5.Size = new System.Drawing.Size(309, 141);
             this.groupBox5.TabIndex = 49;
             this.groupBox5.TabStop = false;
-            // 
-            // cmbCargo
-            // 
-            this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Items.AddRange(new object[] {
-            "Director(a)",
-            "Secretario(a)"});
-            this.cmbCargo.Location = new System.Drawing.Point(32, 83);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(245, 33);
-            this.cmbCargo.TabIndex = 53;
             // 
             // label5
             // 
@@ -470,6 +457,17 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // cmbCargo
+            // 
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Director(a)",
+            "Secretario(a)"});
+            this.cmbCargo.Location = new System.Drawing.Point(32, 83);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(245, 33);
+            this.cmbCargo.TabIndex = 53;
+            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,7 +476,6 @@
             this.ClientSize = new System.Drawing.Size(1010, 500);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimumSize = new System.Drawing.Size(766, 500);
             this.Name = "registro";

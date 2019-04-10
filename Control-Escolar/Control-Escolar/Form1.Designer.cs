@@ -46,7 +46,6 @@
             // 
             // Titulo
             // 
-            this.Titulo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.Titulo.AutoSize = true;
             this.Titulo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.Titulo.Font = new System.Drawing.Font("Lucida Fax", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -61,7 +60,6 @@
             // 
             // txtContra
             // 
-            this.txtContra.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtContra.Depth = 0;
             this.txtContra.Hint = "Contraseña";
             this.txtContra.Location = new System.Drawing.Point(115, 369);
@@ -77,7 +75,6 @@
             // 
             // materialRaisedButton1
             // 
-            this.materialRaisedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Location = new System.Drawing.Point(193, 427);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -91,7 +88,6 @@
             // 
             // materialDivider1
             // 
-            this.materialDivider1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialDivider1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider1.Depth = 0;
             this.materialDivider1.Location = new System.Drawing.Point(16, 494);
@@ -103,7 +99,6 @@
             // 
             // materialRaisedButton2
             // 
-            this.materialRaisedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.Location = new System.Drawing.Point(193, 531);
@@ -118,7 +113,6 @@
             // 
             // txtUsuario
             // 
-            this.txtUsuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUsuario.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtUsuario.Depth = 0;
             this.txtUsuario.Hint = "Usuario";
@@ -136,7 +130,6 @@
             // 
             // materialDivider2
             // 
-            this.materialDivider2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialDivider2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.materialDivider2.Depth = 0;
             this.materialDivider2.Location = new System.Drawing.Point(115, 494);
@@ -148,7 +141,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.k15615156;
             this.pictureBox1.Location = new System.Drawing.Point(234, 223);
             this.pictureBox1.Name = "pictureBox1";
@@ -158,7 +150,6 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.logo_esc;
             this.pictureBox3.Location = new System.Drawing.Point(16, 77);
             this.pictureBox3.Name = "pictureBox3";
@@ -168,7 +159,6 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.Image = global::Control_Escolar.Properties.Resources.logo_sep1;
             this.pictureBox2.Location = new System.Drawing.Point(343, 84);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -196,7 +186,7 @@
             this.Controls.Add(this.Titulo);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "System Academic";

@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BoletasBuscar));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.AgregarCalificaciones = new MaterialSkin.Controls.MaterialRaisedButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txtAP_T = new MaterialSkin.Controls.MaterialSingleLineTextField();
@@ -38,6 +36,7 @@
             this.dataGridViewbuscar = new System.Windows.Forms.DataGridView();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).BeginInit();
@@ -45,7 +44,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Controls.Add(this.materialLabel1);
             this.groupBox1.Controls.Add(this.AgregarCalificaciones);
@@ -59,19 +57,6 @@
             this.groupBox1.Size = new System.Drawing.Size(735, 169);
             this.groupBox1.TabIndex = 71;
             this.groupBox1.TabStop = false;
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel1.Location = new System.Drawing.Point(135, 37);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(513, 19);
-            this.materialLabel1.TabIndex = 74;
-            this.materialLabel1.Text = "Ingrese la informacion del alumno que desea buscar y seleccione su CURP:";
             // 
             // AgregarCalificaciones
             // 
@@ -130,7 +115,6 @@
             this.dataGridViewbuscar.AllowUserToDeleteRows = false;
             this.dataGridViewbuscar.AllowUserToResizeColumns = false;
             this.dataGridViewbuscar.AllowUserToResizeRows = false;
-            this.dataGridViewbuscar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridViewbuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewbuscar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewbuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -145,7 +129,6 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(306, 481);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -159,7 +142,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(666, 27);
@@ -172,6 +154,19 @@
             this.btnCerrar.UseVisualStyleBackColor = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click_1);
             // 
+            // materialLabel1
+            // 
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel1.Location = new System.Drawing.Point(135, 37);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(513, 19);
+            this.materialLabel1.TabIndex = 74;
+            this.materialLabel1.Text = "Ingrese la informacion del alumno que desea buscar y seleccione su CURP:";
+            // 
             // BoletasBuscar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -181,7 +176,6 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridViewbuscar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "BoletasBuscar";
             this.Text = "Buscar Alumno";
             this.Load += new System.EventHandler(this.BoletasBuscar_Load);
