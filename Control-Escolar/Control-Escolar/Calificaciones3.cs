@@ -2635,7 +2635,7 @@ namespace Control_Escolar
                 {
                     cmbDiagInasis.Enabled = false;
                 }
-
+// mas cambios!!!!
 
                 //MessageBox.Show(sept_Esp.ToString());
             }
