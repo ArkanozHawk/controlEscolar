@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificaciones456));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Septiembre = new System.Windows.Forms.TabPage();
@@ -355,7 +354,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(902, 30);
@@ -370,7 +368,6 @@
             // 
             // materialTabControl1
             // 
-            this.materialTabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialTabControl1.Controls.Add(this.Septiembre);
             this.materialTabControl1.Controls.Add(this.Octubre);
             this.materialTabControl1.Controls.Add(this.Noviembre);
@@ -5000,7 +4997,6 @@
             // 
             // materialTabSelector1
             // 
-            this.materialTabSelector1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -5015,7 +5011,6 @@
             // 
             // materialRaisedButton1
             // 
-            this.materialRaisedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Location = new System.Drawing.Point(315, 525);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5029,7 +5024,6 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(89, 525);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5043,7 +5037,6 @@
             // 
             // btnIrBoletas
             // 
-            this.btnIrBoletas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnIrBoletas.Depth = 0;
             this.btnIrBoletas.Location = new System.Drawing.Point(556, 525);
             this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5057,7 +5050,6 @@
             // 
             // materialRaisedButton2
             // 
-            this.materialRaisedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.Location = new System.Drawing.Point(788, 525);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -5067,7 +5059,6 @@
             this.materialRaisedButton2.TabIndex = 96;
             this.materialRaisedButton2.Text = "Generar Boleta Externa";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // groupBox11
             // 
@@ -5194,7 +5185,6 @@
             this.Controls.Add(this.materialTabControl1);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.materialRaisedButton1);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
             this.Load += new System.EventHandler(this.Calificaciones456_Load);

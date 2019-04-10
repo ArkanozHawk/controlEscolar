@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Grupos));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.lblBienvenida = new System.Windows.Forms.Label();
@@ -38,7 +37,6 @@
             this.pictureBox4A = new System.Windows.Forms.PictureBox();
             this.pictureBox3A = new System.Windows.Forms.PictureBox();
             this.pictureBox2A = new System.Windows.Forms.PictureBox();
-            this.pictureBox1A = new System.Windows.Forms.PictureBox();
             this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
             this.lblMaestro2 = new MaterialSkin.Controls.MaterialLabel();
             this.lblMaestro3 = new MaterialSkin.Controls.MaterialLabel();
@@ -67,6 +65,7 @@
             this.lblGrado4 = new MaterialSkin.Controls.MaterialLabel();
             this.lblGrado1 = new MaterialSkin.Controls.MaterialLabel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1A = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6A)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5A)).BeginInit();
@@ -78,7 +77,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(825, 26);
@@ -93,7 +91,6 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(772, 478);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -121,7 +118,6 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.pictureBox6A);
             this.groupBox2.Controls.Add(this.pictureBox5A);
@@ -214,16 +210,6 @@
             this.pictureBox2A.TabIndex = 96;
             this.pictureBox2A.TabStop = false;
             this.pictureBox2A.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox1A
-            // 
-            this.pictureBox1A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
-            this.pictureBox1A.Location = new System.Drawing.Point(583, 89);
-            this.pictureBox1A.Name = "pictureBox1A";
-            this.pictureBox1A.Size = new System.Drawing.Size(36, 35);
-            this.pictureBox1A.TabIndex = 91;
-            this.pictureBox1A.TabStop = false;
-            this.pictureBox1A.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // materialLabel15
             // 
@@ -568,6 +554,16 @@
             this.label1.TabIndex = 44;
             this.label1.Text = "Selecionar Grupo";
             // 
+            // pictureBox1A
+            // 
+            this.pictureBox1A.Image = global::Control_Escolar.Properties.Resources.eye_watch_icon_icons_com_74456__2_;
+            this.pictureBox1A.Location = new System.Drawing.Point(583, 89);
+            this.pictureBox1A.Name = "pictureBox1A";
+            this.pictureBox1A.Size = new System.Drawing.Size(36, 35);
+            this.pictureBox1A.TabIndex = 91;
+            this.pictureBox1A.TabStop = false;
+            this.pictureBox1A.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Grupos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -576,7 +572,6 @@
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Grupos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupos";

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Buscar));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnInscripcion = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
@@ -52,7 +51,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(846, 27);
@@ -125,7 +123,6 @@
             this.dataGridViewbuscar.AllowUserToDeleteRows = false;
             this.dataGridViewbuscar.AllowUserToResizeColumns = false;
             this.dataGridViewbuscar.AllowUserToResizeRows = false;
-            this.dataGridViewbuscar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.dataGridViewbuscar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewbuscar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridViewbuscar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -140,7 +137,6 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.pictureBox3);
@@ -251,7 +247,6 @@
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnCerrar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Buscar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar";
