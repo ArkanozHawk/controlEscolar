@@ -34,18 +34,18 @@
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
-            this.Diagnostico = new System.Windows.Forms.TabPage();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.cmbDiagMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbDiagIngles = new System.Windows.Forms.ComboBox();
-            this.cmbDiagCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbDiagEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbDiagFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbDiagArtes = new System.Windows.Forms.ComboBox();
-            this.cmbDiagSocio = new System.Windows.Forms.ComboBox();
-            this.cmbDiagEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbDiagInasis = new System.Windows.Forms.ComboBox();
-            this.cmbDiagEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox91 = new System.Windows.Forms.ComboBox();
+            this.comboBox92 = new System.Windows.Forms.ComboBox();
+            this.comboBox93 = new System.Windows.Forms.ComboBox();
+            this.comboBox94 = new System.Windows.Forms.ComboBox();
+            this.comboBox95 = new System.Windows.Forms.ComboBox();
+            this.comboBox106 = new System.Windows.Forms.ComboBox();
+            this.comboBox107 = new System.Windows.Forms.ComboBox();
+            this.comboBox108 = new System.Windows.Forms.ComboBox();
+            this.comboBox109 = new System.Windows.Forms.ComboBox();
+            this.comboBox110 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -57,19 +57,19 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.Septiembre = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.cmbSepMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbSepIngles = new System.Windows.Forms.ComboBox();
-            this.cmbSepCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbSepEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbSepFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbSepArtes = new System.Windows.Forms.ComboBox();
-            this.cmbSepSocio = new System.Windows.Forms.ComboBox();
-            this.cmbSepEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbSepInasis = new System.Windows.Forms.ComboBox();
-            this.cmbSepEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
+            this.comboBox10 = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -80,19 +80,19 @@
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
-            this.Octubre = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.cmbOctMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbOctIngles = new System.Windows.Forms.ComboBox();
-            this.cmbOctCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbOctEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbOctFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbOctArtes = new System.Windows.Forms.ComboBox();
-            this.cmbOctSocio = new System.Windows.Forms.ComboBox();
-            this.cmbOctEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbOctInasis = new System.Windows.Forms.ComboBox();
-            this.cmbOctEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox11 = new System.Windows.Forms.ComboBox();
+            this.comboBox12 = new System.Windows.Forms.ComboBox();
+            this.comboBox13 = new System.Windows.Forms.ComboBox();
+            this.comboBox14 = new System.Windows.Forms.ComboBox();
+            this.comboBox15 = new System.Windows.Forms.ComboBox();
+            this.comboBox16 = new System.Windows.Forms.ComboBox();
+            this.comboBox17 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
@@ -103,19 +103,19 @@
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.Noviembre = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.cmbNovMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbNovIngles = new System.Windows.Forms.ComboBox();
-            this.cmbNovCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbNovEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbNovFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbNovArtes = new System.Windows.Forms.ComboBox();
-            this.cmbNovSocio = new System.Windows.Forms.ComboBox();
-            this.cmbNovEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbNovInasis = new System.Windows.Forms.ComboBox();
-            this.cmbNovEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.comboBox22 = new System.Windows.Forms.ComboBox();
+            this.comboBox23 = new System.Windows.Forms.ComboBox();
+            this.comboBox24 = new System.Windows.Forms.ComboBox();
+            this.comboBox25 = new System.Windows.Forms.ComboBox();
+            this.comboBox26 = new System.Windows.Forms.ComboBox();
+            this.comboBox27 = new System.Windows.Forms.ComboBox();
+            this.comboBox28 = new System.Windows.Forms.ComboBox();
+            this.comboBox29 = new System.Windows.Forms.ComboBox();
+            this.comboBox30 = new System.Windows.Forms.ComboBox();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
@@ -126,19 +126,19 @@
             this.label42 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label44 = new System.Windows.Forms.Label();
-            this.Diciembre = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label48 = new System.Windows.Forms.Label();
-            this.cmbDicMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbDicIngles = new System.Windows.Forms.ComboBox();
-            this.cmbDicCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbDicEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbDicFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbDicArtes = new System.Windows.Forms.ComboBox();
-            this.cmbDicSocio = new System.Windows.Forms.ComboBox();
-            this.cmbDicEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbDicInasis = new System.Windows.Forms.ComboBox();
-            this.cmbDicEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox31 = new System.Windows.Forms.ComboBox();
+            this.comboBox32 = new System.Windows.Forms.ComboBox();
+            this.comboBox33 = new System.Windows.Forms.ComboBox();
+            this.comboBox34 = new System.Windows.Forms.ComboBox();
+            this.comboBox35 = new System.Windows.Forms.ComboBox();
+            this.comboBox36 = new System.Windows.Forms.ComboBox();
+            this.comboBox37 = new System.Windows.Forms.ComboBox();
+            this.comboBox38 = new System.Windows.Forms.ComboBox();
+            this.comboBox39 = new System.Windows.Forms.ComboBox();
+            this.comboBox40 = new System.Windows.Forms.ComboBox();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -149,19 +149,19 @@
             this.label53 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
-            this.Enero = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.cmbEneMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbEneIngles = new System.Windows.Forms.ComboBox();
-            this.cmbEneCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbEneEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbEneFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbEneArtes = new System.Windows.Forms.ComboBox();
-            this.cmbEneSocio = new System.Windows.Forms.ComboBox();
-            this.cmbEneEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbEneInasis = new System.Windows.Forms.ComboBox();
-            this.cmbEneEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox41 = new System.Windows.Forms.ComboBox();
+            this.comboBox42 = new System.Windows.Forms.ComboBox();
+            this.comboBox43 = new System.Windows.Forms.ComboBox();
+            this.comboBox44 = new System.Windows.Forms.ComboBox();
+            this.comboBox45 = new System.Windows.Forms.ComboBox();
+            this.comboBox46 = new System.Windows.Forms.ComboBox();
+            this.comboBox47 = new System.Windows.Forms.ComboBox();
+            this.comboBox48 = new System.Windows.Forms.ComboBox();
+            this.comboBox49 = new System.Windows.Forms.ComboBox();
+            this.comboBox50 = new System.Windows.Forms.ComboBox();
             this.label56 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -172,19 +172,19 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.Febrero = new System.Windows.Forms.TabPage();
+            this.tabPage7 = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label70 = new System.Windows.Forms.Label();
-            this.cmbFebMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbFebIngles = new System.Windows.Forms.ComboBox();
-            this.cmbFebCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbFebEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbFebFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbFebArtes = new System.Windows.Forms.ComboBox();
-            this.cmbFebSocio = new System.Windows.Forms.ComboBox();
-            this.cmbFebEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbFebInasis = new System.Windows.Forms.ComboBox();
-            this.cmbFebEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox51 = new System.Windows.Forms.ComboBox();
+            this.comboBox52 = new System.Windows.Forms.ComboBox();
+            this.comboBox53 = new System.Windows.Forms.ComboBox();
+            this.comboBox54 = new System.Windows.Forms.ComboBox();
+            this.comboBox55 = new System.Windows.Forms.ComboBox();
+            this.comboBox56 = new System.Windows.Forms.ComboBox();
+            this.comboBox57 = new System.Windows.Forms.ComboBox();
+            this.comboBox58 = new System.Windows.Forms.ComboBox();
+            this.comboBox59 = new System.Windows.Forms.ComboBox();
+            this.comboBox60 = new System.Windows.Forms.ComboBox();
             this.label67 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
@@ -195,19 +195,19 @@
             this.label75 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
             this.label77 = new System.Windows.Forms.Label();
-            this.Marzo = new System.Windows.Forms.TabPage();
+            this.tabPage8 = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label81 = new System.Windows.Forms.Label();
-            this.cmbMarMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbMarIngles = new System.Windows.Forms.ComboBox();
-            this.cmbMarCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbMarEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbMarFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbMarArtes = new System.Windows.Forms.ComboBox();
-            this.cmbMarSocio = new System.Windows.Forms.ComboBox();
-            this.cmbMarEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbMarInasis = new System.Windows.Forms.ComboBox();
-            this.cmbMarEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox61 = new System.Windows.Forms.ComboBox();
+            this.comboBox62 = new System.Windows.Forms.ComboBox();
+            this.comboBox63 = new System.Windows.Forms.ComboBox();
+            this.comboBox64 = new System.Windows.Forms.ComboBox();
+            this.comboBox65 = new System.Windows.Forms.ComboBox();
+            this.comboBox66 = new System.Windows.Forms.ComboBox();
+            this.comboBox67 = new System.Windows.Forms.ComboBox();
+            this.comboBox68 = new System.Windows.Forms.ComboBox();
+            this.comboBox69 = new System.Windows.Forms.ComboBox();
+            this.comboBox70 = new System.Windows.Forms.ComboBox();
             this.label78 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
@@ -218,19 +218,19 @@
             this.label98 = new System.Windows.Forms.Label();
             this.label99 = new System.Windows.Forms.Label();
             this.label100 = new System.Windows.Forms.Label();
-            this.Abril = new System.Windows.Forms.TabPage();
+            this.tabPage9 = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label104 = new System.Windows.Forms.Label();
-            this.cmbAbrMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbAbrIngles = new System.Windows.Forms.ComboBox();
-            this.cmbAbrCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbAbrEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbAbrFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbAbrArtes = new System.Windows.Forms.ComboBox();
-            this.cmbAbrSocio = new System.Windows.Forms.ComboBox();
-            this.cmbAbrEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbAbrInasis = new System.Windows.Forms.ComboBox();
-            this.cmbAbrEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox71 = new System.Windows.Forms.ComboBox();
+            this.comboBox72 = new System.Windows.Forms.ComboBox();
+            this.comboBox73 = new System.Windows.Forms.ComboBox();
+            this.comboBox74 = new System.Windows.Forms.ComboBox();
+            this.comboBox75 = new System.Windows.Forms.ComboBox();
+            this.comboBox76 = new System.Windows.Forms.ComboBox();
+            this.comboBox77 = new System.Windows.Forms.ComboBox();
+            this.comboBox78 = new System.Windows.Forms.ComboBox();
+            this.comboBox79 = new System.Windows.Forms.ComboBox();
+            this.comboBox80 = new System.Windows.Forms.ComboBox();
             this.label101 = new System.Windows.Forms.Label();
             this.label102 = new System.Windows.Forms.Label();
             this.label103 = new System.Windows.Forms.Label();
@@ -241,19 +241,19 @@
             this.label109 = new System.Windows.Forms.Label();
             this.label110 = new System.Windows.Forms.Label();
             this.label111 = new System.Windows.Forms.Label();
-            this.Mayo = new System.Windows.Forms.TabPage();
+            this.tabPage10 = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label88 = new System.Windows.Forms.Label();
-            this.cmbMayMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbMayIngles = new System.Windows.Forms.ComboBox();
-            this.cmbMayCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbMayEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbMayFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbMayArtes = new System.Windows.Forms.ComboBox();
-            this.cmbMaySocio = new System.Windows.Forms.ComboBox();
-            this.cmbMayEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbMayInasis = new System.Windows.Forms.ComboBox();
-            this.cmbMayEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox105 = new System.Windows.Forms.ComboBox();
+            this.comboBox104 = new System.Windows.Forms.ComboBox();
+            this.comboBox103 = new System.Windows.Forms.ComboBox();
+            this.comboBox102 = new System.Windows.Forms.ComboBox();
+            this.comboBox101 = new System.Windows.Forms.ComboBox();
+            this.comboBox99 = new System.Windows.Forms.ComboBox();
+            this.comboBox98 = new System.Windows.Forms.ComboBox();
+            this.comboBox97 = new System.Windows.Forms.ComboBox();
+            this.comboBox96 = new System.Windows.Forms.ComboBox();
+            this.comboBox100 = new System.Windows.Forms.ComboBox();
             this.label85 = new System.Windows.Forms.Label();
             this.label86 = new System.Windows.Forms.Label();
             this.label87 = new System.Windows.Forms.Label();
@@ -264,19 +264,19 @@
             this.label93 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
             this.label95 = new System.Windows.Forms.Label();
-            this.Junio = new System.Windows.Forms.TabPage();
+            this.tabPage11 = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label114 = new System.Windows.Forms.Label();
-            this.cmbJunMatematicas = new System.Windows.Forms.ComboBox();
-            this.cmbJunIngles = new System.Windows.Forms.ComboBox();
-            this.cmbJunCiencias = new System.Windows.Forms.ComboBox();
-            this.cmbJunEntidad = new System.Windows.Forms.ComboBox();
-            this.cmbJunFormacion = new System.Windows.Forms.ComboBox();
-            this.cmbJunArtes = new System.Windows.Forms.ComboBox();
-            this.cmbJunSocio = new System.Windows.Forms.ComboBox();
-            this.cmbJunEdFisica = new System.Windows.Forms.ComboBox();
-            this.cmbJunInasis = new System.Windows.Forms.ComboBox();
-            this.cmbJunEspañol = new System.Windows.Forms.ComboBox();
+            this.comboBox81 = new System.Windows.Forms.ComboBox();
+            this.comboBox82 = new System.Windows.Forms.ComboBox();
+            this.comboBox83 = new System.Windows.Forms.ComboBox();
+            this.comboBox84 = new System.Windows.Forms.ComboBox();
+            this.comboBox85 = new System.Windows.Forms.ComboBox();
+            this.comboBox86 = new System.Windows.Forms.ComboBox();
+            this.comboBox87 = new System.Windows.Forms.ComboBox();
+            this.comboBox88 = new System.Windows.Forms.ComboBox();
+            this.comboBox89 = new System.Windows.Forms.ComboBox();
+            this.comboBox90 = new System.Windows.Forms.ComboBox();
             this.label96 = new System.Windows.Forms.Label();
             this.label112 = new System.Windows.Forms.Label();
             this.label113 = new System.Windows.Forms.Label();
@@ -290,27 +290,27 @@
             this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
-            this.Diagnostico.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.groupBox11.SuspendLayout();
-            this.Septiembre.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.Octubre.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.Noviembre.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.Diciembre.SuspendLayout();
+            this.tabPage5.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.Enero.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.Febrero.SuspendLayout();
+            this.tabPage7.SuspendLayout();
             this.groupBox6.SuspendLayout();
-            this.Marzo.SuspendLayout();
+            this.tabPage8.SuspendLayout();
             this.groupBox7.SuspendLayout();
-            this.Abril.SuspendLayout();
+            this.tabPage9.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.Mayo.SuspendLayout();
+            this.tabPage10.SuspendLayout();
             this.groupBox8.SuspendLayout();
-            this.Junio.SuspendLayout();
+            this.tabPage11.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -369,11 +369,9 @@
             this.materialRaisedButton1.TabIndex = 91;
             this.materialRaisedButton1.Text = "Guardar Calificaciones";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
             // 
             // materialTabControl1
             // 
-
             this.materialTabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialTabControl1.Controls.Add(this.tabPage1);
             this.materialTabControl1.Controls.Add(this.tabPage2);
@@ -386,19 +384,6 @@
             this.materialTabControl1.Controls.Add(this.tabPage9);
             this.materialTabControl1.Controls.Add(this.tabPage10);
             this.materialTabControl1.Controls.Add(this.tabPage11);
-
-            this.materialTabControl1.Controls.Add(this.Diagnostico);
-            this.materialTabControl1.Controls.Add(this.Septiembre);
-            this.materialTabControl1.Controls.Add(this.Octubre);
-            this.materialTabControl1.Controls.Add(this.Noviembre);
-            this.materialTabControl1.Controls.Add(this.Diciembre);
-            this.materialTabControl1.Controls.Add(this.Enero);
-            this.materialTabControl1.Controls.Add(this.Febrero);
-            this.materialTabControl1.Controls.Add(this.Marzo);
-            this.materialTabControl1.Controls.Add(this.Abril);
-            this.materialTabControl1.Controls.Add(this.Mayo);
-            this.materialTabControl1.Controls.Add(this.Junio);
-
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(66, 134);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -406,33 +391,31 @@
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(947, 402);
             this.materialTabControl1.TabIndex = 93;
-            this.materialTabControl1.MouseEnter += new System.EventHandler(this.Marzo_MouseEnter);
             // 
-            // Diagnostico
+            // tabPage1
             // 
-            this.Diagnostico.Controls.Add(this.groupBox11);
-            this.Diagnostico.Location = new System.Drawing.Point(4, 22);
-            this.Diagnostico.Name = "Diagnostico";
-            this.Diagnostico.Padding = new System.Windows.Forms.Padding(3);
-            this.Diagnostico.Size = new System.Drawing.Size(939, 376);
-            this.Diagnostico.TabIndex = 0;
-            this.Diagnostico.Text = "Diag.";
-            this.Diagnostico.UseVisualStyleBackColor = true;
-            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
+            this.tabPage1.Controls.Add(this.groupBox11);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(939, 376);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Diag.";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // groupBox11
             // 
             this.groupBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox11.Controls.Add(this.cmbDiagMatematicas);
-            this.groupBox11.Controls.Add(this.cmbDiagIngles);
-            this.groupBox11.Controls.Add(this.cmbDiagCiencias);
-            this.groupBox11.Controls.Add(this.cmbDiagEntidad);
-            this.groupBox11.Controls.Add(this.cmbDiagFormacion);
-            this.groupBox11.Controls.Add(this.cmbDiagArtes);
-            this.groupBox11.Controls.Add(this.cmbDiagSocio);
-            this.groupBox11.Controls.Add(this.cmbDiagEdFisica);
-            this.groupBox11.Controls.Add(this.cmbDiagInasis);
-            this.groupBox11.Controls.Add(this.cmbDiagEspañol);
+            this.groupBox11.Controls.Add(this.comboBox91);
+            this.groupBox11.Controls.Add(this.comboBox92);
+            this.groupBox11.Controls.Add(this.comboBox93);
+            this.groupBox11.Controls.Add(this.comboBox94);
+            this.groupBox11.Controls.Add(this.comboBox95);
+            this.groupBox11.Controls.Add(this.comboBox106);
+            this.groupBox11.Controls.Add(this.comboBox107);
+            this.groupBox11.Controls.Add(this.comboBox108);
+            this.groupBox11.Controls.Add(this.comboBox109);
+            this.groupBox11.Controls.Add(this.comboBox110);
             this.groupBox11.Controls.Add(this.label1);
             this.groupBox11.Controls.Add(this.label2);
             this.groupBox11.Controls.Add(this.label3);
@@ -452,10 +435,10 @@
             this.groupBox11.TabIndex = 85;
             this.groupBox11.TabStop = false;
             // 
-            // cmbDiagMatematicas
+            // comboBox91
             // 
-            this.cmbDiagMatematicas.FormattingEnabled = true;
-            this.cmbDiagMatematicas.Items.AddRange(new object[] {
+            this.comboBox91.FormattingEnabled = true;
+            this.comboBox91.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -507,15 +490,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbDiagMatematicas.Name = "cmbDiagMatematicas";
-            this.cmbDiagMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagMatematicas.TabIndex = 2;
+            this.comboBox91.Location = new System.Drawing.Point(192, 81);
+            this.comboBox91.Name = "comboBox91";
+            this.comboBox91.Size = new System.Drawing.Size(124, 33);
+            this.comboBox91.TabIndex = 105;
             // 
-            // cmbDiagIngles
+            // comboBox92
             // 
-            this.cmbDiagIngles.FormattingEnabled = true;
-            this.cmbDiagIngles.Items.AddRange(new object[] {
+            this.comboBox92.FormattingEnabled = true;
+            this.comboBox92.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -567,15 +550,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbDiagIngles.Name = "cmbDiagIngles";
-            this.cmbDiagIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagIngles.TabIndex = 3;
+            this.comboBox92.Location = new System.Drawing.Point(192, 120);
+            this.comboBox92.Name = "comboBox92";
+            this.comboBox92.Size = new System.Drawing.Size(124, 33);
+            this.comboBox92.TabIndex = 104;
             // 
-            // cmbDiagCiencias
+            // comboBox93
             // 
-            this.cmbDiagCiencias.FormattingEnabled = true;
-            this.cmbDiagCiencias.Items.AddRange(new object[] {
+            this.comboBox93.FormattingEnabled = true;
+            this.comboBox93.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -627,15 +610,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbDiagCiencias.Name = "cmbDiagCiencias";
-            this.cmbDiagCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagCiencias.TabIndex = 4;
+            this.comboBox93.Location = new System.Drawing.Point(192, 159);
+            this.comboBox93.Name = "comboBox93";
+            this.comboBox93.Size = new System.Drawing.Size(124, 33);
+            this.comboBox93.TabIndex = 103;
             // 
-            // cmbDiagEntidad
+            // comboBox94
             // 
-            this.cmbDiagEntidad.FormattingEnabled = true;
-            this.cmbDiagEntidad.Items.AddRange(new object[] {
+            this.comboBox94.FormattingEnabled = true;
+            this.comboBox94.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -687,15 +670,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbDiagEntidad.Name = "cmbDiagEntidad";
-            this.cmbDiagEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagEntidad.TabIndex = 5;
+            this.comboBox94.Location = new System.Drawing.Point(192, 198);
+            this.comboBox94.Name = "comboBox94";
+            this.comboBox94.Size = new System.Drawing.Size(124, 33);
+            this.comboBox94.TabIndex = 102;
             // 
-            // cmbDiagFormacion
+            // comboBox95
             // 
-            this.cmbDiagFormacion.FormattingEnabled = true;
-            this.cmbDiagFormacion.Items.AddRange(new object[] {
+            this.comboBox95.FormattingEnabled = true;
+            this.comboBox95.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -747,15 +730,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbDiagFormacion.Name = "cmbDiagFormacion";
-            this.cmbDiagFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagFormacion.TabIndex = 6;
+            this.comboBox95.Location = new System.Drawing.Point(563, 42);
+            this.comboBox95.Name = "comboBox95";
+            this.comboBox95.Size = new System.Drawing.Size(124, 33);
+            this.comboBox95.TabIndex = 101;
             // 
-            // cmbDiagArtes
+            // comboBox106
             // 
-            this.cmbDiagArtes.FormattingEnabled = true;
-            this.cmbDiagArtes.Items.AddRange(new object[] {
+            this.comboBox106.FormattingEnabled = true;
+            this.comboBox106.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -807,15 +790,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbDiagArtes.Name = "cmbDiagArtes";
-            this.cmbDiagArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagArtes.TabIndex = 7;
+            this.comboBox106.Location = new System.Drawing.Point(563, 81);
+            this.comboBox106.Name = "comboBox106";
+            this.comboBox106.Size = new System.Drawing.Size(124, 33);
+            this.comboBox106.TabIndex = 100;
             // 
-            // cmbDiagSocio
+            // comboBox107
             // 
-            this.cmbDiagSocio.FormattingEnabled = true;
-            this.cmbDiagSocio.Items.AddRange(new object[] {
+            this.comboBox107.FormattingEnabled = true;
+            this.comboBox107.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -867,15 +850,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbDiagSocio.Name = "cmbDiagSocio";
-            this.cmbDiagSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagSocio.TabIndex = 8;
+            this.comboBox107.Location = new System.Drawing.Point(563, 119);
+            this.comboBox107.Name = "comboBox107";
+            this.comboBox107.Size = new System.Drawing.Size(124, 33);
+            this.comboBox107.TabIndex = 99;
             // 
-            // cmbDiagEdFisica
+            // comboBox108
             // 
-            this.cmbDiagEdFisica.FormattingEnabled = true;
-            this.cmbDiagEdFisica.Items.AddRange(new object[] {
+            this.comboBox108.FormattingEnabled = true;
+            this.comboBox108.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -927,36 +910,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbDiagEdFisica.Name = "cmbDiagEdFisica";
-            this.cmbDiagEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagEdFisica.TabIndex = 9;
+            this.comboBox108.Location = new System.Drawing.Point(563, 159);
+            this.comboBox108.Name = "comboBox108";
+            this.comboBox108.Size = new System.Drawing.Size(124, 33);
+            this.comboBox108.TabIndex = 98;
             // 
-            // cmbDiagInasis
+            // comboBox109
             // 
-            this.cmbDiagInasis.FormattingEnabled = true;
-            this.cmbDiagInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbDiagInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbDiagInasis.Name = "cmbDiagInasis";
-            this.cmbDiagInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagInasis.TabIndex = 10;
-            // 
-            // cmbDiagEspañol
-            // 
-            this.cmbDiagEspañol.Cursor = System.Windows.Forms.Cursors.Default;
-            this.cmbDiagEspañol.FormattingEnabled = true;
-            this.cmbDiagEspañol.Items.AddRange(new object[] {
+            this.comboBox109.FormattingEnabled = true;
+            this.comboBox109.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1008,10 +970,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDiagEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbDiagEspañol.Name = "cmbDiagEspañol";
-            this.cmbDiagEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbDiagEspañol.TabIndex = 1;
+            this.comboBox109.Location = new System.Drawing.Point(563, 198);
+            this.comboBox109.Name = "comboBox109";
+            this.comboBox109.Size = new System.Drawing.Size(124, 33);
+            this.comboBox109.TabIndex = 97;
+            // 
+            // comboBox110
+            // 
+            this.comboBox110.FormattingEnabled = true;
+            this.comboBox110.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox110.Location = new System.Drawing.Point(192, 41);
+            this.comboBox110.Name = "comboBox110";
+            this.comboBox110.Size = new System.Drawing.Size(124, 33);
+            this.comboBox110.TabIndex = 75;
             // 
             // label1
             // 
@@ -1136,32 +1158,31 @@
             this.label12.TabIndex = 44;
             this.label12.Text = "Calificaciones";
             // 
-            // Septiembre
+            // tabPage2
             // 
-            this.Septiembre.Controls.Add(this.groupBox1);
-            this.Septiembre.Location = new System.Drawing.Point(4, 22);
-            this.Septiembre.Name = "Septiembre";
-            this.Septiembre.Padding = new System.Windows.Forms.Padding(3);
-            this.Septiembre.Size = new System.Drawing.Size(939, 376);
-            this.Septiembre.TabIndex = 1;
-            this.Septiembre.Text = "Septiem.";
-            this.Septiembre.UseVisualStyleBackColor = true;
-            this.Septiembre.MouseEnter += new System.EventHandler(this.Septiembre_MouseEnter);
+            this.tabPage2.Controls.Add(this.groupBox1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(939, 376);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Septiem.";
+            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.cmbSepMatematicas);
-            this.groupBox1.Controls.Add(this.cmbSepIngles);
-            this.groupBox1.Controls.Add(this.cmbSepCiencias);
-            this.groupBox1.Controls.Add(this.cmbSepEntidad);
-            this.groupBox1.Controls.Add(this.cmbSepFormacion);
-            this.groupBox1.Controls.Add(this.cmbSepArtes);
-            this.groupBox1.Controls.Add(this.cmbSepSocio);
-            this.groupBox1.Controls.Add(this.cmbSepEdFisica);
-            this.groupBox1.Controls.Add(this.cmbSepInasis);
-            this.groupBox1.Controls.Add(this.cmbSepEspañol);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.comboBox3);
+            this.groupBox1.Controls.Add(this.comboBox4);
+            this.groupBox1.Controls.Add(this.comboBox5);
+            this.groupBox1.Controls.Add(this.comboBox6);
+            this.groupBox1.Controls.Add(this.comboBox7);
+            this.groupBox1.Controls.Add(this.comboBox8);
+            this.groupBox1.Controls.Add(this.comboBox9);
+            this.groupBox1.Controls.Add(this.comboBox10);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label14);
@@ -1191,10 +1212,10 @@
             this.label15.TabIndex = 106;
             this.label15.Text = "Ed. Socioemocional";
             // 
-            // cmbSepMatematicas
+            // comboBox1
             // 
-            this.cmbSepMatematicas.FormattingEnabled = true;
-            this.cmbSepMatematicas.Items.AddRange(new object[] {
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1246,15 +1267,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbSepMatematicas.Name = "cmbSepMatematicas";
-            this.cmbSepMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepMatematicas.TabIndex = 2;
+            this.comboBox1.Location = new System.Drawing.Point(192, 81);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(124, 33);
+            this.comboBox1.TabIndex = 105;
             // 
-            // cmbSepIngles
+            // comboBox2
             // 
-            this.cmbSepIngles.FormattingEnabled = true;
-            this.cmbSepIngles.Items.AddRange(new object[] {
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1306,15 +1327,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbSepIngles.Name = "cmbSepIngles";
-            this.cmbSepIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepIngles.TabIndex = 3;
+            this.comboBox2.Location = new System.Drawing.Point(192, 120);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(124, 33);
+            this.comboBox2.TabIndex = 104;
             // 
-            // cmbSepCiencias
+            // comboBox3
             // 
-            this.cmbSepCiencias.FormattingEnabled = true;
-            this.cmbSepCiencias.Items.AddRange(new object[] {
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1366,15 +1387,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbSepCiencias.Name = "cmbSepCiencias";
-            this.cmbSepCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepCiencias.TabIndex = 4;
+            this.comboBox3.Location = new System.Drawing.Point(192, 159);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(124, 33);
+            this.comboBox3.TabIndex = 103;
             // 
-            // cmbSepEntidad
+            // comboBox4
             // 
-            this.cmbSepEntidad.FormattingEnabled = true;
-            this.cmbSepEntidad.Items.AddRange(new object[] {
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1426,15 +1447,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbSepEntidad.Name = "cmbSepEntidad";
-            this.cmbSepEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepEntidad.TabIndex = 5;
+            this.comboBox4.Location = new System.Drawing.Point(192, 198);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(124, 33);
+            this.comboBox4.TabIndex = 102;
             // 
-            // cmbSepFormacion
+            // comboBox5
             // 
-            this.cmbSepFormacion.FormattingEnabled = true;
-            this.cmbSepFormacion.Items.AddRange(new object[] {
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1486,15 +1507,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbSepFormacion.Name = "cmbSepFormacion";
-            this.cmbSepFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepFormacion.TabIndex = 6;
+            this.comboBox5.Location = new System.Drawing.Point(563, 42);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(124, 33);
+            this.comboBox5.TabIndex = 101;
             // 
-            // cmbSepArtes
+            // comboBox6
             // 
-            this.cmbSepArtes.FormattingEnabled = true;
-            this.cmbSepArtes.Items.AddRange(new object[] {
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1546,15 +1567,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbSepArtes.Name = "cmbSepArtes";
-            this.cmbSepArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepArtes.TabIndex = 7;
+            this.comboBox6.Location = new System.Drawing.Point(563, 81);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(124, 33);
+            this.comboBox6.TabIndex = 100;
             // 
-            // cmbSepSocio
+            // comboBox7
             // 
-            this.cmbSepSocio.FormattingEnabled = true;
-            this.cmbSepSocio.Items.AddRange(new object[] {
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1606,15 +1627,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbSepSocio.Name = "cmbSepSocio";
-            this.cmbSepSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepSocio.TabIndex = 8;
+            this.comboBox7.Location = new System.Drawing.Point(563, 119);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(124, 33);
+            this.comboBox7.TabIndex = 99;
             // 
-            // cmbSepEdFisica
+            // comboBox8
             // 
-            this.cmbSepEdFisica.FormattingEnabled = true;
-            this.cmbSepEdFisica.Items.AddRange(new object[] {
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1666,35 +1687,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbSepEdFisica.Name = "cmbSepEdFisica";
-            this.cmbSepEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepEdFisica.TabIndex = 9;
+            this.comboBox8.Location = new System.Drawing.Point(563, 159);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(124, 33);
+            this.comboBox8.TabIndex = 98;
             // 
-            // cmbSepInasis
+            // comboBox9
             // 
-            this.cmbSepInasis.FormattingEnabled = true;
-            this.cmbSepInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbSepInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbSepInasis.Name = "cmbSepInasis";
-            this.cmbSepInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepInasis.TabIndex = 10;
-            // 
-            // cmbSepEspañol
-            // 
-            this.cmbSepEspañol.FormattingEnabled = true;
-            this.cmbSepEspañol.Items.AddRange(new object[] {
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1746,10 +1747,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbSepEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbSepEspañol.Name = "cmbSepEspañol";
-            this.cmbSepEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbSepEspañol.TabIndex = 1;
+            this.comboBox9.Location = new System.Drawing.Point(563, 198);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(124, 33);
+            this.comboBox9.TabIndex = 97;
+            // 
+            // comboBox10
+            // 
+            this.comboBox10.FormattingEnabled = true;
+            this.comboBox10.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox10.Location = new System.Drawing.Point(192, 41);
+            this.comboBox10.Name = "comboBox10";
+            this.comboBox10.Size = new System.Drawing.Size(124, 33);
+            this.comboBox10.TabIndex = 75;
             // 
             // label6
             // 
@@ -1863,32 +1924,31 @@
             this.label22.TabIndex = 44;
             this.label22.Text = "Calificaciones";
             // 
-            // Octubre
+            // tabPage3
             // 
-            this.Octubre.Controls.Add(this.groupBox2);
-            this.Octubre.Location = new System.Drawing.Point(4, 22);
-            this.Octubre.Name = "Octubre";
-            this.Octubre.Padding = new System.Windows.Forms.Padding(3);
-            this.Octubre.Size = new System.Drawing.Size(939, 376);
-            this.Octubre.TabIndex = 2;
-            this.Octubre.Text = "Octubre";
-            this.Octubre.UseVisualStyleBackColor = true;
-            this.Octubre.MouseEnter += new System.EventHandler(this.Octubre_MouseEnter);
+            this.tabPage3.Controls.Add(this.groupBox2);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(939, 376);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Octubre";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox2.Controls.Add(this.label26);
-            this.groupBox2.Controls.Add(this.cmbOctMatematicas);
-            this.groupBox2.Controls.Add(this.cmbOctIngles);
-            this.groupBox2.Controls.Add(this.cmbOctCiencias);
-            this.groupBox2.Controls.Add(this.cmbOctEntidad);
-            this.groupBox2.Controls.Add(this.cmbOctFormacion);
-            this.groupBox2.Controls.Add(this.cmbOctArtes);
-            this.groupBox2.Controls.Add(this.cmbOctSocio);
-            this.groupBox2.Controls.Add(this.cmbOctEdFisica);
-            this.groupBox2.Controls.Add(this.cmbOctInasis);
-            this.groupBox2.Controls.Add(this.cmbOctEspañol);
+            this.groupBox2.Controls.Add(this.comboBox11);
+            this.groupBox2.Controls.Add(this.comboBox12);
+            this.groupBox2.Controls.Add(this.comboBox13);
+            this.groupBox2.Controls.Add(this.comboBox14);
+            this.groupBox2.Controls.Add(this.comboBox15);
+            this.groupBox2.Controls.Add(this.comboBox16);
+            this.groupBox2.Controls.Add(this.comboBox17);
+            this.groupBox2.Controls.Add(this.comboBox18);
+            this.groupBox2.Controls.Add(this.comboBox19);
+            this.groupBox2.Controls.Add(this.comboBox20);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label25);
@@ -1918,10 +1978,10 @@
             this.label26.TabIndex = 106;
             this.label26.Text = "Ed. Socioemocional";
             // 
-            // cmbOctMatematicas
+            // comboBox11
             // 
-            this.cmbOctMatematicas.FormattingEnabled = true;
-            this.cmbOctMatematicas.Items.AddRange(new object[] {
+            this.comboBox11.FormattingEnabled = true;
+            this.comboBox11.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -1973,15 +2033,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbOctMatematicas.Name = "cmbOctMatematicas";
-            this.cmbOctMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctMatematicas.TabIndex = 2;
+            this.comboBox11.Location = new System.Drawing.Point(192, 81);
+            this.comboBox11.Name = "comboBox11";
+            this.comboBox11.Size = new System.Drawing.Size(124, 33);
+            this.comboBox11.TabIndex = 105;
             // 
-            // cmbOctIngles
+            // comboBox12
             // 
-            this.cmbOctIngles.FormattingEnabled = true;
-            this.cmbOctIngles.Items.AddRange(new object[] {
+            this.comboBox12.FormattingEnabled = true;
+            this.comboBox12.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2033,15 +2093,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbOctIngles.Name = "cmbOctIngles";
-            this.cmbOctIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctIngles.TabIndex = 3;
+            this.comboBox12.Location = new System.Drawing.Point(192, 120);
+            this.comboBox12.Name = "comboBox12";
+            this.comboBox12.Size = new System.Drawing.Size(124, 33);
+            this.comboBox12.TabIndex = 104;
             // 
-            // cmbOctCiencias
+            // comboBox13
             // 
-            this.cmbOctCiencias.FormattingEnabled = true;
-            this.cmbOctCiencias.Items.AddRange(new object[] {
+            this.comboBox13.FormattingEnabled = true;
+            this.comboBox13.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2093,15 +2153,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbOctCiencias.Name = "cmbOctCiencias";
-            this.cmbOctCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctCiencias.TabIndex = 4;
+            this.comboBox13.Location = new System.Drawing.Point(192, 159);
+            this.comboBox13.Name = "comboBox13";
+            this.comboBox13.Size = new System.Drawing.Size(124, 33);
+            this.comboBox13.TabIndex = 103;
             // 
-            // cmbOctEntidad
+            // comboBox14
             // 
-            this.cmbOctEntidad.FormattingEnabled = true;
-            this.cmbOctEntidad.Items.AddRange(new object[] {
+            this.comboBox14.FormattingEnabled = true;
+            this.comboBox14.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2153,15 +2213,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbOctEntidad.Name = "cmbOctEntidad";
-            this.cmbOctEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctEntidad.TabIndex = 5;
+            this.comboBox14.Location = new System.Drawing.Point(192, 198);
+            this.comboBox14.Name = "comboBox14";
+            this.comboBox14.Size = new System.Drawing.Size(124, 33);
+            this.comboBox14.TabIndex = 102;
             // 
-            // cmbOctFormacion
+            // comboBox15
             // 
-            this.cmbOctFormacion.FormattingEnabled = true;
-            this.cmbOctFormacion.Items.AddRange(new object[] {
+            this.comboBox15.FormattingEnabled = true;
+            this.comboBox15.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2213,15 +2273,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbOctFormacion.Name = "cmbOctFormacion";
-            this.cmbOctFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctFormacion.TabIndex = 6;
+            this.comboBox15.Location = new System.Drawing.Point(563, 42);
+            this.comboBox15.Name = "comboBox15";
+            this.comboBox15.Size = new System.Drawing.Size(124, 33);
+            this.comboBox15.TabIndex = 101;
             // 
-            // cmbOctArtes
+            // comboBox16
             // 
-            this.cmbOctArtes.FormattingEnabled = true;
-            this.cmbOctArtes.Items.AddRange(new object[] {
+            this.comboBox16.FormattingEnabled = true;
+            this.comboBox16.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2273,15 +2333,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbOctArtes.Name = "cmbOctArtes";
-            this.cmbOctArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctArtes.TabIndex = 7;
+            this.comboBox16.Location = new System.Drawing.Point(563, 81);
+            this.comboBox16.Name = "comboBox16";
+            this.comboBox16.Size = new System.Drawing.Size(124, 33);
+            this.comboBox16.TabIndex = 100;
             // 
-            // cmbOctSocio
+            // comboBox17
             // 
-            this.cmbOctSocio.FormattingEnabled = true;
-            this.cmbOctSocio.Items.AddRange(new object[] {
+            this.comboBox17.FormattingEnabled = true;
+            this.comboBox17.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2333,15 +2393,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbOctSocio.Name = "cmbOctSocio";
-            this.cmbOctSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctSocio.TabIndex = 8;
+            this.comboBox17.Location = new System.Drawing.Point(563, 119);
+            this.comboBox17.Name = "comboBox17";
+            this.comboBox17.Size = new System.Drawing.Size(124, 33);
+            this.comboBox17.TabIndex = 99;
             // 
-            // cmbOctEdFisica
+            // comboBox18
             // 
-            this.cmbOctEdFisica.FormattingEnabled = true;
-            this.cmbOctEdFisica.Items.AddRange(new object[] {
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2393,35 +2453,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbOctEdFisica.Name = "cmbOctEdFisica";
-            this.cmbOctEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctEdFisica.TabIndex = 9;
+            this.comboBox18.Location = new System.Drawing.Point(563, 159);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(124, 33);
+            this.comboBox18.TabIndex = 98;
             // 
-            // cmbOctInasis
+            // comboBox19
             // 
-            this.cmbOctInasis.FormattingEnabled = true;
-            this.cmbOctInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbOctInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbOctInasis.Name = "cmbOctInasis";
-            this.cmbOctInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctInasis.TabIndex = 10;
-            // 
-            // cmbOctEspañol
-            // 
-            this.cmbOctEspañol.FormattingEnabled = true;
-            this.cmbOctEspañol.Items.AddRange(new object[] {
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2473,10 +2513,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbOctEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbOctEspañol.Name = "cmbOctEspañol";
-            this.cmbOctEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbOctEspañol.TabIndex = 1;
+            this.comboBox19.Location = new System.Drawing.Point(563, 198);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(124, 33);
+            this.comboBox19.TabIndex = 97;
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox20.Location = new System.Drawing.Point(192, 41);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(124, 33);
+            this.comboBox20.TabIndex = 75;
             // 
             // label23
             // 
@@ -2590,32 +2690,31 @@
             this.label33.TabIndex = 44;
             this.label33.Text = "Calificaciones";
             // 
-            // Noviembre
+            // tabPage4
             // 
-            this.Noviembre.Controls.Add(this.groupBox3);
-            this.Noviembre.Location = new System.Drawing.Point(4, 22);
-            this.Noviembre.Name = "Noviembre";
-            this.Noviembre.Padding = new System.Windows.Forms.Padding(3);
-            this.Noviembre.Size = new System.Drawing.Size(939, 376);
-            this.Noviembre.TabIndex = 3;
-            this.Noviembre.Text = "Noviem.";
-            this.Noviembre.UseVisualStyleBackColor = true;
-            this.Noviembre.MouseEnter += new System.EventHandler(this.Noviembre_MouseEnter);
+            this.tabPage4.Controls.Add(this.groupBox3);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(939, 376);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Noviem.";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
             this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox3.Controls.Add(this.label37);
-            this.groupBox3.Controls.Add(this.cmbNovMatematicas);
-            this.groupBox3.Controls.Add(this.cmbNovIngles);
-            this.groupBox3.Controls.Add(this.cmbNovCiencias);
-            this.groupBox3.Controls.Add(this.cmbNovEntidad);
-            this.groupBox3.Controls.Add(this.cmbNovFormacion);
-            this.groupBox3.Controls.Add(this.cmbNovArtes);
-            this.groupBox3.Controls.Add(this.cmbNovSocio);
-            this.groupBox3.Controls.Add(this.cmbNovEdFisica);
-            this.groupBox3.Controls.Add(this.cmbNovInasis);
-            this.groupBox3.Controls.Add(this.cmbNovEspañol);
+            this.groupBox3.Controls.Add(this.comboBox21);
+            this.groupBox3.Controls.Add(this.comboBox22);
+            this.groupBox3.Controls.Add(this.comboBox23);
+            this.groupBox3.Controls.Add(this.comboBox24);
+            this.groupBox3.Controls.Add(this.comboBox25);
+            this.groupBox3.Controls.Add(this.comboBox26);
+            this.groupBox3.Controls.Add(this.comboBox27);
+            this.groupBox3.Controls.Add(this.comboBox28);
+            this.groupBox3.Controls.Add(this.comboBox29);
+            this.groupBox3.Controls.Add(this.comboBox30);
             this.groupBox3.Controls.Add(this.label34);
             this.groupBox3.Controls.Add(this.label35);
             this.groupBox3.Controls.Add(this.label36);
@@ -2645,10 +2744,10 @@
             this.label37.TabIndex = 106;
             this.label37.Text = "Ed. Socioemocional";
             // 
-            // cmbNovMatematicas
+            // comboBox21
             // 
-            this.cmbNovMatematicas.FormattingEnabled = true;
-            this.cmbNovMatematicas.Items.AddRange(new object[] {
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2700,15 +2799,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbNovMatematicas.Name = "cmbNovMatematicas";
-            this.cmbNovMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovMatematicas.TabIndex = 2;
+            this.comboBox21.Location = new System.Drawing.Point(192, 81);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(124, 33);
+            this.comboBox21.TabIndex = 105;
             // 
-            // cmbNovIngles
+            // comboBox22
             // 
-            this.cmbNovIngles.FormattingEnabled = true;
-            this.cmbNovIngles.Items.AddRange(new object[] {
+            this.comboBox22.FormattingEnabled = true;
+            this.comboBox22.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2760,15 +2859,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbNovIngles.Name = "cmbNovIngles";
-            this.cmbNovIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovIngles.TabIndex = 3;
+            this.comboBox22.Location = new System.Drawing.Point(192, 120);
+            this.comboBox22.Name = "comboBox22";
+            this.comboBox22.Size = new System.Drawing.Size(124, 33);
+            this.comboBox22.TabIndex = 104;
             // 
-            // cmbNovCiencias
+            // comboBox23
             // 
-            this.cmbNovCiencias.FormattingEnabled = true;
-            this.cmbNovCiencias.Items.AddRange(new object[] {
+            this.comboBox23.FormattingEnabled = true;
+            this.comboBox23.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2820,15 +2919,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbNovCiencias.Name = "cmbNovCiencias";
-            this.cmbNovCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovCiencias.TabIndex = 4;
+            this.comboBox23.Location = new System.Drawing.Point(192, 159);
+            this.comboBox23.Name = "comboBox23";
+            this.comboBox23.Size = new System.Drawing.Size(124, 33);
+            this.comboBox23.TabIndex = 103;
             // 
-            // cmbNovEntidad
+            // comboBox24
             // 
-            this.cmbNovEntidad.FormattingEnabled = true;
-            this.cmbNovEntidad.Items.AddRange(new object[] {
+            this.comboBox24.FormattingEnabled = true;
+            this.comboBox24.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2880,15 +2979,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbNovEntidad.Name = "cmbNovEntidad";
-            this.cmbNovEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovEntidad.TabIndex = 5;
+            this.comboBox24.Location = new System.Drawing.Point(192, 198);
+            this.comboBox24.Name = "comboBox24";
+            this.comboBox24.Size = new System.Drawing.Size(124, 33);
+            this.comboBox24.TabIndex = 102;
             // 
-            // cmbNovFormacion
+            // comboBox25
             // 
-            this.cmbNovFormacion.FormattingEnabled = true;
-            this.cmbNovFormacion.Items.AddRange(new object[] {
+            this.comboBox25.FormattingEnabled = true;
+            this.comboBox25.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -2940,15 +3039,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbNovFormacion.Name = "cmbNovFormacion";
-            this.cmbNovFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovFormacion.TabIndex = 6;
+            this.comboBox25.Location = new System.Drawing.Point(563, 42);
+            this.comboBox25.Name = "comboBox25";
+            this.comboBox25.Size = new System.Drawing.Size(124, 33);
+            this.comboBox25.TabIndex = 101;
             // 
-            // cmbNovArtes
+            // comboBox26
             // 
-            this.cmbNovArtes.FormattingEnabled = true;
-            this.cmbNovArtes.Items.AddRange(new object[] {
+            this.comboBox26.FormattingEnabled = true;
+            this.comboBox26.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3000,15 +3099,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbNovArtes.Name = "cmbNovArtes";
-            this.cmbNovArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovArtes.TabIndex = 7;
+            this.comboBox26.Location = new System.Drawing.Point(563, 81);
+            this.comboBox26.Name = "comboBox26";
+            this.comboBox26.Size = new System.Drawing.Size(124, 33);
+            this.comboBox26.TabIndex = 100;
             // 
-            // cmbNovSocio
+            // comboBox27
             // 
-            this.cmbNovSocio.FormattingEnabled = true;
-            this.cmbNovSocio.Items.AddRange(new object[] {
+            this.comboBox27.FormattingEnabled = true;
+            this.comboBox27.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3060,15 +3159,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbNovSocio.Name = "cmbNovSocio";
-            this.cmbNovSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovSocio.TabIndex = 8;
+            this.comboBox27.Location = new System.Drawing.Point(563, 119);
+            this.comboBox27.Name = "comboBox27";
+            this.comboBox27.Size = new System.Drawing.Size(124, 33);
+            this.comboBox27.TabIndex = 99;
             // 
-            // cmbNovEdFisica
+            // comboBox28
             // 
-            this.cmbNovEdFisica.FormattingEnabled = true;
-            this.cmbNovEdFisica.Items.AddRange(new object[] {
+            this.comboBox28.FormattingEnabled = true;
+            this.comboBox28.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3120,35 +3219,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbNovEdFisica.Name = "cmbNovEdFisica";
-            this.cmbNovEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovEdFisica.TabIndex = 9;
+            this.comboBox28.Location = new System.Drawing.Point(563, 159);
+            this.comboBox28.Name = "comboBox28";
+            this.comboBox28.Size = new System.Drawing.Size(124, 33);
+            this.comboBox28.TabIndex = 98;
             // 
-            // cmbNovInasis
+            // comboBox29
             // 
-            this.cmbNovInasis.FormattingEnabled = true;
-            this.cmbNovInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbNovInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbNovInasis.Name = "cmbNovInasis";
-            this.cmbNovInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovInasis.TabIndex = 10;
-            // 
-            // cmbNovEspañol
-            // 
-            this.cmbNovEspañol.FormattingEnabled = true;
-            this.cmbNovEspañol.Items.AddRange(new object[] {
+            this.comboBox29.FormattingEnabled = true;
+            this.comboBox29.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3200,10 +3279,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbNovEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbNovEspañol.Name = "cmbNovEspañol";
-            this.cmbNovEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbNovEspañol.TabIndex = 1;
+            this.comboBox29.Location = new System.Drawing.Point(563, 198);
+            this.comboBox29.Name = "comboBox29";
+            this.comboBox29.Size = new System.Drawing.Size(124, 33);
+            this.comboBox29.TabIndex = 97;
+            // 
+            // comboBox30
+            // 
+            this.comboBox30.FormattingEnabled = true;
+            this.comboBox30.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox30.Location = new System.Drawing.Point(192, 41);
+            this.comboBox30.Name = "comboBox30";
+            this.comboBox30.Size = new System.Drawing.Size(124, 33);
+            this.comboBox30.TabIndex = 75;
             // 
             // label34
             // 
@@ -3317,32 +3456,31 @@
             this.label44.TabIndex = 44;
             this.label44.Text = "Calificaciones";
             // 
-            // Diciembre
+            // tabPage5
             // 
-            this.Diciembre.Controls.Add(this.groupBox4);
-            this.Diciembre.Location = new System.Drawing.Point(4, 22);
-            this.Diciembre.Name = "Diciembre";
-            this.Diciembre.Padding = new System.Windows.Forms.Padding(3);
-            this.Diciembre.Size = new System.Drawing.Size(939, 376);
-            this.Diciembre.TabIndex = 4;
-            this.Diciembre.Text = "Diciembre";
-            this.Diciembre.UseVisualStyleBackColor = true;
-            this.Diciembre.MouseEnter += new System.EventHandler(this.Diciembre_MouseEnter);
+            this.tabPage5.Controls.Add(this.groupBox4);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(939, 376);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "Diciembre";
+            this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox4.Controls.Add(this.label48);
-            this.groupBox4.Controls.Add(this.cmbDicMatematicas);
-            this.groupBox4.Controls.Add(this.cmbDicIngles);
-            this.groupBox4.Controls.Add(this.cmbDicCiencias);
-            this.groupBox4.Controls.Add(this.cmbDicEntidad);
-            this.groupBox4.Controls.Add(this.cmbDicFormacion);
-            this.groupBox4.Controls.Add(this.cmbDicArtes);
-            this.groupBox4.Controls.Add(this.cmbDicSocio);
-            this.groupBox4.Controls.Add(this.cmbDicEdFisica);
-            this.groupBox4.Controls.Add(this.cmbDicInasis);
-            this.groupBox4.Controls.Add(this.cmbDicEspañol);
+            this.groupBox4.Controls.Add(this.comboBox31);
+            this.groupBox4.Controls.Add(this.comboBox32);
+            this.groupBox4.Controls.Add(this.comboBox33);
+            this.groupBox4.Controls.Add(this.comboBox34);
+            this.groupBox4.Controls.Add(this.comboBox35);
+            this.groupBox4.Controls.Add(this.comboBox36);
+            this.groupBox4.Controls.Add(this.comboBox37);
+            this.groupBox4.Controls.Add(this.comboBox38);
+            this.groupBox4.Controls.Add(this.comboBox39);
+            this.groupBox4.Controls.Add(this.comboBox40);
             this.groupBox4.Controls.Add(this.label45);
             this.groupBox4.Controls.Add(this.label46);
             this.groupBox4.Controls.Add(this.label47);
@@ -3372,10 +3510,10 @@
             this.label48.TabIndex = 106;
             this.label48.Text = "Ed. Socioemocional";
             // 
-            // cmbDicMatematicas
+            // comboBox31
             // 
-            this.cmbDicMatematicas.FormattingEnabled = true;
-            this.cmbDicMatematicas.Items.AddRange(new object[] {
+            this.comboBox31.FormattingEnabled = true;
+            this.comboBox31.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3427,15 +3565,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbDicMatematicas.Name = "cmbDicMatematicas";
-            this.cmbDicMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicMatematicas.TabIndex = 2;
+            this.comboBox31.Location = new System.Drawing.Point(192, 81);
+            this.comboBox31.Name = "comboBox31";
+            this.comboBox31.Size = new System.Drawing.Size(124, 33);
+            this.comboBox31.TabIndex = 105;
             // 
-            // cmbDicIngles
+            // comboBox32
             // 
-            this.cmbDicIngles.FormattingEnabled = true;
-            this.cmbDicIngles.Items.AddRange(new object[] {
+            this.comboBox32.FormattingEnabled = true;
+            this.comboBox32.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3487,15 +3625,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbDicIngles.Name = "cmbDicIngles";
-            this.cmbDicIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicIngles.TabIndex = 3;
+            this.comboBox32.Location = new System.Drawing.Point(192, 120);
+            this.comboBox32.Name = "comboBox32";
+            this.comboBox32.Size = new System.Drawing.Size(124, 33);
+            this.comboBox32.TabIndex = 104;
             // 
-            // cmbDicCiencias
+            // comboBox33
             // 
-            this.cmbDicCiencias.FormattingEnabled = true;
-            this.cmbDicCiencias.Items.AddRange(new object[] {
+            this.comboBox33.FormattingEnabled = true;
+            this.comboBox33.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3547,15 +3685,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbDicCiencias.Name = "cmbDicCiencias";
-            this.cmbDicCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicCiencias.TabIndex = 4;
+            this.comboBox33.Location = new System.Drawing.Point(192, 159);
+            this.comboBox33.Name = "comboBox33";
+            this.comboBox33.Size = new System.Drawing.Size(124, 33);
+            this.comboBox33.TabIndex = 103;
             // 
-            // cmbDicEntidad
+            // comboBox34
             // 
-            this.cmbDicEntidad.FormattingEnabled = true;
-            this.cmbDicEntidad.Items.AddRange(new object[] {
+            this.comboBox34.FormattingEnabled = true;
+            this.comboBox34.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3607,15 +3745,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbDicEntidad.Name = "cmbDicEntidad";
-            this.cmbDicEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicEntidad.TabIndex = 5;
+            this.comboBox34.Location = new System.Drawing.Point(192, 198);
+            this.comboBox34.Name = "comboBox34";
+            this.comboBox34.Size = new System.Drawing.Size(124, 33);
+            this.comboBox34.TabIndex = 102;
             // 
-            // cmbDicFormacion
+            // comboBox35
             // 
-            this.cmbDicFormacion.FormattingEnabled = true;
-            this.cmbDicFormacion.Items.AddRange(new object[] {
+            this.comboBox35.FormattingEnabled = true;
+            this.comboBox35.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3667,15 +3805,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbDicFormacion.Name = "cmbDicFormacion";
-            this.cmbDicFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicFormacion.TabIndex = 6;
+            this.comboBox35.Location = new System.Drawing.Point(563, 42);
+            this.comboBox35.Name = "comboBox35";
+            this.comboBox35.Size = new System.Drawing.Size(124, 33);
+            this.comboBox35.TabIndex = 101;
             // 
-            // cmbDicArtes
+            // comboBox36
             // 
-            this.cmbDicArtes.FormattingEnabled = true;
-            this.cmbDicArtes.Items.AddRange(new object[] {
+            this.comboBox36.FormattingEnabled = true;
+            this.comboBox36.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3727,15 +3865,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbDicArtes.Name = "cmbDicArtes";
-            this.cmbDicArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicArtes.TabIndex = 7;
+            this.comboBox36.Location = new System.Drawing.Point(563, 81);
+            this.comboBox36.Name = "comboBox36";
+            this.comboBox36.Size = new System.Drawing.Size(124, 33);
+            this.comboBox36.TabIndex = 100;
             // 
-            // cmbDicSocio
+            // comboBox37
             // 
-            this.cmbDicSocio.FormattingEnabled = true;
-            this.cmbDicSocio.Items.AddRange(new object[] {
+            this.comboBox37.FormattingEnabled = true;
+            this.comboBox37.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3787,15 +3925,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbDicSocio.Name = "cmbDicSocio";
-            this.cmbDicSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicSocio.TabIndex = 8;
+            this.comboBox37.Location = new System.Drawing.Point(563, 119);
+            this.comboBox37.Name = "comboBox37";
+            this.comboBox37.Size = new System.Drawing.Size(124, 33);
+            this.comboBox37.TabIndex = 99;
             // 
-            // cmbDicEdFisica
+            // comboBox38
             // 
-            this.cmbDicEdFisica.FormattingEnabled = true;
-            this.cmbDicEdFisica.Items.AddRange(new object[] {
+            this.comboBox38.FormattingEnabled = true;
+            this.comboBox38.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3847,35 +3985,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbDicEdFisica.Name = "cmbDicEdFisica";
-            this.cmbDicEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicEdFisica.TabIndex = 9;
+            this.comboBox38.Location = new System.Drawing.Point(563, 159);
+            this.comboBox38.Name = "comboBox38";
+            this.comboBox38.Size = new System.Drawing.Size(124, 33);
+            this.comboBox38.TabIndex = 98;
             // 
-            // cmbDicInasis
+            // comboBox39
             // 
-            this.cmbDicInasis.FormattingEnabled = true;
-            this.cmbDicInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbDicInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbDicInasis.Name = "cmbDicInasis";
-            this.cmbDicInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicInasis.TabIndex = 10;
-            // 
-            // cmbDicEspañol
-            // 
-            this.cmbDicEspañol.FormattingEnabled = true;
-            this.cmbDicEspañol.Items.AddRange(new object[] {
+            this.comboBox39.FormattingEnabled = true;
+            this.comboBox39.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -3927,10 +4045,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbDicEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbDicEspañol.Name = "cmbDicEspañol";
-            this.cmbDicEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbDicEspañol.TabIndex = 1;
+            this.comboBox39.Location = new System.Drawing.Point(563, 198);
+            this.comboBox39.Name = "comboBox39";
+            this.comboBox39.Size = new System.Drawing.Size(124, 33);
+            this.comboBox39.TabIndex = 97;
+            // 
+            // comboBox40
+            // 
+            this.comboBox40.FormattingEnabled = true;
+            this.comboBox40.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox40.Location = new System.Drawing.Point(192, 41);
+            this.comboBox40.Name = "comboBox40";
+            this.comboBox40.Size = new System.Drawing.Size(124, 33);
+            this.comboBox40.TabIndex = 75;
             // 
             // label45
             // 
@@ -4044,32 +4222,31 @@
             this.label55.TabIndex = 44;
             this.label55.Text = "Calificaciones";
             // 
-            // Enero
+            // tabPage6
             // 
-            this.Enero.Controls.Add(this.groupBox5);
-            this.Enero.Location = new System.Drawing.Point(4, 22);
-            this.Enero.Name = "Enero";
-            this.Enero.Padding = new System.Windows.Forms.Padding(3);
-            this.Enero.Size = new System.Drawing.Size(939, 376);
-            this.Enero.TabIndex = 5;
-            this.Enero.Text = "Enero";
-            this.Enero.UseVisualStyleBackColor = true;
-            this.Enero.MouseEnter += new System.EventHandler(this.Enero_MouseEnter);
+            this.tabPage6.Controls.Add(this.groupBox5);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(939, 376);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Enero";
+            this.tabPage6.UseVisualStyleBackColor = true;
             // 
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox5.Controls.Add(this.label59);
-            this.groupBox5.Controls.Add(this.cmbEneMatematicas);
-            this.groupBox5.Controls.Add(this.cmbEneIngles);
-            this.groupBox5.Controls.Add(this.cmbEneCiencias);
-            this.groupBox5.Controls.Add(this.cmbEneEntidad);
-            this.groupBox5.Controls.Add(this.cmbEneFormacion);
-            this.groupBox5.Controls.Add(this.cmbEneArtes);
-            this.groupBox5.Controls.Add(this.cmbEneSocio);
-            this.groupBox5.Controls.Add(this.cmbEneEdFisica);
-            this.groupBox5.Controls.Add(this.cmbEneInasis);
-            this.groupBox5.Controls.Add(this.cmbEneEspañol);
+            this.groupBox5.Controls.Add(this.comboBox41);
+            this.groupBox5.Controls.Add(this.comboBox42);
+            this.groupBox5.Controls.Add(this.comboBox43);
+            this.groupBox5.Controls.Add(this.comboBox44);
+            this.groupBox5.Controls.Add(this.comboBox45);
+            this.groupBox5.Controls.Add(this.comboBox46);
+            this.groupBox5.Controls.Add(this.comboBox47);
+            this.groupBox5.Controls.Add(this.comboBox48);
+            this.groupBox5.Controls.Add(this.comboBox49);
+            this.groupBox5.Controls.Add(this.comboBox50);
             this.groupBox5.Controls.Add(this.label56);
             this.groupBox5.Controls.Add(this.label57);
             this.groupBox5.Controls.Add(this.label58);
@@ -4099,10 +4276,10 @@
             this.label59.TabIndex = 106;
             this.label59.Text = "Ed. Socioemocional";
             // 
-            // cmbEneMatematicas
+            // comboBox41
             // 
-            this.cmbEneMatematicas.FormattingEnabled = true;
-            this.cmbEneMatematicas.Items.AddRange(new object[] {
+            this.comboBox41.FormattingEnabled = true;
+            this.comboBox41.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4154,15 +4331,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbEneMatematicas.Name = "cmbEneMatematicas";
-            this.cmbEneMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneMatematicas.TabIndex = 2;
+            this.comboBox41.Location = new System.Drawing.Point(192, 81);
+            this.comboBox41.Name = "comboBox41";
+            this.comboBox41.Size = new System.Drawing.Size(124, 33);
+            this.comboBox41.TabIndex = 105;
             // 
-            // cmbEneIngles
+            // comboBox42
             // 
-            this.cmbEneIngles.FormattingEnabled = true;
-            this.cmbEneIngles.Items.AddRange(new object[] {
+            this.comboBox42.FormattingEnabled = true;
+            this.comboBox42.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4214,15 +4391,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbEneIngles.Name = "cmbEneIngles";
-            this.cmbEneIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneIngles.TabIndex = 3;
+            this.comboBox42.Location = new System.Drawing.Point(192, 120);
+            this.comboBox42.Name = "comboBox42";
+            this.comboBox42.Size = new System.Drawing.Size(124, 33);
+            this.comboBox42.TabIndex = 104;
             // 
-            // cmbEneCiencias
+            // comboBox43
             // 
-            this.cmbEneCiencias.FormattingEnabled = true;
-            this.cmbEneCiencias.Items.AddRange(new object[] {
+            this.comboBox43.FormattingEnabled = true;
+            this.comboBox43.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4274,15 +4451,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbEneCiencias.Name = "cmbEneCiencias";
-            this.cmbEneCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneCiencias.TabIndex = 4;
+            this.comboBox43.Location = new System.Drawing.Point(192, 159);
+            this.comboBox43.Name = "comboBox43";
+            this.comboBox43.Size = new System.Drawing.Size(124, 33);
+            this.comboBox43.TabIndex = 103;
             // 
-            // cmbEneEntidad
+            // comboBox44
             // 
-            this.cmbEneEntidad.FormattingEnabled = true;
-            this.cmbEneEntidad.Items.AddRange(new object[] {
+            this.comboBox44.FormattingEnabled = true;
+            this.comboBox44.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4334,15 +4511,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbEneEntidad.Name = "cmbEneEntidad";
-            this.cmbEneEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneEntidad.TabIndex = 5;
+            this.comboBox44.Location = new System.Drawing.Point(192, 198);
+            this.comboBox44.Name = "comboBox44";
+            this.comboBox44.Size = new System.Drawing.Size(124, 33);
+            this.comboBox44.TabIndex = 102;
             // 
-            // cmbEneFormacion
+            // comboBox45
             // 
-            this.cmbEneFormacion.FormattingEnabled = true;
-            this.cmbEneFormacion.Items.AddRange(new object[] {
+            this.comboBox45.FormattingEnabled = true;
+            this.comboBox45.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4394,15 +4571,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbEneFormacion.Name = "cmbEneFormacion";
-            this.cmbEneFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneFormacion.TabIndex = 6;
+            this.comboBox45.Location = new System.Drawing.Point(563, 42);
+            this.comboBox45.Name = "comboBox45";
+            this.comboBox45.Size = new System.Drawing.Size(124, 33);
+            this.comboBox45.TabIndex = 101;
             // 
-            // cmbEneArtes
+            // comboBox46
             // 
-            this.cmbEneArtes.FormattingEnabled = true;
-            this.cmbEneArtes.Items.AddRange(new object[] {
+            this.comboBox46.FormattingEnabled = true;
+            this.comboBox46.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4454,15 +4631,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbEneArtes.Name = "cmbEneArtes";
-            this.cmbEneArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneArtes.TabIndex = 7;
+            this.comboBox46.Location = new System.Drawing.Point(563, 81);
+            this.comboBox46.Name = "comboBox46";
+            this.comboBox46.Size = new System.Drawing.Size(124, 33);
+            this.comboBox46.TabIndex = 100;
             // 
-            // cmbEneSocio
+            // comboBox47
             // 
-            this.cmbEneSocio.FormattingEnabled = true;
-            this.cmbEneSocio.Items.AddRange(new object[] {
+            this.comboBox47.FormattingEnabled = true;
+            this.comboBox47.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4514,15 +4691,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbEneSocio.Name = "cmbEneSocio";
-            this.cmbEneSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneSocio.TabIndex = 8;
+            this.comboBox47.Location = new System.Drawing.Point(563, 119);
+            this.comboBox47.Name = "comboBox47";
+            this.comboBox47.Size = new System.Drawing.Size(124, 33);
+            this.comboBox47.TabIndex = 99;
             // 
-            // cmbEneEdFisica
+            // comboBox48
             // 
-            this.cmbEneEdFisica.FormattingEnabled = true;
-            this.cmbEneEdFisica.Items.AddRange(new object[] {
+            this.comboBox48.FormattingEnabled = true;
+            this.comboBox48.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4574,35 +4751,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbEneEdFisica.Name = "cmbEneEdFisica";
-            this.cmbEneEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneEdFisica.TabIndex = 9;
+            this.comboBox48.Location = new System.Drawing.Point(563, 159);
+            this.comboBox48.Name = "comboBox48";
+            this.comboBox48.Size = new System.Drawing.Size(124, 33);
+            this.comboBox48.TabIndex = 98;
             // 
-            // cmbEneInasis
+            // comboBox49
             // 
-            this.cmbEneInasis.FormattingEnabled = true;
-            this.cmbEneInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbEneInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbEneInasis.Name = "cmbEneInasis";
-            this.cmbEneInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneInasis.TabIndex = 10;
-            // 
-            // cmbEneEspañol
-            // 
-            this.cmbEneEspañol.FormattingEnabled = true;
-            this.cmbEneEspañol.Items.AddRange(new object[] {
+            this.comboBox49.FormattingEnabled = true;
+            this.comboBox49.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4654,10 +4811,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbEneEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbEneEspañol.Name = "cmbEneEspañol";
-            this.cmbEneEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbEneEspañol.TabIndex = 1;
+            this.comboBox49.Location = new System.Drawing.Point(563, 198);
+            this.comboBox49.Name = "comboBox49";
+            this.comboBox49.Size = new System.Drawing.Size(124, 33);
+            this.comboBox49.TabIndex = 97;
+            // 
+            // comboBox50
+            // 
+            this.comboBox50.FormattingEnabled = true;
+            this.comboBox50.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox50.Location = new System.Drawing.Point(192, 41);
+            this.comboBox50.Name = "comboBox50";
+            this.comboBox50.Size = new System.Drawing.Size(124, 33);
+            this.comboBox50.TabIndex = 75;
             // 
             // label56
             // 
@@ -4771,32 +4988,31 @@
             this.label66.TabIndex = 44;
             this.label66.Text = "Calificaciones";
             // 
-            // Febrero
+            // tabPage7
             // 
-            this.Febrero.Controls.Add(this.groupBox6);
-            this.Febrero.Location = new System.Drawing.Point(4, 22);
-            this.Febrero.Name = "Febrero";
-            this.Febrero.Padding = new System.Windows.Forms.Padding(3);
-            this.Febrero.Size = new System.Drawing.Size(939, 376);
-            this.Febrero.TabIndex = 6;
-            this.Febrero.Text = "Febrero";
-            this.Febrero.UseVisualStyleBackColor = true;
-            this.Febrero.MouseEnter += new System.EventHandler(this.Febrero_MouseEnter);
+            this.tabPage7.Controls.Add(this.groupBox6);
+            this.tabPage7.Location = new System.Drawing.Point(4, 22);
+            this.tabPage7.Name = "tabPage7";
+            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage7.Size = new System.Drawing.Size(939, 376);
+            this.tabPage7.TabIndex = 6;
+            this.tabPage7.Text = "Febrero";
+            this.tabPage7.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox6.Controls.Add(this.label70);
-            this.groupBox6.Controls.Add(this.cmbFebMatematicas);
-            this.groupBox6.Controls.Add(this.cmbFebIngles);
-            this.groupBox6.Controls.Add(this.cmbFebCiencias);
-            this.groupBox6.Controls.Add(this.cmbFebEntidad);
-            this.groupBox6.Controls.Add(this.cmbFebFormacion);
-            this.groupBox6.Controls.Add(this.cmbFebArtes);
-            this.groupBox6.Controls.Add(this.cmbFebSocio);
-            this.groupBox6.Controls.Add(this.cmbFebEdFisica);
-            this.groupBox6.Controls.Add(this.cmbFebInasis);
-            this.groupBox6.Controls.Add(this.cmbFebEspañol);
+            this.groupBox6.Controls.Add(this.comboBox51);
+            this.groupBox6.Controls.Add(this.comboBox52);
+            this.groupBox6.Controls.Add(this.comboBox53);
+            this.groupBox6.Controls.Add(this.comboBox54);
+            this.groupBox6.Controls.Add(this.comboBox55);
+            this.groupBox6.Controls.Add(this.comboBox56);
+            this.groupBox6.Controls.Add(this.comboBox57);
+            this.groupBox6.Controls.Add(this.comboBox58);
+            this.groupBox6.Controls.Add(this.comboBox59);
+            this.groupBox6.Controls.Add(this.comboBox60);
             this.groupBox6.Controls.Add(this.label67);
             this.groupBox6.Controls.Add(this.label68);
             this.groupBox6.Controls.Add(this.label69);
@@ -4826,10 +5042,10 @@
             this.label70.TabIndex = 106;
             this.label70.Text = "Ed. Socioemocional";
             // 
-            // cmbFebMatematicas
+            // comboBox51
             // 
-            this.cmbFebMatematicas.FormattingEnabled = true;
-            this.cmbFebMatematicas.Items.AddRange(new object[] {
+            this.comboBox51.FormattingEnabled = true;
+            this.comboBox51.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4881,15 +5097,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbFebMatematicas.Name = "cmbFebMatematicas";
-            this.cmbFebMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebMatematicas.TabIndex = 2;
+            this.comboBox51.Location = new System.Drawing.Point(192, 81);
+            this.comboBox51.Name = "comboBox51";
+            this.comboBox51.Size = new System.Drawing.Size(124, 33);
+            this.comboBox51.TabIndex = 105;
             // 
-            // cmbFebIngles
+            // comboBox52
             // 
-            this.cmbFebIngles.FormattingEnabled = true;
-            this.cmbFebIngles.Items.AddRange(new object[] {
+            this.comboBox52.FormattingEnabled = true;
+            this.comboBox52.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -4941,15 +5157,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbFebIngles.Name = "cmbFebIngles";
-            this.cmbFebIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebIngles.TabIndex = 3;
+            this.comboBox52.Location = new System.Drawing.Point(192, 120);
+            this.comboBox52.Name = "comboBox52";
+            this.comboBox52.Size = new System.Drawing.Size(124, 33);
+            this.comboBox52.TabIndex = 104;
             // 
-            // cmbFebCiencias
+            // comboBox53
             // 
-            this.cmbFebCiencias.FormattingEnabled = true;
-            this.cmbFebCiencias.Items.AddRange(new object[] {
+            this.comboBox53.FormattingEnabled = true;
+            this.comboBox53.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5001,15 +5217,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbFebCiencias.Name = "cmbFebCiencias";
-            this.cmbFebCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebCiencias.TabIndex = 4;
+            this.comboBox53.Location = new System.Drawing.Point(192, 159);
+            this.comboBox53.Name = "comboBox53";
+            this.comboBox53.Size = new System.Drawing.Size(124, 33);
+            this.comboBox53.TabIndex = 103;
             // 
-            // cmbFebEntidad
+            // comboBox54
             // 
-            this.cmbFebEntidad.FormattingEnabled = true;
-            this.cmbFebEntidad.Items.AddRange(new object[] {
+            this.comboBox54.FormattingEnabled = true;
+            this.comboBox54.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5061,15 +5277,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbFebEntidad.Name = "cmbFebEntidad";
-            this.cmbFebEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebEntidad.TabIndex = 5;
+            this.comboBox54.Location = new System.Drawing.Point(192, 198);
+            this.comboBox54.Name = "comboBox54";
+            this.comboBox54.Size = new System.Drawing.Size(124, 33);
+            this.comboBox54.TabIndex = 102;
             // 
-            // cmbFebFormacion
+            // comboBox55
             // 
-            this.cmbFebFormacion.FormattingEnabled = true;
-            this.cmbFebFormacion.Items.AddRange(new object[] {
+            this.comboBox55.FormattingEnabled = true;
+            this.comboBox55.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5121,15 +5337,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbFebFormacion.Name = "cmbFebFormacion";
-            this.cmbFebFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebFormacion.TabIndex = 6;
+            this.comboBox55.Location = new System.Drawing.Point(563, 42);
+            this.comboBox55.Name = "comboBox55";
+            this.comboBox55.Size = new System.Drawing.Size(124, 33);
+            this.comboBox55.TabIndex = 101;
             // 
-            // cmbFebArtes
+            // comboBox56
             // 
-            this.cmbFebArtes.FormattingEnabled = true;
-            this.cmbFebArtes.Items.AddRange(new object[] {
+            this.comboBox56.FormattingEnabled = true;
+            this.comboBox56.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5181,15 +5397,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbFebArtes.Name = "cmbFebArtes";
-            this.cmbFebArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebArtes.TabIndex = 7;
+            this.comboBox56.Location = new System.Drawing.Point(563, 81);
+            this.comboBox56.Name = "comboBox56";
+            this.comboBox56.Size = new System.Drawing.Size(124, 33);
+            this.comboBox56.TabIndex = 100;
             // 
-            // cmbFebSocio
+            // comboBox57
             // 
-            this.cmbFebSocio.FormattingEnabled = true;
-            this.cmbFebSocio.Items.AddRange(new object[] {
+            this.comboBox57.FormattingEnabled = true;
+            this.comboBox57.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5241,15 +5457,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbFebSocio.Name = "cmbFebSocio";
-            this.cmbFebSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebSocio.TabIndex = 8;
+            this.comboBox57.Location = new System.Drawing.Point(563, 119);
+            this.comboBox57.Name = "comboBox57";
+            this.comboBox57.Size = new System.Drawing.Size(124, 33);
+            this.comboBox57.TabIndex = 99;
             // 
-            // cmbFebEdFisica
+            // comboBox58
             // 
-            this.cmbFebEdFisica.FormattingEnabled = true;
-            this.cmbFebEdFisica.Items.AddRange(new object[] {
+            this.comboBox58.FormattingEnabled = true;
+            this.comboBox58.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5301,35 +5517,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbFebEdFisica.Name = "cmbFebEdFisica";
-            this.cmbFebEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebEdFisica.TabIndex = 9;
+            this.comboBox58.Location = new System.Drawing.Point(563, 159);
+            this.comboBox58.Name = "comboBox58";
+            this.comboBox58.Size = new System.Drawing.Size(124, 33);
+            this.comboBox58.TabIndex = 98;
             // 
-            // cmbFebInasis
+            // comboBox59
             // 
-            this.cmbFebInasis.FormattingEnabled = true;
-            this.cmbFebInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbFebInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbFebInasis.Name = "cmbFebInasis";
-            this.cmbFebInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebInasis.TabIndex = 10;
-            // 
-            // cmbFebEspañol
-            // 
-            this.cmbFebEspañol.FormattingEnabled = true;
-            this.cmbFebEspañol.Items.AddRange(new object[] {
+            this.comboBox59.FormattingEnabled = true;
+            this.comboBox59.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5381,10 +5577,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbFebEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbFebEspañol.Name = "cmbFebEspañol";
-            this.cmbFebEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbFebEspañol.TabIndex = 1;
+            this.comboBox59.Location = new System.Drawing.Point(563, 198);
+            this.comboBox59.Name = "comboBox59";
+            this.comboBox59.Size = new System.Drawing.Size(124, 33);
+            this.comboBox59.TabIndex = 97;
+            // 
+            // comboBox60
+            // 
+            this.comboBox60.FormattingEnabled = true;
+            this.comboBox60.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox60.Location = new System.Drawing.Point(192, 41);
+            this.comboBox60.Name = "comboBox60";
+            this.comboBox60.Size = new System.Drawing.Size(124, 33);
+            this.comboBox60.TabIndex = 75;
             // 
             // label67
             // 
@@ -5498,31 +5754,31 @@
             this.label77.TabIndex = 44;
             this.label77.Text = "Calificaciones";
             // 
-            // Marzo
+            // tabPage8
             // 
-            this.Marzo.Controls.Add(this.groupBox7);
-            this.Marzo.Location = new System.Drawing.Point(4, 22);
-            this.Marzo.Name = "Marzo";
-            this.Marzo.Padding = new System.Windows.Forms.Padding(3);
-            this.Marzo.Size = new System.Drawing.Size(939, 376);
-            this.Marzo.TabIndex = 7;
-            this.Marzo.Text = "Marzo";
-            this.Marzo.UseVisualStyleBackColor = true;
+            this.tabPage8.Controls.Add(this.groupBox7);
+            this.tabPage8.Location = new System.Drawing.Point(4, 22);
+            this.tabPage8.Name = "tabPage8";
+            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage8.Size = new System.Drawing.Size(939, 376);
+            this.tabPage8.TabIndex = 7;
+            this.tabPage8.Text = "Marzo";
+            this.tabPage8.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox7.Controls.Add(this.label81);
-            this.groupBox7.Controls.Add(this.cmbMarMatematicas);
-            this.groupBox7.Controls.Add(this.cmbMarIngles);
-            this.groupBox7.Controls.Add(this.cmbMarCiencias);
-            this.groupBox7.Controls.Add(this.cmbMarEntidad);
-            this.groupBox7.Controls.Add(this.cmbMarFormacion);
-            this.groupBox7.Controls.Add(this.cmbMarArtes);
-            this.groupBox7.Controls.Add(this.cmbMarSocio);
-            this.groupBox7.Controls.Add(this.cmbMarEdFisica);
-            this.groupBox7.Controls.Add(this.cmbMarInasis);
-            this.groupBox7.Controls.Add(this.cmbMarEspañol);
+            this.groupBox7.Controls.Add(this.comboBox61);
+            this.groupBox7.Controls.Add(this.comboBox62);
+            this.groupBox7.Controls.Add(this.comboBox63);
+            this.groupBox7.Controls.Add(this.comboBox64);
+            this.groupBox7.Controls.Add(this.comboBox65);
+            this.groupBox7.Controls.Add(this.comboBox66);
+            this.groupBox7.Controls.Add(this.comboBox67);
+            this.groupBox7.Controls.Add(this.comboBox68);
+            this.groupBox7.Controls.Add(this.comboBox69);
+            this.groupBox7.Controls.Add(this.comboBox70);
             this.groupBox7.Controls.Add(this.label78);
             this.groupBox7.Controls.Add(this.label79);
             this.groupBox7.Controls.Add(this.label80);
@@ -5552,10 +5808,10 @@
             this.label81.TabIndex = 106;
             this.label81.Text = "Ed. Socioemocional";
             // 
-            // cmbMarMatematicas
+            // comboBox61
             // 
-            this.cmbMarMatematicas.FormattingEnabled = true;
-            this.cmbMarMatematicas.Items.AddRange(new object[] {
+            this.comboBox61.FormattingEnabled = true;
+            this.comboBox61.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5607,15 +5863,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbMarMatematicas.Name = "cmbMarMatematicas";
-            this.cmbMarMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarMatematicas.TabIndex = 2;
+            this.comboBox61.Location = new System.Drawing.Point(192, 81);
+            this.comboBox61.Name = "comboBox61";
+            this.comboBox61.Size = new System.Drawing.Size(124, 33);
+            this.comboBox61.TabIndex = 105;
             // 
-            // cmbMarIngles
+            // comboBox62
             // 
-            this.cmbMarIngles.FormattingEnabled = true;
-            this.cmbMarIngles.Items.AddRange(new object[] {
+            this.comboBox62.FormattingEnabled = true;
+            this.comboBox62.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5667,15 +5923,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbMarIngles.Name = "cmbMarIngles";
-            this.cmbMarIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarIngles.TabIndex = 3;
+            this.comboBox62.Location = new System.Drawing.Point(192, 120);
+            this.comboBox62.Name = "comboBox62";
+            this.comboBox62.Size = new System.Drawing.Size(124, 33);
+            this.comboBox62.TabIndex = 104;
             // 
-            // cmbMarCiencias
+            // comboBox63
             // 
-            this.cmbMarCiencias.FormattingEnabled = true;
-            this.cmbMarCiencias.Items.AddRange(new object[] {
+            this.comboBox63.FormattingEnabled = true;
+            this.comboBox63.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5727,15 +5983,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbMarCiencias.Name = "cmbMarCiencias";
-            this.cmbMarCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarCiencias.TabIndex = 4;
+            this.comboBox63.Location = new System.Drawing.Point(192, 159);
+            this.comboBox63.Name = "comboBox63";
+            this.comboBox63.Size = new System.Drawing.Size(124, 33);
+            this.comboBox63.TabIndex = 103;
             // 
-            // cmbMarEntidad
+            // comboBox64
             // 
-            this.cmbMarEntidad.FormattingEnabled = true;
-            this.cmbMarEntidad.Items.AddRange(new object[] {
+            this.comboBox64.FormattingEnabled = true;
+            this.comboBox64.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5787,15 +6043,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbMarEntidad.Name = "cmbMarEntidad";
-            this.cmbMarEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarEntidad.TabIndex = 5;
+            this.comboBox64.Location = new System.Drawing.Point(192, 198);
+            this.comboBox64.Name = "comboBox64";
+            this.comboBox64.Size = new System.Drawing.Size(124, 33);
+            this.comboBox64.TabIndex = 102;
             // 
-            // cmbMarFormacion
+            // comboBox65
             // 
-            this.cmbMarFormacion.FormattingEnabled = true;
-            this.cmbMarFormacion.Items.AddRange(new object[] {
+            this.comboBox65.FormattingEnabled = true;
+            this.comboBox65.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5847,15 +6103,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbMarFormacion.Name = "cmbMarFormacion";
-            this.cmbMarFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarFormacion.TabIndex = 6;
+            this.comboBox65.Location = new System.Drawing.Point(563, 42);
+            this.comboBox65.Name = "comboBox65";
+            this.comboBox65.Size = new System.Drawing.Size(124, 33);
+            this.comboBox65.TabIndex = 101;
             // 
-            // cmbMarArtes
+            // comboBox66
             // 
-            this.cmbMarArtes.FormattingEnabled = true;
-            this.cmbMarArtes.Items.AddRange(new object[] {
+            this.comboBox66.FormattingEnabled = true;
+            this.comboBox66.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5907,15 +6163,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbMarArtes.Name = "cmbMarArtes";
-            this.cmbMarArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarArtes.TabIndex = 7;
+            this.comboBox66.Location = new System.Drawing.Point(563, 81);
+            this.comboBox66.Name = "comboBox66";
+            this.comboBox66.Size = new System.Drawing.Size(124, 33);
+            this.comboBox66.TabIndex = 100;
             // 
-            // cmbMarSocio
+            // comboBox67
             // 
-            this.cmbMarSocio.FormattingEnabled = true;
-            this.cmbMarSocio.Items.AddRange(new object[] {
+            this.comboBox67.FormattingEnabled = true;
+            this.comboBox67.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -5967,15 +6223,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbMarSocio.Name = "cmbMarSocio";
-            this.cmbMarSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarSocio.TabIndex = 8;
+            this.comboBox67.Location = new System.Drawing.Point(563, 119);
+            this.comboBox67.Name = "comboBox67";
+            this.comboBox67.Size = new System.Drawing.Size(124, 33);
+            this.comboBox67.TabIndex = 99;
             // 
-            // cmbMarEdFisica
+            // comboBox68
             // 
-            this.cmbMarEdFisica.FormattingEnabled = true;
-            this.cmbMarEdFisica.Items.AddRange(new object[] {
+            this.comboBox68.FormattingEnabled = true;
+            this.comboBox68.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6027,35 +6283,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbMarEdFisica.Name = "cmbMarEdFisica";
-            this.cmbMarEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarEdFisica.TabIndex = 9;
+            this.comboBox68.Location = new System.Drawing.Point(563, 159);
+            this.comboBox68.Name = "comboBox68";
+            this.comboBox68.Size = new System.Drawing.Size(124, 33);
+            this.comboBox68.TabIndex = 98;
             // 
-            // cmbMarInasis
+            // comboBox69
             // 
-            this.cmbMarInasis.FormattingEnabled = true;
-            this.cmbMarInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbMarInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbMarInasis.Name = "cmbMarInasis";
-            this.cmbMarInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarInasis.TabIndex = 10;
-            // 
-            // cmbMarEspañol
-            // 
-            this.cmbMarEspañol.FormattingEnabled = true;
-            this.cmbMarEspañol.Items.AddRange(new object[] {
+            this.comboBox69.FormattingEnabled = true;
+            this.comboBox69.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6107,10 +6343,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMarEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbMarEspañol.Name = "cmbMarEspañol";
-            this.cmbMarEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbMarEspañol.TabIndex = 1;
+            this.comboBox69.Location = new System.Drawing.Point(563, 198);
+            this.comboBox69.Name = "comboBox69";
+            this.comboBox69.Size = new System.Drawing.Size(124, 33);
+            this.comboBox69.TabIndex = 97;
+            // 
+            // comboBox70
+            // 
+            this.comboBox70.FormattingEnabled = true;
+            this.comboBox70.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox70.Location = new System.Drawing.Point(192, 41);
+            this.comboBox70.Name = "comboBox70";
+            this.comboBox70.Size = new System.Drawing.Size(124, 33);
+            this.comboBox70.TabIndex = 75;
             // 
             // label78
             // 
@@ -6224,32 +6520,31 @@
             this.label100.TabIndex = 44;
             this.label100.Text = "Calificaciones";
             // 
-            // Abril
+            // tabPage9
             // 
-            this.Abril.Controls.Add(this.groupBox9);
-            this.Abril.Location = new System.Drawing.Point(4, 22);
-            this.Abril.Name = "Abril";
-            this.Abril.Padding = new System.Windows.Forms.Padding(3);
-            this.Abril.Size = new System.Drawing.Size(939, 376);
-            this.Abril.TabIndex = 8;
-            this.Abril.Text = "Abril";
-            this.Abril.UseVisualStyleBackColor = true;
-            this.Abril.MouseEnter += new System.EventHandler(this.Abril_MouseEnter);
+            this.tabPage9.Controls.Add(this.groupBox9);
+            this.tabPage9.Location = new System.Drawing.Point(4, 22);
+            this.tabPage9.Name = "tabPage9";
+            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage9.Size = new System.Drawing.Size(939, 376);
+            this.tabPage9.TabIndex = 8;
+            this.tabPage9.Text = "Abril";
+            this.tabPage9.UseVisualStyleBackColor = true;
             // 
             // groupBox9
             // 
             this.groupBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox9.Controls.Add(this.label104);
-            this.groupBox9.Controls.Add(this.cmbAbrMatematicas);
-            this.groupBox9.Controls.Add(this.cmbAbrIngles);
-            this.groupBox9.Controls.Add(this.cmbAbrCiencias);
-            this.groupBox9.Controls.Add(this.cmbAbrEntidad);
-            this.groupBox9.Controls.Add(this.cmbAbrFormacion);
-            this.groupBox9.Controls.Add(this.cmbAbrArtes);
-            this.groupBox9.Controls.Add(this.cmbAbrSocio);
-            this.groupBox9.Controls.Add(this.cmbAbrEdFisica);
-            this.groupBox9.Controls.Add(this.cmbAbrInasis);
-            this.groupBox9.Controls.Add(this.cmbAbrEspañol);
+            this.groupBox9.Controls.Add(this.comboBox71);
+            this.groupBox9.Controls.Add(this.comboBox72);
+            this.groupBox9.Controls.Add(this.comboBox73);
+            this.groupBox9.Controls.Add(this.comboBox74);
+            this.groupBox9.Controls.Add(this.comboBox75);
+            this.groupBox9.Controls.Add(this.comboBox76);
+            this.groupBox9.Controls.Add(this.comboBox77);
+            this.groupBox9.Controls.Add(this.comboBox78);
+            this.groupBox9.Controls.Add(this.comboBox79);
+            this.groupBox9.Controls.Add(this.comboBox80);
             this.groupBox9.Controls.Add(this.label101);
             this.groupBox9.Controls.Add(this.label102);
             this.groupBox9.Controls.Add(this.label103);
@@ -6279,10 +6574,10 @@
             this.label104.TabIndex = 106;
             this.label104.Text = "Ed. Socioemocional";
             // 
-            // cmbAbrMatematicas
+            // comboBox71
             // 
-            this.cmbAbrMatematicas.FormattingEnabled = true;
-            this.cmbAbrMatematicas.Items.AddRange(new object[] {
+            this.comboBox71.FormattingEnabled = true;
+            this.comboBox71.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6334,15 +6629,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbAbrMatematicas.Name = "cmbAbrMatematicas";
-            this.cmbAbrMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrMatematicas.TabIndex = 2;
+            this.comboBox71.Location = new System.Drawing.Point(192, 81);
+            this.comboBox71.Name = "comboBox71";
+            this.comboBox71.Size = new System.Drawing.Size(124, 33);
+            this.comboBox71.TabIndex = 105;
             // 
-            // cmbAbrIngles
+            // comboBox72
             // 
-            this.cmbAbrIngles.FormattingEnabled = true;
-            this.cmbAbrIngles.Items.AddRange(new object[] {
+            this.comboBox72.FormattingEnabled = true;
+            this.comboBox72.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6394,15 +6689,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbAbrIngles.Name = "cmbAbrIngles";
-            this.cmbAbrIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrIngles.TabIndex = 3;
+            this.comboBox72.Location = new System.Drawing.Point(192, 120);
+            this.comboBox72.Name = "comboBox72";
+            this.comboBox72.Size = new System.Drawing.Size(124, 33);
+            this.comboBox72.TabIndex = 104;
             // 
-            // cmbAbrCiencias
+            // comboBox73
             // 
-            this.cmbAbrCiencias.FormattingEnabled = true;
-            this.cmbAbrCiencias.Items.AddRange(new object[] {
+            this.comboBox73.FormattingEnabled = true;
+            this.comboBox73.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6454,15 +6749,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbAbrCiencias.Name = "cmbAbrCiencias";
-            this.cmbAbrCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrCiencias.TabIndex = 4;
+            this.comboBox73.Location = new System.Drawing.Point(192, 159);
+            this.comboBox73.Name = "comboBox73";
+            this.comboBox73.Size = new System.Drawing.Size(124, 33);
+            this.comboBox73.TabIndex = 103;
             // 
-            // cmbAbrEntidad
+            // comboBox74
             // 
-            this.cmbAbrEntidad.FormattingEnabled = true;
-            this.cmbAbrEntidad.Items.AddRange(new object[] {
+            this.comboBox74.FormattingEnabled = true;
+            this.comboBox74.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6514,15 +6809,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbAbrEntidad.Name = "cmbAbrEntidad";
-            this.cmbAbrEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrEntidad.TabIndex = 5;
+            this.comboBox74.Location = new System.Drawing.Point(192, 198);
+            this.comboBox74.Name = "comboBox74";
+            this.comboBox74.Size = new System.Drawing.Size(124, 33);
+            this.comboBox74.TabIndex = 102;
             // 
-            // cmbAbrFormacion
+            // comboBox75
             // 
-            this.cmbAbrFormacion.FormattingEnabled = true;
-            this.cmbAbrFormacion.Items.AddRange(new object[] {
+            this.comboBox75.FormattingEnabled = true;
+            this.comboBox75.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6574,15 +6869,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbAbrFormacion.Name = "cmbAbrFormacion";
-            this.cmbAbrFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrFormacion.TabIndex = 6;
+            this.comboBox75.Location = new System.Drawing.Point(563, 42);
+            this.comboBox75.Name = "comboBox75";
+            this.comboBox75.Size = new System.Drawing.Size(124, 33);
+            this.comboBox75.TabIndex = 101;
             // 
-            // cmbAbrArtes
+            // comboBox76
             // 
-            this.cmbAbrArtes.FormattingEnabled = true;
-            this.cmbAbrArtes.Items.AddRange(new object[] {
+            this.comboBox76.FormattingEnabled = true;
+            this.comboBox76.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6634,15 +6929,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbAbrArtes.Name = "cmbAbrArtes";
-            this.cmbAbrArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrArtes.TabIndex = 7;
+            this.comboBox76.Location = new System.Drawing.Point(563, 81);
+            this.comboBox76.Name = "comboBox76";
+            this.comboBox76.Size = new System.Drawing.Size(124, 33);
+            this.comboBox76.TabIndex = 100;
             // 
-            // cmbAbrSocio
+            // comboBox77
             // 
-            this.cmbAbrSocio.FormattingEnabled = true;
-            this.cmbAbrSocio.Items.AddRange(new object[] {
+            this.comboBox77.FormattingEnabled = true;
+            this.comboBox77.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6694,15 +6989,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbAbrSocio.Name = "cmbAbrSocio";
-            this.cmbAbrSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrSocio.TabIndex = 8;
+            this.comboBox77.Location = new System.Drawing.Point(563, 119);
+            this.comboBox77.Name = "comboBox77";
+            this.comboBox77.Size = new System.Drawing.Size(124, 33);
+            this.comboBox77.TabIndex = 99;
             // 
-            // cmbAbrEdFisica
+            // comboBox78
             // 
-            this.cmbAbrEdFisica.FormattingEnabled = true;
-            this.cmbAbrEdFisica.Items.AddRange(new object[] {
+            this.comboBox78.FormattingEnabled = true;
+            this.comboBox78.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6754,35 +7049,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbAbrEdFisica.Name = "cmbAbrEdFisica";
-            this.cmbAbrEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrEdFisica.TabIndex = 9;
+            this.comboBox78.Location = new System.Drawing.Point(563, 159);
+            this.comboBox78.Name = "comboBox78";
+            this.comboBox78.Size = new System.Drawing.Size(124, 33);
+            this.comboBox78.TabIndex = 98;
             // 
-            // cmbAbrInasis
+            // comboBox79
             // 
-            this.cmbAbrInasis.FormattingEnabled = true;
-            this.cmbAbrInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbAbrInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbAbrInasis.Name = "cmbAbrInasis";
-            this.cmbAbrInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrInasis.TabIndex = 10;
-            // 
-            // cmbAbrEspañol
-            // 
-            this.cmbAbrEspañol.FormattingEnabled = true;
-            this.cmbAbrEspañol.Items.AddRange(new object[] {
+            this.comboBox79.FormattingEnabled = true;
+            this.comboBox79.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -6834,10 +7109,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbAbrEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbAbrEspañol.Name = "cmbAbrEspañol";
-            this.cmbAbrEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbAbrEspañol.TabIndex = 1;
+            this.comboBox79.Location = new System.Drawing.Point(563, 198);
+            this.comboBox79.Name = "comboBox79";
+            this.comboBox79.Size = new System.Drawing.Size(124, 33);
+            this.comboBox79.TabIndex = 97;
+            // 
+            // comboBox80
+            // 
+            this.comboBox80.FormattingEnabled = true;
+            this.comboBox80.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox80.Location = new System.Drawing.Point(192, 41);
+            this.comboBox80.Name = "comboBox80";
+            this.comboBox80.Size = new System.Drawing.Size(124, 33);
+            this.comboBox80.TabIndex = 75;
             // 
             // label101
             // 
@@ -6951,32 +7286,31 @@
             this.label111.TabIndex = 44;
             this.label111.Text = "Calificaciones";
             // 
-            // Mayo
+            // tabPage10
             // 
-            this.Mayo.Controls.Add(this.groupBox8);
-            this.Mayo.Location = new System.Drawing.Point(4, 22);
-            this.Mayo.Name = "Mayo";
-            this.Mayo.Padding = new System.Windows.Forms.Padding(3);
-            this.Mayo.Size = new System.Drawing.Size(939, 376);
-            this.Mayo.TabIndex = 9;
-            this.Mayo.Text = "Mayo";
-            this.Mayo.UseVisualStyleBackColor = true;
-            this.Mayo.MouseEnter += new System.EventHandler(this.Mayo_MouseEnter);
+            this.tabPage10.Controls.Add(this.groupBox8);
+            this.tabPage10.Location = new System.Drawing.Point(4, 22);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage10.Size = new System.Drawing.Size(939, 376);
+            this.tabPage10.TabIndex = 9;
+            this.tabPage10.Text = "Mayo";
+            this.tabPage10.UseVisualStyleBackColor = true;
             // 
             // groupBox8
             // 
             this.groupBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox8.Controls.Add(this.label88);
-            this.groupBox8.Controls.Add(this.cmbMayMatematicas);
-            this.groupBox8.Controls.Add(this.cmbMayIngles);
-            this.groupBox8.Controls.Add(this.cmbMayCiencias);
-            this.groupBox8.Controls.Add(this.cmbMayEntidad);
-            this.groupBox8.Controls.Add(this.cmbMayFormacion);
-            this.groupBox8.Controls.Add(this.cmbMayArtes);
-            this.groupBox8.Controls.Add(this.cmbMaySocio);
-            this.groupBox8.Controls.Add(this.cmbMayEdFisica);
-            this.groupBox8.Controls.Add(this.cmbMayInasis);
-            this.groupBox8.Controls.Add(this.cmbMayEspañol);
+            this.groupBox8.Controls.Add(this.comboBox105);
+            this.groupBox8.Controls.Add(this.comboBox104);
+            this.groupBox8.Controls.Add(this.comboBox103);
+            this.groupBox8.Controls.Add(this.comboBox102);
+            this.groupBox8.Controls.Add(this.comboBox101);
+            this.groupBox8.Controls.Add(this.comboBox99);
+            this.groupBox8.Controls.Add(this.comboBox98);
+            this.groupBox8.Controls.Add(this.comboBox97);
+            this.groupBox8.Controls.Add(this.comboBox96);
+            this.groupBox8.Controls.Add(this.comboBox100);
             this.groupBox8.Controls.Add(this.label85);
             this.groupBox8.Controls.Add(this.label86);
             this.groupBox8.Controls.Add(this.label87);
@@ -7006,10 +7340,10 @@
             this.label88.TabIndex = 106;
             this.label88.Text = "Ed. Socioemocional";
             // 
-            // cmbMayMatematicas
+            // comboBox105
             // 
-            this.cmbMayMatematicas.FormattingEnabled = true;
-            this.cmbMayMatematicas.Items.AddRange(new object[] {
+            this.comboBox105.FormattingEnabled = true;
+            this.comboBox105.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7061,15 +7395,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbMayMatematicas.Name = "cmbMayMatematicas";
-            this.cmbMayMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayMatematicas.TabIndex = 2;
+            this.comboBox105.Location = new System.Drawing.Point(192, 81);
+            this.comboBox105.Name = "comboBox105";
+            this.comboBox105.Size = new System.Drawing.Size(124, 33);
+            this.comboBox105.TabIndex = 105;
             // 
-            // cmbMayIngles
+            // comboBox104
             // 
-            this.cmbMayIngles.FormattingEnabled = true;
-            this.cmbMayIngles.Items.AddRange(new object[] {
+            this.comboBox104.FormattingEnabled = true;
+            this.comboBox104.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7121,15 +7455,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbMayIngles.Name = "cmbMayIngles";
-            this.cmbMayIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayIngles.TabIndex = 3;
+            this.comboBox104.Location = new System.Drawing.Point(192, 120);
+            this.comboBox104.Name = "comboBox104";
+            this.comboBox104.Size = new System.Drawing.Size(124, 33);
+            this.comboBox104.TabIndex = 104;
             // 
-            // cmbMayCiencias
+            // comboBox103
             // 
-            this.cmbMayCiencias.FormattingEnabled = true;
-            this.cmbMayCiencias.Items.AddRange(new object[] {
+            this.comboBox103.FormattingEnabled = true;
+            this.comboBox103.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7181,15 +7515,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbMayCiencias.Name = "cmbMayCiencias";
-            this.cmbMayCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayCiencias.TabIndex = 4;
+            this.comboBox103.Location = new System.Drawing.Point(192, 159);
+            this.comboBox103.Name = "comboBox103";
+            this.comboBox103.Size = new System.Drawing.Size(124, 33);
+            this.comboBox103.TabIndex = 103;
             // 
-            // cmbMayEntidad
+            // comboBox102
             // 
-            this.cmbMayEntidad.FormattingEnabled = true;
-            this.cmbMayEntidad.Items.AddRange(new object[] {
+            this.comboBox102.FormattingEnabled = true;
+            this.comboBox102.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7241,15 +7575,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbMayEntidad.Name = "cmbMayEntidad";
-            this.cmbMayEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayEntidad.TabIndex = 5;
+            this.comboBox102.Location = new System.Drawing.Point(192, 198);
+            this.comboBox102.Name = "comboBox102";
+            this.comboBox102.Size = new System.Drawing.Size(124, 33);
+            this.comboBox102.TabIndex = 102;
             // 
-            // cmbMayFormacion
+            // comboBox101
             // 
-            this.cmbMayFormacion.FormattingEnabled = true;
-            this.cmbMayFormacion.Items.AddRange(new object[] {
+            this.comboBox101.FormattingEnabled = true;
+            this.comboBox101.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7301,15 +7635,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbMayFormacion.Name = "cmbMayFormacion";
-            this.cmbMayFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayFormacion.TabIndex = 6;
+            this.comboBox101.Location = new System.Drawing.Point(563, 42);
+            this.comboBox101.Name = "comboBox101";
+            this.comboBox101.Size = new System.Drawing.Size(124, 33);
+            this.comboBox101.TabIndex = 101;
             // 
-            // cmbMayArtes
+            // comboBox99
             // 
-            this.cmbMayArtes.FormattingEnabled = true;
-            this.cmbMayArtes.Items.AddRange(new object[] {
+            this.comboBox99.FormattingEnabled = true;
+            this.comboBox99.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7361,15 +7695,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbMayArtes.Name = "cmbMayArtes";
-            this.cmbMayArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayArtes.TabIndex = 7;
+            this.comboBox99.Location = new System.Drawing.Point(563, 81);
+            this.comboBox99.Name = "comboBox99";
+            this.comboBox99.Size = new System.Drawing.Size(124, 33);
+            this.comboBox99.TabIndex = 100;
             // 
-            // cmbMaySocio
+            // comboBox98
             // 
-            this.cmbMaySocio.FormattingEnabled = true;
-            this.cmbMaySocio.Items.AddRange(new object[] {
+            this.comboBox98.FormattingEnabled = true;
+            this.comboBox98.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7421,15 +7755,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMaySocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbMaySocio.Name = "cmbMaySocio";
-            this.cmbMaySocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbMaySocio.TabIndex = 8;
+            this.comboBox98.Location = new System.Drawing.Point(563, 119);
+            this.comboBox98.Name = "comboBox98";
+            this.comboBox98.Size = new System.Drawing.Size(124, 33);
+            this.comboBox98.TabIndex = 99;
             // 
-            // cmbMayEdFisica
+            // comboBox97
             // 
-            this.cmbMayEdFisica.FormattingEnabled = true;
-            this.cmbMayEdFisica.Items.AddRange(new object[] {
+            this.comboBox97.FormattingEnabled = true;
+            this.comboBox97.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7481,35 +7815,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbMayEdFisica.Name = "cmbMayEdFisica";
-            this.cmbMayEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayEdFisica.TabIndex = 9;
+            this.comboBox97.Location = new System.Drawing.Point(563, 159);
+            this.comboBox97.Name = "comboBox97";
+            this.comboBox97.Size = new System.Drawing.Size(124, 33);
+            this.comboBox97.TabIndex = 98;
             // 
-            // cmbMayInasis
+            // comboBox96
             // 
-            this.cmbMayInasis.FormattingEnabled = true;
-            this.cmbMayInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbMayInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbMayInasis.Name = "cmbMayInasis";
-            this.cmbMayInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayInasis.TabIndex = 10;
-            // 
-            // cmbMayEspañol
-            // 
-            this.cmbMayEspañol.FormattingEnabled = true;
-            this.cmbMayEspañol.Items.AddRange(new object[] {
+            this.comboBox96.FormattingEnabled = true;
+            this.comboBox96.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7561,10 +7875,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbMayEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbMayEspañol.Name = "cmbMayEspañol";
-            this.cmbMayEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbMayEspañol.TabIndex = 1;
+            this.comboBox96.Location = new System.Drawing.Point(563, 198);
+            this.comboBox96.Name = "comboBox96";
+            this.comboBox96.Size = new System.Drawing.Size(124, 33);
+            this.comboBox96.TabIndex = 97;
+            // 
+            // comboBox100
+            // 
+            this.comboBox100.FormattingEnabled = true;
+            this.comboBox100.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox100.Location = new System.Drawing.Point(192, 41);
+            this.comboBox100.Name = "comboBox100";
+            this.comboBox100.Size = new System.Drawing.Size(124, 33);
+            this.comboBox100.TabIndex = 75;
             // 
             // label85
             // 
@@ -7678,32 +8052,31 @@
             this.label95.TabIndex = 44;
             this.label95.Text = "Calificaciones";
             // 
-            // Junio
+            // tabPage11
             // 
-            this.Junio.Controls.Add(this.groupBox10);
-            this.Junio.Location = new System.Drawing.Point(4, 22);
-            this.Junio.Name = "Junio";
-            this.Junio.Padding = new System.Windows.Forms.Padding(3);
-            this.Junio.Size = new System.Drawing.Size(939, 376);
-            this.Junio.TabIndex = 10;
-            this.Junio.Text = "Junio";
-            this.Junio.UseVisualStyleBackColor = true;
-            this.Junio.MouseEnter += new System.EventHandler(this.Junio_MouseEnter);
+            this.tabPage11.Controls.Add(this.groupBox10);
+            this.tabPage11.Location = new System.Drawing.Point(4, 22);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage11.Size = new System.Drawing.Size(939, 376);
+            this.tabPage11.TabIndex = 10;
+            this.tabPage11.Text = "Junio";
+            this.tabPage11.UseVisualStyleBackColor = true;
             // 
             // groupBox10
             // 
             this.groupBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.groupBox10.Controls.Add(this.label114);
-            this.groupBox10.Controls.Add(this.cmbJunMatematicas);
-            this.groupBox10.Controls.Add(this.cmbJunIngles);
-            this.groupBox10.Controls.Add(this.cmbJunCiencias);
-            this.groupBox10.Controls.Add(this.cmbJunEntidad);
-            this.groupBox10.Controls.Add(this.cmbJunFormacion);
-            this.groupBox10.Controls.Add(this.cmbJunArtes);
-            this.groupBox10.Controls.Add(this.cmbJunSocio);
-            this.groupBox10.Controls.Add(this.cmbJunEdFisica);
-            this.groupBox10.Controls.Add(this.cmbJunInasis);
-            this.groupBox10.Controls.Add(this.cmbJunEspañol);
+            this.groupBox10.Controls.Add(this.comboBox81);
+            this.groupBox10.Controls.Add(this.comboBox82);
+            this.groupBox10.Controls.Add(this.comboBox83);
+            this.groupBox10.Controls.Add(this.comboBox84);
+            this.groupBox10.Controls.Add(this.comboBox85);
+            this.groupBox10.Controls.Add(this.comboBox86);
+            this.groupBox10.Controls.Add(this.comboBox87);
+            this.groupBox10.Controls.Add(this.comboBox88);
+            this.groupBox10.Controls.Add(this.comboBox89);
+            this.groupBox10.Controls.Add(this.comboBox90);
             this.groupBox10.Controls.Add(this.label96);
             this.groupBox10.Controls.Add(this.label112);
             this.groupBox10.Controls.Add(this.label113);
@@ -7733,10 +8106,10 @@
             this.label114.TabIndex = 106;
             this.label114.Text = "Ed. Socioemocional";
             // 
-            // cmbJunMatematicas
+            // comboBox81
             // 
-            this.cmbJunMatematicas.FormattingEnabled = true;
-            this.cmbJunMatematicas.Items.AddRange(new object[] {
+            this.comboBox81.FormattingEnabled = true;
+            this.comboBox81.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7788,15 +8161,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunMatematicas.Location = new System.Drawing.Point(192, 81);
-            this.cmbJunMatematicas.Name = "cmbJunMatematicas";
-            this.cmbJunMatematicas.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunMatematicas.TabIndex = 2;
+            this.comboBox81.Location = new System.Drawing.Point(192, 81);
+            this.comboBox81.Name = "comboBox81";
+            this.comboBox81.Size = new System.Drawing.Size(124, 33);
+            this.comboBox81.TabIndex = 105;
             // 
-            // cmbJunIngles
+            // comboBox82
             // 
-            this.cmbJunIngles.FormattingEnabled = true;
-            this.cmbJunIngles.Items.AddRange(new object[] {
+            this.comboBox82.FormattingEnabled = true;
+            this.comboBox82.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7848,15 +8221,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunIngles.Location = new System.Drawing.Point(192, 120);
-            this.cmbJunIngles.Name = "cmbJunIngles";
-            this.cmbJunIngles.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunIngles.TabIndex = 3;
+            this.comboBox82.Location = new System.Drawing.Point(192, 120);
+            this.comboBox82.Name = "comboBox82";
+            this.comboBox82.Size = new System.Drawing.Size(124, 33);
+            this.comboBox82.TabIndex = 104;
             // 
-            // cmbJunCiencias
+            // comboBox83
             // 
-            this.cmbJunCiencias.FormattingEnabled = true;
-            this.cmbJunCiencias.Items.AddRange(new object[] {
+            this.comboBox83.FormattingEnabled = true;
+            this.comboBox83.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7908,15 +8281,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunCiencias.Location = new System.Drawing.Point(192, 159);
-            this.cmbJunCiencias.Name = "cmbJunCiencias";
-            this.cmbJunCiencias.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunCiencias.TabIndex = 4;
+            this.comboBox83.Location = new System.Drawing.Point(192, 159);
+            this.comboBox83.Name = "comboBox83";
+            this.comboBox83.Size = new System.Drawing.Size(124, 33);
+            this.comboBox83.TabIndex = 103;
             // 
-            // cmbJunEntidad
+            // comboBox84
             // 
-            this.cmbJunEntidad.FormattingEnabled = true;
-            this.cmbJunEntidad.Items.AddRange(new object[] {
+            this.comboBox84.FormattingEnabled = true;
+            this.comboBox84.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -7968,15 +8341,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunEntidad.Location = new System.Drawing.Point(192, 198);
-            this.cmbJunEntidad.Name = "cmbJunEntidad";
-            this.cmbJunEntidad.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunEntidad.TabIndex = 5;
+            this.comboBox84.Location = new System.Drawing.Point(192, 198);
+            this.comboBox84.Name = "comboBox84";
+            this.comboBox84.Size = new System.Drawing.Size(124, 33);
+            this.comboBox84.TabIndex = 102;
             // 
-            // cmbJunFormacion
+            // comboBox85
             // 
-            this.cmbJunFormacion.FormattingEnabled = true;
-            this.cmbJunFormacion.Items.AddRange(new object[] {
+            this.comboBox85.FormattingEnabled = true;
+            this.comboBox85.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -8028,15 +8401,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunFormacion.Location = new System.Drawing.Point(563, 42);
-            this.cmbJunFormacion.Name = "cmbJunFormacion";
-            this.cmbJunFormacion.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunFormacion.TabIndex = 6;
+            this.comboBox85.Location = new System.Drawing.Point(563, 42);
+            this.comboBox85.Name = "comboBox85";
+            this.comboBox85.Size = new System.Drawing.Size(124, 33);
+            this.comboBox85.TabIndex = 101;
             // 
-            // cmbJunArtes
+            // comboBox86
             // 
-            this.cmbJunArtes.FormattingEnabled = true;
-            this.cmbJunArtes.Items.AddRange(new object[] {
+            this.comboBox86.FormattingEnabled = true;
+            this.comboBox86.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -8088,15 +8461,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunArtes.Location = new System.Drawing.Point(563, 81);
-            this.cmbJunArtes.Name = "cmbJunArtes";
-            this.cmbJunArtes.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunArtes.TabIndex = 7;
+            this.comboBox86.Location = new System.Drawing.Point(563, 81);
+            this.comboBox86.Name = "comboBox86";
+            this.comboBox86.Size = new System.Drawing.Size(124, 33);
+            this.comboBox86.TabIndex = 100;
             // 
-            // cmbJunSocio
+            // comboBox87
             // 
-            this.cmbJunSocio.FormattingEnabled = true;
-            this.cmbJunSocio.Items.AddRange(new object[] {
+            this.comboBox87.FormattingEnabled = true;
+            this.comboBox87.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -8148,15 +8521,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunSocio.Location = new System.Drawing.Point(563, 119);
-            this.cmbJunSocio.Name = "cmbJunSocio";
-            this.cmbJunSocio.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunSocio.TabIndex = 8;
+            this.comboBox87.Location = new System.Drawing.Point(563, 119);
+            this.comboBox87.Name = "comboBox87";
+            this.comboBox87.Size = new System.Drawing.Size(124, 33);
+            this.comboBox87.TabIndex = 99;
             // 
-            // cmbJunEdFisica
+            // comboBox88
             // 
-            this.cmbJunEdFisica.FormattingEnabled = true;
-            this.cmbJunEdFisica.Items.AddRange(new object[] {
+            this.comboBox88.FormattingEnabled = true;
+            this.comboBox88.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -8208,35 +8581,15 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunEdFisica.Location = new System.Drawing.Point(563, 159);
-            this.cmbJunEdFisica.Name = "cmbJunEdFisica";
-            this.cmbJunEdFisica.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunEdFisica.TabIndex = 9;
+            this.comboBox88.Location = new System.Drawing.Point(563, 159);
+            this.comboBox88.Name = "comboBox88";
+            this.comboBox88.Size = new System.Drawing.Size(124, 33);
+            this.comboBox88.TabIndex = 98;
             // 
-            // cmbJunInasis
+            // comboBox89
             // 
-            this.cmbJunInasis.FormattingEnabled = true;
-            this.cmbJunInasis.Items.AddRange(new object[] {
-            "0",
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.cmbJunInasis.Location = new System.Drawing.Point(563, 198);
-            this.cmbJunInasis.Name = "cmbJunInasis";
-            this.cmbJunInasis.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunInasis.TabIndex = 10;
-            // 
-            // cmbJunEspañol
-            // 
-            this.cmbJunEspañol.FormattingEnabled = true;
-            this.cmbJunEspañol.Items.AddRange(new object[] {
+            this.comboBox89.FormattingEnabled = true;
+            this.comboBox89.Items.AddRange(new object[] {
             "10",
             "9.9",
             "9.8",
@@ -8288,10 +8641,70 @@
             "5.2",
             "5.1",
             "5"});
-            this.cmbJunEspañol.Location = new System.Drawing.Point(192, 41);
-            this.cmbJunEspañol.Name = "cmbJunEspañol";
-            this.cmbJunEspañol.Size = new System.Drawing.Size(124, 33);
-            this.cmbJunEspañol.TabIndex = 1;
+            this.comboBox89.Location = new System.Drawing.Point(563, 198);
+            this.comboBox89.Name = "comboBox89";
+            this.comboBox89.Size = new System.Drawing.Size(124, 33);
+            this.comboBox89.TabIndex = 97;
+            // 
+            // comboBox90
+            // 
+            this.comboBox90.FormattingEnabled = true;
+            this.comboBox90.Items.AddRange(new object[] {
+            "10",
+            "9.9",
+            "9.8",
+            "9.7",
+            "9.6",
+            "9.5",
+            "9.4",
+            "9.3",
+            "9.2",
+            "9.1",
+            "9",
+            "8.9",
+            "8.8",
+            "8.7",
+            "8.6",
+            "8.5",
+            "8.4",
+            "8.3",
+            "8.2",
+            "8.1",
+            "8",
+            "7.9",
+            "7.8",
+            "7.7",
+            "7.6",
+            "7.5",
+            "7.4",
+            "7.3",
+            "7.2",
+            "7.1",
+            "7",
+            "6.9",
+            "6.8",
+            "6.7",
+            "6.6",
+            "6.5",
+            "6.4",
+            "6.3",
+            "6.2",
+            "6.1",
+            "6",
+            "5.9",
+            "5.8",
+            "5.7",
+            "5.6",
+            "5.5",
+            "5.4",
+            "5.3",
+            "5.2",
+            "5.1",
+            "5"});
+            this.comboBox90.Location = new System.Drawing.Point(192, 41);
+            this.comboBox90.Name = "comboBox90";
+            this.comboBox90.Size = new System.Drawing.Size(124, 33);
+            this.comboBox90.TabIndex = 75;
             // 
             // label96
             // 
@@ -8448,37 +8861,37 @@
             this.Text = "Calificaciones";
             this.Load += new System.EventHandler(this.Calificaciones3_Load);
             this.materialTabControl1.ResumeLayout(false);
-            this.Diagnostico.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
-            this.Septiembre.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.Octubre.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.Noviembre.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.Diciembre.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.Enero.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.Febrero.ResumeLayout(false);
+            this.tabPage7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
-            this.Marzo.ResumeLayout(false);
+            this.tabPage8.ResumeLayout(false);
             this.groupBox7.ResumeLayout(false);
             this.groupBox7.PerformLayout();
-            this.Abril.ResumeLayout(false);
+            this.tabPage9.ResumeLayout(false);
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.Mayo.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
             this.groupBox8.ResumeLayout(false);
             this.groupBox8.PerformLayout();
-            this.Junio.ResumeLayout(false);
+            this.tabPage11.ResumeLayout(false);
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.ResumeLayout(false);
@@ -8492,19 +8905,19 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
-        private System.Windows.Forms.TabPage Diagnostico;
-        private System.Windows.Forms.TabPage Septiembre;
-        private System.Windows.Forms.TabPage Octubre;
-        private System.Windows.Forms.TabPage Noviembre;
-        private System.Windows.Forms.TabPage Diciembre;
-        private System.Windows.Forms.TabPage Enero;
-        private System.Windows.Forms.TabPage Febrero;
-        private System.Windows.Forms.TabPage Marzo;
-        private System.Windows.Forms.TabPage Abril;
-        private System.Windows.Forms.TabPage Mayo;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.TabPage tabPage7;
+        private System.Windows.Forms.TabPage tabPage8;
+        private System.Windows.Forms.TabPage tabPage9;
+        private System.Windows.Forms.TabPage tabPage10;
         private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox cmbMayEspañol;
+        private System.Windows.Forms.ComboBox comboBox100;
         private System.Windows.Forms.Label label85;
         private System.Windows.Forms.Label label86;
         private System.Windows.Forms.Label label87;
@@ -8515,18 +8928,18 @@
         private System.Windows.Forms.Label label93;
         private System.Windows.Forms.Label label94;
         private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.TabPage Junio;
+        private System.Windows.Forms.TabPage tabPage11;
         private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.ComboBox cmbDiagMatematicas;
-        private System.Windows.Forms.ComboBox cmbDiagIngles;
-        private System.Windows.Forms.ComboBox cmbDiagCiencias;
-        private System.Windows.Forms.ComboBox cmbDiagEntidad;
-        private System.Windows.Forms.ComboBox cmbDiagFormacion;
-        private System.Windows.Forms.ComboBox cmbDiagArtes;
-        private System.Windows.Forms.ComboBox cmbDiagSocio;
-        private System.Windows.Forms.ComboBox cmbDiagEdFisica;
-        private System.Windows.Forms.ComboBox cmbDiagInasis;
-        private System.Windows.Forms.ComboBox cmbDiagEspañol;
+        private System.Windows.Forms.ComboBox comboBox91;
+        private System.Windows.Forms.ComboBox comboBox92;
+        private System.Windows.Forms.ComboBox comboBox93;
+        private System.Windows.Forms.ComboBox comboBox94;
+        private System.Windows.Forms.ComboBox comboBox95;
+        private System.Windows.Forms.ComboBox comboBox106;
+        private System.Windows.Forms.ComboBox comboBox107;
+        private System.Windows.Forms.ComboBox comboBox108;
+        private System.Windows.Forms.ComboBox comboBox109;
+        private System.Windows.Forms.ComboBox comboBox110;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -8539,16 +8952,16 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cmbSepMatematicas;
-        private System.Windows.Forms.ComboBox cmbSepIngles;
-        private System.Windows.Forms.ComboBox cmbSepCiencias;
-        private System.Windows.Forms.ComboBox cmbSepEntidad;
-        private System.Windows.Forms.ComboBox cmbSepFormacion;
-        private System.Windows.Forms.ComboBox cmbSepArtes;
-        private System.Windows.Forms.ComboBox cmbSepSocio;
-        private System.Windows.Forms.ComboBox cmbSepEdFisica;
-        private System.Windows.Forms.ComboBox cmbSepInasis;
-        private System.Windows.Forms.ComboBox cmbSepEspañol;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox9;
+        private System.Windows.Forms.ComboBox comboBox10;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
@@ -8560,16 +8973,16 @@
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox cmbOctMatematicas;
-        private System.Windows.Forms.ComboBox cmbOctIngles;
-        private System.Windows.Forms.ComboBox cmbOctCiencias;
-        private System.Windows.Forms.ComboBox cmbOctEntidad;
-        private System.Windows.Forms.ComboBox cmbOctFormacion;
-        private System.Windows.Forms.ComboBox cmbOctArtes;
-        private System.Windows.Forms.ComboBox cmbOctSocio;
-        private System.Windows.Forms.ComboBox cmbOctEdFisica;
-        private System.Windows.Forms.ComboBox cmbOctInasis;
-        private System.Windows.Forms.ComboBox cmbOctEspañol;
+        private System.Windows.Forms.ComboBox comboBox11;
+        private System.Windows.Forms.ComboBox comboBox12;
+        private System.Windows.Forms.ComboBox comboBox13;
+        private System.Windows.Forms.ComboBox comboBox14;
+        private System.Windows.Forms.ComboBox comboBox15;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.ComboBox comboBox17;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox20;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
@@ -8581,16 +8994,16 @@
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cmbNovMatematicas;
-        private System.Windows.Forms.ComboBox cmbNovIngles;
-        private System.Windows.Forms.ComboBox cmbNovCiencias;
-        private System.Windows.Forms.ComboBox cmbNovEntidad;
-        private System.Windows.Forms.ComboBox cmbNovFormacion;
-        private System.Windows.Forms.ComboBox cmbNovArtes;
-        private System.Windows.Forms.ComboBox cmbNovSocio;
-        private System.Windows.Forms.ComboBox cmbNovEdFisica;
-        private System.Windows.Forms.ComboBox cmbNovInasis;
-        private System.Windows.Forms.ComboBox cmbNovEspañol;
+        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox comboBox22;
+        private System.Windows.Forms.ComboBox comboBox23;
+        private System.Windows.Forms.ComboBox comboBox24;
+        private System.Windows.Forms.ComboBox comboBox25;
+        private System.Windows.Forms.ComboBox comboBox26;
+        private System.Windows.Forms.ComboBox comboBox27;
+        private System.Windows.Forms.ComboBox comboBox28;
+        private System.Windows.Forms.ComboBox comboBox29;
+        private System.Windows.Forms.ComboBox comboBox30;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label36;
@@ -8602,16 +9015,16 @@
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.ComboBox cmbDicMatematicas;
-        private System.Windows.Forms.ComboBox cmbDicIngles;
-        private System.Windows.Forms.ComboBox cmbDicCiencias;
-        private System.Windows.Forms.ComboBox cmbDicEntidad;
-        private System.Windows.Forms.ComboBox cmbDicFormacion;
-        private System.Windows.Forms.ComboBox cmbDicArtes;
-        private System.Windows.Forms.ComboBox cmbDicSocio;
-        private System.Windows.Forms.ComboBox cmbDicEdFisica;
-        private System.Windows.Forms.ComboBox cmbDicInasis;
-        private System.Windows.Forms.ComboBox cmbDicEspañol;
+        private System.Windows.Forms.ComboBox comboBox31;
+        private System.Windows.Forms.ComboBox comboBox32;
+        private System.Windows.Forms.ComboBox comboBox33;
+        private System.Windows.Forms.ComboBox comboBox34;
+        private System.Windows.Forms.ComboBox comboBox35;
+        private System.Windows.Forms.ComboBox comboBox36;
+        private System.Windows.Forms.ComboBox comboBox37;
+        private System.Windows.Forms.ComboBox comboBox38;
+        private System.Windows.Forms.ComboBox comboBox39;
+        private System.Windows.Forms.ComboBox comboBox40;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label47;
@@ -8623,16 +9036,16 @@
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.ComboBox cmbEneMatematicas;
-        private System.Windows.Forms.ComboBox cmbEneIngles;
-        private System.Windows.Forms.ComboBox cmbEneCiencias;
-        private System.Windows.Forms.ComboBox cmbEneEntidad;
-        private System.Windows.Forms.ComboBox cmbEneFormacion;
-        private System.Windows.Forms.ComboBox cmbEneArtes;
-        private System.Windows.Forms.ComboBox cmbEneSocio;
-        private System.Windows.Forms.ComboBox cmbEneEdFisica;
-        private System.Windows.Forms.ComboBox cmbEneInasis;
-        private System.Windows.Forms.ComboBox cmbEneEspañol;
+        private System.Windows.Forms.ComboBox comboBox41;
+        private System.Windows.Forms.ComboBox comboBox42;
+        private System.Windows.Forms.ComboBox comboBox43;
+        private System.Windows.Forms.ComboBox comboBox44;
+        private System.Windows.Forms.ComboBox comboBox45;
+        private System.Windows.Forms.ComboBox comboBox46;
+        private System.Windows.Forms.ComboBox comboBox47;
+        private System.Windows.Forms.ComboBox comboBox48;
+        private System.Windows.Forms.ComboBox comboBox49;
+        private System.Windows.Forms.ComboBox comboBox50;
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.Label label58;
@@ -8644,16 +9057,16 @@
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.ComboBox cmbFebMatematicas;
-        private System.Windows.Forms.ComboBox cmbFebIngles;
-        private System.Windows.Forms.ComboBox cmbFebCiencias;
-        private System.Windows.Forms.ComboBox cmbFebEntidad;
-        private System.Windows.Forms.ComboBox cmbFebFormacion;
-        private System.Windows.Forms.ComboBox cmbFebArtes;
-        private System.Windows.Forms.ComboBox cmbFebSocio;
-        private System.Windows.Forms.ComboBox cmbFebEdFisica;
-        private System.Windows.Forms.ComboBox cmbFebInasis;
-        private System.Windows.Forms.ComboBox cmbFebEspañol;
+        private System.Windows.Forms.ComboBox comboBox51;
+        private System.Windows.Forms.ComboBox comboBox52;
+        private System.Windows.Forms.ComboBox comboBox53;
+        private System.Windows.Forms.ComboBox comboBox54;
+        private System.Windows.Forms.ComboBox comboBox55;
+        private System.Windows.Forms.ComboBox comboBox56;
+        private System.Windows.Forms.ComboBox comboBox57;
+        private System.Windows.Forms.ComboBox comboBox58;
+        private System.Windows.Forms.ComboBox comboBox59;
+        private System.Windows.Forms.ComboBox comboBox60;
         private System.Windows.Forms.Label label67;
         private System.Windows.Forms.Label label68;
         private System.Windows.Forms.Label label69;
@@ -8665,16 +9078,16 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.ComboBox cmbMarMatematicas;
-        private System.Windows.Forms.ComboBox cmbMarIngles;
-        private System.Windows.Forms.ComboBox cmbMarCiencias;
-        private System.Windows.Forms.ComboBox cmbMarEntidad;
-        private System.Windows.Forms.ComboBox cmbMarFormacion;
-        private System.Windows.Forms.ComboBox cmbMarArtes;
-        private System.Windows.Forms.ComboBox cmbMarSocio;
-        private System.Windows.Forms.ComboBox cmbMarEdFisica;
-        private System.Windows.Forms.ComboBox cmbMarInasis;
-        private System.Windows.Forms.ComboBox cmbMarEspañol;
+        private System.Windows.Forms.ComboBox comboBox61;
+        private System.Windows.Forms.ComboBox comboBox62;
+        private System.Windows.Forms.ComboBox comboBox63;
+        private System.Windows.Forms.ComboBox comboBox64;
+        private System.Windows.Forms.ComboBox comboBox65;
+        private System.Windows.Forms.ComboBox comboBox66;
+        private System.Windows.Forms.ComboBox comboBox67;
+        private System.Windows.Forms.ComboBox comboBox68;
+        private System.Windows.Forms.ComboBox comboBox69;
+        private System.Windows.Forms.ComboBox comboBox70;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.Label label80;
@@ -8686,16 +9099,16 @@
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.ComboBox cmbAbrMatematicas;
-        private System.Windows.Forms.ComboBox cmbAbrIngles;
-        private System.Windows.Forms.ComboBox cmbAbrCiencias;
-        private System.Windows.Forms.ComboBox cmbAbrEntidad;
-        private System.Windows.Forms.ComboBox cmbAbrFormacion;
-        private System.Windows.Forms.ComboBox cmbAbrArtes;
-        private System.Windows.Forms.ComboBox cmbAbrSocio;
-        private System.Windows.Forms.ComboBox cmbAbrEdFisica;
-        private System.Windows.Forms.ComboBox cmbAbrInasis;
-        private System.Windows.Forms.ComboBox cmbAbrEspañol;
+        private System.Windows.Forms.ComboBox comboBox71;
+        private System.Windows.Forms.ComboBox comboBox72;
+        private System.Windows.Forms.ComboBox comboBox73;
+        private System.Windows.Forms.ComboBox comboBox74;
+        private System.Windows.Forms.ComboBox comboBox75;
+        private System.Windows.Forms.ComboBox comboBox76;
+        private System.Windows.Forms.ComboBox comboBox77;
+        private System.Windows.Forms.ComboBox comboBox78;
+        private System.Windows.Forms.ComboBox comboBox79;
+        private System.Windows.Forms.ComboBox comboBox80;
         private System.Windows.Forms.Label label101;
         private System.Windows.Forms.Label label102;
         private System.Windows.Forms.Label label103;
@@ -8706,26 +9119,26 @@
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.ComboBox cmbMayMatematicas;
-        private System.Windows.Forms.ComboBox cmbMayIngles;
-        private System.Windows.Forms.ComboBox cmbMayCiencias;
-        private System.Windows.Forms.ComboBox cmbMayEntidad;
-        private System.Windows.Forms.ComboBox cmbMayFormacion;
-        private System.Windows.Forms.ComboBox cmbMayArtes;
-        private System.Windows.Forms.ComboBox cmbMaySocio;
-        private System.Windows.Forms.ComboBox cmbMayEdFisica;
-        private System.Windows.Forms.ComboBox cmbMayInasis;
+        private System.Windows.Forms.ComboBox comboBox105;
+        private System.Windows.Forms.ComboBox comboBox104;
+        private System.Windows.Forms.ComboBox comboBox103;
+        private System.Windows.Forms.ComboBox comboBox102;
+        private System.Windows.Forms.ComboBox comboBox101;
+        private System.Windows.Forms.ComboBox comboBox99;
+        private System.Windows.Forms.ComboBox comboBox98;
+        private System.Windows.Forms.ComboBox comboBox97;
+        private System.Windows.Forms.ComboBox comboBox96;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.ComboBox cmbJunMatematicas;
-        private System.Windows.Forms.ComboBox cmbJunIngles;
-        private System.Windows.Forms.ComboBox cmbJunCiencias;
-        private System.Windows.Forms.ComboBox cmbJunEntidad;
-        private System.Windows.Forms.ComboBox cmbJunFormacion;
-        private System.Windows.Forms.ComboBox cmbJunArtes;
-        private System.Windows.Forms.ComboBox cmbJunSocio;
-        private System.Windows.Forms.ComboBox cmbJunEdFisica;
-        private System.Windows.Forms.ComboBox cmbJunInasis;
-        private System.Windows.Forms.ComboBox cmbJunEspañol;
+        private System.Windows.Forms.ComboBox comboBox81;
+        private System.Windows.Forms.ComboBox comboBox82;
+        private System.Windows.Forms.ComboBox comboBox83;
+        private System.Windows.Forms.ComboBox comboBox84;
+        private System.Windows.Forms.ComboBox comboBox85;
+        private System.Windows.Forms.ComboBox comboBox86;
+        private System.Windows.Forms.ComboBox comboBox87;
+        private System.Windows.Forms.ComboBox comboBox88;
+        private System.Windows.Forms.ComboBox comboBox89;
+        private System.Windows.Forms.ComboBox comboBox90;
         private System.Windows.Forms.Label label96;
         private System.Windows.Forms.Label label112;
         private System.Windows.Forms.Label label113;
