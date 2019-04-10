@@ -5692,7 +5692,8 @@ namespace Control_Escolar
                         {
                             if (cmbDiagIna.Enabled == false)
                             {
-                                if (ValidaCampos(groupBox11) == true)
+                                if (
+                                    ampos(groupBox11) == true)
                                 {
                                     MessageBox.Show("Error al Guardar los Datos");
                                 }
@@ -6666,7 +6667,7 @@ namespace Control_Escolar
                 { /*cmbSepEspañol.Enabled = false;*/
 
 
-                    cmbSepEspañol.ForeColor = System.Drawing.Color.Red;
+                    cmbSepEspañol.Enabled = false;
 
                 }
                 if (cmbSepMate.Text != "")
