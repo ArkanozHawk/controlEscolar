@@ -32,6 +32,8 @@
             this.btnIrBoletas = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialRaisedButton1 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
+            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Diagnostico = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
@@ -286,8 +288,6 @@
             this.label119 = new System.Windows.Forms.Label();
             this.label120 = new System.Windows.Forms.Label();
             this.label121 = new System.Windows.Forms.Label();
-            this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
-            this.materialRaisedButton2 = new MaterialSkin.Controls.MaterialRaisedButton();
             this.materialTabControl1.SuspendLayout();
             this.Diagnostico.SuspendLayout();
             this.groupBox11.SuspendLayout();
@@ -364,7 +364,29 @@
             this.materialRaisedButton1.TabIndex = 91;
             this.materialRaisedButton1.Text = "Guardar Calificaciones";
             this.materialRaisedButton1.UseVisualStyleBackColor = true;
-            this.materialRaisedButton1.Click += new System.EventHandler(this.materialRaisedButton1_Click);
+            // 
+            // materialRaisedButton2
+            // 
+            this.materialRaisedButton2.Depth = 0;
+            this.materialRaisedButton2.Location = new System.Drawing.Point(820, 558);
+            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialRaisedButton2.Name = "materialRaisedButton2";
+            this.materialRaisedButton2.Primary = true;
+            this.materialRaisedButton2.Size = new System.Drawing.Size(173, 56);
+            this.materialRaisedButton2.TabIndex = 95;
+            this.materialRaisedButton2.Text = "Generar Boleta Externa";
+            this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            // 
+            // materialTabSelector1
+            // 
+            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
+            this.materialTabSelector1.Depth = 0;
+            this.materialTabSelector1.Location = new System.Drawing.Point(-3, 64);
+            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialTabSelector1.Name = "materialTabSelector1";
+            this.materialTabSelector1.Size = new System.Drawing.Size(1051, 48);
+            this.materialTabSelector1.TabIndex = 97;
+            this.materialTabSelector1.Text = "materialTabSelector1";
             // 
             // materialTabControl1
             // 
@@ -380,13 +402,12 @@
             this.materialTabControl1.Controls.Add(this.Mayo);
             this.materialTabControl1.Controls.Add(this.Junio);
             this.materialTabControl1.Depth = 0;
-            this.materialTabControl1.Location = new System.Drawing.Point(66, 134);
+            this.materialTabControl1.Location = new System.Drawing.Point(70, 134);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
             this.materialTabControl1.Size = new System.Drawing.Size(947, 402);
-            this.materialTabControl1.TabIndex = 93;
-            this.materialTabControl1.MouseEnter += new System.EventHandler(this.Marzo_MouseEnter);
+            this.materialTabControl1.TabIndex = 96;
             // 
             // Diagnostico
             // 
@@ -398,7 +419,6 @@
             this.Diagnostico.TabIndex = 0;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
-            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox11
             // 
@@ -1126,7 +1146,6 @@
             this.Septiembre.TabIndex = 1;
             this.Septiembre.Text = "Septiem.";
             this.Septiembre.UseVisualStyleBackColor = true;
-            this.Septiembre.MouseEnter += new System.EventHandler(this.Septiembre_MouseEnter);
             // 
             // groupBox1
             // 
@@ -1853,7 +1872,6 @@
             this.Octubre.TabIndex = 2;
             this.Octubre.Text = "Octubre";
             this.Octubre.UseVisualStyleBackColor = true;
-            this.Octubre.MouseEnter += new System.EventHandler(this.Octubre_MouseEnter);
             // 
             // groupBox2
             // 
@@ -2580,7 +2598,6 @@
             this.Noviembre.TabIndex = 3;
             this.Noviembre.Text = "Noviem.";
             this.Noviembre.UseVisualStyleBackColor = true;
-            this.Noviembre.MouseEnter += new System.EventHandler(this.Noviembre_MouseEnter);
             // 
             // groupBox3
             // 
@@ -3307,7 +3324,6 @@
             this.Diciembre.TabIndex = 4;
             this.Diciembre.Text = "Diciembre";
             this.Diciembre.UseVisualStyleBackColor = true;
-            this.Diciembre.MouseEnter += new System.EventHandler(this.Diciembre_MouseEnter);
             // 
             // groupBox4
             // 
@@ -4034,7 +4050,6 @@
             this.Enero.TabIndex = 5;
             this.Enero.Text = "Enero";
             this.Enero.UseVisualStyleBackColor = true;
-            this.Enero.MouseEnter += new System.EventHandler(this.Enero_MouseEnter);
             // 
             // groupBox5
             // 
@@ -4761,7 +4776,6 @@
             this.Febrero.TabIndex = 6;
             this.Febrero.Text = "Febrero";
             this.Febrero.UseVisualStyleBackColor = true;
-            this.Febrero.MouseEnter += new System.EventHandler(this.Febrero_MouseEnter);
             // 
             // groupBox6
             // 
@@ -6214,7 +6228,6 @@
             this.Abril.TabIndex = 8;
             this.Abril.Text = "Abril";
             this.Abril.UseVisualStyleBackColor = true;
-            this.Abril.MouseEnter += new System.EventHandler(this.Abril_MouseEnter);
             // 
             // groupBox9
             // 
@@ -6941,7 +6954,6 @@
             this.Mayo.TabIndex = 9;
             this.Mayo.Text = "Mayo";
             this.Mayo.UseVisualStyleBackColor = true;
-            this.Mayo.MouseEnter += new System.EventHandler(this.Mayo_MouseEnter);
             // 
             // groupBox8
             // 
@@ -7668,7 +7680,6 @@
             this.Junio.TabIndex = 10;
             this.Junio.Text = "Junio";
             this.Junio.UseVisualStyleBackColor = true;
-            this.Junio.MouseEnter += new System.EventHandler(this.Junio_MouseEnter);
             // 
             // groupBox10
             // 
@@ -8385,37 +8396,14 @@
             this.label121.TabIndex = 44;
             this.label121.Text = "Calificaciones";
             // 
-            // materialTabSelector1
-            // 
-            this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
-            this.materialTabSelector1.Depth = 0;
-            this.materialTabSelector1.Location = new System.Drawing.Point(-7, 64);
-            this.materialTabSelector1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialTabSelector1.Name = "materialTabSelector1";
-            this.materialTabSelector1.Size = new System.Drawing.Size(1051, 48);
-            this.materialTabSelector1.TabIndex = 94;
-            this.materialTabSelector1.Text = "materialTabSelector1";
-            // 
-            // materialRaisedButton2
-            // 
-            this.materialRaisedButton2.Depth = 0;
-            this.materialRaisedButton2.Location = new System.Drawing.Point(820, 558);
-            this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialRaisedButton2.Name = "materialRaisedButton2";
-            this.materialRaisedButton2.Primary = true;
-            this.materialRaisedButton2.Size = new System.Drawing.Size(173, 56);
-            this.materialRaisedButton2.TabIndex = 95;
-            this.materialRaisedButton2.Text = "Generar Boleta Externa";
-            this.materialRaisedButton2.UseVisualStyleBackColor = true;
-            // 
             // Calificaciones3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1044, 640);
-            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
+            this.Controls.Add(this.materialRaisedButton2);
             this.Controls.Add(this.btnIrBoletas);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.materialRaisedButton1);
@@ -8466,31 +8454,10 @@
         private MaterialSkin.Controls.MaterialRaisedButton btnIrBoletas;
         private MaterialSkin.Controls.MaterialRaisedButton btnPrincipal;
         private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton1;
+        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
+        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage Diagnostico;
-        private System.Windows.Forms.TabPage Septiembre;
-        private System.Windows.Forms.TabPage Octubre;
-        private System.Windows.Forms.TabPage Noviembre;
-        private System.Windows.Forms.TabPage Diciembre;
-        private System.Windows.Forms.TabPage Enero;
-        private System.Windows.Forms.TabPage Febrero;
-        private System.Windows.Forms.TabPage Marzo;
-        private System.Windows.Forms.TabPage Abril;
-        private System.Windows.Forms.TabPage Mayo;
-        private MaterialSkin.Controls.MaterialTabSelector materialTabSelector1;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.ComboBox cmbMayEspañol;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.TabPage Junio;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.ComboBox cmbDiagMatematicas;
         private System.Windows.Forms.ComboBox cmbDiagIngles;
@@ -8513,7 +8480,9 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TabPage Septiembre;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.ComboBox cmbSepMatematicas;
         private System.Windows.Forms.ComboBox cmbSepIngles;
         private System.Windows.Forms.ComboBox cmbSepCiencias;
@@ -8534,7 +8503,9 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TabPage Octubre;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ComboBox cmbOctMatematicas;
         private System.Windows.Forms.ComboBox cmbOctIngles;
         private System.Windows.Forms.ComboBox cmbOctCiencias;
@@ -8555,7 +8526,9 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TabPage Noviembre;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.ComboBox cmbNovMatematicas;
         private System.Windows.Forms.ComboBox cmbNovIngles;
         private System.Windows.Forms.ComboBox cmbNovCiencias;
@@ -8576,7 +8549,9 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.TabPage Diciembre;
         private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.ComboBox cmbDicMatematicas;
         private System.Windows.Forms.ComboBox cmbDicIngles;
         private System.Windows.Forms.ComboBox cmbDicCiencias;
@@ -8597,7 +8572,9 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.TabPage Enero;
         private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.Label label59;
         private System.Windows.Forms.ComboBox cmbEneMatematicas;
         private System.Windows.Forms.ComboBox cmbEneIngles;
         private System.Windows.Forms.ComboBox cmbEneCiencias;
@@ -8618,7 +8595,9 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.TabPage Febrero;
         private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Label label70;
         private System.Windows.Forms.ComboBox cmbFebMatematicas;
         private System.Windows.Forms.ComboBox cmbFebIngles;
         private System.Windows.Forms.ComboBox cmbFebCiencias;
@@ -8639,7 +8618,9 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.TabPage Marzo;
         private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.Label label81;
         private System.Windows.Forms.ComboBox cmbMarMatematicas;
         private System.Windows.Forms.ComboBox cmbMarIngles;
         private System.Windows.Forms.ComboBox cmbMarCiencias;
@@ -8660,7 +8641,9 @@
         private System.Windows.Forms.Label label98;
         private System.Windows.Forms.Label label99;
         private System.Windows.Forms.Label label100;
+        private System.Windows.Forms.TabPage Abril;
         private System.Windows.Forms.GroupBox groupBox9;
+        private System.Windows.Forms.Label label104;
         private System.Windows.Forms.ComboBox cmbAbrMatematicas;
         private System.Windows.Forms.ComboBox cmbAbrIngles;
         private System.Windows.Forms.ComboBox cmbAbrCiencias;
@@ -8681,6 +8664,9 @@
         private System.Windows.Forms.Label label109;
         private System.Windows.Forms.Label label110;
         private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.TabPage Mayo;
+        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.Label label88;
         private System.Windows.Forms.ComboBox cmbMayMatematicas;
         private System.Windows.Forms.ComboBox cmbMayIngles;
         private System.Windows.Forms.ComboBox cmbMayCiencias;
@@ -8690,7 +8676,20 @@
         private System.Windows.Forms.ComboBox cmbMaySocio;
         private System.Windows.Forms.ComboBox cmbMayEdFisica;
         private System.Windows.Forms.ComboBox cmbMayInasis;
+        private System.Windows.Forms.ComboBox cmbMayEspañol;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.Label label93;
+        private System.Windows.Forms.Label label94;
+        private System.Windows.Forms.Label label95;
+        private System.Windows.Forms.TabPage Junio;
         private System.Windows.Forms.GroupBox groupBox10;
+        private System.Windows.Forms.Label label114;
         private System.Windows.Forms.ComboBox cmbJunMatematicas;
         private System.Windows.Forms.ComboBox cmbJunIngles;
         private System.Windows.Forms.ComboBox cmbJunCiencias;
@@ -8711,16 +8710,5 @@
         private System.Windows.Forms.Label label119;
         private System.Windows.Forms.Label label120;
         private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label114;
-        private MaterialSkin.Controls.MaterialRaisedButton materialRaisedButton2;
     }
 }
