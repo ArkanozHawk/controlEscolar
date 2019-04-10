@@ -13,7 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
-
+//CAMBIOS EVERYWHERE!!!
 namespace Control_Escolar
 {
     public partial class Calificaciones456 : MaterialForm
@@ -28,6 +28,17 @@ namespace Control_Escolar
         {
             InitializeComponent();
             validaCalifMen();
+            cambiacolor(groupBox1);
+            cambiacolor(groupBox2);
+            cambiacolor(groupBox3);
+            cambiacolor(groupBox4);
+            cambiacolor(groupBox5);
+            cambiacolor(groupBox6);
+            cambiacolor(groupBox7);
+            cambiacolor(groupBox8);
+            cambiacolor(groupBox9);
+            cambiacolor(groupBox10);
+            cambiacolor(BoxGenero);
         }
 
         public static void ThreadProc()
@@ -3844,48 +3855,808 @@ namespace Control_Escolar
 
             int idalumno = Convert.ToInt32(myreader["idAlumno"]);
 
-            
+
+
             string query2 = "SELECT * FROM `calificaciones` WHERE `idAlumno` = " + idalumno + "";
             MessageBox.Show(query2);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
+
             com = new MySqlCommand(query2, conn);
 
             MySqlDataReader myreader2 = com.ExecuteReader();
 
-            myreader2.Read();
+            string[] Calificaciones = new string[300];
+            int i = 0;
+            if (myreader2.HasRows)
+            {
+                while (myreader2.Read())
+                {
+                    Calificaciones[i] = myreader2["CalificacionMen"].ToString();
+                    i++;
+                }
+            }
+            //myreader2.Read();
             try
             {
-                string sept_Esp = Convert.ToString(myreader2["CalificacionMen"]);
-                string sept_Mat = Convert.ToString(myreader2["CalificacionMen"]);
-                string sept_Ing = Convert.ToString(myreader2["CalificacionMen"]);
-                string sept_CiNat = Convert.ToString(myreader2["CalificacionMen"]);
+                // DIAGNOSTICO
+                string diag_Esp = Calificaciones[0];
+                string diag_Mat = Calificaciones[1];
+                string diag_Ing = Calificaciones[2];
+                string diag_CiNat = Calificaciones[3];
+                string diag_Geo = Calificaciones[4];
+                string diag_Hist = Calificaciones[5];
+                string diag_FCE = Calificaciones[6];
+                string diag_Artes = Calificaciones[7];
+                string diag_Socio = Calificaciones[8];
+                string diag_EdFis = Calificaciones[9];
+                string diag_Inasis = Calificaciones[10];
+                // SEPTIEMBRE
+                string sept_Esp = Calificaciones[11];
+                string sept_Mat = Calificaciones[12];
+                string sept_Ing = Calificaciones[13];
+                string sept_CiNat = Calificaciones[14];
+                string sept_Geo = Calificaciones[15];
+                string sept_Hist = Calificaciones[16];
+                string sept_FCE = Calificaciones[17];
+                string sept_Artes = Calificaciones[18];
+                string sept_Socio = Calificaciones[19];
+                string sept_EdFis = Calificaciones[20];
+                string sept_Inasis = Calificaciones[21];
+                // OCTUBRE
+                string oct_Esp = Calificaciones[22];
+                string oct_Mat = Calificaciones[23];
+                string oct_Ing = Calificaciones[24];
+                string oct_CiNat = Calificaciones[25];
+                string oct_Geo = Calificaciones[26];
+                string oct_Hist = Calificaciones[27];
+                string oct_FCE = Calificaciones[28];
+                string oct_Artes = Calificaciones[29];
+                string oct_Socio = Calificaciones[30];
+                string oct_EdFis = Calificaciones[31];
+                string oct_Inasis = Calificaciones[32];
+                // NOVIEMBRE
+                string nov_Esp = Calificaciones[33];
+                string nov_Mat = Calificaciones[34];
+                string nov_Ing = Calificaciones[35];
+                string nov_CiNat = Calificaciones[36];
+                string nov_Geo = Calificaciones[37];
+                string nov_Hist = Calificaciones[38];
+                string nov_FCE = Calificaciones[39];
+                string nov_Artes = Calificaciones[40];
+                string nov_Socio = Calificaciones[41];
+                string nov_EdFis = Calificaciones[42];
+                string nov_Inasis = Calificaciones[43];
+                // DICIEMBRE
+                string dic_Esp = Calificaciones[44];
+                string dic_Mat = Calificaciones[45];
+                string dic_Ing = Calificaciones[46];
+                string dic_CiNat = Calificaciones[47];
+                string dic_Geo = Calificaciones[48];
+                string dic_Hist = Calificaciones[49];
+                string dic_FCE = Calificaciones[50];
+                string dic_Artes = Calificaciones[51];
+                string dic_Socio = Calificaciones[52];
+                string dic_EdFis = Calificaciones[53];
+                string dic_Inasis = Calificaciones[54];
+                // ENERO
+                string ene_Esp = Calificaciones[55];
+                string ene_Mat = Calificaciones[56];
+                string ene_Ing = Calificaciones[57];
+                string ene_CiNat = Calificaciones[58];
+                string ene_Geo = Calificaciones[59];
+                string ene_Hist = Calificaciones[60];
+                string ene_FCE = Calificaciones[61];
+                string ene_Artes = Calificaciones[62];
+                string ene_Socio = Calificaciones[63];
+                string ene_EdFis = Calificaciones[64];
+                string ene_Inasis = Calificaciones[65];
+                // FEBRERO
+                string feb_Esp = Calificaciones[66];
+                string feb_Mat = Calificaciones[67];
+                string feb_Ing = Calificaciones[68];
+                string feb_CiNat = Calificaciones[69];
+                string feb_Geo = Calificaciones[70];
+                string feb_Hist = Calificaciones[71];
+                string feb_FCE = Calificaciones[72];
+                string feb_Artes = Calificaciones[73];
+                string feb_Socio = Calificaciones[74];
+                string feb_EdFis = Calificaciones[75];
+                string feb_Inasis = Calificaciones[76];
+                // MARZO
+                string mar_Esp = Calificaciones[77];
+                string mar_Mat = Calificaciones[78];
+                string mar_Ing = Calificaciones[79];
+                string mar_CiNat = Calificaciones[80];
+                string mar_Geo = Calificaciones[81];
+                string mar_Hist = Calificaciones[82];
+                string mar_FCE = Calificaciones[83];
+                string mar_Artes = Calificaciones[84];
+                string mar_Socio = Calificaciones[85];
+                string mar_EdFis = Calificaciones[86];
+                string mar_Inasis = Calificaciones[87];
+                // ABRIL
+                string abr_Esp = Calificaciones[88];
+                string abr_Mat = Calificaciones[89];
+                string abr_Ing = Calificaciones[90];
+                string abr_CiNat = Calificaciones[91];
+                string abr_Geo = Calificaciones[92];
+                string abr_Hist = Calificaciones[93];
+                string abr_FCE = Calificaciones[94];
+                string abr_Artes = Calificaciones[95];
+                string abr_Socio = Calificaciones[96];
+                string abr_EdFis = Calificaciones[97];
+                string abr_Inasis = Calificaciones[98];
+                // MAYO
+                string may_Esp = Calificaciones[99];
+                string may_Mat = Calificaciones[100];
+                string may_Ing = Calificaciones[101];
+                string may_CiNat = Calificaciones[102];
+                string may_Geo = Calificaciones[103];
+                string may_Hist = Calificaciones[104];
+                string may_FCE = Calificaciones[105];
+                string may_Artes = Calificaciones[106];
+                string may_Socio = Calificaciones[107];
+                string may_EdFis = Calificaciones[108];
+                string may_Inasis = Calificaciones[109];
+                // JUNIO
+                string jun_Esp = Calificaciones[110];
+                string jun_Mat = Calificaciones[111];
+                string jun_Ing = Calificaciones[112];
+                string jun_CiNat = Calificaciones[113];
+                string jun_Geo = Calificaciones[114];
+                string jun_Hist = Calificaciones[115];
+                string jun_FCE = Calificaciones[116];
+                string jun_Artes = Calificaciones[117];
+                string jun_Socio = Calificaciones[118];
+                string jun_EdFis = Calificaciones[119];
+                string jun_Inasis = Calificaciones[120];
+
+
+                // AGREGADO SEPTIEMBRE
                 EspDiag.Text = sept_Esp;
                 EspSep.Text = sept_Mat;
                 EspOct.Text = sept_Ing;
                 Espnov.Text = sept_CiNat;
+                Espdic.Text = sept_Geo;
+                Espene.Text = sept_Hist;
+                EspFeb.Text = sept_FCE;
+                EspMarz.Text = sept_Artes;
+                Espabril.Text = sept_Socio;
+                Espmay.Text = sept_EdFis;
+                cmbsepina.Text = sept_Inasis;
+                // AGREGADO OCTUBRE
+                cmbEspañol.Text = oct_Esp;
+                cmbOctubreMate.Text = oct_Mat;
+                cmbOctubreIngles.Text = oct_Ing;
+                cmbOctubreCiencias.Text = oct_CiNat;
+                cmbOctubreGeografia.Text = oct_Geo;
+                cmbOctubreHistoria.Text = oct_Hist;
+                cmbOctubreFormacion.Text = oct_FCE;
+                cmboctubreArt.Text = oct_Artes;
+                cmbOctubreEdsocio.Text = oct_Socio;
+                cmbOctubreEdFisica.Text = oct_EdFis;
+                cmbOctubreIna.Text = oct_Inasis;
+                // AGREGADO NOVIEMBRE
+                cmbNovEspañol.Text = nov_Esp;
+                cmbNovmate.Text = nov_Mat;
+                cmbNovIngles.Text = nov_Ing;
+                cmbNovCiencias.Text = nov_CiNat;
+                cmbNovGeografia.Text = nov_Geo;
+                cmbNovHistoria.Text = nov_Hist;
+                cmbNovFormacion.Text = nov_FCE;
+                cmbNovArtes.Text = nov_Artes;
+                cmbNovEdsocio.Text = nov_Socio;
+                cmbNovEdFisi.Text = nov_EdFis;
+                cmbNovIna.Text = nov_Inasis;
+                // AGREGADO DICIEMBRE
+                cmbDicEspañol.Text = dic_Esp;
+                cmbDicMate.Text = dic_Mat;
+                cmbDicIngles.Text = dic_Ing;
+                cmbDicCiencias.Text = dic_CiNat;
+                cmbDicGeografia.Text = dic_Geo;
+                cmbDicHistoria.Text = dic_Hist;
+                cmbDicForm.Text = dic_FCE;
+                cmbDicArtes.Text = dic_Artes;
+                cmbDicEdsocio.Text = dic_Socio;
+                cmbDicEdFisica.Text = dic_EdFis;
+                cmbDicInasis.Text = dic_Inasis;
+                // AGREGADO ENERO
+                cmbEneroEspañol.Text = ene_Esp;
+                cmbEneroMate.Text = ene_Mat;
+                cmbEneroIngles.Text = ene_Ing;
+                cmbEneroCiencias.Text = ene_CiNat;
+                cmbEneroGeografia.Text = ene_Geo;
+                cmbEneroHistoria.Text = ene_Hist;
+                cmbEneroFormacion.Text = ene_FCE;
+                cmbEneroArtess.Text = ene_Artes;
+                cmbEneroEdsocio.Text = ene_Socio;
+                cmbEneroEdfisica.Text = ene_EdFis;
+                cmbEneroIna.Text = ene_Inasis;
+                // AGREGADO FEBRERO
+                cmbFebreroEspañol.Text = feb_Esp;
+                cmbFebreroMate.Text = feb_Mat;
+                cmbfebreroIngles.Text = feb_Ing;
+                cmbFebreroCiencias.Text = feb_CiNat;
+                cmbFebreroGeo.Text = feb_Geo;
+                cmbFebreroHistoria.Text = feb_Hist;
+                cmbFebreroFormacion.Text = feb_FCE;
+                cmbFebreroArtess.Text = feb_Artes;
+                cmbFebreroEdsocio.Text = feb_Socio;
+                cmbFebreroEdfisica.Text = feb_EdFis;
+                cmbfebreroIna.Text = feb_Inasis;
+                // AGREGADO MARZO
+                cmbmarzoEspañol.Text = mar_Esp;
+                cmbMarzoMate.Text = mar_Mat;
+                cmbMarzoIngles.Text = mar_Ing;
+                cmbMarzoCiencias.Text = mar_CiNat;
+                cmbMarzoGeografia.Text = mar_Geo;
+                cmbMarzoHistoria.Text = mar_Hist;
+                cmbMarzoFormacion.Text = mar_FCE;
+                cmbMarzoArtess.Text = mar_Artes;
+                cmbMarzoEdsocio.Text = mar_Socio;
+                cmbMarzoEdFisica.Text = mar_EdFis;
+                cmbmarzoina.Text = mar_Inasis;
+                // AGREGADO ABRIL
+                cmbAbrilEspañol.Text = abr_Esp;
+                cmbAbrilmate.Text = abr_Mat;
+                cmbAbrilIngles.Text = abr_Ing;
+                cmbAbrilCiencias.Text = abr_CiNat;
+                cmbAbrilGeografia.Text = abr_Geo;
+                cmbAbrilHistoria.Text = abr_Hist;
+                cmbAbrilFormacion.Text = abr_FCE;
+                cmbAbrilArtess.Text = abr_Artes;
+                cmbAbrilEdsocio.Text = abr_Socio;
+                cmbAbrilEdfisica.Text = abr_EdFis;
+                cmbAbrilIna.Text = abr_Inasis;
+                // AGREGADO MAYO
+                cmbmayoEspañol.Text = may_Esp;
+                cmbMayoMate.Text = may_Mat;
+                cmbMayoIngles.Text = may_Ing;
+                cmbMayoCiencias.Text = may_CiNat;
+                cmbMayoGeografia.Text = may_Geo;
+                cmbMayohistoria.Text = may_Hist;
+                cmbMayoFormacion.Text = may_FCE;
+                cmbMayoArtes.Text = may_Artes;
+                cmbMayoEdsocio.Text = may_Socio;
+                cmbMayoEdfisica.Text = may_EdFis;
+                cmbMayoIna.Text = may_Inasis;
+                // AGREGADO JUNIO
+                cmbDJunioEspañol.Text = jun_Esp;
+                cmbJuniomate.Text = jun_Mat;
+                cmbJunioingless.Text = jun_Ing;
+                cmbJunioCienciass.Text = jun_CiNat;
+                cmbJunioGeofgrafia.Text = jun_Geo;
+                cmbJuniohistorias.Text = jun_Hist;
+                cmbJunioFormacionCivica.Text = jun_FCE;
+                cmbJunioArtess.Text = jun_Artes;
+                cmbJunioEdsocioe.Text = jun_Socio;
+                cmbJunioEdFis.Text = jun_EdFis;
+                cmbJunioinasis.Text = jun_Inasis;
+                // AGREGADO DIAGNOSTICO
+                cmbdiagespañol.Text = diag_Esp;
+                cmbdiagmate.Text = diag_Mat;
+                cmbdiagingles.Text = diag_Ing;
+                cmbdiagciencias.Text = diag_CiNat;
+                cmbdiaggeografia.Text = diag_Geo;
+                cmbdiagHistoria.Text = diag_Hist;
+                cmbdiagformacion.Text = diag_FCE;
+                cmbdiagartes.Text = diag_Artes;
+                cmbdiagedsocio.Text = diag_Socio;
+                cmbdiagedfisica.Text = diag_EdFis;
+                cmbdiaginasis.Text = diag_Inasis;
 
-                if (EspDiag.Text != null)
+
+                // BLOQUEO SEPTIEMBRE
+                if (EspDiag.Text != "")
                 {
                     EspDiag.Enabled = false;
                 }
-                if (EspSep.Text != null)
+                if (EspSep.Text != "")
                 {
-                    EspDiag.Enabled = false;
+                    EspSep.Enabled = false;
                 }
-                if (EspOct.Text != null)
+                if (EspOct.Text != "")
                 {
-                    EspDiag.Enabled = false;
+                    EspOct.Enabled = false;
                 }
-                if (Espnov.Text != null)
+                if (Espnov.Text != "")
                 {
-                    EspDiag.Enabled = false;
+                    Espnov.Enabled = false;
+                }
+                if (Espdic.Text != "")
+                {
+                    Espdic.Enabled = false;
+                }
+                if (Espene.Text != "")
+                {
+                    Espene.Enabled = false;
+                }
+                if (EspFeb.Text != "")
+                {
+                    EspFeb.Enabled = false;
+                }
+                if (EspMarz.Text != "")
+                {
+                    EspMarz.Enabled = false;
+                }
+                if (Espabril.Text != "")
+                {
+                    Espabril.Enabled = false;
+                }
+                if (Espmay.Text != "")
+                {
+                    Espmay.Enabled = false;
+                }
+                if (cmbsepina.Text != "")
+                {
+                    cmbsepina.Enabled = false;
                 }
 
+                // BLOQUEO OCTUBRE
+                if (cmbEspañol.Text != "")
+                {
+                    cmbEspañol.Enabled = false;
+                }
+                if (cmbOctubreMate.Text != "")
+                {
+                    cmbOctubreMate.Enabled = false;
+                }
+                if (cmbOctubreIngles.Text != "")
+                {
+                    cmbOctubreIngles.Enabled = false;
+                }
+                if (cmbOctubreCiencias.Text != "")
+                {
+                    cmbOctubreCiencias.Enabled = false;
+                }
+                if (cmbOctubreGeografia.Text != "")
+                {
+                    cmbOctubreGeografia.Enabled = false;
+                }
+                if (cmbOctubreHistoria.Text != "")
+                {
+                    cmbOctubreHistoria.Enabled = false;
+                }
+                if (cmbOctubreFormacion.Text != "")
+                {
+                    cmbOctubreFormacion.Enabled = false;
+                }
+                if (cmboctubreArt.Text != "")
+                {
+                    cmboctubreArt.Enabled = false;
+                }
+                if (cmbOctubreEdsocio.Text != "")
+                {
+                    cmbOctubreEdsocio.Enabled = false;
+                }
+                if (cmbOctubreEdFisica.Text != "")
+                {
+                    cmbOctubreEdFisica.Enabled = false;
+                }
+                if (cmbOctubreIna.Text != "")
+                {
+                    cmbOctubreIna.Enabled = false;
+                }
+
+                // BLOQUEO NOVIEMBRE
+                if (cmbNovEspañol.Text != "")
+                {
+                    cmbNovEspañol.Enabled = false;
+                }
+                if (cmbNovmate.Text != "")
+                {
+                    cmbNovmate.Enabled = false;
+                }
+                if (cmbNovIngles.Text != "")
+                {
+                    cmbNovIngles.Enabled = false;
+                }
+                if (cmbNovCiencias.Text != "")
+                {
+                    cmbNovCiencias.Enabled = false;
+                }
+                if (cmbNovGeografia.Text != "")
+                {
+                    cmbNovGeografia.Enabled = false;
+                }
+                if (cmbNovHistoria.Text != "")
+                {
+                    cmbNovHistoria.Enabled = false;
+                }
+                if (cmbNovFormacion.Text != "")
+                {
+                    cmbNovFormacion.Enabled = false;
+                }
+                if (cmbNovArtes.Text != "")
+                {
+                    cmbNovArtes.Enabled = false;
+                }
+                if (cmbNovEdsocio.Text != "")
+                {
+                    cmbNovEdsocio.Enabled = false;
+                }
+                if (cmbNovEdFisi.Text != "")
+                {
+                    cmbNovEdFisi.Enabled = false;
+                }
+                if (cmbNovIna.Text != "")
+                {
+                    cmbNovIna.Enabled = false;
+                }
+
+                // BLOQUEO DICIEMBRE
+                if (cmbDicEspañol.Text != "")
+                {
+                    cmbDicEspañol.Enabled = false;
+                }
+                if (cmbDicMate.Text != "")
+                {
+                    cmbDicMate.Enabled = false;
+                }
+                if (cmbDicIngles.Text != "")
+                {
+                    cmbDicIngles.Enabled = false;
+                }
+                if (cmbDicCiencias.Text != "")
+                {
+                    cmbDicCiencias.Enabled = false;
+                }
+                if (cmbDicGeografia.Text != "")
+                {
+                    cmbDicGeografia.Enabled = false;
+                }
+                if (cmbDicHistoria.Text != "")
+                {
+                    cmbDicHistoria.Enabled = false;
+                }
+                if (cmbDicForm.Text != "")
+                {
+                    cmbDicForm.Enabled = false;
+                }
+                if (cmbDicArtes.Text != "")
+                {
+                    cmbDicArtes.Enabled = false;
+                }
+                if (cmbDicEdsocio.Text != "")
+                {
+                    cmbDicEdsocio.Enabled = false;
+                }
+                if (cmbDicEdFisica.Text != "")
+                {
+                    cmbDicEdFisica.Enabled = false;
+                }
+                if (cmbDicInasis.Text != "")
+                {
+                    cmbDicInasis.Enabled = false;
+                }
+
+                // BLOQUEO ENERO
+                if (cmbEneroEspañol.Text != "")
+                {
+                    cmbEneroEspañol.Enabled = false;
+                }
+                if (cmbEneroMate.Text != "")
+                {
+                    cmbEneroMate.Enabled = false;
+                }
+                if (cmbEneroIngles.Text != "")
+                {
+                    cmbEneroIngles.Enabled = false;
+                }
+                if (cmbEneroCiencias.Text != "")
+                {
+                    cmbEneroCiencias.Enabled = false;
+                }
+                if (cmbEneroGeografia.Text != "")
+                {
+                    cmbEneroGeografia.Enabled = false;
+                }
+                if (cmbEneroHistoria.Text != "")
+                {
+                    cmbEneroHistoria.Enabled = false;
+                }
+                if (cmbEneroFormacion.Text != "")
+                {
+                    cmbEneroFormacion.Enabled = false;
+                }
+                if (cmbEneroArtess.Text != "")
+                {
+                    cmbEneroArtess.Enabled = false;
+                }
+                if (cmbEneroEdsocio.Text != "")
+                {
+                    cmbEneroEdsocio.Enabled = false;
+                }
+                if (cmbEneroEdfisica.Text != "")
+                {
+                    cmbEneroEdfisica.Enabled = false;
+                }
+                if (cmbEneroIna.Text != "")
+                {
+                    cmbEneroIna.Enabled = false;
+                }
+
+                // BLOQUEO FEBRERO
+                if (cmbFebreroEspañol.Text != "")
+                {
+                    cmbFebreroEspañol.Enabled = false;
+                }
+                if (cmbFebreroMate.Text != "")
+                {
+                    cmbFebreroMate.Enabled = false;
+                }
+                if (cmbfebreroIngles.Text != "")
+                {
+                    cmbfebreroIngles.Enabled = false;
+                }
+                if (cmbFebreroCiencias.Text != "")
+                {
+                    cmbFebreroCiencias.Enabled = false;
+                }
+                if (cmbFebreroGeo.Text != "")
+                {
+                    cmbFebreroGeo.Enabled = false;
+                }
+                if (cmbFebreroHistoria.Text != "")
+                {
+                    cmbFebreroHistoria.Enabled = false;
+                }
+                if (cmbFebreroFormacion.Text != "")
+                {
+                    cmbFebreroFormacion.Enabled = false;
+                }
+                if (cmbFebreroArtess.Text != "")
+                {
+                    cmbFebreroArtess.Enabled = false;
+                }
+                if (cmbFebreroEdsocio.Text != "")
+                {
+                    cmbFebreroEdsocio.Enabled = false;
+                }
+                if (cmbFebreroEdfisica.Text != "")
+                {
+                    cmbFebreroEdfisica.Enabled = false;
+                }
+                if (cmbfebreroIna.Text != "")
+                {
+                    cmbfebreroIna.Enabled = false;
+                }
+
+                // BLOQUEO MARZO
+                if (cmbmarzoEspañol.Text != "")
+                {
+                    cmbmarzoEspañol.Enabled = false;
+                }
+                if (cmbMarzoMate.Text != "")
+                {
+                    cmbMarzoMate.Enabled = false;
+                }
+                if (cmbMarzoIngles.Text != "")
+                {
+                    cmbMarzoIngles.Enabled = false;
+                }
+                if (cmbMarzoCiencias.Text != "")
+                {
+                    cmbMarzoCiencias.Enabled = false;
+                }
+                if (cmbMarzoGeografia.Text != "")
+                {
+                    cmbMarzoGeografia.Enabled = false;
+                }
+                if (cmbMarzoHistoria.Text != "")
+                {
+                    cmbMarzoHistoria.Enabled = false;
+                }
+                if (cmbMarzoFormacion.Text != "")
+                {
+                    cmbMarzoFormacion.Enabled = false;
+                }
+                if (cmbMarzoArtess.Text != "")
+                {
+                    cmbMarzoArtess.Enabled = false;
+                }
+                if (cmbMarzoEdsocio.Text != "")
+                {
+                    cmbMarzoEdsocio.Enabled = false;
+                }
+                if (cmbMarzoEdFisica.Text != "")
+                {
+                    cmbMarzoEdFisica.Enabled = false;
+                }
+                if (cmbmarzoina.Text != "")
+                {
+                    cmbmarzoina.Enabled = false;
+                }
+
+                // BLOQUEO ABRIL
+                if (cmbAbrilEspañol.Text != "")
+                {
+                    cmbAbrilEspañol.Enabled = false;
+                }
+                if (cmbAbrilmate.Text != "")
+                {
+                    cmbAbrilmate.Enabled = false;
+                }
+                if (cmbAbrilIngles.Text != "")
+                {
+                    cmbAbrilIngles.Enabled = false;
+                }
+                if (cmbAbrilCiencias.Text != "")
+                {
+                    cmbAbrilCiencias.Enabled = false;
+                }
+                if (cmbAbrilGeografia.Text != "")
+                {
+                    cmbAbrilGeografia.Enabled = false;
+                }
+                if (cmbAbrilHistoria.Text != "")
+                {
+                    cmbAbrilHistoria.Enabled = false;
+                }
+                if (cmbAbrilFormacion.Text != "")
+                {
+                    cmbAbrilFormacion.Enabled = false;
+                }
+                if (cmbAbrilArtess.Text != "")
+                {
+                    cmbAbrilArtess.Enabled = false;
+                }
+                if (cmbAbrilEdsocio.Text != "")
+                {
+                    cmbAbrilEdsocio.Enabled = false;
+                }
+                if (cmbAbrilEdfisica.Text != "")
+                {
+                    cmbAbrilEdfisica.Enabled = false;
+                }
+                if (cmbAbrilIna.Text != "")
+                {
+                    cmbAbrilIna.Enabled = false;
+                }
+
+                // BLOQUEO MAYO
+                if (cmbmayoEspañol.Text != "")
+                {
+                    cmbmayoEspañol.Enabled = false;
+                }
+                if (cmbMayoMate.Text != "")
+                {
+                    cmbMayoMate.Enabled = false;
+                }
+                if (cmbMayoIngles.Text != "")
+                {
+                    cmbMayoIngles.Enabled = false;
+                }
+                if (cmbMayoCiencias.Text != "")
+                {
+                    cmbMayoCiencias.Enabled = false;
+                }
+                if (cmbMayoGeografia.Text != "")
+                {
+                    cmbMayoGeografia.Enabled = false;
+                }
+                if (cmbMayohistoria.Text != "")
+                {
+                    cmbMayohistoria.Enabled = false;
+                }
+                if (cmbMayoFormacion.Text != "")
+                {
+                    cmbMayoFormacion.Enabled = false;
+                }
+                if (cmbMayoArtes.Text != "")
+                {
+                    cmbMayoArtes.Enabled = false;
+                }
+                if (cmbMayoEdsocio.Text != "")
+                {
+                    cmbMayoEdsocio.Enabled = false;
+                }
+                if (cmbMayoEdfisica.Text != "")
+                {
+                    cmbMayoEdfisica.Enabled = false;
+                }
+                if (cmbMayoIna.Text != "")
+                {
+                    cmbMayoIna.Enabled = false;
+                }
+
+                // BLOQUEO JUNIO
+                if (cmbDJunioEspañol.Text != "")
+                {
+                    cmbDJunioEspañol.Enabled = false;
+                }
+                if (cmbJuniomate.Text != "")
+                {
+                    cmbJuniomate.Enabled = false;
+                }
+                if (cmbJunioingless.Text != "")
+                {
+                    cmbJunioingless.Enabled = false;
+                }
+                if (cmbJunioCienciass.Text != "")
+                {
+                    cmbJunioCienciass.Enabled = false;
+                }
+                if (cmbJunioGeofgrafia.Text != "")
+                {
+                    cmbJunioGeofgrafia.Enabled = false;
+                }
+                if (cmbJuniohistorias.Text != "")
+                {
+                    cmbJuniohistorias.Enabled = false;
+                }
+                if (cmbJunioFormacionCivica.Text != "")
+                {
+                    cmbJunioFormacionCivica.Enabled = false;
+                }
+                if (cmbJunioArtess.Text != "")
+                {
+                    cmbJunioArtess.Enabled = false;
+                }
+                if (cmbJunioEdsocioe.Text != "")
+                {
+                    cmbJunioEdsocioe.Enabled = false;
+                }
+                if (cmbJunioEdFis.Text != "")
+                {
+                    cmbJunioEdFis.Enabled = false;
+                }
+                if (cmbJunioinasis.Text != "")
+                {
+                    cmbJunioinasis.Enabled = false;
+                }
+
+                // BLOQUEO DIAGNOSTICO
+                if (cmbdiagespañol.Text != "")
+                {
+                    cmbdiagespañol.Enabled = false;
+                }
+                if (cmbdiagmate.Text != "")
+                {
+                    cmbdiagmate.Enabled = false;
+                }
+                if (cmbdiagingles.Text != "")
+                {
+                    cmbdiagingles.Enabled = false;
+                }
+                if (cmbdiagciencias.Text != "")
+                {
+                    cmbdiagciencias.Enabled = false;
+                }
+                if (cmbdiaggeografia.Text != "")
+                {
+                    cmbdiaggeografia.Enabled = false;
+                }
+                if (cmbdiagHistoria.Text != "")
+                {
+                    cmbdiagHistoria.Enabled = false;
+                }
+                if (cmbdiagformacion.Text != "")
+                {
+                    cmbdiagformacion.Enabled = false;
+                }
+                if (cmbdiagartes.Text != "")
+                {
+                    cmbdiagartes.Enabled = false;
+                }
+                if (cmbdiagedsocio.Text != "")
+                {
+                    cmbdiagedsocio.Enabled = false;
+                }
+                if (cmbdiagedfisica.Text != "")
+                {
+                    cmbdiagedfisica.Enabled = false;
+                }
+                if (cmbdiaginasis.Text != "")
+                {
+                    cmbdiaginasis.Enabled = false;
+                }
 
                 //MessageBox.Show(sept_Esp.ToString());
             }
+
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
@@ -4348,93 +5119,341 @@ namespace Control_Escolar
 
 
         }
+
         private void MaterialRaisedButton1_Click(object sender, EventArgs e)
         {
+
             mes = materialTabControl1.SelectedTab.Name;
             switch (mes)
             {
                 case "Septiembre":
                     {
-                        calisep();
-                        MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-                    } break;
+                        if (cmbsepina.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. ¡No se puede Editar!");
+                        }
+                        else
+                        {
+                            if (cmbdiaginasis.Enabled == false)
+                            {
+                                if (ValidaCampos(BoxGenero) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    calisep();
+                                    MessageBox.Show("Calificaciones  septiembre registradas  con exito");
+                                    validaCalifMen();
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Diagnóstico no se han Registrado.");
+                            }
+                        }
+                    }
+                    break;
 
                 case "Octubre":
                     {
-                        caliOct();
-                        MessageBox.Show("Calificaciones  octubre registradas con exito");
+                        if (cmbOctubreIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbOctubreIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox1) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliOct();
+                                    MessageBox.Show("Calificaciones  octubre registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No Se pueden Registrar Calificaciones. Las Calificaciones de Septiembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Noviembre":
                     {
-                        caliNov();
-                        MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                        if (cmbNovIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbOctubreIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox2) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliNov();
+                                    MessageBox.Show("Calificaciones  noviembre registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Octubre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Diciembre":
                     {
-                        caliDic();
-                        MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                        if (cmbDicInasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox3) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliDic();
+                                    MessageBox.Show("Calificaciones  diciembre registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Noviembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Enero":
                     {
-                        caliEnero();
-                        MessageBox.Show("Calificaciones  Enero registradas con exito");
+                        if (cmbEneroIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbNovIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox4) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliEnero();
+                                    MessageBox.Show("Calificaciones  Enero registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Diciembre no se han Registrado.");
+                            }
+                        }
                     }
                     break;
+
                 case "Febrero":
                     {
-                        caliFebrero();
-                        MessageBox.Show("Calificaciones  febrero registradas con exito");
+                        if (cmbfebreroIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbEneroIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox5) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliFebrero();
+                                    MessageBox.Show("Calificaciones  febrero registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Enero no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Marzo":
                     {
-                        caliMarzo();
-                        MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                        if (cmbmarzoina.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbfebreroIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox6) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMarzo();
+                                    MessageBox.Show("Calificaciones  Marzo registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Febrero no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Abril":
                     {
-                        caliAbril();
-                        MessageBox.Show("Calificaciones  Abril registradas con exito");
+                        if (cmbAbrilIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbmarzoina.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox7) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliAbril();
+                                    MessageBox.Show("Calificaciones  Abril registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Marzo no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Mayo":
                     {
-                        caliMayo();
-                        MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                        if (cmbMayoIna.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbAbrilIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox8) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliMayo();
+                                    MessageBox.Show("Calificaciones  Mayo registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Abril no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
                 case "Junio":
                     {
-                        caliJunio();
-                        MessageBox.Show("Calificaciones  Junio registradas con exito");
+                        if (cmbJunioinasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (cmbMayoIna.Enabled == false)
+                            {
+                                if (ValidaCampos(groupBox9) == true)
+                                {
+                                    MessageBox.Show("Error al Guardar los Datos");
+                                }
+                                else
+                                {
+                                    caliJunio();
+                                    MessageBox.Show("Calificaciones  Junio registradas con exito");
+                                    validaCalifMen();
+                                }
+
+                            }
+                            else
+                            {
+                                MessageBox.Show("No se pueden Registrar Calificaciones. Las Calificaciones de Mayo no se han Registrado.");
+                            }
+                        }
                     }
                     break;
 
 
                 case "Diagnostico":
                     {
-                        caliDiagnostico();
-                        MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                        if (cmbdiaginasis.Enabled == false)
+                        {
+                            MessageBox.Show("Las Calificaciones ya han sido Grabadas. No se puede Editar");
+                        }
+                        else
+                        {
+                            if (ValidaCampos(groupBox10) == true)
+                            {
+                                MessageBox.Show("Error al Guardar los Datos");
+                            }
+                            else
+                            {
+                                caliDiagnostico();
+                                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
+                                validaCalifMen();
+                            }
+
+                        }
                     }
                     break;
 
             }
-
         }
+        
 
-
-        private void materialRaisedButton2_Click(object sender, EventArgs e)
+    private void materialRaisedButton2_Click(object sender, EventArgs e)
         {
             //-------------Ingresar los datos del alumno en pdf--------------------------------
             MySqlConnection conn112;
@@ -13504,196 +14523,34 @@ namespace Control_Escolar
                         string inputFile = Path.Combine(folderPath, "6_PRIMARIA_1819.pdf");
                         string outputFile = Path.Combine(folderPath, "BoletaExterna6.pdf");
 
-                        PdfReader pdfReader = new PdfReader(inputFile);
-                        using (FileStream fs = new FileStream(outputFile, FileMode.Create, FileAccess.Write, FileShare.None))
-                        {
-                            using (PdfStamper stamper = new PdfStamper(pdfReader, fs))
-                            {
-                                AcroFields fields = stamper.AcroFields;
-                                //fields.SetFieldProperty("PRIMER APELLIDO", "fontsize", 14, null);
-                                fields.SetField("PRIMER APELLIDO", Apellidop1);
-                                fields.SetField("SEGUNDO APELLIDO", Apellidom1);
-                                fields.SetField("NOMBRE(S)", nombre1);
-                                fields.SetField("CURP", sesion.Curp);
-                                fields.SetField("NOMBRE DE LA ESCUELA", "INSTITUTO RODOLFO NERI VELA");
-                                fields.SetField("GRUPO", "A");
-                                fields.SetField("TURNO", "MATUTINO");
-                                fields.SetField("CCT", "12DPT0003N");
 
-
-                                fields.SetField("Calendario Escolar", "2018- 2019");
-                                fields.SetField("Asistencias", SumAsisTriFin);
-                                fields.SetField("Inasistencias", SumInasisTriFin);
-                                fields.SetField("CRITERIO DE ACREDITACIÓN % Asistencia", PorcAsistencias, " %");
-
-                                //Si aprobo o no
-                                fields.SetField("TextField", Si);
-                                fields.SetField("TextField_1", No);
-
-                                fields.SetField("PROMEDIO FINAL DEL NIVELDE DESEMPEÑO DEL GRADO", PromTriGenFin);
-
-                                //ESPAÑOL
-                                fields.SetField("Nivel de desempeño", Nivel1);
-                                fields.SetField("Nivel de desempeño_1", Nivel2);
-                                fields.SetField("Nivel de desempeño_2", Nivel3);
-                                fields.SetField("Nivel de desempeño_3", NivelFin);
-
-                                fields.SetField("Calificación", PromTriEsp1);
-                                fields.SetField("Calificación_1", PromTriEsp2);
-                                fields.SetField("Calificación_2", PromTriEsp3);
-                                fields.SetField("Calificación_3", PromFinTriEsp);
-
-                                //Check box
-                                fields.SetField("CheckBox", Yes);
-                                fields.SetField("CheckBox_1", Nou);
-
-                                //MATEMATICAS
-                                fields.SetField("Nivel de desempeño_4", NivelMat1);
-                                fields.SetField("Nivel de desempeño_5", NivelMat2);
-                                fields.SetField("Nivel de desempeño_6", NivelMat3);
-                                fields.SetField("Nivel de desempeño_7", NivelMatFin);
-
-                                fields.SetField("Calificación_4", PromTriMat1);
-                                fields.SetField("Calificación_5", PromTriMat2);
-                                fields.SetField("Calificación_6", PromTriMat3);
-                                fields.SetField("Calificación_7", PromFinTriMat);
-
-                                //Check box
-                                fields.SetField("CheckBox_2", Yes1);
-                                fields.SetField("CheckBox_3", Nou1);
-
-                                //INGLES
-                                fields.SetField("Nivel de desempeño_8", NivelIng1);
-                                fields.SetField("Nivel de desempeño_9", NivelIng2);
-                                fields.SetField("Nivel de desempeño_10", NivelIng3);
-                                fields.SetField("Nivel de desempeño_11", NivelIngFin);
-
-                                fields.SetField("Calificación_8", PromTriIng1);
-                                fields.SetField("Calificación_9", PromTriIng2);
-                                fields.SetField("Calificación_10", PromTriIng3);
-                                fields.SetField("Calificación_11", PromFinTriIng);
-
-                                //CIENCIAS NATURALES
-                                fields.SetField("Nivel de desempeño_12", Nivelcn1);
-                                fields.SetField("Nivel de desempeño_13", Nivelcn2);
-                                fields.SetField("Nivel de desempeño_14", Nivelcn3);
-                                fields.SetField("Nivel de desempeño_15", NivelcnFin);
-
-                                fields.SetField("Calificación_12", PromTricn1);
-                                fields.SetField("Calificación_13", PromTricn2);
-                                fields.SetField("Calificación_14", PromTricn3);
-                                fields.SetField("Calificación_15", PromFinTricn);
-
-                                //GEOGRAFIA
-                                fields.SetField("Nivel de desempeño_16", NivelGeo1);
-                                fields.SetField("Nivel de desempeño_17", NivelGeo2);
-                                fields.SetField("Nivel de desempeño_18", NivelGeo3);
-                                fields.SetField("Nivel de desempeño_19", NivelGeoFin);
-
-                                fields.SetField("Calificación_16", PromTriGeo1);
-                                fields.SetField("Calificación_17", PromTriGeo2);
-                                fields.SetField("Calificación_18", PromTriGeo3);
-                                fields.SetField("Calificación_19", PromFinTriGeo);
-
-                                //HISTORIA
-                                fields.SetField("Nivel de desempeño_20", NivelHis1);
-                                fields.SetField("Nivel de desempeño_21", NivelHis2);
-                                fields.SetField("Nivel de desempeño_22", NivelHis3);
-                                fields.SetField("Nivel de desempeño_23", NivelHisFin);
-
-                                fields.SetField("Calificación_20", PromTriHis1);
-                                fields.SetField("Calificación_21", PromTriHis2);
-                                fields.SetField("Calificación_22", PromTriHis3);
-                                fields.SetField("Calificación_23", PromFinTriHis);
-
-                                //FORMACION CIVICA Y ETICA
-                                fields.SetField("Nivel de desempeño_24", NivelCiv1);
-                                fields.SetField("Nivel de desempeño_25", NivelCiv2);
-                                fields.SetField("Nivel de desempeño_26", NivelCiv3);
-                                fields.SetField("Nivel de desempeño_27", NivelCivFin);
-
-                                fields.SetField("Calificación_24", PromTriCiv1);
-                                fields.SetField("Calificación_25", PromTriCiv2);
-                                fields.SetField("Calificación_26", PromTriCiv3);
-                                fields.SetField("Calificación_27", PromFinTriCiv);
-
-                                //Check box
-                                fields.SetField("CheckBox_4", Yes2);
-                                fields.SetField("CheckBox_5", Nou2);
-
-
-                                fields.SetField("TextField_2", PromMateriasIC);
-
-                                //Promedio formacion academica 
-                                fields.SetField("Nivel de desempeño_28", NivelPromSen);
-                                fields.SetField("Nivel de desempeño_29", NivelPromSen2);
-                                fields.SetField("Nivel de desempeño_30", NivelPromSen3);
-                                fields.SetField("Nivel de desempeño_31", NivelPromSenFin);
-
-                                fields.SetField("Calificación_28", PromTriSen1);
-                                fields.SetField("Calificación_29", PromTriSen2);
-                                fields.SetField("Calificación_30", PromTriSen3);
-                                fields.SetField("Calificación_31", PromFinTriMat);
-
-                                //ARTES
-                                fields.SetField("ARTES", NivelArt1);
-                                fields.SetField("ARTES_1", NivelArt2);
-                                fields.SetField("ARTES_2", NivelArt3);
-                                fields.SetField("ARTES_3", NivelArtFin);
-
-                                //EDUCACION SOCIOEMOCIONAL 
-                                fields.SetField("EDUCACIÓNSOCIOEMOCIONAL", NivelSoc1);
-                                fields.SetField("EDUCACIÓNSOCIOEMOCIONAL_1", NivelSoc2);
-                                fields.SetField("EDUCACIÓNSOCIOEMOCIONAL_2", NivelSoc3);
-                                fields.SetField("EDUCACIÓNSOCIOEMOCIONAL_3", NivelSocFin);
-
-                                //EDUCACION FISICA
-                                fields.SetField("EDUCACIÓN FÍSICA", NivelFis1);
-                                fields.SetField("EDUCACIÓN FÍSICA_1", NivelFis2);
-                                fields.SetField("EDUCACIÓN FÍSICA_2", NivelFis3);
-                                fields.SetField("EDUCACIÓN FÍSICA_3", NivelFisFin);
-
-                                //Check box
-                                fields.SetField("CheckBox_6", Yes3);
-                                fields.SetField("CheckBox_7", Nou3);
-
-                                //Promedio desarrollo social 
-                                fields.SetField("PROMEDIOFINAL", NivelPromDes);
-                                fields.SetField("PROMEDIOFINAL_1", NivelPromDes2);
-                                fields.SetField("PROMEDIOFINAL_2", NivelPromDes3);
-                                fields.SetField("PROMEDIOFINAL_3", NivelPromDesFin);
-
-                                //Promedio general
-                                fields.SetField("AUTONOMÍACURRICULARPROMEDIO FINAL", NivelGen1);
-                                fields.SetField("AUTONOMÍACURRICULARPROMEDIO FINAL_1", NivelGen2);
-                                fields.SetField("AUTONOMÍACURRICULARPROMEDIO FINAL_2", NivelGen3);
-                                fields.SetField("AUTONOMÍACURRICULARPROMEDIO FINAL_3", NivelGenFin);
-
-                                //Check box
-                                fields.SetField("CheckBox_8", Yes4);
-                                fields.SetField("CheckBox_9", Nou4);
-
-                                fields.SetField("LUGAR DE EXPEDICIÓN", "Acapulco, Gro.");
-                                fields.SetField("AÑO", "2019");
-                                fields.SetField("TextField_4", " ");
-                                fields.SetField("DÍA", " ");
-
-                                stamper.Close();
-                            }
-                        }
-                        pdfReader.Close();
-
-                        MessageBox.Show("¡PDF creado!");
                     }
                 }
+
             }
-
         }
 
-        private void Calificaciones456_Load(object sender, EventArgs e)
+        // CAMBIOS!!!
+        public bool ValidaCampos(GroupBox Grupo)
         {
-            validaCalifMen();
+            foreach (Control combo in Grupo.Controls)
+            {
+                if (combo is ComboBox)
+                {
+                    //ComboBox combo = new ComboBox();
+                    //combo.Name = grupo.Name;
+                    if (combo.Text == string.Empty)
+                    {
+                        MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
+                        return true;
+                    }
+                }
+
+            }
+            return false;
         }
+
+
 
         public void cambiacolor(GroupBox Grupo)
         {
@@ -13779,6 +14636,7 @@ namespace Control_Escolar
         {
             cambiacolor(groupBox10);
         }
+
 
     }
 }

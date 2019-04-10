@@ -391,6 +391,7 @@
             this.Septiembre.TabIndex = 0;
             this.Septiembre.Text = "Septiem.";
             this.Septiembre.UseVisualStyleBackColor = true;
+            this.Septiembre.MouseEnter += new System.EventHandler(this.Septiembre_MouseEnter);
             // 
             // BoxGenero
             // 
@@ -923,6 +924,7 @@
             this.Octubre.TabIndex = 1;
             this.Octubre.Text = "Octubre";
             this.Octubre.UseVisualStyleBackColor = true;
+            this.Octubre.MouseEnter += new System.EventHandler(this.Octubre_MouseEnter);
             // 
             // groupBox1
             // 
@@ -1443,6 +1445,7 @@
             this.Noviembre.TabIndex = 2;
             this.Noviembre.Text = "Noviembre";
             this.Noviembre.UseVisualStyleBackColor = true;
+            this.Noviembre.MouseEnter += new System.EventHandler(this.Noviembre_MouseEnter);
             // 
             // groupBox2
             // 
@@ -1842,6 +1845,7 @@
             this.Diciembre.TabIndex = 3;
             this.Diciembre.Text = "Diciembre";
             this.Diciembre.UseVisualStyleBackColor = true;
+            this.Diciembre.MouseEnter += new System.EventHandler(this.Diciembre_MouseEnter);
             // 
             // groupBox3
             // 
@@ -2241,6 +2245,7 @@
             this.Enero.TabIndex = 4;
             this.Enero.Text = "Enero";
             this.Enero.UseVisualStyleBackColor = true;
+            this.Enero.MouseEnter += new System.EventHandler(this.Enero_MouseEnter);
             // 
             // groupBox4
             // 
@@ -2640,6 +2645,7 @@
             this.Febrero.TabIndex = 5;
             this.Febrero.Text = "Febrero";
             this.Febrero.UseVisualStyleBackColor = true;
+            this.Febrero.MouseEnter += new System.EventHandler(this.Febrero_MouseEnter);
             // 
             // groupBox5
             // 
@@ -3039,6 +3045,7 @@
             this.Marzo.TabIndex = 6;
             this.Marzo.Text = "Marzo";
             this.Marzo.UseVisualStyleBackColor = true;
+            this.Marzo.MouseEnter += new System.EventHandler(this.Marzo_MouseEnter);
             // 
             // groupBox6
             // 
@@ -3438,6 +3445,7 @@
             this.Abril.TabIndex = 7;
             this.Abril.Text = "Abril";
             this.Abril.UseVisualStyleBackColor = true;
+            this.Abril.MouseEnter += new System.EventHandler(this.Abril_MouseEnter);
             // 
             // groupBox7
             // 
@@ -3837,6 +3845,7 @@
             this.Mayo.TabIndex = 8;
             this.Mayo.Text = "Mayo";
             this.Mayo.UseVisualStyleBackColor = true;
+            this.Mayo.MouseEnter += new System.EventHandler(this.Mayo_MouseEnter);
             // 
             // groupBox8
             // 
@@ -4236,6 +4245,7 @@
             this.Junio.TabIndex = 9;
             this.Junio.Text = "Junio";
             this.Junio.UseVisualStyleBackColor = true;
+            this.Junio.MouseEnter += new System.EventHandler(this.Junio_MouseEnter);
             // 
             // groupBox9
             // 
@@ -4635,6 +4645,7 @@
             this.Diagnostico.TabIndex = 10;
             this.Diagnostico.Text = "Diag.";
             this.Diagnostico.UseVisualStyleBackColor = true;
+            this.Diagnostico.MouseEnter += new System.EventHandler(this.Diagnostico_MouseEnter);
             // 
             // groupBox10
             // 
@@ -5088,6 +5099,7 @@
             this.materialRaisedButton2.TabIndex = 96;
             this.materialRaisedButton2.Text = "Generar Boleta Externa";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
             // 
             // Calificaciones456
             // 
