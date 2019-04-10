@@ -13,7 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
-
+//MUCHOS MUCHOS CAMBIOS
 namespace Control_Escolar
 {
     public partial class Calificaciones12 : MaterialForm
@@ -2552,7 +2552,7 @@ namespace Control_Escolar
             }
             return false;
         }
-
+        //MUCHOS CAMBIOS!!!
         public void cambiacolor(GroupBox Grupo)
         {
             foreach (Control combo in Grupo.Controls)
