@@ -22,7 +22,17 @@ namespace Control_Escolar
         {
             InitializeComponent();
             validaCalifMen();
-
+            cambiacolor(groupBox1);
+            cambiacolor(groupBox2);
+            cambiacolor(groupBox3);
+            cambiacolor(groupBox4);
+            cambiacolor(groupBox5);
+            cambiacolor(groupBox6);
+            cambiacolor(groupBox7);
+            cambiacolor(groupBox8);
+            cambiacolor(groupBox9);
+            cambiacolor(groupBox10);
+            cambiacolor(groupBox11);
 
         }
 
@@ -7097,21 +7107,19 @@ namespace Control_Escolar
             {
                 if (combo is ComboBox)
                 {
-                    double valor = Convert.ToDouble(combo.Text);
+                    //ComboBox combo = new ComboBox();
+                    //combo.Name = grupo.Name;
                     if (combo.Text == string.Empty)
                     {
                         MessageBox.Show("No se han Registrado todas las Calificaciones. Favor de llenar todos los campos.");
                         return true;
-                    }
-                    if (valor >= 5 && valor <= 5.9)
-                    {
-
                     }
                 }
 
             }
             return false;
         }
+
         //MUCHOS CAMBIOS!!!
         public void cambiacolor(GroupBox Grupo)
         {
