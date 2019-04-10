@@ -125,21 +125,26 @@ namespace Control_Escolar
         //Ir al siguiente formulario
         private void BtnSiguiente_Click(object sender, EventArgs e)
         {
+           
+
             string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
 
             sesion.fnac = nacimiento;
             CalcEdad(sesion.fnac);
             bool validar = ValidarTodosDatos();
             ValidarTodosDatos2();
-            
+
+           
+          
+
+            inscripcion();
+
             if (validar == true)
             {
-                inscripcion();
-
-                System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadForm3));
-                pantalla.Start();
-                CheckForIllegalCrossThreadCalls = false;
-                this.Close();
+            System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadForm3));
+            pantalla.Start();
+            CheckForIllegalCrossThreadCalls = false;
+            this.Close();
             }
             else
             {

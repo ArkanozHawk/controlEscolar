@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadaGrupo));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -43,7 +42,6 @@
             // 
             // btnCerrar
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(666, 27);
@@ -58,7 +56,6 @@
             // 
             // btnPrincipal
             // 
-            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(152, 470);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -76,7 +73,6 @@
             this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AllowUserToResizeColumns = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -85,12 +81,11 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dataGridView1.Size = new System.Drawing.Size(624, 335);
+            this.dataGridView1.Size = new System.Drawing.Size(601, 288);
             this.dataGridView1.TabIndex = 70;
             // 
             // label1
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,7 +99,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_48;
             this.pictureBox1.Location = new System.Drawing.Point(387, 470);
             this.pictureBox1.Name = "pictureBox1";
@@ -114,7 +108,6 @@
             // 
             // GenerarPDF
             // 
-            this.GenerarPDF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.GenerarPDF.Depth = 0;
             this.GenerarPDF.Location = new System.Drawing.Point(443, 470);
             this.GenerarPDF.MouseState = MaterialSkin.MouseState.HOVER;
@@ -128,7 +121,6 @@
             // 
             // txtGrupo
             // 
-            this.txtGrupo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtGrupo.AutoSize = true;
             this.txtGrupo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtGrupo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,12 +134,11 @@
             // 
             // txtGrado
             // 
-            this.txtGrado.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtGrado.AutoSize = true;
             this.txtGrado.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.txtGrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGrado.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.txtGrado.Location = new System.Drawing.Point(451, 88);
+            this.txtGrado.Location = new System.Drawing.Point(438, 88);
             this.txtGrado.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtGrado.Name = "txtGrado";
             this.txtGrado.Size = new System.Drawing.Size(88, 26);
@@ -168,7 +159,6 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.btnCerrar);
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CadaGrupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listas de Alumnos";
