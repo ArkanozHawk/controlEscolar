@@ -28,10 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Calificaciones12));
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.Diagnostico = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label3 = new System.Windows.Forms.Label();
+
+
             this.cmbDiagIna = new System.Windows.Forms.ComboBox();
             this.cmbDiagEdfisi = new System.Windows.Forms.ComboBox();
             this.cmbDiagEdsocio = new System.Windows.Forms.ComboBox();
@@ -40,6 +43,7 @@
             this.cmbDiagIngles = new System.Windows.Forms.ComboBox();
             this.cmbDiagMate = new System.Windows.Forms.ComboBox();
             this.cmbDiagEspañol = new System.Windows.Forms.ComboBox();
+
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -51,6 +55,9 @@
             this.Septiembre = new System.Windows.Forms.TabPage();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.label40 = new System.Windows.Forms.Label();
+
+            
+
             this.cmbSepIna = new System.Windows.Forms.ComboBox();
             this.cmbSepEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbSepEdsocio = new System.Windows.Forms.ComboBox();
@@ -59,6 +66,7 @@
             this.cmbSepIngles = new System.Windows.Forms.ComboBox();
             this.cmbSepMate = new System.Windows.Forms.ComboBox();
             this.cmbSepEspañol = new System.Windows.Forms.ComboBox();
+
             this.label37 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
@@ -70,6 +78,8 @@
             this.Octubre = new System.Windows.Forms.TabPage();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label12 = new System.Windows.Forms.Label();
+
+           
             this.cmbOctIna = new System.Windows.Forms.ComboBox();
             this.cmbOctedfisica = new System.Windows.Forms.ComboBox();
             this.cmbOctedsocio = new System.Windows.Forms.ComboBox();
@@ -78,6 +88,7 @@
             this.cmbOctIngles = new System.Windows.Forms.ComboBox();
             this.cmbOctmate = new System.Windows.Forms.ComboBox();
             this.cmbOctEspañol = new System.Windows.Forms.ComboBox();
+
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
@@ -89,6 +100,8 @@
             this.Noviembre = new System.Windows.Forms.TabPage();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
+
+           
             this.cmbNovIna = new System.Windows.Forms.ComboBox();
             this.cmbNovEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbNovEdsocio = new System.Windows.Forms.ComboBox();
@@ -97,6 +110,7 @@
             this.cmbNovIngles = new System.Windows.Forms.ComboBox();
             this.cmbNovmate = new System.Windows.Forms.ComboBox();
             this.cmbNovEspañol = new System.Windows.Forms.ComboBox();
+
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -108,6 +122,8 @@
             this.Diciembre = new System.Windows.Forms.TabPage();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label30 = new System.Windows.Forms.Label();
+
+           
             this.cmbDicIna = new System.Windows.Forms.ComboBox();
             this.cmbDicEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbDicEdsocio = new System.Windows.Forms.ComboBox();
@@ -116,6 +132,7 @@
             this.cmbDicIngles = new System.Windows.Forms.ComboBox();
             this.cmbDicMate = new System.Windows.Forms.ComboBox();
             this.cmbDicEspañol = new System.Windows.Forms.ComboBox();
+
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
@@ -127,6 +144,8 @@
             this.Enero = new System.Windows.Forms.TabPage();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label43 = new System.Windows.Forms.Label();
+
+           
             this.cmbEneroIna = new System.Windows.Forms.ComboBox();
             this.cmbEneroEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbEneroEdsocio = new System.Windows.Forms.ComboBox();
@@ -135,6 +154,7 @@
             this.cmbEneroIngles = new System.Windows.Forms.ComboBox();
             this.cmbEneroMate = new System.Windows.Forms.ComboBox();
             this.cmbEneroEspañol = new System.Windows.Forms.ComboBox();
+
             this.label38 = new System.Windows.Forms.Label();
             this.label42 = new System.Windows.Forms.Label();
             this.label49 = new System.Windows.Forms.Label();
@@ -146,6 +166,9 @@
             this.Febrero = new System.Windows.Forms.TabPage();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.label57 = new System.Windows.Forms.Label();
+
+            
+
             this.cmbfebIna = new System.Windows.Forms.ComboBox();
             this.cmbfebEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbfebEdsocio = new System.Windows.Forms.ComboBox();
@@ -154,6 +177,7 @@
             this.cmbfebIngles = new System.Windows.Forms.ComboBox();
             this.cmbfebMate = new System.Windows.Forms.ComboBox();
             this.cmbfebEspañol = new System.Windows.Forms.ComboBox();
+
             this.label55 = new System.Windows.Forms.Label();
             this.label56 = new System.Windows.Forms.Label();
             this.label58 = new System.Windows.Forms.Label();
@@ -165,6 +189,8 @@
             this.Marzo = new System.Windows.Forms.TabPage();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.label66 = new System.Windows.Forms.Label();
+
+           
             this.cmbmarzIna = new System.Windows.Forms.ComboBox();
             this.cmbmarzEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbmarzEdsocio = new System.Windows.Forms.ComboBox();
@@ -173,6 +199,7 @@
             this.cmbmarzIngles = new System.Windows.Forms.ComboBox();
             this.cmbmarzmate = new System.Windows.Forms.ComboBox();
             this.cmbmarzEspañol = new System.Windows.Forms.ComboBox();
+
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label67 = new System.Windows.Forms.Label();
@@ -184,6 +211,8 @@
             this.Abril = new System.Windows.Forms.TabPage();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.label75 = new System.Windows.Forms.Label();
+
+          
             this.cmbAbrilIna = new System.Windows.Forms.ComboBox();
             this.cmbAbrilEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbAbrilEdsocio = new System.Windows.Forms.ComboBox();
@@ -192,6 +221,7 @@
             this.cmbAbrilIngles = new System.Windows.Forms.ComboBox();
             this.cmbAbrilmate = new System.Windows.Forms.ComboBox();
             this.cmbAbrilEspañol = new System.Windows.Forms.ComboBox();
+
             this.label73 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label76 = new System.Windows.Forms.Label();
@@ -203,6 +233,8 @@
             this.Mayo = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.label84 = new System.Windows.Forms.Label();
+
+           
             this.cmbMayoIna = new System.Windows.Forms.ComboBox();
             this.cmbMayoEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbMayoEdsocio = new System.Windows.Forms.ComboBox();
@@ -211,6 +243,7 @@
             this.cmbMayoIngles = new System.Windows.Forms.ComboBox();
             this.cmbMayoMate = new System.Windows.Forms.ComboBox();
             this.cmbMayoEspañol = new System.Windows.Forms.ComboBox();
+
             this.label82 = new System.Windows.Forms.Label();
             this.label83 = new System.Windows.Forms.Label();
             this.label85 = new System.Windows.Forms.Label();
@@ -222,6 +255,9 @@
             this.Junio = new System.Windows.Forms.TabPage();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.label93 = new System.Windows.Forms.Label();
+
+         
+
             this.cmbJunioIna = new System.Windows.Forms.ComboBox();
             this.cmbJunioEdfisica = new System.Windows.Forms.ComboBox();
             this.cmbJunioEdsocio = new System.Windows.Forms.ComboBox();
@@ -230,6 +266,7 @@
             this.cmbJunioIngles = new System.Windows.Forms.ComboBox();
             this.cmbJuniomate = new System.Windows.Forms.ComboBox();
             this.cmbJunioEspañol = new System.Windows.Forms.ComboBox();
+
             this.label91 = new System.Windows.Forms.Label();
             this.label92 = new System.Windows.Forms.Label();
             this.label94 = new System.Windows.Forms.Label();
@@ -271,6 +308,9 @@
             // 
             // materialTabControl1
             // 
+
+            this.materialTabControl1.Anchor = System.Windows.Forms.AnchorStyles.None;
+           
             this.materialTabControl1.Controls.Add(this.Diagnostico);
             this.materialTabControl1.Controls.Add(this.Septiembre);
             this.materialTabControl1.Controls.Add(this.Octubre);
@@ -282,6 +322,7 @@
             this.materialTabControl1.Controls.Add(this.Abril);
             this.materialTabControl1.Controls.Add(this.Mayo);
             this.materialTabControl1.Controls.Add(this.Junio);
+
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Location = new System.Drawing.Point(40, 138);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -340,6 +381,9 @@
             this.label3.Size = new System.Drawing.Size(149, 20);
             this.label3.TabIndex = 93;
             this.label3.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox6
             // 
             // cmbDiagIna
             // 
@@ -931,6 +975,9 @@
             this.label40.Size = new System.Drawing.Size(149, 20);
             this.label40.TabIndex = 93;
             this.label40.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox1
             // 
             // cmbSepIna
             // 
@@ -1522,6 +1569,9 @@
             this.label12.Size = new System.Drawing.Size(149, 20);
             this.label12.TabIndex = 93;
             this.label12.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox9
             // 
             // cmbOctIna
             // 
@@ -2113,6 +2163,10 @@
             this.label21.Size = new System.Drawing.Size(149, 20);
             this.label21.TabIndex = 93;
             this.label21.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox17
+
             // 
             // cmbNovIna
             // 
@@ -2695,6 +2749,17 @@
             this.groupBox4.TabStop = false;
             // 
             // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label30.Location = new System.Drawing.Point(359, 84);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(149, 20);
+            this.label30.TabIndex = 93;
+            this.label30.Text = "Ed. Socioemocional";
+            // 
+            // comboBox25
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -3295,6 +3360,10 @@
             this.label43.Size = new System.Drawing.Size(149, 20);
             this.label43.TabIndex = 93;
             this.label43.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox33
+
             // 
             // cmbEneroIna
             // 
@@ -3886,6 +3955,9 @@
             this.label57.Size = new System.Drawing.Size(149, 20);
             this.label57.TabIndex = 93;
             this.label57.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox41
             // 
             // cmbfebIna
             // 
@@ -4477,6 +4549,10 @@
             this.label66.Size = new System.Drawing.Size(149, 20);
             this.label66.TabIndex = 93;
             this.label66.Text = "Ed. Socioemocional";
+
+            // 
+            // comboBox49
+
             // 
             // cmbmarzIna
             // 
@@ -5069,6 +5145,8 @@
             this.label75.TabIndex = 93;
             this.label75.Text = "Ed. Socioemocional";
             // 
+            // comboBox57
+            // 
             // cmbAbrilIna
             // 
             this.cmbAbrilIna.FormattingEnabled = true;
@@ -5650,6 +5728,19 @@
             this.groupBox9.TabStop = false;
             // 
             // label84
+
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label84.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label84.Location = new System.Drawing.Point(359, 84);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(149, 20);
+            this.label84.TabIndex = 93;
+            this.label84.Text = "Ed. Socioemocional";
+            // 
+            // comboBox65
+
             // 
             this.label84.AutoSize = true;
             this.label84.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6241,6 +6332,19 @@
             this.groupBox10.TabStop = false;
             // 
             // label93
+
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label93.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label93.Location = new System.Drawing.Point(359, 84);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(149, 20);
+            this.label93.TabIndex = 93;
+            this.label93.Text = "Ed. Socioemocional";
+            // 
+            // comboBox73
+
             // 
             this.label93.AutoSize = true;
             this.label93.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -6793,6 +6897,7 @@
             // 
             // materialTabSelector1
             // 
+            this.materialTabSelector1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.materialTabSelector1.BaseTabControl = this.materialTabControl1;
             this.materialTabSelector1.Depth = 0;
             this.materialTabSelector1.Location = new System.Drawing.Point(-1, 63);
@@ -6804,6 +6909,7 @@
             // 
             // btnCerrar
             // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
             this.btnCerrar.Location = new System.Drawing.Point(902, 28);
@@ -6818,6 +6924,7 @@
             // 
             // btnIrBoletas
             // 
+            this.btnIrBoletas.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnIrBoletas.Depth = 0;
             this.btnIrBoletas.Location = new System.Drawing.Point(530, 515);
             this.btnIrBoletas.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6831,6 +6938,7 @@
             // 
             // btnPrincipal
             // 
+            this.btnPrincipal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btnPrincipal.Depth = 0;
             this.btnPrincipal.Location = new System.Drawing.Point(73, 515);
             this.btnPrincipal.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6844,6 +6952,7 @@
             // 
             // materialRaisedButton1
             // 
+            this.materialRaisedButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton1.Depth = 0;
             this.materialRaisedButton1.Location = new System.Drawing.Point(303, 515);
             this.materialRaisedButton1.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6857,6 +6966,7 @@
             // 
             // materialRaisedButton2
             // 
+            this.materialRaisedButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.materialRaisedButton2.Depth = 0;
             this.materialRaisedButton2.Location = new System.Drawing.Point(763, 515);
             this.materialRaisedButton2.MouseState = MaterialSkin.MouseState.HOVER;
@@ -6866,6 +6976,9 @@
             this.materialRaisedButton2.TabIndex = 97;
             this.materialRaisedButton2.Text = "Generar Boleta Externa";
             this.materialRaisedButton2.UseVisualStyleBackColor = true;
+
+            this.materialRaisedButton2.Click += new System.EventHandler(this.materialRaisedButton2_Click);
+
             // 
             // Calificaciones12
             // 
@@ -6879,6 +6992,7 @@
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.materialTabSelector1);
             this.Controls.Add(this.materialTabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones12";
             this.Text = "Calificaciones";
             this.materialTabControl1.ResumeLayout(false);
