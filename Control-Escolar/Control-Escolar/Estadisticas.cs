@@ -756,7 +756,7 @@ namespace Control_Escolar
             MySqlCommand com;
 
             string conexion = "server=localhost;uid=root;database=nerivela";
-            string query = "SELECT  *  FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
+            string query = "SELECT * FROM `calificaciones` WHERE CURP =" + "'" + sesion.Curp + "' ";
             string nombre, Apellidop, Apellidom, IdAlumno;
 
             conn = new MySqlConnection(conexion);
@@ -773,6 +773,7 @@ namespace Control_Escolar
             sesion.grado = Convert.ToString(myreader["idGrado"]);
             IdAlumno = Convert.ToString(myreader["idAlumno"]);
             conn.Close();
+            //---------------------------------------------------------------------------------------------------------
             // Creamos el documento con el tamaño de página tradicional
             Document doc = new Document(PageSize.LETTER);
             string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
@@ -1112,6 +1113,468 @@ namespace Control_Escolar
 
             MessageBox.Show("¡PDF creado!");
         }
-        
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //-------------Ingresar los datos del 1° maestro en pdf--------------------------------
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion = "server=localhost;uid=root;database=nerivela";
+            string query = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='1' ";
+            string nombre, Apellidop, Apellidom;
+
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query, conn);
+
+            MySqlDataReader myreader = com.ExecuteReader();
+
+            myreader.Read();
+            nombre = Convert.ToString(myreader["nombre"]);
+            Apellidop = Convert.ToString(myreader["ApellidoP"]);
+            Apellidom = Convert.ToString(myreader["ApellidoM"]);
+            conn.Close();
+            //-------------Ingresar los datos del 2° maestro en pdf--------------------------------
+            MySqlConnection conn1;
+            MySqlCommand com1;
+
+            string conexion1 = "server=localhost;uid=root;database=nerivela";
+            string query1 = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='2' ";
+            string nombre1, Apellidop1, Apellidom1;
+
+            conn1 = new MySqlConnection(conexion1);
+            conn1.Open();
+
+            com1 = new MySqlCommand(query1, conn1);
+
+            MySqlDataReader myreader1 = com1.ExecuteReader();
+
+            myreader1.Read();
+            nombre1 = Convert.ToString(myreader1["nombre"]);
+            Apellidop1 = Convert.ToString(myreader1["ApellidoP"]);
+            Apellidom1 = Convert.ToString(myreader1["ApellidoM"]);
+            conn1.Close();
+            //-------------Ingresar los datos del 3° maestro en pdf--------------------------------
+            MySqlConnection conn2;
+            MySqlCommand com2;
+
+            string conexion2 = "server=localhost;uid=root;database=nerivela";
+            string query2 = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='3' ";
+            string nombre2, Apellidop2, Apellidom2;
+
+            conn2 = new MySqlConnection(conexion2);
+            conn2.Open();
+
+            com2 = new MySqlCommand(query2, conn2);
+
+            MySqlDataReader myreader2 = com2.ExecuteReader();
+
+            myreader2.Read();
+            nombre2 = Convert.ToString(myreader2["nombre"]);
+            Apellidop2 = Convert.ToString(myreader2["ApellidoP"]);
+            Apellidom2 = Convert.ToString(myreader2["ApellidoM"]);
+            conn2.Close();
+            //-------------Ingresar los datos del 4° maestro en pdf--------------------------------
+            MySqlConnection conn3;
+            MySqlCommand com3;
+
+            string conexion3 = "server=localhost;uid=root;database=nerivela";
+            string query3 = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='4' ";
+            string nombre3, Apellidop3, Apellidom3, IdAlumno;
+
+            conn3 = new MySqlConnection(conexion3);
+            conn3.Open();
+
+            com = new MySqlCommand(query3, conn3);
+
+            MySqlDataReader myreader3 = com.ExecuteReader();
+
+            myreader3.Read();
+            nombre3 = Convert.ToString(myreader3["nombre"]);
+            Apellidop3 = Convert.ToString(myreader3["ApellidoP"]);
+            Apellidom3 = Convert.ToString(myreader3["ApellidoM"]);
+            conn3.Close();
+            //-------------Ingresar los datos del 5° maestro en pdf--------------------------------
+            MySqlConnection conn4;
+            MySqlCommand com4;
+
+            string conexion4 = "server=localhost;uid=root;database=nerivela";
+            string query4 = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='5' ";
+            string nombre4, Apellidop4, Apellidom4;
+
+            conn4 = new MySqlConnection(conexion4);
+            conn4.Open();
+
+            com4 = new MySqlCommand(query4, conn4);
+
+            MySqlDataReader myreader4 = com4.ExecuteReader();
+
+            myreader4.Read();
+            nombre4 = Convert.ToString(myreader4["nombre"]);
+            Apellidop4 = Convert.ToString(myreader4["ApellidoP"]);
+            Apellidom4 = Convert.ToString(myreader4["ApellidoM"]);
+            conn4.Close();
+            //-------------Ingresar los datos del 6° maestro en pdf--------------------------------
+            MySqlConnection conn5;
+            MySqlCommand com5;
+
+            string conexion5 = "server=localhost;uid=root;database=nerivela";
+            string query5 = "SELECT nombre, ApellidoP, ApellidoM FROM `maestros` WHERE gradoEncargado ='6' ";
+            string nombre5, Apellidop5, Apellidom5, IdAlumno5;
+
+            conn5 = new MySqlConnection(conexion5);
+            conn5.Open();
+
+            com5 = new MySqlCommand(query5, conn5);
+
+            MySqlDataReader myreader5 = com5.ExecuteReader();
+
+            myreader5.Read();
+            nombre5 = Convert.ToString(myreader["nombre"]);
+            Apellidop5 = Convert.ToString(myreader["ApellidoP"]);
+            Apellidom5 = Convert.ToString(myreader["ApellidoM"]);
+            conn5.Close();
+            //---------------------------------------------------------------------------------------------------------
+            // Creamos el documento con el tamaño de página tradicional
+            Document doc = new Document(PageSize.LETTER);
+            string folderPath = @"C:\shashe\"; // vfolder donde estaran los pdf
+            if (!Directory.Exists(folderPath))// pregunt si no existe
+            {
+                Directory.CreateDirectory(folderPath); // si no existe lo crea
+            }
+            // Creamos el documento con el tamaño de página tradicional
+            FileStream stream = new FileStream(folderPath + "Estadisticas-Promedios.pdf", FileMode.Create);
+            // Indicamos donde vamos a guardar el documento
+            PdfWriter writer = PdfWriter.GetInstance(doc, stream);
+
+            // Le colocamos el título y el autor
+            // **Nota: Esto no será visible en el documento
+            doc.AddTitle("Boleta interna");
+            doc.AddCreator("equipo master");
+
+            // Abrimos el archivo
+            doc.Open();
+
+            iTextSharp.text.Font tituloprin = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 12, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            iTextSharp.text.Font titulos = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 9, iTextSharp.text.Font.BOLD, BaseColor.BLACK);
+
+            iTextSharp.text.Font cuerpo = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 7, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+            iTextSharp.text.Font letchica = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 5, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+            iTextSharp.text.Font letmed = new iTextSharp.text.Font(iTextSharp.text.Font.FontFamily.HELVETICA, 6, iTextSharp.text.Font.NORMAL, BaseColor.BLACK);
+
+
+
+            // Creamos una tabla que contendrá  tooodooooo
+            PdfPTable table = new PdfPTable(5);
+            table.WidthPercentage = 100;//Le damos un tamaño a la tabla, esta tomara en porcierto el ancho que ocupara
+
+            iTextSharp.text.Image logoGro = iTextSharp.text.Image.GetInstance("../../../guerrero-logo.jpg");
+            logoGro.BorderWidth = 0;
+            logoGro.ScaleAbsolute(150, 70);
+            iTextSharp.text.Image logoEst = iTextSharp.text.Image.GetInstance("../../../logo-gro.png");
+            logoEst.ScaleAbsolute(160, 60);
+
+
+            // CREO UN ARREGLO QUE CONTIENE LAS MEDIDAS DE CADA UNA DE LAS COLUMNAS
+            // EN MI CASO SON 4, (TB PUEDES PASAR EL ARREGLO DIRECTAMENTE)
+            float[] Celdas = { 0.25f, 0.55f, 0.50f, 0.20f, 0.20f };
+
+            // ASIGNAS LAS MEDIDAS A LA TABLA (ANCHO)
+            table.SetWidths(Celdas);
+
+
+            PdfPCell cell390 = new PdfPCell(logoGro);
+            cell390.Colspan = 2;//toma columnas
+            cell390.BorderWidth = 0;
+            cell390.PaddingTop = 5f;
+            cell390.PaddingBottom = 5f;
+            cell390.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell390);
+
+            PdfPCell cell380 = new PdfPCell(logoEst);
+            cell380.Colspan = 3;//toma columnas
+            cell380.BorderWidth = 0;
+            cell380.HorizontalAlignment = 2; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell380.PaddingTop = 5f;
+            cell380.PaddingBottom = 5f;
+            table.AddCell(cell380);
+
+            PdfPCell cell39 = new PdfPCell(new Phrase("ESTADÍSTICA BÁSICA POR CENTRO DEL TRABAJO\n\nMEJORES PROMEDIOS", tituloprin));
+            cell39.Colspan = 5;//toma columnas
+            cell39.BorderWidth = 0;
+            cell39.PaddingTop = 5f;
+            cell39.PaddingBottom = 5f;
+            cell39.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell39);
+
+            PdfPCell cell38 = new PdfPCell(new Phrase("Fecha de impresión: \n\n", letmed));
+            cell38.Colspan = 5;//toma columnas
+            cell38.BorderWidth = 0;
+            cell38.HorizontalAlignment = 2; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell38.PaddingTop = 5f;
+            cell38.PaddingBottom = 5f;
+            table.AddCell(cell38);
+
+            PdfPCell cell398 = new PdfPCell(new Phrase("C.C.T. : 12DPT0003N                                                                     Nombre : INSTITUTO RODOLFO NERI VELA                                          Turno : 100", cuerpo));
+            cell398.Colspan = 5;//toma columnas
+            cell398.BorderWidth = 0;
+            cell398.HorizontalAlignment = 0; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell398.PaddingTop = 5f;
+            cell398.PaddingBottom = 5f;
+            table.AddCell(cell398);
+
+            PdfPCell cell391 = new PdfPCell(new Phrase("Domicilio : Vicente Guerrero 49, Barrios Historicos, 39540.                                                                                                                              Zona : 048", cuerpo));
+            cell391.Colspan = 5;//toma columnas
+            cell391.BorderWidth = 0;
+            cell391.PaddingTop = 5f;
+            cell391.PaddingBottom = 5f;
+            cell391.HorizontalAlignment = 0; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell391);
+
+            PdfPCell cell40 = new PdfPCell(new Phrase("Localidad : ACAPULCO DE JUAREZ                                                                                                                                                                Ciclo Escolar : 2018-2019", cuerpo));
+            cell40.Colspan = 5;//toma columnas
+            cell40.BorderWidth = 0;
+            cell40.HorizontalAlignment = 0; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell40.PaddingTop = 5f;
+            cell40.PaddingBottom = 5f;
+            table.AddCell(cell40);
+
+            PdfPCell cell53 = new PdfPCell(new Phrase("Municipio : ACAPULCO DE JUAREZ                                                                                                                                                                Id. Docto :", cuerpo));
+            cell53.Colspan = 5;//toma columnas
+            cell53.BorderWidth = 0;
+            cell53.PaddingTop = 5f;
+            cell53.PaddingBottom = 10f;
+            cell53.HorizontalAlignment = 0; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell53);
+
+
+            PdfPCell cell4311 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell4311.Colspan = 5;//toma columnas
+            cell4311.BorderWidth = 0;
+            table.AddCell(cell4311);
+
+            PdfPCell cell44 = new PdfPCell(new Phrase("GRADO ", cuerpo));
+            cell44.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell44);
+
+            PdfPCell cell42 = new PdfPCell(new Phrase("GRUPO", cuerpo));
+            cell42.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell42);
+
+            PdfPCell cell441 = new PdfPCell(new Phrase("MAESTRO ", cuerpo));
+            cell441.Colspan = 2;
+            cell441.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell441);
+
+            PdfPCell cell421 = new PdfPCell(new Phrase("PROMEDIO", cuerpo));
+            cell421.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell421);
+
+
+            PdfPCell cell4312 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell4312.Colspan = 5;//toma columnas
+            cell4312.BorderWidth = 0;
+            table.AddCell(cell4312);
+
+            PdfPCell cell445 = new PdfPCell(new Phrase("1 ", cuerpo));
+            cell445.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell445);
+
+            PdfPCell cell425 = new PdfPCell(new Phrase("A", cuerpo));
+            cell425.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell425);
+
+            PdfPCell cell447 = new PdfPCell(new Phrase(" "+ Apellidop + Apellidom + nombre, cuerpo));
+            cell447.Colspan = 2;
+            cell447.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell447);
+
+            PdfPCell cell428 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell428.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell428);
+
+            PdfPCell cell4325 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell4325.Colspan = 5;//toma columnas
+            cell4325.BorderWidth = 0;
+            table.AddCell(cell4325);
+
+            PdfPCell cell455 = new PdfPCell(new Phrase("2 ", cuerpo));
+            cell455.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell455);
+
+            PdfPCell cell415 = new PdfPCell(new Phrase("A", cuerpo));
+            cell415.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell415);
+
+            PdfPCell cell417 = new PdfPCell(new Phrase(" " + Apellidop1 + Apellidom1 + nombre1, cuerpo));
+            cell417.Colspan = 2;
+            cell417.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell417);
+
+            PdfPCell cell468 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell468.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell468);
+
+            PdfPCell cell04 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell04.Colspan = 5;//toma columnas
+            cell04.BorderWidth = 0;
+            table.AddCell(cell04);
+
+            PdfPCell cell05 = new PdfPCell(new Phrase("3 ", cuerpo));
+            cell05.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell05);
+
+            PdfPCell cell06 = new PdfPCell(new Phrase("A", cuerpo));
+            cell06.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell06);
+
+            PdfPCell cell07 = new PdfPCell(new Phrase(" " + Apellidop2 + Apellidom2 + nombre2, cuerpo));
+            cell07.Colspan = 2;
+            cell07.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell07);
+
+            PdfPCell cell08 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell08.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell08);
+
+            PdfPCell cell014 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell014.Colspan = 5;//toma columnas
+            cell014.BorderWidth = 0;
+            table.AddCell(cell014);
+
+            PdfPCell cell015 = new PdfPCell(new Phrase("4 ", cuerpo));
+            cell015.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell015);
+
+            PdfPCell cell016 = new PdfPCell(new Phrase("A", cuerpo));
+            cell016.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell016);
+
+            PdfPCell cell017 = new PdfPCell(new Phrase(" " + Apellidop3 + Apellidom3 + nombre3, cuerpo));
+            cell017.Colspan = 2;
+            cell017.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell017);
+
+            PdfPCell cell019 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell019.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell019);
+
+            PdfPCell cell034 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell034.Colspan = 5;//toma columnas
+            cell034.BorderWidth = 0;
+            table.AddCell(cell034);
+
+            PdfPCell cell035 = new PdfPCell(new Phrase("5 ", cuerpo));
+            cell035.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell035);
+
+            PdfPCell cell036 = new PdfPCell(new Phrase("A", cuerpo));
+            cell036.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell036);
+
+            PdfPCell cell037 = new PdfPCell(new Phrase(" " + Apellidop4 + Apellidom4 + nombre4, cuerpo));
+            cell037.Colspan = 2;
+            cell037.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell037);
+
+            PdfPCell cell038 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell038.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell038);
+
+            PdfPCell cell044 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell044.Colspan = 5;//toma columnas
+            cell044.BorderWidth = 0;
+            table.AddCell(cell044);
+
+            PdfPCell cell045 = new PdfPCell(new Phrase("6 ", cuerpo));
+            cell045.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell045);
+
+            PdfPCell cell046 = new PdfPCell(new Phrase("A", cuerpo));
+            cell046.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell046);
+
+            PdfPCell cell047 = new PdfPCell(new Phrase(" " + Apellidop5 + Apellidom5 + nombre5, cuerpo));
+            cell047.Colspan = 2;
+            cell047.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell047);
+
+            PdfPCell cell049 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell049.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell049);
+
+            PdfPCell cell4331 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell4331.Colspan = 5;//toma columnas
+            cell4331.BorderWidth = 0;
+            table.AddCell(cell4331);
+
+            PdfPCell cell244 = new PdfPCell(new Phrase("PROMEDIO MÁS ALTO ", cuerpo));
+            cell244.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell244);
+
+            PdfPCell cell242 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell242.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell242);
+
+            PdfPCell cell241 = new PdfPCell(new Phrase("  ", cuerpo));
+            cell241.Colspan = 2;
+            cell241.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell241);
+
+            PdfPCell cell226 = new PdfPCell(new Phrase(" ", cuerpo));
+            cell226.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            table.AddCell(cell226);
+
+            PdfPCell cell2211 = new PdfPCell(new Phrase("SUPERVISOR(A)\n\n\n\n________________________________________________", cuerpo));
+            cell2211.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell2211.Colspan = 2;
+            cell2211.BorderWidth = 0;
+            cell2211.PaddingTop = 45f;
+            table.AddCell(cell2211);
+
+            PdfPCell cell2261 = new PdfPCell(new Phrase("DIRECTOR(A)\n\n\n\n________________________________________________", cuerpo));
+            cell2261.HorizontalAlignment = 1; // 0 = Izquierda, 1 = Centro, 2 = Derecha
+            cell2261.Colspan = 3;
+            cell2261.BorderWidth = 0;
+            cell2261.PaddingTop = 45f;
+            table.AddCell(cell2261);
+
+            //encabezado
+
+            /* table.AddCell(" ");
+
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             table.AddCell(" ");
+             */
+
+            doc.Add(table);
+
+            doc.Close();
+            writer.Close();
+
+            MessageBox.Show("¡PDF creado!");
+        }
     }
 }
