@@ -6252,6 +6252,11 @@ namespace Control_Escolar
             cambiacolor(groupBox10);
         }
 
+        private void CmbDiagEspañol_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         public void caliMayo()
         {
             Español = cmbMayoEspañol.SelectedItem.ToString();

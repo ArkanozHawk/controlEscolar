@@ -1404,6 +1404,7 @@
             this.cmbOctubreIna.Name = "cmbOctubreIna";
             this.cmbOctubreIna.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreIna.TabIndex = 96;
+            this.cmbOctubreIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreEdFisica
             // 
@@ -1464,6 +1465,7 @@
             this.cmbOctubreEdFisica.Name = "cmbOctubreEdFisica";
             this.cmbOctubreEdFisica.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreEdFisica.TabIndex = 95;
+            this.cmbOctubreEdFisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreEdsocio
             // 
@@ -1524,6 +1526,7 @@
             this.cmbOctubreEdsocio.Name = "cmbOctubreEdsocio";
             this.cmbOctubreEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreEdsocio.TabIndex = 94;
+            this.cmbOctubreEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmboctubreArt
             // 
@@ -1584,6 +1587,7 @@
             this.cmboctubreArt.Name = "cmboctubreArt";
             this.cmboctubreArt.Size = new System.Drawing.Size(124, 33);
             this.cmboctubreArt.TabIndex = 93;
+            this.cmboctubreArt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreFormacion
             // 
@@ -1604,6 +1608,7 @@
             this.cmbOctubreFormacion.Name = "cmbOctubreFormacion";
             this.cmbOctubreFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreFormacion.TabIndex = 92;
+            this.cmbOctubreFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreHistoria
             // 
@@ -1624,6 +1629,7 @@
             this.cmbOctubreHistoria.Name = "cmbOctubreHistoria";
             this.cmbOctubreHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreHistoria.TabIndex = 91;
+            this.cmbOctubreHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreGeografia
             // 
@@ -1644,6 +1650,7 @@
             this.cmbOctubreGeografia.Name = "cmbOctubreGeografia";
             this.cmbOctubreGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreGeografia.TabIndex = 90;
+            this.cmbOctubreGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreCiencias
             // 
@@ -1664,6 +1671,7 @@
             this.cmbOctubreCiencias.Name = "cmbOctubreCiencias";
             this.cmbOctubreCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreCiencias.TabIndex = 89;
+            this.cmbOctubreCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreIngles
             // 
@@ -1684,6 +1692,7 @@
             this.cmbOctubreIngles.Name = "cmbOctubreIngles";
             this.cmbOctubreIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreIngles.TabIndex = 88;
+            this.cmbOctubreIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbOctubreMate
             // 
@@ -1704,6 +1713,7 @@
             this.cmbOctubreMate.Name = "cmbOctubreMate";
             this.cmbOctubreMate.Size = new System.Drawing.Size(124, 33);
             this.cmbOctubreMate.TabIndex = 87;
+            this.cmbOctubreMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEspañol
             // 
@@ -1724,6 +1734,7 @@
             this.cmbEspañol.Name = "cmbEspañol";
             this.cmbEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbEspañol.TabIndex = 75;
+            this.cmbEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label13
             // 
@@ -2044,6 +2055,7 @@
             this.cmbNovIna.Name = "cmbNovIna";
             this.cmbNovIna.Size = new System.Drawing.Size(124, 33);
             this.cmbNovIna.TabIndex = 96;
+            this.cmbNovIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovEdFisi
             // 
@@ -2064,6 +2076,7 @@
             this.cmbNovEdFisi.Name = "cmbNovEdFisi";
             this.cmbNovEdFisi.Size = new System.Drawing.Size(124, 33);
             this.cmbNovEdFisi.TabIndex = 95;
+            this.cmbNovEdFisi.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovEdsocio
             // 
@@ -2084,6 +2097,7 @@
             this.cmbNovEdsocio.Name = "cmbNovEdsocio";
             this.cmbNovEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbNovEdsocio.TabIndex = 94;
+            this.cmbNovEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovArtes
             // 
@@ -2104,6 +2118,7 @@
             this.cmbNovArtes.Name = "cmbNovArtes";
             this.cmbNovArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbNovArtes.TabIndex = 93;
+            this.cmbNovArtes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovFormacion
             // 
@@ -2124,6 +2139,7 @@
             this.cmbNovFormacion.Name = "cmbNovFormacion";
             this.cmbNovFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbNovFormacion.TabIndex = 92;
+            this.cmbNovFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovHistoria
             // 
@@ -2144,6 +2160,7 @@
             this.cmbNovHistoria.Name = "cmbNovHistoria";
             this.cmbNovHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbNovHistoria.TabIndex = 91;
+            this.cmbNovHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovGeografia
             // 
@@ -2164,6 +2181,7 @@
             this.cmbNovGeografia.Name = "cmbNovGeografia";
             this.cmbNovGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbNovGeografia.TabIndex = 90;
+            this.cmbNovGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovCiencias
             // 
@@ -2184,6 +2202,7 @@
             this.cmbNovCiencias.Name = "cmbNovCiencias";
             this.cmbNovCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbNovCiencias.TabIndex = 89;
+            this.cmbNovCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovIngles
             // 
@@ -2204,6 +2223,7 @@
             this.cmbNovIngles.Name = "cmbNovIngles";
             this.cmbNovIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbNovIngles.TabIndex = 88;
+            this.cmbNovIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovmate
             // 
@@ -2224,6 +2244,7 @@
             this.cmbNovmate.Name = "cmbNovmate";
             this.cmbNovmate.Size = new System.Drawing.Size(124, 33);
             this.cmbNovmate.TabIndex = 87;
+            this.cmbNovmate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbNovEspañol
             // 
@@ -2284,6 +2305,7 @@
             this.cmbNovEspañol.Name = "cmbNovEspañol";
             this.cmbNovEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbNovEspañol.TabIndex = 75;
+            this.cmbNovEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label36
             // 
@@ -2484,6 +2506,7 @@
             this.cmbDicInasis.Name = "cmbDicInasis";
             this.cmbDicInasis.Size = new System.Drawing.Size(124, 33);
             this.cmbDicInasis.TabIndex = 96;
+            this.cmbDicInasis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicEdFisica
             // 
@@ -2504,6 +2527,7 @@
             this.cmbDicEdFisica.Name = "cmbDicEdFisica";
             this.cmbDicEdFisica.Size = new System.Drawing.Size(124, 33);
             this.cmbDicEdFisica.TabIndex = 95;
+            this.cmbDicEdFisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicEdsocio
             // 
@@ -2524,6 +2548,7 @@
             this.cmbDicEdsocio.Name = "cmbDicEdsocio";
             this.cmbDicEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbDicEdsocio.TabIndex = 94;
+            this.cmbDicEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicArtes
             // 
@@ -2544,6 +2569,7 @@
             this.cmbDicArtes.Name = "cmbDicArtes";
             this.cmbDicArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbDicArtes.TabIndex = 93;
+            this.cmbDicArtes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicForm
             // 
@@ -2564,6 +2590,7 @@
             this.cmbDicForm.Name = "cmbDicForm";
             this.cmbDicForm.Size = new System.Drawing.Size(124, 33);
             this.cmbDicForm.TabIndex = 92;
+            this.cmbDicForm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicHistoria
             // 
@@ -2584,6 +2611,7 @@
             this.cmbDicHistoria.Name = "cmbDicHistoria";
             this.cmbDicHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbDicHistoria.TabIndex = 91;
+            this.cmbDicHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicGeografia
             // 
@@ -2604,6 +2632,7 @@
             this.cmbDicGeografia.Name = "cmbDicGeografia";
             this.cmbDicGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbDicGeografia.TabIndex = 90;
+            this.cmbDicGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicCiencias
             // 
@@ -2624,6 +2653,7 @@
             this.cmbDicCiencias.Name = "cmbDicCiencias";
             this.cmbDicCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbDicCiencias.TabIndex = 89;
+            this.cmbDicCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicIngles
             // 
@@ -2644,6 +2674,7 @@
             this.cmbDicIngles.Name = "cmbDicIngles";
             this.cmbDicIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbDicIngles.TabIndex = 88;
+            this.cmbDicIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicMate
             // 
@@ -2664,6 +2695,7 @@
             this.cmbDicMate.Name = "cmbDicMate";
             this.cmbDicMate.Size = new System.Drawing.Size(124, 33);
             this.cmbDicMate.TabIndex = 87;
+            this.cmbDicMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDicEspañol
             // 
@@ -2684,6 +2716,7 @@
             this.cmbDicEspañol.Name = "cmbDicEspañol";
             this.cmbDicEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbDicEspañol.TabIndex = 75;
+            this.cmbDicEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label48
             // 
@@ -2884,6 +2917,7 @@
             this.cmbEneroIna.Name = "cmbEneroIna";
             this.cmbEneroIna.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroIna.TabIndex = 96;
+            this.cmbEneroIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroEdfisica
             // 
@@ -2904,6 +2938,7 @@
             this.cmbEneroEdfisica.Name = "cmbEneroEdfisica";
             this.cmbEneroEdfisica.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroEdfisica.TabIndex = 95;
+            this.cmbEneroEdfisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroEdsocio
             // 
@@ -2924,6 +2959,7 @@
             this.cmbEneroEdsocio.Name = "cmbEneroEdsocio";
             this.cmbEneroEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroEdsocio.TabIndex = 94;
+            this.cmbEneroEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroArtess
             // 
@@ -2944,6 +2980,7 @@
             this.cmbEneroArtess.Name = "cmbEneroArtess";
             this.cmbEneroArtess.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroArtess.TabIndex = 93;
+            this.cmbEneroArtess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroFormacion
             // 
@@ -2964,6 +3001,7 @@
             this.cmbEneroFormacion.Name = "cmbEneroFormacion";
             this.cmbEneroFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroFormacion.TabIndex = 92;
+            this.cmbEneroFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroHistoria
             // 
@@ -2984,6 +3022,7 @@
             this.cmbEneroHistoria.Name = "cmbEneroHistoria";
             this.cmbEneroHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroHistoria.TabIndex = 91;
+            this.cmbEneroHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroGeografia
             // 
@@ -3004,6 +3043,7 @@
             this.cmbEneroGeografia.Name = "cmbEneroGeografia";
             this.cmbEneroGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroGeografia.TabIndex = 90;
+            this.cmbEneroGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroCiencias
             // 
@@ -3024,6 +3064,7 @@
             this.cmbEneroCiencias.Name = "cmbEneroCiencias";
             this.cmbEneroCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroCiencias.TabIndex = 89;
+            this.cmbEneroCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroIngles
             // 
@@ -3044,6 +3085,7 @@
             this.cmbEneroIngles.Name = "cmbEneroIngles";
             this.cmbEneroIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroIngles.TabIndex = 88;
+            this.cmbEneroIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroMate
             // 
@@ -3064,6 +3106,7 @@
             this.cmbEneroMate.Name = "cmbEneroMate";
             this.cmbEneroMate.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroMate.TabIndex = 87;
+            this.cmbEneroMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbEneroEspañol
             // 
@@ -3084,6 +3127,7 @@
             this.cmbEneroEspañol.Name = "cmbEneroEspañol";
             this.cmbEneroEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbEneroEspañol.TabIndex = 75;
+            this.cmbEneroEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label60
             // 
@@ -3284,6 +3328,7 @@
             this.cmbfebreroIna.Name = "cmbfebreroIna";
             this.cmbfebreroIna.Size = new System.Drawing.Size(124, 33);
             this.cmbfebreroIna.TabIndex = 96;
+            this.cmbfebreroIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroEdfisica
             // 
@@ -3304,6 +3349,7 @@
             this.cmbFebreroEdfisica.Name = "cmbFebreroEdfisica";
             this.cmbFebreroEdfisica.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroEdfisica.TabIndex = 95;
+            this.cmbFebreroEdfisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroEdsocio
             // 
@@ -3324,6 +3370,7 @@
             this.cmbFebreroEdsocio.Name = "cmbFebreroEdsocio";
             this.cmbFebreroEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroEdsocio.TabIndex = 94;
+            this.cmbFebreroEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroArtess
             // 
@@ -3344,6 +3391,7 @@
             this.cmbFebreroArtess.Name = "cmbFebreroArtess";
             this.cmbFebreroArtess.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroArtess.TabIndex = 93;
+            this.cmbFebreroArtess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroFormacion
             // 
@@ -3364,6 +3412,7 @@
             this.cmbFebreroFormacion.Name = "cmbFebreroFormacion";
             this.cmbFebreroFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroFormacion.TabIndex = 92;
+            this.cmbFebreroFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroHistoria
             // 
@@ -3384,6 +3433,7 @@
             this.cmbFebreroHistoria.Name = "cmbFebreroHistoria";
             this.cmbFebreroHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroHistoria.TabIndex = 91;
+            this.cmbFebreroHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroGeo
             // 
@@ -3404,6 +3454,7 @@
             this.cmbFebreroGeo.Name = "cmbFebreroGeo";
             this.cmbFebreroGeo.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroGeo.TabIndex = 90;
+            this.cmbFebreroGeo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroCiencias
             // 
@@ -3424,6 +3475,7 @@
             this.cmbFebreroCiencias.Name = "cmbFebreroCiencias";
             this.cmbFebreroCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroCiencias.TabIndex = 89;
+            this.cmbFebreroCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbfebreroIngles
             // 
@@ -3444,6 +3496,7 @@
             this.cmbfebreroIngles.Name = "cmbfebreroIngles";
             this.cmbfebreroIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbfebreroIngles.TabIndex = 88;
+            this.cmbfebreroIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroMate
             // 
@@ -3464,6 +3517,7 @@
             this.cmbFebreroMate.Name = "cmbFebreroMate";
             this.cmbFebreroMate.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroMate.TabIndex = 87;
+            this.cmbFebreroMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbFebreroEspañol
             // 
@@ -3484,6 +3538,7 @@
             this.cmbFebreroEspañol.Name = "cmbFebreroEspañol";
             this.cmbFebreroEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbFebreroEspañol.TabIndex = 75;
+            this.cmbFebreroEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label72
             // 
@@ -3684,6 +3739,7 @@
             this.cmbmarzoina.Name = "cmbmarzoina";
             this.cmbmarzoina.Size = new System.Drawing.Size(124, 33);
             this.cmbmarzoina.TabIndex = 96;
+            this.cmbmarzoina.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoEdFisica
             // 
@@ -3704,6 +3760,7 @@
             this.cmbMarzoEdFisica.Name = "cmbMarzoEdFisica";
             this.cmbMarzoEdFisica.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoEdFisica.TabIndex = 95;
+            this.cmbMarzoEdFisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoEdsocio
             // 
@@ -3724,6 +3781,7 @@
             this.cmbMarzoEdsocio.Name = "cmbMarzoEdsocio";
             this.cmbMarzoEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoEdsocio.TabIndex = 94;
+            this.cmbMarzoEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoArtess
             // 
@@ -3744,6 +3802,7 @@
             this.cmbMarzoArtess.Name = "cmbMarzoArtess";
             this.cmbMarzoArtess.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoArtess.TabIndex = 93;
+            this.cmbMarzoArtess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoFormacion
             // 
@@ -3764,6 +3823,7 @@
             this.cmbMarzoFormacion.Name = "cmbMarzoFormacion";
             this.cmbMarzoFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoFormacion.TabIndex = 92;
+            this.cmbMarzoFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoHistoria
             // 
@@ -3784,6 +3844,7 @@
             this.cmbMarzoHistoria.Name = "cmbMarzoHistoria";
             this.cmbMarzoHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoHistoria.TabIndex = 91;
+            this.cmbMarzoHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoGeografia
             // 
@@ -3804,6 +3865,7 @@
             this.cmbMarzoGeografia.Name = "cmbMarzoGeografia";
             this.cmbMarzoGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoGeografia.TabIndex = 90;
+            this.cmbMarzoGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoCiencias
             // 
@@ -3824,6 +3886,7 @@
             this.cmbMarzoCiencias.Name = "cmbMarzoCiencias";
             this.cmbMarzoCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoCiencias.TabIndex = 89;
+            this.cmbMarzoCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoIngles
             // 
@@ -3844,6 +3907,7 @@
             this.cmbMarzoIngles.Name = "cmbMarzoIngles";
             this.cmbMarzoIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoIngles.TabIndex = 88;
+            this.cmbMarzoIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMarzoMate
             // 
@@ -3864,6 +3928,7 @@
             this.cmbMarzoMate.Name = "cmbMarzoMate";
             this.cmbMarzoMate.Size = new System.Drawing.Size(124, 33);
             this.cmbMarzoMate.TabIndex = 87;
+            this.cmbMarzoMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbmarzoEspañol
             // 
@@ -3884,6 +3949,7 @@
             this.cmbmarzoEspañol.Name = "cmbmarzoEspañol";
             this.cmbmarzoEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbmarzoEspañol.TabIndex = 75;
+            this.cmbmarzoEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label84
             // 
@@ -4084,6 +4150,7 @@
             this.cmbAbrilIna.Name = "cmbAbrilIna";
             this.cmbAbrilIna.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilIna.TabIndex = 96;
+            this.cmbAbrilIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilEdfisica
             // 
@@ -4104,6 +4171,7 @@
             this.cmbAbrilEdfisica.Name = "cmbAbrilEdfisica";
             this.cmbAbrilEdfisica.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilEdfisica.TabIndex = 95;
+            this.cmbAbrilEdfisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilEdsocio
             // 
@@ -4124,6 +4192,7 @@
             this.cmbAbrilEdsocio.Name = "cmbAbrilEdsocio";
             this.cmbAbrilEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilEdsocio.TabIndex = 94;
+            this.cmbAbrilEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilArtess
             // 
@@ -4144,6 +4213,7 @@
             this.cmbAbrilArtess.Name = "cmbAbrilArtess";
             this.cmbAbrilArtess.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilArtess.TabIndex = 93;
+            this.cmbAbrilArtess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilFormacion
             // 
@@ -4164,6 +4234,7 @@
             this.cmbAbrilFormacion.Name = "cmbAbrilFormacion";
             this.cmbAbrilFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilFormacion.TabIndex = 92;
+            this.cmbAbrilFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilHistoria
             // 
@@ -4184,6 +4255,7 @@
             this.cmbAbrilHistoria.Name = "cmbAbrilHistoria";
             this.cmbAbrilHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilHistoria.TabIndex = 91;
+            this.cmbAbrilHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilGeografia
             // 
@@ -4204,6 +4276,7 @@
             this.cmbAbrilGeografia.Name = "cmbAbrilGeografia";
             this.cmbAbrilGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilGeografia.TabIndex = 90;
+            this.cmbAbrilGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilCiencias
             // 
@@ -4224,6 +4297,7 @@
             this.cmbAbrilCiencias.Name = "cmbAbrilCiencias";
             this.cmbAbrilCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilCiencias.TabIndex = 89;
+            this.cmbAbrilCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilIngles
             // 
@@ -4244,6 +4318,7 @@
             this.cmbAbrilIngles.Name = "cmbAbrilIngles";
             this.cmbAbrilIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilIngles.TabIndex = 88;
+            this.cmbAbrilIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilmate
             // 
@@ -4264,6 +4339,7 @@
             this.cmbAbrilmate.Name = "cmbAbrilmate";
             this.cmbAbrilmate.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilmate.TabIndex = 87;
+            this.cmbAbrilmate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbAbrilEspañol
             // 
@@ -4284,6 +4360,7 @@
             this.cmbAbrilEspañol.Name = "cmbAbrilEspañol";
             this.cmbAbrilEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbAbrilEspañol.TabIndex = 75;
+            this.cmbAbrilEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label96
             // 
@@ -4484,6 +4561,7 @@
             this.cmbMayoIna.Name = "cmbMayoIna";
             this.cmbMayoIna.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoIna.TabIndex = 96;
+            this.cmbMayoIna.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoEdfisica
             // 
@@ -4504,6 +4582,7 @@
             this.cmbMayoEdfisica.Name = "cmbMayoEdfisica";
             this.cmbMayoEdfisica.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoEdfisica.TabIndex = 95;
+            this.cmbMayoEdfisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoEdsocio
             // 
@@ -4524,6 +4603,7 @@
             this.cmbMayoEdsocio.Name = "cmbMayoEdsocio";
             this.cmbMayoEdsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoEdsocio.TabIndex = 94;
+            this.cmbMayoEdsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoArtes
             // 
@@ -4544,6 +4624,7 @@
             this.cmbMayoArtes.Name = "cmbMayoArtes";
             this.cmbMayoArtes.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoArtes.TabIndex = 93;
+            this.cmbMayoArtes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoFormacion
             // 
@@ -4564,6 +4645,7 @@
             this.cmbMayoFormacion.Name = "cmbMayoFormacion";
             this.cmbMayoFormacion.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoFormacion.TabIndex = 92;
+            this.cmbMayoFormacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayohistoria
             // 
@@ -4584,6 +4666,7 @@
             this.cmbMayohistoria.Name = "cmbMayohistoria";
             this.cmbMayohistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbMayohistoria.TabIndex = 91;
+            this.cmbMayohistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoGeografia
             // 
@@ -4604,6 +4687,7 @@
             this.cmbMayoGeografia.Name = "cmbMayoGeografia";
             this.cmbMayoGeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoGeografia.TabIndex = 90;
+            this.cmbMayoGeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoCiencias
             // 
@@ -4624,6 +4708,7 @@
             this.cmbMayoCiencias.Name = "cmbMayoCiencias";
             this.cmbMayoCiencias.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoCiencias.TabIndex = 89;
+            this.cmbMayoCiencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoIngles
             // 
@@ -4644,6 +4729,7 @@
             this.cmbMayoIngles.Name = "cmbMayoIngles";
             this.cmbMayoIngles.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoIngles.TabIndex = 88;
+            this.cmbMayoIngles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbMayoMate
             // 
@@ -4664,6 +4750,7 @@
             this.cmbMayoMate.Name = "cmbMayoMate";
             this.cmbMayoMate.Size = new System.Drawing.Size(124, 33);
             this.cmbMayoMate.TabIndex = 87;
+            this.cmbMayoMate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbmayoEspañol
             // 
@@ -4684,6 +4771,7 @@
             this.cmbmayoEspañol.Name = "cmbmayoEspañol";
             this.cmbmayoEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbmayoEspañol.TabIndex = 75;
+            this.cmbmayoEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label108
             // 
@@ -4884,6 +4972,7 @@
             this.cmbJunioinasis.Name = "cmbJunioinasis";
             this.cmbJunioinasis.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioinasis.TabIndex = 96;
+            this.cmbJunioinasis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioEdFis
             // 
@@ -4904,6 +4993,7 @@
             this.cmbJunioEdFis.Name = "cmbJunioEdFis";
             this.cmbJunioEdFis.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioEdFis.TabIndex = 95;
+            this.cmbJunioEdFis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioEdsocioe
             // 
@@ -4924,6 +5014,7 @@
             this.cmbJunioEdsocioe.Name = "cmbJunioEdsocioe";
             this.cmbJunioEdsocioe.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioEdsocioe.TabIndex = 94;
+            this.cmbJunioEdsocioe.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioArtess
             // 
@@ -4944,6 +5035,7 @@
             this.cmbJunioArtess.Name = "cmbJunioArtess";
             this.cmbJunioArtess.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioArtess.TabIndex = 93;
+            this.cmbJunioArtess.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioFormacionCivica
             // 
@@ -4964,6 +5056,7 @@
             this.cmbJunioFormacionCivica.Name = "cmbJunioFormacionCivica";
             this.cmbJunioFormacionCivica.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioFormacionCivica.TabIndex = 92;
+            this.cmbJunioFormacionCivica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJuniohistorias
             // 
@@ -4984,6 +5077,7 @@
             this.cmbJuniohistorias.Name = "cmbJuniohistorias";
             this.cmbJuniohistorias.Size = new System.Drawing.Size(124, 33);
             this.cmbJuniohistorias.TabIndex = 91;
+            this.cmbJuniohistorias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioGeofgrafia
             // 
@@ -5004,6 +5098,7 @@
             this.cmbJunioGeofgrafia.Name = "cmbJunioGeofgrafia";
             this.cmbJunioGeofgrafia.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioGeofgrafia.TabIndex = 90;
+            this.cmbJunioGeofgrafia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioCienciass
             // 
@@ -5024,6 +5119,7 @@
             this.cmbJunioCienciass.Name = "cmbJunioCienciass";
             this.cmbJunioCienciass.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioCienciass.TabIndex = 89;
+            this.cmbJunioCienciass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJunioingless
             // 
@@ -5044,6 +5140,7 @@
             this.cmbJunioingless.Name = "cmbJunioingless";
             this.cmbJunioingless.Size = new System.Drawing.Size(124, 33);
             this.cmbJunioingless.TabIndex = 88;
+            this.cmbJunioingless.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbJuniomate
             // 
@@ -5064,6 +5161,7 @@
             this.cmbJuniomate.Name = "cmbJuniomate";
             this.cmbJuniomate.Size = new System.Drawing.Size(124, 33);
             this.cmbJuniomate.TabIndex = 87;
+            this.cmbJuniomate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbDJunioEspañol
             // 
@@ -5084,6 +5182,7 @@
             this.cmbDJunioEspañol.Name = "cmbDJunioEspañol";
             this.cmbDJunioEspañol.Size = new System.Drawing.Size(124, 33);
             this.cmbDJunioEspañol.TabIndex = 75;
+            this.cmbDJunioEspañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label120
             // 
@@ -5284,6 +5383,7 @@
             this.cmbdiaginasis.Name = "cmbdiaginasis";
             this.cmbdiaginasis.Size = new System.Drawing.Size(124, 33);
             this.cmbdiaginasis.TabIndex = 96;
+            this.cmbdiaginasis.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagedfisica
             // 
@@ -5304,6 +5404,7 @@
             this.cmbdiagedfisica.Name = "cmbdiagedfisica";
             this.cmbdiagedfisica.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagedfisica.TabIndex = 95;
+            this.cmbdiagedfisica.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagedsocio
             // 
@@ -5324,6 +5425,7 @@
             this.cmbdiagedsocio.Name = "cmbdiagedsocio";
             this.cmbdiagedsocio.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagedsocio.TabIndex = 94;
+            this.cmbdiagedsocio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagartes
             // 
@@ -5344,6 +5446,7 @@
             this.cmbdiagartes.Name = "cmbdiagartes";
             this.cmbdiagartes.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagartes.TabIndex = 93;
+            this.cmbdiagartes.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagformacion
             // 
@@ -5364,6 +5467,7 @@
             this.cmbdiagformacion.Name = "cmbdiagformacion";
             this.cmbdiagformacion.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagformacion.TabIndex = 92;
+            this.cmbdiagformacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagHistoria
             // 
@@ -5384,6 +5488,7 @@
             this.cmbdiagHistoria.Name = "cmbdiagHistoria";
             this.cmbdiagHistoria.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagHistoria.TabIndex = 91;
+            this.cmbdiagHistoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiaggeografia
             // 
@@ -5404,6 +5509,7 @@
             this.cmbdiaggeografia.Name = "cmbdiaggeografia";
             this.cmbdiaggeografia.Size = new System.Drawing.Size(124, 33);
             this.cmbdiaggeografia.TabIndex = 90;
+            this.cmbdiaggeografia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagciencias
             // 
@@ -5424,6 +5530,7 @@
             this.cmbdiagciencias.Name = "cmbdiagciencias";
             this.cmbdiagciencias.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagciencias.TabIndex = 89;
+            this.cmbdiagciencias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagingles
             // 
@@ -5444,6 +5551,7 @@
             this.cmbdiagingles.Name = "cmbdiagingles";
             this.cmbdiagingles.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagingles.TabIndex = 88;
+            this.cmbdiagingles.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagmate
             // 
@@ -5464,6 +5572,7 @@
             this.cmbdiagmate.Name = "cmbdiagmate";
             this.cmbdiagmate.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagmate.TabIndex = 87;
+            this.cmbdiagmate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // cmbdiagespañol
             // 
@@ -5484,6 +5593,7 @@
             this.cmbdiagespañol.Name = "cmbdiagespañol";
             this.cmbdiagespañol.Size = new System.Drawing.Size(124, 33);
             this.cmbdiagespañol.TabIndex = 75;
+            this.cmbdiagespañol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Espene_KeyPress);
             // 
             // label143
             // 
