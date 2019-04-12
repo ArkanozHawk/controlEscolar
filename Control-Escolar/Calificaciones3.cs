@@ -7823,6 +7823,11 @@ namespace Control_Escolar
             cambiacolor(groupBox11);
         }
 
+        private void CmbDiagEspañol_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         private void Septiembre_MouseEnter(object sender, EventArgs e)
         {
             cambiacolor(groupBox1);
