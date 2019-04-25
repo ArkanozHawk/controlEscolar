@@ -7049,6 +7049,10 @@ namespace Control_Escolar
                     i++;
                 }
             }
+
+
+
+
             //myreader2.Read();
             try
             {
@@ -7296,7 +7300,30 @@ namespace Control_Escolar
                 cmbDiagSocio.Text = diag_Socio;
                 cmbDiagEdFisica.Text = diag_EdFis;
                 cmbDiagInasis.Text = diag_Inasis;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
 
+
+            string query3 = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
+            MessageBox.Show(query3);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query3, conn);
+
+            MySqlDataReader myreader3 = com.ExecuteReader();
+            myreader3.Read();
+
+
+
+
+            sesion.cargo = Convert.ToString(myreader3["cargo"]);
+            MessageBox.Show(sesion.cargo);
+            if (sesion.cargo == "Secretario(a)")
+            {
 
                 // BLOQUEO SEPTIEMBRE
                 if (cmbSepEspañol.Text != "")
@@ -7759,15 +7786,10 @@ namespace Control_Escolar
                 {
                     cmbDiagInasis.Enabled = false;
                 }
-
-
-                //MessageBox.Show(sept_Esp.ToString());
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
             }
         }
+                //MessageBox.Show(sept_Esp.ToString());
+           
 
         public bool ValidaCampos(GroupBox Grupo)
         {
