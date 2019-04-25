@@ -2508,7 +2508,7 @@ namespace Control_Escolar
                         fields.SetField("2° FORMACIÓN ACADÉMICA LENGUA MATERNA(ESPAÑOL) Calificación", PromTriEsp2);
                         fields.SetField("3er FORMACIÓN ACADÉMICA LENGUA MATERNA(ESPAÑOL) Calificación", PromTriEsp3);
                         fields.SetField("PROMEDIOFINAL FORMACIÓN ACADÉMICA LENGUA MATERNA(ESPAÑOL) Calificación", PromFinTriEsp);
-                        
+
                         //MATEMATICAS
                         fields.SetField("1er FORMACIÓN ACADÉMICA MATEMÁTICAS Nivel de desempeño", NivelMat1);
                         fields.SetField("2° FORMACIÓN ACADÉMICA MATEMÁTICAS Nivel de desempeño", NivelMat2);
@@ -2519,7 +2519,7 @@ namespace Control_Escolar
                         fields.SetField("2° FORMACIÓN ACADÉMICA MATEMÁTICAS Calificación", PromTriMat2);
                         fields.SetField("3er FORMACIÓN ACADÉMICA MATEMÁTICAS Calificación", PromTriMat3);
                         fields.SetField("PROMEDIOFINAL FORMACIÓN ACADÉMICA MATEMÁTICAS Calificación", PromFinTriMat);
-                        
+
 
                         //INGLES
                         fields.SetField("1er FORMACIÓN ACADÉMICA LENGUA EXTRANJERA(INGLÉS) Nivel de desempeño", NivelIng1);
@@ -2542,7 +2542,7 @@ namespace Control_Escolar
                         fields.SetField("2° FORMACIÓN ACADÉMICA CONOCIMIENTODEL MEDIO Calificación", PromTriCon2);
                         fields.SetField("3er FORMACIÓN ACADÉMICA CONOCIMIENTODEL MEDIO Calificación", PromTriCon3);
                         fields.SetField("PROMEDIOFINAL FORMACIÓN ACADÉMICA CONOCIMIENTODEL MEDIO Calificación", PromFinTriCon);
-                        
+
                         //Promedio formacion academica 
                         fields.SetField("1er FORMACIÓN ACADÉMICA PROMEDIOFINAL Nivel de desempeño", NivelPromSen);
                         fields.SetField("2° FORMACIÓN ACADÉMICA PROMEDIOFINAL Nivel de desempeño", NivelPromSen2);
@@ -6210,7 +6210,7 @@ namespace Control_Escolar
             cambiacolor(groupBox2);
         }
 
-       
+
 
         private void Noviembre_MouseEnter(object sender, EventArgs e)
         {
@@ -6390,6 +6390,9 @@ namespace Control_Escolar
         {
             //MessageBox.Show("hola");
             //    {
+
+
+
             MySqlConnection conn;
             MySqlCommand com;
             string conexion = "server=localhost;uid=root;database=nerivela";
@@ -6430,6 +6433,9 @@ namespace Control_Escolar
                     i++;
                 }
             }
+
+
+
             //myreader2.Read();
             try
             {
@@ -6543,6 +6549,11 @@ namespace Control_Escolar
                 string jun_EdFis = Calificaciones[85];
                 string jun_Socio = Calificaciones[86];
                 string jun_Inasis = Calificaciones[87];
+
+
+
+
+
 
 
 
@@ -6661,400 +6672,428 @@ namespace Control_Escolar
                 cmbDiagEdfisi.Text = diag_EdFis;
                 cmbDiagIna.Text = diag_Inasis;
 
-
-
-
-
-                // BLOQUEO SEPTIEMBRE
-
-                if (cmbSepEspañol.Text != "")
-                { cmbSepEspañol.Enabled = false;
-
-
-                    cmbSepEspañol.ForeColor = System.Drawing.Color.Red;
-
-                }
-                if (cmbSepMate.Text != "")
-                {
-                    cmbSepMate.Enabled = false;
-                }
-
-                if (cmbSepIngles.Text != "")
-                { cmbSepIngles.Enabled = false; }
-                if (cmbSepconocimiento.Text != "")
-                { cmbSepconocimiento.Enabled = false; }
-
-                if (cmbSepArtes.Text != "")
-                { cmbSepArtes.Enabled = false; }
-                if (cmbSepEdsocio.Text != "")
-                { cmbSepEdsocio.Enabled = false; }
-                if (cmbSepEdfisica.Text != "")
-                { cmbSepEdfisica.Enabled = false; }
-                if (cmbSepIna.Text != "")
-                { cmbSepIna.Enabled = false; }
-                //octubre 
-
-                if (cmbOctEspañol.Text != "")
-                {
-                    cmbOctEspañol.Enabled = false;
-                }
-
-                if (cmbOctmate.Text != "")
-                {
-                    cmbOctmate.Enabled = false;
-                }
-                if (cmbOctIngles.Text != "")
-                {
-                    cmbOctIngles.Enabled = false;
-                }
-                if (cmbOctconocimiento.Text != "")
-                {
-                    cmbOctconocimiento.Enabled = false;
-                }
-                if (cmbOctArtes.Text != "")
-                {
-                    cmbOctArtes.Enabled = false;
-                }
-                if (cmbOctedsocio.Text != "")
-                {
-                    cmbOctedsocio.Enabled = false;
-                }
-                if (cmbOctedfisica.Text != "")
-                {
-                    cmbOctedfisica.Enabled = false;
-                }
-                if (cmbOctIna.Text != "")
-                {
-                    cmbOctIna.Enabled = false;
-                }
-                //nomviembre
-
-                if (cmbNovEspañol.Text != "")
-                {
-                    cmbNovEspañol.Enabled = false;
-                }
-                if (cmbNovmate.Text != "")
-                {
-                    cmbNovmate.Enabled = false;
-                }
-                if (cmbNovIngles.Text != "")
-                {
-                    cmbNovIngles.Enabled = false;
-                }
-                if (cmbNovconocimiento.Text != "")
-                {
-                    cmbNovconocimiento.Enabled = false;
-                }
-                if (cmbNovArtes.Text != "")
-                {
-                    cmbNovArtes.Enabled = false;
-                }
-                if (cmbNovEdsocio.Text != "")
-                {
-                    cmbNovEdsocio.Enabled = false;
-                }
-                if (cmbNovEdfisica.Text != "")
-                {
-                    cmbNovEdfisica.Enabled = false;
-                }
-                if (cmbNovEdfisica.Text != "")
-                {
-                    cmbNovEdfisica.Enabled = false;
-                }
-                //diciembre
-
-
-                if (cmbNovEspañol.Text != "")
-                {
-                    cmbNovEspañol.Enabled = false;
-                }
-                if (cmbNovmate.Text != "")
-                {
-                    cmbNovmate.Enabled = false;
-                }
-                if (cmbNovIngles.Text != "")
-                {
-                    cmbNovIngles.Enabled = false;
-                }
-                if (cmbNovconocimiento.Text != "")
-                {
-                    cmbNovconocimiento.Enabled = false;
-                }
-                if (cmbNovArtes.Text != "")
-                {
-                    cmbNovArtes.Enabled = false;
-                }
-                if (cmbNovEdsocio.Text != "")
-                {
-                    cmbNovEdsocio.Enabled = false;
-                }
-                if (cmbNovEdfisica.Text != "")
-                {
-                    cmbNovEdfisica.Enabled = false;
-                }
-                if (cmbNovIna.Text != "")
-                {
-                    cmbNovIna.Enabled = false;
-                }
-                //enero
-
-
-                if (cmbEneroEspañol.Text != "")
-                {
-                    cmbEneroEspañol.Enabled = false;
-                }
-                if (cmbEneroMate.Text != "")
-                {
-                    cmbEneroMate.Enabled = false;
-                }
-                if (cmbEneroIngles.Text != "")
-                {
-                    cmbEneroIngles.Enabled = false;
-                }
-                if (cmbEneroConocimiento.Text != "")
-                {
-                    cmbEneroConocimiento.Enabled = false;
-                }
-                if (cmbEneroArtes.Text != "")
-                {
-                    cmbEneroArtes.Enabled = false;
-                }
-                if (cmbEneroEdsocio.Text != "")
-                {
-                    cmbEneroEdsocio.Enabled = false;
-                }
-                if (cmbEneroEdfisica.Text != "")
-                {
-                    cmbEneroEdfisica.Enabled = false;
-                }
-                if (cmbEneroIna.Text != "")
-                {
-                    cmbEneroIna.Enabled = false;
-                }
-                //Febrero
-
-
-                if (cmbfebEspañol.Text != "")
-                {
-                    cmbfebEspañol.Enabled = false;
-                }
-                if (cmbfebMate.Text != "")
-                {
-                    cmbfebMate.Enabled = false;
-                }
-                if (cmbfebIngles.Text != "")
-                {
-                    cmbfebIngles.Enabled = false;
-                }
-                if (cmbfebConocimiento.Text != "")
-                {
-                    cmbfebConocimiento.Enabled = false;
-                }
-                if (cmbfebArtes.Text != "")
-                {
-                    cmbfebArtes.Enabled = false;
-                }
-                if (cmbfebEdsocio.Text != "")
-                {
-                    cmbfebEdsocio.Enabled = false;
-                }
-                if (cmbfebEdfisica.Text != "")
-                {
-                    cmbfebEdfisica.Enabled = false;
-                }
-
-                if (cmbfebIna.Text != "")
-                {
-                    cmbfebIna.Enabled = false;
-                }
-                //marzo
-
-
-                if (cmbmarzEspañol.Text != "")
-                {
-                    cmbmarzEspañol.Enabled = false;
-                }
-                if (cmbmarzmate.Text != "")
-                {
-                    cmbmarzmate.Enabled = false;
-                }
-                if (cmbmarzIngles.Text != "")
-                {
-                    cmbmarzIngles.Enabled = false;
-                }
-                if (cmbmarzconocimineto.Text != "")
-                {
-                    cmbmarzconocimineto.Enabled = false;
-                }
-                if (cmbmarzArtes.Text != "")
-                {
-                    cmbmarzArtes.Enabled = false;
-                }
-                if (cmbmarzEdsocio.Text != "")
-                {
-                    cmbmarzEdsocio.Enabled = false;
-                }
-                if (cmbmarzEdfisica.Text != "")
-                {
-                    cmbmarzEdfisica.Enabled = false;
-                }
-                if (cmbmarzIna.Text != "")
-                {
-                    cmbmarzIna.Enabled = false;
-                }
-
-                //abril
-
-
-                if (cmbAbrilEspañol.Text != "")
-                {
-                    cmbAbrilEspañol.Enabled = false;
-                }
-                if (cmbAbrilmate.Text != "")
-                {
-                    cmbAbrilmate.Enabled = false;
-                }
-                if (cmbAbrilIngles.Text != "")
-                {
-                    cmbAbrilIngles.Enabled = false;
-                }
-                if (cmbAbrilConociminento.Text != "")
-                {
-                    cmbAbrilConociminento.Enabled = false;
-                }
-                if (cmbAbrilArtes.Text != "")
-                {
-                    cmbAbrilArtes.Enabled = false;
-                }
-                if (cmbAbrilEdsocio.Text != "")
-                {
-                    cmbAbrilEdsocio.Enabled = false;
-                }
-                if (cmbAbrilEdfisica.Text != "")
-                {
-                    cmbAbrilEdfisica.Enabled = false;
-                }
-                if (cmbAbrilIna.Text != "")
-                {
-                    cmbAbrilIna.Enabled = false;
-                }
-
-                //mayo
-
-
-                if (cmbMayoEspañol.Text != "")
-                {
-                    cmbMayoEspañol.Enabled = false;
-                }
-                if (cmbMayoMate.Text != "")
-                {
-                    cmbMayoMate.Enabled = false;
-                }
-                if (cmbMayoIngles.Text != "")
-                {
-                    cmbMayoIngles.Enabled = false;
-                }
-                if (cmbMayoConociminento.Text != "")
-                {
-                    cmbMayoConociminento.Enabled = false;
-                }
-                if (cmbMayoArtes.Text != "")
-                {
-                    cmbMayoArtes.Enabled = false;
-                }
-                if (cmbMayoEdsocio.Text != "")
-                {
-                    cmbMayoEdsocio.Enabled = false;
-                }
-                if (cmbMayoEdfisica.Text != "")
-                {
-                    cmbMayoEdfisica.Enabled = false;
-                }
-                if (cmbMayoIna.Text != "")
-                {
-                    cmbMayoIna.Enabled = false;
-                }
-                //junio
-
-
-
-
-                if (cmbJunioEspañol.Text != "")
-                {
-                    cmbJunioEspañol.Enabled = false;
-                }
-                if (cmbJuniomate.Text != "")
-                {
-                    cmbJuniomate.Enabled = false;
-                }
-                if (cmbJunioIngles.Text != "")
-                {
-                    cmbJunioIngles.Enabled = false;
-                }
-                if (cmbJunioConociminento.Text != "")
-                {
-                    cmbJunioConociminento.Enabled = false;
-                }
-                if (cmbJunioArtes.Text != "")
-                {
-                    cmbJunioArtes.Enabled = false;
-                }
-                if (cmbJunioEdsocio.Text != "")
-                {
-                    cmbJunioEdsocio.Enabled = false;
-                }
-                if (cmbJunioEdfisica.Text != "")
-                {
-                    cmbJunioEdfisica.Enabled = false;
-                }
-                if (cmbJunioIna.Text != "")
-                {
-                    cmbJunioIna.Enabled = false;
-                }
-
-
-                // AGREGADO DIAGNOSTICO
-
-
-                if (cmbDiagEspañol.Text != "")
-                {
-                    cmbDiagEspañol.Enabled = false;
-                }
-                if (cmbDiagMate.Text != "")
-                {
-                    cmbDiagMate.Enabled = false;
-                }
-                if (cmbDiagIngles.Text != "")
-                {
-                    cmbDiagIngles.Enabled = false;
-                }
-                if (cmbDiagConocieminto.Text != "")
-                {
-                    cmbDiagConocieminto.Enabled = false;
-                }
-                if (cmbDiagArtes.Text != "")
-                {
-                    cmbDiagArtes.Enabled = false;
-                }
-                if (cmbDiagEdsocio.Text != "")
-                {
-                    cmbDiagEdsocio.Enabled = false;
-                }
-                if (cmbDiagEdfisi.Text != "")
-                {
-                    cmbDiagEdfisi.Enabled = false;
-                }
-                if (cmbDiagIna.Text != "")
-                {
-                    cmbDiagIna.Enabled = false;
-                }
-
             }
 
+
+               
             catch (Exception ex)
             {
+
                 MessageBox.Show(ex.Message);
+
             }
+
+
+    string query3 = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
+            MessageBox.Show(query3);
+            conn = new MySqlConnection(conexion);
+            conn.Open();
+
+            com = new MySqlCommand(query3, conn);
+
+            MySqlDataReader myreader3 = com.ExecuteReader();
+            myreader3.Read();
+
+
+
+
+            sesion.cargo = Convert.ToString(myreader3["cargo"]);
+            MessageBox.Show(sesion.cargo);
+            if (sesion.cargo == "Secretario(a)")
+                {
+                    // BLOQUEO SEPTIEMBRE
+
+                    if (cmbSepEspañol.Text != "")
+                    {
+                        cmbSepEspañol.Enabled = false;
+
+
+                        cmbSepEspañol.ForeColor = System.Drawing.Color.Red;
+
+                    }
+                    if (cmbSepMate.Text != "")
+                    {
+                        cmbSepMate.Enabled = false;
+                    }
+
+                    if (cmbSepIngles.Text != "")
+                    { cmbSepIngles.Enabled = false; }
+                    if (cmbSepconocimiento.Text != "")
+                    { cmbSepconocimiento.Enabled = false; }
+
+                    if (cmbSepArtes.Text != "")
+                    { cmbSepArtes.Enabled = false; }
+                    if (cmbSepEdsocio.Text != "")
+                    { cmbSepEdsocio.Enabled = false; }
+                    if (cmbSepEdfisica.Text != "")
+                    { cmbSepEdfisica.Enabled = false; }
+                    if (cmbSepIna.Text != "")
+                    { cmbSepIna.Enabled = false; }
+                    //octubre 
+
+                    if (cmbOctEspañol.Text != "")
+                    {
+                        cmbOctEspañol.Enabled = false;
+                    }
+
+                    if (cmbOctmate.Text != "")
+                    {
+                        cmbOctmate.Enabled = false;
+                    }
+                    if (cmbOctIngles.Text != "")
+                    {
+                        cmbOctIngles.Enabled = false;
+                    }
+                    if (cmbOctconocimiento.Text != "")
+                    {
+                        cmbOctconocimiento.Enabled = false;
+                    }
+                    if (cmbOctArtes.Text != "")
+                    {
+                        cmbOctArtes.Enabled = false;
+                    }
+                    if (cmbOctedsocio.Text != "")
+                    {
+                        cmbOctedsocio.Enabled = false;
+                    }
+                    if (cmbOctedfisica.Text != "")
+                    {
+                        cmbOctedfisica.Enabled = false;
+                    }
+                    if (cmbOctIna.Text != "")
+                    {
+                        cmbOctIna.Enabled = false;
+                    }
+                    //nomviembre
+
+                    if (cmbNovEspañol.Text != "")
+                    {
+                        cmbNovEspañol.Enabled = false;
+                    }
+                    if (cmbNovmate.Text != "")
+                    {
+                        cmbNovmate.Enabled = false;
+                    }
+                    if (cmbNovIngles.Text != "")
+                    {
+                        cmbNovIngles.Enabled = false;
+                    }
+                    if (cmbNovconocimiento.Text != "")
+                    {
+                        cmbNovconocimiento.Enabled = false;
+                    }
+                    if (cmbNovArtes.Text != "")
+                    {
+                        cmbNovArtes.Enabled = false;
+                    }
+                    if (cmbNovEdsocio.Text != "")
+                    {
+                        cmbNovEdsocio.Enabled = false;
+                    }
+                    if (cmbNovEdfisica.Text != "")
+                    {
+                        cmbNovEdfisica.Enabled = false;
+                    }
+                    if (cmbNovEdfisica.Text != "")
+                    {
+                        cmbNovEdfisica.Enabled = false;
+                    }
+                    //diciembre
+
+
+                    if (cmbNovEspañol.Text != "")
+                    {
+                        cmbNovEspañol.Enabled = false;
+                    }
+                    if (cmbNovmate.Text != "")
+                    {
+                        cmbNovmate.Enabled = false;
+                    }
+                    if (cmbNovIngles.Text != "")
+                    {
+                        cmbNovIngles.Enabled = false;
+                    }
+                    if (cmbNovconocimiento.Text != "")
+                    {
+                        cmbNovconocimiento.Enabled = false;
+                    }
+                    if (cmbNovArtes.Text != "")
+                    {
+                        cmbNovArtes.Enabled = false;
+                    }
+                    if (cmbNovEdsocio.Text != "")
+                    {
+                        cmbNovEdsocio.Enabled = false;
+                    }
+                    if (cmbNovEdfisica.Text != "")
+                    {
+                        cmbNovEdfisica.Enabled = false;
+                    }
+                    if (cmbNovIna.Text != "")
+                    {
+                        cmbNovIna.Enabled = false;
+                    }
+                    //enero
+
+
+                    if (cmbEneroEspañol.Text != "")
+                    {
+                        cmbEneroEspañol.Enabled = false;
+                    }
+                    if (cmbEneroMate.Text != "")
+                    {
+                        cmbEneroMate.Enabled = false;
+                    }
+                    if (cmbEneroIngles.Text != "")
+                    {
+                        cmbEneroIngles.Enabled = false;
+                    }
+                    if (cmbEneroConocimiento.Text != "")
+                    {
+                        cmbEneroConocimiento.Enabled = false;
+                    }
+                    if (cmbEneroArtes.Text != "")
+                    {
+                        cmbEneroArtes.Enabled = false;
+                    }
+                    if (cmbEneroEdsocio.Text != "")
+                    {
+                        cmbEneroEdsocio.Enabled = false;
+                    }
+                    if (cmbEneroEdfisica.Text != "")
+                    {
+                        cmbEneroEdfisica.Enabled = false;
+                    }
+                    if (cmbEneroIna.Text != "")
+                    {
+                        cmbEneroIna.Enabled = false;
+                    }
+                    //Febrero
+
+
+                    if (cmbfebEspañol.Text != "")
+                    {
+                        cmbfebEspañol.Enabled = false;
+                    }
+                    if (cmbfebMate.Text != "")
+                    {
+                        cmbfebMate.Enabled = false;
+                    }
+                    if (cmbfebIngles.Text != "")
+                    {
+                        cmbfebIngles.Enabled = false;
+                    }
+                    if (cmbfebConocimiento.Text != "")
+                    {
+                        cmbfebConocimiento.Enabled = false;
+                    }
+                    if (cmbfebArtes.Text != "")
+                    {
+                        cmbfebArtes.Enabled = false;
+                    }
+                    if (cmbfebEdsocio.Text != "")
+                    {
+                        cmbfebEdsocio.Enabled = false;
+                    }
+                    if (cmbfebEdfisica.Text != "")
+                    {
+                        cmbfebEdfisica.Enabled = false;
+                    }
+
+                    if (cmbfebIna.Text != "")
+                    {
+                        cmbfebIna.Enabled = false;
+                    }
+                    //marzo
+
+
+                    if (cmbmarzEspañol.Text != "")
+                    {
+                        cmbmarzEspañol.Enabled = false;
+                    }
+                    if (cmbmarzmate.Text != "")
+                    {
+                        cmbmarzmate.Enabled = false;
+                    }
+                    if (cmbmarzIngles.Text != "")
+                    {
+                        cmbmarzIngles.Enabled = false;
+                    }
+                    if (cmbmarzconocimineto.Text != "")
+                    {
+                        cmbmarzconocimineto.Enabled = false;
+                    }
+                    if (cmbmarzArtes.Text != "")
+                    {
+                        cmbmarzArtes.Enabled = false;
+                    }
+                    if (cmbmarzEdsocio.Text != "")
+                    {
+                        cmbmarzEdsocio.Enabled = false;
+                    }
+                    if (cmbmarzEdfisica.Text != "")
+                    {
+                        cmbmarzEdfisica.Enabled = false;
+                    }
+                    if (cmbmarzIna.Text != "")
+                    {
+                        cmbmarzIna.Enabled = false;
+                    }
+
+                    //abril
+
+
+                    if (cmbAbrilEspañol.Text != "")
+                    {
+                        cmbAbrilEspañol.Enabled = false;
+                    }
+                    if (cmbAbrilmate.Text != "")
+                    {
+                        cmbAbrilmate.Enabled = false;
+                    }
+                    if (cmbAbrilIngles.Text != "")
+                    {
+                        cmbAbrilIngles.Enabled = false;
+                    }
+                    if (cmbAbrilConociminento.Text != "")
+                    {
+                        cmbAbrilConociminento.Enabled = false;
+                    }
+                    if (cmbAbrilArtes.Text != "")
+                    {
+                        cmbAbrilArtes.Enabled = false;
+                    }
+                    if (cmbAbrilEdsocio.Text != "")
+                    {
+                        cmbAbrilEdsocio.Enabled = false;
+                    }
+                    if (cmbAbrilEdfisica.Text != "")
+                    {
+                        cmbAbrilEdfisica.Enabled = false;
+                    }
+                    if (cmbAbrilIna.Text != "")
+                    {
+                        cmbAbrilIna.Enabled = false;
+                    }
+
+                    //mayo
+
+
+                    if (cmbMayoEspañol.Text != "")
+                    {
+                        cmbMayoEspañol.Enabled = false;
+                    }
+                    if (cmbMayoMate.Text != "")
+                    {
+                        cmbMayoMate.Enabled = false;
+                    }
+                    if (cmbMayoIngles.Text != "")
+                    {
+                        cmbMayoIngles.Enabled = false;
+                    }
+                    if (cmbMayoConociminento.Text != "")
+                    {
+                        cmbMayoConociminento.Enabled = false;
+                    }
+                    if (cmbMayoArtes.Text != "")
+                    {
+                        cmbMayoArtes.Enabled = false;
+                    }
+                    if (cmbMayoEdsocio.Text != "")
+                    {
+                        cmbMayoEdsocio.Enabled = false;
+                    }
+                    if (cmbMayoEdfisica.Text != "")
+                    {
+                        cmbMayoEdfisica.Enabled = false;
+                    }
+                    if (cmbMayoIna.Text != "")
+                    {
+                        cmbMayoIna.Enabled = false;
+                    }
+                    //junio
+
+
+
+
+                    if (cmbJunioEspañol.Text != "")
+                    {
+                        cmbJunioEspañol.Enabled = false;
+                    }
+                    if (cmbJuniomate.Text != "")
+                    {
+                        cmbJuniomate.Enabled = false;
+                    }
+                    if (cmbJunioIngles.Text != "")
+                    {
+                        cmbJunioIngles.Enabled = false;
+                    }
+                    if (cmbJunioConociminento.Text != "")
+                    {
+                        cmbJunioConociminento.Enabled = false;
+                    }
+                    if (cmbJunioArtes.Text != "")
+                    {
+                        cmbJunioArtes.Enabled = false;
+                    }
+                    if (cmbJunioEdsocio.Text != "")
+                    {
+                        cmbJunioEdsocio.Enabled = false;
+                    }
+                    if (cmbJunioEdfisica.Text != "")
+                    {
+                        cmbJunioEdfisica.Enabled = false;
+                    }
+                    if (cmbJunioIna.Text != "")
+                    {
+                        cmbJunioIna.Enabled = false;
+                    }
+
+
+                    // AGREGADO DIAGNOSTICO
+
+
+                    if (cmbDiagEspañol.Text != "")
+                    {
+                        cmbDiagEspañol.Enabled = false;
+                    }
+                    if (cmbDiagMate.Text != "")
+                    {
+                        cmbDiagMate.Enabled = false;
+                    }
+                    if (cmbDiagIngles.Text != "")
+                    {
+                        cmbDiagIngles.Enabled = false;
+                    }
+                    if (cmbDiagConocieminto.Text != "")
+                    {
+                        cmbDiagConocieminto.Enabled = false;
+                    }
+                    if (cmbDiagArtes.Text != "")
+                    {
+                        cmbDiagArtes.Enabled = false;
+                    }
+                    if (cmbDiagEdsocio.Text != "")
+                    {
+                        cmbDiagEdsocio.Enabled = false;
+                    }
+                    if (cmbDiagEdfisi.Text != "")
+                    {
+                        cmbDiagEdfisi.Enabled = false;
+                    }
+                    if (cmbDiagIna.Text != "")
+                    {
+                        cmbDiagIna.Enabled = false;
+                    }
+
+                }
+
+
+
+
+         
+
+
         }
 
         //    //public void ValidaTextBoxVacios()
@@ -7106,6 +7145,8 @@ namespace Control_Escolar
         //}
 
 
+
+
         public bool ValidaCampos(GroupBox Grupo)
         {
             foreach (Control combo in Grupo.Controls)
@@ -7133,15 +7174,15 @@ namespace Control_Escolar
                 if (combo is ComboBox)
 
                 {
-                   
-                        if (combo.Text != string.Empty)
-                        {
-                            double valor = Convert.ToDouble(combo.Text);
-                            if (valor >= 5 && valor <= 5.9)
-                            {
-                                combo.ForeColor = Color.Red;
 
-                            }
+                    if (combo.Text != string.Empty)
+                    {
+                        double valor = Convert.ToDouble(combo.Text);
+                        if (valor >= 5 && valor <= 5.9)
+                        {
+                            combo.ForeColor = Color.Red;
+
+                        }
 
                         if (combo.Name == "cmbDiagIna" || combo.Name == "cmbSepIna" || combo.Name == "cmbOctIna" || combo.Name == "cmbNovIna" || combo.Name == "cmbDicIna" || combo.Name == "cmbEneroIna" || combo.Name == "cmbfebIna" || combo.Name == "cmbmarzIna" || combo.Name == "cmbAbrilIna" || combo.Name == "cmbMayoIna" || combo.Name == "cmbJunioIna")
                         {
@@ -7150,14 +7191,21 @@ namespace Control_Escolar
 
                     }
 
-                    
+
                 }
 
             }
         }
     }
+}
 
-    }
+
+
+
+
+
+            
+    
 
 
 
