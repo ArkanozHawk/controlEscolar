@@ -450,6 +450,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ModificarPadre";
             this.Text = "ModificarPadre";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.ModificarPadre_FormClosing);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);

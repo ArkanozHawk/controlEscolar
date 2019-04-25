@@ -267,6 +267,7 @@
             this.Name = "Docuementos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Documentos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Docuementos_FormClosing);
             this.Load += new System.EventHandler(this.Docuementos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

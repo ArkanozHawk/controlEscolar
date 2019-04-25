@@ -8542,6 +8542,8 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones3";
             this.Text = "Calificaciones";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Calificaciones3_FormClosing);
+            this.Load += new System.EventHandler(this.Calificaciones3_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.Diagnostico.ResumeLayout(false);
             this.groupBox11.ResumeLayout(false);

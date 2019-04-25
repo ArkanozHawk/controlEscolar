@@ -580,6 +580,7 @@
             this.Name = "Grupos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Grupos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Grupos_FormClosing);
             this.Load += new System.EventHandler(this.Grupos_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

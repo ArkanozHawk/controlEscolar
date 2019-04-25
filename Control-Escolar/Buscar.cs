@@ -47,7 +47,7 @@ namespace Control_Escolar
                 myreader.Read();
 
                 sesion.cargo = Convert.ToString(myreader["cargo"]);
-                if(sesion.cargo == "Secretario(a)")
+                if (sesion.cargo == "Secretario(a)")
                 {
                     btnModificarAlum.Visible = false;
                     pictureBox3.Visible = false;
@@ -91,7 +91,7 @@ namespace Control_Escolar
         public static void ThreadModificar()
         {
             Application.Run(new Modificar());
-            
+
         }
 
         private void BtnCerrar_Click(object sender, EventArgs e)
@@ -159,12 +159,12 @@ namespace Control_Escolar
         }
 
         private void btnModificarAlum_Click(object sender, EventArgs e)
-        {    
+        {
             System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadModificar));
             pantalla.Start();
             CheckForIllegalCrossThreadCalls = false;
             this.Close();
-            
+
         }
 
         private void DataGridViewbuscar_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -175,7 +175,7 @@ namespace Control_Escolar
 
             sesion.Curp = Convert.ToString(fila.Cells[5].Value); //obtengo el valor de la primer columna
 
-            
+
 
             MessageBox.Show(sesion.Curp);
         }
@@ -227,6 +227,27 @@ namespace Control_Escolar
         private void Buscar_Load(object sender, EventArgs e)
         {
             datagrid(dataGridViewbuscar);
+        }
+
+        private void Buscar_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+
+                string HoraSalida = DateTime.Now.ToString("hh:mm:ss");
+                int idAccess = sesion.idAcceso;
+                //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+                string conexion = "server=localhost;uid=root;database=nerivela";
+                string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
+                obj.insBitacora(conexion, inserta_bitacora);
+
+
+            }
+            else
+            {
+                System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                login.Start();
+            }
         }
     }
 }

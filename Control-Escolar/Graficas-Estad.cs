@@ -999,5 +999,26 @@ namespace Control_Escolar
         {
 
         }
+
+        private void Graficas_Estad_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (e.CloseReason == CloseReason.UserClosing)
+            {
+
+                string HoraSalida = DateTime.Now.ToString("hh:mm:ss");
+                int idAccess = sesion.idAcceso;
+                //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
+                string conexion = "server=localhost;uid=root;database=nerivela";
+                string inserta_bitacora = "UPDATE bitacora SET HoraSalida = '" + HoraSalida + "' where idAcceso = " + idAccess + ";";
+                obj.insBitacora(conexion, inserta_bitacora);
+
+
+            }
+            else
+            {
+                System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                login.Start();
+            }
+        }
     }
 }

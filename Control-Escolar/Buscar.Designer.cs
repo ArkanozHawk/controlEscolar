@@ -255,6 +255,7 @@
             this.Name = "Buscar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buscar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Buscar_FormClosing);
             this.Load += new System.EventHandler(this.Buscar_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewbuscar)).EndInit();
             this.groupBox1.ResumeLayout(false);

@@ -139,6 +139,7 @@
             this.Name = "DirectorioProfes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Directorio de Profesores";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DirectorioProfes_FormClosing);
             this.Load += new System.EventHandler(this.CadaGrupo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -5694,6 +5694,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Calificaciones456";
             this.Text = "Calificaciones";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Calificaciones456_FormClosing);
             this.Load += new System.EventHandler(this.Calificaciones456_Load);
             this.materialTabControl1.ResumeLayout(false);
             this.Septiembre.ResumeLayout(false);

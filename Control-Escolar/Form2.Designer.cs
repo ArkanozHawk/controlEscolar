@@ -550,6 +550,7 @@
             this.Name = "Alumno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Alumno_FormClosing);
             this.BoxGenero.ResumeLayout(false);
             this.BoxGenero.PerformLayout();
             this.groupBox2.ResumeLayout(false);

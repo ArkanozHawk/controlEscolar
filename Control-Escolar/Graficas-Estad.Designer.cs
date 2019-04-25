@@ -637,6 +637,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Graficas_Estad";
             this.Text = "Visualización de Estadisticas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Graficas_Estad_FormClosing);
             this.Load += new System.EventHandler(this.Graficas_Estad_Load);
             this.Estadisticas.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);

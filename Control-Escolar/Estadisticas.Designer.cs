@@ -31,6 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Estadisticas));
             this.btnCerrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
+            this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
             this.materialDivider4 = new MaterialSkin.Controls.MaterialDivider();
@@ -45,14 +49,10 @@
             this.materialDivider2 = new MaterialSkin.Controls.MaterialDivider();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrincipal = new MaterialSkin.Controls.MaterialRaisedButton();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialDivider6 = new MaterialSkin.Controls.MaterialDivider();
-            this.materialDivider7 = new MaterialSkin.Controls.MaterialDivider();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -98,6 +98,51 @@
             this.groupBox2.Size = new System.Drawing.Size(529, 286);
             this.groupBox2.TabIndex = 83;
             this.groupBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
+            this.pictureBox3.Location = new System.Drawing.Point(415, 141);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 40);
+            this.pictureBox3.TabIndex = 108;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
+            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialLabel2.Location = new System.Drawing.Point(79, 151);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(209, 19);
+            this.materialLabel2.TabIndex = 107;
+            this.materialLabel2.Text = "Alumnos con mejor promedio";
+            // 
+            // materialDivider6
+            // 
+            this.materialDivider6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider6.Depth = 0;
+            this.materialDivider6.Location = new System.Drawing.Point(34, 187);
+            this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider6.Name = "materialDivider6";
+            this.materialDivider6.Size = new System.Drawing.Size(380, 1);
+            this.materialDivider6.TabIndex = 106;
+            this.materialDivider6.Text = "materialDivider6";
+            // 
+            // materialDivider7
+            // 
+            this.materialDivider7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.materialDivider7.Depth = 0;
+            this.materialDivider7.Location = new System.Drawing.Point(116, 187);
+            this.materialDivider7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialDivider7.Name = "materialDivider7";
+            this.materialDivider7.Size = new System.Drawing.Size(380, 1);
+            this.materialDivider7.TabIndex = 105;
+            this.materialDivider7.Text = "materialDivider7";
             // 
             // pictureBox2
             // 
@@ -264,51 +309,6 @@
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Control_Escolar.Properties.Resources.icons8_exportar_pdf_481;
-            this.pictureBox3.Location = new System.Drawing.Point(415, 141);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(36, 40);
-            this.pictureBox3.TabIndex = 108;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.PictureBox3_Click);
-            // 
-            // materialLabel2
-            // 
-            this.materialLabel2.AutoSize = true;
-            this.materialLabel2.Depth = 0;
-            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 11F);
-            this.materialLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialLabel2.Location = new System.Drawing.Point(79, 151);
-            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel2.Name = "materialLabel2";
-            this.materialLabel2.Size = new System.Drawing.Size(209, 19);
-            this.materialLabel2.TabIndex = 107;
-            this.materialLabel2.Text = "Alumnos con mejor promedio";
-            // 
-            // materialDivider6
-            // 
-            this.materialDivider6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider6.Depth = 0;
-            this.materialDivider6.Location = new System.Drawing.Point(34, 187);
-            this.materialDivider6.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider6.Name = "materialDivider6";
-            this.materialDivider6.Size = new System.Drawing.Size(380, 1);
-            this.materialDivider6.TabIndex = 106;
-            this.materialDivider6.Text = "materialDivider6";
-            // 
-            // materialDivider7
-            // 
-            this.materialDivider7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.materialDivider7.Depth = 0;
-            this.materialDivider7.Location = new System.Drawing.Point(116, 187);
-            this.materialDivider7.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialDivider7.Name = "materialDivider7";
-            this.materialDivider7.Size = new System.Drawing.Size(380, 1);
-            this.materialDivider7.TabIndex = 105;
-            this.materialDivider7.Text = "materialDivider7";
-            // 
             // Estadisticas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,11 +320,13 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Estadisticas";
             this.Text = "Estadisticas";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Estadisticas_FormClosing);
+            this.Load += new System.EventHandler(this.Estadisticas_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }

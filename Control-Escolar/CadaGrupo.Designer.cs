@@ -172,6 +172,7 @@
             this.Name = "CadaGrupo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listas de Alumnos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CadaGrupo_FormClosing);
             this.Load += new System.EventHandler(this.CadaGrupo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

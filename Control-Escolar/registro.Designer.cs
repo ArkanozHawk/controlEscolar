@@ -34,6 +34,7 @@
             this.btnRegistrar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.btnLimpiar = new MaterialSkin.Controls.MaterialRaisedButton();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProf = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -56,7 +57,6 @@
             this.txtcontra = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.txtUsuario = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.cmbCargo = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -78,7 +78,7 @@
             this.panel1.Controls.Add(this.groupBox3);
             this.panel1.Controls.Add(this.groupBox2);
             this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 66);
+            this.panel1.Location = new System.Drawing.Point(2, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1005, 422);
             this.panel1.TabIndex = 0;
@@ -136,6 +136,17 @@
             this.groupBox5.Size = new System.Drawing.Size(309, 141);
             this.groupBox5.TabIndex = 49;
             this.groupBox5.TabStop = false;
+            // 
+            // cmbCargo
+            // 
+            this.cmbCargo.FormattingEnabled = true;
+            this.cmbCargo.Items.AddRange(new object[] {
+            "Director(a)",
+            "Secretario(a)"});
+            this.cmbCargo.Location = new System.Drawing.Point(32, 83);
+            this.cmbCargo.Name = "cmbCargo";
+            this.cmbCargo.Size = new System.Drawing.Size(245, 33);
+            this.cmbCargo.TabIndex = 53;
             // 
             // label5
             // 
@@ -457,17 +468,6 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
-            // cmbCargo
-            // 
-            this.cmbCargo.FormattingEnabled = true;
-            this.cmbCargo.Items.AddRange(new object[] {
-            "Director(a)",
-            "Secretario(a)"});
-            this.cmbCargo.Location = new System.Drawing.Point(32, 83);
-            this.cmbCargo.Name = "cmbCargo";
-            this.cmbCargo.Size = new System.Drawing.Size(245, 33);
-            this.cmbCargo.TabIndex = 53;
-            // 
             // registro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -482,6 +482,8 @@
             this.Sizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Usuario";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Registro_FormClosing);
+            this.Load += new System.EventHandler(this.Registro_Load);
             this.panel1.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
