@@ -2333,6 +2333,16 @@ namespace Control_Escolar
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
+            string[,] calimensep = new string[25,8];
+            string[,] califoct = new string[25,8];
+            string[,] califnov = new string[25,8];
+            string[,] califdic = new string[25,8];
+            string[,] califene = new string[25,8];
+            string[,] califfeb = new string[25,8];
+            string[,] califmar = new string[25,8];
+            string[,] califabr = new string[25,8];
+            string[,] califmay = new string[25,8];
+            string[,] califjun = new string[25,8];
             if (sesion.Grado == 1 || sesion.Grado == 2)
             {
                 //-------------Ingresar los datos del alumno en pdf--------------------------------
@@ -2378,31 +2388,330 @@ namespace Control_Escolar
                     L++;
                 }
 
-                conn.Close();
+
                 //-----------------------------Ingresar calificaciones en pdf--------------------------------
-                MySqlConnection conn2;
-                MySqlCommand com2;
+                // alumno , mes , materia//
 
-                string conexion2 = "server=localhost;uid=root;database=nerivela";
-                string query2 = "SELECT  *  FROM  `calificaciones`";
+                int J = 0;
+                for (int i = 0; i < 25; i++)
+                {
 
-                conn2 = new MySqlConnection(conexion2);
-                conn2.Open();
 
-                com2 = new MySqlCommand(query2, conn2);
+                    if( (id[i] != null) && (id[i].Length != 0) )
+                    {
 
-                MySqlDataReader myreader2 = com2.ExecuteReader();
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
 
-                string[] califsep = new string[25];
-                string[] califoct = new string[25];
-                string[] califnov = new string[25];
-                string[] califdic = new string[25];
-                string[] califene = new string[25];
-                string[] califfeb = new string[25];
-                string[] califmar = new string[25];
-                string[] califabr = new string[25];
-                string[] califmay = new string[25];
-                string[] califjun = new string[25];
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'septiembre' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            calimensep[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'octubre' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califoct[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                string[] prEspañol, prMate, pringles, prconcdelmedio, prartes, predsocio, predfisica;
+                prEspañol[0] = calimensep[0, 0] + califoct[0, 0];
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Noviembre' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califnov[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Diciembre' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califdic[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Enero' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califene[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Febrero' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califfeb[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Marzo' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califmar[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Abril' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                           califabr[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Mayo' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califmay[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                for (int i = 0; i < 25; i++)
+                {
+
+
+                    if ((id[i] != null) && (id[i].Length != 0))
+                    {
+
+                        MySqlConnection conn2;
+                        MySqlCommand com2;
+
+                        string conexion2 = "server=localhost;uid=root;database=nerivela";
+                        string query2 = "SELECT   *FROM  `calificaciones` WHERE idAlumno = " + id[i] + " and `Mes` = 'Junio' ";
+
+                        conn2 = new MySqlConnection(conexion2);
+                        conn2.Open();
+
+                        com2 = new MySqlCommand(query2, conn2);
+
+                        MySqlDataReader myreader2 = com2.ExecuteReader();
+
+                        while (myreader2.Read())//Agrega calificaciones
+                        {
+
+                            califjun[i, J] = Convert.ToString(myreader2["CalificacionMen"]);
+
+                            J++;
+                        }
+                        J = 0;
+                    }
+                }
+
+                MessageBox.Show(calimensep[0, 2]);
+                conn.Close();
+
+
+
+
 
                 //-------------Ingresar los datos del maestro de 1 en pdf--------------------------------
                 MySqlConnection conn1;
@@ -3087,16 +3396,16 @@ namespace Control_Escolar
 
                     MySqlDataReader myreader2 = com2.ExecuteReader();
 
-                    string[] califsep = new string[25];
-                    string[] califoct = new string[25];
-                    string[] califnov = new string[25];
-                    string[] califdic = new string[25];
-                    string[] califene = new string[25];
-                    string[] califfeb = new string[25];
-                    string[] califmar = new string[25];
-                    string[] califabr = new string[25];
-                    string[] califmay = new string[25];
-                    string[] califjun = new string[25];
+                    //string[] califsep = new string[25];
+                    //string[] califoct = new string[25];
+                    //string[] califnov = new string[25];
+                    //string[] califdic = new string[25];
+                    //string[] califene = new string[25];
+                    //string[] califfeb = new string[25];
+                    //string[] califmar = new string[25];
+                    //string[] califabr = new string[25];
+                    //string[] califmay = new string[25];
+                    //string[] califjun = new string[25];
 
                     //-------------Ingresar los datos del maestro de 1 en pdf--------------------------------
                     MySqlConnection conn1;
@@ -3847,16 +4156,16 @@ namespace Control_Escolar
 
                         MySqlDataReader myreader2 = com2.ExecuteReader();
 
-                        string[] califsep = new string[25];
-                        string[] califoct = new string[25];
-                        string[] califnov = new string[25];
-                        string[] califdic = new string[25];
-                        string[] califene = new string[25];
-                        string[] califfeb = new string[25];
-                        string[] califmar = new string[25];
-                        string[] califabr = new string[25];
-                        string[] califmay = new string[25];
-                        string[] califjun = new string[25];
+                        //string[] califsep = new string[25];
+                        //string[] califoct = new string[25];
+                        //string[] califnov = new string[25];
+                        //string[] califdic = new string[25];
+                        //string[] califene = new string[25];
+                        //string[] califfeb = new string[25];
+                        //string[] califmar = new string[25];
+                        //string[] califabr = new string[25];
+                        //string[] califmay = new string[25];
+                        //string[] califjun = new string[25];
 
                         //-------------Ingresar los datos del maestro de 1 en pdf--------------------------------
                         MySqlConnection conn1;
@@ -5334,16 +5643,16 @@ namespace Control_Escolar
 
                     MySqlDataReader myreader2 = com2.ExecuteReader();
 
-                    string[] califsep = new string[25];
-                    string[] califoct = new string[25];
-                    string[] califnov = new string[25];
-                    string[] califdic = new string[25];
-                    string[] califene = new string[25];
-                    string[] califfeb = new string[25];
-                    string[] califmar = new string[25];
-                    string[] califabr = new string[25];
-                    string[] califmay = new string[25];
-                    string[] califjun = new string[25];
+                    //string[] califsep = new string[25];
+                    //string[] califoct = new string[25];
+                    //string[] califnov = new string[25];
+                    //string[] califdic = new string[25];
+                    //string[] califene = new string[25];
+                    //string[] califfeb = new string[25];
+                    //string[] califmar = new string[25];
+                    //string[] califabr = new string[25];
+                    //string[] califmay = new string[25];
+                    //string[] califjun = new string[25];
 
                     //-------------Ingresar los datos del maestro de 1 en pdf--------------------------------
                     MySqlConnection conn1;
