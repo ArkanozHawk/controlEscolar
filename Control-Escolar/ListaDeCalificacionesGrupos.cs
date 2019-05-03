@@ -13,6 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Diagnostics;
 
 namespace Control_Escolar
 {
@@ -777,6 +778,7 @@ namespace Control_Escolar
                 writer.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\prueba5.pdf");
             }
             else
             {
@@ -1537,6 +1539,7 @@ namespace Control_Escolar
                     writer.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\prueba5.pdf");
                 }
                 else
                 {
@@ -2324,6 +2327,7 @@ namespace Control_Escolar
                         writer.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\prueba5.pdf");
                     }
                 }
             }
@@ -3351,6 +3355,7 @@ namespace Control_Escolar
                 writer.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\prueba5.pdf");
             }
             else
             {
@@ -4111,6 +4116,7 @@ namespace Control_Escolar
                     writer.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\prueba5.pdf");
                 }
                 else
                 {
@@ -4899,6 +4905,7 @@ namespace Control_Escolar
                         writer.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\prueba5.pdf");
                     }
                 }
             }
@@ -5598,6 +5605,7 @@ namespace Control_Escolar
                 writer.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\prueba5.pdf");
             }
             else
             {
@@ -6358,6 +6366,7 @@ namespace Control_Escolar
                     writer.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\prueba5.pdf");
                 }
                 else
                 {
@@ -7146,6 +7155,7 @@ namespace Control_Escolar
                         writer.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\prueba5.pdf");
                     }
                 }
             }
@@ -7845,6 +7855,7 @@ namespace Control_Escolar
                 writer.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\prueba5.pdf");
             }
             else
             {
@@ -8605,6 +8616,7 @@ namespace Control_Escolar
                     writer.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\prueba5.pdf");
                 }
                 else
                 {
@@ -9393,6 +9405,7 @@ namespace Control_Escolar
                         writer.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\prueba5.pdf");
                     }
                 }
             }
@@ -10092,6 +10105,7 @@ namespace Control_Escolar
                 writer.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\prueba5.pdf");
             }
             else
             {
@@ -10852,6 +10866,7 @@ namespace Control_Escolar
                     writer.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\prueba5.pdf");
                 }
                 else
                 {
@@ -11640,6 +11655,7 @@ namespace Control_Escolar
                         writer.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\prueba5.pdf");
                     }
                 }
             }

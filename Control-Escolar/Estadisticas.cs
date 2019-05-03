@@ -13,6 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Diagnostics;
 
 namespace Control_Escolar
 {
@@ -747,6 +748,8 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Estadisticas-Num-niños.pdf");
+
         }
 
         //private void pictureBox6_Click(object sender, EventArgs e)
@@ -1830,6 +1833,7 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Estadisticas-Promedios-Mejor-Grupo.pdf");
         }
 
         private void PictureBox3_Click(object sender, EventArgs e)
@@ -2603,6 +2607,7 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Estadisticas-Promedios-Alumnos.pdf");
         }
 
         private void Estadisticas_Load(object sender, EventArgs e)

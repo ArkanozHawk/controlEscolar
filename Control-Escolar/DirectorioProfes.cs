@@ -13,6 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Diagnostics;
 
 namespace Control_Escolar
 {
@@ -83,6 +84,7 @@ namespace Control_Escolar
             exportardata(dataGridView1, "test");
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Directorio_Profes.pdf");
         }
 
         //-------------------------------------------------------------------------------------------

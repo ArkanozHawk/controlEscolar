@@ -13,6 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Diagnostics;
 //CAMBIOS EVERYWHERE!!!
 namespace Control_Escolar
 {
@@ -3510,6 +3511,7 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Boleta-Interna456.pdf");
         }
 
        
@@ -8181,6 +8183,7 @@ namespace Control_Escolar
                 pdfReader.Close();
 
                 MessageBox.Show("¡PDF creado!");
+                Process.Start(@"c:\shashe\BoletaExterna4.pdf");
             }
             else
             {
@@ -11257,6 +11260,7 @@ namespace Control_Escolar
                     pdfReader.Close();
 
                     MessageBox.Show("¡PDF creado!");
+                    Process.Start(@"c:\shashe\BoletaExterna5.pdf");
                 }
                 else
                 {
@@ -14333,6 +14337,7 @@ namespace Control_Escolar
                         pdfReader.Close();
 
                         MessageBox.Show("¡PDF creado!");
+                        Process.Start(@"c:\shashe\BoletaExterna6.pdf");
                     }
                 }
 

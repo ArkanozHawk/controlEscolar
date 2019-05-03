@@ -13,6 +13,7 @@ using MaterialSkin.Controls;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
+using System.Diagnostics;
 // CAMBIOS!!!
 namespace Control_Escolar
 {
@@ -2950,6 +2951,7 @@ namespace Control_Escolar
             pdfReader.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\BoletaExterna3.pdf");
         }
 
         private void materialRaisedButton1_Click(object sender, EventArgs e)
@@ -6620,6 +6622,7 @@ namespace Control_Escolar
             writer.Close();
 
             MessageBox.Show("¡PDF creado!");
+            Process.Start(@"c:\shashe\Boleta-Interna3.pdf");
         }
 
 
