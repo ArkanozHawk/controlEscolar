@@ -2455,9 +2455,27 @@ namespace Control_Escolar
                     }
                 }
 
-                string[] prEspañol, prMate, pringles, prconcdelmedio, prartes, predsocio, predfisica;
-                prEspañol[0] = calimensep[0, 0] + califoct[0, 0];
+                double[] prEspañol = new double[25];
+                double[] prMate= new double[25];
+                double[] pringles = new double[25];
+                double[] prconcdelmedio =new double[25];
+                double[] prartes  =new double[25];
+                double[] predsocio  =new double[25];
+                double[] predfisica = new double[25];
+                //calcular promedios //
 
+                
+                    //prEspañol[i] = double.Parse(calimensep[i, 0]) + double.Parse(califoct[i, 0]);
+                    //prMate[i] = double.Parse(calimensep[i, 1]) + double.Parse(califoct[i, 1]);
+                    //pringles[i] = double.Parse(calimensep[i, 2]) + double.Parse(califoct[i, 2]);
+
+                    //prconcdelmedio[i] = double.Parse(calimensep[i, 3]) + double.Parse(califoct[i, 3]);
+                    //prartes[i] = double.Parse(calimensep[i, 4]) + double.Parse(califoct[i, 4]);
+                    //predsocio[i] = double.Parse(calimensep[i, 5]) + double.Parse(califoct[i, 5]);
+                    //predfisica[i] = double.Parse(calimensep[i, 6]) + double.Parse(califoct[i, 6]);
+                
+
+                MessageBox.Show(prEspañol[0].ToString());
                 for (int i = 0; i < 25; i++)
                 {
 

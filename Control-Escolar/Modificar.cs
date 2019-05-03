@@ -468,7 +468,7 @@ namespace Control_Escolar
                         string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
                         sesion.fnac = nacimiento;
                         CalcEdad(sesion.fnac);
-                        if (sesion.fnac == txtEdad_A.Text)
+                        if (sesion.edad.ToString() == txtEdad_A.Text)
                         {
                             errorProvider1.SetError(this.txtEdad_A, "");
                         }
@@ -792,7 +792,8 @@ namespace Control_Escolar
                 }
             }
 
-            if (this.txtEdad_A.Text.Length == 0)//Edad
+
+            if (this.txtEdad_A.Text.Length == 0)
             {
                 errorProvider1.SetError(this.txtEdad_A, "Ingresar la edad del alumno");
             }
@@ -802,23 +803,23 @@ namespace Control_Escolar
                 {
                     if (txtEdad_A.Text.Length > 2)
                     {
-                        errorProvider1.SetError(this.txtEdad_A, "La edad es incorrecta");
-                       
+                        errorProvider1.SetError(this.txtEdad_A, "Ingrese la edad correcta");
 
                     }
                     else
                     {
                         string nacimiento = dateTimePicker1.Value.Date.ToString("yyyy-MM-dd");
+
+
                         sesion.fnac = nacimiento;
                         CalcEdad(sesion.fnac);
-                        if (sesion.fnac == txtEdad_A.Text)
+                        if (sesion.edad.ToString() == txtEdad_A.Text)
                         {
                             errorProvider1.SetError(this.txtEdad_A, "");
                         }
                         else
                         {
                             errorProvider1.SetError(this.txtEdad_A, "La edad no coincide con la fecha");
-                           
                         }
                     }
 
@@ -826,8 +827,6 @@ namespace Control_Escolar
                 else
                 {
                     errorProvider1.SetError(this.txtEdad_A, "Solo ingrese números");
-                    
-
                 }
             }
 
