@@ -988,8 +988,64 @@ namespace Control_Escolar
         //Registrar alumno
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            MySqlConnection conn;
+            MySqlCommand com;
+
+            string conexion1 = "server=localhost;uid=root;database=nerivela";
+            string query2 = "SELECT count(*) from  `personal` WHERE `cargo` LIKE 'Director(a)'";
+            string query3 = "SELECT count(*) from  `personal` WHERE `cargo` LIKE 'Secretario(a)'";
+
+            conn = new MySqlConnection(conexion1);
+            conn.Open();
+
+            com = new MySqlCommand(query2, conn);
+
+            MySqlDataReader myreader2 = com.ExecuteReader();
+
+            myreader2.Read();
+            int Ndirector = Convert.ToInt32(myreader2["Count(*)"]);
+            com = new MySqlCommand(query3, conn);
+            conn.Close();
+            conn.Open();
+            MySqlDataReader myreader3 = com.ExecuteReader();
+            myreader3.Read();
+            int Nsecre = Convert.ToInt32(myreader3["Count(*)"]);
+
+            if (cmbCargo.Text == "Director(a)")
+            {
+                
+                if (Ndirector <2 )
+                {
+                    registrar();
+                }
+
+                else
+                {
+                    MessageBox.Show("Ya se han registrado el numero maximo de Director(a)");
+                }
+               
+            }
+
+            if(cmbCargo.Text == "Secretario(a)")
+            {
+                if (Nsecre <10 )
+                {
+                    registrar();
+                }
+
+                else
+                {
+                    MessageBox.Show("Ya se han registrado el numero maximo de Secretario(a)");
+                }
+            }
+
+            
+        }
+
+        public void registrar()
+        {
             bool validar = ValidarTodosDatos();
-             ValidarTodosDatos2();
+            ValidarTodosDatos2();
 
             nombre = txtNombre.Text;
             ApellidoP = txtApPat.Text;
@@ -1004,9 +1060,9 @@ namespace Control_Escolar
             cargo = cmbCargo.Text;
             usuario = txtUsuario.Text;
             password = txtcontra.Text;
-            
 
-            if(validar == true)
+
+            if (validar == true)
             {
                 //string conexion = "server=localhost;uid=root;pwd=digi3.0;database=nerivela";
                 string conexion = "server=localhost;uid=root;database=nerivela";
@@ -1020,7 +1076,7 @@ namespace Control_Escolar
             {
                 MessageBox.Show("Error en los datos");
             }
+
         }
-        
     }
 }
