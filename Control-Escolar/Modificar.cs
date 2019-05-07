@@ -112,7 +112,7 @@ namespace Control_Escolar
             sesion.AP = txtApPat_A.Text;
             sesion.AM = txtApMat_A.Text;
             sesion.Curp = txtCURP_A.Text;
-            sesion.calle = txtNum_A.Text;
+            sesion.calle = txtCalle_A.Text; ;
             sesion.numero = txtNum_A.Text;
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
