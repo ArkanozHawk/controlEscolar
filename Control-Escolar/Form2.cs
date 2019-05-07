@@ -80,7 +80,7 @@ namespace Control_Escolar
         //Inscripcion
         public void inscripcion()
         {
-            string Nombre_T, AP_T, AM_T, Calle_T, Numero_T, Colonia_T, CP_T, Telefono_T, Celular_T, Profesion_T, LT_T;
+            string Nombre_T, AP_T, AM_T, Calle_T, Numero_T, Colonia_T, CP_T, Telefono_T, Celular_T, Profesion_T, LT_T, sangre;
             sesion.nombre = txtNombre_A.Text;
             sesion.AP = txtApPat_A.Text;
             sesion.AM = txtApMat_A.Text;
@@ -90,8 +90,10 @@ namespace Control_Escolar
             sesion.Colonia = txtColonia_C.Text;
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
-           
-            if(txtEdad_A.Text.Length != 0)
+            sesion.sangre = comboBoxSangre.Text;
+
+
+            if (txtEdad_A.Text.Length != 0)
             {
                 sesion.edad = Convert.ToInt32(txtEdad_A.Text);
             }
@@ -231,7 +233,7 @@ namespace Control_Escolar
 
             com17 = new MySqlCommand(num16, conn17);
 
-            MySqlDataReader myreader17 = com13.ExecuteReader();
+            MySqlDataReader myreader17 = com17.ExecuteReader();
             myreader17.Read();
             int num6 = Convert.ToInt32(myreader17["COUNT(*)"]);
 
@@ -1291,6 +1293,11 @@ namespace Control_Escolar
                 System.Threading.Thread login = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
                 login.Start();
             }
+        }
+
+        private void Alumno_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,0 +1,565 @@
+c:\users\lizeth\documents\visual studio 2015\Projects\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Arkanoz\Desktop\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojResolveAssemblyReference.cache
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.Cache
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\Control-Escolar\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form2.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\ArKaNoZ\Desktop\Control-Escolar (liz)\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+D:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\Lizeth\controlEscolar-modif-lizeth\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\controlEscolar-7867039b203047c294fd3237967f8872cf9459c5\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\Nueva carpeta\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\Gestionde proyectos\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-master\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar-josh1\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Client\Documents\GitHub\Nueva carpeta\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\joshua\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Tevi\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Client\Documents\GitHub\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.GenerarBoletas.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.Cache
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+G:\Lizeth\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Pictures\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\Control-Escolar git\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.licensekey.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xfaworker.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xmlworker.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\bin\Debug\itextsharp.xml
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\Users\Client\source\reposs\Control-Escolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\PRUEBAS_GIT\controlEscolar\Control-Escolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources

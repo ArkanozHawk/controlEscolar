@@ -6711,7 +6711,7 @@ namespace Control_Escolar
 
 
     string query3 = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
-            MessageBox.Show(query3);
+            //MessageBox.Show(query3);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -6724,7 +6724,7 @@ namespace Control_Escolar
 
 
             sesion.cargo = Convert.ToString(myreader3["cargo"]);
-            MessageBox.Show(sesion.cargo);
+            //MessageBox.Show(sesion.cargo);
             if (sesion.cargo == "Secretario(a)")
                 {
                     // BLOQUEO SEPTIEMBRE
@@ -7124,55 +7124,7 @@ namespace Control_Escolar
 
         //    //public void ValidaTextBoxVacios()
         //    //{ }
-
-
-
-
-
-        //    //    //    foreach (Control _group in groupBox1.Controls)
-
-        //    //    //    
-        //    //    //        Do Something
-
-        //    //    //        if (_group is ComboBox)
-        //    //    //        {
-
-        //    //    //            ComboBox combo = new ComboBox();
-        //    //    //            combo.Name = _group.Name;
-        //    //    //            if (combo.Text == string.Empty)
-        //    //    //            {
-        //    //    //                MessageBox.Show("awebo");
-
-        //    //    //                cmbDiagArtes.Enabled = false;
-
-
-
-        //    //    //            }
-        //    //    //            else
-        //    //    //            {
-
-        //    //    //                _group.Enabled = false; ;
-
-        //    //    //            }
-
-
-        //    //    //        }
-
-
-
-
-
-
-        //    //    //    }
-
-        //    //    //}
-
-        //    //}
-        //}
-
-
-
-
+        
         public bool ValidaCampos(GroupBox Grupo)
         {
             foreach (Control combo in Grupo.Controls)

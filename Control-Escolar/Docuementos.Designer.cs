@@ -97,7 +97,7 @@
             this.groupBox2.Controls.Add(this.materialDivider2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox2.Location = new System.Drawing.Point(165, 90);
+            this.groupBox2.Location = new System.Drawing.Point(125, 88);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox2.Size = new System.Drawing.Size(545, 243);

@@ -106,7 +106,7 @@ namespace Control_Escolar
 
             coneccion.Open();
             codigo.Connection = coneccion;
-            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`, `Alergias` FROM  `alumno` ORDER BY  `ApellidoP`  ASC");
+            codigo.CommandText = ("SELECT    `ApellidoP`, `ApellidoM`, `nombre`, `CURP`,`idGrado`, `Alergias`, `sangre` FROM  `alumno` ORDER BY  `ApellidoP`  ASC");
 
 
             try

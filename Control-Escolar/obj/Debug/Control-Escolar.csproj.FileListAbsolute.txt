@@ -1,0 +1,262 @@
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\itextsharp.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\MySql.Data.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\Google.Protobuf.dll
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\bin\Debug\MySql.Data.xml
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-nuevomaster\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\Google.Protobuf.dll
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\ArKaNoZ\Desktop\controlEscolar 26-04-20190428T184740Z-001\controlEscolar 26-04\Control-Escolar\obj\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\itextsharp.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Google.Protobuf.dll
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.xml
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\descargas nuevo so\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Google.Protobuf.dll
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.pdb
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\DGV2Printer.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\itextsharp.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MaterialSkin.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\ValidarDatos.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Google.Protobuf.dll
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.xml
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.exe
+C:\Users\Lizeth\Desktop\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe.config
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Control-Escolar.pdb
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\DGV2Printer.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\itextsharp.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MaterialSkin.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\ValidarDatos.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Google.Protobuf.dll
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.xml
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioProfes.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.DirectorioAlum.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.CadaGrupo.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones12.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones3.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Calificaciones456.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Docuementos.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Estadisticas.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.login.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Alumno.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Form3.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Graficas_Estad.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Grupos.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ListaDeCalificacionesGrupos.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Modificar.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.ModificarPadre.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.principal.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Properties.Resources.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.registro.resources
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.GenerateResource.cache
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CoreCompileInputs.cache
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csproj.CopyComplete
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.exe
+E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.pdb

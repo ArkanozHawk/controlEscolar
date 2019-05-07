@@ -139,6 +139,7 @@
             // 
             // cmbCargo
             // 
+            this.cmbCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbCargo.FormattingEnabled = true;
             this.cmbCargo.Items.AddRange(new object[] {
             "Director(a)",

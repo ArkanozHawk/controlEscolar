@@ -115,7 +115,7 @@ namespace Control_Escolar
 
             string idpadres = obj.Consultapadreshijos(conexion, query);
 
-            MessageBox.Show(idpadres);
+            //MessageBox.Show(idpadres);
 
             string consultaidpadres = "SELECT * FROM  `padres`  WHERE  `idPadres` = '" + idpadres + "'";
            
@@ -159,8 +159,8 @@ namespace Control_Escolar
                 string inserta_padres = "UPDATE `padres` SET `nombre`='" + Nombre_T + "'" + ",`ApellidoP`='" + AP_T + "'" + ",`ApellidoM`='" + AM_T + "'" + ",`lugTrabajo`='" + LT_T + "'" + ",`Profesion`='" + Profesion_T + "'" + ",`telefono`='" + Telefono_T + "'" + ",`Celular`='" + Celular_T + "'" + ",`Calle`='" + Calle_T + "'" + ",`Colonia`='" + Colonia_T + "'" + ",`NumExt`='" + Numero_T + "'" + ",`cp`='" + CP_T + "'" + " WHERE idPadres ='" + idpadres + "'";
                 obj.inspadres(conexion, inserta_padres);
 
-                string inserta_alumnos = "UPDATE `alumno` SET `nombre`='" + sesion.nombre + "'" + ",`ApellidoP`='" + sesion.AP + "'" + ",`ApellidoM`='" + sesion.AM + "'" + ",`calle`='" + sesion.calle + "'" + ",`colonia`='" + sesion.Colonia + "'" + ",`numExt`='" + sesion.numero + "'" + ",`cp`='" + sesion.CP + "'" + ",`telEmer`='" + sesion.telefono1 + "'" + ",`Genero`='" + sesion.genero + "'" + ",`lugNac`='" + sesion.LN + "'" + ",`FechNac`='" + sesion.fnac + "'" + ",`Alergias`='" + sesion.Alergia + "'" + ",`CURP`='" + sesion.Curp + "'" + ",`idGrado`='" + grado + "'" + " WHERE idPadres='" + idpadres + "'";
-                MessageBox.Show(inserta_alumnos);
+                string inserta_alumnos = "UPDATE `alumno` SET `nombre`='" + sesion.nombre + "'" + ",`ApellidoP`='" + sesion.AP + "'" + ",`ApellidoM`='" + sesion.AM + "'" + ",`calle`='" + sesion.calle + "'" + ",`colonia`='" + sesion.Colonia + "'" + ",`numExt`='" + sesion.numero + "'" + ",`cp`='" + sesion.CP + "'" + ",`telEmer`='" + sesion.telefono1 + "'" + ",`Genero`='" + sesion.genero + "'" + ",`lugNac`='" + sesion.LN + "'" + ",`FechNac`='" + sesion.fnac + "'" + ",`Alergias`='" + sesion.Alergia + "'" + ",`CURP`='" + sesion.Curp + "'" + ",`sangre`='" + sesion.sangre + "'" + ",`idGrado`='" + grado + "'" + " WHERE idPadres='" + idpadres + "'";
+                //MessageBox.Show(inserta_alumnos);
                 obj.inspadres(conexion, inserta_alumnos);
 
                 System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadBuscar));
@@ -185,7 +185,7 @@ namespace Control_Escolar
 
             string idpadres = obj.Consultapadreshijos(conexion, query);
 
-            MessageBox.Show(idpadres);
+            //MessageBox.Show(idpadres);
 
             string consultaidpadres = "SELECT * FROM  `padres`  WHERE  `idPadres` = '" + idpadres + "'";
            
@@ -213,7 +213,7 @@ namespace Control_Escolar
                 txtprof_T.Text = Convert.ToString(myreader["profesion"]);
                 txtLugTrab_T.Text = Convert.ToString(myreader["lugTrabajo"]);
 
-                MessageBox.Show("se mostraron datos");
+                //MessageBox.Show("se mostraron datos");
                
 
             }

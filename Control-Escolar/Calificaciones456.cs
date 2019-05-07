@@ -4157,7 +4157,7 @@ namespace Control_Escolar
             }
 
             string query3 = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
-            MessageBox.Show(query3);
+            //MessageBox.Show(query3);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -4170,7 +4170,7 @@ namespace Control_Escolar
 
 
             sesion.cargo = Convert.ToString(myreader3["cargo"]);
-            MessageBox.Show(sesion.cargo);
+            //MessageBox.Show(sesion.cargo);
             if (sesion.cargo == "Secretario(a)")
             {
 

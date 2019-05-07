@@ -177,14 +177,14 @@ namespace Control_Escolar
 
 
 
-            MessageBox.Show(sesion.Curp);
+            //MessageBox.Show(sesion.Curp);
         }
         public void eliminar()
         {
             string conexion = "server=localhost;uid=root;database=nerivela";
             MessageBox.Show(sesion.Curp);
             string eliminar = "delete from alumno where  CURP =" + "'" + sesion.Curp + "'";
-            MessageBox.Show(eliminar);
+            //MessageBox.Show(eliminar);
             obj.ElimarAlum(conexion, eliminar);
         }
 

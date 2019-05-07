@@ -118,6 +118,7 @@ namespace Control_Escolar
             sesion.CP = txtCP_A.Text;
             sesion.LN = txtLugarNac_A.Text;
             sesion.telefono1 = txtTelEme_A.Text;
+            sesion.sangre = comboBoxSangre.Text;
 
             if (txtEdad_A.Text.Length <= 2 && txtEdad_A.Text.Length >0)
             {
@@ -147,24 +148,13 @@ namespace Control_Escolar
     //-----------------------------------Metodo para modificar------------------------------
     public void modificar()
         {
-
-            /*
-            sesion.nombre = txtNombre_A.Text;
-            sesion.AP = txtApPat_A.Text;
-            sesion.AM = txtApMat_A.Text;
             
-            sesion.calle = txtNum_A.Text;
-            sesion.numero = txtNum_A.Text;
-            sesion.Colonia = txtColonia_C.Text;
-            sesion.CP = txtCP_A.Text;
-            sesion.LN = txtLugarNac_A.Text;
-            */
             MySqlConnection conn;
             MySqlCommand com;
 
             string conexion = "server=localhost;uid=root;database=nerivela";
             string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
-            MessageBox.Show(sesion.Curp);
+            //MessageBox.Show(sesion.Curp);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -192,7 +182,8 @@ namespace Control_Escolar
                 txtLugarNac_A.Text = Convert.ToString(myreader["lugNac"]);
                 txtAlergias_A.Text = Convert.ToString(myreader["Alergias"]);
                 txtCURP_A.Text= Convert.ToString(myreader["CURP"]);
-               sesion.genero = Convert.ToString(myreader["Genero"]);
+                comboBoxSangre.Text = Convert.ToString(myreader["sangre"]);
+                sesion.genero = Convert.ToString(myreader["Genero"]);
                 if (sesion.genero == "Masculino")
                 {
                     RadMasculino.Checked =true;
@@ -201,7 +192,7 @@ namespace Control_Escolar
                 {
                     RadFemenino.Checked = true;
                 }
-                MessageBox.Show("si se hizo");
+                //MessageBox.Show("si se hizo");
                 conn.Close();
 
             }
@@ -222,7 +213,7 @@ namespace Control_Escolar
             DateTime dat = Convert.ToDateTime(fnac);
             DateTime nacimiento = new DateTime(dat.Year, dat.Month, dat.Day);
             int edad1 = DateTime.Today.AddTicks(-nacimiento.Ticks).Year - 1;
-             MessageBox.Show(edad1.ToString());
+            //MessageBox.Show(edad1.ToString());
            
                     sesion.edad = edad1;
                 

@@ -3324,11 +3324,6 @@ namespace Control_Escolar
 
         private void btnIrBoletas_Click_1(object sender, EventArgs e)
         {
-            //System.Threading.Thread pantalla = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadGenerarBoletas));
-            //pantalla.Start();
-            //CheckForIllegalCrossThreadCalls = false;
-            //this.Close();
-
             //-------------Ingresar los datos del alumno en pdf--------------------------------
             MySqlConnection conn;
             MySqlCommand com;
@@ -7017,7 +7012,7 @@ namespace Control_Escolar
             string conexion = "server=localhost;uid=root;database=nerivela";
 
             string query = "SELECT * FROM  `alumno`  where  CURP =" + "'" + sesion.Curp + "' ";
-            MessageBox.Show(sesion.Curp);
+            //MessageBox.Show(sesion.Curp);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -7311,7 +7306,7 @@ namespace Control_Escolar
 
 
             string query3 = "SELECT * FROM  `personal`  where  Usuario =" + "'" + sesion.Usuario + "' ";
-            MessageBox.Show(query3);
+            //MessageBox.Show(query3);
             conn = new MySqlConnection(conexion);
             conn.Open();
 
@@ -7324,7 +7319,7 @@ namespace Control_Escolar
 
 
             sesion.cargo = Convert.ToString(myreader3["cargo"]);
-            MessageBox.Show(sesion.cargo);
+            //MessageBox.Show(sesion.cargo);
             if (sesion.cargo == "Secretario(a)")
             {
 
@@ -7931,92 +7926,6 @@ namespace Control_Escolar
 
     }
 
-    //private void materialRaisedButton1_Click(object sender, EventArgs e)
-    //{
-    //    mes = materialTabControl1.SelectedTab.Name;
-    //    switch (mes)
-    //    {
-    //        case "Septiembre":
-    //            {
-    //                calisep();
-    //                MessageBox.Show("Calificaciones  septiembre registradas  con exito");
-    //            }
-    //            break;
-
-    //        case "Octubre":
-    //            {
-    //                caliOct();
-    //                MessageBox.Show("Calificaciones  octubre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Noviembre":
-    //            {
-    //                caliNov();
-    //                MessageBox.Show("Calificaciones  noviembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Diciembre":
-    //            {
-    //                caliDic();
-    //                MessageBox.Show("Calificaciones  diciembre registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Enero":
-    //            {
-    //                caliEnero();
-    //                MessageBox.Show("Calificaciones  Enero registradas con exito");
-    //            }
-    //            break;
-    //        case "Febrero":
-    //            {
-    //                caliFebrero();
-    //                MessageBox.Show("Calificaciones  febrero registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Marzo":
-    //            {
-    //                caliMarzo();
-    //                MessageBox.Show("Calificaciones  Marzo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Abril":
-    //            {
-    //                caliAbril();
-    //                MessageBox.Show("Calificaciones  Abril registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Mayo":
-    //            {
-    //                caliMayo();
-    //                MessageBox.Show("Calificaciones  Mayo registradas con exito");
-    //            }
-    //            break;
-
-    //        case "Junio":
-    //            {
-    //                caliJunio();
-    //                MessageBox.Show("Calificaciones  Junio registradas con exito");
-    //            }
-    //            break;
-
-
-    //        case "Diagnostico":
-    //            {
-    //                caliDiagnostico();
-    //                MessageBox.Show("Calificaciones  Diagnostico registradas con exito");
-    //            }
-    //            break;
-
-    //    }
-
-    //}
-
-
+    
 
 }

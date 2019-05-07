@@ -64,10 +64,15 @@
             this.txtCalle_A = new MaterialSkin.Controls.MaterialSingleLineTextField();
             this.btnSiguiente = new MaterialSkin.Controls.MaterialRaisedButton();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBoxSangre = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.BoxGenero.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // BoxGenero
@@ -82,10 +87,9 @@
             this.BoxGenero.Controls.Add(this.txtEdad_A);
             this.BoxGenero.Controls.Add(this.label5);
             this.BoxGenero.Controls.Add(this.txtLugarNac_A);
-            this.BoxGenero.Controls.Add(this.txtAlergias_A);
             this.BoxGenero.Controls.Add(this.txtTelEme_A);
             this.BoxGenero.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.BoxGenero.Location = new System.Drawing.Point(528, 72);
+            this.BoxGenero.Location = new System.Drawing.Point(491, 72);
             this.BoxGenero.Name = "BoxGenero";
             this.BoxGenero.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.BoxGenero.Size = new System.Drawing.Size(304, 404);
@@ -162,7 +166,7 @@
             // 
             this.txtEdad_A.Depth = 0;
             this.txtEdad_A.Hint = "Edad";
-            this.txtEdad_A.Location = new System.Drawing.Point(13, 255);
+            this.txtEdad_A.Location = new System.Drawing.Point(11, 293);
             this.txtEdad_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtEdad_A.Name = "txtEdad_A";
             this.txtEdad_A.PasswordChar = '\0';
@@ -191,7 +195,7 @@
             // 
             this.txtLugarNac_A.Depth = 0;
             this.txtLugarNac_A.Hint = "Lugar de nacimiento";
-            this.txtLugarNac_A.Location = new System.Drawing.Point(13, 213);
+            this.txtLugarNac_A.Location = new System.Drawing.Point(11, 228);
             this.txtLugarNac_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtLugarNac_A.Name = "txtLugarNac_A";
             this.txtLugarNac_A.PasswordChar = '\0';
@@ -207,14 +211,14 @@
             // 
             this.txtAlergias_A.Depth = 0;
             this.txtAlergias_A.Hint = "Alergias";
-            this.txtAlergias_A.Location = new System.Drawing.Point(13, 351);
+            this.txtAlergias_A.Location = new System.Drawing.Point(6, 53);
             this.txtAlergias_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtAlergias_A.Name = "txtAlergias_A";
             this.txtAlergias_A.PasswordChar = '\0';
             this.txtAlergias_A.SelectedText = "";
             this.txtAlergias_A.SelectionLength = 0;
             this.txtAlergias_A.SelectionStart = 0;
-            this.txtAlergias_A.Size = new System.Drawing.Size(262, 23);
+            this.txtAlergias_A.Size = new System.Drawing.Size(209, 23);
             this.txtAlergias_A.TabIndex = 35;
             this.txtAlergias_A.UseSystemPasswordChar = false;
             this.txtAlergias_A.Validating += new System.ComponentModel.CancelEventHandler(this.txtAlergias_A_Validating);
@@ -223,7 +227,7 @@
             // 
             this.txtTelEme_A.Depth = 0;
             this.txtTelEme_A.Hint = "Teléfono de emergencia";
-            this.txtTelEme_A.Location = new System.Drawing.Point(13, 306);
+            this.txtTelEme_A.Location = new System.Drawing.Point(11, 353);
             this.txtTelEme_A.MouseState = MaterialSkin.MouseState.HOVER;
             this.txtTelEme_A.Name = "txtTelEme_A";
             this.txtTelEme_A.PasswordChar = '\0';
@@ -245,7 +249,7 @@
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtNombre_A);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox2.Location = new System.Drawing.Point(200, 72);
+            this.groupBox2.Location = new System.Drawing.Point(184, 72);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox2.Size = new System.Drawing.Size(301, 204);
@@ -354,7 +358,7 @@
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.BackColor = System.Drawing.SystemColors.WindowText;
             this.btnCerrar.Depth = 0;
-            this.btnCerrar.Location = new System.Drawing.Point(906, 30);
+            this.btnCerrar.Location = new System.Drawing.Point(910, 30);
             this.btnCerrar.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Primary = true;
@@ -429,7 +433,7 @@
             this.groupBox3.Controls.Add(this.txtNum_A);
             this.groupBox3.Controls.Add(this.txtCalle_A);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.groupBox3.Location = new System.Drawing.Point(200, 282);
+            this.groupBox3.Location = new System.Drawing.Point(184, 282);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.groupBox3.Size = new System.Drawing.Size(301, 194);
@@ -517,7 +521,7 @@
             // 
             this.btnSiguiente.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btnSiguiente.Depth = 0;
-            this.btnSiguiente.Location = new System.Drawing.Point(838, 241);
+            this.btnSiguiente.Location = new System.Drawing.Point(831, 294);
             this.btnSiguiente.MouseState = MaterialSkin.MouseState.HOVER;
             this.btnSiguiente.Name = "btnSiguiente";
             this.btnSiguiente.Primary = true;
@@ -531,11 +535,70 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.comboBoxSangre);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.txtAlergias_A);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.groupBox1.Location = new System.Drawing.Point(801, 72);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.groupBox1.Size = new System.Drawing.Size(231, 180);
+            this.groupBox1.TabIndex = 61;
+            this.groupBox1.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.label6.Location = new System.Drawing.Point(82, 0);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 26);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "Salud";
+            // 
+            // comboBoxSangre
+            // 
+            this.comboBoxSangre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSangre.FormattingEnabled = true;
+            this.comboBoxSangre.Items.AddRange(new object[] {
+            "O -",
+            "O +",
+            "A -",
+            "A +",
+            "B -",
+            "B +",
+            "AB -",
+            "AB +"});
+            this.comboBoxSangre.Location = new System.Drawing.Point(6, 133);
+            this.comboBoxSangre.Name = "comboBoxSangre";
+            this.comboBoxSangre.Size = new System.Drawing.Size(209, 33);
+            this.comboBoxSangre.TabIndex = 45;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.label7.Location = new System.Drawing.Point(55, 98);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 20);
+            this.label7.TabIndex = 66;
+            this.label7.Text = "Tipo de sangre";
+            // 
             // Alumno
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1040, 482);
+            this.ClientSize = new System.Drawing.Size(1044, 482);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnSiguiente);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnInscripcion);
@@ -551,6 +614,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Alumnos";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Alumno_FormClosing);
+            this.Load += new System.EventHandler(this.Alumno_Load);
             this.BoxGenero.ResumeLayout(false);
             this.BoxGenero.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -558,6 +622,8 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -597,5 +663,9 @@
         private System.Windows.Forms.Label label4;
         private MaterialSkin.Controls.MaterialRadioButton RadFemenino;
         private MaterialSkin.Controls.MaterialRadioButton RadMasculino;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxSangre;
+        private System.Windows.Forms.Label label6;
     }
 }
