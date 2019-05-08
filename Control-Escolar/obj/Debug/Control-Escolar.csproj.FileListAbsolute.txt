@@ -232,7 +232,6 @@ E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df8
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\ValidarDatos.dll
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\Google.Protobuf.dll
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\bin\Debug\MySql.Data.xml
-E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control-Escolar.csprojAssemblyReference.cache
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.bitacora.resources
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.BoletasBuscar.resources
 E:\descargas nuevo so\controlEscolar-05052019\controlEscolar-7d5fc49fcc2a06e2df81e407702d950ae65018a0\Control-Escolar\obj\Debug\Control_Escolar.Buscar.resources
